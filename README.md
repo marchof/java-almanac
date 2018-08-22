@@ -16,3 +16,10 @@ Collection of information about the history of Java primarily from a technical p
   [11](java-11.md) -
   [12](java-12.md)
 * [References](references.md)
+
+## License
+
+![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+This content is provided by Marc R. Hoffmann under the
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
