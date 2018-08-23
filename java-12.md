@@ -3,3 +3,7 @@
 Release Date: 2019/03
 
 Bytecode Version: 56
+
+## Language
+
+* Switch Expressions (Preview, JEP 325)

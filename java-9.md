@@ -10,10 +10,14 @@ Bytecode Version: 53
 
 ## JVM
 
+## Language
+
+* Private methods in interfaces (JEP 213)
+
 ## Java API
 
 * Reactive Streams
-* Var Handles
+* Var Handles (JEP 193)
 
 ## Tools
 
