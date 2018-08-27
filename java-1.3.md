@@ -1,6 +1,6 @@
 # Java 1.3
 
-Release Date: 2000/05
+Release Date: 2000/05/08
 
 Bytecode Version: 47
 

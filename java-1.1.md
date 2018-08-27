@@ -1,6 +1,6 @@
 # Java 1.1
 
-Release Date: 1997/02
+Release Date: 1997/02/19
 
 Bytecode Version: 45.3
 

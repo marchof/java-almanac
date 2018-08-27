@@ -1,6 +1,7 @@
 # Java 7
 
-Release Date: 2011/07
+Release Date: 2011/07/07
+Last Public Update: 2015/04/14 (Java SE 7 Update 80)
 
 Bytecode Version: 51
 

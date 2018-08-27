@@ -1,0 +1,244 @@
+class: center, middle
+
+# Java 9, 10, 11, ... n
+
+Marc Hoffmann
+
+SBB Developer Day
+
+Gurten, 29.08.2018
+
+---
+# Some History of Java
+
+![Release Timeline](diagrams/history.svg)
+
+---
+
+
+# 2016: "Java is doomed! It evolves so slowly! Every good idea takes ages to be available!"
+--
+
+# 2018: "Java is doomed! It evolves too quickly! Nobody will be able to keep pace!"
+
+Daniel Fernández, https://twitter.com/danfenz/status/976376717811077121
+
+---
+# The New Release Cadence
+
+![Release Timeline](diagrams/releases.svg)
+
+---
+# Java Implementations and Distributions
+
+* OpenJDK (GPL v2 with classpath exception)
+* Oracle JDK
+* Azul Zulu
+
+JVMs
+* Eclipse OpenJ9
+* Oracle Graal
+
+Compiler
+* Eclipse Compiler for Java (ECJ)
+
+---
+# What makes an JDK Release?
+
+* Java Language Specification (JLS)
+* Java VM Specification
+* Java API
+* JVM
+* Tools
+
+---
+# Java Development Process
+
+
+Java Community Process (jcp.org)
+* Java Specification Requests (JCR)
+
+OpenJDK Process
+* JDK Enhancement Proposal (JEP)
+
+---
+# Java Modules (JMS, Project Jigsaw)
+.version[Java 9]
+
+* New file format `*.jmod` (Ok, it's a ZIP)
+* Metadata compiled from `module-info.java`
+  ```java
+  module org.hello {
+        exports org.hello;
+        requires org.output;
+  }
+  ```
+* Goodby class path...
+  ```bash
+  $ java --module-path mods -m org.hello/org.hello.World
+  ```
+* `jlink` for custom modular runtime images
+---
+# Private Methods in Interfaces
+.version[Java 9]
+
+* Why?
+--
+
+* Default methods may share common code!
+
+```java
+interface {
+    default void start(Engine e) {
+        setStatus(e, true);
+    } 
+    default void stop(Engine e) {
+        setStatus(e, false);
+    }
+    private void setStatus(Engine e, boolean running) {
+        // ...
+    }
+}
+```
+
+---
+# Reactive Streams
+.version[Java 9]
+
+* `java.util.concurrent.Flow`
+* Java implementation of www.reactive-streams.org
+
+---
+# Object.finalize() deprecated
+.version[Java 9]
+
+Finally...
+
+* Alternative: `PhantomReference`, `Cleaner`
+
+---
+# Enhanced Deprecation
+.version[Java 9]
+
+```Java
+@Deprecated(since="1.2", forRemoval=true)
+public final synchronized void stop(Throwable obj) {
+    throw new UnsupportedOperationException();
+}
+```
+
+---
+# Local Variable Type Inference
+.version[Java 10]
+
+```Java
+var names = new ArrayList<String>();
+```
+
+* `var` reserved variable name
+* Initial initialization defines type
+* Works for anonymous types
+
+```Java
+var anonymous = new Object() {
+    void hello() { }
+}
+anonymous.hello();
+```
+
+---
+# Graal VM
+.version[Java 10]
+
+* Virtual Machine written in Java
+* Generic VM for different languages
+  * LLVM
+  * Java Script
+  * Java Byte Code
+  
+`java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler`
+
+---
+# No more Java EE and CORBA
+.version[Java 11]
+
+* Removed Packages (marked for removal in Java 9)
+  ```Java
+  javax.activation  
+  javax.activity  
+  javax.annotation 
+  javax.jws
+  javax.jws.*
+  javax.rmi.CORBA
+  javax.transaction  
+  javax.xml.bind.*
+  javax.xml.soap
+  javax.xml.ws.*
+  ```
+
+* Java EE moved to Eclipse as EE4J
+
+---
+# HTTP Client
+.version[Java 11]
+
+`UrlConnection` too abstract
+
+* Package `java.net.http`
+* HTTP/2
+* Asynchronous Notifications
+* Proxying, Cookies, Authentication
+
+
+---
+# Single Source File Launch
+.version[Java 11]
+
+`java Hello.java`
+
+On Unix-like systems `*.java` files can become executable now:
+
+```Java
+#!/usr/bin/java --source 10
+public class Hello {
+	public static void main(String... args) {
+		System.out.println("Hello");
+	}
+}
+```
+
+---
+# New Garbage Collectors
+.version[Java 11]
+
+* Low Latency Garbage Collector ZGC
+* Epsilon GC - no garbage collection at all
+* Based on Garbage Collector Interface (Java 10)
+
+---
+# Preview Features
+.version[Java 11]
+
+```bash
+$ javac --release 11 --enable-preview Foo.java
+```
+
+---
+# Switch Expressions (Preview Feature)
+.version[Java 12]
+
+```java
+int numLetters = switch (day) {
+    case MONDAY, FRIDAY, SUNDAY -> 6;
+    case TUESDAY                -> 7;
+    case THURSDAY, SATURDAY     -> 8;
+    case WEDNESDAY              -> 9;
+};
+```
+
+---
+# Thank you! Questions?
+
+![Questions](diagrams/questions.jpg)
+
+* https://github.com/marchof/java-almanac

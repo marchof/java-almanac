@@ -9,6 +9,7 @@ Bytecode Version: 55
 * `CONSTANT_Dynamic` (JEP 309)
 * Epsilon GC (JEP 318)
 * ZGC (JEP 333)
+* Nest-Based Access Control (JEP 181)
 
 ## Language
 

@@ -1,6 +1,6 @@
 # Java 8
 
-Release Date: 2014/03
+Release Date: 2014/03/18
 
 Bytecode Version: 52
 

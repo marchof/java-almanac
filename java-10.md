@@ -6,7 +6,9 @@ Bytecode Version: 54
 
 ## Language
 
-* `var` keyword (JEP 286)
+* `var` keyword
+    - [JEP 286](http://openjdk.java.net/jeps/286)
+
 
 ## JVM
 

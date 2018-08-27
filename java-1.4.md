@@ -1,6 +1,6 @@
 # Java 1.4
 
-Release Date: 2002/02
+Release Date: 2002/02/06
 
 Bytecode Version: 48
 
