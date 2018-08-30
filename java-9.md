@@ -9,15 +9,15 @@ Bytecode Version: 53
 ## Language
 
 * Java Modules (Project Jigsaw)
-* Private methods in interfaces (JEP 213)
+* Private methods in interfaces ([JEP 213](http://openjdk.java.net/jeps/213))
 
 
 ## Java API
 
 * Reactive Streams
-* Var Handles (JEP 193)
+* Var Handles ([JEP 193](http://openjdk.java.net/jeps/193))
 * `Object.finalize()` deprecated
-* Enhanced Deprecation (JEP 277) 
+* Enhanced Deprecation ([JEP 277](http://openjdk.java.net/jeps/277)) 
 
 ## Tools
 

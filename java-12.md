@@ -6,4 +6,4 @@ Bytecode Version: 56
 
 ## Language
 
-* Switch Expressions (Preview, JEP 325)
+* Switch Expressions (Preview, [JEP 325](http://openjdk.java.net/jeps/325))
