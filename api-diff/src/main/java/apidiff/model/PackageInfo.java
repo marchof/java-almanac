@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Identity: name
  */
-public class PackageInfo implements IModelElement<PackageInfo> {
+public class PackageInfo extends ElementInfo {
 
 	private final Set<ClassInfo> classes;
 
@@ -19,18 +19,19 @@ public class PackageInfo implements IModelElement<PackageInfo> {
 		this.classes = new HashSet<>();
 	}
 
+	@Override
+	public ElementType getType() {
+		return ElementType.PACKAGE;
+	}
+
 	public String getName() {
-		return name;
+		return name.replace('/', '.');
 	}
 
 	public void addClass(ClassInfo c) {
 		if (!classes.add(c)) {
 			throw new IllegalStateException("Duplicate class " + c);
 		}
-	}
-
-	public Set<ClassInfo> getClasses() {
-		return classes;
 	}
 
 	@Override
@@ -48,13 +49,8 @@ public class PackageInfo implements IModelElement<PackageInfo> {
 	}
 
 	@Override
-	public String toString() {
-		return name.replace('/', '.');
-	}
-	
-	@Override
-	public List<IModelElement<?>> getChildren() {
-		List<IModelElement<?>> children = new ArrayList<>();
+	public List<ElementInfo> getChildren() {
+		List<ElementInfo> children = new ArrayList<>();
 		children.addAll(classes);
 		return children;
 	}

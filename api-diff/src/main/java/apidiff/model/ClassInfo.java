@@ -10,19 +10,37 @@ import org.objectweb.asm.Opcodes;
 /**
  * Identity: name
  */
-public class ClassInfo implements IModelElement<ClassInfo> {
+public class ClassInfo extends ElementInfo {
 
 	private String name;
 	private int access;
+	private String superclass;
+	private String[] interfaces;
 
 	private Set<FieldInfo> fields;
 	private Set<MethodInfo> methods;
 
-	public ClassInfo(String name, int access) {
+	public ClassInfo(String name, int access, String superclass, String[] interfaces) {
 		this.name = name;
 		this.access = access;
+		this.superclass = superclass;
+		this.interfaces = interfaces;
 		this.fields = new HashSet<>();
 		this.methods = new HashSet<>();
+	}
+
+	@Override
+	public ElementType getType() {
+		if ((access & Opcodes.ACC_INTERFACE) != 0) {
+			return ElementType.INTERFACE;
+		}
+		if ((access & Opcodes.ACC_ENUM) != 0) {
+			return ElementType.ENUM;
+		}
+		if ((access & Opcodes.ACC_ANNOTATION) != 0) {
+			return ElementType.ANNOTATION;
+		}
+		return ElementType.CLASS;
 	}
 
 	public void addField(FieldInfo f) {
@@ -38,7 +56,23 @@ public class ClassInfo implements IModelElement<ClassInfo> {
 	}
 
 	public String getName() {
-		return name;
+		int idx = name.lastIndexOf('/');
+		String simpleName = idx == -1 ? name : name.substring(idx + 1);
+		return simpleName.replace('$', '.');
+	}
+
+	@Override
+	public Set<ElementTag> getTags() {
+		HashSet<ElementTag> tags = new HashSet<>(ModifierTag.getModifiers(access));
+		if (superclass != null) {
+			tags.add(new ExtendsTag(superclass));
+		}
+		if (interfaces != null) {
+			for (String intf : interfaces) {
+				tags.add(new ImplementsTag(intf));
+			}
+		}
+		return tags;
 	}
 
 	public String getPackageName() {
@@ -48,14 +82,6 @@ public class ClassInfo implements IModelElement<ClassInfo> {
 
 	public int getAccess() {
 		return access;
-	}
-
-	public Set<FieldInfo> getFields() {
-		return fields;
-	}
-
-	public Set<MethodInfo> getMethods() {
-		return methods;
 	}
 
 	@Override
@@ -73,36 +99,11 @@ public class ClassInfo implements IModelElement<ClassInfo> {
 	}
 
 	@Override
-	public String toString() {
-		int idx = name.lastIndexOf('/');
-		String simpleName = idx == -1 ? name : name.substring(idx + 1);
-		return getKind() + " " + simpleName.replace('$', '.');
-	}
-
-	private String getKind() {
-		if ((getAccess() & Opcodes.ACC_INTERFACE) != 0) {
-			return "interface";
-		}
-		if ((getAccess() & Opcodes.ACC_ENUM) != 0) {
-			return "enum";
-		}
-		if ((getAccess() & Opcodes.ACC_ANNOTATION) != 0) {
-			return "annotation";
-		}
-		return "class";
-	}
-
-	@Override
-	public List<IModelElement<?>> getChildren() {
-		List<IModelElement<?>> members = new ArrayList<>();
+	public List<ElementInfo> getChildren() {
+		List<ElementInfo> members = new ArrayList<>();
 		members.addAll(fields);
 		members.addAll(methods);
 		return members;
-	}
-
-	@Override
-	public boolean isModified(ClassInfo other) {
-		return access != other.access;
 	}
 
 }

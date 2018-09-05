@@ -36,13 +36,13 @@ public class Loader {
 		if (!filter.filterClass(reader.getClassName(), reader.getAccess())) {
 			return;
 		}
-		ClassInfo c = new ClassInfo(reader.getClassName(), reader.getAccess());
+		ClassInfo c = new ClassInfo(reader.getClassName(), reader.getAccess(), reader.getSuperName(), reader.getInterfaces());
 		reader.accept(new ClassVisitor(ASM_API) {
 
 			@Override
 			public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
 				if (filter.filterField(name, access)) {
-					c.addField(new FieldInfo(name, access, descriptor));
+					c.addField(new FieldInfo(c, name, access, descriptor));
 				}
 				return null;
 			}
@@ -51,7 +51,7 @@ public class Loader {
 			public MethodVisitor visitMethod(int access, String name, String descriptor, String signature,
 					String[] exceptions) {
 				if (filter.filterMethod(name, access)) {
-					c.addMethod(new MethodInfo(name, access, descriptor));
+					c.addMethod(new MethodInfo(c, name, access, descriptor, exceptions));
 				}
 				return null;
 			}

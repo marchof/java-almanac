@@ -2,22 +2,29 @@ package apidiff.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.Consumer;
 
-public class ApiInfo implements Consumer<ClassInfo>, IModelElement<ApiInfo> {
+public class ApiInfo extends ElementInfo implements Consumer<ClassInfo>{
+
+	private String info;
 
 	private final Map<String, PackageInfo> packages;
 
-	public ApiInfo() {
+	public ApiInfo(String info) {
+		this.info = info;
 		this.packages = new HashMap<>();
 	}
+	
+	@Override
+	public ElementType getType() {
+		return ElementType.API;
+	}
 
-	public Set<PackageInfo> getPackages() {
-		return new HashSet<>(packages.values());
+	@Override
+	public String getName() {
+		return info;
 	}
 
 	@Override
@@ -27,8 +34,8 @@ public class ApiInfo implements Consumer<ClassInfo>, IModelElement<ApiInfo> {
 	}
 
 	@Override
-	public List<IModelElement<?>> getChildren() {
-		List<IModelElement<?>> children = new ArrayList<>();
+	public List<ElementInfo> getChildren() {
+		List<ElementInfo> children = new ArrayList<>();
 		children.addAll(packages.values());
 		return children;
 	}
