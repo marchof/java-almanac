@@ -195,8 +195,10 @@ anonymous.hello();
 .version[Java 11]
 
 `java Hello.java`
+--
 
-On Unix-like systems `*.java` files can become executable now:
+
+On Unix-like systems `*.java` files can become executable:
 
 ```Java
 #!/usr/bin/java --source 10
