@@ -24,3 +24,4 @@ Bytecode Version: 55
 
 * Single Source File Launch ([JEP 330](http://openjdk.java.net/jeps/330))
 * Flight Recorder ([JEP 328](http://openjdk.java.net/jeps/328))
+* No more frames in JavaDoc [JDK-8196202](https://bugs.openjdk.java.net/browse/JDK-8196202)
