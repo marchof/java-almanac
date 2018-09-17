@@ -14,8 +14,6 @@ public class ClassInfo extends ElementInfo {
 
 	private String name;
 	private int access;
-	private String superclass;
-	private String[] interfaces;
 
 	private Set<FieldInfo> fields;
 	private Set<MethodInfo> methods;
@@ -23,10 +21,17 @@ public class ClassInfo extends ElementInfo {
 	public ClassInfo(String name, int access, String superclass, String[] interfaces) {
 		this.name = name;
 		this.access = access;
-		this.superclass = superclass;
-		this.interfaces = interfaces;
 		this.fields = new HashSet<>();
 		this.methods = new HashSet<>();
+		addTags(ModifierTag.getModifiers(access));
+		if (superclass != null) {
+			addTag(new ExtendsTag(superclass));
+		}
+		if (interfaces != null) {
+			for (String intf : interfaces) {
+				addTag(new ImplementsTag(intf));
+			}
+		}
 	}
 
 	@Override
@@ -59,20 +64,6 @@ public class ClassInfo extends ElementInfo {
 		int idx = name.lastIndexOf('/');
 		String simpleName = idx == -1 ? name : name.substring(idx + 1);
 		return simpleName.replace('$', '.');
-	}
-
-	@Override
-	public Set<ElementTag> getTags() {
-		HashSet<ElementTag> tags = new HashSet<>(ModifierTag.getModifiers(access));
-		if (superclass != null) {
-			tags.add(new ExtendsTag(superclass));
-		}
-		if (interfaces != null) {
-			for (String intf : interfaces) {
-				tags.add(new ImplementsTag(intf));
-			}
-		}
-		return tags;
 	}
 
 	public String getPackageName() {

@@ -1,8 +1,5 @@
 package apidiff.model;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.objectweb.asm.Type;
 
 /**
@@ -10,27 +7,20 @@ import org.objectweb.asm.Type;
  */
 public class MethodInfo extends MemberInfo {
 
-	private String[] exceptions;
 
 	public MethodInfo(ClassInfo owner, String name, int access, String desc, String[] exceptions) {
 		super(owner, name, access, desc);
-		this.exceptions = exceptions;
+		addTags(ModifierTag.getModifiers(access));
+		if (exceptions != null) {
+			for (String ex : exceptions) {
+				addTag(new ThrowsTag(ex));
+			}
+		}
 	}
 
 	@Override
 	public ElementType getType() {
 		return ElementType.METHOD;
-	}
-
-	@Override
-	public Set<ElementTag> getTags() {
-		HashSet<ElementTag> tags = new HashSet<>(ModifierTag.getModifiers(access));
-		if (exceptions != null) {
-			for (String ex : exceptions) {
-				tags.add(new ThrowsTag(ex));
-			}
-		}
-		return tags;
 	}
 
 	@Override

@@ -1,7 +1,5 @@
 package apidiff.model;
 
-import java.util.Set;
-
 /**
  * Identity: name
  */
@@ -9,6 +7,7 @@ public class FieldInfo extends MemberInfo {
 
 	public FieldInfo(ClassInfo owner, String name, int access, String desc) {
 		super(owner, name, access, desc);
+		addTags(ModifierTag.getModifiers(access));
 	}
 
 	@Override
@@ -20,12 +19,7 @@ public class FieldInfo extends MemberInfo {
 	public String getName() {
 		return name;
 	}
-	
-	@Override
-	public Set<ElementTag> getTags() {
-		return ModifierTag.getModifiers(access);
-	}
-	
+
 	@Override
 	public int hashCode() {
 		return name.hashCode();
@@ -39,5 +33,5 @@ public class FieldInfo extends MemberInfo {
 		MemberInfo other = (MemberInfo) obj;
 		return name.equals(other.name);
 	}
-	
+
 }

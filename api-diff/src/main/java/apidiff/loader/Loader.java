@@ -8,6 +8,7 @@ import java.util.function.Consumer;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
@@ -21,7 +22,7 @@ import apidiff.model.MethodInfo;
 public class Loader {
 
 	@SuppressWarnings("deprecation")
-	private static final int ASM_API = Opcodes.ASM7_EXPERIMENTAL;
+	static final int ASM_API = Opcodes.ASM7_EXPERIMENTAL;
 
 	private Consumer<ClassInfo> output;
 	private IFilter filter;
@@ -36,13 +37,26 @@ public class Loader {
 		if (!filter.filterClass(reader.getClassName(), reader.getAccess())) {
 			return;
 		}
-		ClassInfo c = new ClassInfo(reader.getClassName(), reader.getAccess(), reader.getSuperName(), reader.getInterfaces());
+		ClassInfo c = new ClassInfo(reader.getClassName(), reader.getAccess(), reader.getSuperName(),
+				reader.getInterfaces());
 		reader.accept(new ClassVisitor(ASM_API) {
+
+			@Override
+			public AnnotationVisitor visitAnnotation(String descriptor, boolean visible) {
+				return new AnnotationTagExtractor(c, descriptor);
+			}
 
 			@Override
 			public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
 				if (filter.filterField(name, access)) {
-					c.addField(new FieldInfo(c, name, access, descriptor));
+					FieldInfo f = new FieldInfo(c, name, access, descriptor);
+					c.addField(f);
+					return new FieldVisitor(ASM_API) {
+						@Override
+						public AnnotationVisitor visitAnnotation(String descriptor, boolean visible) {
+							return new AnnotationTagExtractor(f, descriptor);
+						}
+					};
 				}
 				return null;
 			}
@@ -51,7 +65,14 @@ public class Loader {
 			public MethodVisitor visitMethod(int access, String name, String descriptor, String signature,
 					String[] exceptions) {
 				if (filter.filterMethod(name, access)) {
-					c.addMethod(new MethodInfo(c, name, access, descriptor, exceptions));
+					MethodInfo m = new MethodInfo(c, name, access, descriptor, exceptions);
+					c.addMethod(m);
+					return new MethodVisitor(ASM_API) {
+						@Override
+						public AnnotationVisitor visitAnnotation(String descriptor, boolean visible) {
+							return new AnnotationTagExtractor(m, descriptor);
+						}
+					};
 				}
 				return null;
 			}
@@ -98,6 +119,20 @@ public class Loader {
 				loadZip(f);
 			}
 		}
+	}
+	
+	public void loadJDK(Path path) throws IOException {
+		Path lib = path.resolve("jre/lib");
+		if (Files.isDirectory(lib)) {
+			loadDirectory(lib);
+			return;
+		}
+		Path jmods = path.resolve("jmods");
+		if (Files.isDirectory(jmods)) {
+			loadDirectory(jmods);
+			return;
+		}
+		throw new IOException("Unknown JDK layout at " + path);
 	}
 
 }

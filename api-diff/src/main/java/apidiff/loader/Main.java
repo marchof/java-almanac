@@ -8,24 +8,20 @@ import apidiff.model.ApiInfo;
 
 public class Main {
 	
-	private static final ApiInfo loadZip(String path) throws IOException {
-		ApiInfo api = new ApiInfo(path);
+	private static final ApiInfo loadVersion(String version) throws IOException {
+		ApiInfo api = new ApiInfo(version);
 		Loader loader = new Loader(api, new PublicApiFilter());
-		loader.loadZip(Paths.get(path));
-		return api;	
-	}
-	
-	private static final ApiInfo loadDirectory(String path) throws IOException {
-		ApiInfo api = new ApiInfo(path);
-		Loader loader = new Loader(api, new PublicApiFilter());
-		loader.loadDirectory(Paths.get(path));
+		loader.loadJDK(Paths.get(System.getProperty("user.home"), ".sdkman/candidates/java", version));
 		return api;	
 	}
 
 	public static void main(String[] args) throws IOException {
-		ApiInfo api1 = loadDirectory("/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib");
-		// ApiInfo api1 = loadDirectory("/Users/marc/Downloads/java-api-diff/jdk-10/jmods");
-		ApiInfo api2 = loadDirectory("/Users/marc/Downloads/java-api-diff/jdk-12/jmods");
+		
+		 ApiInfo api1 = loadVersion("8.0.181-oracle");
+	    //ApiInfo api1 = loadDirectory("9.0.4-open");
+		// ApiInfo api1 = loadDirectory("10.0.2-open");
+		// ApiInfo api1 = loadDirectory("11.ea.28-open");
+		ApiInfo api2 = loadVersion("12.ea.08-open");
 	
 		Delta delta = new Delta(api1, api2);
 		delta.tree(System.out);
