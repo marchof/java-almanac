@@ -1,0 +1,105 @@
+body {
+  font-family:sans-serif;
+}
+
+h1 {
+  color:#a0a0a0;
+  font-size:20pt;
+}
+
+table {
+  border:#ccccb0 1px solid;
+  border-radius:5px;
+}
+
+table thead {
+  background-color:#e0e0e0;
+}
+
+table thead td {
+  white-space:nowrap;
+  border-bottom:#b0b0b0 1px solid;
+}
+
+td {
+  font-size:10pt;
+}
+
+td.annotation {
+  padding-left:36px;
+  background-image:url(annotation.png);
+  background-position:18px center;
+  background-repeat:no-repeat;
+}
+
+td.class {
+  padding-left:36px;
+  background-image:url(class.png);
+  background-position:18px center;
+  background-repeat:no-repeat;
+}
+
+td.enum {
+  padding-left:36px;
+  background-image:url(enum.png);
+  background-position:18px center;
+  background-repeat:no-repeat;
+}
+
+td.field {
+  padding-left:54px;
+  background-image:url(field.png);
+  background-position:36px center;
+  background-repeat:no-repeat;
+}
+
+td.interface {
+  padding-left:36px;
+  background-image:url(interface.png);
+  background-position:18px center;
+  background-repeat:no-repeat;
+}
+
+td.method {
+  padding-left:54px;
+  background-image:url(method.png);
+  background-position:36px center;
+  background-repeat:no-repeat;
+}
+
+td.package {
+  padding-left:18px;
+  background-image:url(package.png);
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+span.added {
+  color: #ffffff;
+  background-color: #009900;
+  padding: 1px 4px 1px 4px;
+  border-radius: 3px;
+}
+
+span.removed {
+  color: #ffffff;
+  background-color: #cc0000;
+  padding: 1px 4px 1px 4px;
+  border-radius: 3px;
+}
+
+span.tagadd {
+  color: #000000;
+  background-color: #cccccc;
+  padding: 1px 4px 1px 4px;
+  border-radius: 3px;
+  margin-right: 2px;
+}
+
+span.tagremove {
+  color: #000000;
+  background-color: #cccccc;
+  padding: 1px 4px 1px 4px;
+  border-radius: 3px;
+  margin-right: 2px;
+}

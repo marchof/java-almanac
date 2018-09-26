@@ -71,8 +71,16 @@ public class Delta {
 		return element;
 	}
 
-	List<Delta> getChildren() {
+	public List<Delta> getChildren() {
 		return children;
+	}
+	
+	public Set<ElementTag> getAddedTags() {
+		return addedTags;
+	}
+	
+	public Set<ElementTag> getRemovedTags() {
+		return removedTags;
 	}
 
 	@Override

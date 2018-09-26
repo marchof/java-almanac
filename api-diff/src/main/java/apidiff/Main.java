@@ -1,10 +1,14 @@
-package apidiff.loader;
+package apidiff;
 
 import java.io.IOException;
 import java.nio.file.Paths;
 
 import apidiff.cmp.Delta;
+import apidiff.loader.Loader;
+import apidiff.loader.PublicApiFilter;
 import apidiff.model.ApiInfo;
+import apidiff.report.FileMultiReportOutput;
+import apidiff.report.HTMLRenderer;
 
 public class Main {
 	
@@ -24,6 +28,8 @@ public class Main {
 		ApiInfo api2 = loadVersion("12.ea.08-open");
 	
 		Delta delta = new Delta(api1, api2);
+		
+		new HTMLRenderer(new FileMultiReportOutput(Paths.get("./target/diff"))).render(delta);
 		delta.tree(System.out);
 	}
 
