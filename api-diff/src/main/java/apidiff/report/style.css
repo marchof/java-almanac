@@ -8,21 +8,16 @@ h1 {
 }
 
 table {
-  border:#ccccb0 1px solid;
-  border-radius:5px;
-}
-
-table thead {
-  background-color:#e0e0e0;
-}
-
-table thead td {
-  white-space:nowrap;
-  border-bottom:#b0b0b0 1px solid;
+  border-collapse:collapse;
+  border-top:1px #cccccc solid;
 }
 
 td {
+  white-space:nowrap;
   font-size:10pt;
+  padding:2px 2px 2px 2px;
+  border-bottom:1px #cccccc solid;
+  vertical-align:middle;
 }
 
 td.annotation {
