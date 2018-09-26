@@ -197,6 +197,17 @@ public class HTMLElement extends XMLElement {
 	/**
 	 * Creates a 'div' element.
 	 * 
+	 * @return 'div' element
+	 * @throws IOException
+	 *             in case of problems with the underlying output
+	 */
+	public HTMLElement div() throws IOException {
+		return element("div");
+	}
+	
+	/**
+	 * Creates a 'div' element.
+	 * 
 	 * @param classattr
 	 *            value of the class attribute
 	 * @return 'div' element

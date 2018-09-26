@@ -38,7 +38,8 @@ public class HTMLRenderer {
 	private void renderElement(HTMLElement tbody, Delta delta) throws IOException {
 		HTMLElement tr = tbody.tr();
 		ElementInfo element = delta.getElement();
-		tr.td(element.getType().name().toLowerCase()).text(element.getName());
+		HTMLElement td = tr.td(element.getType().name().toLowerCase());
+		trimText(td, element.getName(), 80);
 		renderTags(tr.td(), delta);
 		for (Delta c : delta.getChildren()) {
 			renderElement(tbody, c);
@@ -66,6 +67,15 @@ public class HTMLRenderer {
 			span.text(" ");
 			span.text(tag.toString());
 		}
+	}
+	
+	private void trimText(HTMLElement parent, String text, int maxlength) throws IOException {
+		if (text.length() > maxlength) {
+			parent = parent.div();
+			parent.attr("title", text);
+			text = text.substring(0, maxlength) + "...";
+		}
+		parent.text(text);
 	}
 
 	private void copyResources() throws IOException {
