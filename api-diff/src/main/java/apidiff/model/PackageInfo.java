@@ -6,16 +6,19 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Identity: name
+ * Identity: vmname
  */
 public class PackageInfo extends ElementInfo {
 
 	private final Set<ClassInfo> classes;
 
-	private final String name;
+	private final String vmname;
 
-	PackageInfo(String name) {
-		this.name = name;
+	private final String module;
+
+	PackageInfo(String vmname, String module) {
+		this.vmname = vmname;
+		this.module = module;
 		this.classes = new HashSet<>();
 	}
 
@@ -23,9 +26,17 @@ public class PackageInfo extends ElementInfo {
 	public ElementType getType() {
 		return ElementType.PACKAGE;
 	}
+	
+	public String getVMName() {
+		return vmname;
+	}
 
 	public String getName() {
-		return name.replace('/', '.');
+		return vmname.replace('/', '.');
+	}
+	
+	public String getModule() {
+		return module;
 	}
 
 	public void addClass(ClassInfo c) {
@@ -36,7 +47,7 @@ public class PackageInfo extends ElementInfo {
 
 	@Override
 	public int hashCode() {
-		return name.hashCode();
+		return vmname.hashCode();
 	}
 
 	@Override
@@ -45,7 +56,7 @@ public class PackageInfo extends ElementInfo {
 			return false;
 		}
 		PackageInfo other = (PackageInfo) obj;
-		return name.equals(other.name);
+		return vmname.equals(other.vmname);
 	}
 
 	@Override

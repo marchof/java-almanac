@@ -29,7 +29,7 @@ public class ApiInfo extends ElementInfo implements Consumer<ClassInfo>{
 
 	@Override
 	public void accept(ClassInfo c) {
-		PackageInfo pkg = packages.computeIfAbsent(c.getPackageName(), PackageInfo::new);
+		PackageInfo pkg = packages.computeIfAbsent(c.getPackageName(), name -> new PackageInfo(name, c.getModule()));
 		pkg.addClass(c);
 	}
 

@@ -1,5 +1,6 @@
 package apidiff.model;
 
+import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 
 /**
@@ -37,38 +38,51 @@ public class MethodInfo extends MemberInfo {
 		return name.equals(other.name) && desc.equals(other.desc);
 	}
 
+	public String getRawName() {
+		return name;
+	}
+	
 	@Override
 	public String getName() {
-		return getMethodName(name, getDesc());
-	}
-
-	private String getMethodName(final String vmmethodname, final String vmdesc) {
 		final StringBuilder result = new StringBuilder();
-		if ("<init>".equals(vmmethodname)) {
+		if ("<init>".equals(name)) {
 			result.append(getOwner().getName());
 		} else {
-			result.append(vmmethodname);
+			result.append(name);
 		}
 		result.append('(');
-		final Type[] arguments = Type.getArgumentTypes(vmdesc);
-		boolean comma = false;
-		for (final Type arg : arguments) {
-			if (comma) {
-				result.append(", ");
-			} else {
-				comma = true;
-			}
-			result.append(getShortTypeName(arg));
-		}
+		result.append(getParameterDeclaration(", ", true));
 		result.append(')');
 		return result.toString();
 	}
+	
+	public String getParameterDeclaration(String sep, boolean simpleTypeNames) {
+		final StringBuilder result = new StringBuilder();
+		final Type[] arguments = Type.getArgumentTypes(getDesc());
+		boolean comma = false;
+		for (final Type arg : arguments) {
+			if (comma) {
+				result.append(sep);
+			} else {
+				comma = true;
+			}
+			String name = arg.getClassName();
+			if (simpleTypeNames) {
+				name = getSimpleTypeName(name);
+			}
+			name = name.replace('$', '.');
+			result.append(name);
+		}
+		if ((getAccess() & Opcodes.ACC_VARARGS) != 0) {
+			result.setLength(result.length() - 2);
+			result.append("...");
+		}
+		return result.toString();
+	}
 
-	private String getShortTypeName(final Type type) {
-		final String name = type.getClassName();
+	private static String getSimpleTypeName(final String name) {
 		final int pos = name.lastIndexOf('.');
-		final String shortName = pos == -1 ? name : name.substring(pos + 1);
-		return shortName.replace('$', '.');
+		return pos == -1 ? name : name.substring(pos + 1);
 	}
 
 }

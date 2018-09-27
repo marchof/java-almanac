@@ -32,12 +32,12 @@ public class Loader {
 		this.filter = filter;
 	}
 
-	public void loadClassFile(InputStream in) throws IOException {
+	public void loadClassFile(InputStream in, String module) throws IOException {
 		ClassReader reader = new ClassReader(in);
 		if (!filter.filterClass(reader.getClassName(), reader.getAccess())) {
 			return;
 		}
-		ClassInfo c = new ClassInfo(reader.getClassName(), reader.getAccess(), reader.getSuperName(),
+		ClassInfo c = new ClassInfo(reader.getClassName(), reader.getAccess(), module, reader.getSuperName(),
 				reader.getInterfaces());
 		reader.accept(new ClassVisitor(ASM_API) {
 
@@ -80,12 +80,12 @@ public class Loader {
 		output.accept(c);
 	}
 
-	public void loadZip(InputStream in) throws IOException {
+	public void loadZip(InputStream in, String module) throws IOException {
 		try (ZipInputStream zip = new ZipInputStream(in)) {
 			ZipEntry entry;
 			while ((entry = zip.getNextEntry()) != null) {
 				if (entry.getName().endsWith(".class")) {
-					loadClassFile(zip);
+					loadClassFile(zip, module);
 				}
 			}
 		}
@@ -93,11 +93,16 @@ public class Loader {
 
 	public void loadZip(Path path) throws IOException {
 		try (InputStream in = Files.newInputStream(path)) {
-			loadZip(in);
+			loadZip(in, "undefined");
 		}
 	}
 
 	public void loadJMod(Path path) throws IOException {
+		String module = path.getFileName().toString();
+		int idx = module.lastIndexOf('.');
+		if (idx != -1) {
+			module = module.substring(0, idx);
+		}
 		try (InputStream in = Files.newInputStream(path)) {
 			// Remove header:
 			in.read();
@@ -105,7 +110,7 @@ public class Loader {
 			in.read();
 			in.read();
 
-			loadZip(in);
+			loadZip(in, module);
 		}
 	}
 

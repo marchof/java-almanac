@@ -12,15 +12,17 @@ import org.objectweb.asm.Opcodes;
  */
 public class ClassInfo extends ElementInfo {
 
-	private String name;
-	private int access;
+	private final String name;
+	private final int access;
+	private final String module;
 
 	private Set<FieldInfo> fields;
 	private Set<MethodInfo> methods;
 
-	public ClassInfo(String name, int access, String superclass, String[] interfaces) {
+	public ClassInfo(String name, int access, String module, String superclass, String[] interfaces) {
 		this.name = name;
 		this.access = access;
+		this.module = module;
 		this.fields = new HashSet<>();
 		this.methods = new HashSet<>();
 		addTags(ModifierTag.getModifiers(access));
@@ -73,6 +75,10 @@ public class ClassInfo extends ElementInfo {
 
 	public int getAccess() {
 		return access;
+	}
+
+	public String getModule() {
+		return module;
 	}
 
 	@Override

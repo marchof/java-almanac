@@ -6,15 +6,18 @@ import java.io.OutputStream;
 
 import apidiff.cmp.Delta;
 import apidiff.cmp.Delta.Status;
+import apidiff.javadoc.IJavaDocLinkProvider;
 import apidiff.model.ElementInfo;
 import apidiff.model.ElementTag;
 
 public class HTMLRenderer {
 
 	private IMultiReportOutput output;
+	private IJavaDocLinkProvider doc;
 
-	public HTMLRenderer(IMultiReportOutput output) {
+	public HTMLRenderer(IMultiReportOutput output, IJavaDocLinkProvider doc) {
 		this.output = output;
+		this.doc = doc;
 	}
 
 	public void render(Delta delta) throws IOException {
@@ -39,7 +42,11 @@ public class HTMLRenderer {
 		HTMLElement tr = tbody.tr();
 		ElementInfo element = delta.getElement();
 		HTMLElement td = tr.td(element.getType().name().toLowerCase());
-		trimText(td, element.getName(), 80);
+		HTMLElement linked = td;
+		if (!Status.REMOVED.equals(delta.getStatus())) {
+			linked = linked.a(doc.getLink(element));
+		}
+		trimText(linked, element.getName(), 80);
 		renderTags(tr.td(), delta);
 		for (Delta c : delta.getChildren()) {
 			renderElement(tbody, c);
