@@ -12,7 +12,6 @@ import org.objectweb.asm.Opcodes;
  */
 public class ClassInfo extends ElementInfo {
 
-	private final String name;
 	private final int access;
 	private final String module;
 
@@ -20,7 +19,7 @@ public class ClassInfo extends ElementInfo {
 	private Set<MethodInfo> methods;
 
 	public ClassInfo(String name, int access, String module, String superclass, String[] interfaces) {
-		this.name = name;
+		super(name);
 		this.access = access;
 		this.module = module;
 		this.fields = new HashSet<>();
@@ -62,15 +61,16 @@ public class ClassInfo extends ElementInfo {
 		}
 	}
 
-	public String getName() {
+	public String getDisplayName() {
+		String name = getName();
 		int idx = name.lastIndexOf('/');
 		String simpleName = idx == -1 ? name : name.substring(idx + 1);
 		return simpleName.replace('$', '.');
 	}
 
 	public String getPackageName() {
-		int idx = name.lastIndexOf('/');
-		return idx == -1 ? "<default>" : name.substring(0, idx);
+		int idx = getName().lastIndexOf('/');
+		return idx == -1 ? "<default>" : getName().substring(0, idx);
 	}
 
 	public int getAccess() {
@@ -79,20 +79,6 @@ public class ClassInfo extends ElementInfo {
 
 	public String getModule() {
 		return module;
-	}
-
-	@Override
-	public int hashCode() {
-		return name.hashCode();
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (!(obj instanceof ClassInfo)) {
-			return false;
-		}
-		ClassInfo other = (ClassInfo) obj;
-		return name.contentEquals(other.name);
 	}
 
 	@Override

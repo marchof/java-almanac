@@ -6,25 +6,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 
-public class ApiInfo extends ElementInfo implements Consumer<ClassInfo>{
-
-	private String info;
+public class ApiInfo extends ElementInfo implements Consumer<ClassInfo> {
 
 	private final Map<String, PackageInfo> packages;
 
-	public ApiInfo(String info) {
-		this.info = info;
+	public ApiInfo(String name) {
+		super(name);
 		this.packages = new HashMap<>();
 	}
-	
+
 	@Override
 	public ElementType getType() {
 		return ElementType.API;
 	}
 
 	@Override
-	public String getName() {
-		return info;
+	public String getDisplayName() {
+		return getName();
 	}
 
 	@Override

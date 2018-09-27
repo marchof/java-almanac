@@ -46,7 +46,7 @@ public class HTMLRenderer {
 		if (!Status.REMOVED.equals(delta.getStatus())) {
 			linked = linked.a(doc.getLink(element));
 		}
-		trimText(linked, element.getName(), 80);
+		trimText(linked, element.getDisplayName(), 80);
 		renderTags(tr.td(), delta);
 		for (Delta c : delta.getChildren()) {
 			renderElement(tbody, c);

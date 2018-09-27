@@ -6,18 +6,16 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Identity: vmname
+ * Identity: name
  */
 public class PackageInfo extends ElementInfo {
 
 	private final Set<ClassInfo> classes;
 
-	private final String vmname;
-
 	private final String module;
 
-	PackageInfo(String vmname, String module) {
-		this.vmname = vmname;
+	PackageInfo(String name, String module) {
+		super(name);
 		this.module = module;
 		this.classes = new HashSet<>();
 	}
@@ -26,13 +24,9 @@ public class PackageInfo extends ElementInfo {
 	public ElementType getType() {
 		return ElementType.PACKAGE;
 	}
-	
-	public String getVMName() {
-		return vmname;
-	}
 
-	public String getName() {
-		return vmname.replace('/', '.');
+	public String getDisplayName() {
+		return getName().replace('/', '.');
 	}
 	
 	public String getModule() {
@@ -43,20 +37,6 @@ public class PackageInfo extends ElementInfo {
 		if (!classes.add(c)) {
 			throw new IllegalStateException("Duplicate class " + c);
 		}
-	}
-
-	@Override
-	public int hashCode() {
-		return vmname.hashCode();
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (!(obj instanceof PackageInfo)) {
-			return false;
-		}
-		PackageInfo other = (PackageInfo) obj;
-		return vmname.equals(other.vmname);
 	}
 
 	@Override

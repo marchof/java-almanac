@@ -23,12 +23,12 @@ public class JavaDoc11 implements IJavaDocLinkProvider {
 
 	@Override
 	public String getPackageLink(PackageInfo info) {
-		return getPackageBase(info.getModule(), info.getVMName()) + "package-summary.html";
+		return getPackageBase(info.getModule(), info.getName()) + "package-summary.html";
 	}
 
 	@Override
 	public String getClassLink(ClassInfo info) {
-		return getPackageBase(info.getModule(), info.getPackageName()) + info.getName() + ".html";
+		return getPackageBase(info.getModule(), info.getPackageName()) + info.getDisplayName() + ".html";
 	}
 
 	@Override
@@ -36,7 +36,7 @@ public class JavaDoc11 implements IJavaDocLinkProvider {
 		StringBuilder sb = new StringBuilder();
 		sb.append(getClassLink(info.getOwner()));
 		sb.append("#");
-		sb.append(info.getRawName());
+		sb.append(info.getName());
 		sb.append("(");
 		sb.append(info.getParameterDeclaration(",", false));
 		sb.append(")");

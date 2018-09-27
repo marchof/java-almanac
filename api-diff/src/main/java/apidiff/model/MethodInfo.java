@@ -8,7 +8,6 @@ import org.objectweb.asm.Type;
  */
 public class MethodInfo extends MemberInfo {
 
-
 	public MethodInfo(ClassInfo owner, String name, int access, String desc, String[] exceptions) {
 		super(owner, name, access, desc);
 		addTags(ModifierTag.getModifiers(access));
@@ -26,36 +25,32 @@ public class MethodInfo extends MemberInfo {
 
 	@Override
 	public int hashCode() {
-		return name.hashCode() ^ (31 + desc.hashCode());
+		return super.hashCode() * 31 + desc.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (!(obj instanceof MethodInfo)) {
+		if (!super.equals(obj)) {
 			return false;
 		}
 		MethodInfo other = (MethodInfo) obj;
-		return name.equals(other.name) && desc.equals(other.desc);
+		return desc.equals(other.desc);
 	}
 
-	public String getRawName() {
-		return name;
-	}
-	
 	@Override
-	public String getName() {
+	public String getDisplayName() {
 		final StringBuilder result = new StringBuilder();
-		if ("<init>".equals(name)) {
-			result.append(getOwner().getName());
+		if ("<init>".equals(getName())) {
+			result.append(getOwner().getDisplayName());
 		} else {
-			result.append(name);
+			result.append(getName());
 		}
 		result.append('(');
 		result.append(getParameterDeclaration(", ", true));
 		result.append(')');
 		return result.toString();
 	}
-	
+
 	public String getParameterDeclaration(String sep, boolean simpleTypeNames) {
 		final StringBuilder result = new StringBuilder();
 		final Type[] arguments = Type.getArgumentTypes(getDesc());

@@ -16,22 +16,8 @@ public class FieldInfo extends MemberInfo {
 	}
 
 	@Override
-	public String getName() {
-		return name;
-	}
-
-	@Override
-	public int hashCode() {
-		return name.hashCode();
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (!(obj instanceof MemberInfo)) {
-			return false;
-		}
-		MemberInfo other = (MemberInfo) obj;
-		return name.equals(other.name);
+	public String getDisplayName() {
+		return getName();
 	}
 
 }
