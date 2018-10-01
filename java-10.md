@@ -4,6 +4,8 @@ Release Date: 2018/03/20
 
 Bytecode Version: 54
 
+API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V9/V10/index.html)
+
 ## Language
 
 * `var` keyword ([JEP 286](http://openjdk.java.net/jeps/286))
