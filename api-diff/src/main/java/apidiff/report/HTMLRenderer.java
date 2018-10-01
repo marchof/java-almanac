@@ -29,7 +29,9 @@ public class HTMLRenderer {
 			head.link("stylesheet", "style.css", "text/css");
 
 			HTMLElement body = html.body();
-			body.h1().text(delta.getElement().getName());
+			HTMLElement h1 = body.h1();
+			h1.text("New APIs in ");
+			h1.text(delta.getElement().getName());
 
 			HTMLElement tbody = body.table().tbody();
 			for (Delta c : delta.getChildren()) {

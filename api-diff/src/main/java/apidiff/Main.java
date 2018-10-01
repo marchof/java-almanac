@@ -1,11 +1,10 @@
 package apidiff;
 
 import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import apidiff.cmp.Delta;
-import apidiff.javadoc.IJavaDocLinkProvider;
-import apidiff.javadoc.JavaDoc11;
 import apidiff.loader.Loader;
 import apidiff.loader.PublicApiFilter;
 import apidiff.model.ApiInfo;
@@ -13,28 +12,26 @@ import apidiff.report.FileMultiReportOutput;
 import apidiff.report.HTMLRenderer;
 
 public class Main {
-	
-	private static final ApiInfo loadVersion(String version) throws IOException {
-		ApiInfo api = new ApiInfo(version);
+
+	private static ApiInfo loadVersion(JDK jdk) throws IOException {
+		ApiInfo api = new ApiInfo(jdk.getName());
 		Loader loader = new Loader(api, new PublicApiFilter());
-		loader.loadJDK(Paths.get(System.getProperty("user.home"), ".sdkman/candidates/java", version));
-		return api;	
+		loader.loadJDK(Paths.get(System.getProperty("user.home"), ".sdkman/candidates/java", jdk.getImpl()));
+		return api;
+	}
+
+	private static void createReport(JDK a, JDK b) throws IOException {
+		ApiInfo api1 = loadVersion(a);
+		ApiInfo api2 = loadVersion(b);
+		Delta delta = new Delta(api1, api2);
+		Path basedir = Paths.get("./target/diff").resolve(a.name()).resolve(b.name());
+		new HTMLRenderer(new FileMultiReportOutput(basedir), b.getDoc()).render(delta);
 	}
 
 	public static void main(String[] args) throws IOException {
-		
-		// ApiInfo api1 = loadVersion("8.0.181-oracle");
-	    // ApiInfo api1 = loadVersion("9.0.4-open");
-		 ApiInfo api1 = loadVersion("10.0.2-open");
-		 ApiInfo api2 = loadVersion("11.0.0-open");
-		// ApiInfo api2 = loadVersion("12.ea.08-open");
-	
-		IJavaDocLinkProvider doc = new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/");
-		 
-		Delta delta = new Delta(api1, api2);
-		
-		new HTMLRenderer(new FileMultiReportOutput(Paths.get("./target/diff")), doc).render(delta);
-		delta.tree(System.out);
+		createReport(JDK.V8, JDK.V9);
+		createReport(JDK.V9, JDK.V10);
+		createReport(JDK.V10, JDK.V11);
 	}
 
 }
