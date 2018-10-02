@@ -32,6 +32,7 @@ public class Main {
 		createReport(JDK.V8, JDK.V9);
 		createReport(JDK.V9, JDK.V10);
 		createReport(JDK.V10, JDK.V11);
+		createReport(JDK.V11, JDK.V12);
 	}
 
 }

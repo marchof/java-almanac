@@ -4,6 +4,7 @@ import apidiff.javadoc.IJavaDocLinkProvider;
 import apidiff.javadoc.JavaDoc10;
 import apidiff.javadoc.JavaDoc11;
 import apidiff.javadoc.JavaDoc9;
+import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
@@ -13,7 +14,9 @@ public enum JDK {
 	
 	V10("Java 10", "10.0.2-open", new JavaDoc10("https://docs.oracle.com/javase/10/docs/api/")),
 	
-	V11("Java 11", "11.0.0-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/"));
+	V11("Java 11", "11.0.0-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
+	
+	V12("Java 12", "12.ea.12-open", new NoJavaDoc());
 
 	private String name;
 	private String impl;
