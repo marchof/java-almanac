@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import apidiff.cmp.Delta;
 import apidiff.cmp.Delta.Status;
 import apidiff.javadoc.IJavaDocLinkProvider;
+import apidiff.model.ApiInfo;
 import apidiff.model.ElementInfo;
 import apidiff.model.ElementTag;
 
@@ -32,11 +33,24 @@ public class HTMLRenderer {
 			HTMLElement h1 = body.h1();
 			h1.text("New APIs in ");
 			h1.text(delta.getElement().getName());
+			
+			HTMLElement p = body.p();
+			p.text("Comparing ");
+			p.text(((ApiInfo)delta.getNewElement()).getDetail());
+			p.text(" with ");
+			p.text(((ApiInfo)delta.getOldElement()).getDetail());
+			p.text(".");
+			
 
 			HTMLElement tbody = body.table().tbody();
 			for (Delta c : delta.getChildren()) {
 				renderElement(tbody, c);
 			}
+			
+			p = body.p();
+			p.text("Report provided by ");
+			p.a("https://github.com/marchof/java-almanac").text("https://github.com/marchof/java-almanac");
+			p.text(".");
 		}
 	}
 

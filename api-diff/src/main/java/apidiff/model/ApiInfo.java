@@ -9,10 +9,16 @@ import java.util.function.Consumer;
 public class ApiInfo extends ElementInfo implements Consumer<ClassInfo> {
 
 	private final Map<String, PackageInfo> packages;
+	private String detail;
 
-	public ApiInfo(String name) {
+	public ApiInfo(String name, String detail) {
 		super(name);
+		this.detail = detail;
 		this.packages = new HashMap<>();
+	}
+	
+	public String getDetail() {
+		return detail;
 	}
 
 	@Override

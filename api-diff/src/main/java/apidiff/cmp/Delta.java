@@ -21,29 +21,31 @@ public class Delta {
 
 	private final Status status;
 
-	private final ElementInfo element;
+	private final ElementInfo oldElement, newElement;
 
 	private final List<Delta> children;
 
 	private final Set<ElementTag> addedTags, removedTags;
 
-	public <E extends ElementInfo> Delta(E oldElement, E newElement) {
+	public Delta(ElementInfo oldElement, ElementInfo newElement) {
+		this.oldElement = oldElement;
+		this.newElement = newElement;
+
 		Set<? extends ElementTag> newTags = newElement.getTags();
 		Set<? extends ElementTag> oldTags = oldElement.getTags();
 		this.addedTags = new HashSet<>(newTags);
 		this.addedTags.removeAll(oldTags);
 		this.removedTags = new HashSet<>(oldTags);
 		this.removedTags.removeAll(newTags);
-		
+
 		status = (addedTags.isEmpty() && removedTags.isEmpty()) ? Status.NOTMODIFIED : Status.MODIFIED;
-		element = newElement;
 		Map<ElementInfo, ElementInfo> oldChildren = new HashMap<>();
 		oldElement.getChildren().forEach(c -> oldChildren.put(c, c));
 		children = new ArrayList<Delta>();
 		for (ElementInfo newChild : newElement.getChildren()) {
 			ElementInfo oldChild = oldChildren.remove(newChild);
 			if (oldChild == null) {
-				children.add(new Delta(Status.ADDED, newChild));
+				children.add(new Delta(Status.ADDED, oldChild, newChild));
 			} else {
 				Delta delta = new Delta((ElementInfo) oldChild, (ElementInfo) newChild);
 				if (delta.status != Status.NOTMODIFIED || !delta.children.isEmpty()) {
@@ -51,16 +53,17 @@ public class Delta {
 				}
 			}
 		}
-		oldChildren.keySet().forEach(c -> children.add(new Delta(Status.REMOVED, c)));
+		oldChildren.keySet().forEach(c -> children.add(new Delta(Status.REMOVED, c, null)));
 		Collections.sort(children, Comparator.comparing((Delta d) -> d.getElement().toString()));
 	}
 
-	private Delta(Status status, ElementInfo element) {
+	private Delta(Status status, ElementInfo oldElement, ElementInfo newElement) {
 		this.status = status;
-		this.element = element;
+		this.oldElement = oldElement;
+		this.newElement = newElement;
 		this.children = Collections.emptyList();
 		this.addedTags = Collections.emptySet();
-		this.removedTags = Collections.emptySet();		
+		this.removedTags = Collections.emptySet();
 	}
 
 	public Status getStatus() {
@@ -68,17 +71,25 @@ public class Delta {
 	}
 
 	public ElementInfo getElement() {
-		return element;
+		return newElement == null ? oldElement : newElement;
+	}
+	
+	public ElementInfo getOldElement() {
+		return oldElement;
+	}
+	
+	public ElementInfo getNewElement() {
+		return newElement;
 	}
 
 	public List<Delta> getChildren() {
 		return children;
 	}
-	
+
 	public Set<ElementTag> getAddedTags() {
 		return addedTags;
 	}
-	
+
 	public Set<ElementTag> getRemovedTags() {
 		return removedTags;
 	}
@@ -87,13 +98,13 @@ public class Delta {
 	public String toString() {
 		switch (status) {
 		case ADDED:
-			return "+ " + element;
+			return "+ " + newElement;
 		case REMOVED:
-			return "- " + element;
+			return "- " + oldElement;
 		case MODIFIED:
-			return "m " + element;
+			return "m " + newElement;
 		case NOTMODIFIED:
-			return element.toString();
+			return newElement.toString();
 		}
 		return null;
 	}

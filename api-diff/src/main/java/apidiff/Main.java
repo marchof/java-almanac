@@ -14,7 +14,7 @@ import apidiff.report.HTMLRenderer;
 public class Main {
 
 	private static ApiInfo loadVersion(JDK jdk) throws IOException {
-		ApiInfo api = new ApiInfo(jdk.getName());
+		ApiInfo api = new ApiInfo(jdk.getName(), jdk.getImpl());
 		Loader loader = new Loader(api, new PublicApiFilter());
 		loader.loadJDK(Paths.get(System.getProperty("user.home"), ".sdkman/candidates/java", jdk.getImpl()));
 		return api;
