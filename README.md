@@ -23,6 +23,7 @@ Collection of information about the history of Java primarily from a technical p
 -([diff](http://download.eclipselab.org/jdkdiff/V8/V9/index.html))-> **Java 9**
 -([diff](http://download.eclipselab.org/jdkdiff/V9/V10/index.html))-> **Java 10**
 -([diff](http://download.eclipselab.org/jdkdiff/V10/V11/index.html))-> **Java 11**
+-([diff](http://download.eclipselab.org/jdkdiff/V11/V12/index.html))-> **Java 12**
 
 More detailed API diff reports based on the [japicmp](https://github.com/siom79/japicmp) tool can be found [here](https://github.com/AdoptOpenJDK/jdk-api-diff).
 
