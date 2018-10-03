@@ -14,7 +14,7 @@ public class PackageInfo extends ElementInfo {
 
 	private final String module;
 
-	PackageInfo(String name, String module) {
+	public PackageInfo(String name, String module) {
 		super(name);
 		this.module = module;
 		this.classes = new HashSet<>();
