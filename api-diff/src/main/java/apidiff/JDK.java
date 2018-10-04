@@ -8,7 +8,7 @@ import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
-	V8("Java 8", "8.0.181-oracle", new JavaDoc10("https://docs.oracle.com/javase/8/docs/api/")),
+	V8("Java 8", "8.0.181-oracle", new NoJavaDoc()),
 	
 	V9("Java 9", "9.0.4-open", new JavaDoc9("https://docs.oracle.com/javase/9/docs/api/")),
 	

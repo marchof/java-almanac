@@ -84,6 +84,3 @@ abstract class JavaDocTestBase {
 	}
 
 }
-
-// array parameter
-// vararg parameter
