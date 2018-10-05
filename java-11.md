@@ -6,6 +6,8 @@ Bytecode Version: 55
 
 Release Notes: http://jdk.java.net/11/release-notes
 
+Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se11/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se11/html/index.html), [JavaDoc](https://docs.oracle.com/en/java/javase/11/docs/api/)
+
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V10/V11/index.html)
 
 Download: [OpenJDK](http://jdk.java.net/11/), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html), [Zulu](https://www.azul.com/downloads/zulu/)

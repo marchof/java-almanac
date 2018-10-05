@@ -4,6 +4,8 @@ Release Date: 2018/03/20
 
 Bytecode Version: 54
 
+Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se11/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se10/html/index.html), [JavaDoc](https://docs.oracle.com/javase/10/docs/api/)
+
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V9/V10/index.html)
 
 ## Language
