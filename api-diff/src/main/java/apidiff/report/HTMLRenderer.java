@@ -3,6 +3,8 @@ package apidiff.report;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import apidiff.cmp.Delta;
 import apidiff.cmp.Delta.Status;
@@ -33,24 +35,20 @@ public class HTMLRenderer {
 			HTMLElement h1 = body.h1();
 			h1.text("New APIs in ");
 			h1.text(delta.getElement().getName());
-			
+
 			HTMLElement p = body.p();
 			p.text("Comparing ");
-			p.text(((ApiInfo)delta.getNewElement()).getDetail());
+			p.text(((ApiInfo) delta.getNewElement()).getDetail());
 			p.text(" with ");
-			p.text(((ApiInfo)delta.getOldElement()).getDetail());
+			p.text(((ApiInfo) delta.getOldElement()).getDetail());
 			p.text(".");
-			
 
 			HTMLElement tbody = body.table().tbody();
 			for (Delta c : delta.getChildren()) {
 				renderElement(tbody, c);
 			}
-			
-			p = body.p();
-			p.text("Report provided by ");
-			p.a("https://github.com/marchof/java-almanac").text("https://github.com/marchof/java-almanac");
-			p.text(".");
+
+			renderFooter(body);
 		}
 	}
 
@@ -91,7 +89,7 @@ public class HTMLRenderer {
 			span.text(tag.toString());
 		}
 	}
-	
+
 	private void trimText(HTMLElement parent, String text, int maxlength) throws IOException {
 		if (text.length() > maxlength) {
 			parent = parent.div();
@@ -99,6 +97,14 @@ public class HTMLRenderer {
 			text = text.substring(0, maxlength) + "...";
 		}
 		parent.text(text);
+	}
+
+	private void renderFooter(HTMLElement parent) throws IOException {
+		HTMLElement p = parent.p();
+		p.text("Report created by ");
+		p.a("https://github.com/marchof/java-almanac").text("marchof/java-almanac");
+		p.text(" on ");
+		p.text(LocalDate.now().format(DateTimeFormatter.ISO_DATE));
 	}
 
 	private void copyResources() throws IOException {
