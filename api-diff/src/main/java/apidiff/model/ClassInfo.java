@@ -37,14 +37,14 @@ public class ClassInfo extends ElementInfo {
 
 	@Override
 	public ElementType getType() {
+		if ((access & Opcodes.ACC_ANNOTATION) != 0) {
+			return ElementType.ANNOTATION;
+		}
 		if ((access & Opcodes.ACC_INTERFACE) != 0) {
 			return ElementType.INTERFACE;
 		}
 		if ((access & Opcodes.ACC_ENUM) != 0) {
 			return ElementType.ENUM;
-		}
-		if ((access & Opcodes.ACC_ANNOTATION) != 0) {
-			return ElementType.ANNOTATION;
 		}
 		return ElementType.CLASS;
 	}
