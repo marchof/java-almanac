@@ -12,18 +12,21 @@ API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V8/V9/index.html)
 
 ## Language
 
-* Java Modules (Project Jigsaw)
+* Java Modules (Project Jigsaw, [JEP 261](http://openjdk.java.net/jeps/261))
 * Private methods in interfaces ([JEP 213](http://openjdk.java.net/jeps/213))
 
 
 ## Java API
 
 * Reactive Streams
+* Indify String Concatenation ([JEP 280](http://openjdk.java.net/jeps/280))
 * Var Handles ([JEP 193](http://openjdk.java.net/jeps/193))
 * `Object.finalize()` deprecated
 * Enhanced Deprecation ([JEP 277](http://openjdk.java.net/jeps/277)) 
 
 ## Tools
 
-* JShell
-* jlink
+* JShell ([JEP 222](http://openjdk.java.net/jeps/222))
+* jlink ([JEP 282](http://openjdk.java.net/jeps/282))
+
+Complete List: [JDK 9](http://openjdk.java.net/projects/jdk9/)
