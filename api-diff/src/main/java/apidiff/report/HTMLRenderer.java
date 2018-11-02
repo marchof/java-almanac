@@ -57,8 +57,18 @@ public class HTMLRenderer {
 		ElementInfo element = delta.getElement();
 		HTMLElement td = tr.td(element.getType().name().toLowerCase());
 		HTMLElement linked = td;
-		if (!Status.REMOVED.equals(delta.getStatus())) {
+		switch (delta.getStatus()) {
+		case ADDED:
 			linked = linked.a(doc.getLink(element));
+			break;
+		case REMOVED:
+			break;
+		case MODIFIED:
+			linked = linked.a(doc.getLink(element));
+			break;
+		case NOTMODIFIED:
+			linked = linked.div("notmodified");
+			break;
 		}
 		trimText(linked, element.getDisplayName(), 80);
 		renderTags(tr.td(), delta);
