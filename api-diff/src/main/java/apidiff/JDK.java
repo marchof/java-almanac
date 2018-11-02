@@ -8,15 +8,15 @@ import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
-	V8("Java 8", "8.0.181-oracle", new NoJavaDoc()),
+	V8("Java 8", "8.0.191-oracle", new NoJavaDoc()),
 	
 	V9("Java 9", "9.0.4-open", new JavaDoc9("https://docs.oracle.com/javase/9/docs/api/")),
 	
 	V10("Java 10", "10.0.2-open", new JavaDoc10("https://docs.oracle.com/javase/10/docs/api/")),
 	
-	V11("Java 11", "11.0.0-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
+	V11("Java 11", "11.0.1-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
 	
-	V12("Java 12", "12.ea.12-open", new JavaDoc11("http://cr.openjdk.java.net/~iris/se/12/build/latest/api/"));
+	V12("Java 12", "12.ea.17-open", new JavaDoc11("http://cr.openjdk.java.net/~iris/se/12/build/latest/api/"));
 
 	private String name;
 	private String impl;
