@@ -23,6 +23,8 @@ public class Loader {
 
 	static final int ASM_API = Opcodes.ASM7;
 
+	static final int MAX_VERSION = Opcodes.V12;
+
 	private Consumer<ClassInfo> output;
 	private IFilter filter;
 
@@ -32,7 +34,7 @@ public class Loader {
 	}
 
 	public void loadClassFile(InputStream in, String module) throws IOException {
-		ClassReader reader = new ClassReader(in);
+		ClassReader reader = new ClassReader(downgrade(in));
 		if (!filter.filterClass(reader.getClassName(), reader.getAccess())) {
 			return;
 		}
@@ -77,6 +79,16 @@ public class Loader {
 			}
 		}, ClassReader.SKIP_CODE);
 		output.accept(c);
+	}
+
+	private static byte[] downgrade(InputStream in) throws IOException {
+		byte[] buffer = in.readAllBytes();
+		int version = (((buffer[6] & 0xFF) << 8) | (buffer[7] & 0xFF));
+		if (version > MAX_VERSION) {
+			buffer[6] = (byte) (MAX_VERSION >>> 8);
+			buffer[7] = (MAX_VERSION);
+		}
+		return buffer;
 	}
 
 	public void loadZip(InputStream in, String module) throws IOException {
@@ -124,7 +136,7 @@ public class Loader {
 			}
 		}
 	}
-	
+
 	public void loadJDK(Path path) throws IOException {
 		Path lib = path.resolve("jre/lib");
 		if (Files.isDirectory(lib)) {
