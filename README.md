@@ -19,12 +19,13 @@ Collection of information about the history of Java primarily from a technical p
 
 ## API Evolution
 
-| from       | to | to | to | to |
-|------------|----|----|----|----|
-| **Java 8** | [Java 9](http://download.eclipselab.org/jdkdiff/V8/V9/index.html) | [Java 10](http://download.eclipselab.org/jdkdiff/V8/V10/index.html) | [Java 11](http://download.eclipselab.org/jdkdiff/V8/V11/index.html) | [Java 12](http://download.eclipselab.org/jdkdiff/V8/V12/index.html) |
-| **Java 9** | | [Java 10](http://download.eclipselab.org/jdkdiff/V9/V10/index.html) | [Java 11](http://download.eclipselab.org/jdkdiff/V9/V11/index.html) | [Java 12](http://download.eclipselab.org/jdkdiff/V9/V12/index.html) |
-| **Java 10** | | | [Java 11](http://download.eclipselab.org/jdkdiff/V10/V11/index.html) | [Java 12](http://download.eclipselab.org/jdkdiff/V10/V12/index.html) |
-| **Java 11** | | | | [Java 12](http://download.eclipselab.org/jdkdiff/V11/V12/index.html) |
+| from       | to | to | to | to | to |
+|------------|----|----|----|----|----|
+| **Java 8** | [Java 9](http://download.eclipselab.org/jdkdiff/V8/V9/index.html) | [Java 10](http://download.eclipselab.org/jdkdiff/V8/V10/index.html) | [Java 11](http://download.eclipselab.org/jdkdiff/V8/V11/index.html) | [Java 12](http://download.eclipselab.org/jdkdiff/V8/V12/index.html) | [Java 13](http://download.eclipselab.org/jdkdiff/V8/V13/index.html) |
+| **Java 9** | | [Java 10](http://download.eclipselab.org/jdkdiff/V9/V10/index.html) | [Java 11](http://download.eclipselab.org/jdkdiff/V9/V11/index.html) | [Java 12](http://download.eclipselab.org/jdkdiff/V9/V12/index.html) | [Java 13](http://download.eclipselab.org/jdkdiff/V9/V13/index.html) |
+| **Java 10** | | | [Java 11](http://download.eclipselab.org/jdkdiff/V10/V11/index.html) | [Java 12](http://download.eclipselab.org/jdkdiff/V10/V12/index.html) | [Java 13](http://download.eclipselab.org/jdkdiff/V10/V13/index.html) |
+| **Java 11** | | | | [Java 12](http://download.eclipselab.org/jdkdiff/V11/V12/index.html) | [Java 13](http://download.eclipselab.org/jdkdiff/V11/V13/index.html) |
+| **Java 12** | | | | | [Java 13](http://download.eclipselab.org/jdkdiff/V12/V13/index.html) |
 
 
 More detailed API diff reports based on the [japicmp](https://github.com/siom79/japicmp) tool can be found [here](https://github.com/AdoptOpenJDK/jdk-api-diff).
