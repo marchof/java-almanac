@@ -21,8 +21,7 @@ import apidiff.model.MethodInfo;
 
 public class Loader {
 
-	@SuppressWarnings("deprecation")
-	static final int ASM_API = Opcodes.ASM7_EXPERIMENTAL;
+	static final int ASM_API = Opcodes.ASM7;
 
 	private Consumer<ClassInfo> output;
 	private IFilter filter;
