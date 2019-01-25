@@ -28,8 +28,9 @@ Collection of information about the history of Java primarily from a technical p
 | **Java 11** | | | | [Java 12](http://download.eclipselab.org/jdkdiff/V11/V12/index.html) | [Java 13](http://download.eclipselab.org/jdkdiff/V11/V13/index.html) |
 | **Java 12** | | | | | [Java 13](http://download.eclipselab.org/jdkdiff/V12/V13/index.html) |
 
+The reports are based on simple comparison of all `public` and `protected` APIs of the `java.*` and `javax.*` packages of the respective JDKs. They do not make statements about [compatibility](https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility).
 
-More detailed API diff reports based on the [japicmp](https://github.com/siom79/japicmp) tool can be found [here](https://github.com/AdoptOpenJDK/jdk-api-diff).
+More detailed API comparisons based on the [japicmp](https://github.com/siom79/japicmp) tool can be found [here](https://github.com/AdoptOpenJDK/jdk-api-diff).
 
 ## License
 
