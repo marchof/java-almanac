@@ -16,9 +16,9 @@ public enum JDK {
 	
 	V11("Java 11", "11.0.2-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
 	
-	V12("Java 12", "12.ea.26-open", new JavaDoc11("https://download.java.net/java/early_access/jdk12/docs/api/")),
+	V12("Java 12", "12.ea.31-open", new JavaDoc11("https://download.java.net/java/early_access/jdk12/docs/api/")),
 
-	V13("Java 13", "13.ea.02-open", new JavaDoc11("https://download.java.net/java/early_access/jdk13/docs/api/"));
+	V13("Java 13", "13.ea.07-open", new JavaDoc11("https://download.java.net/java/early_access/jdk13/docs/api/"));
 
 	private String name;
 	private String impl;
