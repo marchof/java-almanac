@@ -11,7 +11,8 @@ public class ImplementsTag implements ElementTag {
 	@Override
 	public String toString() {
 		int idx = intf.lastIndexOf('/');
-		return "implements " + (idx == -1 ? intf : intf.substring(idx + 1));
+		String shortName = idx == -1 ? intf : intf.substring(idx + 1);
+		return "implements " + shortName.replace('$', '.');
 	}
 
 	@Override

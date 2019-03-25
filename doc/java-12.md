@@ -1,10 +1,12 @@
 # Java 12
 
-Release Date: 2019/03
+Release Date: 2019/03/19
 
 Bytecode Version: 56
 
-Documentation: [Latest JavaDoc](http://cr.openjdk.java.net/~iris/se/12/build/latest/api/)
+Release Notes: http://jdk.java.net/12/release-notes
+
+Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se12/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se12/html/index.html), [JavaDoc](https://docs.oracle.com/en/java/javase/12/docs/api/)
 
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V11/V12/index.html)
 
