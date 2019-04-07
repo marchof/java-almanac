@@ -45,55 +45,60 @@ public class HTMLRenderer {
 
 			HTMLElement tbody = body.table().tbody();
 			for (Delta c : delta.getChildren()) {
-				renderElement(tbody, c);
+				renderDelta(tbody, c, 0);
 			}
 
 			renderFooter(body);
 		}
 	}
 
-	private void renderElement(HTMLElement tbody, Delta delta) throws IOException {
+	private void renderDelta(HTMLElement tbody, Delta delta, int level) throws IOException {
 		HTMLElement tr = tbody.tr();
-		ElementInfo element = delta.getElement();
-		HTMLElement td = tr.td(element.getType().name().toLowerCase());
-		HTMLElement linked = td;
-		switch (delta.getStatus()) {
-		case ADDED:
-			linked = linked.a(doc.getLink(element));
-			break;
-		case REMOVED:
-			break;
-		case MODIFIED:
-			linked = linked.a(doc.getLink(element));
-			break;
-		case NOTMODIFIED:
-			linked = linked.div("notmodified");
-			break;
-		}
-		trimText(linked, element.getDisplayName(), 80);
+		renderElement(tr.td(), delta, level);
 		renderTags(tr.td(), delta);
 		for (Delta c : delta.getChildren()) {
-			renderElement(tbody, c);
+			renderDelta(tbody, c, level + 1);
 		}
 	}
 
-	private void renderTags(HTMLElement td, Delta delta) throws IOException {
+	private void renderElement(HTMLElement parent, Delta delta, int level) throws IOException {
+		ElementInfo element = delta.getElement();
+		parent = parent.div(element.getType().name().toLowerCase());
+		parent.attr("style", String.format("margin-left: %dpx;", level * 18));
+		parent = addLink(parent, delta);
+		trimText(parent, element.getDisplayName(), 80);
+	}
+
+	private HTMLElement addLink(HTMLElement parent, Delta delta) throws IOException {
+		switch (delta.getStatus()) {
+		case ADDED:
+			return parent.a(doc.getLink(delta.getElement()));
+		case MODIFIED:
+			return parent.a(doc.getLink(delta.getElement()));
+		case NOTMODIFIED:
+			return parent.div("notmodified");
+		default:
+			return parent;
+		}
+	}
+
+	private void renderTags(HTMLElement parent, Delta delta) throws IOException {
 		if (Status.ADDED.equals(delta.getStatus())) {
-			HTMLElement span = td.span("added");
+			HTMLElement span = parent.span("added");
 			span.text("added");
 		}
 		if (Status.REMOVED.equals(delta.getStatus())) {
-			HTMLElement span = td.span("removed");
+			HTMLElement span = parent.span("removed");
 			span.text("removed");
 		}
 		for (ElementTag tag : delta.getAddedTags()) {
-			HTMLElement span = td.span("tagadd");
+			HTMLElement span = parent.span("tagadd");
 			span.b().text("+");
 			span.text(" ");
 			span.text(tag.toString());
 		}
 		for (ElementTag tag : delta.getRemovedTags()) {
-			HTMLElement span = td.span("tagremove");
+			HTMLElement span = parent.span("tagremove");
 			span.b().text("-");
 			span.text(" ");
 			span.text(tag.toString());
