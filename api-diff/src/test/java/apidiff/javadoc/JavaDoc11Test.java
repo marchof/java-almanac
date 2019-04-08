@@ -7,6 +7,7 @@ public class JavaDoc11Test extends JavaDocTestBase {
 	@BeforeEach
 	public void before() {
 		javadoc = new JavaDoc11("http://javadoc.org/");
+		link_module = "http://javadoc.org/java.base/module-summary.html";
 		link_package = "http://javadoc.org/java.base/java/lang/package-summary.html";
 		link_class = "http://javadoc.org/java.base/java/lang/Object.html";
 		link_inner_class = "http://javadoc.org/java.base/java/lang/Thread.State.html";

@@ -131,6 +131,7 @@ public class HTMLRenderer {
 		copyResource("interface.png");
 		copyResource("method.png");
 		copyResource("package.png");
+		copyResource("module.png");
 	}
 
 	private void copyResource(String name) throws IOException {

@@ -36,6 +36,10 @@ public class Main {
 	private static void createReport(JDK a, JDK b) throws IOException {
 		ApiInfo api1 = getVersion(a);
 		ApiInfo api2 = getVersion(b);
+		if (!api1.hasModules() || !api2.hasModules()) {
+			api1 = api1.withoutModules();
+			api2 = api2.withoutModules();
+		}
 		Delta delta = new Delta(api1, api2);
 		Path basedir = Paths.get("./target/diff").resolve(a.name()).resolve(b.name());
 		new HTMLRenderer(new FileMultiReportOutput(basedir), b.getDoc()).render(delta);

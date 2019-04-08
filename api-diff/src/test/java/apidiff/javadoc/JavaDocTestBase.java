@@ -8,12 +8,15 @@ import org.objectweb.asm.Opcodes;
 import apidiff.model.ClassInfo;
 import apidiff.model.FieldInfo;
 import apidiff.model.MethodInfo;
+import apidiff.model.ModuleInfo;
 import apidiff.model.PackageInfo;
 
 abstract class JavaDocTestBase {
 	
 	protected IJavaDocLinkProvider javadoc;
-	
+
+	protected String link_module;
+
 	protected String link_package;
 
 	protected String link_class;
@@ -29,6 +32,12 @@ abstract class JavaDocTestBase {
 	protected String link_method_array;
 	
 	protected String link_method_varargs;
+
+	@Test
+	public void link_module() {
+		ModuleInfo info = new ModuleInfo("java.base");
+		assertEquals(link_module, javadoc.getModuleLink(info));
+	}
 	
 	@Test
 	public void link_package() {

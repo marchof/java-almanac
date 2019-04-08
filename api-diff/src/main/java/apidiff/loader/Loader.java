@@ -18,6 +18,7 @@ import org.objectweb.asm.Opcodes;
 import apidiff.model.ClassInfo;
 import apidiff.model.FieldInfo;
 import apidiff.model.MethodInfo;
+import apidiff.model.ModuleInfo;
 
 public class Loader {
 
@@ -104,7 +105,7 @@ public class Loader {
 
 	public void loadZip(Path path) throws IOException {
 		try (InputStream in = Files.newInputStream(path)) {
-			loadZip(in, "undefined");
+			loadZip(in, ModuleInfo.UNDEFINED);
 		}
 	}
 

@@ -4,6 +4,8 @@ public enum ElementType {
 	
 	API,
 	
+	MODULE,
+	
 	PACKAGE,
 	
 	CLASS,

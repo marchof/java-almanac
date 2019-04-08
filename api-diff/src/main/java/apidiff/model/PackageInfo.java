@@ -41,9 +41,7 @@ public class PackageInfo extends ElementInfo {
 
 	@Override
 	public List<ElementInfo> getChildren() {
-		List<ElementInfo> children = new ArrayList<>();
-		children.addAll(classes);
-		return children;
+		return new ArrayList<>(classes);
 	}
 
 }

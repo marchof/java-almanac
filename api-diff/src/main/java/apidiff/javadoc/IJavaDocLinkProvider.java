@@ -4,19 +4,25 @@ import apidiff.model.ClassInfo;
 import apidiff.model.ElementInfo;
 import apidiff.model.FieldInfo;
 import apidiff.model.MethodInfo;
+import apidiff.model.ModuleInfo;
 import apidiff.model.PackageInfo;
 
 public interface IJavaDocLinkProvider {
-	
+
+	String getModuleLink(ModuleInfo info);
+
 	String getPackageLink(PackageInfo info);
-	
+
 	String getClassLink(ClassInfo info);
 
 	String getMethodLink(MethodInfo info);
 
 	String getFieldLink(FieldInfo info);
-	
+
 	default String getLink(ElementInfo info) {
+		if (info instanceof ModuleInfo) {
+			return getModuleLink((ModuleInfo) info);
+		}
 		if (info instanceof PackageInfo) {
 			return getPackageLink((PackageInfo) info);
 		}
@@ -32,5 +38,4 @@ public interface IJavaDocLinkProvider {
 		throw new IllegalArgumentException("Unsupported type " + info);
 	}
 
-	
 }

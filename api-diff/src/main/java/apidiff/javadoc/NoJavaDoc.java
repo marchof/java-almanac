@@ -3,10 +3,16 @@ package apidiff.javadoc;
 import apidiff.model.ClassInfo;
 import apidiff.model.FieldInfo;
 import apidiff.model.MethodInfo;
+import apidiff.model.ModuleInfo;
 import apidiff.model.PackageInfo;
 
 public class NoJavaDoc implements IJavaDocLinkProvider {
 
+	@Override
+	public String getModuleLink(ModuleInfo info) {
+		return null;
+	}
+	
 	@Override
 	public String getPackageLink(PackageInfo info) {
 		return null;
