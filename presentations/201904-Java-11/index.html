@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java 11 - Das komplette Update</title>
+    <meta charset="utf-8">
+    <style>
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('remark/droidserif.ttf');
+      }
+      @font-face{
+        font-family: 'Yanone Kaffeesatz';
+        src: url('remark/yanonekaffeesatz.ttf');
+      }
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('remark/ubuntumono.ttf');
+      }
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-slide-content {
+        font-size: 24px;
+      }
+      .remark-code {
+        font-size: 20px;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .version {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 55px;
+        position: absolute;
+        top: 1em;
+        right: 1.5em;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: #4040FF;        
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="remark/remark.min.js">
+    </script>
+    <script>
+      remark.create({
+        ratio: '16:9',
+        sourceUrl: 'content.md'
+      });
+    </script>
+  </body>
+</html>
