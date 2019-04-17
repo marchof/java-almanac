@@ -60,7 +60,7 @@ Distributions:
 --
 Free Alternatives with LTS commitment:
 
-* AdoptOpenJDK (Community): [jdk.java.net](https://adoptopenjdk.net/)
+* AdoptOpenJDK (Community): [adoptopenjdk.net](https://adoptopenjdk.net/)
 * Zulu (Azul Systems)
 * Corretto (Amazon)
 * SapMachine (SAP)
