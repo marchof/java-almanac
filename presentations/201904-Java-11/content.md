@@ -8,6 +8,14 @@ SBB IT Ausbildungscamp
 
 Zürich, 17.04.2019
 
+
+---
+<img src="diagrams/res-link.svg" align="right" width="60%">
+# Workshop Material
+
+* https://bit.ly/2UoyYCC
+
+
 ---
 # Some History of Java
 
@@ -152,6 +160,8 @@ public final synchronized void stop(Throwable obj) {
     throw new UnsupportedOperationException();
 }
 ```
+
+* `jdeprscan`
 
 ---
 # Local Variable Type Inference
