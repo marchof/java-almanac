@@ -31,7 +31,7 @@ Download: [OpenJDK](http://jdk.java.net/11/), [Oracle](https://www.oracle.com/te
 * Unicode 10 Support ([JEP 327](http://openjdk.java.net/jeps/327))
 * Nashorn JavaScript Engine deprecated ([JEP 335](http://openjdk.java.net/jeps/335))
 * New Cryptographic Algorithms ([JEP 324](http://openjdk.java.net/jeps/324), [JEP 329](http://openjdk.java.net/jeps/329))
-* ZLS 1.3 ([JEP 332](http://openjdk.java.net/jeps/332))
+* TLS 1.3 ([JEP 332](http://openjdk.java.net/jeps/332))
 
 ## Tools
 
