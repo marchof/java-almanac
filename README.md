@@ -15,7 +15,8 @@ Collection of information about the history of Java primarily from a technical p
   [10](doc/java-10.md) -
   [11](doc/java-11.md) -
   [12](doc/java-12.md) -
-  [13](doc/java-13.md)
+  [13](doc/java-13.md) -
+  [14](doc/java-14.md)
 * [References](doc/references.md)
 
 ## API Evolution
