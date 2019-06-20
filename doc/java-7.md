@@ -8,6 +8,7 @@ Bytecode Version: 51
 
 Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se7/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se7/html/index.html), [JavaDoc](https://docs.oracle.com/javase/7/docs/api/)
 
+Download: [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html), [Zulu](https://www.azul.com/downloads/zulu/)
 
 ## JVM
 

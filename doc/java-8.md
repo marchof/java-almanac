@@ -6,6 +6,7 @@ Bytecode Version: 52
 
 Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se8/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html), [JavaDoc](https://docs.oracle.com/javase/8/docs/api/)
 
+Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Amazon](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [Zulu](https://www.azul.com/downloads/zulu/)
 
 ## Language
 

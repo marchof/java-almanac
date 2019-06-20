@@ -10,6 +10,8 @@ Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se12/htm
 
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V11/V12/index.html)
 
+Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html), [SAP](https://sap.github.io/SapMachine/), [Zulu](https://www.azul.com/downloads/zulu/)
+
 ## JVM
 
 * Shenandoah: A Low-Pause-Time Garbage Collector (Experimental, [JEP 189](http://openjdk.java.net/jeps/189))
