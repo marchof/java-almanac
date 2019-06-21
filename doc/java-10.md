@@ -8,7 +8,7 @@ Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se11/htm
 
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V9/V10/index.html)
 
-Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase10-4425482.html)
+Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Bellsoft](https://bell-sw.com/pages/products/), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase10-4425482.html)
 
 ## Language
 
