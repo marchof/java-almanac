@@ -20,7 +20,7 @@ public enum JDK {
 
 	V13("Java 13", "13.ea.33-open", new JavaDoc11("https://download.java.net/java/early_access/jdk13/docs/api/")),
 
-	V14("Java 14", "14.ea.11-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/"));
+	V14("Java 14", "14.ea.14-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/"));
 
 	private String name;
 	private String impl;
