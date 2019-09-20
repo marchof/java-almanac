@@ -10,7 +10,7 @@ Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se11/htm
 
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V10/V11/index.html)
 
-Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Amazon](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html), [Bellsoft](https://bell-sw.com/pages/products/), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html), [SAP](https://sap.github.io/SapMachine/), [Zulu](https://www.azul.com/downloads/zulu/)
+Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Amazon](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html), [Bellsoft](https://bell-sw.com/java), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html), [SAP](https://sap.github.io/SapMachine/), [Zulu](https://www.azul.com/downloads/zulu/)
 
 ## JVM
 

@@ -10,7 +10,7 @@ Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se13/htm
 
 API Changes: [Diff](http://download.eclipselab.org/jdkdiff/V12/V13/index.html)
 
-Download: [OpenJDK](http://jdk.java.net/13/)
+Download: [AdoptOpenJDK](https://adoptopenjdk.net/releases.html), [Bellsoft](https://bell-sw.com/pages/java-13/), [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html), [SAP](https://sap.github.io/SapMachine/), [Zulu](https://www.azul.com/downloads/zulu/)
 
 ## JVM
 
