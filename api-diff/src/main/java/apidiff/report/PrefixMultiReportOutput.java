@@ -31,8 +31,4 @@ public class PrefixMultiReportOutput implements IMultiReportOutput {
 		return delegate.createFile(prefix + path);
 	}
 
-	public void close() throws IOException {
-		delegate.close();
-	}
-
 }

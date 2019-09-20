@@ -73,8 +73,4 @@ public class S3MultiReportOutput implements IMultiReportOutput {
 		return "";
 	}
 
-	public void close() throws IOException {
-		// nothing to do here
-	}
-
 }

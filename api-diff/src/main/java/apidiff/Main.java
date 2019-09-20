@@ -93,7 +93,6 @@ public class Main {
 				createReport(a, b, output);
 			}
 		}
-		output.close();
 	}
 
 }
