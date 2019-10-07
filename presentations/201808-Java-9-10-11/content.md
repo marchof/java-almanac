@@ -73,7 +73,7 @@ OpenJDK Process
         requires org.output;
   }
   ```
-* Goodby class path...
+* Goodbye class path...
   ```bash
   $ java --module-path mods -m org.hello/org.hello.World
   ```
