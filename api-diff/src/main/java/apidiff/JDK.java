@@ -14,13 +14,13 @@ public enum JDK {
 
 	V10("Java 10", "10.0.2-open", new JavaDoc10("https://docs.oracle.com/javase/10/docs/api/")),
 
-	V11("Java 11", "11.0.4.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
+	V11("Java 11", "11.0.5.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
 
 	V12("Java 12", "12.0.2-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/12/docs/api/")),
 
 	V13("Java 13", "13.0.1-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/13/docs/api/")),
 
-	V14("Java 14", "14.ea.18-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/"));
+	V14("Java 14", "14.ea.20-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/"));
 
 	private String name;
 	private String impl;
