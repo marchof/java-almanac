@@ -1,10 +1,8 @@
 # Java 13
 
-Release Date: 2019/09/17
+Release Date: 2019/09/17 ([Release Notes](https://www.oracle.com/technetwork/java/13-relnote-issues-5460548.html))
 
 Bytecode Version: 57
-
-Release Notes: http://jdk.java.net/13/release-notes
 
 Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se13/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se13/html/index.html), [JavaDoc](https://docs.oracle.com/en/java/javase/13/docs/api/)
 

@@ -1,6 +1,6 @@
 # Java 10
 
-Release Date: 2018/03/20
+Release Date: 2018/03/20 ([Release Notes](https://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html))
 
 Bytecode Version: 54
 

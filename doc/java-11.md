@@ -1,10 +1,8 @@
 # Java 11
 
-Release Date: 2018/09/25
+Release Date: 2018/09/25 ([Release notes](https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html))
 
 Bytecode Version: 55
-
-Release Notes: http://jdk.java.net/11/release-notes
 
 Documentation: [Language Spec](https://docs.oracle.com/javase/specs/jls/se11/html/index.html), [VM Spec](https://docs.oracle.com/javase/specs/jvms/se11/html/index.html), [JavaDoc](https://docs.oracle.com/en/java/javase/11/docs/api/)
 

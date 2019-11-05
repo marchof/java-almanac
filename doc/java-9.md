@@ -1,6 +1,6 @@
 # Java 9
 
-Release Date: 2017/09/21
+Release Date: 2017/09/21 ([Release Notes](https://www.oracle.com/technetwork/java/javase/9all-relnotes-3704433.html))
 
 Bytecode Version: 53
 
