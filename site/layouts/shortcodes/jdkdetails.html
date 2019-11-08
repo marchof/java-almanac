@@ -1,0 +1,65 @@
+{{ $version := index .Params 0 }}
+
+{{ with (index $.Page.Site.Data.jdk (index .Params 0)) }}
+
+<table>
+  <tbody>
+    <tr>
+      <th>Release Date</th>
+      <td>{{ .ga }}</td>
+    </tr>
+    <tr>
+      <th>Bytecode Version</th>
+      <td>{{ .bytecode }}</td>
+    </tr>
+    <tr>
+      <th>Documentation</th>
+      <td>
+        {{ with .documentation.notes }}
+          <a href="{{ . }}">Release Notes</a>,
+        {{ end }}
+        {{ with .documentation.lang }}
+          <a href="{{ . }}">Language Spec</a>,
+        {{ end }}
+        {{ with .documentation.vm }}
+          <a href="{{ . }}">VM Spec</a>,
+        {{ end }}
+        {{ with .documentation.api }}
+          <a href="{{ . }}">JavaDoc</a>
+        {{ end }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{{ end }}
+
+<h2>Downloads</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vendor</th>
+      <th>Product</th>
+      <th>License</th>
+      <th>Platforms</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ range $.Page.Site.Data.jdk.vendors }}
+    {{ $vendor := .}}
+    {{ range .products }}
+    {{ if in .versions $version }}
+    <tr>
+      <td><a href="{{ $vendor.url }}">{{ $vendor.name }}</a></td>
+      <td><a href="{{ .url }}">{{ .name }}</a></td>
+      <td>{{ .license }}</td>
+      <td>{{ delimit .platforms ", " }}</td>
+    </tr>
+    {{ end }}
+    {{ end }}
+  {{ end }}
+  </tbody>
+</table>
+
+

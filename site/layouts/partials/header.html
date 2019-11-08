@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>{{ $.Title }} - {{ $.Site.Title }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "almanac.css" | relURL }}">
+</head>
+<body>
+<div class="header-bar">
+<div class="header">
+  <a href="{{ $.Site.BaseURL }}"><img src="{{ "img/java.png" | relURL }}" title="Java" height="55" align="left"></a>
+  <a href="https://github.com/marchof/java-almanac"><img src="{{ "img/github.png" | relURL }}" title="Java Almanac on GitHub.com" width="32" height="32" align="right"></a>
+  <span style="font-size:11pt;color:#888;font-weight:bold;margin-left:10px">Some Java Historiography</span><br>
+  <span style="font-size:19pt;font-weight:bold;margin-left:10px">{{ $.Site.Title }}</span>
+</div>
+</div>
+<div class="content">

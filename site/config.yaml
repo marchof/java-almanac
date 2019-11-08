@@ -1,0 +1,9 @@
+baseURL: 'https://javaalmanac.io/'
+languageCode: 'en-us'
+title: 'javaalmanac.io'
+disableKinds: ['RSS', 'taxonomyTerm']
+
+deployment:
+    targets:
+        name: 'javaalmanac.io'
+        URL: 's3://javaalmanac.io?region=us-east-1'

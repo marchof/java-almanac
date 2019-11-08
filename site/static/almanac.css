@@ -1,0 +1,115 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 11pt;
+	background-color: #fff;
+	color: #000;
+	margin: 0px;
+}
+
+div.header-bar {
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+}
+
+div.header {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+}
+
+div.content {
+	max-width: 800px;
+	min-height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	color: #666;
+}
+
+div.content p {
+	text-align: justify;
+}
+
+div.content h1 {
+	font-weight: bold;
+	font-size: 200%;
+	color: #589;
+	border-bottom: 1px solid #cccc;
+}
+
+div.content h2 {
+	font-weight: bold;
+	font-size: 150%;
+	color: #589;
+	margin-top: 40px;
+	border-bottom: 1px solid #cccc;
+}
+
+div.content h3 {
+	font-weight: bold;
+	font-size: 125%;
+	color: #666;
+}
+
+div.content h4 {
+	font-weight: bold;
+	font-size: 100%;
+	color: #666;
+}
+
+div.content a, a:visited {
+	font-weight: bold;
+	color: #589;
+	text-decoration: none;
+}
+
+div.content a:hover {
+	text-decoration: underline;
+}
+
+div.content table {
+	border-collapse: collapse;
+	border-top: 1px solid #589;
+	border-bottom: 1px solid #589;
+	font-size: 11pt;
+}
+
+div.content table thead {
+	background-color: #eee;
+	border-bottom: 1px solid #589;
+}
+
+div.content th {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+div.content td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.content table tr:nth-child(even) {
+	background-color: #eee;
+}
+
+div.footer {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid #ccc;
+	padding-top: 2px;
+	padding-bottom: 8px;
+	color: #aaa;
+	font-size: 9pt;
+}
+
+div.footer a {
+	color: #aaa;
+}
+
+div.footer a:hover {
+	text-decoration: none;
+}
