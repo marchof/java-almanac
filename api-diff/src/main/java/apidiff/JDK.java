@@ -8,7 +8,7 @@ import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
-	V8("Java 8", "8.0.222.hs-adpt", new NoJavaDoc()),
+	V8("Java 8", "8.0.232.hs-adpt", new NoJavaDoc()),
 
 	V9("Java 9", "9.0.4-open", new JavaDoc9("https://docs.oracle.com/javase/9/docs/api/")),
 
@@ -20,7 +20,7 @@ public enum JDK {
 
 	V13("Java 13", "13.0.1-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/13/docs/api/")),
 
-	V14("Java 14", "14.ea.22-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/"));
+	V14("Java 14", "14.ea.23-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/"));
 
 	private String name;
 	private String impl;
