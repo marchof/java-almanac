@@ -12,6 +12,12 @@
       <th>Bytecode Version</th>
       <td>{{ .bytecode }}</td>
     </tr>
+    {{ with .apidiff }}
+      <tr>
+        <th>API Changes</th>
+        <td><a href="{{ . }}">Delta to previous release</a></td>
+      </tr>
+    {{ end }}
     <tr>
       <th>Documentation</th>
       <td>
