@@ -1,0 +1,5 @@
+---
+title: JDK Releases
+---
+
+{{< jdklist >}}

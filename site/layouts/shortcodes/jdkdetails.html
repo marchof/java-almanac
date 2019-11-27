@@ -1,6 +1,6 @@
 {{ $version := index .Params 0 }}
 
-{{ with (index $.Page.Site.Data.jdk (index .Params 0)) }}
+{{ with (index $.Site.Data.jdk.versions (index .Params 0)) }}
 
 <table>
   <tbody>

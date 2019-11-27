@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Release Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range sort $.Site.Data.jdk.versions "ga" }}
+    <tr>
+      <td><a href="{{ .version }}">{{ .name }}</a></td>
+      <td>{{ .ga }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
