@@ -14,6 +14,19 @@
 		]
 	},
 	{
+		"name": "Alibaba",
+		"url": "https://www.alibabagroup.com/",
+		"products": [
+			{
+				"name": "Dragonwell",
+				"license": "GPLv2+CE",
+				"url": "https://github.com/alibaba/dragonwell8/releases",
+				"platforms": ["linux-x64", "windows-x64"],
+				"versions": ["8"]
+			}
+		]
+	},
+	{
 		"name": "Amazon",
 		"url": "https://docs.aws.amazon.com/corretto/index.html",
 		"products": [
@@ -30,6 +43,26 @@
 				"url": "https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html",
 				"platforms": ["linux-x64", "linux-aarch64", "macOS-x64", "windows-x86", "windows-x64"],
 				"versions": ["11"]
+			}
+		]
+	},
+	{
+		"name": "AZUL Systems",
+		"url": "https://www.azul.com/",
+		"products": [
+			{
+				"name": "Zulu Community",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community",
+				"platforms": ["linux-x86", "linux-x64", "macOS-x64", "windows-x64"],
+				"versions": ["7", "8", "11", "13"]
+			},
+			{
+				"name": "Zing",
+				"license": "Commercial",
+				"url": "https://www.azul.com/products/zing/",
+				"platforms": ["linux-x64"],
+				"versions": ["7", "8", "11"]
 			}
 		]
 	},
@@ -160,19 +193,6 @@
 				"url": "https://sap.github.io/SapMachine/latest/13",
 				"platforms": ["linux-x64", "linux-ppc64", "linux-ppc64le", "macOS-x64", "windows-x64"],
 				"versions": ["13"]
-			}
-		]
-	},
-	{
-		"name": "AZUL Systems",
-		"url": "https://www.azul.com/",
-		"products": [
-			{
-				"name": "Zulu Community",
-				"license": "GPLv2+CE",
-				"url": "https://www.azul.com/downloads/zulu-community",
-				"platforms": ["linux-x86", "linux-x64", "macOS-x64", "windows-x64"],
-				"versions": ["7", "8", "11", "13"]
 			}
 		]
 	}
