@@ -117,7 +117,7 @@ public class HTMLRenderer {
 	private void renderFooter(HTMLElement parent) throws IOException {
 		HTMLElement p = parent.p();
 		p.text("Report created by ");
-		p.a("https://github.com/marchof/java-almanac").text("marchof/java-almanac");
+		p.a("https://javaalmanac.io/").text("javaalmanac.io");
 		p.text(" on ");
 		p.text(LocalDate.now().format(DateTimeFormatter.ISO_DATE));
 	}
