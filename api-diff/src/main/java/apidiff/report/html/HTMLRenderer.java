@@ -1,4 +1,4 @@
-package apidiff.report;
+package apidiff.report.html;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,6 +12,7 @@ import apidiff.javadoc.IJavaDocLinkProvider;
 import apidiff.model.ApiInfo;
 import apidiff.model.ElementInfo;
 import apidiff.model.ElementTag;
+import apidiff.report.IMultiReportOutput;
 
 public class HTMLRenderer {
 

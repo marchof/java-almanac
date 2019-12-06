@@ -113,3 +113,101 @@ div.footer a {
 div.footer a:hover {
 	text-decoration: none;
 }
+
+.annotation {
+  padding-left:18px;
+  background-image:url("img/annotation.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.class {
+  padding-left:18px;
+  background-image:url("img/class.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.enum {
+  padding-left:18px;
+  background-image:url("img/enum.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.field {
+  padding-left:18px;
+  background-image:url("img/field.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.interface {
+  padding-left:18px;
+  background-image:url("img/interface.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.method {
+  padding-left:18px;
+  background-image:url("img/method.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.package {
+  padding-left:18px;
+  background-image:url("img/package.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.module {
+  padding-left:18px;
+  background-image:url("img/module.png");
+  background-position:left center;
+  background-repeat:no-repeat;
+}
+
+.removed {
+	text-decoration:line-through;
+}
+
+span.elementadded {
+  color: #ded;
+  background-color: #080;
+  padding: 0px 4px 0px 4px;
+  border-radius: 3px;
+  font-size:90%;
+}
+
+span.elementremoved {
+  color: #edd;
+  background-color: #c00;
+  padding: 0px 4px 0px 4px;
+  border-radius: 3px;
+  font-size:90%;
+}
+
+span.tagadded {
+  white-space: nowrap;
+  color: #eee;
+  background-color: #666;
+  padding: 0px 4px 0px 4px;
+  border-radius: 3px;
+  margin-right: 2px;
+  margin-top: 1px;
+  font-size:90%;
+}
+
+span.tagremoved {
+  white-space: nowrap;
+  color: #eee;
+  background-color: #666;
+  padding: 0px 4px 0px 4px;
+  border-radius: 3px;
+  margin-right: 2px;
+  margin-top: 1px;
+  font-size:90%;
+}

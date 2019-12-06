@@ -9,7 +9,7 @@
  *    Marc R. Hoffmann - initial API and implementation
  *    
  *******************************************************************************/
-package apidiff.report;
+package apidiff.report.html;
 
 import java.io.IOException;
 import java.io.OutputStream;

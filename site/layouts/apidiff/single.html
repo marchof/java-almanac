@@ -1,0 +1,55 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+
+{{ $targetversion := .Params.Targetversion }}
+{{ $baseversion := .Params.Baseversion }}
+
+{{ with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
+
+<p>
+  Comparing <a href="../../../{{ .target.version }}">Java {{ .target.version }}</a> (build {{ .target.build }})
+  with <a href="../../../{{ .base.version }}"> Java {{ .base.version }}</a> (build {{ .base.build }}).
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Modification</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ range .deltas }}
+    <tr>
+      <td><div class="{{ .type }}" style="margin-left:{{ mul .level 18 }}px">
+        {{ if eq "added" .status }}
+          <a href="{{ .javadoc }}">{{ truncate 50 "..." .name }}</a>
+        {{ else if eq "modified" .status }}
+          <a href="{{ .javadoc }}">{{ truncate 50 "..." .name }}</a>
+        {{ else if eq "removed" .status }}
+          <div class="removed">{{ truncate 50 "..." .name }}</div>
+        {{ else }}
+          <div>{{ truncate 50 "..." .name }}</div>
+        {{ end }}
+      </div></td>
+      <td>
+        {{ if eq "added" .status }}
+          <span class="elementadded">added</span>
+        {{ else if eq "removed" .status }}
+          <span class="elementremoved">removed</span>
+        {{ end }}
+        {{ range .removedTags }}
+          <span class="tagremoved"><b>-</b> {{ . }}</span>
+        {{ end }}
+        {{ range .addedTags }}
+          <span class="tagadded"><b>+</b> {{ . }}</span>
+        {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+
+{{ end }}
+{{ partial "footer.html" . }}
+

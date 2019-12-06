@@ -17,21 +17,15 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.amazonaws.auth.SystemPropertiesCredentialsProvider;
-import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-
 import apidiff.cmp.Delta;
 import apidiff.loader.Loader;
 import apidiff.loader.PublicApiFilter;
 import apidiff.model.ApiInfo;
 import apidiff.report.FileMultiReportOutput;
 import apidiff.report.IMultiReportOutput;
-import apidiff.report.PrefixMultiReportOutput;
-import apidiff.report.S3MultiReportOutput;
-import apidiff.report.html.HTMLRenderer;
+import apidiff.report.json.JSONRenderer;
 
-public class Main {
+public class MainJSON {
 
 	private static final Map<JDK, ApiInfo> cache = new HashMap<>();
 
@@ -59,31 +53,16 @@ public class Main {
 			api2 = api2.withoutModules();
 		}
 		Delta delta = new Delta(api1, api2);
-		IMultiReportOutput prefixOutput = new PrefixMultiReportOutput(output,
-				String.format("%s/%s/", a.name(), b.name()));
-		new HTMLRenderer(prefixOutput, b.getDoc()).render(delta);
+		new JSONRenderer(output, b.getDoc()).render(delta);
 	}
 
 	private static IMultiReportOutput createLocalFileOutput() {
-		Path basedir = Paths.get("./target/diff");
+		Path basedir = Paths.get("../site");
 		return new FileMultiReportOutput(basedir);
 	}
 
-	private static IMultiReportOutput createS3Output() {
-		AmazonS3 s3Client = AmazonS3ClientBuilder.standard() //
-				.withRegion("us-east-1") //
-				.withCredentials(new SystemPropertiesCredentialsProvider()) //
-				.build();
-		return new S3MultiReportOutput(s3Client, "download.eclipselab.org", "jdkdiff/");
-	}
-
 	public static void main(String[] args) throws IOException {
-		IMultiReportOutput output;
-		if (args.length > 0 && "s3".equals(args[0])) {
-			output = createS3Output();
-		} else {
-			output = createLocalFileOutput();
-		}
+		IMultiReportOutput output = createLocalFileOutput();
 		JDK[] jdks = JDK.values();
 		for (int i = 0; i < jdks.length; i++) {
 			for (int j = i + 1; j < jdks.length; j++) {
