@@ -6,7 +6,7 @@ title: Java Almanac
 
 Collection of information about the history of Java primarily from a technical point of view.
 
-* Versions: [1.0](jdk/1.0) -
+* [Versions](jdk): [1.0](jdk/1.0) -
   [1.1](jdk/1.1) -
   [1.2](jdk/1.2) -
   [1.3](jdk/1.3) -
