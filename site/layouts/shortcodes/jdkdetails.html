@@ -12,11 +12,16 @@
       <th>Bytecode Version</th>
       <td>{{ .bytecode }}</td>
     </tr>
-    {{ with .apidiff }}
-      <tr>
-        <th>API Changes</th>
-        <td><a href="{{ . }}">Delta to previous release</a></td>
-      </tr>
+    {{ if .apidiff }}
+    <tr>
+      <th>API Changes</th>
+      <td>Compare to
+        {{ range $elem_index, $elem_val := (sort .apidiff "order") }}
+          {{ if lt 0 $elem_index }} - {{ end }}
+          <a href="apidiff/{{ $elem_val.base.version }}">{{ $elem_val.base.version }}</a>
+        {{ end }}
+      </td>
+    </tr>
     {{ end }}
     <tr>
       <th>Documentation</th>
