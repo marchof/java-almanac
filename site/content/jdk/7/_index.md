@@ -22,3 +22,4 @@ title: Java 7
 ### Library
 
 * Method Handles
+* NIO.2 ([JSR 203](https://jcp.org/en/jsr/detail?id=203))
