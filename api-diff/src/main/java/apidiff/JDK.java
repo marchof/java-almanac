@@ -3,12 +3,18 @@ package apidiff;
 import apidiff.javadoc.IJavaDocLinkProvider;
 import apidiff.javadoc.JavaDoc10;
 import apidiff.javadoc.JavaDoc11;
+import apidiff.javadoc.JavaDoc7;
+import apidiff.javadoc.JavaDoc8;
 import apidiff.javadoc.JavaDoc9;
 import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
-	V8("8", "8.0.232.hs-adpt", new NoJavaDoc()),
+	V6("6", "1.6.0_45-oracle", new NoJavaDoc()),
+
+	V7("7", "1.7.0_80-oracle", new JavaDoc7("https://docs.oracle.com/javase/7/docs/api/")),
+	
+	V8("8", "8.0.232.hs-adpt", new JavaDoc8("https://docs.oracle.com/javase/8/docs/api/")),
 
 	V9("9", "9.0.4-open", new JavaDoc9("https://docs.oracle.com/javase/9/docs/api/")),
 

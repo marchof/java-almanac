@@ -22,8 +22,6 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
 import apidiff.cmp.Delta;
-import apidiff.loader.Loader;
-import apidiff.loader.PublicApiFilter;
 import apidiff.model.ApiInfo;
 import apidiff.report.FileMultiReportOutput;
 import apidiff.report.IMultiReportOutput;
@@ -35,17 +33,10 @@ public class Main {
 
 	private static final Map<JDK, ApiInfo> cache = new HashMap<>();
 
-	private static ApiInfo loadVersion(JDK jdk) throws IOException {
-		ApiInfo api = new ApiInfo(jdk.getName(), jdk.getImpl());
-		Loader loader = new Loader(api, new PublicApiFilter());
-		loader.loadJDK(Paths.get(System.getProperty("user.home"), ".sdkman/candidates/java", jdk.getImpl()));
-		return api;
-	}
-
 	private static ApiInfo getVersion(JDK jdk) throws IOException {
 		ApiInfo api = cache.get(jdk);
 		if (api == null) {
-			api = loadVersion(jdk);
+			api = JDKLookup.loadVersion(jdk);
 			cache.put(jdk, api);
 		}
 		return api;
