@@ -51,7 +51,7 @@ public class JSONRenderer {
 			JSONObject root = new JSONObject(writer);
 			version(root.add("base").object(), (ApiInfo) delta.getOldElement());
 			version(root.add("target").object(), (ApiInfo) delta.getNewElement());
-			root.add("order").number(Integer.valueOf(delta.getOldElement().getName()));
+			root.add("order").number(Double.valueOf(delta.getOldElement().getName()));
 			JSONArray deltaarray = root.add("deltas").array();
 			for (Delta d : delta.getChildren()) {
 				delta(deltaarray, d, 0);

@@ -26,6 +26,11 @@ public class JSONValue extends JSONElement {
 		writer.write(String.valueOf(number));
 	}
 
+	public void number(double number) throws IOException {
+		ensureNotFinished();
+		writer.write(String.valueOf(number));
+	}
+
 	public void bool(boolean bool) throws IOException {
 		ensureNotFinished();
 		writer.write(String.valueOf(bool));
