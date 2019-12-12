@@ -16,7 +16,7 @@
     <tr>
       <th>API Changes</th>
       <td>Compare to
-        {{ range $elem_index, $elem_val := (sort .apidiff "order") }}
+        {{ range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
           {{ if lt 0 $elem_index }} - {{ end }}
           <a href="apidiff/{{ $elem_val.base.version }}">{{ $elem_val.base.version }}</a>
         {{ end }}
