@@ -2,11 +2,11 @@ package apidiff.javadoc;
 
 import org.junit.jupiter.api.BeforeEach;
 
-public class JavaDoc7Test extends JavaDocTestBase {
+public class JavaDoc6Test extends JavaDocTestBase {
 	
 	@BeforeEach
 	public void before() {
-		javadoc = new JavaDoc7("http://javadoc.org/");
+		javadoc = new JavaDoc6("http://javadoc.org/");
 		link_module = null;
 		link_package = "http://javadoc.org/java/lang/package-summary.html";
 		link_class = "http://javadoc.org/java/lang/Object.html";

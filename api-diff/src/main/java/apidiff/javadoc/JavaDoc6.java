@@ -3,9 +3,9 @@ package apidiff.javadoc;
 import apidiff.model.MethodInfo;
 import apidiff.model.ModuleInfo;
 
-public class JavaDoc7 extends AbstractJavaDoc {
+public class JavaDoc6 extends AbstractJavaDoc {
 
-	public JavaDoc7(String baseurl) {
+	public JavaDoc6(String baseurl) {
 		super(baseurl);
 	}
 
