@@ -8,16 +8,16 @@ title: Java 7
 
 ### JVM
 
-* `INVOKEDYNAMIC`
+* `INVOKEDYNAMIC` ([JSR 292](https://jcp.org/en/jsr/detail?id=292))
 
 ### Language
 
-* Switch in String
-* Try-with
-* Diamond Operator
-* Binary Integer Literals
-* Underscores in numeric literals
-* Multi Catch
+* Switch in String ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
+* Try-with ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
+* Diamond Operator ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
+* Binary Integer Literals ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
+* Underscores in numeric literals ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
+* Multi Catch ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
 
 ### Library
 
