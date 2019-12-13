@@ -3,22 +3,26 @@ package apidiff;
 import apidiff.javadoc.IJavaDocLinkProvider;
 import apidiff.javadoc.JavaDoc10;
 import apidiff.javadoc.JavaDoc11;
-import apidiff.javadoc.JavaDoc5;
+import apidiff.javadoc.JavaDoc;
 import apidiff.javadoc.JavaDoc8;
 import apidiff.javadoc.JavaDoc9;
 import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
-	V3("1.3", "1.3.1.29-oracle", new NoJavaDoc()),
+	V1("1.1", "1.1.8_16-oracle", new NoJavaDoc()),
 
-	V4("1.4", "1.4.2_30-oracle", new JavaDoc5("https://javaalmanac.io/jdk/1.4/api/")),
+	V2("1.2", "1.2.2.17-oracle", new JavaDoc("https://javaalmanac.io/jdk/1.2/api/")),
 
-	V5("5", "1.5.0_22-oracle", new JavaDoc5("https://docs.oracle.com/javase/1.5.0/docs/api/")),
+	V3("1.3", "1.3.1.29-oracle", new JavaDoc("https://javaalmanac.io/jdk/1.3/api/")),
 
-	V6("6", "1.6.0_45-oracle", new JavaDoc5("https://docs.oracle.com/javase/6/docs/api/")),
+	V4("1.4", "1.4.2_30-oracle", new JavaDoc("https://javaalmanac.io/jdk/1.4/api/")),
 
-	V7("7", "1.7.0_80-oracle", new JavaDoc5("https://docs.oracle.com/javase/7/docs/api/")),
+	V5("5", "1.5.0_22-oracle", new JavaDoc("https://docs.oracle.com/javase/1.5.0/docs/api/")),
+
+	V6("6", "1.6.0_45-oracle", new JavaDoc("https://docs.oracle.com/javase/6/docs/api/")),
+
+	V7("7", "1.7.0_80-oracle", new JavaDoc("https://docs.oracle.com/javase/7/docs/api/")),
 	
 	V8("8", "8.0.232.hs-adpt", new JavaDoc8("https://docs.oracle.com/javase/8/docs/api/")),
 
