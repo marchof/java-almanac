@@ -10,7 +10,9 @@ import apidiff.javadoc.NoJavaDoc;
 
 public enum JDK {
 
-	V4("1.4", "1.4.2_30-oracle", new NoJavaDoc()),
+	V3("1.3", "1.3.1.29-oracle", new NoJavaDoc()),
+
+	V4("1.4", "1.4.2_30-oracle", new JavaDoc5("https://javaalmanac.io/jdk/1.4/api/")),
 
 	V5("5", "1.5.0_22-oracle", new JavaDoc5("https://docs.oracle.com/javase/1.5.0/docs/api/")),
 
