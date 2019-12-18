@@ -20,7 +20,8 @@ Collection of information about the history of Java primarily from a technical p
   [11](jdk/11) -
   [12](jdk/12) -
   [13](jdk/13) -
-  [14](jdk/14)
+  [14](jdk/14) -
+  [15](jdk/15)
 * [References](references)
 
 ## API Evolution
