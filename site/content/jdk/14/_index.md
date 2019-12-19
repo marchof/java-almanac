@@ -15,13 +15,13 @@ title: Java 14
 ### Language
 
 * Pattern Matching for instanceof (Preview) ([JEP 305](http://openjdk.java.net/jeps/305))
+* Records (Preview) ([JEP 359](http://openjdk.java.net/jeps/359))
+* Switch Expressions (Standard) ([JEP 361](http://openjdk.java.net/jeps/361))
 * Text Blocks (Second Preview) ([JEP 368](http://openjdk.java.net/jeps/368))
 
 ### Library
 
 * Non-Volatile Mapped Byte Buffers ([JEP 352](http://openjdk.java.net/jeps/352))
-* Records (Preview) ([JEP 359](http://openjdk.java.net/jeps/359))
-* Switch Expressions (Standard) ([JEP 361](http://openjdk.java.net/jeps/361))
 * Remove the Pack200 Tools and API ([JEP 367](http://openjdk.java.net/jeps/367))
 
 ### Tools
