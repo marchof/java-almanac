@@ -26,14 +26,15 @@ Collection of information about the history of Java primarily from a technical p
 
 ## API Evolution
 
-| from       | to | to | to | to | to | to |
-|------------|----|----|----|----|----|----|
-| **Java 8** | [Java 9](https://javaalmanac.io/jdk/9/apidiff/8) | [Java 10](https://javaalmanac.io/jdk/10/apidiff/8) | [Java 11](https://javaalmanac.io/jdk/11/apidiff/8) | [Java 12](https://javaalmanac.io/jdk/12/apidiff/8) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/8) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/8) |
-| **Java 9** | | [Java 10](https://javaalmanac.io/jdk/10/apidiff/9) | [Java 11](https://javaalmanac.io/jdk/11/apidiff/9) | [Java 12](https://javaalmanac.io/jdk/12/apidiff/9) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/9) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/9) |
-| **Java 10** | | | [Java 11](https://javaalmanac.io/jdk/11/apidiff/10) | [Java 12](https://javaalmanac.io/jdk/12/apidiff/10) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/10) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/10) |
-| **Java 11** | | | | [Java 12](https://javaalmanac.io/jdk/12/apidiff/11) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/11) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/11) |
-| **Java 12** | | | | | [Java 13](https://javaalmanac.io/jdk/13/apidiff/12) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/12) |
-| **Java 13** | | | | | | [Java 14](https://javaalmanac.io/jdk/14/apidiff/13) |
+| from       | to | to | to | to | to | to | to |
+|------------|----|----|----|----|----|----|----|
+| **Java 8** | [Java 9](https://javaalmanac.io/jdk/9/apidiff/8) | [Java 10](https://javaalmanac.io/jdk/10/apidiff/8) | [Java 11](https://javaalmanac.io/jdk/11/apidiff/8) | [Java 12](https://javaalmanac.io/jdk/12/apidiff/8) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/8) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/8) | [Java 15](https://javaalmanac.io/jdk/15/apidiff/8) |
+| **Java 9** | | [Java 10](https://javaalmanac.io/jdk/10/apidiff/9) | [Java 11](https://javaalmanac.io/jdk/11/apidiff/9) | [Java 12](https://javaalmanac.io/jdk/12/apidiff/9) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/9) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/9) | [Java 15](https://javaalmanac.io/jdk/15/apidiff/9) |
+| **Java 10** | | | [Java 11](https://javaalmanac.io/jdk/11/apidiff/10) | [Java 12](https://javaalmanac.io/jdk/12/apidiff/10) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/10) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/10) | [Java 15](https://javaalmanac.io/jdk/15/apidiff/10) |
+| **Java 11** | | | | [Java 12](https://javaalmanac.io/jdk/12/apidiff/11) | [Java 13](https://javaalmanac.io/jdk/13/apidiff/11) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/11) | [Java 15](https://javaalmanac.io/jdk/15/apidiff/11) |
+| **Java 12** | | | | | [Java 13](https://javaalmanac.io/jdk/13/apidiff/12) | [Java 14](https://javaalmanac.io/jdk/14/apidiff/12) | [Java 15](https://javaalmanac.io/jdk/15/apidiff/12) |
+| **Java 13** | | | | | | [Java 14](https://javaalmanac.io/jdk/14/apidiff/13) | [Java 15](https://javaalmanac.io/jdk/15/apidiff/13) |
+| **Java 14** | | | | | | | [Java 15](https://javaalmanac.io/jdk/15/apidiff/14) |
 
 The reports are based on simple comparison of all `public` and `protected` APIs of the `java.*` and `javax.*` packages of the respective JDKs. They do not make statements about [compatibility](https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility).
 
