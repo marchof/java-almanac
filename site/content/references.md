@@ -8,3 +8,4 @@ title: References
 * [List of all JSRs, JCP](https://jcp.org/en/jsr/all)
 * [VM Options Explorer, Chris Newland](https://chriswhocodes.com/vm-options-explorer.html)
 * [Java Is Still Free, Martijn Verburg et al.](https://docs.google.com/document/d/1nFGazvrCvHMZJgFstlbzoHjpAVwv5DEdnaBr_5pKuHo)
+* [Overview of OpenJDK distributions, Rafael Winterhalter](https://rafael.codes/openjdk/)
