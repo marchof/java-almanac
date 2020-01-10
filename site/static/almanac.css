@@ -111,12 +111,29 @@ ul.tag li {
 	font-size: 90%;
 }
 
+ul.tag li a {
+	color: inherit;
+	font-weight: inherit;
+}
+
 ul.architecture li {
 	background-color: #69a;
 	color: #eee;
 }
 
+div.content a.datasource {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #589;
+	color: #fff;
+	font-weight: bold;
+	font-size: 70%;
+}
+
 div.footer {
+	clear: both;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
