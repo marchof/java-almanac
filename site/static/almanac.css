@@ -96,20 +96,24 @@ div.content table tr:nth-child(even) {
 	background-color: #eee;
 }
 
-ul.archtag {
+ul.tag {
 	padding: 0px;
 	list-style: none;
 }
 
-ul.archtag li {
+ul.tag li {
 	float:left;
-	background-color: #69a;
+	white-space: nowrap;
 	margin: 1px;
 	padding-left: 4px;
 	padding-right: 4px;
 	border-radius: 3px;
 	font-size: 90%;
-	color: #fff;
+}
+
+ul.architecture li {
+	background-color: #69a;
+	color: #eee;
 }
 
 div.footer {
@@ -132,99 +136,81 @@ div.footer a:hover {
 }
 
 .annotation {
-  padding-left:18px;
-  background-image:url("img/annotation.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/annotation.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .class {
-  padding-left:18px;
-  background-image:url("img/class.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/class.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .enum {
-  padding-left:18px;
-  background-image:url("img/enum.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/enum.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .field {
-  padding-left:18px;
-  background-image:url("img/field.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/field.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .interface {
-  padding-left:18px;
-  background-image:url("img/interface.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/interface.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .method {
-  padding-left:18px;
-  background-image:url("img/method.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/method.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .package {
-  padding-left:18px;
-  background-image:url("img/package.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/package.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .module {
-  padding-left:18px;
-  background-image:url("img/module.png");
-  background-position:left center;
-  background-repeat:no-repeat;
+	padding-left:18px;
+	background-image:url("img/module.png");
+	background-position:left center;
+	background-repeat:no-repeat;
 }
 
 .removed {
 	text-decoration:line-through;
 }
 
-span.elementadded {
-  color: #ded;
-  background-color: #080;
-  padding: 0px 4px 0px 4px;
-  border-radius: 3px;
-  font-size: 90%;
+ul.tag li.newelement {
+	color: #ded;
+	background-color: #080;
 }
 
-span.elementremoved {
-  color: #edd;
-  background-color: #c00;
-  padding: 0px 4px 0px 4px;
-  border-radius: 3px;
-  font-size: 90%;
+ul.tag li.removedelement {
+	color: #edd;
+	background-color: #c00;
 }
 
-span.tagadded {
-  white-space: nowrap;
-  color: #eee;
-  background-color: #666;
-  padding: 0px 4px 0px 4px;
-  border-radius: 3px;
-  margin-right: 2px;
-  margin-top: 1px;
-  font-size: 90%;
+ul.tag li.newtag {
+	color: #eee;
+	background-color: #666;
 }
 
-span.tagremoved {
-  white-space: nowrap;
-  color: #eee;
-  background-color: #666;
-  padding: 0px 4px 0px 4px;
-  border-radius: 3px;
-  margin-right: 2px;
-  margin-top: 1px;
-  font-size: 90%;
+ul.tag li.removedtag {
+	color: #eee;
+	background-color: #666;
 }

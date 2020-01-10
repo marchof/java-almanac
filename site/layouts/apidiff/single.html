@@ -33,17 +33,19 @@
         {{ end }}
       </div></td>
       <td>
+        <ul class="tag">
         {{ if eq "added" .status }}
-          <span class="elementadded">added</span>
+          <li class="tag newelement">added</li>
         {{ else if eq "removed" .status }}
-          <span class="elementremoved">removed</span>
+          <li class="tag removedelement">removed</li>
         {{ end }}
         {{ range .removedTags }}
-          <span class="tagremoved"><b>-</b> {{ . }}</span>
+          <li class="tag removedtag"><b>-</b> {{ . }}</li>
         {{ end }}
         {{ range .addedTags }}
-          <span class="tagadded"><b>+</b> {{ . }}</span>
+          <li class="tag newtag"><b>+</b> {{ . }}</li>
         {{ end }}
+        </ul>
       </td>
     </tr>
   {{ end }}
