@@ -73,6 +73,7 @@ div.content table {
 	border-top: 1px solid #589;
 	border-bottom: 1px solid #589;
 	font-size: 11pt;
+	color: #666;
 }
 
 div.content table thead {
@@ -93,6 +94,22 @@ div.content td {
 
 div.content table tr:nth-child(even) {
 	background-color: #eee;
+}
+
+ul.archtag {
+	padding: 0px;
+	list-style: none;
+}
+
+ul.archtag li {
+	float:left;
+	background-color: #69a;
+	margin: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 3px;
+	font-size: 90%;
+	color: #fff;
 }
 
 div.footer {
@@ -179,7 +196,7 @@ span.elementadded {
   background-color: #080;
   padding: 0px 4px 0px 4px;
   border-radius: 3px;
-  font-size:90%;
+  font-size: 90%;
 }
 
 span.elementremoved {
@@ -187,7 +204,7 @@ span.elementremoved {
   background-color: #c00;
   padding: 0px 4px 0px 4px;
   border-radius: 3px;
-  font-size:90%;
+  font-size: 90%;
 }
 
 span.tagadded {
@@ -198,7 +215,7 @@ span.tagadded {
   border-radius: 3px;
   margin-right: 2px;
   margin-top: 1px;
-  font-size:90%;
+  font-size: 90%;
 }
 
 span.tagremoved {
@@ -209,5 +226,5 @@ span.tagremoved {
   border-radius: 3px;
   margin-right: 2px;
   margin-top: 1px;
-  font-size:90%;
+  font-size: 90%;
 }

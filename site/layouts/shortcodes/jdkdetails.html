@@ -65,7 +65,13 @@
       <td><a href="{{ $vendor.url }}">{{ $vendor.name }}</a></td>
       <td><a href="{{ .url }}">{{ .name }}</a></td>
       <td>{{ .license }}</td>
-      <td>{{ delimit .platforms ", " }}</td>
+      <td>
+        <ul class="archtag">
+          {{ range .platforms }}
+            <li>{{ . }}</li>
+          {{ end }}
+        <ul>
+      </td>
     </tr>
     {{ end }}
     {{ end }}
