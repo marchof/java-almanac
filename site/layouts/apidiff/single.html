@@ -53,6 +53,18 @@
 </table>
 <a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $targetversion }}/apidiff/{{ $baseversion }}.json">Data Source</a>
 
+<p>
+  This report is based on simple comparison of all <code>public</code> and
+  <code>protected</code> APIs of the <code>java.*</code> and <code>javax.*</code>
+  packages of JDK builds {{ .target.build }} and {{ .base.build }}. It does not make statements about
+  <a href="https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility">compatibility</a>.
+</p>
+
+<p>
+  More detailed API comparisons based on the <a href="https://github.com/siom79/japicmp">japicmp</a>
+  tool can be found <a href="https://github.com/AdoptOpenJDK/jdk-api-diff">here</a>.
+</p>
+
 {{ end }}
 {{ partial "footer.html" . }}
 
