@@ -42,7 +42,7 @@ More detailed API comparisons based on the [japicmp](https://github.com/siom79/j
 
 ## Author & License
 
-![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+![Creative Commons BY-SA](/img/cc-by-sa.png)
 
 This content is provided by Java Champion Marc R. Hoffmann under the
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
