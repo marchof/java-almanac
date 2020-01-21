@@ -1,0 +1,29 @@
+{{ range sort $.Site.Data.bytecode.categories "order" }}
+{{ $currentcategory := .id }} 
+  <h2>{{ .title }}</h2>
+  <p>{{ .description }}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mnemonic</th>
+        <th>Opcode</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range sort $.Site.Data.bytecode.opcodes "mnemonic" }}
+      {{ if eq .category $currentcategory }}
+      <tr>
+        <td><a href="../op/{{ .name }}"><code>{{ .mnemonic }}</code></a></td>
+        <td>{{ .opcode }}</td>
+        <td>{{ markdownify .shortdescr }}</td>
+      </tr>
+      {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+  <a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/bytecode/opcodes.json">Data Source</a>
+
+
+{{ end }}

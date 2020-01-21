@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>JDK Version</th>
+      <th>Bytecode Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range sort $.Site.Data.jdk.versions "ga" }}
+    <tr>
+      <td><a href="../../jdk/{{ .version }}">{{ .name }}</a></td>
+      <td>{{ .bytecode }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+<a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/">Data Source</a>

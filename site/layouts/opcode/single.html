@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+{{ $opcode := .Params.Opcode }}
+{{ with (index $.Site.Data.bytecode.opcodes $opcode) }}
+
+<h1>Opcode <code>{{ .mnemonic }}</code></h1>
+
+<p>
+{{ markdownify .shortdescr }}
+</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Category</th>
+      <td>{{ (index $.Site.Data.bytecode.categories .category).title }}</td>
+    </tr>
+    <tr>
+      <th>Opcode dec</th>
+      <td><code>{{ .opcode }}</code></td>
+    </tr>
+    <tr>
+      <th>Opcode hex</th>
+      <td><code>{{ printf "0x%x" (int .opcode) }}</td>
+    </tr>
+    <tr>
+      <th>Specification</th>
+      <td><a href="{{ $.Site.Params.Jvmspecbase }}{{.specref}}">JVM Spec for <code>{{ $opcode }}</code></a></td>
+    </tr>
+  </tbody>
+</table>
+<a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/bytecode/opcodes.json">Data Source</a>
+
+{{ end }}
+{{ partial "footer.html" . }}
+

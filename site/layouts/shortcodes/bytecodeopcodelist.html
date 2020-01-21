@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Opcode</th>
+      <th>Mnemonic</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range sort $.Site.Data.bytecode.opcodes "opcode" }}
+    <tr>
+      <td><a href="../op/{{ .name }}"><code>{{ .opcode }}</code></a></td>
+      <td>{{ .mnemonic }}</td>
+      <td>{{ markdownify .shortdescr }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+<a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/bytecode/opcodes.json">Data Source</a>

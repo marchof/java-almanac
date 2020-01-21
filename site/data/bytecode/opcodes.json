@@ -1,0 +1,1437 @@
+{
+  "aaload": {
+    "mnemonic": "aaload",
+    "opcode": 50,
+    "category": "array",
+    "shortdescr": "Load reference from array",
+    "specref": "jvms-6.html#jvms-6.5.aaload"
+  },
+  "aastore": {
+    "mnemonic": "aastore",
+    "opcode": 83,
+    "category": "array",
+    "shortdescr": "Store into reference array",
+    "specref": "jvms-6.html#jvms-6.5.aastore"
+  },
+  "aconst_null": {
+    "mnemonic": "aconst_null",
+    "opcode": 1,
+    "category": "constant",
+    "shortdescr": "Push `null`",
+    "specref": "jvms-6.html#jvms-6.5.aconst_null"
+  },
+  "aload": {
+    "mnemonic": "aload",
+    "opcode": 25,
+    "category": "load",
+    "shortdescr": "Load reference from local variable",
+    "specref": "jvms-6.html#jvms-6.5.aload"
+  },
+  "aload_0": {
+    "mnemonic": "aload_0",
+    "opcode": 42,
+    "category": "load",
+    "shortdescr": "Load reference from local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.aload_n"
+  },
+  "aload_1": {
+    "mnemonic": "aload_1",
+    "opcode": 43,
+    "category": "load",
+    "shortdescr": "Load reference from local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.aload_n"
+  },
+  "aload_2": {
+    "mnemonic": "aload_2",
+    "opcode": 44,
+    "category": "load",
+    "shortdescr": "Load reference from local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.aload_n"
+  },
+  "aload_3": {
+    "mnemonic": "aload_3",
+    "opcode": 45,
+    "category": "load",
+    "shortdescr": "Load reference from local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.aload_n"
+  },
+  "anewarray": {
+    "mnemonic": "anewarray",
+    "opcode": 189,
+    "category": "array",
+    "shortdescr": "Create new array of reference",
+    "specref": "jvms-6.html#jvms-6.5.anewarray"
+  },
+  "areturn": {
+    "mnemonic": "areturn",
+    "opcode": 176,
+    "category": "flow",
+    "shortdescr": "Return reference from method",
+    "specref": "jvms-6.html#jvms-6.5.areturn"
+  },
+  "arraylength": {
+    "mnemonic": "arraylength",
+    "opcode": 190,
+    "category": "array",
+    "shortdescr": "Get length of array",
+    "specref": "jvms-6.html#jvms-6.5.arraylength"
+  },
+  "astore": {
+    "mnemonic": "astore",
+    "opcode": 58,
+    "category": "store",
+    "shortdescr": "Store reference into local variable",
+    "specref": "jvms-6.html#jvms-6.5.astore"
+  },
+  "astore_0": {
+    "mnemonic": "astore_0",
+    "opcode": 75,
+    "category": "store",
+    "shortdescr": "Store reference into local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.astore_n"
+  },
+  "astore_1": {
+    "mnemonic": "astore_1",
+    "opcode": 76,
+    "category": "store",
+    "shortdescr": "Store reference into local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.astore_n"
+  },
+  "astore_2": {
+    "mnemonic": "astore_2",
+    "opcode": 77,
+    "category": "store",
+    "shortdescr": "Store reference into local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.astore_n"
+  },
+  "astore_3": {
+    "mnemonic": "astore_3",
+    "opcode": 78,
+    "category": "store",
+    "shortdescr": "Store reference into local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.astore_n"
+  },
+  "athrow": {
+    "mnemonic": "athrow",
+    "opcode": 191,
+    "category": "flow",
+    "shortdescr": "Throw `Throwable` reference",
+    "specref": "jvms-6.html#jvms-6.5.athrow"
+  },
+  "baload": {
+    "mnemonic": "baload",
+    "opcode": 51,
+    "category": "array",
+    "shortdescr": "Load `byte` or `boolean` from array",
+    "specref": "jvms-6.html#jvms-6.5.baload"
+  },
+  "bastore": {
+    "mnemonic": "bastore",
+    "opcode": 84,
+    "category": "array",
+    "shortdescr": "Store into `byte` or `boolean` array",
+    "specref": "jvms-6.html#jvms-6.5.bastore"
+  },
+  "bipush": {
+    "mnemonic": "bipush",
+    "opcode": 16,
+    "category": "constant",
+    "shortdescr": "Push `byte`",
+    "specref": "jvms-6.html#jvms-6.5.bipush"
+  },
+  "breakpoint": {
+    "mnemonic": "breakpoint",
+    "opcode": 202,
+    "category": "reserved",
+    "shortdescr": "Reserved for internal usage in debuggers",
+    "specref": "jvms-6.html#jvms-6.2"
+  },
+  "caload": {
+    "mnemonic": "caload",
+    "opcode": 52,
+    "category": "array",
+    "shortdescr": "Load `char` from array",
+    "specref": "jvms-6.html#jvms-6.5.caload"
+  },
+  "castore": {
+    "mnemonic": "castore",
+    "opcode": 85,
+    "category": "array",
+    "shortdescr": "Store into `char` array",
+    "specref": "jvms-6.html#jvms-6.5.castore"
+  },
+  "checkcast": {
+    "mnemonic": "checkcast",
+    "opcode": 192,
+    "category": "objects",
+    "shortdescr": "Check whether reference is of given type",
+    "specref": "jvms-6.html#jvms-6.5.checkcast"
+  },
+  "d2f": {
+    "mnemonic": "d2f",
+    "opcode": 144,
+    "category": "conversion",
+    "shortdescr": "Convert `double` to `float`",
+    "specref": "jvms-6.html#jvms-6.5.d2f"
+  },
+  "d2i": {
+    "mnemonic": "d2i",
+    "opcode": 142,
+    "category": "conversion",
+    "shortdescr": "Convert `double` to `int`",
+    "specref": "jvms-6.html#jvms-6.5.d2i"
+  },
+  "d2l": {
+    "mnemonic": "d2l",
+    "opcode": 143,
+    "category": "conversion",
+    "shortdescr": "Convert `double` to `long`",
+    "specref": "jvms-6.html#jvms-6.5.d2l"
+  },
+  "dadd": {
+    "mnemonic": "dadd",
+    "opcode": 99,
+    "category": "math",
+    "shortdescr": "Add `double`",
+    "specref": "jvms-6.html#jvms-6.5.dadd"
+  },
+  "daload": {
+    "mnemonic": "daload",
+    "opcode": 49,
+    "category": "array",
+    "shortdescr": "Load `double` from array",
+    "specref": "jvms-6.html#jvms-6.5.daload"
+  },
+  "dastore": {
+    "mnemonic": "dastore",
+    "opcode": 82,
+    "category": "array",
+    "shortdescr": "Store into `double` array",
+    "specref": "jvms-6.html#jvms-6.5.dastore"
+  },
+  "dcmpg": {
+    "mnemonic": "dcmpg",
+    "opcode": 152,
+    "category": "comparison",
+    "shortdescr": "Compare `double`",
+    "specref": "jvms-6.html#jvms-6.5.dcmp_op"
+  },
+  "dcmpl": {
+    "mnemonic": "dcmpl",
+    "opcode": 151,
+    "category": "comparison",
+    "shortdescr": "Compare `double`",
+    "specref": "jvms-6.html#jvms-6.5.dcmp_op"
+  },
+  "dconst_0": {
+    "mnemonic": "dconst_0",
+    "opcode": 14,
+    "category": "constant",
+    "shortdescr": "Push `double` value `0.0`",
+    "specref": "jvms-6.html#jvms-6.5.dconst_d"
+  },
+  "dconst_1": {
+    "mnemonic": "dconst_1",
+    "opcode": 15,
+    "category": "constant",
+    "shortdescr": "Push `double` value `1.0`",
+    "specref": "jvms-6.html#jvms-6.5.dconst_d"
+  },
+  "ddiv": {
+    "mnemonic": "ddiv",
+    "opcode": 111,
+    "category": "math",
+    "shortdescr": "Divide `double`",
+    "specref": "jvms-6.html#jvms-6.5.ddiv"
+  },
+  "dload": {
+    "mnemonic": "dload",
+    "opcode": 24,
+    "category": "load",
+    "shortdescr": "Load `double` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.dload"
+  },
+  "dload_0": {
+    "mnemonic": "dload_0",
+    "opcode": 38,
+    "category": "load",
+    "shortdescr": "Load `double` from local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.dload_n"
+  },
+  "dload_1": {
+    "mnemonic": "dload_1",
+    "opcode": 39,
+    "category": "load",
+    "shortdescr": "Load `double` from local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.dload_n"
+  },
+  "dload_2": {
+    "mnemonic": "dload_2",
+    "opcode": 40,
+    "category": "load",
+    "shortdescr": "Load `double` from local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.dload_n"
+  },
+  "dload_3": {
+    "mnemonic": "dload_3",
+    "opcode": 41,
+    "category": "load",
+    "shortdescr": "Load `double` from local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.dload_n"
+  },
+  "dmul": {
+    "mnemonic": "dmul",
+    "opcode": 107,
+    "category": "math",
+    "shortdescr": "Multiply `double`",
+    "specref": "jvms-6.html#jvms-6.5.dmul"
+  },
+  "dneg": {
+    "mnemonic": "dneg",
+    "opcode": 119,
+    "category": "math",
+    "shortdescr": "Negate `double`",
+    "specref": "jvms-6.html#jvms-6.5.dneg"
+  },
+  "drem": {
+    "mnemonic": "drem",
+    "opcode": 115,
+    "category": "math",
+    "shortdescr": "Remainder `double`",
+    "specref": "jvms-6.html#jvms-6.5.drem"
+  },
+  "dreturn": {
+    "mnemonic": "dreturn",
+    "opcode": 175,
+    "category": "flow",
+    "shortdescr": "Return `double` from method",
+    "specref": "jvms-6.html#jvms-6.5.dreturn"
+  },
+  "dstore": {
+    "mnemonic": "dstore",
+    "opcode": 57,
+    "category": "store",
+    "shortdescr": "Store `double` into local variable",
+    "specref": "jvms-6.html#jvms-6.5.dstore"
+  },
+  "dstore_0": {
+    "mnemonic": "dstore_0",
+    "opcode": 71,
+    "category": "store",
+    "shortdescr": "Store `double` into local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.dstore_n"
+  },
+  "dstore_1": {
+    "mnemonic": "dstore_1",
+    "opcode": 72,
+    "category": "store",
+    "shortdescr": "Store `double` into local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.dstore_n"
+  },
+  "dstore_2": {
+    "mnemonic": "dstore_2",
+    "opcode": 73,
+    "category": "store",
+    "shortdescr": "Store `double` into local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.dstore_n"
+  },
+  "dstore_3": {
+    "mnemonic": "dstore_3",
+    "opcode": 74,
+    "category": "store",
+    "shortdescr": "Store `double` into local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.dstore_n"
+  },
+  "dsub": {
+    "mnemonic": "dsub",
+    "opcode": 103,
+    "category": "math",
+    "shortdescr": "Subtract `double`",
+    "specref": "jvms-6.html#jvms-6.5.dsub"
+  },
+  "dup": {
+    "mnemonic": "dup",
+    "opcode": 89,
+    "category": "stack",
+    "shortdescr": "Duplicate the top operand stack value",
+    "specref": "jvms-6.html#jvms-6.5.dup"
+  },
+  "dup2": {
+    "mnemonic": "dup2",
+    "opcode": 92,
+    "category": "stack",
+    "shortdescr": "Duplicate the top one or two operand stack values",
+    "specref": "jvms-6.html#jvms-6.5.dup2"
+  },
+  "dup2_x1": {
+    "mnemonic": "dup2_x1",
+    "opcode": 93,
+    "category": "stack",
+    "shortdescr": "Duplicate the top one or two operand stack values and insert two or three values down",
+    "specref": "jvms-6.html#jvms-6.5.dup2_x1"
+  },
+  "dup2_x2": {
+    "mnemonic": "dup2_x2",
+    "opcode": 94,
+    "category": "stack",
+    "shortdescr": "Duplicate the top one or two operand stack values and insert two, three, or four values down",
+    "specref": "jvms-6.html#jvms-6.5.dup2_x2"
+  },
+  "dup_x1": {
+    "mnemonic": "dup_x1",
+    "opcode": 90,
+    "category": "stack",
+    "shortdescr": "Duplicate the top operand stack value and insert two values down",
+    "specref": "jvms-6.html#jvms-6.5.dup_x1"
+  },
+  "dup_x2": {
+    "mnemonic": "dup_x2",
+    "opcode": 91,
+    "category": "stack",
+    "shortdescr": "Duplicate the top operand stack value and insert two or three values down",
+    "specref": "jvms-6.html#jvms-6.5.dup_x2"
+  },
+  "f2d": {
+    "mnemonic": "f2d",
+    "opcode": 141,
+    "category": "conversion",
+    "shortdescr": "Convert `float` to `double`",
+    "specref": "jvms-6.html#jvms-6.5.f2d"
+  },
+  "f2i": {
+    "mnemonic": "f2i",
+    "opcode": 139,
+    "category": "conversion",
+    "shortdescr": "Convert `float` to `int`",
+    "specref": "jvms-6.html#jvms-6.5.f2i"
+  },
+  "f2l": {
+    "mnemonic": "f2l",
+    "opcode": 140,
+    "category": "conversion",
+    "shortdescr": "Convert `float` to `long`",
+    "specref": "jvms-6.html#jvms-6.5.f2l"
+  },
+  "fadd": {
+    "mnemonic": "fadd",
+    "opcode": 98,
+    "category": "math",
+    "shortdescr": "Add `float`",
+    "specref": "jvms-6.html#jvms-6.5.fadd"
+  },
+  "faload": {
+    "mnemonic": "faload",
+    "opcode": 48,
+    "category": "array",
+    "shortdescr": "Load `float` from array",
+    "specref": "jvms-6.html#jvms-6.5.faload"
+  },
+  "fastore": {
+    "mnemonic": "fastore",
+    "opcode": 81,
+    "category": "array",
+    "shortdescr": "Store into `float` array",
+    "specref": "jvms-6.html#jvms-6.5.fastore"
+  },
+  "fcmpg": {
+    "mnemonic": "fcmpg",
+    "opcode": 150,
+    "category": "comparison",
+    "shortdescr": "Compare `float`",
+    "specref": "jvms-6.html#jvms-6.5.fcmp_op"
+  },
+  "fcmpl": {
+    "mnemonic": "fcmpl",
+    "opcode": 149,
+    "category": "comparison",
+    "shortdescr": "Compare `float`",
+    "specref": "jvms-6.html#jvms-6.5.fcmp_op"
+  },
+  "fconst_0": {
+    "mnemonic": "fconst_0",
+    "opcode": 11,
+    "category": "constant",
+    "shortdescr": "Push `float` value `0.0`",
+    "specref": "jvms-6.html#jvms-6.5.fconst_f"
+  },
+  "fconst_1": {
+    "mnemonic": "fconst_1",
+    "opcode": 12,
+    "category": "constant",
+    "shortdescr": "Push `float` value `1.0`",
+    "specref": "jvms-6.html#jvms-6.5.fconst_f"
+  },
+  "fconst_2": {
+    "mnemonic": "fconst_2",
+    "opcode": 13,
+    "category": "constant",
+    "shortdescr": "Push `float` value `2.0`",
+    "specref": "jvms-6.html#jvms-6.5.fconst_f"
+  },
+  "fdiv": {
+    "mnemonic": "fdiv",
+    "opcode": 110,
+    "category": "math",
+    "shortdescr": "Divide `float`",
+    "specref": "jvms-6.html#jvms-6.5.fdiv"
+  },
+  "fload": {
+    "mnemonic": "fload",
+    "opcode": 23,
+    "category": "load",
+    "shortdescr": "Load `float` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.fload"
+  },
+  "fload_0": {
+    "mnemonic": "fload_0",
+    "opcode": 34,
+    "category": "load",
+    "shortdescr": "Load `float` from local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.fload_n"
+  },
+  "fload_1": {
+    "mnemonic": "fload_1",
+    "opcode": 35,
+    "category": "load",
+    "shortdescr": "Load `float` from local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.fload_n"
+  },
+  "fload_2": {
+    "mnemonic": "fload_2",
+    "opcode": 36,
+    "category": "load",
+    "shortdescr": "Load `float` from local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.fload_n"
+  },
+  "fload_3": {
+    "mnemonic": "fload_3",
+    "opcode": 37,
+    "category": "load",
+    "shortdescr": "Load `float` from local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.fload_n"
+  },
+  "fmul": {
+    "mnemonic": "fmul",
+    "opcode": 106,
+    "category": "math",
+    "shortdescr": "Multiply `float`",
+    "specref": "jvms-6.html#jvms-6.5.fmul"
+  },
+  "fneg": {
+    "mnemonic": "fneg",
+    "opcode": 118,
+    "category": "math",
+    "shortdescr": "Negate `float`",
+    "specref": "jvms-6.html#jvms-6.5.fneg"
+  },
+  "frem": {
+    "mnemonic": "frem",
+    "opcode": 114,
+    "category": "math",
+    "shortdescr": "Remainder `float`",
+    "specref": "jvms-6.html#jvms-6.5.frem"
+  },
+  "freturn": {
+    "mnemonic": "freturn",
+    "opcode": 174,
+    "category": "flow",
+    "shortdescr": "Return `float` from method",
+    "specref": "jvms-6.html#jvms-6.5.freturn"
+  },
+  "fstore": {
+    "mnemonic": "fstore",
+    "opcode": 56,
+    "category": "store",
+    "shortdescr": "Store `float` into local variable",
+    "specref": "jvms-6.html#jvms-6.5.fstore"
+  },
+  "fstore_0": {
+    "mnemonic": "fstore_0",
+    "opcode": 67,
+    "category": "store",
+    "shortdescr": "Store `float` into local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.fstore_n"
+  },
+  "fstore_1": {
+    "mnemonic": "fstore_1",
+    "opcode": 68,
+    "category": "store",
+    "shortdescr": "Store `float` into local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.fstore_n"
+  },
+  "fstore_2": {
+    "mnemonic": "fstore_2",
+    "opcode": 69,
+    "category": "store",
+    "shortdescr": "Store `float` into local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.fstore_n"
+  },
+  "fstore_3": {
+    "mnemonic": "fstore_3",
+    "opcode": 70,
+    "category": "store",
+    "shortdescr": "Store `float` into local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.fstore_n"
+  },
+  "fsub": {
+    "mnemonic": "fsub",
+    "opcode": 102,
+    "category": "math",
+    "shortdescr": "Subtract `float`",
+    "specref": "jvms-6.html#jvms-6.5.fsub"
+  },
+  "getfield": {
+    "mnemonic": "getfield",
+    "opcode": 180,
+    "category": "objects",
+    "shortdescr": "Fetch field from object",
+    "specref": "jvms-6.html#jvms-6.5.getfield"
+  },
+  "getstatic": {
+    "mnemonic": "getstatic",
+    "opcode": 178,
+    "category": "objects",
+    "shortdescr": "Get `static` field from class",
+    "specref": "jvms-6.html#jvms-6.5.getstatic"
+  },
+  "goto": {
+    "mnemonic": "goto",
+    "opcode": 167,
+    "category": "flow",
+    "shortdescr": "Unconditional jump",
+    "specref": "jvms-6.html#jvms-6.5.goto"
+  },
+  "goto_w": {
+    "mnemonic": "goto_w",
+    "opcode": 200,
+    "category": "flow",
+    "shortdescr": "Unconditional jump (wide index)",
+    "specref": "jvms-6.html#jvms-6.5.goto_w"
+  },
+  "i2b": {
+    "mnemonic": "i2b",
+    "opcode": 145,
+    "category": "conversion",
+    "shortdescr": "Convert `int` to `byte`",
+    "specref": "jvms-6.html#jvms-6.5.i2b"
+  },
+  "i2c": {
+    "mnemonic": "i2c",
+    "opcode": 146,
+    "category": "conversion",
+    "shortdescr": "Convert `int` to `char`",
+    "specref": "jvms-6.html#jvms-6.5.i2c"
+  },
+  "i2d": {
+    "mnemonic": "i2d",
+    "opcode": 135,
+    "category": "conversion",
+    "shortdescr": "Convert `int` to `double`",
+    "specref": "jvms-6.html#jvms-6.5.i2d"
+  },
+  "i2f": {
+    "mnemonic": "i2f",
+    "opcode": 134,
+    "category": "conversion",
+    "shortdescr": "Convert `int` to `float`",
+    "specref": "jvms-6.html#jvms-6.5.i2f"
+  },
+  "i2l": {
+    "mnemonic": "i2l",
+    "opcode": 133,
+    "category": "conversion",
+    "shortdescr": "Convert `int` to `long`",
+    "specref": "jvms-6.html#jvms-6.5.i2l"
+  },
+  "i2s": {
+    "mnemonic": "i2s",
+    "opcode": 147,
+    "category": "conversion",
+    "shortdescr": "Convert `int` to `short`",
+    "specref": "jvms-6.html#jvms-6.5.i2s"
+  },
+  "iadd": {
+    "mnemonic": "iadd",
+    "opcode": 96,
+    "category": "math",
+    "shortdescr": "Add `int`",
+    "specref": "jvms-6.html#jvms-6.5.iadd"
+  },
+  "iaload": {
+    "mnemonic": "iaload",
+    "opcode": 46,
+    "category": "array",
+    "shortdescr": "Load `int` from array",
+    "specref": "jvms-6.html#jvms-6.5.iaload"
+  },
+  "iand": {
+    "mnemonic": "iand",
+    "opcode": 126,
+    "category": "math",
+    "shortdescr": "Boolean AND `int`",
+    "specref": "jvms-6.html#jvms-6.5.iand"
+  },
+  "iastore": {
+    "mnemonic": "iastore",
+    "opcode": 79,
+    "category": "array",
+    "shortdescr": "Store into `int` array",
+    "specref": "jvms-6.html#jvms-6.5.iastore"
+  },
+  "iconst_0": {
+    "mnemonic": "iconst_0",
+    "opcode": 3,
+    "category": "constant",
+    "shortdescr": "Push `int` constant `0`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "iconst_1": {
+    "mnemonic": "iconst_1",
+    "opcode": 4,
+    "category": "constant",
+    "shortdescr": "Push `int` constant `1`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "iconst_2": {
+    "mnemonic": "iconst_2",
+    "opcode": 5,
+    "category": "constant",
+    "shortdescr": "Push `int` constant `2`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "iconst_3": {
+    "mnemonic": "iconst_3",
+    "opcode": 6,
+    "category": "constant",
+    "shortdescr": "Push `int` constant `3`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "iconst_4": {
+    "mnemonic": "iconst_4",
+    "opcode": 7,
+    "category": "constant",
+    "shortdescr": "Push `int` constant `4`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "iconst_5": {
+    "mnemonic": "iconst_5",
+    "opcode": 8,
+    "category": "constant",
+    "shortdescr": "Push `int` constant `5`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "iconst_m1": {
+    "mnemonic": "iconst_m1",
+    "opcode": 2,
+    "category": "constant",
+    "shortdescr": "Push `int` constant  `-1`",
+    "specref": "jvms-6.html#jvms-6.5.iconst_i"
+  },
+  "idiv": {
+    "mnemonic": "idiv",
+    "opcode": 108,
+    "category": "math",
+    "shortdescr": "Divide `int`",
+    "specref": "jvms-6.html#jvms-6.5.idiv"
+  },
+  "if_acmpeq": {
+    "mnemonic": "if_acmpeq",
+    "opcode": 165,
+    "category": "conditional",
+    "shortdescr": "Jump if reference comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_acmp_cond"
+  },
+  "if_acmpne": {
+    "mnemonic": "if_acmpne",
+    "opcode": 166,
+    "category": "conditional",
+    "shortdescr": "Jump if reference comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_acmp_cond"
+  },
+  "if_icmpeq": {
+    "mnemonic": "if_icmpeq",
+    "opcode": 159,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_icmp_cond"
+  },
+  "if_icmpge": {
+    "mnemonic": "if_icmpge",
+    "opcode": 162,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_icmp_cond"
+  },
+  "if_icmpgt": {
+    "mnemonic": "if_icmpgt",
+    "opcode": 163,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_icmp_cond"
+  },
+  "if_icmple": {
+    "mnemonic": "if_icmple",
+    "opcode": 164,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_icmp_cond"
+  },
+  "if_icmplt": {
+    "mnemonic": "if_icmplt",
+    "opcode": 161,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_icmp_cond"
+  },
+  "if_icmpne": {
+    "mnemonic": "if_icmpne",
+    "opcode": 160,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_icmp_cond"
+  },
+  "ifeq": {
+    "mnemonic": "ifeq",
+    "opcode": 153,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison with zero succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_cond"
+  },
+  "ifge": {
+    "mnemonic": "ifge",
+    "opcode": 156,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison with zero succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_cond"
+  },
+  "ifgt": {
+    "mnemonic": "ifgt",
+    "opcode": 157,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison with zero succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_cond"
+  },
+  "ifle": {
+    "mnemonic": "ifle",
+    "opcode": 158,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison with zero succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_cond"
+  },
+  "iflt": {
+    "mnemonic": "iflt",
+    "opcode": 155,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison with zero succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_cond"
+  },
+  "ifne": {
+    "mnemonic": "ifne",
+    "opcode": 154,
+    "category": "conditional",
+    "shortdescr": "Jump if `int` comparison with zero succeeds",
+    "specref": "jvms-6.html#jvms-6.5.if_cond"
+  },
+  "ifnonnull": {
+    "mnemonic": "ifnonnull",
+    "opcode": 199,
+    "category": "conditional",
+    "shortdescr": "Jump if reference not `null`",
+    "specref": "jvms-6.html#jvms-6.5.ifnonnull"
+  },
+  "ifnull": {
+    "mnemonic": "ifnull",
+    "opcode": 198,
+    "category": "conditional",
+    "shortdescr": "Jump if reference is `null`",
+    "specref": "jvms-6.html#jvms-6.5.ifnull"
+  },
+  "iinc": {
+    "mnemonic": "iinc",
+    "opcode": 132,
+    "category": "math",
+    "shortdescr": "Increment local variable by constant",
+    "specref": "jvms-6.html#jvms-6.5.iinc"
+  },
+  "iload": {
+    "mnemonic": "iload",
+    "opcode": 21,
+    "category": "load",
+    "shortdescr": "Load `int` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.iload"
+  },
+  "iload_0": {
+    "mnemonic": "iload_0",
+    "opcode": 26,
+    "category": "load",
+    "shortdescr": "Load `int` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.iload_n"
+  },
+  "iload_1": {
+    "mnemonic": "iload_1",
+    "opcode": 27,
+    "category": "load",
+    "shortdescr": "Load `int` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.iload_n"
+  },
+  "iload_2": {
+    "mnemonic": "iload_2",
+    "opcode": 28,
+    "category": "load",
+    "shortdescr": "Load `int` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.iload_n"
+  },
+  "iload_3": {
+    "mnemonic": "iload_3",
+    "opcode": 29,
+    "category": "load",
+    "shortdescr": "Load `int` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.iload_n"
+  },
+  "impdep1": {
+    "mnemonic": "impdep1",
+    "opcode": 254,
+    "category": "reserved",
+    "shortdescr": "Reserved for internal usage in JVM",
+    "specref": "jvms-6.html#jvms-6.2"
+  },
+  "impdep2": {
+    "mnemonic": "impdep2",
+    "opcode": 255,
+    "category": "reserved",
+    "shortdescr": "Reserved for internal usage in JVM",
+    "specref": "jvms-6.html#jvms-6.2"
+  },
+  "imul": {
+    "mnemonic": "imul",
+    "opcode": 104,
+    "category": "math",
+    "shortdescr": "Multiply `int`",
+    "specref": "jvms-6.html#jvms-6.5.imul"
+  },
+  "ineg": {
+    "mnemonic": "ineg",
+    "opcode": 116,
+    "category": "math",
+    "shortdescr": "Negate `int`",
+    "specref": "jvms-6.html#jvms-6.5.ineg"
+  },
+  "instanceof": {
+    "mnemonic": "instanceof",
+    "opcode": 193,
+    "category": "objects",
+    "shortdescr": "Determine if reference is of given type",
+    "specref": "jvms-6.html#jvms-6.5.instanceof"
+  },
+  "invokedynamic": {
+    "mnemonic": "invokedynamic",
+    "opcode": 186,
+    "category": "objects",
+    "shortdescr": "Invoke a dynamically-computed call site",
+    "specref": "jvms-6.html#jvms-6.5.invokedynamic"
+  },
+  "invokeinterface": {
+    "mnemonic": "invokeinterface",
+    "opcode": 185,
+    "category": "objects",
+    "shortdescr": "Invoke interface method",
+    "specref": "jvms-6.html#jvms-6.5.invokeinterface"
+  },
+  "invokespecial": {
+    "mnemonic": "invokespecial",
+    "opcode": 183,
+    "category": "objects",
+    "shortdescr": "Directly invoke instance (initialization) method of the current class or its supertypes",
+    "specref": "jvms-6.html#jvms-6.5.invokespecial"
+  },
+  "invokestatic": {
+    "mnemonic": "invokestatic",
+    "opcode": 184,
+    "category": "objects",
+    "shortdescr": "Invoke `static` method",
+    "specref": "jvms-6.html#jvms-6.5.invokestatic"
+  },
+  "invokevirtual": {
+    "mnemonic": "invokevirtual",
+    "opcode": 182,
+    "category": "objects",
+    "shortdescr": "Invoke instance method, dispatch based on class",
+    "specref": "jvms-6.html#jvms-6.5.invokevirtual"
+  },
+  "ior": {
+    "mnemonic": "ior",
+    "opcode": 128,
+    "category": "math",
+    "shortdescr": "Boolean OR `int`",
+    "specref": "jvms-6.html#jvms-6.5.ior"
+  },
+  "irem": {
+    "mnemonic": "irem",
+    "opcode": 112,
+    "category": "math",
+    "shortdescr": "Remainder `int`",
+    "specref": "jvms-6.html#jvms-6.5.irem"
+  },
+  "ireturn": {
+    "mnemonic": "ireturn",
+    "opcode": 172,
+    "category": "flow",
+    "shortdescr": "Return `int` from method",
+    "specref": "jvms-6.html#jvms-6.5.ireturn"
+  },
+  "ishl": {
+    "mnemonic": "ishl",
+    "opcode": 120,
+    "category": "math",
+    "shortdescr": "Shift left `int`",
+    "specref": "jvms-6.html#jvms-6.5.ishl"
+  },
+  "ishr": {
+    "mnemonic": "ishr",
+    "opcode": 122,
+    "category": "math",
+    "shortdescr": "Arithmetic shift right `int`",
+    "specref": "jvms-6.html#jvms-6.5.ishr"
+  },
+  "istore": {
+    "mnemonic": "istore",
+    "opcode": 54,
+    "category": "store",
+    "shortdescr": "Store `int` into local variable",
+    "specref": "jvms-6.html#jvms-6.5.istore"
+  },
+  "istore_0": {
+    "mnemonic": "istore_0",
+    "opcode": 59,
+    "category": "store",
+    "shortdescr": "Store `int` into local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.istore_n"
+  },
+  "istore_1": {
+    "mnemonic": "istore_1",
+    "opcode": 60,
+    "category": "store",
+    "shortdescr": "Store `int` into local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.istore_n"
+  },
+  "istore_2": {
+    "mnemonic": "istore_2",
+    "opcode": 61,
+    "category": "store",
+    "shortdescr": "Store `int` into local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.istore_n"
+  },
+  "istore_3": {
+    "mnemonic": "istore_3",
+    "opcode": 62,
+    "category": "store",
+    "shortdescr": "Store `int` into local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.istore_n"
+  },
+  "isub": {
+    "mnemonic": "isub",
+    "opcode": 100,
+    "category": "math",
+    "shortdescr": "Subtract `int`",
+    "specref": "jvms-6.html#jvms-6.5.isub"
+  },
+  "iushr": {
+    "mnemonic": "iushr",
+    "opcode": 124,
+    "category": "math",
+    "shortdescr": "Logical shift right `int`",
+    "specref": "jvms-6.html#jvms-6.5.iushr"
+  },
+  "ixor": {
+    "mnemonic": "ixor",
+    "opcode": 130,
+    "category": "math",
+    "shortdescr": "Boolean XOR `int`",
+    "specref": "jvms-6.html#jvms-6.5.ixor"
+  },
+  "jsr": {
+    "mnemonic": "jsr",
+    "opcode": 168,
+    "category": "flow",
+    "shortdescr": "Jump subroutine",
+    "specref": "jvms-6.html#jvms-6.5.jsr"
+  },
+  "jsr_w": {
+    "mnemonic": "jsr_w",
+    "opcode": 201,
+    "category": "flow",
+    "shortdescr": "Jump subroutine (wide index)",
+    "specref": "jvms-6.html#jvms-6.5.jsr_w"
+  },
+  "l2d": {
+    "mnemonic": "l2d",
+    "opcode": 138,
+    "category": "conversion",
+    "shortdescr": "Convert `long` to `double`",
+    "specref": "jvms-6.html#jvms-6.5.l2d"
+  },
+  "l2f": {
+    "mnemonic": "l2f",
+    "opcode": 137,
+    "category": "conversion",
+    "shortdescr": "Convert `long` to `float`",
+    "specref": "jvms-6.html#jvms-6.5.l2f"
+  },
+  "l2i": {
+    "mnemonic": "l2i",
+    "opcode": 136,
+    "category": "conversion",
+    "shortdescr": "Convert `long` to `int`",
+    "specref": "jvms-6.html#jvms-6.5.l2i"
+  },
+  "ladd": {
+    "mnemonic": "ladd",
+    "opcode": 97,
+    "category": "math",
+    "shortdescr": "Add `long`",
+    "specref": "jvms-6.html#jvms-6.5.ladd"
+  },
+  "laload": {
+    "mnemonic": "laload",
+    "opcode": 47,
+    "category": "array",
+    "shortdescr": "Load `long` from array",
+    "specref": "jvms-6.html#jvms-6.5.laload"
+  },
+  "land": {
+    "mnemonic": "land",
+    "opcode": 127,
+    "category": "math",
+    "shortdescr": "Boolean AND `long`",
+    "specref": "jvms-6.html#jvms-6.5.land"
+  },
+  "lastore": {
+    "mnemonic": "lastore",
+    "opcode": 80,
+    "category": "array",
+    "shortdescr": "Store into `long` array",
+    "specref": "jvms-6.html#jvms-6.5.lastore"
+  },
+  "lcmp": {
+    "mnemonic": "lcmp",
+    "opcode": 148,
+    "category": "comparison",
+    "shortdescr": "Compare `long`",
+    "specref": "jvms-6.html#jvms-6.5.lcmp"
+  },
+  "lconst_0": {
+    "mnemonic": "lconst_0",
+    "opcode": 9,
+    "category": "constant",
+    "shortdescr": "Push `long` constant",
+    "specref": "jvms-6.html#jvms-6.5.lconst_l"
+  },
+  "lconst_1": {
+    "mnemonic": "lconst_1",
+    "opcode": 10,
+    "category": "constant",
+    "shortdescr": "Push `long` constant",
+    "specref": "jvms-6.html#jvms-6.5.lconst_l"
+  },
+  "ldc": {
+    "mnemonic": "ldc",
+    "opcode": 18,
+    "category": "constant",
+    "shortdescr": "Push item from constant pool",
+    "specref": "jvms-6.html#jvms-6.5.ldc"
+  },
+  "ldc2_w": {
+    "mnemonic": "ldc2_w",
+    "opcode": 20,
+    "category": "constant",
+    "shortdescr": "Push `long` or `double` from constant pool (wide index)",
+    "specref": "jvms-6.html#jvms-6.5.ldc2_w"
+  },
+  "ldc_w": {
+    "mnemonic": "ldc_w",
+    "opcode": 19,
+    "category": "constant",
+    "shortdescr": "Push item from constant pool (wide index)",
+    "specref": "jvms-6.html#jvms-6.5.ldc_w"
+  },
+  "ldiv": {
+    "mnemonic": "ldiv",
+    "opcode": 109,
+    "category": "math",
+    "shortdescr": "Divide `long`",
+    "specref": "jvms-6.html#jvms-6.5.ldiv"
+  },
+  "lload": {
+    "mnemonic": "lload",
+    "opcode": 22,
+    "category": "load",
+    "shortdescr": "Load `long` from local variable",
+    "specref": "jvms-6.html#jvms-6.5.lload"
+  },
+  "lload_0": {
+    "mnemonic": "lload_0",
+    "opcode": 30,
+    "category": "load",
+    "shortdescr": "Load `long` from local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.lload_n"
+  },
+  "lload_1": {
+    "mnemonic": "lload_1",
+    "opcode": 31,
+    "category": "load",
+    "shortdescr": "Load `long` from local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.lload_n"
+  },
+  "lload_2": {
+    "mnemonic": "lload_2",
+    "opcode": 32,
+    "category": "load",
+    "shortdescr": "Load `long` from local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.lload_n"
+  },
+  "lload_3": {
+    "mnemonic": "lload_3",
+    "opcode": 33,
+    "category": "load",
+    "shortdescr": "Load `long` from local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.lload_n"
+  },
+  "lmul": {
+    "mnemonic": "lmul",
+    "opcode": 105,
+    "category": "math",
+    "shortdescr": "Multiply `long`",
+    "specref": "jvms-6.html#jvms-6.5.lmul"
+  },
+  "lneg": {
+    "mnemonic": "lneg",
+    "opcode": 117,
+    "category": "math",
+    "shortdescr": "Negate `long`",
+    "specref": "jvms-6.html#jvms-6.5.lneg"
+  },
+  "lookupswitch": {
+    "mnemonic": "lookupswitch",
+    "opcode": 171,
+    "category": "conditional",
+    "shortdescr": "Access jump table by key match and jump",
+    "specref": "jvms-6.html#jvms-6.5.lookupswitch"
+  },
+  "lor": {
+    "mnemonic": "lor",
+    "opcode": 129,
+    "category": "math",
+    "shortdescr": "Boolean OR `long`",
+    "specref": "jvms-6.html#jvms-6.5.lor"
+  },
+  "lrem": {
+    "mnemonic": "lrem",
+    "opcode": 113,
+    "category": "math",
+    "shortdescr": "Remainder `long`",
+    "specref": "jvms-6.html#jvms-6.5.lrem"
+  },
+  "lreturn": {
+    "mnemonic": "lreturn",
+    "opcode": 173,
+    "category": "flow",
+    "shortdescr": "Return `long` from method",
+    "specref": "jvms-6.html#jvms-6.5.lreturn"
+  },
+  "lshl": {
+    "mnemonic": "lshl",
+    "opcode": 121,
+    "category": "math",
+    "shortdescr": "Shift left `long`",
+    "specref": "jvms-6.html#jvms-6.5.lshl"
+  },
+  "lshr": {
+    "mnemonic": "lshr",
+    "opcode": 123,
+    "category": "math",
+    "shortdescr": "Arithmetic shift right `long`",
+    "specref": "jvms-6.html#jvms-6.5.lshr"
+  },
+  "lstore": {
+    "mnemonic": "lstore",
+    "opcode": 55,
+    "category": "store",
+    "shortdescr": "Store `long` into local variable",
+    "specref": "jvms-6.html#jvms-6.5.lstore"
+  },
+  "lstore_0": {
+    "mnemonic": "lstore_0",
+    "opcode": 63,
+    "category": "store",
+    "shortdescr": "Store `long` into local variable `0`",
+    "specref": "jvms-6.html#jvms-6.5.lstore_n"
+  },
+  "lstore_1": {
+    "mnemonic": "lstore_1",
+    "opcode": 64,
+    "category": "store",
+    "shortdescr": "Store `long` into local variable `1`",
+    "specref": "jvms-6.html#jvms-6.5.lstore_n"
+  },
+  "lstore_2": {
+    "mnemonic": "lstore_2",
+    "opcode": 65,
+    "category": "store",
+    "shortdescr": "Store `long` into local variable `2`",
+    "specref": "jvms-6.html#jvms-6.5.lstore_n"
+  },
+  "lstore_3": {
+    "mnemonic": "lstore_3",
+    "opcode": 66,
+    "category": "store",
+    "shortdescr": "Store `long` into local variable `3`",
+    "specref": "jvms-6.html#jvms-6.5.lstore_n"
+  },
+  "lsub": {
+    "mnemonic": "lsub",
+    "opcode": 101,
+    "category": "math",
+    "shortdescr": "Subtract `long`",
+    "specref": "jvms-6.html#jvms-6.5.lsub"
+  },
+  "lushr": {
+    "mnemonic": "lushr",
+    "opcode": 125,
+    "category": "math",
+    "shortdescr": "Logical shift right `long`",
+    "specref": "jvms-6.html#jvms-6.5.lushr"
+  },
+  "lxor": {
+    "mnemonic": "lxor",
+    "opcode": 131,
+    "category": "math",
+    "shortdescr": "Boolean XOR `long`",
+    "specref": "jvms-6.html#jvms-6.5.lxor"
+  },
+  "monitorenter": {
+    "mnemonic": "monitorenter",
+    "opcode": 194,
+    "category": "other",
+    "shortdescr": "Enter monitor for object",
+    "specref": "jvms-6.html#jvms-6.5.monitorenter"
+  },
+  "monitorexit": {
+    "mnemonic": "monitorexit",
+    "opcode": 195,
+    "category": "other",
+    "shortdescr": "Exit monitor for object",
+    "specref": "jvms-6.html#jvms-6.5.monitorexit"
+  },
+  "multianewarray": {
+    "mnemonic": "multianewarray",
+    "opcode": 197,
+    "category": "array",
+    "shortdescr": "Create new multidimensional array",
+    "specref": "jvms-6.html#jvms-6.5.multianewarray"
+  },
+  "new": {
+    "mnemonic": "new",
+    "opcode": 187,
+    "category": "objects",
+    "shortdescr": "Create new object",
+    "specref": "jvms-6.html#jvms-6.5.new"
+  },
+  "newarray": {
+    "mnemonic": "newarray",
+    "opcode": 188,
+    "category": "array",
+    "shortdescr": "Create new array",
+    "specref": "jvms-6.html#jvms-6.5.newarray"
+  },
+  "nop": {
+    "mnemonic": "nop",
+    "opcode": 0,
+    "category": "other",
+    "shortdescr": "Do nothing",
+    "specref": "jvms-6.html#jvms-6.5.nop"
+  },
+  "pop": {
+    "mnemonic": "pop",
+    "opcode": 87,
+    "category": "stack",
+    "shortdescr": "Pop the top operand stack value",
+    "specref": "jvms-6.html#jvms-6.5.pop"
+  },
+  "pop2": {
+    "mnemonic": "pop2",
+    "opcode": 88,
+    "category": "stack",
+    "shortdescr": "Pop the top one or two operand stack values",
+    "specref": "jvms-6.html#jvms-6.5.pop2"
+  },
+  "putfield": {
+    "mnemonic": "putfield",
+    "opcode": 181,
+    "category": "objects",
+    "shortdescr": "Set field in object",
+    "specref": "jvms-6.html#jvms-6.5.putfield"
+  },
+  "putstatic": {
+    "mnemonic": "putstatic",
+    "opcode": 179,
+    "category": "objects",
+    "shortdescr": "Set static field in class",
+    "specref": "jvms-6.html#jvms-6.5.putstatic"
+  },
+  "ret": {
+    "mnemonic": "ret",
+    "opcode": 169,
+    "category": "flow",
+    "shortdescr": "Return from subroutine",
+    "specref": "jvms-6.html#jvms-6.5.ret"
+  },
+  "return": {
+    "mnemonic": "return",
+    "opcode": 177,
+    "category": "flow",
+    "shortdescr": "Return `void` from method",
+    "specref": "jvms-6.html#jvms-6.5.return"
+  },
+  "saload": {
+    "mnemonic": "saload",
+    "opcode": 53,
+    "category": "array",
+    "shortdescr": "Load `short` from array",
+    "specref": "jvms-6.html#jvms-6.5.saload"
+  },
+  "sastore": {
+    "mnemonic": "sastore",
+    "opcode": 86,
+    "category": "array",
+    "shortdescr": "Store into `short` array",
+    "specref": "jvms-6.html#jvms-6.5.sastore"
+  },
+  "sipush": {
+    "mnemonic": "sipush",
+    "opcode": 17,
+    "category": "constant",
+    "shortdescr": "Push `short`",
+    "specref": "jvms-6.html#jvms-6.5.sipush"
+  },
+  "swap": {
+    "mnemonic": "swap",
+    "opcode": 95,
+    "category": "stack",
+    "shortdescr": "Swap the top two operand stack values",
+    "specref": "jvms-6.html#jvms-6.5.swap"
+  },
+  "tableswitch": {
+    "mnemonic": "tableswitch",
+    "opcode": 170,
+    "category": "conditional",
+    "shortdescr": "Access jump table by index and jump",
+    "specref": "jvms-6.html#jvms-6.5.tableswitch"
+  },
+  "wide": {
+    "mnemonic": "wide",
+    "opcode": 196,
+    "category": "other",
+    "shortdescr": "Extend local variable index by additional bytes",
+    "specref": "jvms-6.html#jvms-6.5.wide"
+  }
+}

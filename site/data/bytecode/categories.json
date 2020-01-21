@@ -1,0 +1,80 @@
+{
+	"constant": {
+		"id": "constant",
+		"order": 0,
+		"title": "Constant",
+		"description": "Push contant values to operand stack."
+	},
+	"load": {
+		"id": "load",
+		"order": 1,
+		"title": "Load",
+		"description": "Load operand stack value from local variable."
+	},
+	"store": {
+		"id": "store",
+		"order": 2,
+		"title": "Store",
+		"description": "Store operand stack value to local variable."
+	},
+	"stack": {
+		"id": "stack",
+		"order": 3,
+		"title": "Stack",
+		"description": "Manage operand stack."
+	},
+	"math": {
+		"id": "math",
+		"order": 4,
+		"title": "Math",
+		"description": "Calculate on operand stack."
+	},
+	"conversion": {
+		"id": "conversion",
+		"order": 5,
+		"title": "Conversion",
+		"description": "Convert numeric types on operand stack."
+	},
+	"comparison": {
+		"id": "comparison",
+		"order": 6,
+		"title": "Comparison",
+		"description": "Compare values on operand stack."
+	},
+	"conditional": {
+		"id": "conditional",
+		"order": 7,
+		"title": "Conditional",
+		"description": "Conditional jumps depending on values on operand stack."
+	},
+	"objects": {
+		"id": "objects",
+		"order": 8,
+		"title": "Objects",
+		"description": "Interact with objects."
+	},
+	"array": {
+		"id": "array",
+		"order": 9,
+		"title": "Array",
+		"description": "Create and access arrays."
+	},
+	"flow": {
+		"id": "flow",
+		"order": 10,
+		"title": "Control Flow",
+		"description": "Manage the control flow."
+	},
+	"other": {
+		"id": "other",
+		"order": 11,
+		"title": "Other",
+		"description": "Various uncategorized opcodes"
+	},
+	"reserved": {
+		"id": "reserved",
+		"order": 12,
+		"title": "Reserved",
+		"description": "Reserved opcodes for internal usage in VM implementations only."
+	}
+}
