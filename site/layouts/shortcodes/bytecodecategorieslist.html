@@ -15,7 +15,7 @@
       {{ range sort $.Site.Data.bytecode.opcodes "mnemonic" }}
       {{ if eq .category $currentcategory }}
       <tr>
-        <td><a href="../op/{{ .name }}"><code>{{ .mnemonic }}</code></a></td>
+        <td><a href="op/{{ .mnemonic }}"><code>{{ .mnemonic }}</code></a></td>
         <td>{{ .opcode }}</td>
         <td>{{ markdownify .shortdescr }}</td>
       </tr>
