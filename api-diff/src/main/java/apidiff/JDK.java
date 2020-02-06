@@ -24,13 +24,13 @@ public enum JDK {
 
 	V7("7", "1.7.0_80-oracle", new JavaDoc("https://docs.oracle.com/javase/7/docs/api/")),
 
-	V8("8", "8.0.232.hs-adpt", new JavaDoc8("https://docs.oracle.com/javase/8/docs/api/")),
+	V8("8", "8.0.242.hs-adpt", new JavaDoc8("https://docs.oracle.com/javase/8/docs/api/")),
 
 	V9("9", "9.0.4-open", new JavaDoc9("https://docs.oracle.com/javase/9/docs/api/")),
 
 	V10("10", "10.0.2-open", new JavaDoc10("https://docs.oracle.com/javase/10/docs/api/")),
 
-	V11("11", "11.0.5.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
+	V11("11", "11.0.6.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
 
 	V12("12", "12.0.2-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/12/docs/api/")),
 
