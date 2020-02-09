@@ -24,7 +24,7 @@ public class Loader {
 
 	static final int ASM_API = Opcodes.ASM7;
 
-	static final int MAX_VERSION = Opcodes.V13;
+	static final int MAX_VERSION = Opcodes.V15;
 
 	private Consumer<ClassInfo> output;
 	private IFilter filter;
