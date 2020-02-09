@@ -32,9 +32,9 @@ public enum JDK {
 
 	V11("11", "11.0.6.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
 
-	V12("12", "12.0.2-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/12/docs/api/")),
+	V12("12", "12.0.2.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/12/docs/api/")),
 
-	V13("13", "13.0.1-open", new JavaDoc11("https://docs.oracle.com/en/java/javase/13/docs/api/")),
+	V13("13", "13.0.2.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/13/docs/api/")),
 
 	V14("14", "14.ea.34-open", new JavaDoc11("https://download.java.net/java/early_access/jdk14/docs/api/")),
 
