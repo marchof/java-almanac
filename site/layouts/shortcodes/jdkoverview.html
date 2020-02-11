@@ -1,0 +1,45 @@
+<table style="width:100%;">
+  <thead>
+    <tr>
+      <th>Details</th>
+      <th>Documentation</th>
+      <th>Compare APIs with</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range sort $.Site.Data.jdk.versions "ga" "desc" }}
+    <tr>
+      <td><a href="jdk/{{ .version }}">{{ .name }}</a></td>
+      <td>
+        <ul class="tag documentation">
+        {{ with .documentation.api }}
+          <li><a href="{{ . }}">API</a></li>
+        {{ end }}
+        {{ with .documentation.lang }}
+          <li><a href="{{ . }}">Language</a></li>
+        {{ end }}
+        {{ with .documentation.vm }}
+          <li><a href="{{ . }}">VM</a></li>
+        {{ end }}
+        {{ with .documentation.notes }}
+          <li><a href="{{ . }}">Release Notes</a></li>
+        {{ end }}
+        </ul>
+      </td>
+      <td style="text-align:right;">
+      {{ if .apidiff }}
+        {{ range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
+          {{ if lt 0 $elem_index }} - {{ end }}
+          <a href="jdk/{{ $elem_val.target.version }}/apidiff/{{ $elem_val.base.version }}">{{ $elem_val.base.version }}</a>
+        {{ end }}
+      {{ end }}
+      </td>
+    </tr>
+
+    {{ end }}
+  </tbody>
+</table>
+
+<div class="datasource">
+  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/">Data Source</a>
+</div>
