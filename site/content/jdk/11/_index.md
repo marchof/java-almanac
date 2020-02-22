@@ -1,5 +1,6 @@
 ---
 title: Java 11
+type: sandbox
 ---
 
 {{< jdkdetails "11" >}}
@@ -34,3 +35,26 @@ title: Java 11
 * Improve Aarch64 Intrinsics ([JEP 315](http://openjdk.java.net/jeps/315))
 * Pack200 deprecated ([JEP 336](http://openjdk.java.net/jeps/336))
 * No more frames in JavaDoc ([JDK-8196202](https://bugs.openjdk.java.net/browse/JDK-8196202))
+
+
+# Sandbox
+
+Instantly compile and run Java 11 snippets without a local Java installation.
+
+{{< sandbox version="java11" mainclass="Java11" >}}
+{{< sandboxsource "Java11.java" >}}
+import java.util.function.Function;
+
+public class Java11 {
+
+    public static void main(String[] args) {
+        
+        Function<String, String> hello = (var s) -> String.format("Hello %s!", s);
+        System.out.println(hello.apply("Java 11"));
+        
+    }
+
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
