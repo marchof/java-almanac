@@ -12,7 +12,7 @@ title: Java 7
 
 ### Language
 
-* Switch in String ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
+* Switch on String ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
 * Try-with ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
 * Diamond Operator ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
 * Binary Integer Literals ([JSR 334](https://jcp.org/en/jsr/detail?id=334))
