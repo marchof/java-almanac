@@ -1,0 +1,21 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build Docker Image
+      run: docker build -t java-almanac .github/workflows/publish
+    - name: Run Hugo Renderer and Upload
+      run: >
+        docker run -v $(realpath ./site):/site
+        -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
+        -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        java-almanac
