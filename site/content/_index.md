@@ -1,5 +1,5 @@
 ---
-title: Java Almanac
+title: Home
 ---
 
 # The Home of the Java Almanac

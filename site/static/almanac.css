@@ -18,6 +18,26 @@ div.header {
 	padding: 8px;
 }
 
+ul.breadcrump {
+	list-style: none;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	color: #999;
+	font-size: 9pt;
+}
+ul.breadcrump li {
+	margin-right: 6px;
+}
+ul.breadcrump li a {
+	color: #999;
+}
+ul.breadcrump li::after {
+	margin-left: 4px;
+	content: "/";
+}
+
+
 div.content {
 	max-width: 800px;
 	min-height: 400px;
@@ -35,6 +55,7 @@ div.content h1 {
 	font-weight: bold;
 	font-size: 200%;
 	color: #589;
+	margin-top: 10px;
 	border-bottom: 1px solid #cccc;
 }
 
@@ -242,7 +263,7 @@ div.tabs {
 }
 div.tabs ul {
 	list-style: none;
- 	display: flex;
+	display: flex;
 	margin: 0px;
 	padding: 0px;
 }
