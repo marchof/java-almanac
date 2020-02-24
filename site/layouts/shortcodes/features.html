@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Release</th>
+    </tr>
+  </thead>
+<tbody>
+{{ range $.Page.Pages }}
+<tr>
+  <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+  <td><a href="../jdk/{{ .Params.jdkversion }}">Java {{ .Params.jdkversion }}</a></td>
+</tr>
+{{ end }}
+</tbody>
+</table>
