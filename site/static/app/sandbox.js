@@ -8,8 +8,9 @@ Vue.component('sandbox', {
         </tabs>
     `,
     props: {
-        version: { required: true },
-        mainclass: { required: true }
+        version: { type: String, required: true },
+        mainclass: { type: String, required: true },
+        preview: { type: Boolean, required: false, default: false }
     },
     data() {
         return {
@@ -27,6 +28,7 @@ Vue.component('sandbox', {
             });
             request = {
                 mainclass: this.mainclass,
+                preview: this.preview,
                 sourcefiles: sourcefiles
             };
             url = "https://"  + this.version + ".sandbox.javaalmanac.io/compileandrun";
