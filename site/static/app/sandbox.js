@@ -74,6 +74,9 @@ Vue.component('sandbox-source', {
                 return this.$slots.default[0].text;
             }
             return ''
+        },
+        onTabClicked() {
+            this.editor.focus();
         }
     },
 });
