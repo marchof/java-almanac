@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 <h1>{{ .Title }}</h1>
+{{ with .Params.author }}<div class="author">by {{ . }}</div>{{ end }}
 {{ .Content }}
 {{ partial "sandboxscript.html" . }}
 {{ partial "footer.html" . }}

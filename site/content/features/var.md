@@ -3,6 +3,7 @@ title: var Keyword (JEP 286)
 jep: 286
 jdkversion: 10
 type: "sandbox"
+author: "Marc R. Hoffmann"
 ---
 
 The `var` keyword simplifies the declaration of local variables. By using this
