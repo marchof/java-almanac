@@ -45,7 +45,9 @@
 
 {{ end }}
 
-<a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $version }}.json">Data Source</a>
+<div class="datasource">
+  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $version }}.json">Data Source</a>
+</div>
 
 <h2>Downloads</h2>
 
@@ -81,6 +83,7 @@
   </tbody>
 </table>
 
-<a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/jdk/vendors.json">Data Source</a>
-
+<div class="datasource">
+  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/vendors.json">Data Source</a>
+</div>
 

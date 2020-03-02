@@ -51,7 +51,10 @@
   {{ end }}
   </tbody>
 </table>
-<a class="datasource" href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $targetversion }}/apidiff/{{ $baseversion }}.json">Data Source</a>
+
+<div class="datasource">
+  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $targetversion }}/apidiff/{{ $baseversion }}.json">Data Source</a>
+</div>
 
 <p>
   This report is based on simple comparison of all <code>public</code> and
