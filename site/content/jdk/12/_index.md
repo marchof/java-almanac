@@ -20,7 +20,7 @@ type: sandbox
 * JVM Constants API ([JEP 334](http://openjdk.java.net/jeps/334))
 
 
-# Sandbox
+## Sandbox
 
 Instantly compile and run Java 12 snippets without a local Java installation.
 

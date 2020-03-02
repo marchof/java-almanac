@@ -20,7 +20,7 @@ type: sandbox
 
 
 
-# Sandbox
+## Sandbox
 
 Instantly compile and run Java 15 snippets without a local Java installation.
 

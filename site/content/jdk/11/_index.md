@@ -37,7 +37,7 @@ type: sandbox
 * No more frames in JavaDoc ([JDK-8196202](https://bugs.openjdk.java.net/browse/JDK-8196202))
 
 
-# Sandbox
+## Sandbox
 
 Instantly compile and run Java 11 snippets without a local Java installation.
 
