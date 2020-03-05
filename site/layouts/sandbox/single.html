@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <h1>{{ .Title }}</h1>
-{{ with .Params.author }}<div class="author">by {{ . }}</div>{{ end }}
+{{ with .Params.copyright }}<div class="copyright">&copy; {{ . }}</div>{{ end }}
 {{ .Content }}
 {{ partial "sandboxscript.html" . }}
 {{ partial "footer.html" . }}

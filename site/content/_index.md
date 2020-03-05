@@ -47,7 +47,8 @@ More detailed API comparisons based on the [japicmp](https://github.com/siom79/j
 
 ![Creative Commons BY-SA](/img/cc-by-sa.png)
 
-This content is provided by Java Champion Marc R. Hoffmann under the
+This content is provided by Java Champions Marc R. Hoffmann and Cay S. Horstmann.
+Unless otherwise noted, this content is published under the
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 Oracle and Java are registered trademarks of Oracle and/or its affiliates.
