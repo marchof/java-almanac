@@ -1,6 +1,10 @@
-<script src="/app/vue.min.js"></script>
-<script src="/app/axios.min.js"></script>
-<script src="/app/ace/ace.js"></script>
-<script src="/app/tabs.js"></script>
-<script src="/app/sandbox.js"></script>
+{{ $vue := resources.Get "app/vue.min.js" }}
+{{ $axios := resources.Get "app/axios.min.js" }}
+{{ $tabs := resources.Get "app/tabs.js" | resources.Minify }}
+{{ $sandbox := resources.Get "app/sandbox.js" | resources.Minify }}
+{{ $ace := resources.Get "app/ace/ace.js" }}
+{{ $ace_java := resources.Get "app/ace/mode-java.js" }}
+{{ $ace_theme := resources.Get "app/ace/theme-almanac.js" }}
+{{ $js := slice $vue $axios $tabs $sandbox $ace $ace_java $ace_theme | resources.Concat "app/sandbox-bundle.js" }}
+<script src="{{ $js.RelPermalink }}"></script>
 <script>new Vue({ el: '#content' })</script>

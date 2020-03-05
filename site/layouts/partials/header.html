@@ -1,9 +1,10 @@
+{{ $style := resources.Get "almanac.css" | resources.Minify }}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>{{ $.Title }} - {{ $.Site.Title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "almanac.css" | relURL }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
 <div class="header-bar">
