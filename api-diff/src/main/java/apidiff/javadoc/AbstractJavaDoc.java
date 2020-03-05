@@ -35,9 +35,16 @@ abstract class AbstractJavaDoc implements IJavaDocLinkProvider {
 		StringBuilder sb = new StringBuilder();
 		sb.append(getClassLink(info.getOwner()));
 		sb.append("#");
-		sb.append(getMethodName(info));
-		sb.append(getMethodParameters(info));
+		sb.append(getMethodAnchor(info) //
+				.replace("<", "%3C") //
+				.replace(">", "%3E") //
+				.replace("[", "%5B") //
+				.replace("]", "%5D"));
 		return sb.toString();
+	}
+
+	private String getMethodAnchor(MethodInfo info) {
+		return getMethodName(info) + getMethodParameters(info);
 	}
 
 	protected String getMethodName(MethodInfo info) {

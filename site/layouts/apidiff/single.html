@@ -23,9 +23,9 @@
     <tr>
       <td><div class="{{ .type }}" style="margin-left:{{ mul .level 18 }}px">
         {{ if eq "added" .status }}
-          <a href="{{ .javadoc }}">{{ truncate 50 "..." .name }}</a>
+          <a {{ printf "href=%q" .javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .name }}</a>
         {{ else if eq "modified" .status }}
-          <a href="{{ .javadoc }}">{{ truncate 50 "..." .name }}</a>
+          <a {{ printf "href=%q" .javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .name }}</a>
         {{ else if eq "removed" .status }}
           <div class="removed">{{ truncate 50 "..." .name }}</div>
         {{ else }}
