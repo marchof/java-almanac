@@ -1,5 +1,6 @@
 ---
 title: Pattern matching for instanceof (JEP 305)
+copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 305
 jdkversion: 14
 type: "sandbox"
@@ -173,4 +174,3 @@ Java will, in time, have a syntax more or less like this. For now, the `instance
 
 * [JEP 305: Pattern Matching for instanceof (Preview), OpenJDK](http://openjdk.java.net/jeps/305)
 
-ⓒ Cay S. Horstmann 2020. All rights reserved.
