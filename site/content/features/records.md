@@ -1,5 +1,6 @@
 ---
 title: Records (JEP 359)
+copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 359
 jdkversion: 14
 type: "sandbox"
@@ -363,5 +364,3 @@ switch (obj) {
 ## References
 
 * [JEP 395: Records (Preview), OpenJDK](http://openjdk.java.net/jeps/395)
-
-ⓒ Cay S. Horstmann 2020. All rights reserved.
