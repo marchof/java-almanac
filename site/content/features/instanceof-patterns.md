@@ -173,4 +173,3 @@ Java will, in time, have a syntax more or less like this. For now, the `instance
 ## References
 
 * [JEP 305: Pattern Matching for instanceof (Preview), OpenJDK](http://openjdk.java.net/jeps/305)
-
