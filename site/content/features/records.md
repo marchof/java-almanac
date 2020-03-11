@@ -6,12 +6,12 @@ jdkversion: 14
 type: "sandbox"
 ---
 
-Records are a major preview feature of JDK 14. A record is an immutable class whose state is visible to all—think of a `Point` with `x` and `y` coordinates. There is no need to hide them. Records make it very easy to declare such classes. A constructor, accessors, `equals`, `hashCode`, and `toString` come for free. 
+Records are a major preview feature of JDK 14. A record is an immutable class whose state is visible to all — think of a `Point` with `x` and `y` coordinates. There is no need to hide them. Records make it very easy to declare such classes. A constructor, accessors, `equals`, `hashCode`, and `toString` come for free. 
 
 Why Records?
 ------------
 
-A core concept of object-oriented design is encapsulation—the hiding of private implementation details. Encapsulation enables evolution—changing the internal representation for greater efficiency or to support new features.
+A core concept of object-oriented design is encapsulation — the hiding of private implementation details. Encapsulation enables evolution — changing the internal representation for greater efficiency or to support new features.
 
 But sometimes, there is nothing to encapsulate. Consider your typical `Point` class that represents a point on a plane, with an x and a y coordinate. 
 
@@ -234,7 +234,7 @@ public class RecordDemo {
 ```
 ```
 
-Parameterized records—no problem:
+Parameterized records — no problem:
 
 {{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
@@ -254,9 +254,9 @@ public class RecordDemo {
 What You Can't Do
 -----------------
 
-Most importantly, records cannot have any instance variables other than the “record components”—the variables declared with the canonical constructor. The state of a record object is entirely determined by the record components.
+Most importantly, records cannot have any instance variables other than the “record components” — the variables declared with the canonical constructor. The state of a record object is entirely determined by the record components.
 
-You cannot extend a record—it is implicitly `final`.
+You cannot extend a record — it is implicitly `final`.
 
 A record cannot extend another class, not even another record. (Any record implicitly extends `java.lang.Record`, just like any enumerated type implicitly extends `java.lang.Enum`. The `Record` superclass has no state and only abstract `equals`, `hashCode`, and `toString` methods.)
 
@@ -273,9 +273,9 @@ record SleepyPoint(double x, double y) {
 ```
 
 Reflection
-==========
+----------
 
-The `isRecord` method can tell whether a `Class` instance is a record:
+The `isRecord` method can tell whether a `Class` instance is a record.
 
 Reflection reports the record components as private fields.
 
@@ -311,7 +311,7 @@ Some Further Observations
 
 1\.  Some languages have tuples or product types. In those languages, you can model a point as a pair of `double`. But in Java, we like names. Point components should have names `x` and `y`, and we want the whole thing to be a `Point`, distinct from any other pairs of `double`.
 
-2\. A record variable holds a reference to an object. That is, records are _not_ value or inline types—another new kid on the block. Project Valhalla will let you define
+2\. A record variable holds a reference to an object. That is, records are _not_ value or inline types — another new kid on the block. Project Valhalla will let you define
 
 ```
 inline class Point {
@@ -348,13 +348,13 @@ Because arrays are mutable, you can change the elements of `coordinates`.
 
 This is not a good idea, but the Java language won't stop you. In general, Java has no mechanism for expressing immutability. It is no different with reccords.
 
-4\. The implementations of `hashCode`, `equals`, and `toString` in the JDK are _not normative_. In particular, the current behavior of combining two hash codes as `31 * h1 + h2` could change. The behavior of `equals` is constrained by the general `Object.equals` contract, but there is no guarantee that the order of comparisons is fixed. You should not rely on the exact format of the`toString` result either.
+4\. The implementations of `hashCode`, `equals`, and `toString` in the JDK are _not normative_. In particular, the current behavior of combining two hash codes as `31 * h1 + h2` could change. The behavior of `equals` is constrained by the general `Object.equals` contract, but there is no guarantee that the order of comparisons is fixed. You should not rely on the exact format of the `toString` result either.
 
 5\. It is envisioned that in the future, records can be used for pattern matching, with a syntax somewhat like:
 
 ```
 switch (obj) { 
-   case instanceof Point(x, 0) p: ... // Maybe the future—not in JDK 14
+   case instanceof Point(x, 0) p: ... // Maybe the future - not in JDK 14
    ...
 }
 ```
@@ -363,4 +363,4 @@ switch (obj) {
 
 ## References
 
-* [JEP 395: Records (Preview), OpenJDK](http://openjdk.java.net/jeps/395)
+* [JEP 359: Records (Preview), OpenJDK](http://openjdk.java.net/jeps/359)
