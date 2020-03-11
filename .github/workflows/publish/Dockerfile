@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
     awscli
 
 
-ARG SHA=9737a5cc7f5a0421291acec8ae35b9b281f75684cfdf39bacf865abfd5576453
-ARG URL=https://github.com/gohugoio/hugo/releases/download/v0.65.3/hugo_0.65.3_Linux-64bit.deb
+ARG SHA=27d872dcff33bdc2acb36e18cea5729563f9b235429e7bbc5f46a1699958b187
+ARG URL=https://github.com/gohugoio/hugo/releases/download/v0.67.0/hugo_0.67.0_Linux-64bit.deb
 
 RUN curl -fsSL -o /tmp/hugo.deb ${URL} && \
     echo "${SHA} /tmp/hugo.deb" | sha256sum -c - && \
