@@ -3,7 +3,7 @@ Vue.component('sandbox', {
         <tabs>
             <slot></slot>
             <tab v-bind:onTabClicked="compileandrun" name="▶︎ Run">
-                <pre class="sandbox-console">{{ output }}</pre>
+                <div class="sandbox-console">{{ output }}</div>
             </tab>
         </tabs>
     `,

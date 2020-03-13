@@ -124,10 +124,15 @@ div.content table tr:nth-child(even) {
 
 div.content pre {
 	font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", "monospace";
+	background-color: #eee;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 div.content code {
 	font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", "monospace";
+	color: #444;
 }
 
 ul.tag {
@@ -311,9 +316,11 @@ div.tabs-frame {
 	border: #589 1px solid;
 	background-color: #fff;
 }
-pre.sandbox-console {
-	color: #eee;
+div.sandbox-console {
+	white-space: pre;
+	font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", "monospace";
 	font-size: 12px;
+	color: #eee;
 	background-color: #333;
 	margin: 0px;
 	padding: 4px;
