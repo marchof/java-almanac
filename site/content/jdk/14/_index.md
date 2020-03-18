@@ -9,9 +9,14 @@ type: sandbox
 
 ### JVM
 
+* NUMA-Aware Memory Allocation for G1 ([JEP 345](http://openjdk.java.net/jeps/345)) 
 * JFR Event Streaming ([JEP 349](http://openjdk.java.net/jeps/349))
 * Helpful NullPointerExceptions ([JEP 358](http://openjdk.java.net/jeps/358))
+* Deprecate the Solaris and SPARC Ports ([JEP 362](http://openjdk.java.net/jeps/362)) 
 * Remove the Concurrent Mark Sweep (CMS) Garbage Collector ([JEP 363](http://openjdk.java.net/jeps/363))
+* ZGC on macOS ([JEP 364](http://openjdk.java.net/jeps/364)) 
+* ZGC on Windows ([JEP 365](http://openjdk.java.net/jeps/365)) 
+* Deprecate the ParallelScavenge + SerialOld GC Combination ([JEP 366](http://openjdk.java.net/jeps/366)) 
 
 ### Language
 
@@ -19,6 +24,7 @@ type: sandbox
 * Records (Preview) ([JEP 359](http://openjdk.java.net/jeps/359))
 * Switch Expressions (Standard) ([JEP 361](http://openjdk.java.net/jeps/361))
 * Text Blocks (Second Preview) ([JEP 368](http://openjdk.java.net/jeps/368))
+* Foreign-Memory Access API ([JEP 370](http://openjdk.java.net/jeps/370)) 
 
 ### Library
 
