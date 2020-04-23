@@ -1,0 +1,29 @@
+{{ $jdkversions := $.Site.Data.jdk.versions }}
+
+<ul>
+
+<li>All products of all vendors have valid JDK version references.</li>
+<ul>
+{{ range $.Page.Site.Data.jdk.vendors }}
+  {{ $vendorname := .name }}
+  {{ range .products }}
+    {{ range .versions }}
+      {{ if not (index $jdkversions .) }}{{ errorf "Unknown JDK %s" . }}{{ end }}
+    {{ end }}
+    <li>{{ $vendorname}} / {{ .name }} &check;</li>
+  {{ end }}
+{{ end }}
+</ul>
+
+<li>All API diffs have valid JDK version references.</li>
+<ul>
+{{ range $jdkversions }}
+  {{ range  .apidiff }}
+    {{ if not (index $jdkversions .base.version) }}{{ errorf "Unknown JDK %s" .base.version }}{{ end }}
+    {{ if not (index $jdkversions .target.version) }}{{ errorf "Unknown JDK %s" .target.version }}{{ end }}
+    <li>{{ .base.build }} / {{ .target.build }} &check;</li>
+  {{ end }}
+{{ end }}
+</ul>
+
+</ul>
