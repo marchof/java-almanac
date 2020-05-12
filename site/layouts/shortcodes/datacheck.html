@@ -26,4 +26,12 @@
 {{ end }}
 </ul>
 
+<li>All bytecode opcodes have valid categories.</li>
+<ul>
+{{ range $.Page.Site.Data.bytecode.opcodes }}
+  {{ if not (index $.Page.Site.Data.bytecode.categories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
+  <li>{{ .mnemonic }} is {{ .category }} &check;</li>
+{{ end }}
+</ul>
+
 </ul>
