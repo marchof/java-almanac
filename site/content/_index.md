@@ -39,9 +39,6 @@ Collection of information about the history of Java primarily from a technical p
 | **Java 13** | | | | | | [Java 14](jdk/14/apidiff/13) | [Java 15](jdk/15/apidiff/13) |
 | **Java 14** | | | | | | | [Java 15](jdk/15/apidiff/14) |
 
-The reports are based on simple comparison of all `public` and `protected` APIs of the `java.*` and `javax.*` packages of the respective JDKs. They do not make statements about [compatibility](https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility).
-
-More detailed API comparisons based on the [japicmp](https://github.com/siom79/japicmp) tool can be found [here](https://github.com/AdoptOpenJDK/jdk-api-diff).
 
 ## Author & License
 
