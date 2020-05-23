@@ -12,6 +12,7 @@ type: sandbox
 
 ### Language
 
+* Text Blocks ([JEP 378](http://openjdk.java.net/jeps/378))
 
 ### Library
 
@@ -26,16 +27,19 @@ Instantly compile and run Java 15 snippets without a local Java installation.
 
 {{< sandbox version="java15" mainclass="Java15" preview="true" >}}
 {{< sandboxsource "Java15.java" >}}
-import java.util.function.Function;
-
 public class Java15 {
     
-    record Platform(String name, int release) {
+    final static String helloTemplate = """
+        Hello Java
+        ==========
         
+        %s""";
+    
+    record Platform(String name, int release) {
     }
 
     public static void main(String[] args) {
-        System.out.printf("Hello %s!", new Platform("Java", 15));
+        System.out.printf(helloTemplate, new Platform("Java", 15));
     }
 
 }
