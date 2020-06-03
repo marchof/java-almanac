@@ -10,7 +10,8 @@ Vue.component('sandbox', {
     props: {
         version: { type: String, required: true },
         mainclass: { type: String, required: true },
-        preview: { type: Boolean, required: false, default: false }
+        preview: { type: Boolean, required: false, default: false },
+        showInvisibles: { type: Boolean, required: false, default: false }
     },
     data() {
         return {
@@ -45,7 +46,7 @@ Vue.component('sandbox-source', {
         </div>
     `,
     props: {
-        name: { required: true },
+        name: { required: true }
     },
     data() {
         return {
@@ -61,7 +62,9 @@ Vue.component('sandbox-source', {
             highlightActiveLine: false,
             showGutter: false,
             showPrintMargin: false,
-            maxLines: Infinity
+            maxLines: Infinity,
+            useSoftTabs: false,
+            showInvisibles: this.$parent.$parent.showInvisibles
         });
         this.editor.setValue(this.source, 1);
         this.editor.on('change', () => {

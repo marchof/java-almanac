@@ -1,3 +1,3 @@
-<sandbox version="{{ .Get "version"}}" mainclass="{{ .Get "mainclass"}}" {{ with .Get "preview"}} preview="{{.}}"{{ end }} v-cloak>
+<sandbox version="{{ .Get "version"}}" mainclass="{{ .Get "mainclass"}}" {{ with .Get "preview"}} preview="{{.}}"{{ end }} {{ with .Get "show-invisibles"}} v-bind:show-invisibles="{{.}}"{{ end }} v-cloak>
 {{ .Inner }}
 </sandbox>
