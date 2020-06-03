@@ -28,7 +28,7 @@ let myDoc = `<html>
     <title>My Document</title>
   </head>
   <body>
-    <p>Hello, World!</p>"
+    <p>Hello, World!</p>
   </body>
 </html>`
 ```
@@ -251,8 +251,6 @@ Any spaces before the `\s` are preserved as well:
 
 {{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}
 {{< sandboxsource "Sandbox.java" >}}
-import java.util.stream.Stream;
-
 public class Sandbox {
     public static void main(String[] args) {
         String snowmanWithColoredBackground = """
@@ -263,7 +261,7 @@ public class Sandbox {
  (     )\s
 ---------
 </pre>""";
-        Stream.of(snowmanWithColoredBackground.split("\n")).forEach(line -> System.out.println("|" + line + "|"));
+        snowmanWithColoredBackground.lines().forEach(line -> System.out.println("|" + line + "|"));
     }
 }
 {{< /sandboxsource >}}
@@ -359,7 +357,7 @@ I don't know how many programmers use [form feeds](https://codepoints.net/U+000C
    ⇥   ⇥   ⇥""";
 ```
 
-In this case, the shortest whitespace prefix has length 3 (in the fifth line), and the first three whitespace characters are stripped from each non-blank line, whether or not they are tabs. The result is a string with four lines:
+In this case, the shortest whitespace prefix has length 3 (in the last line), and the first three whitespace characters are stripped from each non-blank line, whether or not they are tabs. The result is a string with four lines:
 
 ```
 .........<div>
@@ -374,8 +372,6 @@ I am not making this up. Here is the program. It is difficult to see the differe
 
 {{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}
 {{< sandboxsource "Sandbox.java" >}}
-import java.util.stream.Stream;
-
 public class Sandbox {
     public static void main(String[] args) {
         String myNameInADiv = """
@@ -384,7 +380,7 @@ public class Sandbox {
   
 	        </div>
 			""";
-        Stream.of(myNameInADiv.split("\n")).forEach(line -> System.out.println("|" + line + "|"));
+        myNameInADiv.lines().forEach(line -> System.out.println("|" + line + "|"));
     }
 }
 {{< /sandboxsource >}}
@@ -400,15 +396,13 @@ Two methods were added to the `String` class that process whitespace and escapes
 
 {{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}
 {{< sandboxsource "Sandbox.java" >}}
-import java.util.stream.Stream;
-
 public class Sandbox {
     public static void main(String[] args) {
         String myStringToBeProcessed = "            <div>\n\t\t\t  Cay\\s\n  \n\t        </div>\n\t\t\t";
         String processed1 = myStringToBeProcessed.stripIndent();
         String processed2 = processed1.translateEscapes();
-        Stream.of(processed1.split("\n")).forEach(line -> System.out.println("|" + line.replace(" ", ".") + "|"));
-        Stream.of(processed2.split("\n")).forEach(line -> System.out.println("|" + line.replace(" ", ".") + "|"));
+        processed1.lines().forEach(line -> System.out.println("|" + line.replace(" ", ".") + "|"));
+        processed2.lines().forEach(line -> System.out.println("|" + line.replace(" ", ".") + "|"));
     }
 }
 {{< /sandboxsource >}}
