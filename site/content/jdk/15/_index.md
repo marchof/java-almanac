@@ -9,13 +9,18 @@ type: sandbox
 
 ### JVM
 
+* ZGC: A Scalable Low-Latency Garbage Collector ([JEP 377](http://openjdk.java.net/jeps/377))
 
 ### Language
 
+* Pattern Matching for instanceof (Second Preview) ([JEP 375](http://openjdk.java.net/jeps/375))
 * Text Blocks ([JEP 378](http://openjdk.java.net/jeps/378))
+* Records (Second Preview) ([JEP 384](http://openjdk.java.net/jeps/384))
 
 ### Library
 
+* Hidden Classes ([JEP 371](http://openjdk.java.net/jeps/371))
+* Remove the Nashorn JavaScript Engine ([JEP 372](http://openjdk.java.net/jeps/372))
 
 ### Tools
 
