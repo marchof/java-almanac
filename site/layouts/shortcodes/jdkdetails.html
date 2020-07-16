@@ -40,6 +40,14 @@
         {{ end }}
       </td>
     </tr>
+    <tr>
+      <th>SCM</th>
+      <td>
+        {{ range .scm }}
+          <a href="{{ .url }}">{{ .type }}</a>
+        {{ end }}
+      </td>
+    </tr>
   </tbody>
 </table>
 
