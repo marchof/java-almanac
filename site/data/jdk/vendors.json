@@ -7,7 +7,7 @@
 				"name": "OpenJDK",
 				"license": "GPLv2+CE",
 				"url": "https://adoptopenjdk.net/releases.html",
-				"platforms": ["aix-ppc64", "linux-x64", "linux-s390x", "linux-ppc64le", "linux-aarch64", "linux-arm32", "macOS-x64", "solaris-sparcv9", "solaris-x64", "win-x86", "win-x64"],
+				"platforms": ["aix-ppc64", "linux-x64", "linux-s390x", "linux-ppc64le", "linux-aarch64", "linux-arm32", "macOS-x64", "solaris-sparcv9", "solaris-x64", "windows-x86", "windows-x64"],
 				"vms": ["HotSpot", "OpenJ9"],
 				"versions": ["8", "9", "10", "11", "12", "13", "14"]
 			}
@@ -220,6 +220,19 @@
 				"platforms": ["linux-x64", "macOS-x64", "windows-x64"],
 				"vms": ["HotSpot"],
 				"versions": ["14"]
+			}
+		]
+	},
+	{
+		"name": "Red Hat",
+		"url": "https://developers.redhat.com/products/openjdk/",
+		"products": [
+			{
+				"name": "Red Hat OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://developers.redhat.com/products/openjdk/download",
+				"platforms": ["linux-x64", "windows-x86", "windows-x64"],
+				"versions": ["8", "10", "11", "12", "13", "14"]
 			}
 		]
 	},
