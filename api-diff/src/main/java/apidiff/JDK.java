@@ -30,7 +30,7 @@ public enum JDK {
 
 	V10("10", "10.0.2-open", new JavaDoc10("https://docs.oracle.com/javase/10/docs/api/")),
 
-	V11("11", "11.0.7.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
+	V11("11", "11.0.8.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/11/docs/api/")),
 
 	V12("12", "12.0.2.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/12/docs/api/")),
 
