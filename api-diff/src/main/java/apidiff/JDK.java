@@ -24,7 +24,7 @@ public enum JDK {
 
 	V7("7", "1.7.0_80-oracle", new JavaDoc("https://docs.oracle.com/javase/7/docs/api/")),
 
-	V8("8", "8.0.252.hs-adpt", new JavaDoc8("https://docs.oracle.com/javase/8/docs/api/")),
+	V8("8", "8.0.262.hs-adpt", new JavaDoc8("https://docs.oracle.com/javase/8/docs/api/")),
 
 	V9("9", "9.0.4-open", new JavaDoc9("https://docs.oracle.com/javase/9/docs/api/")),
 
