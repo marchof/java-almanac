@@ -5,7 +5,7 @@
 	},
 	"target": {
 		"version": "16",
-		"build": "16.ea.6-open"
+		"build": "16.ea.7-open"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -496,6 +496,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/NullPointerException.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "fillInStackTrace()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()"
+								},
 								{
 									"type": "method",
 									"name": "getMessage()",
@@ -2018,11 +2024,8 @@
 								{
 									"type": "method",
 									"name": "ToolProvider()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/ToolProvider.html#%3Cinit%3E()",
-									"addedTags": [
-										"forRemoval"
-									]
+									"status": "removed",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/ToolProvider.html#%3Cinit%3E()"
 								}
 							]
 						},

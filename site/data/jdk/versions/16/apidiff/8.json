@@ -5,7 +5,7 @@
 	},
 	"target": {
 		"version": "16",
-		"build": "16.ea.6-open"
+		"build": "16.ea.7-open"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -3472,6 +3472,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/NullPointerException.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "fillInStackTrace()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()"
+						},
 						{
 							"type": "method",
 							"name": "getMessage()",
@@ -12692,20 +12698,6 @@
 							"name": "listLocationsForModules(JavaFileManager.Location)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#listLocationsForModules(javax.tools.JavaFileManager.Location)"
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "ToolProvider",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/ToolProvider.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "ToolProvider()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/ToolProvider.html#%3Cinit%3E()"
 						}
 					]
 				},
