@@ -14,7 +14,6 @@ import apidiff.javadoc.IJavaDocLinkProvider;
 import apidiff.model.ApiInfo;
 import apidiff.model.ElementInfo;
 import apidiff.model.ElementTag;
-import apidiff.model.ElementType;
 import apidiff.report.IMultiReportOutput;
 
 public class JSONRenderer {
@@ -55,13 +54,7 @@ public class JSONRenderer {
 			version(json.name("base"), (ApiInfo) delta.getOldElement());
 			version(json.name("target"), (ApiInfo) delta.getNewElement());
 			json.name("order").value(Double.valueOf(delta.getOldElement().getName()));
-
-			json.name("deltas").beginArray();
-			for (Delta d : delta.getChildren()) {
-				delta(json, d, 0);
-			}
-			json.endArray();
-
+			deltas(json, delta.getChildren());
 			json.endObject();
 		}
 	}
@@ -73,27 +66,30 @@ public class JSONRenderer {
 		json.endObject();
 	}
 
-	private void delta(JsonWriter json, Delta delta, int level) throws IOException {
+	private void deltas(JsonWriter json, List<Delta> children) throws IOException {
+		if (!children.isEmpty()) {
+			json.name("deltas").beginArray();
+			for (Delta c : children) {
+				delta(json, c);
+			}
+			json.endArray();
+		}
+	}
+	
+	private void delta(JsonWriter json, Delta delta) throws IOException {
 		json.beginObject();
 		ElementInfo element = delta.getElement();
 		json.name("type").value(element.getType().name().toLowerCase());
 		json.name("name").value(element.getDisplayName());
 		json.name("status").value(delta.getStatus().name().toLowerCase());
-		json.name("level").value(level);
-		if (!ElementType.API.equals(element.getType())) {
-			String javadoc = doc.getLink(element);
-			if (javadoc != null) {
-				json.name("javadoc").value(javadoc);
-			}
+		String javadoc = doc.getLink(element);
+		if (javadoc != null) {
+			json.name("javadoc").value(javadoc);
 		}
 		tags(json, "addedTags", delta.getAddedTags());
 		tags(json, "removedTags", delta.getRemovedTags());
-		List<Delta> children = delta.getChildren();
+		deltas(json, delta.getChildren());	
 		json.endObject();
-
-		for (Delta c : children) {
-			delta(json, c, level + 1);
-		}
 	}
 
 	private void tags(JsonWriter json, String key, Set<ElementTag> tags) throws IOException {
