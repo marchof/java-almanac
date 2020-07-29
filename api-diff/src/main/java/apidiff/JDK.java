@@ -38,7 +38,7 @@ public enum JDK {
 
 	V14("14", "14.0.2.hs-adpt", new JavaDoc11("https://docs.oracle.com/en/java/javase/14/docs/api/")),
 
-	V15("15", "15.ea.32-open", new JavaDoc11("https://download.java.net/java/early_access/jdk15/docs/api/")),
+	V15("15", "15.ea.33-open", new JavaDoc11("https://download.java.net/java/early_access/jdk15/docs/api/")),
 
 	V16("16", "16.ea.6-open", new JavaDoc11("https://download.java.net/java/early_access/jdk16/docs/api/"));
 
