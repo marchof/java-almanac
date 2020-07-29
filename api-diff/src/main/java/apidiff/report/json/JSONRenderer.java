@@ -3,10 +3,11 @@ package apidiff.report.json;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Set;
+
+import com.google.gson.stream.JsonWriter;
 
 import apidiff.cmp.Delta;
 import apidiff.javadoc.IJavaDocLinkProvider;
@@ -43,55 +44,65 @@ public class JSONRenderer {
 			writer.println("---");
 		}
 	}
-	
+
 	private void writeData(Delta delta) throws IOException {
 		String filename = String.format("data/jdk/versions/%s/apidiff/%s.json", delta.getNewElement().getName(),
 				delta.getOldElement().getName());
-		try (Writer writer = new OutputStreamWriter(output.createFile(filename), StandardCharsets.UTF_8)) {
-			JSONObject root = new JSONObject(writer);
-			version(root.add("base").object(), (ApiInfo) delta.getOldElement());
-			version(root.add("target").object(), (ApiInfo) delta.getNewElement());
-			root.add("order").number(Double.valueOf(delta.getOldElement().getName()));
-			JSONArray deltaarray = root.add("deltas").array();
+		try (JsonWriter json = new JsonWriter(
+				new OutputStreamWriter(output.createFile(filename), StandardCharsets.UTF_8))) {
+			json.setIndent("\t");
+			json.beginObject();
+			version(json.name("base"), (ApiInfo) delta.getOldElement());
+			version(json.name("target"), (ApiInfo) delta.getNewElement());
+			json.name("order").value(Double.valueOf(delta.getOldElement().getName()));
+
+			json.name("deltas").beginArray();
 			for (Delta d : delta.getChildren()) {
-				delta(deltaarray, d, 0);
+				delta(json, d, 0);
 			}
-			root.finish();
+			json.endArray();
+
+			json.endObject();
 		}
 	}
 
-	private void version(JSONObject version, ApiInfo info) throws IOException {
-		version.add("version").string(info.getName());
-		version.add("build").string(info.getDetail());
+	private void version(JsonWriter json, ApiInfo info) throws IOException {
+		json.beginObject();
+		json.name("version").value(info.getName());
+		json.name("build").value(info.getDetail());
+		json.endObject();
 	}
 
-	private void delta(JSONArray parent, Delta delta, int level) throws IOException {
-		JSONObject object = parent.add().object();
+	private void delta(JsonWriter json, Delta delta, int level) throws IOException {
+		json.beginObject();
 		ElementInfo element = delta.getElement();
-		object.add("type").string(element.getType().name().toLowerCase());
-		object.add("name").string(element.getDisplayName());
-		object.add("status").string(delta.getStatus().name().toLowerCase());
-		object.add("level").number(level);
+		json.name("type").value(element.getType().name().toLowerCase());
+		json.name("name").value(element.getDisplayName());
+		json.name("status").value(delta.getStatus().name().toLowerCase());
+		json.name("level").value(level);
 		if (!ElementType.API.equals(element.getType())) {
 			String javadoc = doc.getLink(element);
 			if (javadoc != null) {
-				object.add("javadoc").string(javadoc);
+				json.name("javadoc").value(javadoc);
 			}
 		}
-		tags(object, "addedTags", delta.getAddedTags());
-		tags(object, "removedTags", delta.getRemovedTags());
+		tags(json, "addedTags", delta.getAddedTags());
+		tags(json, "removedTags", delta.getRemovedTags());
 		List<Delta> children = delta.getChildren();
+		json.endObject();
+
 		for (Delta c : children) {
-			delta(parent, c, level + 1);
+			delta(json, c, level + 1);
 		}
 	}
 
-	private void tags(JSONObject object, String key, Set<ElementTag> tags) throws IOException {
+	private void tags(JsonWriter json, String key, Set<ElementTag> tags) throws IOException {
 		if (!tags.isEmpty()) {
-			JSONArray array = object.add(key).array();
+			json.name(key).beginArray();
 			for (ElementTag tag : tags) {
-				array.add().string(tag.toString());
+				json.value(tag.toString());
 			}
+			json.endArray();
 		}
 	}
 
