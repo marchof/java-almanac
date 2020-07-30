@@ -30,7 +30,7 @@
       {{ if .apidiff }}
         {{ range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
           {{ if lt 0 $elem_index }} - {{ end }}
-          <a href="jdk/{{ $elem_val.target.version }}/apidiff/{{ $elem_val.base.version }}">{{ $elem_val.base.version }}</a>
+          <a href="jdk/{{ $elem_val.target.feature }}/apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
         {{ end }}
       {{ end }}
       </td>

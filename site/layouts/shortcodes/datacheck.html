@@ -19,8 +19,8 @@
 <ul>
 {{ range $jdkversions }}
   {{ range  .apidiff }}
-    {{ if not (index $jdkversions .base.version) }}{{ errorf "Unknown JDK %s" .base.version }}{{ end }}
-    {{ if not (index $jdkversions .target.version) }}{{ errorf "Unknown JDK %s" .target.version }}{{ end }}
+    {{ if not (index $jdkversions .base.feature) }}{{ errorf "Unknown JDK %s" .base.feature }}{{ end }}
+    {{ if not (index $jdkversions .target.feature) }}{{ errorf "Unknown JDK %s" .target.feature }}{{ end }}
     <li>{{ .base.build }} / {{ .target.build }} &check;</li>
   {{ end }}
 {{ end }}

@@ -42,8 +42,8 @@
 {{ with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
 
 <p>
-  Comparing <a href="../../../{{ .target.version }}">Java {{ .target.version }}</a> (build {{ .target.build }})
-  with <a href="../../../{{ .base.version }}"> Java {{ .base.version }}</a> (build {{ .base.build }}).
+  Comparing <a href="../../../{{ .target.version }}">Java {{ .target.feature }}</a> ({{ .target.version }}/{{ .target.vendor }})
+  with <a href="../../../{{ .base.version }}"> Java {{ .base.feature }}</a> ({{ .base.version }}/{{ .base.vendor }}).
 </p>
 
 <table>
@@ -67,7 +67,8 @@
 <p>
   This report is based on simple comparison of all <code>public</code> and
   <code>protected</code> APIs of the <code>java.*</code> and <code>javax.*</code>
-  packages of JDK builds {{ .target.build }} and {{ .base.build }}. It does not make statements about
+  packages of JDK builds {{ .target.version }} ({{ .target.vendor }}) and 
+  {{ .base.version }} ({{ .base.vendor }}). It does not make statements about
   <a href="https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility">compatibility</a>.
 </p>
 
