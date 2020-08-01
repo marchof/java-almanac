@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+7-249"
+		"version": "16-ea+8-306"
 	},
 	"order": 13.0,
 	"deltas": [
@@ -698,6 +698,23 @@
 									"name": "supportedOptions()",
 									"status": "removed",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#supportedOptions()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLDecoder",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/URLDecoder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "URLDecoder()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/URLDecoder.html#%3Cinit%3E()",
+									"addedTags": [
+										"forRemoval"
+									]
 								}
 							]
 						}
@@ -1502,6 +1519,39 @@
 									"name": "CREDENTIAL_TYPES",
 									"status": "removed",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#CREDENTIAL_TYPES"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.relation",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "RoleStatus",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/RoleStatus.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "RoleStatus()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/RoleStatus.html#%3Cinit%3E()",
+									"addedTags": [
+										"forRemoval"
+									]
 								}
 							]
 						}
