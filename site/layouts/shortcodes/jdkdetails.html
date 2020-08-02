@@ -1,6 +1,6 @@
 {{ $version := index .Params 0 }}
 
-{{ with (index $.Site.Data.jdk.versions (index .Params 0)) }}
+{{ with (index $.Site.Data.jdk.versions $version) }}
 
 <table>
   <tbody>
@@ -22,7 +22,7 @@
       <td>Compare to
         {{ range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
           {{ if lt 0 $elem_index }} - {{ end }}
-          <a href="apidiff/{{ $elem_val.base.version }}">{{ $elem_val.base.version }}</a>
+          <a href="apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
         {{ end }}
       </td>
     </tr>
