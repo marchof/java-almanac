@@ -15,5 +15,138 @@
 			"type": "hg",
 			"url": "https://hg.openjdk.java.net/jdk/jdk14/"
 		}
+	],
+	"features": [
+		{
+			"title": "NUMA-Aware Memory Allocation for G1",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "345"
+				}
+			] 
+		},
+		{
+			"title": "JFR Event Streaming",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "349"
+				}
+			] 
+		},
+		{
+			"title": "Helpful NullPointerExceptions",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "358"
+				}
+			] 
+		},
+		{
+			"title": "Deprecate the Solaris and SPARC Ports",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "362"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Concurrent Mark Sweep (CMS) Garbage Collector",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "363"
+				}
+			] 
+		},
+		{
+			"title": "ZGC on macOS",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "364"
+				}
+			] 
+		},
+		{
+			"title": "ZGC on Windows",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "365"
+				}
+			] 
+		},
+		{
+			"title": "Deprecate the ParallelScavenge + SerialOld GC Combination",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "366"
+				}
+			] 
+		},
+		{
+			"title": "Non-Volatile Mapped Byte Buffers",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "367"
+				}
+			] 
+		},
+		{
+			"title": "Pattern Matching for instanceof",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "305"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Pack200 APIs",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "367"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Pack200 Tools",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "367"
+				}
+			] 
+		},
+		{
+			"title": "Packaging Tool (Incubator)",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "343"
+				}
+			] 
+		}
 	]
 }

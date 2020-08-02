@@ -5,19 +5,7 @@ type: sandbox
 
 {{< jdkdetails "16" >}}
 
-## New Features
-
-### JVM
-
-
-### Language
-
-
-### Library
-
-
-### Tools
-
+{{< /jdkdetails >}}
 
 ## Sandbox
 

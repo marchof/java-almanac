@@ -15,5 +15,38 @@
 			"type": "hg",
 			"url": "https://hg.openjdk.java.net/jdk/jdk12/"
 		}
+	],
+	"features": [
+		{
+			"title": "Shenandoah GC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "189"
+				}
+			] 
+		},
+		{
+			"title": "Switch Expressions",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "325"
+				}
+			] 
+		},
+		{
+			"title": "JVM Constants",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "334"
+				}
+			] 
+		}
 	]
 }

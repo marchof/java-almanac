@@ -15,5 +15,60 @@
 			"type": "hg",
 			"url": "https://hg.openjdk.java.net/jdk/jdk13/"
 		}
+	],
+	"features": [
+		{
+			"title": "Dynamic CDS Archives",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "350"
+				}
+			] 
+		},
+		{
+			"title": "ZGC: Uncommit Unused Memory",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "351"
+				}
+			] 
+		},
+		{
+			"title": "Switch Expressions",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "354"
+				}
+			] 
+		},
+		{
+			"title": "Text Blocks",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "355"
+				}
+			] 
+		},
+		{
+			"title": "Reimplement the Legacy Socket API",
+			"category": "api",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "353"
+				}
+			] 
+		}
 	]
 }

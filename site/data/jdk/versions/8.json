@@ -7,12 +7,109 @@
 	"documentation": {
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se8/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se8/html/index.html",
-		"api": "https://docs.oracle.com/javase/8/docs/api/"
+		"api": "https://docs.oracle.com/javase/8/docs/api/",
+		"notes": "https://www.oracle.com/java/technologies/javase/8-relnotes.html"
 	},
 	"scm": [
 		{
 			"type": "hg",
 			"url": "https://hg.openjdk.java.net/jdk8u"
+		}
+	],
+	"features": [
+		{
+			"title": "Remove Permanent Generation",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "122"
+				}
+			] 
+		},
+		{
+			"title": "Lambda Expressions",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "335"
+				}
+			] 
+		},
+		{
+			"title": "Default Methods in Interfaces",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "335"
+				}
+			] 
+		},
+		{
+			"title": "Effectively Final Variables",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "335"
+				}
+			] 
+		},
+		{
+			"title": "Type Use Annotations",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "104"
+				}
+			] 
+		},
+		{
+			"title": "Repeating Annotations",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "120"
+				}
+			] 
+		},
+		{
+			"title": "Streams (java.util.stream)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "107"
+				}
+			] 
+		},
+		{
+			"title": "Lambda APIs (java.util.function)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "109"
+				}
+			] 
+		},
+		{
+			"title": "Date Time (java.time)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "310"
+				},
+				{
+					"type": "JEP",
+					"identifier": "150"
+				}
+			] 
 		}
 	]
 }

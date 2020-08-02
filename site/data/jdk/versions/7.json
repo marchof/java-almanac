@@ -7,12 +7,105 @@
 	"documentation": {
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se7/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se7/html/index.html",
-		"api": "https://docs.oracle.com/javase/7/docs/api/"
+		"api": "https://docs.oracle.com/javase/7/docs/api/",
+		"notes": "https://www.oracle.com/java/technologies/javase/jdk7-relnotes.html"
 	},
 	"scm": [
 		{
 			"type": "hg",
 			"url": "https://hg.openjdk.java.net/jdk7u"
+		}
+	],
+	"features": [
+		{
+			"title": "New Opcode INVOKEDYNAMIC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "292"
+				}
+			] 
+		},
+		{
+			"title": "Switch on String",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "334"
+				}
+			] 
+		},
+		{
+			"title": "Try-with",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "334"
+				}
+			] 
+		},
+		{
+			"title": "Diamond Operator",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "334"
+				}
+			] 
+		},
+		{
+			"title": "Binary Integer Literals",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "334"
+				}
+			] 
+		},
+		{
+			"title": "Underscores in numeric literals",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "334"
+				}
+			] 
+		},
+		{
+			"title": "Multi Catch",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "334"
+				}
+			] 
+		},
+		{
+			"title": "Method Handles",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "292"
+				}
+			] 
+		},
+		{
+			"title": "NIO.2 (java.nio.file)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JSR",
+					"identifier": "203"
+				}
+			] 
 		}
 	]
 }

@@ -15,5 +15,87 @@
 			"type": "hg",
 			"url": "https://hg.openjdk.java.net/jdk/jdk10/"
 		}
+	],
+	"features": [
+		{
+			"title": "Graal VM",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "317"
+				}
+			] 
+		},
+		{
+			"title": "GC Interface",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "304"
+				}
+			] 
+		},
+		{
+			"title": "Parallel Full GC for G1",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "307"
+				}
+			] 
+		},
+		{
+			"title": "Thread-Local Handshakes",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "312"
+				}
+			] 
+		},
+		{
+			"title": "Alternative Memory Devices",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "316"
+				}
+			] 
+		},
+		{
+			"title": "Keyword var",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "286"
+				}
+			] 
+		},
+		{
+			"title": "Additional Unicode Language-Tag Extensions",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "314"
+				}
+			] 
+		},
+		{
+			"title": "javah Removed",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "313"
+				}
+			] 
+		}
 	]
 }
