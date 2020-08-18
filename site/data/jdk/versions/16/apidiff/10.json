@@ -342,6 +342,15 @@
 								},
 								{
 									"type": "method",
+									"name": "hasPrivateAccess()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "previousLookupClass()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#previousLookupClass()"
@@ -389,15 +398,42 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "coordinateTypes()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
 									"name": "describeConstable()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#describeConstable()"
 								},
 								{
 									"type": "method",
+									"name": "toMethodHandle(VarHandle.AccessMode)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#toString()"
+								},
+								{
+									"type": "method",
+									"name": "varType()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()",
+									"removedTags": [
+										"final"
+									]
 								}
 							]
 						},
@@ -1697,6 +1733,60 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "getInterface()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#getInterface()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getLoopbackMode()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "joinGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "leaveGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setInterface(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setLoopbackMode(boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "supportedOptions()",
 									"status": "removed",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/MulticastSocket.html#supportedOptions()"
@@ -1743,6 +1833,7 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/URLDecoder.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -2316,6 +2407,74 @@
 					"deltas": [
 						{
 							"type": "interface",
+							"name": "DSAPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DSAPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/DSAPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ECPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/ECPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ECPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/ECPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/ECPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "EdECKey",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/EdECKey.html"
@@ -2343,6 +2502,74 @@
 									"name": "getParams()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAMultiPrimePrivateCrtKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPrivateCrtKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},
@@ -2584,6 +2811,57 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/PrivilegedActionException.html#getCause()"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "Key",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/Key.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/Key.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/PrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/PrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/PublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/PublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						}
 					]
 				},
@@ -2717,6 +2995,26 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/concurrent/locks/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractQueuedLongSynchronizer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractQueuedLongSynchronizer()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#%3Cinit%3E()",
+									"addedTags": [
+										"public"
+									],
+									"removedTags": [
+										"protected"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "LockSupport",
@@ -3257,6 +3555,65 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.crypto.interfaces",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "DHPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DHPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PBEKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/PBEKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.crypto.spec",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/spec/package-summary.html",
@@ -3286,6 +3643,23 @@
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/Cipher.html#toString()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SecretKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/SecretKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/crypto/SecretKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}
@@ -3341,6 +3715,9 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerCertificateChain()",
 									"addedTags": [
 										"forRemoval"
+									],
+									"removedTags": [
+										"abstract"
 									]
 								}
 							]
@@ -3497,8 +3874,11 @@
 						{
 							"type": "enum",
 							"name": "Modifier",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
+							"removedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "field",
@@ -3694,6 +4074,23 @@
 						},
 						{
 							"type": "class",
+							"name": "AbstractAnnotationValueVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractAnnotationValueVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "AbstractElementVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor14.html"
@@ -3714,9 +4111,43 @@
 						},
 						{
 							"type": "class",
+							"name": "AbstractElementVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractElementVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "AbstractTypeVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor14.html"
+						},
+						{
+							"type": "class",
+							"name": "AbstractTypeVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractTypeVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -3766,9 +4197,61 @@
 						},
 						{
 							"type": "class",
+							"name": "ElementKindVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ElementKindVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ElementKindVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "ElementScanner14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementScanner14.html"
+						},
+						{
+							"type": "class",
+							"name": "ElementScanner7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ElementScanner7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ElementScanner7(Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -3778,9 +4261,61 @@
 						},
 						{
 							"type": "class",
+							"name": "SimpleAnnotationValueVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SimpleAnnotationValueVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "SimpleAnnotationValueVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SimpleElementVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor14.html"
+						},
+						{
+							"type": "class",
+							"name": "SimpleElementVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SimpleElementVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "SimpleElementVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -3790,9 +4325,61 @@
 						},
 						{
 							"type": "class",
+							"name": "SimpleTypeVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SimpleTypeVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "SimpleTypeVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "TypeKindVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor14.html"
+						},
+						{
+							"type": "class",
+							"name": "TypeKindVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "TypeKindVisitor7()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "TypeKindVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "interface",
@@ -3893,6 +4480,15 @@
 									"name": "getJavaFileObjectsFromPaths(Collection)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.util.Collection)"
+								},
+								{
+									"type": "method",
+									"name": "getJavaFileObjectsFromPaths(Iterable)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.lang.Iterable)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}
@@ -4141,9 +4737,27 @@
 								},
 								{
 									"type": "method",
+									"name": "getThreadID()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#getThreadID()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "setLongThreadID(long)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#setLongThreadID(long)"
+								},
+								{
+									"type": "method",
+									"name": "setThreadID(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#setThreadID(int)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}
@@ -4205,6 +4819,7 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/RoleStatus.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -4222,9 +4837,59 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "javax.naming.directory",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/directory/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Attribute",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/directory/Attribute.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/directory/Attribute.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.naming.ldap.spi",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/ldap/spi/package-summary.html"
+				},
+				{
+					"type": "package",
+					"name": "javax.naming",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Name",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/Name.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.naming/javax/naming/Name.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -4379,6 +5044,48 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/Activator.html",
 							"addedTags": [
 								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.rmi.server",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/server/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "RemoteRef",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/server/RemoteRef.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ServerRef",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/server/ServerRef.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/server/ServerRef.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
 							]
 						}
 					]

@@ -263,9 +263,36 @@
 								},
 								{
 									"type": "method",
+									"name": "major()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/lang/Runtime.Version.html#major()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "minor()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/lang/Runtime.Version.html#minor()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "patch()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/lang/Runtime.Version.html#patch()"
+								},
+								{
+									"type": "method",
+									"name": "security()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/lang/Runtime.Version.html#security()",
+									"addedTags": [
+										"deprecated"
+									]
 								},
 								{
 									"type": "method",
@@ -1275,6 +1302,15 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "getMenuShortcutKeyMask()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/awt/Toolkit.html#getMenuShortcutKeyMask()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "getMenuShortcutKeyMaskEx()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()"
@@ -1359,6 +1395,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/javase/10/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#CREDENTIAL_TYPES",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								},
@@ -1417,6 +1454,39 @@
 									"name": "getThreadInfo(long[], boolean, boolean, int)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/lang/management/ThreadMXBean.html#getThreadInfo(long%5B%5D,boolean,boolean,int)"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.xml",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/java.xml-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.stream",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/javax/xml/stream/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "XMLInputFactory",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/javase/10/docs/api/javax/xml/stream/XMLInputFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newFactory()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/javase/10/docs/api/javax/xml/stream/XMLInputFactory.html#newFactory()",
+									"removedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}

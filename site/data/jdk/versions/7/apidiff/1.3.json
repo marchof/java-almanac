@@ -864,6 +864,15 @@
 						},
 						{
 							"type": "method",
+							"name": "KeyEvent(Component, int, long, int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html#KeyEvent(java.awt.Component, int, long, int, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "KeyEvent(Component, int, long, int, int, char, int)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html#KeyEvent(java.awt.Component, int, long, int, int, char, int)"
@@ -3576,6 +3585,23 @@
 				},
 				{
 					"type": "class",
+					"name": "ComponentOrientation",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/ComponentOrientation.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getOrientation(ResourceBundle)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/ComponentOrientation.html#getOrientation(java.util.ResourceBundle)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Component",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Component.html",
@@ -3789,6 +3815,15 @@
 							"name": "isFocusOwner()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Component.html#isFocusOwner()"
+						},
+						{
+							"type": "method",
+							"name": "isFocusTraversable()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Component.html#isFocusTraversable()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -4073,6 +4108,15 @@
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Cursor.html",
 					"deltas": [
 						{
+							"type": "field",
+							"name": "predefined",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Cursor.html#predefined",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
 							"type": "method",
 							"name": "finalize()",
 							"status": "removed",
@@ -4175,6 +4219,15 @@
 						},
 						{
 							"type": "method",
+							"name": "hide()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Dialog.html#hide()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "isUndecorated()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Dialog.html#isUndecorated()"
@@ -4214,6 +4267,15 @@
 							"name": "setVisible(boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Dialog.html#setVisible(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "show()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Dialog.html#show()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -4561,6 +4623,24 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "createCompatibleImage(int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/GraphicsConfiguration.html#createCompatibleImage(int, int)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "createCompatibleImage(int, int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/GraphicsConfiguration.html#createCompatibleImage(int, int, int)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "createCompatibleVolatileImage(int, int)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int, int)"
@@ -4904,6 +4984,15 @@
 							"name": "accelerationPriority",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Image.html#accelerationPriority"
+						},
+						{
+							"type": "method",
+							"name": "flush()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Image.html#flush()",
+							"removedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -5953,6 +6042,24 @@
 						},
 						{
 							"type": "method",
+							"name": "applyResourceBundle(ResourceBundle)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#applyResourceBundle(java.util.ResourceBundle)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "applyResourceBundle(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#applyResourceBundle(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "createBufferStrategy(int)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#createBufferStrategy(int)"
@@ -6070,6 +6177,15 @@
 							"name": "getWindows()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#getWindows()"
+						},
+						{
+							"type": "method",
+							"name": "hide()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#hide()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -6298,6 +6414,15 @@
 							"name": "setVisible(boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#setVisible(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "show()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/Window.html#show()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -6609,6 +6734,30 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "PropertyEditorSupport()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/beans/PropertyEditorSupport.html#PropertyEditorSupport()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
+							"name": "PropertyEditorSupport(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/beans/PropertyEditorSupport.html#PropertyEditorSupport(java.lang.Object)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getSource()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/beans/PropertyEditorSupport.html#getSource()"
@@ -6848,6 +6997,15 @@
 							"name": "toURI()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/io/File.html#toURI()"
+						},
+						{
+							"type": "method",
+							"name": "toURL()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/io/File.html#toURL()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -7060,6 +7218,23 @@
 							"name": "readUnshared()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html#readUnshared()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ObjectOutputStream.PutField",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.PutField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "write(ObjectOutput)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -8827,6 +9002,15 @@
 						},
 						{
 							"type": "field",
+							"name": "SURROGATES_AREA",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/Character.UnicodeBlock.html#SURROGATES_AREA",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
 							"name": "SYLOTI_NAGRI",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/Character.UnicodeBlock.html#SYLOTI_NAGRI"
@@ -9536,6 +9720,15 @@
 							"name": "getClassLoadingLock(String)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/ClassLoader.html#getClassLoadingLock(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "getResources(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/ClassLoader.html#getResources(java.lang.String)",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -10527,6 +10720,23 @@
 				},
 				{
 					"type": "class",
+					"name": "SecurityManager",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/SecurityManager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "checkMulticast(InetAddress, byte)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress, byte)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Short",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/Short.html",
@@ -11007,6 +11217,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getenv(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/System.html#getenv(java.lang.String)",
+							"removedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "inheritedChannel()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/System.html#inheritedChannel()"
@@ -11059,6 +11278,15 @@
 							"name": "Thread(ThreadGroup, Runnable, String, long)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String, long)"
+						},
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html#destroy()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -11960,8 +12188,11 @@
 				{
 					"type": "class",
 					"name": "InetAddress",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/InetAddress.html",
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -12102,6 +12333,15 @@
 							"name": "leaveGroup(SocketAddress, NetworkInterface)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress, java.net.NetworkInterface)"
+						},
+						{
+							"type": "method",
+							"name": "send(DatagramPacket, byte)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/MulticastSocket.html#send(java.net.DatagramPacket, byte)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -12301,6 +12541,18 @@
 						"implements Closeable"
 					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "Socket()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#Socket()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "Socket(Proxy)",
@@ -12514,6 +12766,18 @@
 						},
 						{
 							"type": "method",
+							"name": "guessContentTypeFromName(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setConnectTimeout(int)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#setConnectTimeout(int)"
@@ -12534,6 +12798,15 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "decode(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/URLDecoder.html#decode(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "decode(String, String)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/URLDecoder.html#decode(java.lang.String, java.lang.String)"
@@ -12546,6 +12819,15 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/URLEncoder.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "encode(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/net/URLEncoder.html#encode(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "encode(String, String)",
@@ -14070,6 +14352,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getPermissions(CodeSource)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/security/Policy.html#getPermissions(java.security.CodeSource)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getPermissions(ProtectionDomain)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/security/Policy.html#getPermissions(java.security.ProtectionDomain)"
@@ -14091,6 +14382,15 @@
 							"name": "implies(ProtectionDomain, Permission)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/security/Policy.html#implies(java.security.ProtectionDomain, java.security.Permission)"
+						},
+						{
+							"type": "method",
+							"name": "refresh()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/security/Policy.html#refresh()",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -16708,14 +17008,29 @@
 				{
 					"type": "class",
 					"name": "CollationKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/CollationKey.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
 							"name": "CollationKey(String)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/CollationKey.html#CollationKey(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "compareTo(CollationKey)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/CollationKey.html#compareTo(java.text.CollationKey)",
+							"addedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -16734,6 +17049,15 @@
 							"name": "hashCode()",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/CollationKey.html#hashCode()"
+						},
+						{
+							"type": "method",
+							"name": "toByteArray()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/CollationKey.html#toByteArray()",
+							"addedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -16772,8 +17096,11 @@
 				{
 					"type": "class",
 					"name": "DecimalFormatSymbols",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormatSymbols.html",
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -16939,6 +17266,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "Format()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/Format.html#Format()",
+							"addedTags": [
+								"protected"
+							],
+							"removedTags": [
+								"public"
+							]
+						},
+						{
+							"type": "method",
 							"name": "formatToCharacterIterator(Object)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/Format.html#formatToCharacterIterator(java.lang.Object)"
@@ -17007,6 +17346,27 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/NumberFormat.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "NumberFormat()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/NumberFormat.html#NumberFormat()",
+							"addedTags": [
+								"protected"
+							],
+							"removedTags": [
+								"public"
+							]
+						},
+						{
+							"type": "method",
+							"name": "format(Object, StringBuffer, FieldPosition)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/NumberFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition)",
+							"removedTags": [
+								"final"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getCurrency()",
@@ -17960,6 +18320,15 @@
 						},
 						{
 							"type": "method",
+							"name": "get(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#get(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getDisplayName(int, int, Locale)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#getDisplayName(int, int, java.util.Locale)"
@@ -17969,6 +18338,18 @@
 							"name": "getDisplayNames(int, int, Locale)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#getDisplayNames(int, int, java.util.Locale)"
+						},
+						{
+							"type": "method",
+							"name": "getTimeInMillis()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#getTimeInMillis()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						},
 						{
 							"type": "method",
@@ -17987,6 +18368,27 @@
 							"name": "isWeekDateSupported()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#isWeekDateSupported()"
+						},
+						{
+							"type": "method",
+							"name": "set(int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#set(int, int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setTimeInMillis(long)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html#setTimeInMillis(long)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						},
 						{
 							"type": "method",
@@ -20010,6 +20412,26 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "Stub",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/rmi/CORBA/Stub.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "Stub()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/rmi/CORBA/Stub.html#Stub()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Util",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/rmi/CORBA/Util.html",
@@ -20366,6 +20788,26 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AudioFileFormat.Type",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/sound/sampled/AudioFileFormat.Type.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AudioFileFormat.Type(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#AudioFileFormat.Type(java.lang.String, java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "AudioFileFormat",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/sound/sampled/AudioFileFormat.html",
@@ -20401,6 +20843,18 @@
 							"name": "PCM_FLOAT",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT"
+						},
+						{
+							"type": "method",
+							"name": "AudioFormat.Encoding(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#AudioFormat.Encoding(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						}
 					]
 				},
@@ -20979,6 +21433,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getRoots()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/filechooser/FileSystemView.html#getRoots()",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getSystemDisplayName(File)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"
@@ -21027,9 +21490,27 @@
 						},
 						{
 							"type": "method",
+							"name": "isHiddenFile(File)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/filechooser/FileSystemView.html#isHiddenFile(java.io.File)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "isParent(File, File)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/filechooser/FileSystemView.html#isParent(java.io.File, java.io.File)"
+						},
+						{
+							"type": "method",
+							"name": "isRoot(File)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/filechooser/FileSystemView.html#isRoot(java.io.File)",
+							"removedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -23052,6 +23533,15 @@
 						},
 						{
 							"type": "method",
+							"name": "editablePropertyChanged(PropertyChangeEvent)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.html#editablePropertyChanged(java.beans.PropertyChangeEvent)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getBaseline(JComponent, int, int)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.html#getBaseline(javax.swing.JComponent, int, int)"
@@ -23085,6 +23575,15 @@
 							"name": "paintCurrentValueBackground(Graphics, Rectangle, boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.html#paintCurrentValueBackground(java.awt.Graphics, java.awt.Rectangle, boolean)"
+						},
+						{
+							"type": "method",
+							"name": "removeListeners()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.html#removeListeners()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -23369,6 +23868,15 @@
 							"name": "uninstallListeners(JComponent)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners(javax.swing.JComponent)"
+						},
+						{
+							"type": "method",
+							"name": "uninstallListeners(JScrollPane)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners(javax.swing.JScrollPane)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -23809,6 +24317,31 @@
 					"name": "TableStringConverter",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/table/TableStringConverter.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.swing.text.html.parser",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/html/parser/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "DTD",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/html/parser/DTD.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "FILE_VERSION",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/html/parser/DTD.html#FILE_VERSION",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -24334,6 +24867,23 @@
 				},
 				{
 					"type": "class",
+					"name": "DefaultHighlighter",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/DefaultHighlighter.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "DefaultPainter",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/DefaultHighlighter.html#DefaultPainter",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "DefaultStyledDocument",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/DefaultStyledDocument.html",
@@ -24791,6 +25341,18 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/PlainDocument.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "PlainDocument(AbstractDocument.Content)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/text/PlainDocument.html#PlainDocument(javax.swing.text.AbstractDocument.Content)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "insertString(int, String, AttributeSet)",
@@ -25265,6 +25827,15 @@
 							"name": "getTreeSelectionListeners()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/tree/DefaultTreeSelectionModel.html#getTreeSelectionListeners()"
+						},
+						{
+							"type": "method",
+							"name": "notifyPathChange(Vector, TreePath)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/tree/DefaultTreeSelectionModel.html#notifyPathChange(java.util.Vector, javax.swing.tree.TreePath)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -25869,6 +26440,15 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "disableSwingFocusManager()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/FocusManager.html#disableSwingFocusManager()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "focusNextComponent(Component)",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/FocusManager.html#focusNextComponent(java.awt.Component)"
@@ -25878,6 +26458,15 @@
 							"name": "focusPreviousComponent(Component)",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/FocusManager.html#focusPreviousComponent(java.awt.Component)"
+						},
+						{
+							"type": "method",
+							"name": "isFocusManagerEnabled()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/FocusManager.html#isFocusManagerEnabled()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -26070,6 +26659,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "JComboBox.AccessibleJComboBox(JComboBox)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComboBox.AccessibleJComboBox.html#JComboBox.AccessibleJComboBox(javax.swing.JComboBox)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getAccessibleStateSet()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComboBox.AccessibleJComboBox.html#getAccessibleStateSet()"
@@ -26220,6 +26821,24 @@
 						},
 						{
 							"type": "method",
+							"name": "disable()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#disable()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "enable()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#enable()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "firePropertyChange(String, Object, Object)",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object)"
@@ -26298,6 +26917,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getNextFocusableComponent()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#getNextFocusableComponent()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getPopupLocation(MouseEvent)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#getPopupLocation(java.awt.event.MouseEvent)"
@@ -26331,6 +26959,15 @@
 							"name": "isFocusTraversable()",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#isFocusTraversable()"
+						},
+						{
+							"type": "method",
+							"name": "isManagingFocus()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#isManagingFocus()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -26388,6 +27025,15 @@
 						},
 						{
 							"type": "method",
+							"name": "requestDefaultFocus()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#requestDefaultFocus()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "requestFocus(boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#requestFocus(boolean)"
@@ -26403,6 +27049,15 @@
 							"name": "requestFocusInWindow(boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#requestFocusInWindow(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "reshape(int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#reshape(int, int, int, int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -26430,6 +27085,15 @@
 						},
 						{
 							"type": "method",
+							"name": "setNextFocusableComponent(Component)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#setNextFocusableComponent(java.awt.Component)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setTransferHandler(TransferHandler)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#setTransferHandler(javax.swing.TransferHandler)"
@@ -26442,6 +27106,24 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JDesktopPane.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "LIVE_DRAG_MODE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JDesktopPane.html#LIVE_DRAG_MODE",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "OUTLINE_DRAG_MODE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE",
+							"addedTags": [
+								"final"
+							]
+						},
 						{
 							"type": "method",
 							"name": "addImpl(Component, Object, int)",
@@ -26660,6 +27342,18 @@
 							"name": "processKeyEvent(KeyEvent)",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JEditorPane.html#processKeyEvent(java.awt.event.KeyEvent)"
+						},
+						{
+							"type": "method",
+							"name": "scrollToReference(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						}
 					]
 				},
@@ -27021,6 +27715,15 @@
 							"name": "getNextMatch(String, int, Position.Bias)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JList.html#getNextMatch(java.lang.String, int, javax.swing.text.Position.Bias)"
+						},
+						{
+							"type": "method",
+							"name": "getSelectedValues()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/JList.html#getSelectedValues()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -28642,6 +29345,15 @@
 							"name": "calculateInnerArea(JComponent, Rectangle)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/SwingUtilities.html#calculateInnerArea(javax.swing.JComponent, java.awt.Rectangle)"
+						},
+						{
+							"type": "method",
+							"name": "findFocusOwner(Component)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/swing/SwingUtilities.html#findFocusOwner(java.awt.Component)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",

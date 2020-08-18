@@ -678,6 +678,24 @@
 							"name": "dispose()",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Dialog.html#dispose()"
+						},
+						{
+							"type": "method",
+							"name": "hide()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Dialog.html#hide()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "show()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Dialog.html#show()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -895,6 +913,15 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "hide()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Window.html#hide()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "isAlwaysOnTop()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Window.html#isAlwaysOnTop()"
@@ -922,6 +949,15 @@
 							"name": "setLocationByPlatform(boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Window.html#setLocationByPlatform(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "show()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/awt/Window.html#show()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -1005,6 +1041,30 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/beans/PropertyEditorSupport.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "PropertyEditorSupport()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/beans/PropertyEditorSupport.html#PropertyEditorSupport()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
+							"name": "PropertyEditorSupport(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/beans/PropertyEditorSupport.html#PropertyEditorSupport(java.lang.Object)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getSource()",
@@ -1984,6 +2044,15 @@
 						},
 						{
 							"type": "field",
+							"name": "SURROGATES_AREA",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Character.UnicodeBlock.html#SURROGATES_AREA",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
 							"name": "TAGALOG",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Character.UnicodeBlock.html#TAGALOG"
@@ -2399,6 +2468,15 @@
 							"name": "defineClass(String, ByteBuffer, ProtectionDomain)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/ClassLoader.html#defineClass(java.lang.String, java.nio.ByteBuffer, java.security.ProtectionDomain)"
+						},
+						{
+							"type": "method",
+							"name": "getResources(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/ClassLoader.html#getResources(java.lang.String)",
+							"removedTags": [
+								"final"
+							]
 						}
 					]
 				},
@@ -3282,6 +3360,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getenv(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/System.html#getenv(java.lang.String)",
+							"removedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "inheritedChannel()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/System.html#inheritedChannel()"
@@ -3328,6 +3415,15 @@
 							"name": "clone()",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Thread.html#clone()"
+						},
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Thread.html#destroy()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -4594,6 +4690,44 @@
 				},
 				{
 					"type": "class",
+					"name": "PolicyQualifierInfo",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/security/cert/PolicyQualifierInfo.html",
+					"removedTags": [
+						"final"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getEncoded()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/security/cert/PolicyQualifierInfo.html#getEncoded()",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getPolicyQualifier()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier()",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getPolicyQualifierId()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId()",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "TrustAnchor",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/security/cert/TrustAnchor.html",
@@ -5621,6 +5755,23 @@
 					"name": "DictionaryBasedBreakIterator.Builder",
 					"status": "removed",
 					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/text/DictionaryBasedBreakIterator.Builder.html"
+				},
+				{
+					"type": "class",
+					"name": "NumberFormat",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/text/NumberFormat.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "format(Object, StringBuffer, FieldPosition)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/java/text/NumberFormat.html#format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition)",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
 				},
 				{
 					"type": "class",
@@ -7904,6 +8055,26 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AudioFileFormat.Type",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/sound/sampled/AudioFileFormat.Type.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AudioFileFormat.Type(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#AudioFileFormat.Type(java.lang.String, java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "AudioFileFormat",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/sound/sampled/AudioFileFormat.html",
@@ -7925,6 +8096,26 @@
 							"name": "properties()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/sound/sampled/AudioFileFormat.html#properties()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "AudioFormat.Encoding",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/sound/sampled/AudioFormat.Encoding.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AudioFormat.Encoding(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#AudioFormat.Encoding(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						}
 					]
 				},
@@ -8792,6 +8983,31 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.swing.text.html.parser",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/text/html/parser/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "DTD",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/text/html/parser/DTD.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "FILE_VERSION",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/text/html/parser/DTD.html#FILE_VERSION",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.swing.text.html",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/text/html/package-summary.html",
@@ -9278,6 +9494,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "JComboBox.AccessibleJComboBox(JComboBox)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JComboBox.AccessibleJComboBox.html#JComboBox.AccessibleJComboBox(javax.swing.JComboBox)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getAccessibleStateSet()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JComboBox.AccessibleJComboBox.html#getAccessibleStateSet()"
@@ -9412,6 +9640,15 @@
 						},
 						{
 							"type": "method",
+							"name": "reshape(int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JComponent.html#reshape(int, int, int, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setComponentPopupMenu(JPopupMenu)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JComponent.html#setComponentPopupMenu(javax.swing.JPopupMenu)"
@@ -9427,6 +9664,32 @@
 							"name": "setInheritsPopupMenu(boolean)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JComponent.html#setInheritsPopupMenu(boolean)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JDesktopPane",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JDesktopPane.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "LIVE_DRAG_MODE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JDesktopPane.html#LIVE_DRAG_MODE",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "OUTLINE_DRAG_MODE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/1.5.0/docs/api/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE",
+							"addedTags": [
+								"final"
+							]
 						}
 					]
 				},

@@ -234,6 +234,57 @@
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Arc2D.html#Arc2D--"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "Path2D.Double",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getPathIterator(AffineTransform)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#getPathIterator-java.awt.geom.AffineTransform-",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Path2D.Float",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getPathIterator(AffineTransform)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#getPathIterator-java.awt.geom.AffineTransform-",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Path2D",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getPathIterator(AffineTransform, double)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.html#getPathIterator-java.awt.geom.AffineTransform-double-",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -617,6 +668,23 @@
 				},
 				{
 					"type": "class",
+					"name": "Cursor",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/Cursor.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "predefined",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/Cursor.html#predefined",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Dialog",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html",
@@ -727,6 +795,15 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/GraphicsConfiguration.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "createCompatibleImage(int, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/GraphicsConfiguration.html#createCompatibleImage-int-int-",
+							"removedTags": [
+								"abstract"
+							]
+						},
 						{
 							"type": "method",
 							"name": "isTranslucencyCapable()",
@@ -1581,6 +1658,15 @@
 							"name": "getDeclaredAnnotationsByType(Class)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotationsByType-java.lang.Class-"
+						},
+						{
+							"type": "method",
+							"name": "isAnnotationPresent(Class)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html#isAnnotationPresent-java.lang.Class-",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -3180,6 +3266,50 @@
 				},
 				{
 					"type": "class",
+					"name": "SecurityManager",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "checkAwtEventQueueAccess()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkAwtEventQueueAccess--",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkMemberAccess(Class, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkMemberAccess-java.lang.Class-int-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkSystemClipboardAccess()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkSystemClipboardAccess--",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkTopLevelWindow(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkTopLevelWindow-java.lang.Object-",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Short",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html",
@@ -4150,6 +4280,31 @@
 							"name": "subSequence(int, int)",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html#subSequence-int-int-"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.rmi.server",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "UnicastRemoteObject",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "exportObject(Remote)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -6494,6 +6649,41 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "Attributes.Name",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "EXTENSION_INSTALLATION",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#EXTENSION_INSTALLATION",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "IMPLEMENTATION_URL",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_URL",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "IMPLEMENTATION_VENDOR_ID",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR_ID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "JarFile",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html",
@@ -6505,6 +6695,70 @@
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html#stream--"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "Pack200.Packer",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addPropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html#addPropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removePropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html#removePropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Pack200.Unpacker",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addPropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html#addPropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removePropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html#removePropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -6514,6 +6768,32 @@
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html",
 			"deltas": [
+				{
+					"type": "class",
+					"name": "LogManager",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addPropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#addPropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removePropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#removePropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
 				{
 					"type": "class",
 					"name": "Logger",
@@ -6591,6 +6871,42 @@
 							"name": "logrb(Level, String, String, ResourceBundle, String, Throwable)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.util.ResourceBundle-java.lang.String-java.lang.Throwable-"
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Object-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Object[])",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Object:A-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Throwable)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Throwable-",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -8757,6 +9073,15 @@
 							"name": "forEachRemaining(Consumer)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#forEachRemaining-java.util.function.Consumer-"
+						},
+						{
+							"type": "method",
+							"name": "remove()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#remove--",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -9219,6 +9544,48 @@
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/imageio/metadata/IIOMetadataNode.html#setUserData-java.lang.String-java.lang.Object-org.w3c.dom.UserDataHandler-",
 							"addedTags": [
 								"throws DOMException"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.imageio.spi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "ImageReaderSpi",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageReaderSpi.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "STANDARD_INPUT_TYPE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageReaderSpi.html#STANDARD_INPUT_TYPE",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ImageWriterSpi",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageWriterSpi.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "STANDARD_OUTPUT_TYPE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageWriterSpi.html#STANDARD_OUTPUT_TYPE",
+							"addedTags": [
+								"deprecated"
 							]
 						}
 					]
@@ -9770,6 +10137,23 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AttributeValueExp",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeValueExp.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setMBeanServer(MBeanServer)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeValueExp.html#setMBeanServer-javax.management.MBeanServer-",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "MBeanServerNotification",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerNotification.html",
@@ -9887,6 +10271,23 @@
 							"removedTags": [
 								"throws IllegalArgumentException",
 								"throws NullPointerException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "StringValueExp",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/management/StringValueExp.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setMBeanServer(MBeanServer)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/management/StringValueExp.html#setMBeanServer-javax.management.MBeanServer-",
+							"addedTags": [
+								"deprecated"
 							]
 						}
 					]
@@ -10174,6 +10575,40 @@
 					"name": "KeyTab",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/kerberos/KeyTab.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.security.auth",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "Destroyable",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Destroyable.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Destroyable.html#destroy--",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isDestroyed()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Destroyable.html#isDestroyed--",
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -10529,6 +10964,156 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.sql.rowset.spi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "SyncFactory",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncFactory.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "ROWSET_SYNC_PROVIDER",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROWSET_SYNC_PROVIDER_VERSION",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER_VERSION",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROWSET_SYNC_VENDOR",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SyncProvider",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "DATASOURCE_DB_LOCK",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_DB_LOCK",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "DATASOURCE_NO_LOCK",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_NO_LOCK",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "DATASOURCE_ROW_LOCK",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_ROW_LOCK",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "DATASOURCE_TABLE_LOCK",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_TABLE_LOCK",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "GRADE_CHECK_ALL_AT_COMMIT",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_ALL_AT_COMMIT",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "GRADE_CHECK_MODIFIED_AT_COMMIT",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_MODIFIED_AT_COMMIT",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "GRADE_LOCK_WHEN_LOADED",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_LOADED",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "GRADE_LOCK_WHEN_MODIFIED",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_MODIFIED",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "GRADE_NONE",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#GRADE_NONE",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "NONUPDATABLE_VIEW_SYNC",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#NONUPDATABLE_VIEW_SYNC",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "UPDATABLE_VIEW_SYNC",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#UPDATABLE_VIEW_SYNC",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.sql.rowset",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/package-summary.html",
@@ -10538,6 +11123,23 @@
 					"name": "RowSetProvider",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/RowSetProvider.html"
+				},
+				{
+					"type": "interface",
+					"name": "CachedRowSet",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/CachedRowSet.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "COMMIT_ON_ACCEPT_CHANGES",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/CachedRowSet.html#COMMIT_ON_ACCEPT_CHANGES",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
 				},
 				{
 					"type": "interface",
@@ -11176,6 +11778,15 @@
 							"name": "uninstallListeners(JComponent)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners-javax.swing.JComponent-"
+						},
+						{
+							"type": "method",
+							"name": "uninstallListeners(JScrollPane)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners-javax.swing.JScrollPane-",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -11662,6 +12273,23 @@
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#updateUI--"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "DefaultTreeSelectionModel",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeSelectionModel.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "notifyPathChange(Vector, TreePath)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeSelectionModel.html#notifyPathChange-java.util.Vector-javax.swing.tree.TreePath-",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -11756,6 +12384,32 @@
 				},
 				{
 					"type": "class",
+					"name": "ImageIcon",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "component",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#component",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "tracker",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#tracker",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "JComboBox",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html",
@@ -11779,6 +12433,15 @@
 							"name": "accessibleContainerHandler",
 							"status": "removed",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.AccessibleJComponent.html#accessibleContainerHandler"
+						},
+						{
+							"type": "field",
+							"name": "accessibleFocusHandler",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.AccessibleJComponent.html#accessibleFocusHandler",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -11854,6 +12517,15 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "getSelectedValues()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValues--",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getSelectedValuesList()",
@@ -12167,6 +12839,23 @@
 					"name": "SchemaFactoryConfigurationError",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactoryConfigurationError.html"
+				},
+				{
+					"type": "class",
+					"name": "SchemaFactory",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactory.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "newInstance(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactory.html#newInstance-java.lang.String-",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -12448,6 +13137,40 @@
 							"name": "create(URL, QName, WebServiceFeature...)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Service.html#create-java.net.URL-javax.xml.namespace.QName-javax.xml.ws.WebServiceFeature...-"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.xml.xpath",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "XPathFactory",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "newInstance()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance--",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "newInstance(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance-java.lang.String-",
+							"removedTags": [
+								"final"
+							]
 						}
 					]
 				}

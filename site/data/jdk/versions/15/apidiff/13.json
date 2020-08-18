@@ -179,9 +179,53 @@
 								},
 								{
 									"type": "method",
+									"name": "hasPrivateAccess()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "previousLookupClass()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#previousLookupClass()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "VarHandle",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/invoke/VarHandle.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "coordinateTypes()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toMethodHandle(VarHandle.AccessMode)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
+									"name": "varType()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()",
+									"removedTags": [
+										"final"
+									]
 								}
 							]
 						},
@@ -549,6 +593,7 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
 									"removedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								},
@@ -558,6 +603,7 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/String.html#stripIndent()",
 									"removedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								},
@@ -567,6 +613,7 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/String.html#translateEscapes()",
 									"removedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -693,6 +740,60 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "getInterface()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#getInterface()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getLoopbackMode()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "joinGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "leaveGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setInterface(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setLoopbackMode(boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
 								{
 									"type": "method",
 									"name": "supportedOptions()",
@@ -923,6 +1024,26 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "AbstractQueuedLongSynchronizer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractQueuedLongSynchronizer()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#%3Cinit%3E()",
+									"addedTags": [
+										"public"
+									],
+									"removedTags": [
+										"protected"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "LockSupport",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/concurrent/locks/LockSupport.html",
@@ -1048,6 +1169,31 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "package",
+					"name": "javax.net.ssl",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/net/ssl/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "SSLSession",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/net/ssl/SSLSession.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPeerCertificateChain()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerCertificateChain()",
+									"removedTags": [
+										"abstract"
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -1092,8 +1238,11 @@
 						{
 							"type": "enum",
 							"name": "Modifier",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
+							"removedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "field",
@@ -1375,6 +1524,7 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.compiler/javax/tools/ToolProvider.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}

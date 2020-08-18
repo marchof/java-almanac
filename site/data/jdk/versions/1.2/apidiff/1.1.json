@@ -30,6 +30,33 @@
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/applet/Applet.html#newAudioClip(java.net.URL)"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletContext",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/applet/AppletContext.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletStub",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/applet/AppletStub.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AudioClip",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/applet/AudioClip.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -177,6 +204,24 @@
 						},
 						{
 							"type": "method",
+							"name": "normalizeMimeType(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/datatransfer/DataFlavor.html#normalizeMimeType(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "normalizeMimeTypeParameter(String, String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/datatransfer/DataFlavor.html#normalizeMimeTypeParameter(java.lang.String, java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "readExternal(ObjectInput)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/datatransfer/DataFlavor.html#readExternal(java.io.ObjectInput)"
@@ -209,9 +254,27 @@
 				},
 				{
 					"type": "interface",
+					"name": "ClipboardOwner",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/datatransfer/ClipboardOwner.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "FlavorMap",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/datatransfer/FlavorMap.html"
+				},
+				{
+					"type": "interface",
+					"name": "Transferable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/datatransfer/Transferable.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -725,9 +788,108 @@
 				},
 				{
 					"type": "interface",
+					"name": "ActionListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/ActionListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AdjustmentListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/AdjustmentListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ComponentListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/ComponentListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ContainerListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/ContainerListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "FocusListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/FocusListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "InputMethodListener",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/InputMethodListener.html"
+				},
+				{
+					"type": "interface",
+					"name": "ItemListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/ItemListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "KeyListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/KeyListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MouseListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/MouseListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MouseMotionListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/MouseMotionListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "TextListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/TextListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "WindowListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/event/WindowListener.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -1342,6 +1504,33 @@
 				},
 				{
 					"type": "interface",
+					"name": "ImageConsumer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/image/ImageConsumer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ImageObserver",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/image/ImageObserver.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ImageProducer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/image/ImageProducer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "RasterOp",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/image/RasterOp.html"
@@ -1380,9 +1569,102 @@
 				},
 				{
 					"type": "interface",
+					"name": "ButtonPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ButtonPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "CanvasPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/CanvasPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "CheckboxMenuItemPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/CheckboxMenuItemPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "CheckboxPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/CheckboxPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ChoicePeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ChoicePeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ComponentPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ComponentPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ContainerPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ContainerPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DialogPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/DialogPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "FileDialogPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/FileDialogPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "FontPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/FontPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "FramePeer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/FramePeer.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -1400,9 +1682,138 @@
 				},
 				{
 					"type": "interface",
+					"name": "LabelPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/LabelPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "LightweightPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/LightweightPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ListPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ListPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MenuBarPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/MenuBarPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MenuComponentPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/MenuComponentPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MenuItemPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/MenuItemPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MenuPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/MenuPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "PanelPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/PanelPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "PopupMenuPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/PopupMenuPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ScrollPanePeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ScrollPanePeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ScrollbarPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/ScrollbarPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "TextAreaPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/TextAreaPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "TextComponentPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/TextComponentPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "TextFieldPeer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/TextFieldPeer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "WindowPeer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/peer/WindowPeer.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -1849,9 +2260,24 @@
 				{
 					"type": "class",
 					"name": "Container",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Container.html",
+					"removedTags": [
+						"abstract"
+					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "Container()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Container.html#Container()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "findComponentAt(Point)",
@@ -2342,6 +2768,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getPeer()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Font.html#getPeer()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getSize2D()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Font.html#getSize2D()"
@@ -2392,15 +2827,141 @@
 					"deltas": [
 						{
 							"type": "field",
+							"name": "CROSSHAIR_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#CROSSHAIR_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "DEFAULT_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#DEFAULT_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "E_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#E_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "HAND_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#HAND_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
 							"name": "ICONIFIED",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#ICONIFIED"
 						},
 						{
 							"type": "field",
+							"name": "MOVE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#MOVE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "NE_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#NE_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
 							"name": "NORMAL",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#NORMAL"
+						},
+						{
+							"type": "field",
+							"name": "NW_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#NW_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "N_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#N_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "SE_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#SE_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "SW_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#SW_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "S_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#S_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "TEXT_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#TEXT_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "WAIT_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#WAIT_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "W_RESIZE_CURSOR",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Frame.html#W_RESIZE_CURSOR",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -2507,6 +3068,41 @@
 							"name": "GridBagConstraints(int, int, int, int, double, double, int, int, Insets, int, int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/GridBagConstraints.html#GridBagConstraints(int, int, int, int, double, double, int, int, java.awt.Insets, int, int)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "List",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/List.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addItem(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/List.html#addItem(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "addItem(String, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/List.html#addItem(java.lang.String, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "delItem(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/List.html#delItem(int)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -2836,6 +3432,33 @@
 						},
 						{
 							"type": "method",
+							"name": "getFontList()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Toolkit.html#getFontList()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getFontMetrics(Font)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Toolkit.html#getFontMetrics(java.awt.Font)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getFontPeer(String, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Toolkit.html#getFontPeer(java.lang.String, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getMaximumCursorColors()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Toolkit.html#getMaximumCursorColors()"
@@ -2936,6 +3559,15 @@
 				},
 				{
 					"type": "interface",
+					"name": "Adjustable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Adjustable.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "CompositeContext",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/CompositeContext.html"
@@ -2945,6 +3577,42 @@
 					"name": "Composite",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Composite.html"
+				},
+				{
+					"type": "interface",
+					"name": "ItemSelectable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/ItemSelectable.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "LayoutManager2",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/LayoutManager2.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "LayoutManager",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/LayoutManager.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MenuContainer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/MenuContainer.html",
+					"addedTags": [
+						"abstract"
+					]
 				},
 				{
 					"type": "interface",
@@ -2960,9 +3628,21 @@
 				},
 				{
 					"type": "interface",
+					"name": "PrintGraphics",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/PrintGraphics.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "Shape",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/awt/Shape.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -3266,9 +3946,63 @@
 				},
 				{
 					"type": "interface",
+					"name": "BeanInfo",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/BeanInfo.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Customizer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/Customizer.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "DesignMode",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/DesignMode.html"
+				},
+				{
+					"type": "interface",
+					"name": "PropertyChangeListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/PropertyChangeListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "PropertyEditor",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/PropertyEditor.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "VetoableChangeListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/VetoableChangeListener.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Visibility",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/beans/Visibility.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -3491,9 +4225,36 @@
 						},
 						{
 							"type": "method",
+							"name": "defaultReadObject()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectInputStream.html#defaultReadObject()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "enableResolveObject(boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectInputStream.html#enableResolveObject(boolean)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "readFields()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectInputStream.html#readFields()"
+						},
+						{
+							"type": "method",
+							"name": "readLine()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectInputStream.html#readLine()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -3520,6 +4281,24 @@
 							"name": "ObjectOutputStream()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectOutputStream.html#ObjectOutputStream()"
+						},
+						{
+							"type": "method",
+							"name": "defaultWriteObject()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectOutputStream.html#defaultWriteObject()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "enableReplaceObject(boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectOutputStream.html#enableReplaceObject(boolean)",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -3610,6 +4389,32 @@
 							"name": "write(int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/PipedWriter.html#write(int)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "PrintStream",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/PrintStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "PrintStream(OutputStream)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/PrintStream.html#PrintStream(java.io.OutputStream)",
+							"removedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "PrintStream(OutputStream, boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/PrintStream.html#PrintStream(java.io.OutputStream, boolean)",
+							"removedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -3724,6 +4529,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "StringWriter(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/StringWriter.html#StringWriter(int)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "close()",
 							"status": "modified",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/StringWriter.html#close()",
@@ -3735,15 +4552,87 @@
 				},
 				{
 					"type": "interface",
+					"name": "DataInput",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/DataInput.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DataOutput",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/DataOutput.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Externalizable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/Externalizable.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "FileFilter",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/FileFilter.html"
 				},
 				{
 					"type": "interface",
+					"name": "FilenameFilter",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/FilenameFilter.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ObjectInputValidation",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectInputValidation.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ObjectInput",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectInput.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ObjectOutput",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectOutput.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "ObjectStreamConstants",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/ObjectStreamConstants.html"
+				},
+				{
+					"type": "interface",
+					"name": "Serializable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/io/Serializable.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -3852,6 +4741,15 @@
 					"name": "ReflectPermission",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/reflect/ReflectPermission.html"
+				},
+				{
+					"type": "interface",
+					"name": "Member",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/reflect/Member.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -4017,9 +4915,36 @@
 						},
 						{
 							"type": "method",
+							"name": "getSystemResource(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ClassLoader.html#getSystemResource(java.lang.String)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getSystemResourceAsStream(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ClassLoader.html#getSystemResourceAsStream(java.lang.String)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getSystemResources(String)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ClassLoader.html#getSystemResources(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "loadClass(String, boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ClassLoader.html#loadClass(java.lang.String, boolean)",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -4263,10 +5188,51 @@
 				},
 				{
 					"type": "class",
-					"name": "SecurityManager",
+					"name": "Runtime",
 					"status": "notmodified",
-					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Runtime.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "runFinalizersOnExit(boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Runtime.html#runFinalizersOnExit(boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SecurityManager",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html",
+					"removedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "field",
+							"name": "inCheck",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#inCheck",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "SecurityManager()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#SecurityManager()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "checkPermission(Permission)",
@@ -4278,6 +5244,69 @@
 							"name": "checkPermission(Permission, Object)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#checkPermission(java.security.Permission, java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "classDepth(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#classDepth(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "classLoaderDepth()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#classLoaderDepth()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "currentClassLoader()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#currentClassLoader()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "currentLoadedClass()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#currentLoadedClass()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getInCheck()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#getInCheck()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "inClass(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#inClass(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "inClassLoader()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/SecurityManager.html#inClassLoader()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -4391,6 +5420,15 @@
 						},
 						{
 							"type": "method",
+							"name": "runFinalizersOnExit(boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/System.html#runFinalizersOnExit(boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setProperty(String, String)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/System.html#setProperty(java.lang.String, java.lang.String)"
@@ -4405,9 +5443,45 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "allowThreadSuspension(boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ThreadGroup.html#allowThreadSuspension(boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "interrupt()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ThreadGroup.html#interrupt()"
+						},
+						{
+							"type": "method",
+							"name": "resume()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ThreadGroup.html#resume()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "stop()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ThreadGroup.html#stop()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "suspend()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/ThreadGroup.html#suspend()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -4425,15 +5499,69 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "checkAccess()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#checkAccess()",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "countStackFrames()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#countStackFrames()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getContextClassLoader()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#getContextClassLoader()"
 						},
 						{
 							"type": "method",
+							"name": "resume()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#resume()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setContextClassLoader(ClassLoader)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)"
+						},
+						{
+							"type": "method",
+							"name": "stop()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#stop()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "stop(Throwable)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#stop(java.lang.Throwable)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "suspend()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Thread.html#suspend()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -4451,9 +5579,27 @@
 				},
 				{
 					"type": "interface",
+					"name": "Cloneable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Cloneable.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "Comparable",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Comparable.html"
+				},
+				{
+					"type": "interface",
+					"name": "Runnable",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/lang/Runnable.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -4780,9 +5926,27 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "getTTL()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/DatagramSocketImpl.html#getTTL()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getTimeToLive()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/DatagramSocketImpl.html#getTimeToLive()"
+						},
+						{
+							"type": "method",
+							"name": "setTTL(byte)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/DatagramSocketImpl.html#setTTL(byte)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -4882,9 +6046,27 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "getTTL()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/MulticastSocket.html#getTTL()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getTimeToLive()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/MulticastSocket.html#getTimeToLive()"
+						},
+						{
+							"type": "method",
+							"name": "setTTL(byte)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/MulticastSocket.html#setTTL(byte)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -4992,9 +6174,45 @@
 				},
 				{
 					"type": "interface",
+					"name": "ContentHandlerFactory",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/ContentHandlerFactory.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "FileNameMap",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/FileNameMap.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "SocketImplFactory",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/SocketImplFactory.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "SocketOptions",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/SocketOptions.html"
+				},
+				{
+					"type": "interface",
+					"name": "URLStreamHandlerFactory",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/net/URLStreamHandlerFactory.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -5003,6 +6221,23 @@
 			"name": "java.rmi.activation",
 			"status": "added",
 			"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/activation/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "java.rmi.dgc",
+			"status": "notmodified",
+			"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/dgc/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "DGC",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/dgc/DGC.html",
+					"addedTags": [
+						"abstract"
+					]
+				}
+			]
 		},
 		{
 			"type": "package",
@@ -5047,6 +6282,44 @@
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory)"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "RegistryHandler",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/registry/RegistryHandler.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "registryImpl(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/registry/RegistryHandler.html#registryImpl(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "registryStub(String, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/registry/RegistryHandler.html#registryStub(java.lang.String, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Registry",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/registry/Registry.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -5056,6 +6329,95 @@
 			"status": "notmodified",
 			"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/package-summary.html",
 			"deltas": [
+				{
+					"type": "class",
+					"name": "LogStream",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getDefaultStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#getDefaultStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getOutputStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#getOutputStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "log(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#log(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "parseLevel(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#parseLevel(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setDefaultStream(PrintStream)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#setDefaultStream(java.io.PrintStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setOutputStream(OutputStream)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#setOutputStream(java.io.OutputStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#toString()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "write(byte[], int, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#write(byte%5B%5D, int, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "write(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LogStream.html#write(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
 				{
 					"type": "class",
 					"name": "ObjID",
@@ -5072,6 +6434,41 @@
 				},
 				{
 					"type": "class",
+					"name": "Operation",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Operation.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "Operation(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Operation.html#Operation(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getOperation()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Operation.html#getOperation()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Operation.html#toString()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "RMIClassLoader",
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RMIClassLoader.html",
@@ -5081,6 +6478,24 @@
 							"name": "getClassAnnotation(Class)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RMIClassLoader.html#getClassAnnotation(java.lang.Class)"
+						},
+						{
+							"type": "method",
+							"name": "getSecurityContext(ClassLoader)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RMIClassLoader.html#getSecurityContext(java.lang.ClassLoader)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "loadClass(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -5130,6 +6545,23 @@
 				},
 				{
 					"type": "class",
+					"name": "RemoteStub",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteStub.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setRef(RemoteStub, RemoteRef)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteStub.html#setRef(java.rmi.server.RemoteStub, java.rmi.server.RemoteRef)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "ServerCloneException",
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/ServerCloneException.html",
@@ -5151,6 +6583,23 @@
 							"name": "printStackTrace(PrintWriter)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/ServerCloneException.html#printStackTrace(java.io.PrintWriter)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SkeletonMismatchException",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/SkeletonMismatchException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "SkeletonMismatchException(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/SkeletonMismatchException.html#SkeletonMismatchException(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -5194,9 +6643,56 @@
 				},
 				{
 					"type": "interface",
+					"name": "LoaderHandler",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LoaderHandler.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getSecurityContext(ClassLoader)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LoaderHandler.html#getSecurityContext(java.lang.ClassLoader)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "loadClass(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LoaderHandler.html#loadClass(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "loadClass(URL, String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/LoaderHandler.html#loadClass(java.net.URL, java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
 					"name": "RMIClientSocketFactory",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RMIClientSocketFactory.html"
+				},
+				{
+					"type": "interface",
+					"name": "RMIFailureHandler",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RMIFailureHandler.html",
+					"addedTags": [
+						"abstract"
+					]
 				},
 				{
 					"type": "interface",
@@ -5206,9 +6702,86 @@
 				},
 				{
 					"type": "interface",
+					"name": "RemoteCall",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "done()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#done()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "executeCall()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#executeCall()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getInputStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#getInputStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getOutputStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#getOutputStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getResultStream(boolean)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#getResultStream(boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "releaseInputStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#releaseInputStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "releaseOutputStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteCall.html#releaseOutputStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
 					"name": "RemoteRef",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteRef.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -5218,17 +6791,47 @@
 						},
 						{
 							"type": "method",
+							"name": "done(RemoteCall)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteRef.html#done(java.rmi.server.RemoteCall)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "invoke(Remote, Method, Object[], long)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote, java.lang.reflect.Method, java.lang.Object%5B%5D, long)"
+						},
+						{
+							"type": "method",
+							"name": "invoke(RemoteCall)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteRef.html#invoke(java.rmi.server.RemoteCall)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "newCall(RemoteObject, Operation[], int, long)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/RemoteRef.html#newCall(java.rmi.server.RemoteObject, java.rmi.server.Operation%5B%5D, int, long)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
 				{
 					"type": "interface",
 					"name": "ServerRef",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/ServerRef.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -5236,6 +6839,44 @@
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/ServerRef.html#serialVersionUID"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Skeleton",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Skeleton.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "dispatch(Remote, RemoteCall, int, long)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Skeleton.html#dispatch(java.rmi.Remote, java.rmi.server.RemoteCall, int, long)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getOperations()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Skeleton.html#getOperations()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Unreferenced",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/server/Unreferenced.html",
+					"addedTags": [
+						"abstract"
 					]
 				}
 			]
@@ -5301,6 +6942,32 @@
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/Naming.html#unbind(java.lang.String)",
 							"removedTags": [
 								"throws UnknownHostException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "RMISecurityException",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/RMISecurityException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "RMISecurityException(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/RMISecurityException.html#RMISecurityException(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "RMISecurityException(String, String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/RMISecurityException.html#RMISecurityException(java.lang.String, java.lang.String)",
+							"addedTags": [
+								"deprecated"
 							]
 						}
 					]
@@ -5518,6 +7185,85 @@
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/RemoteException.html#printStackTrace(java.io.PrintWriter)"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "ServerRuntimeException",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/ServerRuntimeException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ServerRuntimeException(String, Exception)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/ServerRuntimeException.html#ServerRuntimeException(java.lang.String, java.lang.Exception)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Remote",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/rmi/Remote.html",
+					"addedTags": [
+						"abstract"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.security.acl",
+			"status": "notmodified",
+			"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/acl/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "AclEntry",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/acl/AclEntry.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Acl",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/acl/Acl.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Group",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/acl/Group.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Owner",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/acl/Owner.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Permission",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/acl/Permission.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -5535,9 +7281,39 @@
 			"deltas": [
 				{
 					"type": "interface",
+					"name": "DSAKeyPairGenerator",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/interfaces/DSAKeyPairGenerator.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DSAKey",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/interfaces/DSAKey.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DSAParams",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/interfaces/DSAParams.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "DSAPrivateKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/interfaces/DSAPrivateKey.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -5550,8 +7326,11 @@
 				{
 					"type": "interface",
 					"name": "DSAPublicKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/interfaces/DSAPublicKey.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -5754,6 +7533,15 @@
 							"name": "initialize(AlgorithmParameterSpec, SecureRandom)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom)"
+						},
+						{
+							"type": "method",
+							"name": "initialize(int, SecureRandom)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/KeyPairGenerator.html#initialize(int, java.security.SecureRandom)",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -6020,6 +7808,23 @@
 				},
 				{
 					"type": "class",
+					"name": "Security",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Security.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getAlgorithmProperty(String, String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Security.html#getAlgorithmProperty(java.lang.String, java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "SignatureException",
 					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/SignatureException.html",
@@ -6098,6 +7903,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getParameter(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Signature.html#getParameter(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getProvider()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Signature.html#getProvider()"
@@ -6113,6 +7927,15 @@
 							"name": "setParameter(AlgorithmParameterSpec)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"
+						},
+						{
+							"type": "method",
+							"name": "setParameter(String, Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Signature.html#setParameter(java.lang.String, java.lang.Object)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -6142,6 +7965,15 @@
 				},
 				{
 					"type": "interface",
+					"name": "Certificate",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Certificate.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "Guard",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Guard.html"
@@ -6149,8 +7981,11 @@
 				{
 					"type": "interface",
 					"name": "Key",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Key.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -6162,9 +7997,21 @@
 				},
 				{
 					"type": "interface",
+					"name": "Principal",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/Principal.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "PrivateKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/PrivateKey.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -6189,8 +8036,11 @@
 				{
 					"type": "interface",
 					"name": "PublicKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/security/PublicKey.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -6216,10 +8066,90 @@
 				},
 				{
 					"type": "class",
+					"name": "Date",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "Date(int, int, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#Date(int, int, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getHours()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#getHours()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMinutes()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#getMinutes()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getSeconds()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#getSeconds()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setHours(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#setHours(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setMinutes(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#setMinutes(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setSeconds(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Date.html#setSeconds(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "DriverManager",
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/DriverManager.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "getLogStream()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/DriverManager.html#getLogStream()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getLogWriter()",
@@ -6228,9 +8158,89 @@
 						},
 						{
 							"type": "method",
+							"name": "setLogStream(PrintStream)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/DriverManager.html#setLogStream(java.io.PrintStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setLogWriter(PrintWriter)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Time",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getDate()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#getDate()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDay()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#getDay()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMonth()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#getMonth()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getYear()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#getYear()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setDate(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#setDate(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setMonth(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#setMonth(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setYear(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Time.html#setYear(int)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -6313,8 +8323,11 @@
 				{
 					"type": "interface",
 					"name": "CallableStatement",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/CallableStatement.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -6327,6 +8340,15 @@
 							"name": "getBigDecimal(int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/CallableStatement.html#getBigDecimal(int)"
+						},
+						{
+							"type": "method",
+							"name": "getBigDecimal(int, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/CallableStatement.html#getBigDecimal(int, int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -6387,8 +8409,11 @@
 				{
 					"type": "interface",
 					"name": "Connection",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Connection.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -6425,8 +8450,11 @@
 				{
 					"type": "interface",
 					"name": "DatabaseMetaData",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/DatabaseMetaData.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -6516,9 +8544,21 @@
 				},
 				{
 					"type": "interface",
+					"name": "Driver",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Driver.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "PreparedStatement",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/PreparedStatement.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -6585,6 +8625,15 @@
 							"name": "setTimestamp(int, Timestamp, Calendar)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/PreparedStatement.html#setTimestamp(int, java.sql.Timestamp, java.util.Calendar)"
+						},
+						{
+							"type": "method",
+							"name": "setUnicodeStream(int, InputStream, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/PreparedStatement.html#setUnicodeStream(int, java.io.InputStream, int)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -6597,8 +8646,11 @@
 				{
 					"type": "interface",
 					"name": "ResultSetMetaData",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSetMetaData.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -6611,8 +8663,11 @@
 				{
 					"type": "interface",
 					"name": "ResultSet",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -6718,9 +8773,27 @@
 						},
 						{
 							"type": "method",
+							"name": "getBigDecimal(String, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html#getBigDecimal(java.lang.String, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getBigDecimal(int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html#getBigDecimal(int)"
+						},
+						{
+							"type": "method",
+							"name": "getBigDecimal(int, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html#getBigDecimal(int, int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -6853,6 +8926,24 @@
 							"name": "getType()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html#getType()"
+						},
+						{
+							"type": "method",
+							"name": "getUnicodeStream(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html#getUnicodeStream(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getUnicodeStream(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/ResultSet.html#getUnicodeStream(int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -7207,8 +9298,11 @@
 				{
 					"type": "interface",
 					"name": "Statement",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/sql/Statement.html",
+					"addedTags": [
+						"abstract"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -8479,6 +10573,15 @@
 					"name": "AttributedCharacterIterator",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/text/AttributedCharacterIterator.html"
+				},
+				{
+					"type": "interface",
+					"name": "CharacterIterator",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/text/CharacterIterator.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -8582,6 +10685,15 @@
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/zip/ZipInputStream.html#createZipEntry(java.lang.String)"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "Checksum",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/zip/Checksum.html",
+					"addedTags": [
+						"abstract"
+					]
 				}
 			]
 		},
@@ -8636,8 +10748,11 @@
 				{
 					"type": "class",
 					"name": "BitSet",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/BitSet.html",
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -8659,6 +10774,33 @@
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Calendar.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "after(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Calendar.html#after(java.lang.Object)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "before(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Calendar.html#before(java.lang.Object)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "equals(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Calendar.html#equals(java.lang.Object)",
+							"removedTags": [
+								"abstract"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getActualMaximum(int)",
@@ -8873,6 +11015,15 @@
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Properties.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "save(OutputStream, String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Properties.html#save(java.io.OutputStream, java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "setProperty(String, String)",
@@ -9096,9 +11247,36 @@
 						},
 						{
 							"type": "method",
+							"name": "addElement(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#addElement(java.lang.Object)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "capacity()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#capacity()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "clear()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#clear()"
+						},
+						{
+							"type": "method",
+							"name": "contains(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#contains(java.lang.Object)",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -9108,9 +11286,54 @@
 						},
 						{
 							"type": "method",
+							"name": "copyInto(Object[])",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#copyInto(java.lang.Object%5B%5D)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "elementAt(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#elementAt(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "elements()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#elements()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "ensureCapacity(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#ensureCapacity(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "equals(Object)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#equals(java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "firstElement()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#firstElement()",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -9123,6 +11346,69 @@
 							"name": "hashCode()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#hashCode()"
+						},
+						{
+							"type": "method",
+							"name": "indexOf(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#indexOf(java.lang.Object)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "indexOf(Object, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#indexOf(java.lang.Object, int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insertElementAt(Object, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#insertElementAt(java.lang.Object, int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isEmpty()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#isEmpty()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "lastElement()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#lastElement()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "lastIndexOf(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#lastIndexOf(java.lang.Object)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "lastIndexOf(Object, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#lastIndexOf(java.lang.Object, int)",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -9144,6 +11430,33 @@
 						},
 						{
 							"type": "method",
+							"name": "removeAllElements()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#removeAllElements()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removeElement(Object)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#removeElement(java.lang.Object)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removeElementAt(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#removeElementAt(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "removeRange(int, int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#removeRange(int, int)"
@@ -9162,6 +11475,33 @@
 						},
 						{
 							"type": "method",
+							"name": "setElementAt(Object, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#setElementAt(java.lang.Object, int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setSize(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#setSize(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "size()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#size()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "subList(int, int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#subList(int, int)"
@@ -9177,6 +11517,24 @@
 							"name": "toArray(Object[])",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#toArray(java.lang.Object%5B%5D)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#toString()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "trimToSize()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Vector.html#trimToSize()",
+							"removedTags": [
+								"final"
+							]
 						}
 					]
 				},
@@ -9197,6 +11555,24 @@
 					"name": "Comparator",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Comparator.html"
+				},
+				{
+					"type": "interface",
+					"name": "Enumeration",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Enumeration.html",
+					"addedTags": [
+						"abstract"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "EventListener",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/EventListener.html",
+					"addedTags": [
+						"abstract"
+					]
 				},
 				{
 					"type": "interface",
@@ -9227,6 +11603,15 @@
 					"name": "Map",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Map.html"
+				},
+				{
+					"type": "interface",
+					"name": "Observer",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.2/api/java/util/Observer.html",
+					"addedTags": [
+						"abstract"
+					]
 				},
 				{
 					"type": "interface",

@@ -98,6 +98,15 @@
 							"name": "icSigRedMatrixColumnTag",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRedMatrixColumnTag"
+						},
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/color/ICC_Profile.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -352,10 +361,91 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html",
 					"deltas": [
 						{
+							"type": "field",
+							"name": "ALT_GRAPH_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_GRAPH_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ALT_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "BUTTON1_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON1_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "BUTTON2_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON2_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "BUTTON3_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON3_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "CTRL_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#CTRL_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "META_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#META_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "SHIFT_MASK",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#SHIFT_MASK",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
 							"type": "method",
 							"name": "getMaskForButton(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#getMaskForButton(int)"
+						},
+						{
+							"type": "method",
+							"name": "getModifiers()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiers()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -420,6 +510,15 @@
 							"name": "getExtendedKeyCodeForChar(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/KeyEvent.html#getExtendedKeyCodeForChar(int)"
+						},
+						{
+							"type": "method",
+							"name": "getKeyModifiersText(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyModifiersText(int)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -1328,6 +1427,23 @@
 				},
 				{
 					"type": "class",
+					"name": "ColorModel",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/image/ColorModel.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/image/ColorModel.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "ComponentColorModel",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/image/ComponentColorModel.html",
@@ -1351,6 +1467,15 @@
 							"name": "equals(Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/image/IndexColorModel.html#equals(java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/image/IndexColorModel.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -2011,6 +2136,40 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AWTEvent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/AWTEvent.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AWTEvent(Event)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/AWTEvent.html#%3Cinit%3E(java.awt.Event)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "AWTKeyStroke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/AWTKeyStroke.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "registerSubclass(Class)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/AWTKeyStroke.html#registerSubclass(java.lang.Class)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "AlphaComposite",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/AlphaComposite.html",
@@ -2322,6 +2481,23 @@
 				},
 				{
 					"type": "class",
+					"name": "Cursor",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Cursor.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "predefined",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Cursor.html#predefined",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Desktop",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Desktop.html"
@@ -2382,6 +2558,15 @@
 						},
 						{
 							"type": "method",
+							"name": "hide()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Dialog.html#hide()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setBackground(Color)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Dialog.html#setBackground(java.awt.Color)"
@@ -2409,6 +2594,15 @@
 							"name": "setVisible(boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Dialog.html#setVisible(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "show()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Dialog.html#show()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -2674,6 +2868,33 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "createCompatibleImage(int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "createCompatibleImage(int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int,int)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "createCompatibleVolatileImage(int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "createCompatibleVolatileImage(int, int, ImageCapabilities, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities,int)"
@@ -2729,6 +2950,23 @@
 							"name": "registerFont(Font)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Graphics",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Graphics.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -2825,6 +3063,15 @@
 							"name": "accelerationPriority",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Image.html#accelerationPriority"
+						},
+						{
+							"type": "method",
+							"name": "flush()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Image.html#flush()",
+							"removedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -2977,6 +3224,23 @@
 							"name": "getParent()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/PopupMenu.html#getParent()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "PrintJob",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/PrintJob.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -3278,6 +3542,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getMenuShortcutKeyMask()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMask()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getMenuShortcutKeyMaskEx()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()"
@@ -3373,6 +3646,15 @@
 							"name": "getWindows()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Window.html#getWindows()"
+						},
+						{
+							"type": "method",
+							"name": "hide()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Window.html#hide()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -3535,6 +3817,15 @@
 							"name": "setVisible(boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Window.html#setVisible(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "show()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/awt/Window.html#show()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -3647,6 +3938,23 @@
 					"name": "Transient",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/beans/Transient.html"
+				},
+				{
+					"type": "class",
+					"name": "Beans",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/beans/Beans.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
 				},
 				{
 					"type": "class",
@@ -3776,6 +4084,30 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/beans/PropertyEditorSupport.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "PropertyEditorSupport()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#%3Cinit%3E()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
+							"name": "PropertyEditorSupport(Object)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#%3Cinit%3E(java.lang.Object)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getSource()",
@@ -4099,6 +4431,15 @@
 							"name": "toPath()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/io/File.html#toPath()"
+						},
+						{
+							"type": "method",
+							"name": "toURL()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/io/File.html#toURL()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -4844,6 +5185,15 @@
 						},
 						{
 							"type": "method",
+							"name": "isAccessible()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/reflect/AccessibleObject.html#isAccessible()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "isAnnotationPresent(Class)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)"
@@ -5246,6 +5596,15 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "getProxyClass(ClassLoader, Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/reflect/Proxy.html#getProxyClass(java.lang.ClassLoader,java.lang.Class...)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "newProxyInstance(ClassLoader, Class[], InvocationHandler)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class%5B%5D,java.lang.reflect.InvocationHandler)",
@@ -5431,6 +5790,24 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "Boolean(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Boolean(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "compare(boolean, boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Boolean.html#compare(boolean,boolean)"
@@ -5505,6 +5882,24 @@
 							"name": "SIZE",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Byte.html#SIZE"
+						},
+						{
+							"type": "method",
+							"name": "Byte(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Byte(byte)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -6716,6 +7111,15 @@
 						},
 						{
 							"type": "field",
+							"name": "SURROGATES_AREA",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SURROGATES_AREA",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
 							"name": "SUTTON_SIGNWRITING",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUTTON_SIGNWRITING"
@@ -7018,6 +7422,15 @@
 							"name": "SIZE",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Character.html#SIZE"
+						},
+						{
+							"type": "method",
+							"name": "Character(char)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -7428,9 +7841,27 @@
 						},
 						{
 							"type": "method",
+							"name": "getPackage(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/ClassLoader.html#getPackage(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getPlatformClassLoader()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/ClassLoader.html#getPlatformClassLoader()"
+						},
+						{
+							"type": "method",
+							"name": "getResources(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/ClassLoader.html#getResources(java.lang.String)",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -7754,6 +8185,15 @@
 						},
 						{
 							"type": "method",
+							"name": "newInstance()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Class.html#newInstance()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "permittedSubclasses()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Class.html#permittedSubclasses()"
@@ -7814,6 +8254,24 @@
 							"name": "SIZE",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Double.html#SIZE"
+						},
+						{
+							"type": "method",
+							"name": "Double(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Double(double)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -7997,6 +8455,33 @@
 						},
 						{
 							"type": "method",
+							"name": "Float(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Float(double)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Float(float)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "compareTo(Object)",
 							"status": "removed",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/undefined/java/lang/Float.html#compareTo(java.lang.Object)"
@@ -8162,6 +8647,24 @@
 							"name": "SIZE",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Integer.html#SIZE"
+						},
+						{
+							"type": "method",
+							"name": "Integer(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Integer(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -8406,6 +8909,24 @@
 							"name": "SIZE",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Long.html#SIZE"
+						},
+						{
+							"type": "method",
+							"name": "Long(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Long(long)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -8949,6 +9470,23 @@
 				},
 				{
 					"type": "class",
+					"name": "Object",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Object.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Object.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Package",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Package.html",
@@ -8995,6 +9533,15 @@
 							"name": "getDeclaredAnnotationsByType(Class)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Package.html#getDeclaredAnnotationsByType(java.lang.Class)"
+						},
+						{
+							"type": "method",
+							"name": "getPackage(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Package.html#getPackage(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -9280,6 +9827,24 @@
 							"name": "SIZE",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Short.html#SIZE"
+						},
+						{
+							"type": "method",
+							"name": "Short(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Short(short)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -10036,6 +10601,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getenv(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)",
+							"removedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "inheritedChannel()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/lang/System.html#inheritedChannel()"
@@ -10447,6 +11021,78 @@
 						},
 						{
 							"type": "field",
+							"name": "ROUND_CEILING",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_CEILING",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_DOWN",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_DOWN",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_FLOOR",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_FLOOR",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_HALF_DOWN",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_HALF_DOWN",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_HALF_EVEN",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_HALF_EVEN",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_HALF_UP",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_HALF_UP",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_UNNECESSARY",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_UNNECESSARY",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "ROUND_UP",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#ROUND_UP",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
 							"name": "TEN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#TEN"
@@ -10573,9 +11219,27 @@
 						},
 						{
 							"type": "method",
+							"name": "divide(BigDecimal, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "divide(BigDecimal, int, RoundingMode)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,java.math.RoundingMode)"
+						},
+						{
+							"type": "method",
+							"name": "divide(BigDecimal, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -10684,6 +11348,15 @@
 							"name": "setScale(int, RoundingMode)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#setScale(int,java.math.RoundingMode)"
+						},
+						{
+							"type": "method",
+							"name": "setScale(int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/math/BigDecimal.html#setScale(int,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -11153,6 +11826,68 @@
 					"name": "InterfaceAddress",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/InterfaceAddress.html"
+				},
+				{
+					"type": "class",
+					"name": "MulticastSocket",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getInterface()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#getInterface()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getLoopbackMode()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "joinGroup(InetAddress)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "leaveGroup(InetAddress)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setInterface(InetAddress)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setLoopbackMode(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
 				},
 				{
 					"type": "class",
@@ -12180,9 +12915,27 @@
 						},
 						{
 							"type": "method",
+							"name": "clear()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#clear()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
 							"name": "duplicate()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#duplicate()"
+						},
+						{
+							"type": "method",
+							"name": "flip()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#flip()",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -12195,6 +12948,51 @@
 							"name": "isDirect()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#isDirect()"
+						},
+						{
+							"type": "method",
+							"name": "limit(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#limit(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "mark()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#mark()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "position(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#position(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "reset()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#reset()",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "rewind()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/nio/Buffer.html#rewind()",
+							"removedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -13181,6 +13979,15 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "exportObject(Remote)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "exportObject(Remote, int, ObjectInputFilter)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)"
@@ -13190,6 +13997,40 @@
 							"name": "exportObject(Remote, int, RMIClientSocketFactory, RMIServerSocketFactory, ObjectInputFilter)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "RemoteRef",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/RemoteRef.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ServerRef",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/ServerRef.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.rmi/java/rmi/server/ServerRef.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -13532,6 +14373,44 @@
 				},
 				{
 					"type": "class",
+					"name": "PolicyQualifierInfo",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html",
+					"removedTags": [
+						"final"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getEncoded()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getEncoded()",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getPolicyQualifier()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier()",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getPolicyQualifierId()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId()",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "TrustAnchor",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/cert/TrustAnchor.html",
@@ -13718,6 +14597,40 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/interfaces/package-summary.html",
 			"deltas": [
+				{
+					"type": "interface",
+					"name": "DSAPrivateKey",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DSAPublicKey",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/interfaces/DSAPublicKey.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
 				{
 					"type": "interface",
 					"name": "ECKey",
@@ -14690,6 +15603,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getPermissions(CodeSource)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.CodeSource)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getProvider()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Policy.html#getProvider()"
@@ -14699,6 +15621,15 @@
 							"name": "getType()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Policy.html#getType()"
+						},
+						{
+							"type": "method",
+							"name": "refresh()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Policy.html#refresh()",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -14770,6 +15701,15 @@
 						},
 						{
 							"type": "method",
+							"name": "Provider(String, double, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Provider.html#%3Cinit%3E(java.lang.String,double,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "compute(Object, BiFunction)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Provider.html#compute(java.lang.Object,java.util.function.BiFunction)"
@@ -14833,6 +15773,15 @@
 							"name": "getServices()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Provider.html#getServices()"
+						},
+						{
+							"type": "method",
+							"name": "getVersion()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Provider.html#getVersion()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -15206,6 +16155,23 @@
 				},
 				{
 					"type": "interface",
+					"name": "Key",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Key.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Key.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
 					"name": "Policy.Parameters",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/Policy.Parameters.html"
@@ -15231,6 +16197,34 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/PrivateKey.html",
 					"addedTags": [
 						"implements Destroyable"
+					],
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/PrivateKey.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "PublicKey",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/PublicKey.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/security/PublicKey.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
 					]
 				},
 				{
@@ -17058,14 +18052,29 @@
 				{
 					"type": "class",
 					"name": "CollationKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/CollationKey.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
 							"name": "CollationKey(String)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/CollationKey.html#%3Cinit%3E(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "compareTo(CollationKey)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)",
+							"addedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -17084,6 +18093,15 @@
 							"name": "hashCode()",
 							"status": "removed",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/undefined/java/text/CollationKey.html#hashCode()"
+						},
+						{
+							"type": "method",
+							"name": "toByteArray()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/CollationKey.html#toByteArray()",
+							"addedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -17122,8 +18140,11 @@
 				{
 					"type": "class",
 					"name": "DecimalFormatSymbols",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/DecimalFormatSymbols.html",
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -17245,6 +18266,26 @@
 				},
 				{
 					"type": "class",
+					"name": "Format",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/Format.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "Format()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/Format.html#%3Cinit%3E()",
+							"addedTags": [
+								"protected"
+							],
+							"removedTags": [
+								"public"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Normalizer",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/Normalizer.html"
@@ -17275,6 +18316,27 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/NumberFormat.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "NumberFormat()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/NumberFormat.html#%3Cinit%3E()",
+							"addedTags": [
+								"protected"
+							],
+							"removedTags": [
+								"public"
+							]
+						},
+						{
+							"type": "method",
+							"name": "format(Object, StringBuffer, FieldPosition)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/text/NumberFormat.html#format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)",
+							"removedTags": [
+								"final"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getCompactNumberInstance()",
@@ -17387,6 +18449,33 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/jar/Attributes.Name.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "EXTENSION_INSTALLATION",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_INSTALLATION",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "IMPLEMENTATION_URL",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_URL",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "IMPLEMENTATION_VENDOR_ID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR_ID",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "field",
 							"name": "MULTI_RELEASE",
@@ -17560,6 +18649,15 @@
 							"name": "setInstant(Instant)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/LogRecord.html#setInstant(java.time.Instant)"
+						},
+						{
+							"type": "method",
+							"name": "setMillis(long)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/LogRecord.html#setMillis(long)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -17574,6 +18672,15 @@
 							"name": "GLOBAL_LOGGER_NAME",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#GLOBAL_LOGGER_NAME"
+						},
+						{
+							"type": "field",
+							"name": "global",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#global",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -17658,6 +18765,42 @@
 							"name": "logrb(Level, String, String, ResourceBundle, String, Throwable)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Object)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Object[])",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object%5B%5D)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Throwable)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Throwable)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -21786,6 +22929,15 @@
 							"name": "forEachRemaining(Consumer)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"
+						},
+						{
+							"type": "method",
+							"name": "remove()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/java/util/Iterator.html#remove()",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -23127,6 +24279,65 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.imageio.spi",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "ImageReaderSpi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "STANDARD_INPUT_TYPE",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#STANDARD_INPUT_TYPE",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ImageWriterSpi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "STANDARD_OUTPUT_TYPE",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#STANDARD_OUTPUT_TYPE",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ServiceRegistry",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.imageio.stream",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/stream/package-summary.html",
@@ -23170,6 +24381,23 @@
 							"name": "finalize()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#finalize()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ImageInputStreamImpl",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -23320,6 +24548,31 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.naming.directory",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/directory/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "Attribute",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/directory/Attribute.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "serialVersionUID",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/directory/Attribute.html#serialVersionUID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.naming.ldap.spi",
 			"status": "added",
 			"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/ldap/spi/package-summary.html"
@@ -23448,6 +24701,23 @@
 				},
 				{
 					"type": "interface",
+					"name": "Context",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/Context.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "APPLET",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/Context.html#APPLET",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
 					"name": "Name",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.naming/javax/naming/Name.html",
@@ -23501,6 +24771,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificateChain()",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -23847,7 +25118,11 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerCertificateChain()",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
+							],
+							"removedTags": [
+								"abstract"
 							]
 						},
 						{
@@ -24136,6 +25411,15 @@
 							"name": "getType()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/security/auth/login/Configuration.html#getType()"
+						},
+						{
+							"type": "method",
+							"name": "refresh()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/security/auth/login/Configuration.html#refresh()",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -24224,6 +25508,32 @@
 					"name": "Policy",
 					"status": "removed",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/undefined/javax/security/auth/Policy.html"
+				},
+				{
+					"type": "interface",
+					"name": "Destroyable",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/security/auth/Destroyable.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isDestroyed()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()",
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -24543,6 +25853,26 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AudioFileFormat.Type",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AudioFileFormat.Type(String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#%3Cinit%3E(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "AudioFileFormat",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.html",
@@ -24578,6 +25908,18 @@
 							"name": "PCM_FLOAT",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT"
+						},
+						{
+							"type": "method",
+							"name": "AudioFormat.Encoding(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						}
 					]
 				},
@@ -26650,9 +27992,45 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "modelToView(JTextComponent, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#modelToView(javax.swing.text.JTextComponent,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "modelToView(JTextComponent, int, Position.Bias)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#modelToView(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "modelToView2D(JTextComponent, int, Position.Bias)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)"
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(JTextComponent, Point)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#viewToModel(javax.swing.text.JTextComponent,java.awt.Point)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(JTextComponent, Point, Position.Bias[])",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#viewToModel(javax.swing.text.JTextComponent,java.awt.Point,javax.swing.text.Position.Bias%5B%5D)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -27155,6 +28533,15 @@
 							"name": "uninstallListeners(JComponent)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners(javax.swing.JComponent)"
+						},
+						{
+							"type": "method",
+							"name": "uninstallListeners(JScrollPane)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners(javax.swing.JScrollPane)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -27228,9 +28615,45 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "modelToView(JTextComponent, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/multi/MultiTextUI.html#modelToView(javax.swing.text.JTextComponent,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "modelToView(JTextComponent, int, Position.Bias)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/multi/MultiTextUI.html#modelToView(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "modelToView2D(JTextComponent, int, Position.Bias)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/multi/MultiTextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)"
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(JTextComponent, Point)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/multi/MultiTextUI.html#viewToModel(javax.swing.text.JTextComponent,java.awt.Point)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(JTextComponent, Point, Position.Bias[])",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/multi/MultiTextUI.html#viewToModel(javax.swing.text.JTextComponent,java.awt.Point,javax.swing.text.Position.Bias%5B%5D)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -27308,15 +28731,60 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "getToolTipText(JTextComponent, Point)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getToolTipText(javax.swing.text.JTextComponent,java.awt.Point)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getToolTipText2D(JTextComponent, Point2D)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getToolTipText2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D)"
 						},
 						{
 							"type": "method",
+							"name": "modelToView(JTextComponent, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView(javax.swing.text.JTextComponent,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "modelToView(JTextComponent, int, Position.Bias)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "modelToView2D(JTextComponent, int, Position.Bias)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)"
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(JTextComponent, Point)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#viewToModel(javax.swing.text.JTextComponent,java.awt.Point)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(JTextComponent, Point, Position.Bias[])",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/plaf/TextUI.html#viewToModel(javax.swing.text.JTextComponent,java.awt.Point,javax.swing.text.Position.Bias%5B%5D)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -27379,6 +28847,31 @@
 					"name": "TableStringConverter",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/table/TableStringConverter.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.swing.text.html.parser",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/html/parser/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "DTD",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "FILE_VERSION",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -27730,6 +29223,15 @@
 						},
 						{
 							"type": "method",
+							"name": "modelToView(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/JTextComponent.html#modelToView(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "modelToView2D(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/JTextComponent.html#modelToView2D(int)"
@@ -27769,6 +29271,15 @@
 							"name": "setDropMode(DropMode)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDropMode(javax.swing.DropMode)"
+						},
+						{
+							"type": "method",
+							"name": "viewToModel(Point)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/JTextComponent.html#viewToModel(java.awt.Point)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -27820,15 +29331,42 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "drawEchoCharacter(Graphics, int, int, char)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PasswordView.html#drawEchoCharacter(java.awt.Graphics,int,int,char)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "drawEchoCharacter(Graphics2D, float, float, char)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PasswordView.html#drawEchoCharacter(java.awt.Graphics2D,float,float,char)"
 						},
 						{
 							"type": "method",
+							"name": "drawSelectedText(Graphics, int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PasswordView.html#drawSelectedText(java.awt.Graphics,int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "drawSelectedText(Graphics2D, float, float, int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PasswordView.html#drawSelectedText(java.awt.Graphics2D,float,float,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "drawUnselectedText(Graphics, int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PasswordView.html#drawUnselectedText(java.awt.Graphics,int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -27846,15 +29384,42 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "drawLine(int, Graphics, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PlainView.html#drawLine(int,java.awt.Graphics,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "drawLine(int, Graphics2D, float, float)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PlainView.html#drawLine(int,java.awt.Graphics2D,float,float)"
 						},
 						{
 							"type": "method",
+							"name": "drawSelectedText(Graphics, int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PlainView.html#drawSelectedText(java.awt.Graphics,int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "drawSelectedText(Graphics2D, float, float, int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PlainView.html#drawSelectedText(java.awt.Graphics2D,float,float,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "drawUnselectedText(Graphics, int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/PlainView.html#drawUnselectedText(java.awt.Graphics,int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -28179,9 +29744,27 @@
 						},
 						{
 							"type": "method",
+							"name": "drawTabbedText(Segment, int, int, Graphics, TabExpander, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#drawTabbedText(javax.swing.text.Segment,int,int,java.awt.Graphics,javax.swing.text.TabExpander,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getBreakLocation(Segment, FontMetrics, float, float, TabExpander, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int)"
+						},
+						{
+							"type": "method",
+							"name": "getBreakLocation(Segment, FontMetrics, int, int, TabExpander, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,int,int,javax.swing.text.TabExpander,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -28191,9 +29774,27 @@
 						},
 						{
 							"type": "method",
+							"name": "getPositionAbove(JTextComponent, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionAbove(javax.swing.text.JTextComponent,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getPositionBelow(JTextComponent, int, float)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,float)"
+						},
+						{
+							"type": "method",
+							"name": "getPositionBelow(JTextComponent, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -28203,9 +29804,36 @@
 						},
 						{
 							"type": "method",
+							"name": "getTabbedTextOffset(Segment, FontMetrics, int, int, TabExpander, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,int,int,javax.swing.text.TabExpander,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getTabbedTextOffset(Segment, FontMetrics, int, int, TabExpander, int, boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,int,int,javax.swing.text.TabExpander,int,boolean)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getTabbedTextWidth(Segment, FontMetrics, float, TabExpander, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,float,javax.swing.text.TabExpander,int)"
+						},
+						{
+							"type": "method",
+							"name": "getTabbedTextWidth(Segment, FontMetrics, int, TabExpander, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,int,javax.swing.text.TabExpander,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -28217,15 +29845,42 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "drawLine(int, int, Graphics, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#drawLine(int,int,java.awt.Graphics,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "drawLine(int, int, Graphics2D, float, float)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#drawLine(int,int,java.awt.Graphics2D,float,float)"
 						},
 						{
 							"type": "method",
+							"name": "drawSelectedText(Graphics, int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#drawSelectedText(java.awt.Graphics,int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "drawSelectedText(Graphics2D, float, float, int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#drawSelectedText(java.awt.Graphics2D,float,float,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "drawUnselectedText(Graphics, int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#drawUnselectedText(java.awt.Graphics,int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -28266,6 +29921,23 @@
 							"name": "updateUI()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#updateUI()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "DefaultTreeSelectionModel",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "notifyPathChange(Vector, TreePath)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#notifyPathChange(java.util.Vector,javax.swing.tree.TreePath)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -28620,10 +30292,45 @@
 				},
 				{
 					"type": "class",
+					"name": "ImageIcon",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/ImageIcon.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "component",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/ImageIcon.html#component",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "tracker",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/ImageIcon.html#tracker",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "InputVerifier",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/InputVerifier.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "shouldYieldFocus(JComponent)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/InputVerifier.html#shouldYieldFocus(javax.swing.JComponent)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "shouldYieldFocus(JComponent, JComponent)",
@@ -28729,6 +30436,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "JComboBox.AccessibleJComboBox(JComboBox)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JComboBox.AccessibleJComboBox.html#%3Cinit%3E(javax.swing.JComboBox)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getAccessibleStateSet()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JComboBox.AccessibleJComboBox.html#getAccessibleStateSet()"
@@ -28766,6 +30485,15 @@
 							"name": "accessibleContainerHandler",
 							"status": "removed",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/undefined/javax/swing/JComponent.AccessibleJComponent.html#accessibleContainerHandler"
+						},
+						{
+							"type": "field",
+							"name": "accessibleFocusHandler",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.html#accessibleFocusHandler",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -28948,6 +30676,15 @@
 						},
 						{
 							"type": "method",
+							"name": "reshape(int, int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JComponent.html#reshape(int,int,int,int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setComponentPopupMenu(JPopupMenu)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JComponent.html#setComponentPopupMenu(javax.swing.JPopupMenu)"
@@ -28972,6 +30709,24 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JDesktopPane.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "LIVE_DRAG_MODE",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JDesktopPane.html#LIVE_DRAG_MODE",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "OUTLINE_DRAG_MODE",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE",
+							"addedTags": [
+								"final"
+							]
+						},
 						{
 							"type": "method",
 							"name": "addImpl(Component, Object, int)",
@@ -29336,6 +31091,15 @@
 							"name": "getDropMode()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JList.html#getDropMode()"
+						},
+						{
+							"type": "method",
+							"name": "getSelectedValues()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk15/docs/api/java.desktop/javax/swing/JList.html#getSelectedValues()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",

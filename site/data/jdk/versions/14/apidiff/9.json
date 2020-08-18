@@ -384,6 +384,15 @@
 								},
 								{
 									"type": "method",
+									"name": "hasPrivateAccess()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "previousLookupClass()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#previousLookupClass()"
@@ -523,6 +532,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/reflect/Modifier.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -1121,9 +1131,36 @@
 								},
 								{
 									"type": "method",
+									"name": "major()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Runtime.Version.html#major()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "minor()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Runtime.Version.html#minor()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "patch()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Runtime.Version.html#patch()"
+								},
+								{
+									"type": "method",
+									"name": "security()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Runtime.Version.html#security()",
+									"addedTags": [
+										"deprecated"
+									]
 								},
 								{
 									"type": "method",
@@ -1682,6 +1719,68 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "MulticastSocket",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getInterface()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#getInterface()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getLoopbackMode()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "joinGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "leaveGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setInterface(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setLoopbackMode(boolean)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "SecureCacheResponse",
@@ -2278,6 +2377,74 @@
 					"deltas": [
 						{
 							"type": "interface",
+							"name": "DSAPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DSAPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/DSAPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ECPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/ECPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ECPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/ECPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/ECPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "RSAKey",
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAKey.html",
@@ -2287,6 +2454,74 @@
 									"name": "getParams()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAMultiPrimePrivateCrtKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPrivateCrtKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},
@@ -2540,6 +2775,57 @@
 							"addedTags": [
 								"forRemoval"
 							]
+						},
+						{
+							"type": "interface",
+							"name": "Key",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/Key.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/Key.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/PrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/PrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PublicKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/PublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/PublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						}
 					]
 				},
@@ -2717,6 +3003,26 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractQueuedLongSynchronizer",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractQueuedLongSynchronizer()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#%3Cinit%3E()",
+									"addedTags": [
+										"public"
+									],
+									"removedTags": [
+										"protected"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "LockSupport",
@@ -3525,6 +3831,65 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.crypto.interfaces",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "DHPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DHPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PBEKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/PBEKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.crypto.spec",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/spec/package-summary.html",
@@ -3554,6 +3919,23 @@
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/Cipher.html#toString()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SecretKey",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/SecretKey.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/crypto/SecretKey.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}
@@ -3888,6 +4270,23 @@
 						},
 						{
 							"type": "class",
+							"name": "AbstractAnnotationValueVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractAnnotationValueVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "AbstractElementVisitor14",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor14.html"
@@ -3908,9 +4307,43 @@
 						},
 						{
 							"type": "class",
+							"name": "AbstractElementVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractElementVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "AbstractTypeVisitor14",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor14.html"
+						},
+						{
+							"type": "class",
+							"name": "AbstractTypeVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractTypeVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -3960,9 +4393,61 @@
 						},
 						{
 							"type": "class",
+							"name": "ElementKindVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ElementKindVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ElementKindVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "ElementScanner14",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementScanner14.html"
+						},
+						{
+							"type": "class",
+							"name": "ElementScanner7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ElementScanner7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ElementScanner7(Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -3972,15 +4457,93 @@
 						},
 						{
 							"type": "class",
+							"name": "SimpleAnnotationValueVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SimpleAnnotationValueVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "SimpleAnnotationValueVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SimpleElementVisitor14",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor14.html"
 						},
 						{
 							"type": "class",
+							"name": "SimpleElementVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SimpleElementVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "SimpleElementVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SimpleTypeVisitor14",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor14.html"
+						},
+						{
+							"type": "class",
+							"name": "SimpleTypeVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SimpleTypeVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "SimpleTypeVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -3999,6 +4562,32 @@
 									"name": "visitNoTypeAsModule(NoType, Object)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsModule(javax.lang.model.type.NoType,java.lang.Object)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TypeKindVisitor7",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "TypeKindVisitor7()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "TypeKindVisitor7(Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor7.html#%3Cinit%3E(java.lang.Object)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},
@@ -4096,6 +4685,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/tools/ToolProvider.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -4112,6 +4702,15 @@
 									"name": "getJavaFileObjectsFromPaths(Collection)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.util.Collection)"
+								},
+								{
+									"type": "method",
+									"name": "getJavaFileObjectsFromPaths(Iterable)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.lang.Iterable)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}
@@ -4242,6 +4841,15 @@
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/awt/Toolkit.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "getMenuShortcutKeyMask()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMask()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
 								{
 									"type": "method",
 									"name": "getMenuShortcutKeyMaskEx()",
@@ -4424,6 +5032,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#CREDENTIAL_TYPES",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								},
@@ -4497,9 +5106,59 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "javax.naming.directory",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/directory/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Attribute",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/directory/Attribute.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/directory/Attribute.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.naming.ldap.spi",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/ldap/spi/package-summary.html"
+				},
+				{
+					"type": "package",
+					"name": "javax.naming",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Name",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/Name.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.naming/javax/naming/Name.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -4508,6 +5167,56 @@
 			"name": "java.net.http",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.net.http/module-summary.html"
+		},
+		{
+			"type": "module",
+			"name": "java.rmi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.rmi.server",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "RemoteRef",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/RemoteRef.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ServerRef",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/ServerRef.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "serialVersionUID",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/ServerRef.html#serialVersionUID",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"type": "module",
@@ -4868,6 +5577,31 @@
 									"name": "newNSInstance(String, ClassLoader)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.xml.stream",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/javax/xml/stream/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "XMLInputFactory",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newFactory()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory()",
+									"removedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}

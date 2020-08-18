@@ -684,6 +684,15 @@
 						},
 						{
 							"type": "method",
+							"name": "KeyEvent(Component, int, long, int, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/event/KeyEvent.html#KeyEvent(java.awt.Component, int, long, int, int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "KeyEvent(Component, int, long, int, int, char, int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/event/KeyEvent.html#KeyEvent(java.awt.Component, int, long, int, int, char, int)"
@@ -2159,6 +2168,23 @@
 				},
 				{
 					"type": "class",
+					"name": "ComponentOrientation",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/ComponentOrientation.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getOrientation(ResourceBundle)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/ComponentOrientation.html#getOrientation(java.util.ResourceBundle)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Component",
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/Component.html",
@@ -2318,6 +2344,15 @@
 							"name": "isFocusOwner()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/Component.html#isFocusOwner()"
+						},
+						{
+							"type": "method",
+							"name": "isFocusTraversable()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/Component.html#isFocusTraversable()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -3824,6 +3859,24 @@
 						},
 						{
 							"type": "method",
+							"name": "applyResourceBundle(ResourceBundle)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/Window.html#applyResourceBundle(java.util.ResourceBundle)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "applyResourceBundle(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/Window.html#applyResourceBundle(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "createBufferStrategy(int)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/Window.html#createBufferStrategy(int)"
@@ -4380,6 +4433,23 @@
 							"name": "readUnshared()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/io/ObjectInputStream.html#readUnshared()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ObjectOutputStream.PutField",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/io/ObjectOutputStream.PutField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "write(ObjectOutput)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -5119,6 +5189,23 @@
 				},
 				{
 					"type": "class",
+					"name": "SecurityManager",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/lang/SecurityManager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "checkMulticast(InetAddress, byte)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress, byte)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "StackTraceElement",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/lang/StackTraceElement.html"
@@ -5564,8 +5651,11 @@
 				{
 					"type": "class",
 					"name": "InetAddress",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/InetAddress.html",
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -5682,6 +5772,15 @@
 							"name": "leaveGroup(SocketAddress, NetworkInterface)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress, java.net.NetworkInterface)"
+						},
+						{
+							"type": "method",
+							"name": "send(DatagramPacket, byte)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/MulticastSocket.html#send(java.net.DatagramPacket, byte)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -5841,6 +5940,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "Socket()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/Socket.html#Socket()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
 							"name": "bind(SocketAddress)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/Socket.html#bind(java.net.SocketAddress)"
@@ -5984,6 +6095,18 @@
 							"name": "getRequestProperties()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/URLConnection.html#getRequestProperties()"
+						},
+						{
+							"type": "method",
+							"name": "guessContentTypeFromName(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						}
 					]
 				},
@@ -5993,6 +6116,15 @@
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/URLDecoder.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "decode(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/URLDecoder.html#decode(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "decode(String, String)",
@@ -6007,6 +6139,15 @@
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/URLEncoder.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "encode(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/net/URLEncoder.html#encode(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "encode(String, String)",
@@ -8256,6 +8397,56 @@
 				},
 				{
 					"type": "class",
+					"name": "Calendar",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/util/Calendar.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "get(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/util/Calendar.html#get(int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getTimeInMillis()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/util/Calendar.html#getTimeInMillis()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
+						{
+							"type": "method",
+							"name": "set(int, int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/util/Calendar.html#set(int, int)",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setTimeInMillis(long)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/util/Calendar.html#setTimeInMillis(long)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Collections",
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/util/Collections.html",
@@ -8771,6 +8962,26 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "Stub",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/rmi/CORBA/Stub.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "Stub()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/rmi/CORBA/Stub.html#Stub()",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Util",
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/rmi/CORBA/Util.html",
@@ -9028,6 +9239,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getRoots()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/filechooser/FileSystemView.html#getRoots()",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getSystemDisplayName(File)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"
@@ -9076,9 +9296,27 @@
 						},
 						{
 							"type": "method",
+							"name": "isHiddenFile(File)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/filechooser/FileSystemView.html#isHiddenFile(java.io.File)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
 							"name": "isParent(File, File)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/filechooser/FileSystemView.html#isParent(java.io.File, java.io.File)"
+						},
+						{
+							"type": "method",
+							"name": "isRoot(File)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/filechooser/FileSystemView.html#isRoot(java.io.File)",
+							"removedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -10033,6 +10271,15 @@
 						},
 						{
 							"type": "method",
+							"name": "editablePropertyChanged(PropertyChangeEvent)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/plaf/metal/MetalComboBoxUI.html#editablePropertyChanged(java.beans.PropertyChangeEvent)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "installListeners()",
 							"status": "removed",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/plaf/metal/MetalComboBoxUI.html#installListeners()"
@@ -10048,6 +10295,15 @@
 							"name": "isFocusTraversable(JComboBox)",
 							"status": "removed",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/plaf/metal/MetalComboBoxUI.html#isFocusTraversable(javax.swing.JComboBox)"
+						},
+						{
+							"type": "method",
+							"name": "removeListeners()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/plaf/metal/MetalComboBoxUI.html#removeListeners()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -10896,6 +11152,23 @@
 				},
 				{
 					"type": "class",
+					"name": "DefaultHighlighter",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/text/DefaultHighlighter.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "DefaultPainter",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/text/DefaultHighlighter.html#DefaultPainter",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "DocumentFilter.FilterBypass",
 					"status": "added",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/text/DocumentFilter.FilterBypass.html"
@@ -11192,6 +11465,18 @@
 					"status": "notmodified",
 					"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/text/PlainDocument.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "PlainDocument(AbstractDocument.Content)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/text/PlainDocument.html#PlainDocument(javax.swing.text.AbstractDocument.Content)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
+						},
 						{
 							"type": "method",
 							"name": "insertString(int, String, AttributeSet)",
@@ -11765,6 +12050,15 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "disableSwingFocusManager()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/FocusManager.html#disableSwingFocusManager()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "focusNextComponent(Component)",
 							"status": "removed",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/FocusManager.html#focusNextComponent(java.awt.Component)"
@@ -11774,6 +12068,15 @@
 							"name": "focusPreviousComponent(Component)",
 							"status": "removed",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/FocusManager.html#focusPreviousComponent(java.awt.Component)"
+						},
+						{
+							"type": "method",
+							"name": "isFocusManagerEnabled()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/FocusManager.html#isFocusManagerEnabled()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -11984,6 +12287,24 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "disable()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#disable()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "enable()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#enable()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getAncestorListeners()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#getAncestorListeners()"
@@ -11993,6 +12314,15 @@
 							"name": "getDefaultLocale()",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#getDefaultLocale()"
+						},
+						{
+							"type": "method",
+							"name": "getNextFocusableComponent()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#getNextFocusableComponent()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -12044,9 +12374,27 @@
 						},
 						{
 							"type": "method",
+							"name": "isManagingFocus()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#isManagingFocus()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "processFocusEvent(FocusEvent)",
 							"status": "removed",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#processFocusEvent(java.awt.event.FocusEvent)"
+						},
+						{
+							"type": "method",
+							"name": "requestDefaultFocus()",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#requestDefaultFocus()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -12071,6 +12419,15 @@
 							"name": "setDefaultLocale(Locale)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#setDefaultLocale(java.util.Locale)"
+						},
+						{
+							"type": "method",
+							"name": "setNextFocusableComponent(Component)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JComponent.html#setNextFocusableComponent(java.awt.Component)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -12266,6 +12623,18 @@
 							"name": "processKeyEvent(KeyEvent)",
 							"status": "removed",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JEditorPane.html#processKeyEvent(java.awt.event.KeyEvent)"
+						},
+						{
+							"type": "method",
+							"name": "scrollToReference(String)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)",
+							"addedTags": [
+								"public"
+							],
+							"removedTags": [
+								"protected"
+							]
 						}
 					]
 				},
@@ -13532,6 +13901,15 @@
 							"name": "calculateInnerArea(JComponent, Rectangle)",
 							"status": "added",
 							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/SwingUtilities.html#calculateInnerArea(javax.swing.JComponent, java.awt.Rectangle)"
+						},
+						{
+							"type": "method",
+							"name": "findFocusOwner(Component)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/swing/SwingUtilities.html#findFocusOwner(java.awt.Component)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",

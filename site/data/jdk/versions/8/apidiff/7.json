@@ -558,6 +558,15 @@
 							"name": "getDeclaredAnnotationsByType(Class)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotationsByType-java.lang.Class-"
+						},
+						{
+							"type": "method",
+							"name": "isAnnotationPresent(Class)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html#isAnnotationPresent-java.lang.Class-",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -1333,6 +1342,50 @@
 				},
 				{
 					"type": "class",
+					"name": "SecurityManager",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "checkAwtEventQueueAccess()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkAwtEventQueueAccess--",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkMemberAccess(Class, int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkMemberAccess-java.lang.Class-int-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkSystemClipboardAccess()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkSystemClipboardAccess--",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkTopLevelWindow(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkTopLevelWindow-java.lang.Object-",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Short",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html",
@@ -1894,6 +1947,31 @@
 							"name": "chars()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html#chars--"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.rmi.server",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "UnicastRemoteObject",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "exportObject(Remote)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				}
@@ -4091,6 +4169,41 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "Attributes.Name",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "EXTENSION_INSTALLATION",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#EXTENSION_INSTALLATION",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "IMPLEMENTATION_URL",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_URL",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "IMPLEMENTATION_VENDOR_ID",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR_ID",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "JarFile",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html",
@@ -4102,6 +4215,70 @@
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html#stream--"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "Pack200.Packer",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addPropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html#addPropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removePropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html#removePropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Pack200.Unpacker",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addPropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html#addPropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removePropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html#removePropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -4111,6 +4288,32 @@
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html",
 			"deltas": [
+				{
+					"type": "class",
+					"name": "LogManager",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "addPropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#addPropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "removePropertyChangeListener(PropertyChangeListener)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#removePropertyChangeListener-java.beans.PropertyChangeListener-",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
 				{
 					"type": "class",
 					"name": "Logger",
@@ -4182,6 +4385,42 @@
 							"name": "logrb(Level, String, String, ResourceBundle, String, Throwable)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.util.ResourceBundle-java.lang.String-java.lang.Throwable-"
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Object-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Object[])",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Object:A-",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "logrb(Level, String, String, String, String, Throwable)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Throwable-",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -5810,6 +6049,15 @@
 							"name": "forEachRemaining(Consumer)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#forEachRemaining-java.util.function.Consumer-"
+						},
+						{
+							"type": "method",
+							"name": "remove()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#remove--",
+							"removedTags": [
+								"abstract"
+							]
 						}
 					]
 				},
@@ -6582,6 +6830,40 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.security.auth",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "Destroyable",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Destroyable.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Destroyable.html#destroy--",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isDestroyed()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Destroyable.html#isDestroyed--",
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.security.sasl",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/security/sasl/package-summary.html",
@@ -6800,6 +7082,49 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "ImageIcon",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "component",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#component",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "field",
+							"name": "tracker",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#tracker",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JComponent.AccessibleJComponent",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.AccessibleJComponent.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "accessibleFocusHandler",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.AccessibleJComponent.html#accessibleFocusHandler",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "JComponent",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html",
@@ -6899,6 +7224,57 @@
 					"name": "SchemaFactoryConfigurationError",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactoryConfigurationError.html"
+				},
+				{
+					"type": "class",
+					"name": "SchemaFactory",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactory.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "newInstance(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactory.html#newInstance-java.lang.String-",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.xml.xpath",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "XPathFactory",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "newInstance()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance--",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "method",
+							"name": "newInstance(String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance-java.lang.String-",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
 				}
 			]
 		}

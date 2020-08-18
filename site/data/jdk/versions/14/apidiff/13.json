@@ -105,6 +105,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -121,6 +122,15 @@
 									"name": "hasFullPrivilegeAccess()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasFullPrivilegeAccess()"
+								},
+								{
+									"type": "method",
+									"name": "hasPrivateAccess()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()",
+									"addedTags": [
+										"deprecated"
+									]
 								},
 								{
 									"type": "method",
@@ -150,6 +160,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/reflect/Modifier.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -285,6 +296,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
 									"removedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								},
@@ -294,6 +306,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()",
 									"removedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								},
@@ -303,6 +316,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#translateEscapes()",
 									"removedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
@@ -373,6 +387,76 @@
 				},
 				{
 					"type": "package",
+					"name": "java.net",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MulticastSocket",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getInterface()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#getInterface()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getLoopbackMode()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "joinGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "leaveGroup(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setInterface(InetAddress)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setLoopbackMode(boolean)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.security.acl",
 					"status": "removed",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/acl/package-summary.html"
@@ -405,6 +489,26 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractQueuedLongSynchronizer",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractQueuedLongSynchronizer()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#%3Cinit%3E()",
+									"addedTags": [
+										"public"
+									],
+									"removedTags": [
+										"protected"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "LockSupport",
@@ -721,6 +825,7 @@
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/tools/ToolProvider.html#%3Cinit%3E()",
 									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
