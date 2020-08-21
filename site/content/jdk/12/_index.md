@@ -5,6 +5,10 @@ type: sandbox
 
 {{< jdkdetails "12" >}}
 
+The first Java release that included a *preview feature* ([JEP 12](https://openjdk.java.net/jeps/12)).
+Such features are only available if the compiler and JVM is launched with the
+`--enable-preview` option. Previews allow to get early feedback on important changes in the Java language.
+
 {{< /jdkdetails >}}
 
 
