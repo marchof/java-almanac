@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+11-421"
+		"version": "16-ea+12-477"
 	},
 	"order": 14.0,
 	"deltas": [
@@ -932,6 +932,222 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "java.awt.dnd",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DragSourceAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DragSourceAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "DropTargetAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DropTargetAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt.event",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ComponentAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ComponentAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ComponentAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ContainerAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ContainerAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ContainerAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FocusAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/FocusAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "FocusAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/FocusAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HierarchyBoundsAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "HierarchyBoundsAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "KeyAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/KeyAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "KeyAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/KeyAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MouseAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MouseAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MouseMotionAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MouseMotionAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "WindowAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/WindowAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "WindowAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/WindowAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.awt.peer",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/package-summary.html",
@@ -969,6 +1185,82 @@
 									"type": "method",
 									"name": "addSeparator()",
 									"status": "removed"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FocusTraversalPolicy",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "FocusTraversalPolicy()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Toolkit",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Toolkit.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Toolkit()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Toolkit.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.beans",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "PersistenceDelegate",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/PersistenceDelegate.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "PersistenceDelegate()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/PersistenceDelegate.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
 								}
 							]
 						}
