@@ -2,9 +2,9 @@
 title: Home
 ---
 
-# The Home of the Java Almanac
+# The Java Version Almanac
 
-Collection of information about the history of Java primarily from a technical point of view.
+Collection of information about the history and future of Java.
 
 {{< jdkoverview >}}
 
