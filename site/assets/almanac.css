@@ -169,11 +169,6 @@ ul.architecture li {
 	color: #eee;
 }
 
-ul.documentation li {
-	background-color: #69a;
-	color: #eee;
-}
-
 span.tag {
 	white-space: nowrap;
 	margin: 1px;
@@ -187,6 +182,39 @@ span.feature {
 	background-color: #bbb;
 	color: #fff;
 }
+
+span.status-DEV {
+	display: inline-block;
+	width: 20pt;
+	text-align: center;
+	background-color: #bbb;
+	color: #fff;
+}
+
+span.status-REL {
+	display: inline-block;
+	width: 20pt;
+	text-align: center;
+	background-color: #888;
+	color: #eee;
+}
+
+span.status-LTS {
+	display: inline-block;
+	width: 20pt;
+	text-align: center;
+	background-color: #383;
+	color: #cfc;
+}
+
+span.status-EOL {
+	display: inline-block;
+	width: 20pt;
+	text-align: center;
+	background-color: #833;	
+	color: #fcc;
+}
+
 
 div.content div.datasource {
 	font-size: 70%;

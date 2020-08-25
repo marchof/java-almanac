@@ -2,6 +2,7 @@
   <thead>
     <tr>
       <th>Details</th>
+      <th>Status</th>
       <th>Documentation</th>
       <th>Compare APIs with</th>
     </tr>
@@ -10,26 +11,25 @@
     {{- range sort $.Site.Data.jdk.versions "ga" "desc" }}
     <tr>
       <td><a href="jdk/{{ .version }}">{{ .name }}</a></td>
+      <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
       <td>
-        <ul class="tag documentation">
         {{- with .documentation.api }}
-          <li><a href="{{ . }}">API</a></li>
+          <a href="{{ . }}">API</a>
         {{- end }}
-        {{- with .documentation.lang }}
-          <li><a href="{{ . }}">Language</a></li>
+        {{- with .documentation.lang -}}
+          | <a href="{{ . }}">Lang</a>
         {{- end }}
-        {{- with .documentation.vm }}
-          <li><a href="{{ . }}">VM</a></li>
+        {{- with .documentation.vm -}}
+          | <a href="{{ . }}">VM</a>
         {{- end }}
-        {{- with .documentation.notes }}
-          <li><a href="{{ . }}">Release Notes</a></li>
+        {{- with .documentation.notes -}}
+          | <a href="{{ . }}">Notes</a>
         {{- end }}
-        </ul>
       </td>
       <td style="text-align:right;">
         {{- if .apidiff }}
           {{- range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
-            {{- if lt 0 $elem_index }} - {{ end -}}
+            {{- if lt 0 $elem_index }}| {{ end -}}
             <a href="jdk/{{ $elem_val.target.feature }}/apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
           {{- end }}
         {{- end }}

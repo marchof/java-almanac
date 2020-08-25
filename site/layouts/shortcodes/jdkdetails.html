@@ -5,6 +5,10 @@
 <table>
   <tbody>
     <tr>
+      <th>Status</th>
+      <td>{{ index $.Site.Data.jdk.status .status }}</td>
+    </tr>
+    <tr>
       <th>Release Date</th>
       <td>{{ .ga }}</td>
     </tr>
