@@ -7,13 +7,13 @@
     </tr>
   </thead>
   <tbody>
-    {{ range sort $.Site.Data.bytecode.opcodes "mnemonic" }}
+    {{- range sort $.Site.Data.bytecode.opcodes "mnemonic" }}
     <tr>
       <td><a href="../op/{{ .mnemonic }}"><code>{{ .mnemonic }}</code></a></td>
       <td>{{ .opcode }}</td>
       <td>{{ markdownify .shortdescr }}</td>
     </tr>
-    {{ end }}
+    {{- end }}
   </tbody>
 </table>
 

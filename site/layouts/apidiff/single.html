@@ -1,36 +1,34 @@
 {{ define "apidiffitem" }}
-  {{ $indent := .indent }}
+  {{- $indent := .indent -}}
   <tr>
     <td><div class="{{ .delta.type }}" style="margin-left:{{ $indent }}px">
-      {{ if eq "added" .delta.status }}
-        <a {{ printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name }}</a>
-      {{ else if eq "modified" .delta.status }}
-        <a {{ printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name }}</a>
-      {{ else if eq "removed" .delta.status }}
-        <div class="removed">{{ truncate 50 "..." .delta.name }}</div>
-      {{ else }}
-        <div>{{ truncate 50 "..." .delta.name }}</div>
-      {{ end }}
+      {{- if eq "added" .delta.status -}}
+        <a {{- printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name -}}</a>
+      {{- else if eq "modified" .delta.status -}}
+        <a {{- printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name -}}</a>
+      {{- else if eq "removed" .delta.status -}}
+        <div class="removed">{{- truncate 50 "..." .delta.name -}}</div>
+      {{- else -}}
+        <div>{{- truncate 50 "..." .delta.name -}}</div>
+      {{- end -}}
     </div></td>
-    <td>
-      <ul class="tag">
-      {{ if eq "added" .delta.status }}
+    <td><ul class="tag">
+      {{- if eq "added" .delta.status -}}
         <li class="tag newelement">added</li>
-      {{ else if eq "removed" .delta.status }}
+      {{- else if eq "removed" .delta.status -}}
         <li class="tag removedelement">removed</li>
-      {{ end }}
-      {{ range .delta.removedTags }}
+      {{- end -}}
+      {{- range .delta.removedTags -}}
         <li class="tag removedtag"><b>-</b> {{ . }}</li>
-      {{ end }}
-      {{ range .delta.addedTags }}
+      {{- end -}}
+      {{- range .delta.addedTags -}}
         <li class="tag newtag"><b>+</b> {{ . }}</li>
-      {{ end }}
-      </ul>
-    </td>
+      {{- end -}}
+    </ul></td>
   </tr>
-  {{ range .delta.deltas }}
-    {{ template "apidiffitem" (dict "delta" . "indent" (add $indent 18) ) }}
-  {{ end }}
+  {{- range .delta.deltas -}}
+    {{- template "apidiffitem" (dict "delta" . "indent" (add $indent 18) ) -}}
+  {{- end -}}
 {{ end }}
 
 {{ partial "header.html" . }}
@@ -54,9 +52,9 @@
     </tr>
   </thead>
   <tbody>
-  {{ range .deltas }}
-    {{ template "apidiffitem" (dict "delta" . "indent" 0 ) }}
-  {{ end }}
+  {{ range .deltas -}}
+    {{- template "apidiffitem" (dict "delta" . "indent" 0 ) -}}
+  {{- end }}
   </tbody>
 </table>
 
