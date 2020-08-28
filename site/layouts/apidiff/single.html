@@ -3,9 +3,9 @@
   <tr>
     <td><div class="{{ .delta.type }}" style="margin-left:{{ $indent }}px">
       {{- if eq "added" .delta.status -}}
-        <a {{- printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name -}}</a>
+        <a {{ printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name -}}</a>
       {{- else if eq "modified" .delta.status -}}
-        <a {{- printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name -}}</a>
+        <a {{ printf "href=%q" .delta.javadoc | safeHTMLAttr }}>{{ truncate 50 "..." .delta.name -}}</a>
       {{- else if eq "removed" .delta.status -}}
         <div class="removed">{{- truncate 50 "..." .delta.name -}}</div>
       {{- else -}}
