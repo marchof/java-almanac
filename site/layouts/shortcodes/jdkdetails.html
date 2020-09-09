@@ -1,6 +1,6 @@
 {{ $version := index .Params 0 }}
 
-{{ with (index $.Site.Data.jdk.versions (index .Params 0)) }}
+{{ with (index $.Site.Data.jdk.versions $version) }}
 
 <table>
   <tbody>
@@ -9,35 +9,48 @@
       <td>{{ .ga }}</td>
     </tr>
     <tr>
+      <th>EOL Date</th>
+      <td>{{ .eol }}</td>
+    </tr>
+    <tr>
       <th>Bytecode Version</th>
       <td>{{ .bytecode }}</td>
     </tr>
-    {{ if .apidiff }}
+    {{- if .apidiff }}
     <tr>
       <th>API Changes</th>
-      <td>Compare to
+      <td>
+        Compare to
         {{ range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
-          {{ if lt 0 $elem_index }} - {{ end }}
-          <a href="apidiff/{{ $elem_val.base.version }}">{{ $elem_val.base.version }}</a>
-        {{ end }}
+          {{- if lt 0 $elem_index }} - {{ end -}}
+          <a href="apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
+        {{- end }}
       </td>
     </tr>
-    {{ end }}
+    {{- end }}
     <tr>
       <th>Documentation</th>
       <td>
-        {{ with .documentation.notes }}
+        {{- with .documentation.notes }}
           <a href="{{ . }}">Release Notes</a>,
-        {{ end }}
-        {{ with .documentation.lang }}
+        {{- end }}
+        {{- with .documentation.lang }}
           <a href="{{ . }}">Language Spec</a>,
-        {{ end }}
-        {{ with .documentation.vm }}
+        {{- end }}
+        {{- with .documentation.vm }}
           <a href="{{ . }}">VM Spec</a>,
-        {{ end }}
-        {{ with .documentation.api }}
+        {{- end }}
+        {{- with .documentation.api }}
           <a href="{{ . }}">JavaDoc</a>
-        {{ end }}
+        {{- end }}
+      </td>
+    </tr>
+    <tr>
+      <th>SCM</th>
+      <td>
+        {{- range .scm }}
+          <a href="{{ .url }}">{{ .type }}</a>
+        {{- end }}
       </td>
     </tr>
   </tbody>
@@ -48,6 +61,42 @@
 <div class="datasource">
   <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $version }}.json">Data Source</a>
 </div>
+
+<div>
+{{ .Inner | markdownify }}
+</div>
+
+<h2>New Features</h2>
+
+{{- define "featureref" -}}
+  {{ if eq .type "JEP" -}}
+    <a href="https://openjdk.java.net/jeps/{{ .identifier }}">JEP {{ .identifier }}</a>
+  {{- else if eq .type "JSR" -}}
+    <a href="https://jcp.org/en/jsr/detail?id={{ .identifier }}">JSR {{ .identifier }}</a>
+  {{- else if eq .type "JDKIssue" -}}
+    <a href="https://bugs.openjdk.java.net/browse/JDK-{{ .identifier }}">JDK-{{ .identifier }}</a>
+  {{- end }}
+{{- end }}
+
+{{- $allfeatures := index (index $.Site.Data.jdk.versions $version) "features" }}
+{{- range sort $.Site.Data.jdk.featurecategories "order" }}
+  {{- $currenttitle := .title }}
+  {{- with where $allfeatures "category" .id }}
+    <h3>{{ $currenttitle }}</h3>
+    <ul>
+    {{- range . }}
+      <li>
+        {{ .title }}
+        {{- if .preview}} <span class="tag feature">Preview</span>{{ end -}}
+        {{ with .refs }} ({{ range $idx, $item := . -}}
+          {{ if gt $idx 0 }}, {{ end -}}
+          {{ template "featureref" $item }}
+        {{- end }}){{ end }}
+      </li>
+    {{- end }}
+    </ul>
+  {{- end }}
+{{- end }}
 
 <h2>Downloads</h2>
 
@@ -61,25 +110,25 @@
     </tr>
   </thead>
   <tbody>
-  {{ range $.Page.Site.Data.jdk.vendors }}
-    {{ $vendor := .}}
-    {{ range .products }}
-    {{ if in .versions $version }}
+  {{- range $.Page.Site.Data.jdk.vendors }}
+    {{- $vendor := . }}
+    {{- range .products }}
+    {{- if in .versions $version }}
     <tr>
       <td><a href="{{ $vendor.url }}">{{ $vendor.name }}</a></td>
       <td><a href="{{ .url }}">{{ .name }}</a></td>
       <td>{{ .license }}</td>
       <td>
         <ul class="tag architecture">
-          {{ range .platforms }}
+          {{- range .platforms }}
             <li>{{ . }}</li>
-          {{ end }}
+          {{- end }}
         </ul>
       </td>
     </tr>
-    {{ end }}
-    {{ end }}
-  {{ end }}
+    {{- end }}
+    {{- end }}
+  {{- end }}
   </tbody>
 </table>
 

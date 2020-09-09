@@ -1,10 +1,173 @@
 {
 	"version": "15",
 	"name": "Java 15",
-	"ga": "September 2020",
+	"ga": "2020/09/15",
+	"eol": "2021/03",
 	"bytecode": "59.0",
 	"documentation": {
 		"notes": "http://jdk.java.net/15/release-notes",
 		"api": "https://download.java.net/java/early_access/jdk15/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk/jdk15/"
+		}
+	],
+	"features": [
+		{
+			"title": "Disable and Deprecate Biased Locking",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "374"
+				}
+			] 
+		},
+		{
+			"title": "ZGC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "377"
+				}
+			] 
+		},
+		{
+			"title": "Shenandoah GC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "379"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Solaris and SPARC Ports",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "381"
+				}
+			] 
+		},
+		{
+			"title": "Pattern Matching for instanceof",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "375"
+				}
+			] 
+		},
+		{
+			"title": "Text Blocks",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "378"
+				}
+			] 
+		},
+		{
+			"title": "Records",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "384"
+				}
+			] 
+		},
+		{
+			"title": "Local Interfaces and Enums",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "384"
+				}
+			] 
+		},		
+		{
+			"title": "Edwards-Curve Digital Signature Algorithm (EdDSA)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "339"
+				}
+			] 
+		},
+		{
+			"title": "Sealed Classes",
+			"category": "api",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "360"
+				}
+			] 
+		},
+		{
+			"title": "Hidden Classes",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "371"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Nashorn JavaScript Engine",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "372"
+				}
+			] 
+		},
+		{
+			"title": "Reimplement the Legacy DatagramSocket API",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "373"
+				}
+			] 
+		},
+		{
+			"title": "Foreign-Memory Access API (Second Incubator)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "383"
+				}
+			] 
+		},
+		{
+			"title": "Deprecate RMI Activation for Removal",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "385"
+				}
+			] 
+		}
+	]
 }

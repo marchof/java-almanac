@@ -2,11 +2,100 @@
 	"version": "10",
 	"name": "Java 10",
 	"ga": "2018/03/20",
+	"eol": "2018/09",
 	"bytecode": "54.0",
 	"documentation": {
 		"notes": "https://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html",
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se10/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se11/html/index.html",
 		"api": "https://docs.oracle.com/javase/10/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk/jdk10/"
+		}
+	],
+	"features": [
+		{
+			"title": "Graal VM",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "317"
+				}
+			] 
+		},
+		{
+			"title": "GC Interface",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "304"
+				}
+			] 
+		},
+		{
+			"title": "Parallel Full GC for G1",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "307"
+				}
+			] 
+		},
+		{
+			"title": "Thread-Local Handshakes",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "312"
+				}
+			] 
+		},
+		{
+			"title": "Alternative Memory Devices",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "316"
+				}
+			] 
+		},
+		{
+			"title": "Keyword var",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "286"
+				}
+			] 
+		},
+		{
+			"title": "Additional Unicode Language-Tag Extensions",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "314"
+				}
+			] 
+		},
+		{
+			"title": "javah Removed",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "313"
+				}
+			] 
+		}
+	]
 }

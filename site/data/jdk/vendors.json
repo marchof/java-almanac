@@ -4,12 +4,20 @@
 		"url": "https://adoptopenjdk.net/",
 		"products": [
 			{
-				"name": "OpenJDK",
+				"name": "AdoptOpenJDK",
 				"license": "GPLv2+CE",
 				"url": "https://adoptopenjdk.net/releases.html",
-				"platforms": ["aix-ppc64", "linux-x64", "linux-s390x", "linux-ppc64le", "linux-aarch64", "linux-arm32", "macOS-x64", "solaris-sparcv9", "solaris-x64", "win-x86", "win-x64"],
-				"vms": ["HotSpot", "OpenJ9"],
+				"platforms": ["aix-ppc64", "linux-x64", "linux-s390x", "linux-ppc64le", "linux-aarch64", "linux-arm32", "macOS-x64", "solaris-sparcv9", "solaris-x64", "windows-x86", "windows-x64"],
+				"vms": ["HotSpot", "OpenJ9", "OpenJ9 - Large Heap"],
 				"versions": ["8", "9", "10", "11", "12", "13", "14"]
+			},
+			{
+				"name": "OpenJDK Upstream Builds",
+				"license": "GPLv2+CE",
+				"url": "https://adoptopenjdk.net/upstream.html",
+				"platforms": ["linux-x64", "linux-aarch64", "windows-x64"],
+				"vms": ["HotSpot"],
+				"versions": ["8", "11"]
 			}
 		]
 	},
@@ -54,15 +62,15 @@
 		]
 	},
 	{
-		"name": "AZUL Systems",
+		"name": "Azul Systems",
 		"url": "https://www.azul.com/",
 		"products": [
 			{
-				"name": "Zulu Community",
+				"name": "Zulu Builds of OpenJDK",
 				"license": "GPLv2+CE",
 				"url": "https://www.azul.com/downloads/zulu-community",
-				"platforms": ["linux-x86", "linux-x64", "macOS-x64", "windows-x64"],
-				"versions": ["7", "8", "11", "13", "14"]
+				"platforms": ["linux-x86", "linux-x64", "linux-ppc32spe", "linux-ppc32hf", "linux-ppc64", "linux-aarch64", "linux-arm32", "macOS-x64", "windows-x86", "windows-x64", "solaris-sparcv9", "solaris-x86", "solaris-x64"],
+				"versions": ["6", "7", "8", "9", "10", "11", "12", "13", "14"]
 			},
 			{
 				"name": "Zing",
@@ -81,31 +89,11 @@
 				"name": "Liberica",
 				"license": "GPLv2+CE",
 				"url": "https://bell-sw.com/java",
-				"platforms": ["linux-x86", "linux-x64", "linux-arm32", "linux-aarch64", "linux-ppc64le", "macOS-x64", "windows-x86", "windows-x64"],
+				"platforms": ["linux-x86", "linux-x64", "linux-arm32", "linux-aarch64", "linux-ppc64le", "macOS-x64", "windows-x86", "windows-x64", "solaris-sparcv9", "solaris-x64"],
 				"versions": ["8", "9", "10", "11", "12", "13", "14"]
 			}
 		]
 	},
-	{
-		"name": "jdk.java.net",
-		"url": "http://jdk.java.net/",
-		"products": [
-			{
-				"name": "JDK 14 Early-Access Builds",
-				"license": "GPLv2+CE",
-				"url": "http://jdk.java.net/14/",
-				"platforms": ["linux-x64", "macOS-x64", "windows-x64"],
-				"versions": ["14"]
-			},
-			{
-				"name": "JDK 15 Early-Access Builds",
-				"license": "GPLv2+CE",
-				"url": "http://jdk.java.net/15/",
-				"platforms": ["linux-x64", "macOS-x64", "windows-x64"],
-				"versions": ["15"]
-			}
-		]
-	},	
 	{
 		"name": "Oracle",
 		"url": "https://www.oracle.com/java/",
@@ -213,6 +201,40 @@
 				"platforms": ["linux-x64", "macOS-x64", "windows-x64"],
 				"vms": ["HotSpot"],
 				"versions": ["14"]
+			},
+			{
+				"name": "Oracle OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "http://jdk.java.net/14/",
+				"platforms": ["linux-x64", "macOS-x64", "windows-x64"],
+				"versions": ["14"]
+			},
+			{
+				"name": "Oracle OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "http://jdk.java.net/15/",
+				"platforms": ["linux-x64", "linux-aarch64", "macOS-x64", "windows-x64"],
+				"versions": ["15"]
+			},
+			{
+				"name": "Oracle OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "http://jdk.java.net/16/",
+				"platforms": ["linux-x64", "linux-aarch64", "macOS-x64", "windows-x64"],
+				"versions": ["16"]
+			}
+		]
+	},
+	{
+		"name": "Red Hat",
+		"url": "https://developers.redhat.com/products/openjdk/",
+		"products": [
+			{
+				"name": "Red Hat OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://developers.redhat.com/products/openjdk/download",
+				"platforms": ["linux-x64", "windows-x86", "windows-x64"],
+				"versions": ["8", "10", "11", "12", "13", "14"]
 			}
 		]
 	},

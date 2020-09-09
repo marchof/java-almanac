@@ -68,7 +68,7 @@ div.content h2 {
 	font-weight: bold;
 	font-size: 150%;
 	color: #589;
-	margin-top: 40px;
+	margin-top: 30px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -160,8 +160,28 @@ ul.architecture li {
 	color: #eee;
 }
 
+ul.documentation li {
+	background-color: #69a;
+	color: #eee;
+}
+
+span.tag {
+	white-space: nowrap;
+	margin: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 3px;
+	font-size: 90%;
+}
+
+span.feature {
+	background-color: #bbb;
+	color: #fff;
+}
+
 div.content div.datasource {
 	font-size: 70%;
+	margin-bottom: 10px;
 }
 
 div.content div.datasource a {

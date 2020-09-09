@@ -2,11 +2,110 @@
 	"version": "9",
 	"name": "Java 9",
 	"ga": "2017/09/21",
+	"eol": "2018/03",
 	"bytecode": "53.0",
 	"documentation": {
 		"notes": "https://www.oracle.com/technetwork/java/javase/9all-relnotes-3704433.html",
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se9/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se9/html/index.html",
 		"api": "https://docs.oracle.com/javase/9/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk9"
+		}
+	],
+	"features": [
+		{
+			"title": "Module System",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "261"
+				}
+			] 
+		},
+		{
+			"title": "Private Methods in Interfaces",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "213"
+				}
+			] 
+		},
+		{
+			"title": "Reactive Streams",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "266"
+				}
+			] 
+		},
+		{
+			"title": "Indify String Concatenation",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "280"
+				}
+			] 
+		},
+		{
+			"title": "Var Handles",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "193"
+				}
+			] 
+		},
+		{
+			"title": "Object.finalize() deprecated",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JDKIssue",
+					"identifier": "8165641"
+				}
+			] 
+		},
+		{
+			"title": "Enhanced Deprecation",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "277"
+				}
+			] 
+		},
+		{
+			"title": "jshell",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "222"
+				}
+			] 
+		},
+		{
+			"title": "jlink",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "282"
+				}
+			] 
+		}
+	]
 }

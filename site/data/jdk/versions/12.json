@@ -2,11 +2,51 @@
 	"version": "12",
 	"name": "Java 12",
 	"ga": "2019/03/19",
+	"eol": "2019/03",
 	"bytecode": "56.0",
 	"documentation": {
 		"notes": "https://www.oracle.com/technetwork/java/javase/12-relnote-issues-5211422.html",
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se12/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se12/html/index.html",
 		"api": "https://docs.oracle.com/en/java/javase/12/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk/jdk12/"
+		}
+	],
+	"features": [
+		{
+			"title": "Shenandoah GC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "189"
+				}
+			] 
+		},
+		{
+			"title": "Switch Expressions",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "325"
+				}
+			] 
+		},
+		{
+			"title": "JVM Constants",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "334"
+				}
+			] 
+		}
+	]
 }
