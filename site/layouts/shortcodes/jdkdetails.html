@@ -12,6 +12,12 @@
       <th>EOL Date</th>
       <td>{{ .eol }}</td>
     </tr>
+    {{- with .codename }}
+    <tr>
+      <th>Codename</th>
+      <td>{{ . }}</td>
+    </tr>
+    {{- end }}
     <tr>
       <th>Bytecode Version</th>
       <td>{{ .bytecode }}</td>
