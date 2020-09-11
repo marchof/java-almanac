@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+13-521"
+		"version": "16-ea+14-589"
 	},
 	"order": 11.0,
 	"deltas": [
@@ -1764,6 +1764,118 @@
 				},
 				{
 					"type": "package",
+					"name": "java.security.cert",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "X509CRLSelector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRLSelector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addIssuerName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509CRL",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRL.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getIssuerDN()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRL.html#getIssuerDN()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509CertSelector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getIssuerAsString()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuerAsString()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getSubjectAsString()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsString()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setIssuer(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setSubject(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509Certificate",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509Certificate.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getIssuerDN()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getSubjectDN()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.security.interfaces",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/interfaces/package-summary.html",
@@ -2338,6 +2450,98 @@
 									"name": "teeing(Collector, Collector, BiFunction)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Collectors.html#teeing(java.util.stream.Collector,java.util.stream.Collector,java.util.function.BiFunction)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DoubleStream.DoubleMapMultiConsumer",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html"
+						},
+						{
+							"type": "interface",
+							"name": "DoubleStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/DoubleStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "mapMulti(DoubleStream.DoubleMapMultiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "IntStream.IntMapMultiConsumer",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html"
+						},
+						{
+							"type": "interface",
+							"name": "IntStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/IntStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "mapMulti(IntStream.IntMapMultiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LongStream.LongMapMultiConsumer",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/LongStream.LongMapMultiConsumer.html"
+						},
+						{
+							"type": "interface",
+							"name": "LongStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/LongStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "mapMulti(LongStream.LongMapMultiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/LongStream.html#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Stream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "mapMulti(BiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)"
+								},
+								{
+									"type": "method",
+									"name": "mapMultiToDouble(BiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)"
+								},
+								{
+									"type": "method",
+									"name": "mapMultiToInt(BiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)"
+								},
+								{
+									"type": "method",
+									"name": "mapMultiToLong(BiConsumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"
 								}
 							]
 						}
@@ -3741,10 +3945,310 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.sound.midi.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MidiDeviceProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MidiDeviceProvider()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MidiFileReader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MidiFileReader()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MidiFileWriter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MidiFileWriter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SoundbankReader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SoundbankReader()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.sound.sampled.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AudioFileReader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AudioFileReader()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "AudioFileWriter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AudioFileWriter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FormatConversionProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "FormatConversionProvider()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MixerProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MixerProvider()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.border",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/border/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractBorder",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/border/AbstractBorder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractBorder()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.colorchooser",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/colorchooser/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractColorChooserPanel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractColorChooserPanel()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.event",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "InternalFrameAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "InternalFrameAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MouseInputAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MouseInputAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.swing.filechooser",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "FileFilter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "FileFilter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "FileSystemView",
@@ -3756,6 +4260,26 @@
 									"name": "getChooserShortcutPanelFiles()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChooserShortcutPanelFiles()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FileView",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileView.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "FileView()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileView.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
 								}
 							]
 						}
@@ -3789,6 +4313,24 @@
 						},
 						{
 							"type": "class",
+							"name": "BasicRadioButtonUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "installListeners(AbstractButton)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "uninstallListeners(AbstractButton)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "BasicSliderUI",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
@@ -3798,6 +4340,34 @@
 									"name": "BasicSliderUI()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.metal",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MetalTheme",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "MetalTheme()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
 								}
 							]
 						}
@@ -4441,10 +5011,462 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.swing.table",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractTableModel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractTableModel()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TableStringConverter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/TableStringConverter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "TableStringConverter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/TableStringConverter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.text.html",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HTMLDocument.Iterator",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "HTMLDocument.Iterator()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HTMLEditorKit.Parser",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "HTMLEditorKit.Parser()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.text",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DefaultTextUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DefaultTextUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DefaultTextUI()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DefaultTextUI.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "DocumentFilter.FilterBypass",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DocumentFilter.FilterBypass()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "GlyphView.GlyphPainter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "GlyphView.GlyphPainter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LayeredHighlighter.LayerPainter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "LayeredHighlighter.LayerPainter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LayeredHighlighter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "LayeredHighlighter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "NavigationFilter.FilterBypass",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "NavigationFilter.FilterBypass()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.tree",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractLayoutCache.NodeDimensions",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractLayoutCache.NodeDimensions()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "AbstractLayoutCache",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractLayoutCache()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.swing",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractButton",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractButton.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractButton()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractButton.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "AbstractCellEditor",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractCellEditor.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractCellEditor()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "AbstractListModel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractListModel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractListModel()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractListModel.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "AbstractSpinnerModel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractSpinnerModel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractSpinnerModel()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractSpinnerModel.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FocusManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/FocusManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "FocusManager()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/FocusManager.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "InputVerifier",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InputVerifier.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "InputVerifier()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InputVerifier.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "InternalFrameFocusTraversalPolicy",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "InternalFrameFocusTraversalPolicy()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JFormattedTextField.AbstractFormatterFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "JFormattedTextField.AbstractFormatterFactory()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JFormattedTextField.AbstractFormatter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "JFormattedTextField.AbstractFormatter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "JSlider.AccessibleJSlider",
@@ -4459,6 +5481,46 @@
 									"name": "stateChanged(ChangeEvent)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#stateChanged(javax.swing.event.ChangeEvent)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LookAndFeel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/LookAndFeel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "LookAndFeel()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/LookAndFeel.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "RowFilter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/RowFilter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "RowFilter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/RowFilter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
 								}
 							]
 						}
