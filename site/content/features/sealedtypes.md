@@ -1,5 +1,5 @@
 ---
-title: Sealed Classes (JEP 360)
+title: Sealed Types (JEP 360)
 copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 360
 jdkversion: 15
