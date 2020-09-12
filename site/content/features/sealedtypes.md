@@ -522,4 +522,8 @@ Sealed types are fairly straightforward. Here are the key points to remember:
 3. The direct subtypes of a sealed type must be `final`, `sealed`, or `non-sealed`.
 4. Future pattern matching features can carry out exhaustiveness checking with sealed types
 
+## References
+
+* [JEP 360: Sealed Classes (Preview), OpenJDK](https://openjdk.java.net/jeps/360)
+
 
