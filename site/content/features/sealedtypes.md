@@ -13,7 +13,7 @@ Java 15 provides a preview of “sealed types”—types with a fixed set of dir
 
 Unless a class is declared `final`, anyone can form a subclass of it. What if you want to have more control? For example, suppose you feel the need to write your own JSON library because none of the ones out there do exactly what you need.
 
-The JSON standard says that a JSON value is an object, array, string, number, Boolean, or `null`. The Java language had, until now, no way of expressing that a `JSONValue` should be exactly one of those six types.
+The JSON standard says that a JSON value is an object, array, string, number, Boolean value, or `null`. The Java language had, until now, no way of expressing that a `JSONValue` should be exactly one of those six types.
 
 Java 15 provides a preview of “sealed types”, where you get just that control. You can define `JSONValue` to be `sealed`, and list the subclasses in a `permits` clause:
 
@@ -34,57 +34,59 @@ this would be an error. And that's just as well, since JSON doesn't allow for co
 
 The dictionary defines sealing as (1) affixing a mark that attests to quality or absence of tampering, or (2) securing against access or damage. I am not sure that either of these describes what the `sealed` keyword does. A sealed class is protected from one specific evil, namely promiscuous subclassing.
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "JSONValue.java" >}}
 public sealed abstract class JSONValue
       permits JSONObject, JSONArray, JSONString, JSONNumber, JSONBoolean, JSONNull {
    // . . .
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONObject.java" >}}
 public final class JSONObject extends JSONValue {
    // . . .
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONArray.java" >}}
 public final class JSONArray extends JSONValue {
    // . . .
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONString.java" >}}
 public final class JSONString extends JSONValue {
    // . . .
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONNumber.java" >}}
 public final class JSONNumber extends JSONValue {
    // . . .
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONBoolean.java" >}}
 public final class JSONBoolean extends JSONValue {
    // . . .
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONNull.java" >}}
 public final class JSONNull extends JSONValue {
    // . . .
 
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
 public class Sandbox {
    public static void main(String[] args) {
       System.out.println("Move along, nothing to see here...");
    }
 }
-```
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 ## Exhaustiveness
 
@@ -123,7 +125,7 @@ public static String type(JSONValue value) {
 
 At first glance, it appears as if a subclass of a sealed class must be `final`. But for exhaustiveness testing, we only need to know all *direct* subclasses. It is not a problem if those classes have further subclasses. For example, we can reorganize our JSON hierarchies like this:
 
-![json.png](json.png)
+![.png](json.png)
 
 Then the sealed `JSONValue` class permits three subclasses:
 
@@ -171,24 +173,26 @@ non-sealed class Element extends Node {
 
 The tokens `sealed` and `permits` are *restricted identifiers* that have a special meaning only in class and interface declarations, just like `record`, `var`, and `yield`. Code with variables named `sealed` and `permits` won't break. But you can no longer define classes named `sealed` and `permits`:
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "sealed.java" >}}
 sealed class sealed permits permits {}
 final class permits extends sealed {}
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
 public class Sandbox {
    public static void main(String[] args) {
       System.out.println("Move along, nothing to see here...");
    }
 }
-```
 
-In contrast, `non-sealed` is a keyword. Obviously, you cannot use it as an identifier since it contains a `-` character. In fact, `non-sealed` is the second keyword that contains a character that isn't a lowercase letter. The first one is `_`, since Java 9. I am sure
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+In contrast, `non-sealed` is a keyword. Obviously, you cannot use it as an identifier since it contains a `-` character. In fact, `non-sealed` is the second keyword that contains a character that isn't a lowercase letter. The first one is `_`, since Java 9. 
 
 And yes, you can continue to compute the difference of two variables `non` and `sealed`:
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "Sandbox.java" >}}
 public class Sandbox {
    public static void main(String[] args) {
       int non = 7 * 7;
@@ -196,7 +200,9 @@ public class Sandbox {
       System.out.println(non-sealed);
    }
 }
-```
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 ## Package/Module Restriction
 
@@ -210,7 +216,7 @@ There is one vexing situation. If you don't want to use modules, you cannot put 
 
 If the subclasses of a sealed class are all defined in the same source file, then you can omit the `permits` clause: 
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "DirectoryEntry.java" >}}
 import java.io.*;
 import java.nio.file.*;
 import java.util.function.*;
@@ -251,9 +257,9 @@ sealed class DirectoryEntry { // No permits clause
       return result;
    }
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
 import java.io.*;
 import java.nio.file.*;
 import java.util.function.*;
@@ -272,7 +278,8 @@ public class Sandbox
       walk(DirectoryEntry.of(Paths.get("/home")), e -> System.out.println(e.getPath())); 
    }   
 }
-```
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 Then the permitted subclasses are all direct subclasses of the sealed class in the same source file. If you want the subclasses to be public, they must be nested classes, as in the example above.
 
@@ -301,26 +308,25 @@ public non-sealed interface FiniteSeq extends IntSeq {
 
 But for infinite sequences, we only support two implementations: with a generator function or an iterator function—similar to `Stream.generate` and `Stream.iterate`.
 
-![seq.png](seq.png)
+![.png](seq.png)
 
 As you can see, with a sealed interface, the situation is a bit more complex. Its direct subtypes can be both interfaces and classes. But the rules are the same. All direct subtypes must be listed in the `permits` clause, or be in the same source file. And they must all be `final`, `sealed`, or `non-sealed`.
 
 Sandbox with complete code:
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "IntSeq.java" >}}
 public sealed interface IntSeq permits FiniteSeq, IteratedSeq, GeneratedSeq {
    int next();
    default boolean hasNext() { return true; }
 }
-```
-
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "FiniteSeq.java" >}}
 public non-sealed interface FiniteSeq extends IntSeq {
    int size();
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "GeneratedSeq.java" >}}
 import java.util.function.*;
 
 public final class GeneratedSeq implements IntSeq {
@@ -330,9 +336,8 @@ public final class GeneratedSeq implements IntSeq {
       return gen.getAsInt();
    }
 }
-```
-
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "IteratedSeq.java" >}}
 import java.util.function.*;
 
 final class IteratedSeq implements IntSeq {
@@ -348,9 +353,9 @@ final class IteratedSeq implements IntSeq {
       return result;
    }   
 }
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
 public class Sandbox {
    public static int sum(IntSeq seq, int n) {
       int sum = 0;
@@ -363,11 +368,13 @@ public class Sandbox {
       System.out.println(sum(positiveIntegers, 100));
    }
 }
-```
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 # Records and Enums
 
-A sealed class can be extended by a record, which is implicitly `final`. Consider the classic example of a Lisp-style list:
+A sealed interface can be implemented by a record, which is implicitly `final`. Consider the classic example of a Lisp-style list:
 
 ```
 public sealed interface IntLst {
@@ -394,7 +401,8 @@ public static int sum(IntLst lst) {
 
 It is a bit wasteful to construct a separate instance of an `Empty` at the end of every list. We could have a single object for all empty lists. An excellent way to get a single instance is with an enumerations. An enumeration can extend an interface. Therefore it can appear as a permitted subtype of a sealed interface:
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "util/IntLst.java" >}}
+package util;
 public sealed interface IntLst {
   record NonEmpty(int head, IntLst tail) implements IntLst {}
   enum Empty implements IntLst { EMPTY }
@@ -402,9 +410,11 @@ public sealed interface IntLst {
   static IntLst cons(int head, IntLst tail) { return new NonEmpty(head, tail); }
   static IntLst empty() { return Empty.EMPTY; }
 }
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
+import util.IntLst;
+import static util.IntLst.*;
 
-```
 public class Sandbox {
    public static int sum(IntLst lst) {
       return (lst instanceof IntLst.NonEmpty ne) ?
@@ -412,17 +422,20 @@ public class Sandbox {
    }
    
    public static void main(String[] args) {
-      var myLittleList = IntLst.cons(3, IntLst.cons(4, IntLst.cons(5, IntLst.empty())));
+      var myLittleList = cons(3, cons(4, cons(5, empty())));
       System.out.println(sum(myLittleList));
    }
 }
-```
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 ## Generics
 
 Sealed types and their direct subtypes can be generic. Just to show that it can be done, here is a generic Lisp-style list. As usual, some generic machinations look a bit forbidding, but it works without surprises.
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "util/Lst.java" >}}
+package util;
 public sealed interface Lst<T> {
    record NonEmpty<T>(T head, Lst<T> tail) implements Lst<T> {};
    @SuppressWarnings("rawtypes") enum Empty implements Lst { EMPTY };
@@ -433,18 +446,21 @@ public sealed interface Lst<T> {
 }
 
 
-```
 
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
+import util.Lst;
+import static util.Lst.*;
+
 public class Sandbox {
    public static <T> String toString(Lst<T> s, String left, String right) {
-      if (s instanceof Lst.NonEmpty<T> ne) return left + " " + ne.head() + " " + toString(ne.tail(), "", right);
+      if (s instanceof NonEmpty<T> ne) return left + " " + ne.head() + " " + toString(ne.tail(), "", right);
       else return left + right;      
    }         
 
    public static <T> Lst<T> append(Lst<T> s, Lst<T> t) {
-      if (s instanceof Lst.NonEmpty<T> ne)
-         return Lst.cons(ne.head(), append(ne.tail(), t));
+      if (s instanceof NonEmpty<T> ne)
+         return cons(ne.head(), append(ne.tail(), t));
       else return t;
    }
 
@@ -453,7 +469,9 @@ public class Sandbox {
       System.out.println(toString(append(s, s), "(", ")"));
    }
 }
-```
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 ## Reflection
 
@@ -469,7 +487,7 @@ But what's a `ClassDesc`? Why not an array of good old `java.lang.Class`?
 
 A `ClassDesc` describes a class or interface with package and class/interface name, but without a class loader. This accurately describes what happens in the source file. It's just different from the rest of the reflection API. Looking at [this discussion on the expert group](https://mail.openjdk.java.net/pipermail/amber-spec-experts/2020-May/002196.html), there is some discomfort about the API.
 
-```
+{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "IntLst.java" >}}
 public sealed interface IntLst {
   record NonEmpty(int head, IntLst tail) implements IntLst {}
   enum Empty implements IntLst { EMPTY }
@@ -477,9 +495,8 @@ public sealed interface IntLst {
   static IntLst cons(int head, IntLst tail) { return new NonEmpty(head, tail); }
   static IntLst empty() { return Empty.EMPTY; }
 }
-```
-
-```
+{{< /sandboxsource >}}
+{{< sandboxsource "Sandbox.java" >}}
 import java.util.*;
 import java.lang.constant.*;
 
@@ -492,7 +509,9 @@ public class Sandbox {
       System.out.println(clazz);
    }
 }
-```
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
 
 ## Summary
 
