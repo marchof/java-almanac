@@ -138,7 +138,7 @@ public sealed class JSONValue permits JSONObject, JSONArray, JSONPrimitive {
 What about `JSONPrimitive`? It should be a sealed class in its own right:
 
 ```
-public sealed class JSONPrimitive extends JSONNode
+public sealed class JSONPrimitive extends JSONValue
       permits JSONString, JSONNumber, JSONBoolean, JSONNull {
   . . .
 }
@@ -147,7 +147,7 @@ public sealed class JSONPrimitive extends JSONNode
 The other classes should be `final`.
 
 ```
-public final class JSONObject extends JSONNode { . . . }
+public final class JSONObject extends JSONValue { . . . }
 ```
 
 A subclass of a sealed class must specify whether it is `sealed`, `final`, or open for subclassing. In the latter case, it must be declared as `non-sealed`.
@@ -275,7 +275,7 @@ public class Sandbox
    }
 
    public static void main(String[] args) throws Exception {
-      walk(DirectoryEntry.of(Paths.get("/home")), e -> System.out.println(e.getPath())); 
+      walk(DirectoryEntry.of(Paths.get("/etc/pki")), e -> System.out.println(e.getPath())); 
    }   
 }
 {{< /sandboxsource >}}
@@ -478,7 +478,7 @@ public class Sandbox {
 Two methods have been added to `java.lang.Class` to support sealed classes. The method `isSealed` returns `true` for a sealed class:
 
 ```
-System.out.println(JSONNode.isSealed()) // Prints true
+System.out.println(JSONValue.isSealed()) // Prints true
 ```
 
 The `permittedSubclasses` method returns an array of `ClassDesc` objects describing the permitted subclasses. (For `Class` objects that don't describe sealed classes, the result is a zero length array.)
