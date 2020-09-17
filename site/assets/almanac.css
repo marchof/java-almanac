@@ -298,20 +298,22 @@ ul.tag li.removedtag {
 [v-cloak]::before { content: "loading…" }
 div.tabs {
 	background-color: #eee;
-	padding-top: 4px;
+	padding-top: 3px;
 	padding-left: 6px;
 	padding-right: 6px;
 }
 div.tabs ul {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0px;
 	padding: 0px;
 }
 div.tabs ul li {
 	background-color: #ccc;
-	margin-left: 2px;
-	margin-right: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	padding-top: 2px;
