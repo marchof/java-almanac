@@ -2,6 +2,14 @@
 
 <ul>
 
+<li>All JDK versions have valid status.</li>
+<ul>
+{{ range $jdkversions }}
+  {{ if not (index $.Site.Data.jdk.status .status) }}{{ errorf "Unknown Status %s" .status }}{{ end }}
+  <li>{{ .version }} / {{ .status }} &check;</li>
+{{ end }}
+</ul>
+
 <li>All products of all vendors have valid JDK version references.</li>
 <ul>
 {{ range $.Page.Site.Data.jdk.vendors }}
