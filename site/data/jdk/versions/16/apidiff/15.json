@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+15-631"
+		"version": "16-ea+16-712"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -150,6 +150,46 @@
 									"addedTags": [
 										"deprecated"
 									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MGF1ParameterSpec",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "SHA3_224",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_224"
+								},
+								{
+									"type": "field",
+									"name": "SHA3_256",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_256"
+								},
+								{
+									"type": "field",
+									"name": "SHA3_384",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_384"
+								},
+								{
+									"type": "field",
+									"name": "SHA3_512",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_512"
 								}
 							]
 						}
