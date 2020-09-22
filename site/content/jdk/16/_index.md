@@ -5,6 +5,10 @@ type: sandbox
 
 {{< jdkdetails "16" >}}
 
+The OpenJDK source tree has moved from Mercurial to Git and is now hosted on
+[GitHub](https://github.com/openjdk/jdk). The migration is described in
+[JEP 369](https://openjdk.java.net/jeps/369).
+
 {{< /jdkdetails >}}
 
 ## Sandbox
