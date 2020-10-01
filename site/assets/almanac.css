@@ -18,9 +18,13 @@ div.header {
 	padding: 8px;
 }
 
-div.feedback {
+div.content div.feedback {
 	float: right;
 	font-size: 9pt;
+}
+
+div.content div.feedback a, a:visited {
+	color: #999;
 }
 
 ul.breadcrump {
@@ -207,12 +211,12 @@ div.footer {
 	border-top: 1px solid #ccc;
 	padding-top: 2px;
 	padding-bottom: 8px;
-	color: #aaa;
+	color: #999;
 	font-size: 9pt;
 }
 
 div.footer a {
-	color: #aaa;
+	color: #999;
 }
 
 div.footer a:hover {
