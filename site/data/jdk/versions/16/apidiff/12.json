@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+17-805"
+		"version": "16-ea+18-901"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -2656,6 +2656,162 @@
 				},
 				{
 					"type": "package",
+					"name": "java.awt.font",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "GlyphVector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/GlyphVector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "GlyphVector()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/GlyphVector.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LayoutPath",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LayoutPath.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "LayoutPath()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LayoutPath.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LineMetrics",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LineMetrics.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "LineMetrics()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LineMetrics.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt.image",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AbstractMultiResolutionImage",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/AbstractMultiResolutionImage.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AbstractMultiResolutionImage()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/AbstractMultiResolutionImage.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "BufferStrategy",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/BufferStrategy.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "BufferStrategy()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/BufferStrategy.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "RGBImageFilter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/RGBImageFilter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "RGBImageFilter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "VolatileImage",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/VolatileImage.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "VolatileImage()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/VolatileImage.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.awt.peer",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/package-summary.html",
@@ -2739,6 +2895,46 @@
 						},
 						{
 							"type": "class",
+							"name": "Image",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Image.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Image()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Image.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PrintJob",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/PrintJob.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "PrintJob()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/PrintJob.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Toolkit",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Toolkit.html",
@@ -2776,6 +2972,130 @@
 									"name": "PersistenceDelegate()",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/PersistenceDelegate.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.accessibility",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AccessibleContext",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleContext.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AccessibleContext()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "AccessibleHyperlink",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "AccessibleHyperlink()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.print.event",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/event/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "PrintJobAdapter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "PrintJobAdapter()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.print",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "PrintServiceLookup",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/PrintServiceLookup.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "PrintServiceLookup()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/PrintServiceLookup.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ServiceUIFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/ServiceUIFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ServiceUIFactory()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/ServiceUIFactory.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
