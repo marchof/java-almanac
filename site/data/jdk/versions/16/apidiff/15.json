@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+18-901"
+		"version": "16-ea+19-985"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -955,6 +955,26 @@
 									"name": "ServiceUIFactory()",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/ServiceUIFactory.html#%3Cinit%3E()",
+									"addedTags": [
+										"protected"
+									],
+									"removedTags": [
+										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StreamPrintServiceFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "StreamPrintServiceFactory()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
