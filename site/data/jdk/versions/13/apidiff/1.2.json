@@ -521,8 +521,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html",
 					"addedTags": [
-						"implements Serializable",
-						"implements DragSourceMotionListener"
+						"implements DragSourceMotionListener",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -1247,8 +1247,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/event/MouseAdapter.html",
 					"addedTags": [
-						"implements MouseWheelListener",
-						"implements MouseMotionListener"
+						"implements MouseMotionListener",
+						"implements MouseWheelListener"
 					],
 					"deltas": [
 						{
@@ -1369,8 +1369,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/event/WindowAdapter.html",
 					"addedTags": [
-						"implements WindowStateListener",
-						"implements WindowFocusListener"
+						"implements WindowFocusListener",
+						"implements WindowStateListener"
 					],
 					"deltas": [
 						{
@@ -2094,9 +2094,9 @@
 						"extends Path2D$Float"
 					],
 					"removedTags": [
-						"implements Shape",
 						"extends Object",
-						"implements Cloneable"
+						"implements Cloneable",
+						"implements Shape"
 					],
 					"deltas": [
 						{
@@ -3663,11 +3663,11 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/AWTEventMulticaster.html",
 					"addedTags": [
-						"implements WindowStateListener",
-						"implements HierarchyListener",
 						"implements HierarchyBoundsListener",
+						"implements HierarchyListener",
 						"implements MouseWheelListener",
-						"implements WindowFocusListener"
+						"implements WindowFocusListener",
+						"implements WindowStateListener"
 					],
 					"deltas": [
 						{
@@ -8956,8 +8956,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/io/OutputStream.html",
 					"addedTags": [
-						"implements Flushable",
-						"implements Closeable"
+						"implements Closeable",
+						"implements Flushable"
 					],
 					"deltas": [
 						{
@@ -9014,8 +9014,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/io/PrintStream.html",
 					"addedTags": [
-						"implements Closeable",
-						"implements Appendable"
+						"implements Appendable",
+						"implements Closeable"
 					],
 					"deltas": [
 						{
@@ -9283,8 +9283,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/io/Reader.html",
 					"addedTags": [
-						"implements Readable",
-						"implements Closeable"
+						"implements Closeable",
+						"implements Readable"
 					],
 					"deltas": [
 						{
@@ -9359,9 +9359,9 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/io/Writer.html",
 					"addedTags": [
-						"implements Flushable",
+						"implements Appendable",
 						"implements Closeable",
-						"implements Appendable"
+						"implements Flushable"
 					],
 					"deltas": [
 						{
@@ -12558,11 +12558,11 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Class.html",
 					"addedTags": [
-						"implements TypeDescriptor.OfField",
 						"implements AnnotatedElement",
+						"implements Constable",
 						"implements GenericDeclaration",
 						"implements Type",
-						"implements Constable"
+						"implements TypeDescriptor.OfField"
 					],
 					"deltas": [
 						{
@@ -12834,8 +12834,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Double.html",
 					"addedTags": [
-						"implements ConstantDesc",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -13076,8 +13076,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Float.html",
 					"addedTags": [
-						"implements ConstantDesc",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -13300,8 +13300,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Integer.html",
 					"addedTags": [
-						"implements ConstantDesc",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -13561,8 +13561,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Long.html",
 					"addedTags": [
-						"implements ConstantDesc",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -14590,9 +14590,9 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/StringBuffer.html",
 					"addedTags": [
-						"implements Comparable",
 						"extends AbstractStringBuilder",
-						"implements CharSequence"
+						"implements CharSequence",
+						"implements Comparable"
 					],
 					"removedTags": [
 						"extends Object"
@@ -14720,9 +14720,9 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html",
 					"addedTags": [
-						"implements ConstantDesc",
+						"implements CharSequence",
 						"implements Constable",
-						"implements CharSequence"
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -21290,8 +21290,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.sql/java/sql/Connection.html",
 					"addedTags": [
-						"implements Wrapper",
-						"implements AutoCloseable"
+						"implements AutoCloseable",
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -22006,8 +22006,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.sql/java/sql/ResultSet.html",
 					"addedTags": [
-						"implements Wrapper",
-						"implements AutoCloseable"
+						"implements AutoCloseable",
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -22538,8 +22538,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.sql/java/sql/Statement.html",
 					"addedTags": [
-						"implements Wrapper",
-						"implements AutoCloseable"
+						"implements AutoCloseable",
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -34444,9 +34444,9 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html",
 					"addedTags": [
+						"implements AccessibleAction",
 						"implements AccessibleEditableText",
-						"implements AccessibleExtendedText",
-						"implements AccessibleAction"
+						"implements AccessibleExtendedText"
 					],
 					"deltas": [
 						{
@@ -34730,8 +34730,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/text/LabelView.html",
 					"addedTags": [
-						"implements TabableView",
-						"extends GlyphView"
+						"extends GlyphView",
+						"implements TabableView"
 					],
 					"removedTags": [
 						"extends View"
@@ -35199,9 +35199,9 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/text/Segment.html",
 					"addedTags": [
-						"implements Cloneable",
+						"implements CharSequence",
 						"implements CharacterIterator",
-						"implements CharSequence"
+						"implements Cloneable"
 					],
 					"deltas": [
 						{
@@ -36517,8 +36517,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -36703,8 +36703,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -37006,8 +37006,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -37685,8 +37685,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -38245,8 +38245,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -38900,8 +38900,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -39387,8 +39387,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{
@@ -41909,8 +41909,8 @@
 					],
 					"removedTags": [
 						"extends AccessibleContext",
-						"implements Serializable",
-						"implements AccessibleComponent"
+						"implements AccessibleComponent",
+						"implements Serializable"
 					],
 					"deltas": [
 						{

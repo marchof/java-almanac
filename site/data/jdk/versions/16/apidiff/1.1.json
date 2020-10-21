@@ -169,8 +169,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
 					"addedTags": [
-						"implements Externalizable",
-						"implements Cloneable"
+						"implements Cloneable",
+						"implements Externalizable"
 					],
 					"deltas": [
 						{
@@ -1431,8 +1431,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseAdapter.html",
 					"addedTags": [
-						"implements MouseWheelListener",
-						"implements MouseMotionListener"
+						"implements MouseMotionListener",
+						"implements MouseWheelListener"
 					],
 					"deltas": [
 						{
@@ -1585,8 +1585,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/WindowAdapter.html",
 					"addedTags": [
-						"implements WindowStateListener",
-						"implements WindowFocusListener"
+						"implements WindowFocusListener",
+						"implements WindowStateListener"
 					],
 					"deltas": [
 						{
@@ -3436,12 +3436,12 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/AWTEventMulticaster.html",
 					"addedTags": [
-						"implements WindowStateListener",
-						"implements HierarchyListener",
 						"implements HierarchyBoundsListener",
+						"implements HierarchyListener",
+						"implements InputMethodListener",
 						"implements MouseWheelListener",
 						"implements WindowFocusListener",
-						"implements InputMethodListener"
+						"implements WindowStateListener"
 					],
 					"deltas": [
 						{
@@ -10201,8 +10201,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/io/OutputStream.html",
 					"addedTags": [
-						"implements Flushable",
-						"implements Closeable"
+						"implements Closeable",
+						"implements Flushable"
 					],
 					"deltas": [
 						{
@@ -10285,8 +10285,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/io/PrintStream.html",
 					"addedTags": [
-						"implements Closeable",
-						"implements Appendable"
+						"implements Appendable",
+						"implements Closeable"
 					],
 					"deltas": [
 						{
@@ -10632,8 +10632,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/io/Reader.html",
 					"addedTags": [
-						"implements Readable",
-						"implements Closeable"
+						"implements Closeable",
+						"implements Readable"
 					],
 					"deltas": [
 						{
@@ -10752,9 +10752,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/io/Writer.html",
 					"addedTags": [
-						"implements Flushable",
+						"implements Appendable",
 						"implements Closeable",
-						"implements Appendable"
+						"implements Flushable"
 					],
 					"deltas": [
 						{
@@ -10870,8 +10870,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/io/ObjectInput.html",
 					"addedTags": [
-						"implements AutoCloseable",
-						"abstract"
+						"abstract",
+						"implements AutoCloseable"
 					]
 				},
 				{
@@ -10880,8 +10880,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/io/ObjectOutput.html",
 					"addedTags": [
-						"implements AutoCloseable",
-						"abstract"
+						"abstract",
+						"implements AutoCloseable"
 					]
 				},
 				{
@@ -12585,11 +12585,11 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html",
 					"addedTags": [
-						"implements TypeDescriptor.OfField",
 						"implements AnnotatedElement",
+						"implements Constable",
 						"implements GenericDeclaration",
 						"implements Type",
-						"implements Constable"
+						"implements TypeDescriptor.OfField"
 					],
 					"deltas": [
 						{
@@ -12909,9 +12909,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html",
 					"addedTags": [
-						"implements ConstantDesc",
 						"implements Comparable",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -13136,9 +13136,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html",
 					"addedTags": [
-						"implements ConstantDesc",
 						"implements Comparable",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -13374,9 +13374,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html",
 					"addedTags": [
-						"implements ConstantDesc",
 						"implements Comparable",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -13637,9 +13637,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html",
 					"addedTags": [
-						"implements ConstantDesc",
 						"implements Comparable",
-						"implements Constable"
+						"implements Constable",
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -14708,9 +14708,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/StringBuffer.html",
 					"addedTags": [
-						"implements Comparable",
 						"extends AbstractStringBuilder",
-						"implements CharSequence"
+						"implements CharSequence",
+						"implements Comparable"
 					],
 					"removedTags": [
 						"extends Object"
@@ -14874,10 +14874,10 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/String.html",
 					"addedTags": [
-						"implements ConstantDesc",
+						"implements CharSequence",
 						"implements Comparable",
 						"implements Constable",
-						"implements CharSequence"
+						"implements ConstantDesc"
 					],
 					"deltas": [
 						{
@@ -15911,8 +15911,8 @@
 								"deprecated"
 							],
 							"removedTags": [
-								"throws IllegalArgumentException",
-								"throws ArithmeticException"
+								"throws ArithmeticException",
+								"throws IllegalArgumentException"
 							]
 						},
 						{
@@ -15930,8 +15930,8 @@
 								"deprecated"
 							],
 							"removedTags": [
-								"throws IllegalArgumentException",
-								"throws ArithmeticException"
+								"throws ArithmeticException",
+								"throws IllegalArgumentException"
 							]
 						},
 						{
@@ -16042,8 +16042,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/math/BigDecimal.html#setScale(int)",
 							"removedTags": [
-								"throws IllegalArgumentException",
-								"throws ArithmeticException"
+								"throws ArithmeticException",
+								"throws IllegalArgumentException"
 							]
 						},
 						{
@@ -16061,8 +16061,8 @@
 								"deprecated"
 							],
 							"removedTags": [
-								"throws IllegalArgumentException",
-								"throws ArithmeticException"
+								"throws ArithmeticException",
+								"throws IllegalArgumentException"
 							]
 						},
 						{
@@ -20430,8 +20430,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/Certificate.html",
 					"addedTags": [
-						"forRemoval",
-						"abstract"
+						"abstract",
+						"forRemoval"
 					]
 				},
 				{
@@ -20516,8 +20516,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/PrivateKey.html",
 					"addedTags": [
-						"implements Destroyable",
-						"abstract"
+						"abstract",
+						"implements Destroyable"
 					],
 					"deltas": [
 						{
@@ -21867,9 +21867,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.sql/java/sql/Connection.html",
 					"addedTags": [
-						"implements Wrapper",
+						"abstract",
 						"implements AutoCloseable",
-						"abstract"
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -22114,8 +22114,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.sql/java/sql/DatabaseMetaData.html",
 					"addedTags": [
-						"implements Wrapper",
-						"abstract"
+						"abstract",
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -22751,8 +22751,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.sql/java/sql/ResultSetMetaData.html",
 					"addedTags": [
-						"implements Wrapper",
-						"abstract"
+						"abstract",
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -22769,9 +22769,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.sql/java/sql/ResultSet.html",
 					"addedTags": [
-						"implements Wrapper",
+						"abstract",
 						"implements AutoCloseable",
-						"abstract"
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -23838,9 +23838,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.sql/java/sql/Statement.html",
 					"addedTags": [
-						"implements Wrapper",
+						"abstract",
 						"implements AutoCloseable",
-						"abstract"
+						"implements Wrapper"
 					],
 					"deltas": [
 						{
@@ -24231,8 +24231,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/text/CollationKey.html",
 					"addedTags": [
-						"implements Comparable",
-						"abstract"
+						"abstract",
+						"implements Comparable"
 					],
 					"removedTags": [
 						"final"
@@ -27446,9 +27446,9 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Vector.html",
 					"addedTags": [
-						"implements RandomAccess",
+						"extends AbstractList",
 						"implements List",
-						"extends AbstractList"
+						"implements RandomAccess"
 					],
 					"removedTags": [
 						"extends Object"
