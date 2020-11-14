@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+23-1457"
+		"version": "16-ea+24-1553"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -1877,6 +1877,20 @@
 							"type": "method",
 							"name": "addSeparator()",
 							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "RobotPeer",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "useAbsoluteCoordinates()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 						}
 					]
 				},
@@ -10712,6 +10726,12 @@
 						},
 						{
 							"type": "method",
+							"name": "put(int, ByteBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"
+						},
+						{
+							"type": "method",
 							"name": "put(int, byte[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte%5B%5D)"
@@ -10807,6 +10827,12 @@
 							"name": "position(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html#position(int)"
+						},
+						{
+							"type": "method",
+							"name": "put(int, CharBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"
 						},
 						{
 							"type": "method",
@@ -10907,6 +10933,12 @@
 						},
 						{
 							"type": "method",
+							"name": "put(int, DoubleBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"
+						},
+						{
+							"type": "method",
 							"name": "put(int, double[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double%5B%5D)"
@@ -10990,6 +11022,12 @@
 							"name": "position(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html#position(int)"
+						},
+						{
+							"type": "method",
+							"name": "put(int, FloatBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"
 						},
 						{
 							"type": "method",
@@ -11079,6 +11117,12 @@
 						},
 						{
 							"type": "method",
+							"name": "put(int, IntBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"
+						},
+						{
+							"type": "method",
 							"name": "put(int, int[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html#put(int,int%5B%5D)"
@@ -11162,6 +11206,12 @@
 							"name": "position(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html#position(int)"
+						},
+						{
+							"type": "method",
+							"name": "put(int, LongBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"
 						},
 						{
 							"type": "method",
@@ -11304,6 +11354,12 @@
 							"name": "position(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html#position(int)"
+						},
+						{
+							"type": "method",
+							"name": "put(int, ShortBuffer, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"
 						},
 						{
 							"type": "method",

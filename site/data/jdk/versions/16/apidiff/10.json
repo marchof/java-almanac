@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+23-1457"
+		"version": "16-ea+24-1553"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -423,6 +423,12 @@
 								},
 								{
 									"type": "method",
+									"name": "hasInvokeExactBehavior()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"
+								},
+								{
+									"type": "method",
 									"name": "toMethodHandle(VarHandle.AccessMode)",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)",
@@ -444,6 +450,18 @@
 									"removedTags": [
 										"final"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withInvokeBehavior()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()"
+								},
+								{
+									"type": "method",
+									"name": "withInvokeExactBehavior()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"
 								}
 							]
 						},
@@ -2109,6 +2127,12 @@
 								},
 								{
 									"type": "method",
+									"name": "put(int, ByteBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"
+								},
+								{
+									"type": "method",
 									"name": "put(int, byte[])",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte%5B%5D)"
@@ -2159,6 +2183,12 @@
 								},
 								{
 									"type": "method",
+									"name": "put(int, CharBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"
+								},
+								{
+									"type": "method",
 									"name": "put(int, char[])",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html#put(int,char%5B%5D)"
@@ -2200,6 +2230,12 @@
 									"name": "mismatch(DoubleBuffer)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html#mismatch(java.nio.DoubleBuffer)"
+								},
+								{
+									"type": "method",
+									"name": "put(int, DoubleBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"
 								},
 								{
 									"type": "method",
@@ -2247,6 +2283,12 @@
 								},
 								{
 									"type": "method",
+									"name": "put(int, FloatBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"
+								},
+								{
+									"type": "method",
 									"name": "put(int, float[])",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float%5B%5D)"
@@ -2291,6 +2333,12 @@
 								},
 								{
 									"type": "method",
+									"name": "put(int, IntBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"
+								},
+								{
+									"type": "method",
 									"name": "put(int, int[])",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html#put(int,int%5B%5D)"
@@ -2332,6 +2380,12 @@
 									"name": "mismatch(LongBuffer)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html#mismatch(java.nio.LongBuffer)"
+								},
+								{
+									"type": "method",
+									"name": "put(int, LongBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"
 								},
 								{
 									"type": "method",
@@ -2390,6 +2444,12 @@
 									"name": "mismatch(ShortBuffer)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html#mismatch(java.nio.ShortBuffer)"
+								},
+								{
+									"type": "method",
+									"name": "put(int, ShortBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"
 								},
 								{
 									"type": "method",
@@ -5227,6 +5287,12 @@
 									"type": "method",
 									"name": "dispose()",
 									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "useAbsoluteCoordinates()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 								}
 							]
 						}

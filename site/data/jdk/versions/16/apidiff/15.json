@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+23-1457"
+		"version": "16-ea+24-1553"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -34,6 +34,32 @@
 									"name": "dropReturn(MethodHandle)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "VarHandle",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "hasInvokeExactBehavior()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"
+								},
+								{
+									"type": "method",
+									"name": "withInvokeBehavior()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()"
+								},
+								{
+									"type": "method",
+									"name": "withInvokeExactBehavior()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"
 								}
 							]
 						}
@@ -102,6 +128,112 @@
 									"name": "UNIX",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/StandardProtocolFamily.html#UNIX"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ByteBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, ByteBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "CharBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, CharBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "DoubleBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, DoubleBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FloatBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, FloatBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "IntBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, IntBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LongBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, LongBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ShortBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "put(int, ShortBuffer, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"
 								}
 							]
 						}
@@ -844,6 +976,28 @@
 									"removedTags": [
 										"public"
 									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt.peer",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "RobotPeer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "useAbsoluteCoordinates()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 								}
 							]
 						}
