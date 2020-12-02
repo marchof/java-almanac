@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+25-1633"
+		"version": "16-ea+26-1764"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -5985,9 +5985,58 @@
 						},
 						{
 							"type": "method",
+							"name": "destroy()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#destroy()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isDaemon()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isDestroyed()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "resume()",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#resume()",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setDaemon(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "stop()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#stop()",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -9292,6 +9341,12 @@
 							"name": "SHA512_256",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_256"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()"
 						}
 					]
 				},
