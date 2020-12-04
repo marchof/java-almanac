@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+26-1764"
+		"version": "16-ea+27-1884"
 	},
 	"order": 14.0,
 	"deltas": [
@@ -89,10 +89,22 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html",
 							"deltas": [
 								{
+									"type": "field",
+									"name": "ORIGINAL",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL"
+								},
+								{
 									"type": "method",
 									"name": "defineHiddenClass(byte[], boolean, MethodHandles.Lookup.ClassOption...)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClass(byte%5B%5D,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption...)"
+								},
+								{
+									"type": "method",
+									"name": "defineHiddenClassWithClassData(byte[], Object, boolean, MethodHandles.Lookup.ClassOption...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte%5B%5D,java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption...)"
 								},
 								{
 									"type": "method",
@@ -108,6 +120,18 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "classData(MethodHandles.Lookup, String, Class)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"
+								},
+								{
+									"type": "method",
+									"name": "classDataAt(MethodHandles.Lookup, String, Class, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)"
+								},
 								{
 									"type": "method",
 									"name": "dropReturn(MethodHandle)",
@@ -241,6 +265,20 @@
 									"name": "getDeclaredAnnotations()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getDeclaredAnnotations()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InvocationHandler",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/reflect/InvocationHandler.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "invokeDefault(Object, Method, Object...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object...)"
 								}
 							]
 						}
@@ -1183,6 +1221,12 @@
 									"name": "mapMultiToLong(BiConsumer)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"
+								},
+								{
+									"type": "method",
+									"name": "toList()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#toList()"
 								}
 							]
 						}
