@@ -1,0 +1,7 @@
+<script type="text/javascript">
+  function iframeLoaded() {
+    doc = document.getElementById('testtarget').contentWindow.document;
+    console.log(doc.getElementsByTagName('sandbox'));
+  }
+</script>
+<iframe style="width:100%;height:30em;" id="testtarget" src="/features/method-references/" onload="iframeLoaded()"></iframe>
