@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+27-1884"
+		"version": "16-ea+28-2065"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -5371,6 +5371,15 @@
 						},
 						{
 							"type": "method",
+							"name": "isEnqueued()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "reachabilityFence(Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"
@@ -6071,7 +6080,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -6080,7 +6090,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -6166,7 +6177,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -6175,7 +6187,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -7705,7 +7718,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8369,6 +8383,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getPermittedSubclasses()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()"
+						},
+						{
+							"type": "method",
 							"name": "getRecordComponents()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#getRecordComponents()"
@@ -8468,12 +8488,6 @@
 						},
 						{
 							"type": "method",
-							"name": "permittedSubclasses()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#permittedSubclasses()"
-						},
-						{
-							"type": "method",
 							"name": "toGenericString()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#toGenericString()"
@@ -8535,7 +8549,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8544,7 +8559,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8731,7 +8747,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8740,7 +8757,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8749,7 +8767,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8931,7 +8950,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -8940,7 +8960,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -9192,7 +9213,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -9201,7 +9223,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -10092,7 +10115,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -10101,7 +10125,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{

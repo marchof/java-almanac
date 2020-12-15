@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+27-1884"
+		"version": "16-ea+28-2065"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -596,6 +596,15 @@
 								},
 								{
 									"type": "method",
+									"name": "isEnqueued()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
 									"name": "refersTo(Object)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"
@@ -721,6 +730,24 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "Boolean(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Boolean(boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
 									"name": "describeConstable()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#describeConstable()"
@@ -736,6 +763,24 @@
 								"implements Constable"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "Byte(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Byte(byte)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "describeConstable()",
@@ -1039,6 +1084,15 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "Character(char)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
 									"name": "describeConstable()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Character.html#describeConstable()"
@@ -1112,6 +1166,12 @@
 								},
 								{
 									"type": "method",
+									"name": "getPermittedSubclasses()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()"
+								},
+								{
+									"type": "method",
 									"name": "getRecordComponents()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#getRecordComponents()"
@@ -1139,12 +1199,6 @@
 									"name": "isSealed()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#isSealed()"
-								},
-								{
-									"type": "method",
-									"name": "permittedSubclasses()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#permittedSubclasses()"
 								}
 							]
 						},
@@ -1158,6 +1212,24 @@
 								"implements ConstantDesc"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "Double(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Double(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "describeConstable()",
@@ -1259,6 +1331,33 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "Float(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(float)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
 									"name": "describeConstable()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#describeConstable()"
@@ -1297,6 +1396,24 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "Integer(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Integer(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
 									"name": "describeConstable()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#describeConstable()"
@@ -1332,6 +1449,24 @@
 								"implements ConstantDesc"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "Long(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Long(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "describeConstable()",
@@ -1561,6 +1696,24 @@
 								"implements Constable"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "Short(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Short(short)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "describeConstable()",
