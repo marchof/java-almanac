@@ -1,12 +1,12 @@
 ---
-title: Records (JEP 359)
+title: Records (JEP 395)
 copyright: Cay S. Horstmann 2020. All rights reserved.
-jep: 359
-jdkversion: 14
+jep: 395
+jdkversion: 16
 type: "sandbox"
 ---
 
-Records are a major preview feature of JDK 14. A record is an immutable class whose state is visible to all — think of a `Point` with `x` and `y` coordinates. There is no need to hide them. Records make it very easy to declare such classes. A constructor, accessors, `equals`, `hashCode`, and `toString` come for free. 
+Records were a major preview feature of JDK 14 and are an official feature since JDK 16. A record is an immutable class whose state is visible to all — think of a `Point` with `x` and `y` coordinates. There is no need to hide them. Records make it very easy to declare such classes. A constructor, accessors, `equals`, `hashCode`, and `toString` come for free. 
 
 Why Records?
 ------------
@@ -48,7 +48,7 @@ When you declare a record, you get all these goodies:
 *   Public methods `equals`, `hashCode`, `toString`. For example, `p.toString()` yields the string `"Point[x=1.0, y=0.0]"`.
 *   Serialization provided the record implements the `Serializable` interface:
     
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 import java.io.*;
 
@@ -86,7 +86,7 @@ Other Things That You Can Do
 
 A record can have any number of instance methods:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) {
    public double distance(Point q) {
@@ -107,7 +107,7 @@ public class RecordDemo {
 
 You can provide your own implementation for any of the required instance methods:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) {
     public String toString() { return "[" + x + ", " + y + "]"; }
@@ -124,7 +124,7 @@ public class RecordDemo {
 
 Static fields and methods are fine:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) {
    public static Point ORIGIN = new Point(0, 0);
@@ -145,7 +145,7 @@ public class RecordDemo {
 
 You can add constructors other than the canonical constructor. The first statement of such a constructor must invoke another constructor, so that ultimately the canonical constructor is invoked.
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) {
    public Point() { this(0, 0); }
@@ -164,7 +164,7 @@ public class RecordDemo {
 
 You can also add code to the body of the canonical constructor. When you do so, you don't repeat the parameter names and types:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) {
    public Point {
@@ -187,7 +187,7 @@ public class RecordDemo {
 
 You can even assign to instance variables in the body of the canonical constructor. Here we normalize an angle in [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) so that it is between 0 and 2π:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record PolarPoint(double r, double theta) {
    public PolarPoint {
@@ -209,7 +209,7 @@ public class RecordDemo {
 
 You can implement any interfaces:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) implements Comparable<Point> {
    public int compareTo(Point other) {
@@ -236,7 +236,7 @@ public class RecordDemo {
 
 Parameterized records — no problem:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point<T>(T x, T y) {}
 
@@ -283,7 +283,7 @@ You can also call `getRecordComponents` to get an array of `java.lang.reflect.Re
 
 To read the value of a component reflectively, you can get the accessor method from the `RecordComponent` object.
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 import java.lang.reflect.*;
 
@@ -325,7 +325,7 @@ Then a `Point` variable holds a flat 16 bytes of data, not a reference to an obj
 
 3\. Records are only as immutable as their fields are. Nothing stops you from having mutable components:
 
-{{< sandbox version="java14" preview="true" mainclass="RecordDemo" >}}
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double... coordinates) {
    public String toString() {
@@ -364,3 +364,5 @@ switch (obj) {
 ## References
 
 * [JEP 359: Records (Preview), OpenJDK](http://openjdk.java.net/jeps/359)
+* [JEP 384: Records (Second Preview), OpenJDK](http://openjdk.java.net/jeps/384)
+* [JEP 395: Records, OpenJDK](http://openjdk.java.net/jeps/395)
