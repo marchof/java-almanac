@@ -68,16 +68,65 @@
 			{
 				"name": "Zulu Builds of OpenJDK",
 				"license": "GPLv2+CE",
-				"url": "https://www.azul.com/downloads/zulu-community",
-				"platforms": ["linux-x86", "linux-x64", "linux-ppc32spe", "linux-ppc32hf", "linux-ppc64", "linux-aarch64", "linux-arm32", "macos-x64", "windows-x86", "windows-x64", "solaris-sparcv9", "solaris-x86", "solaris-x64"],
-				"versions": ["6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-6-lts",
+				"platforms": ["linux-x64", "windows-x64"],
+				"versions": ["6"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-7-lts",
+				"platforms": ["linux-x86", "linux-x64", "macos-x64", "windows-x86", "windows-x64"],
+				"versions": ["7"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-8-lts",
+				"platforms": ["alpine-x64", "linux-x86", "linux-x64", "linux-ppc64", "linux-aarch64", "linux-arm32", "macos-x64", "macos-aarch64", "windows-x86", "windows-x64", "solaris-x64", "solaris-sparcv9"],
+				"versions": ["8"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-11-lts",
+				"platforms": ["alpine-x64", "linux-x86", "linux-x64", "linux-aarch64", "linux-arm32", "macos-x64", "macos-aarch64", "windows-x86", "windows-x64"],
+				"versions": ["11"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-13-mts",
+				"platforms": ["alpine-x64", "linux-x86", "linux-x64", "linux-aarch64", "linux-arm32", "macos-x64", "macos-aarch64", "windows-x86", "windows-x64"],
+				"versions": ["13"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-15-mts",
+				"platforms": ["alpine-x64", "linux-x86", "linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64", "windows-x86", "windows-x64"],
+				"versions": ["15"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-16-ea",
+				"platforms": ["alpine-x64", "linux-x86", "linux-x64", "macos-x64", "macos-aarch64", "windows-x86", "windows-x64"],
+				"versions": ["16"]
+			},
+			{
+				"name": "Zulu Builds of OpenJDK",
+				"license": "GPLv2+CE",
+				"url": "https://www.azul.com/downloads/zulu-community/?version=java-17-ea",
+				"platforms": ["alpine-x64", "linux-x86", "linux-x64", "macos-x64", "macos-aarch64", "windows-x86", "windows-x64"],
+				"versions": ["17"]
 			},
 			{
 				"name": "Zing",
 				"license": "Commercial",
 				"url": "https://www.azul.com/products/zing/",
 				"platforms": ["linux-x64"],
-				"versions": ["7", "8", "11"]
+				"versions": ["7", "8", "11", "13"]
 			}
 		]
 	},
