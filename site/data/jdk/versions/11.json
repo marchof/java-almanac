@@ -2,11 +2,195 @@
 	"version": "11",
 	"name": "Java 11",
 	"ga": "2018/09/25",
+	"eol": "2024/10",
+	"status": "LTS",
 	"bytecode": "55.0",
 	"documentation": {
 		"notes": "https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html",
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se11/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se11/html/index.html",
 		"api": "https://docs.oracle.com/en/java/javase/11/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk/jdk11/"
+		}
+	],
+	"features": [
+		{
+			"title": "CONSTANT_Dynamic",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "309"
+				}
+			] 
+		},
+		{
+			"title": "Epsilon GC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "318"
+				}
+			] 
+		},
+		{
+			"title": "ZGC",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "333"
+				}
+			] 
+		},
+		{
+			"title": "Nest-Based Access Control",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "181"
+				}
+			] 
+		},
+		{
+			"title": "Low-Overhead Heap Profiling",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "331"
+				}
+			] 
+		},
+		{
+			"title": "Improve Aarch64 Intrinsics",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "315"
+				}
+			] 
+		},
+		{
+			"title": "Local Variable Syntax for Lambda Parameters",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "323"
+				}
+			] 
+		},
+		{
+			"title": "HTTP Client",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "321"
+				}
+			] 
+		},
+		{
+			"title": "Java EE and CORBA removed",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "320"
+				}
+			] 
+		},
+		{
+			"title": "Unicode 10 Support",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "327"
+				}
+			] 
+		},
+		{
+			"title": "Nashorn JavaScript Engine deprecated",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "335"
+				}
+			] 
+		},
+		{
+			"title": "New Cryptographic Algorithms",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "324"
+				},
+				{
+					"type": "JEP",
+					"identifier": "329"
+				}
+			] 
+		},
+		{
+			"title": "TLS 1.3",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "332"
+				}
+			] 
+		},
+		{
+			"title": "Single Source File Launch",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "330"
+				}
+			] 
+		},
+		{
+			"title": "Flight Recorder",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "328"
+				}
+			] 
+		},
+		{
+			"title": "Pack200 deprecated",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "336"
+				}
+			] 
+		},
+		{
+			"title": "No more frames in JavaDoc",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JDKIssue",
+					"identifier": "8196202"
+				}
+			] 
+		}
+	]
 }

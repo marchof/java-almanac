@@ -1,0 +1,45 @@
+{
+	"base": {
+		"feature": "16",
+		"vendor": "open",
+		"version": "16-ea+29-2091"
+	},
+	"target": {
+		"feature": "17",
+		"vendor": "open",
+		"version": "17-ea+2-51"
+	},
+	"order": 16.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_17",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_17"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

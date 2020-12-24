@@ -2,11 +2,73 @@
 	"version": "13",
 	"name": "Java 13",
 	"ga": "2019/09/17",
+	"eol": "2020/03/17",
+	"status": "EOL",
 	"bytecode": "57.0",
 	"documentation": {
-		"notes": "https://www.oracle.com/technetwork/java/13-relnote-issues-5460548.html",
+		"notes": "https://www.oracle.com/java/technologies/javase/13-relnote-issues.html",
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se13/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se13/html/index.html",
 		"api": "https://docs.oracle.com/en/java/javase/13/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk/jdk13/"
+		}
+	],
+	"features": [
+		{
+			"title": "Dynamic CDS Archives",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "350"
+				}
+			] 
+		},
+		{
+			"title": "ZGC: Uncommit Unused Memory",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "351"
+				}
+			] 
+		},
+		{
+			"title": "Switch Expressions",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "354"
+				}
+			] 
+		},
+		{
+			"title": "Text Blocks",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "355"
+				}
+			] 
+		},
+		{
+			"title": "Reimplement the Legacy Socket API",
+			"category": "internal",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "353"
+				}
+			] 
+		}
+	]
 }

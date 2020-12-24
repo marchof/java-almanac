@@ -2,6 +2,14 @@
 
 <ul>
 
+<li>All JDK versions have valid status.</li>
+<ul>
+{{ range $jdkversions }}
+  {{ if not (index $.Site.Data.jdk.status .status) }}{{ errorf "Unknown Status %s" .status }}{{ end }}
+  <li>{{ .version }} / {{ .status }} &check;</li>
+{{ end }}
+</ul>
+
 <li>All products of all vendors have valid JDK version references.</li>
 <ul>
 {{ range $.Page.Site.Data.jdk.vendors }}
@@ -15,13 +23,23 @@
 {{ end }}
 </ul>
 
+<li>All JDK Features have valid categories.</li>
+<ul>
+{{ range $jdkversions }}
+  {{ range .features }}
+    {{ if not (index $.Page.Site.Data.jdk.featurecategories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
+    <li>{{ .title }} &check;</li>
+  {{ end }}
+{{ end }}
+</ul>
+
 <li>All API diffs have valid JDK version references.</li>
 <ul>
 {{ range $jdkversions }}
-  {{ range  .apidiff }}
-    {{ if not (index $jdkversions .base.version) }}{{ errorf "Unknown JDK %s" .base.version }}{{ end }}
-    {{ if not (index $jdkversions .target.version) }}{{ errorf "Unknown JDK %s" .target.version }}{{ end }}
-    <li>{{ .base.build }} / {{ .target.build }} &check;</li>
+  {{ range .apidiff }}
+    {{ if not (index $jdkversions .base.feature) }}{{ errorf "Unknown JDK %s" .base.feature }}{{ end }}
+    {{ if not (index $jdkversions .target.feature) }}{{ errorf "Unknown JDK %s" .target.feature }}{{ end }}
+    <li>{{ .base.version }} / {{ .target.version }} &check;</li>
   {{ end }}
 {{ end }}
 </ul>

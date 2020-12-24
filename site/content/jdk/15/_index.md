@@ -5,21 +5,7 @@ type: sandbox
 
 {{< jdkdetails "15" >}}
 
-## New Features
-
-### JVM
-
-
-### Language
-
-* Text Blocks ([JEP 378](http://openjdk.java.net/jeps/378))
-
-### Library
-
-
-### Tools
-
-
+{{< /jdkdetails >}}
 
 ## Sandbox
 

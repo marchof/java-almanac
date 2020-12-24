@@ -2,11 +2,184 @@
 	"version": "14",
 	"name": "Java 14",
 	"ga": "2020/03/17",
+	"eol": "2020/09/15",
+	"status": "EOL",
 	"bytecode": "58.0",
 	"documentation": {
-		"notes": "https://www.oracle.com/technetwork/java/javase/14-relnote-issues-5809570.html",
+		"notes": "https://www.oracle.com/java/technologies/javase/14-relnote-issues.html",
 		"vm": "https://docs.oracle.com/javase/specs/jvms/se14/html/index.html",
 		"lang": "https://docs.oracle.com/javase/specs/jls/se14/html/index.html",
 		"api": "https://docs.oracle.com/en/java/javase/14/docs/api/"
-	}
+	},
+	"scm": [
+		{
+			"type": "hg",
+			"url": "https://hg.openjdk.java.net/jdk/jdk14/"
+		}
+	],
+	"features": [
+		{
+			"title": "NUMA-Aware Memory Allocation for G1",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "345"
+				}
+			] 
+		},
+		{
+			"title": "JFR Event Streaming",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "349"
+				}
+			] 
+		},
+		{
+			"title": "Helpful NullPointerExceptions",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "358"
+				}
+			] 
+		},
+		{
+			"title": "Deprecate the Solaris and SPARC Ports",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "362"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Concurrent Mark Sweep (CMS) Garbage Collector",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "363"
+				}
+			] 
+		},
+		{
+			"title": "ZGC on macOS",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "364"
+				}
+			] 
+		},
+		{
+			"title": "ZGC on Windows",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "365"
+				}
+			] 
+		},
+		{
+			"title": "Deprecate the ParallelScavenge + SerialOld GC Combination",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "366"
+				}
+			] 
+		},
+		{
+			"title": "Switch Expressions",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "361"
+				}
+			] 
+		},
+		{
+			"title": "Records",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "359"
+				}
+			] 
+		},
+		{
+			"title": "Text Blocks",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "368"
+				}
+			] 
+		},
+		{
+			"title": "Pattern Matching for instanceof",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "305"
+				}
+			] 
+		},
+		{
+			"title": "Non-Volatile Mapped Byte Buffers",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "352"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Pack200 APIs",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "367"
+				}
+			] 
+		},
+		{
+			"title": "Remove the Pack200 Tools",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "367"
+				}
+			] 
+		},
+		{
+			"title": "Packaging Tool (Incubator)",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "343"
+				}
+			] 
+		}
+	]
 }
