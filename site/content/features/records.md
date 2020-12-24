@@ -143,7 +143,77 @@ public class RecordDemo {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-You can add constructors other than the canonical constructor. The first statement of such a constructor must invoke another constructor, so that ultimately the canonical constructor is invoked.
+
+You can implement any interfaces:
+
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
+{{< sandboxsource "RecordDemo.java" >}}
+record Point(double x, double y) implements Comparable<Point> {
+   public int compareTo(Point other) {
+      int dx = Double.compare(x, other.x);
+      return dx != 0 ? dx : Double.compare(y, other.y);
+   }
+}
+
+public class RecordDemo {
+   public static void main(String[] args) {
+      Point[] points = {
+         new Point(4, 3),
+         new Point(3, 5),
+         new Point(3, 4)
+      };
+      java.util.Arrays.sort(points);
+      System.out.println(java.util.Arrays.toString(points));
+   }
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+Records can be local—defined inside a method—just like local classes: 
+
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
+{{< sandboxsource "RecordDemo.java" >}}
+import java.util.*;
+import java.util.stream.*;
+
+public class RecordDemo {
+   public static void main(String[] args) {
+      record Point(double x, double y) {}
+      Random gen = new Random();
+      List<Point> points = Stream.generate(() -> new Point(gen.nextDouble(), gen.nextDouble()))
+         .limit(10)      
+         .sorted(Comparator.comparing(Point::x).thenComparing(Point::y))
+         .toList();
+      System.out.println("Ten random points, sorted for your convenience: " + points);
+   }
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+
+Parameterized records — no problem:
+
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
+{{< sandboxsource "RecordDemo.java" >}}
+record Point<T>(T x, T y) {}
+
+public class RecordDemo {
+   public static void main(String[] args) {
+      var p = new Point<Double>(3.0, 4.0);
+      System.out.println("Double coordinates: " + p);
+      System.out.println("String coordinates: " + new Point<String>("three", "four"));
+      System.out.println("Point coordinates: " + new Point<Point<Double>>(p, p));
+   }
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+Constructors: Canonical, Custom, and Compact
+--------------------------------------------
+
+Every record has a canonical constructor that sets all instance variables.
+
+You can add "custom" constructors in addition to the canonical constructor. The first statement of such a constructor must invoke another constructor, so that ultimately the canonical constructor is invoked. The following record has two constructors: the canonical constructor and a custom constructor yielding the origin.
 
 {{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
@@ -162,7 +232,30 @@ public class RecordDemo {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-You can also add code to the body of the canonical constructor. When you do so, you don't repeat the parameter names and types:
+You can also add code to the body of the canonical constructor. When you do so, you can declare the constructor in the usual way:
+
+{{< sandbox version="java16" mainclass="RecordDemo" >}}
+{{< sandboxsource "RecordDemo.java" >}}
+record Point(double x, double y) {
+   public Point(double x, double y) {
+      if (x == y || x == -y) { onDiagonal++; } 
+   }
+   public static int onDiagonal = 0;
+}
+
+public class RecordDemo {
+   public static void main(String[] args) {
+      Point p = new Point(3, 4);
+      Point q = new Point(3, -3);
+      Point r = new Point(0, 0);
+      
+      System.out.println("Points on diagonal lines: " + Point.onDiagonal);
+   }
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+This is rather verbose since the instance variables and the constructor parameters are identical. To avoid the repetition, you can use a "compact" form. Simply omit the constructor parameters:
 
 {{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
@@ -185,7 +278,7 @@ public class RecordDemo {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-You can even assign to instance variables in the body of the canonical constructor. Here we normalize an angle in [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) so that it is between 0 and 2π:
+You can modify the constructor parameters before they are assigned to the instance variables. Here we normalize an angle in [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) so that it is between 0 and 2π:
 
 {{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
@@ -205,51 +298,8 @@ public class RecordDemo {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
+Note that the assignment of the parameters `r` and `theta` to the instance variables `this.r` and `this.theta` happens *at the end* of the canonical constructor. You cannot read or modify the instance variables in the body of the canonical constructor.
 
-
-You can implement any interfaces:
-
-{{< sandbox version="java16" mainclass="RecordDemo" >}}
-{{< sandboxsource "RecordDemo.java" >}}
-record Point(double x, double y) implements Comparable<Point> {
-   public int compareTo(Point other) {
-      int dx = Double.compare(x, other.x);
-      return dx != 0 ? dx : Double.compare(y, other.y);
-   }
-}
-
-public class RecordDemo {
-   public static void main(String[] args) throws InterruptedException {
-      Point[] points = {
-         new Point(4, 3),
-         new Point(3, 5),
-         new Point(3, 4)
-      };
-      java.util.Arrays.sort(points);
-      System.out.println(java.util.Arrays.toString(points));
-   }
-}
-{{< /sandboxsource >}}
-{{< /sandbox >}}
-```
-```
-
-Parameterized records — no problem:
-
-{{< sandbox version="java16" mainclass="RecordDemo" >}}
-{{< sandboxsource "RecordDemo.java" >}}
-record Point<T>(T x, T y) {}
-
-public class RecordDemo {
-   public static void main(String[] args) throws InterruptedException {
-      var p = new Point<Double>(3.0, 4.0);
-      System.out.println("Double coordinates: " + p);
-      System.out.println("String coordinates: " + new Point<String>("three", "four"));
-      System.out.println("Point coordinates: " + new Point<Point<Double>>(p, p));
-   }
-}
-{{< /sandboxsource >}}
-{{< /sandbox >}}
 
 What You Can't Do
 -----------------
@@ -260,14 +310,14 @@ You cannot extend a record — it is implicitly `final`.
 
 A record cannot extend another class, not even another record. (Any record implicitly extends `java.lang.Record`, just like any enumerated type implicitly extends `java.lang.Enum`. The `Record` superclass has no state and only abstract `equals`, `hashCode`, and `toString` methods.)
 
-There are no “inner records”. A record that is defined inside another class is automatically `static`. That is, it doesn't have a reference to its enclosing class (which would be an additional instance variable).
+There are no “inner records”. A record that is defined inside another class or method is automatically `static`. That is, it doesn't have a reference to its enclosing class (which would be an additional instance variable).
 
 The canonical constructor cannot throw checked exceptions:
 
 ```
 record SleepyPoint(double x, double y) {
    public SleepyPoint throws InterruptedException { // Error
-     Thread.sleep(1000); 
+      Thread.sleep(1000); 
    }
 }
 ```
