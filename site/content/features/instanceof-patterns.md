@@ -1,5 +1,5 @@
 ---
-title: Pattern matching for instanceof (JEP 305)
+title: Pattern matching for instanceof (JEP 394)
 copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 394
 jdkversion: 16
@@ -197,8 +197,6 @@ Java will, in time, have a syntax more or less like this. For now, the `instance
 ## References
 
 * [JEP 305: Pattern Matching for instanceof (Preview), OpenJDK](http://openjdk.java.net/jeps/305)
-
 * [JEP 375: Pattern Matching for instanceof (Second Preview), OpenJDK](http://openjdk.java.net/jeps/375)
-
 * [JEP 394: Pattern Matching for instanceof, OpenJDK](http://openjdk.java.net/jeps/394)
 
