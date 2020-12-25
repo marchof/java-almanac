@@ -368,7 +368,7 @@ In this case, the shortest whitespace prefix has length 3 (in the last line), an
 
 The third line is entirely blank because trailing whitespace is removed. Note that it doesn't matter that it only had two spaces. Entirely blank lines are ignored when measuring the indent. Except for the last one. Its whitespace is considered, before it is discarded, being a blank line preceding the closing `"""`. 
 
-I am not making this up. Here is the program, with spaces and tabs displayed in the sandbox editor:
+I am not making this up. Here is the program, the sandbox editor shows spaces and tabs:
 
 {{< sandbox version=java15 preview="true" mainclass="Sandbox" show-invisibles="true">}}
 {{< sandboxsource "Sandbox.java" >}}
