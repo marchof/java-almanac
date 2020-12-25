@@ -406,7 +406,7 @@ This is not a good idea, but the Java language won't stop you. In general, Java 
 
 ```
 switch (obj) { 
-   case instanceof Point(x, 0) p: ... // Maybe the future - not in JDK 14
+   case instanceof Point(x, 0) p: ... // Maybe the future - not in JDK 16
    ...
 }
 ```
