@@ -232,13 +232,15 @@ public class RecordDemo {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-You can also add code to the body of the canonical constructor. When you do so, you can declare the constructor in the usual way:
+You can also provide your own implementation of the canonical constructor. When you do so, you can declare the constructor in the usual way:
 
 {{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
 record Point(double x, double y) {
    public Point(double x, double y) {
       if (x == y || x == -y) { onDiagonal++; } 
+      this.x = x;
+      this.y = y;
    }
    public static int onDiagonal = 0;
 }
@@ -255,7 +257,7 @@ public class RecordDemo {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-This is rather verbose since the instance variables and the constructor parameters are identical. To avoid the repetition, you can use a "compact" form. Simply omit the constructor parameters:
+This is rather verbose and not what you want to do in practice. Instead, you should use the "compact" form. Omit the constructor parameters and the instance variable initialization:
 
 {{< sandbox version="java16" mainclass="RecordDemo" >}}
 {{< sandboxsource "RecordDemo.java" >}}
@@ -404,7 +406,7 @@ This is not a good idea, but the Java language won't stop you. In general, Java 
 
 ```
 switch (obj) { 
-   case instanceof Point(x, 0) p: ... // Maybe the future - not in JDK 14
+   case instanceof Point(x, 0) p: ... // Maybe the future - not in JDK 16
    ...
 }
 ```
