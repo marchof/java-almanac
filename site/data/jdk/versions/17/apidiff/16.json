@@ -7,10 +7,32 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+2-51"
+		"version": "17-ea+3-125"
 	},
 	"order": 16.0,
 	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HexFormat",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/HexFormat.html"
+						}
+					]
+				}
+			]
+		},
 		{
 			"type": "module",
 			"name": "java.compiler",
@@ -34,6 +56,36 @@
 									"name": "RELEASE_17",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_17"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.swing",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "JPasswordField",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JPasswordField.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setText(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
 								}
 							]
 						}

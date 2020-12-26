@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+2-51"
+		"version": "17-ea+3-125"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -11415,6 +11415,12 @@
 				},
 				{
 					"type": "class",
+					"name": "HexFormat",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/HexFormat.html"
+				},
+				{
+					"type": "class",
 					"name": "IntSummaryStatistics",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/IntSummaryStatistics.html",
@@ -17047,6 +17053,20 @@
 							"name": "getAccessibleActionDescription(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JList.AccessibleJList.AccessibleJListChild.html#getAccessibleActionDescription(int)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JPasswordField",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JPasswordField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setText(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
 						}
 					]
 				},
