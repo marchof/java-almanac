@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+29-2091"
+		"version": "16-ea+30-2130"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -25367,6 +25367,20 @@
 							"name": "getSelectedValuesList()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JList.html#getSelectedValuesList()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JPasswordField",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JPasswordField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setText(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
 						}
 					]
 				},
