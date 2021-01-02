@@ -15,12 +15,13 @@ Instantly compile and run Java 17 snippets without a local Java installation.
 
 {{< sandbox version="java17" mainclass="Java17" preview="true" >}}
 {{< sandboxsource "Java17.java" >}}
-import javax.lang.model.SourceVersion;
+import java.util.HexFormat;
 
 public class Java17 {
     
     public static void main(String[] args) {
-        System.out.printf("Hello %s!", SourceVersion.RELEASE_17);
+        var fmt = HexFormat.ofDelimiter(", ").withPrefix("0x");
+        System.out.println(fmt.formatHex("I ❤️ Java".getBytes()));
     }
 
 }
