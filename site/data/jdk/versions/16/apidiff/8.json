@@ -7,10 +7,54 @@
 	"target": {
 		"feature": "16",
 		"vendor": "open",
-		"version": "16-ea+31-2150"
+		"version": "16-ea+32-2190"
 	},
 	"order": 8.0,
 	"deltas": [
+		{
+			"type": "package",
+			"name": "java.applet",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/applet/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Applet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/applet/Applet.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletContext",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/applet/AppletContext.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletStub",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/applet/AppletStub.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AudioClip",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/applet/AudioClip.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
 		{
 			"type": "package",
 			"name": "java.awt.color",
@@ -1203,6 +1247,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Event",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Event.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileDialog",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/FileDialog.html",
@@ -1752,6 +1805,15 @@
 								"public"
 							]
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletInitializer",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/AppletInitializer.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -3951,6 +4013,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Compiler.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7223,6 +7286,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/Activatable.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7232,6 +7296,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivateFailedException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7241,6 +7306,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7250,6 +7316,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7259,6 +7326,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7268,6 +7336,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7277,6 +7346,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7286,6 +7356,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7295,6 +7366,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationID.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7304,6 +7376,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/UnknownGroupException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7313,6 +7386,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/UnknownObjectException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7322,6 +7396,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7331,6 +7406,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7340,6 +7416,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7349,6 +7426,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.rmi/java/rmi/activation/Activator.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				}
@@ -10409,6 +10487,15 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "LoggingMXBean",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LoggingMXBean.html",
+					"addedTags": [
+						"deprecated"
+					]
 				}
 			]
 		},
@@ -11547,6 +11634,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Observable",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Observable.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "OptionalDouble",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/OptionalDouble.html",
@@ -12289,6 +12385,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Observer",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Observer.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -13935,6 +14040,15 @@
 				},
 				{
 					"type": "class",
+					"name": "RMIIIOPServerImpl",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management.rmi/javax/management/remote/rmi/RMIIIOPServerImpl.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "_RMIConnectionImpl_Tie",
 					"status": "removed"
 				},
@@ -14419,6 +14533,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/CertificateEncodingException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14428,6 +14543,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/CertificateException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14437,6 +14553,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/CertificateExpiredException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14446,6 +14563,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/CertificateNotYetValidException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14455,6 +14573,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/CertificateParsingException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14464,6 +14583,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/Certificate.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14473,6 +14593,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/javax/security/cert/X509Certificate.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				}
@@ -15200,6 +15321,24 @@
 							"name": "bumps",
 							"status": "removed"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.FileRenderer",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FileRenderer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.SingleClickListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.SingleClickListener.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -16910,6 +17049,15 @@
 				},
 				{
 					"type": "class",
+					"name": "JApplet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JApplet.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "JColorChooser",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JColorChooser.html",
@@ -16920,6 +17068,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color,boolean)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JComponent.AccessibleJComponent.AccessibleFocusHandler",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.AccessibleFocusHandler.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{

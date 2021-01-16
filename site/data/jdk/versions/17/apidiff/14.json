@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+4-165"
+		"version": "17-ea+5-266"
 	},
 	"order": 14.0,
 	"deltas": [
@@ -826,12 +826,7 @@
 								{
 									"type": "method",
 									"name": "URLDecoder()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/URLDecoder.html#%3Cinit%3E()",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								}
 							]
 						},
@@ -1306,6 +1301,40 @@
 									"name": "appendDayPeriodText(TextStyle)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ForkJoinPool",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "invokeAll(Collection, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"
+								},
+								{
+									"type": "method",
+									"name": "invokeAny(Collection)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection)"
+								},
+								{
+									"type": "method",
+									"name": "invokeAny(Collection, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"
 								}
 							]
 						}
@@ -4231,6 +4260,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/Activatable.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4240,6 +4270,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivateFailedException.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4249,6 +4280,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4258,6 +4290,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationException.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4267,6 +4300,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4276,6 +4310,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4285,6 +4320,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4294,6 +4330,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4303,6 +4340,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationID.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4312,6 +4350,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/UnknownGroupException.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4321,6 +4360,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/UnknownObjectException.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4330,6 +4370,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4339,6 +4380,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4348,6 +4390,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -4357,6 +4400,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/Activator.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						}

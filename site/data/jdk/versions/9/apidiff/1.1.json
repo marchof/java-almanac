@@ -26,8 +26,11 @@
 				{
 					"type": "class",
 					"name": "Applet",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/applet/Applet.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -64,7 +67,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/applet/AppletContext.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -93,7 +97,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/applet/AppletStub.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -102,7 +107,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/applet/AudioClip.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				}
 			]
@@ -5228,6 +5234,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Event",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/awt/Event.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileDialog",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/awt/FileDialog.html",
@@ -9634,6 +9649,15 @@
 				},
 				{
 					"type": "class",
+					"name": "LineNumberInputStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/io/LineNumberInputStream.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "ObjectInputFilter.Config",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/io/ObjectInputFilter.Config.html"
@@ -10294,6 +10318,15 @@
 					"name": "SerializablePermission",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/io/SerializablePermission.html"
+				},
+				{
+					"type": "class",
+					"name": "StringBufferInputStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/io/StringBufferInputStream.html",
+					"addedTags": [
+						"deprecated"
+					]
 				},
 				{
 					"type": "class",
@@ -12409,6 +12442,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/lang/Compiler.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -17537,7 +17571,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/registry/RegistryHandler.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -17580,8 +17615,11 @@
 				{
 					"type": "class",
 					"name": "LogStream",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/LogStream.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -17683,8 +17721,11 @@
 				{
 					"type": "class",
 					"name": "Operation",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/Operation.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -17830,8 +17871,11 @@
 				{
 					"type": "class",
 					"name": "RemoteStub",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/RemoteStub.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -17861,8 +17905,11 @@
 				{
 					"type": "class",
 					"name": "SkeletonMismatchException",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/SkeletonMismatchException.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -17873,6 +17920,24 @@
 								"deprecated"
 							]
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SkeletonNotFoundException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/SkeletonNotFoundException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketSecurityException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/SocketSecurityException.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -17940,7 +18005,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/LoaderHandler.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -17999,7 +18065,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/RemoteCall.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18123,7 +18190,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/ServerRef.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18140,7 +18208,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/server/Skeleton.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18242,8 +18311,11 @@
 				{
 					"type": "class",
 					"name": "RMISecurityException",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/RMISecurityException.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18268,8 +18340,11 @@
 				{
 					"type": "class",
 					"name": "RMISecurityManager",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/RMISecurityManager.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18440,8 +18515,11 @@
 				{
 					"type": "class",
 					"name": "ServerRuntimeException",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/rmi/ServerRuntimeException.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18472,12 +18550,40 @@
 			"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/package-summary.html",
 			"deltas": [
 				{
+					"type": "class",
+					"name": "AclNotFoundException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/AclNotFoundException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "LastOwnerException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/LastOwnerException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotOwnerException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/NotOwnerException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
 					"type": "interface",
 					"name": "AclEntry",
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/AclEntry.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -18486,7 +18592,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/Acl.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -18495,7 +18602,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/Group.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -18504,7 +18612,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/Owner.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -18513,7 +18622,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/acl/Permission.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				}
 			]
@@ -18792,6 +18902,24 @@
 					"name": "GuardedObject",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/GuardedObject.html"
+				},
+				{
+					"type": "class",
+					"name": "IdentityScope",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/IdentityScope.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Identity",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/Identity.html",
+					"addedTags": [
+						"deprecated"
+					]
 				},
 				{
 					"type": "class",
@@ -19731,6 +19859,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Signer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/Signer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "Timestamp",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/Timestamp.html"
@@ -19789,7 +19926,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/security/Certificate.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -25894,6 +26032,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Observable",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/util/Observable.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "OptionalDouble",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/util/OptionalDouble.html"
@@ -27215,7 +27362,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/javase/9/docs/api/java/util/Observer.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
