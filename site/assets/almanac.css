@@ -334,10 +334,19 @@ ul.tag li.removedtag {
 [v-cloak] > * { display:none }
 [v-cloak]::before { content: "loading…" }
 div.tabs {
+	position: relative;
 	background-color: #eee;
 	padding-top: 3px;
 	padding-left: 6px;
 	padding-right: 6px;
+}
+div.tabs span.infotext {
+	position: absolute;
+	right: 4px;
+	bottom: 0px;
+	color: #999;
+	font-size: 9pt;
+	cursor: help;
 }
 div.tabs ul {
 	list-style: none;
