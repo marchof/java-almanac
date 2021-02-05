@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<downloadlist></downloadlist>
+
+<p>
+  Data is provided by <a href="https://foojay.io">foojay.io</a>'s discovery API.
+</p>
+{{ partial "downloadscript.html" . }}
+{{ partial "footer.html" . }}
