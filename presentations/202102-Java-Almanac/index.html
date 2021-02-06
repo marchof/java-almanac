@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Java Version Almanac</title>
+    <meta charset="utf-8">
+    <style>
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('remark/droidserif.ttf');
+      }
+      @font-face{
+        font-family: 'Yanone Kaffeesatz';
+        src: url('remark/yanonekaffeesatz.ttf');
+      }
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('remark/ubuntumono.ttf');
+      }
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      li {
+        line-height: 175%;
+      }
+      .remark-slide-content {
+        font-size: 32px;
+      }
+      code.remark-code {
+        font-size: 28px;
+        line-height: 110%;
+      }
+      a, a:visited {
+        color: #589;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .left {
+        float: left;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+class: center, middle
+
+# The Java Version Almanac
+
+## [javaalmanac.io](https://javaalmanac.io/)
+
+Marc R. Hoffmann, [@marcandsweep](https://twitter.com/marcandsweep)
+
+FOSDEM 2021
+
+Online, 06.02.2021
+
+
+
+---
+# About me
+
+.left[
+  ![scale 50px](diagrams/marc.jpg)
+]
+
+* Java hacker since release of [Java 1.0.2](https://javaalmanac.io/jdk/1.0/api/)
+* FOSS JaCoCo / EclEmma, OpenJDK
+* Conference speaker
+* Unconference unorganizer (JCrete)
+* Java Champion
+
+
+
+---
+# In the Old Days of Java
+
+![Release Timeline](diagrams/javatimeline1.svg)
+
+
+
+---
+# 2016: "Java is doomed! It evolves so slowly! Every good idea takes ages to be available!"
+--
+
+# 2018: "Java is doomed! It evolves too quickly! Nobody will be able to keep pace!"
+
+Daniel Fernández, https://twitter.com/danfenz/status/976376717811077121
+
+
+
+---
+# The New Release Schedule of Java
+
+![Release Timeline](diagrams/javatimeline2.svg)
+
+
+
+---
+# Motivation
+
+* Java releases every 6 month
+* New language features?
+* New APIs?
+* New JVM/Bytecode features?
+
+
+---
+# Test Matrix for JaCoCo...
+
+![Release Timeline](diagrams/jacoco-builds.png)
+
+
+
+---
+# How it all began ...
+
+* Personal notes from/for presentations
+--
+
+* Simple GitHub [repo with Markdown docs](https://github.com/marchof/java-almanac/tree/9b1098e542a365de334853ab67f86bb96fdff595) 
+--
+
+* Why Markdown?
+  * remarkjs presentations
+  * Entire [books](https://github.com/forax/java-guide#java-guide) written in Markdown
+
+--
+* Website [javaalmanac.io](https://javaalmanac.io/)
+
+
+
+---
+# Objectives
+
+* One-click reference
+* API diffs
+* In-depth content
+* Vendor neutral (including commercial distributions)
+* Automation
+  * Data collection & update
+  * Publishing
+
+
+
+---
+# javaalmanac.io Architecture
+
+![Architecture](diagrams/architecture.svg)
+
+
+
+---
+# Data Driven Approach
+
+* Release infos: [JSON](https://github.com/marchof/java-almanac/blob/master/site/data/jdk/versions/11.json) &rarr; [HTML](https://javaalmanac.io/jdk/11/)
+* API diffs: [JSON](https://github.com/marchof/java-almanac/blob/master/site/data/jdk/versions/9/apidiff/8.json) &rarr; [HTML](https://javaalmanac.io/jdk/9/apidiff/8/)
+* Downloads: [JSON](https://github.com/marchof/java-almanac/blob/master/site/data/jdk/vendors/adoptopenjdk.json) &rarr; [HTML](https://javaalmanac.io/jdk/11/)
+* Bytecode: [JSON](https://github.com/marchof/java-almanac/blob/master/site/data/bytecode/opcodes.json) &rarr; [HTML](https://javaalmanac.io/bytecode/)
+
+
+
+---
+# Collecting Data
+
+--
+* Manual Collections
+
+--
+* API Diffs Collected from Dockerized JDKs
+  * `adoptopenjdk/openjdk11`
+  * `openjdk:17`
+  * [Matrix builds](https://github.com/marchof/io.javaalmanac.jdkapi/blob/master/.github/workflows/update.yml#L35) to the rescue!
+
+--
+* Vendors
+  * REST APIs
+  * HTML scraping
+
+
+
+---
+# HTML Scraping with jsoup
+
+CSS selector syntax for quick element selection
+
+```java
+Document doc = Jsoup.connect("https://javaalmanac.io/").get();
+
+for (Element link : doc.select("tbody tr td a:contains(API)")) {
+    System.out.println(link.attr("href"));
+}
+```
+
+
+
+---
+# Sandboxes Frontend
+
+* Embedded on the [web site](https://javaalmanac.io/jdk/17/)
+* Snippets embedddable in [Markdown](https://raw.githubusercontent.com/marchof/java-almanac/master/site/content/jdk/17/_index.md)
+* Ace editor, Vue framework
+
+
+
+---
+# Sandboxes Backend
+
+* Compiler & Runtime
+* Java Docker Images
+* [Compiler API](https://github.com/marchof/io.javaalmanac.sandbox/blob/master/src/main/java/io/javaalmanac/sandbox/impl/InMemoryCompiler.java#L55)
+* Again: [Matrix Builds](https://github.com/marchof/io.javaalmanac.sandbox/blob/master/.github/workflows/cd.yml#L34) and
+  [Docker arguments](https://github.com/marchof/io.javaalmanac.sandbox/blob/master/docker/Dockerfile) to the rescue!
+* Nightly [updates](https://java17.sandbox.javaalmanac.io/version) with GitHub Actions
+
+
+
+---
+# Feature Articles
+
+* In-depth [description](https://javaalmanac.io/features/) of features
+* Collaboration with [Cay Horstmann](https://horstmann.com/unblog/index.html)
+
+
+
+---
+# License
+
+* Creative Commons
+* CC BY-SA 4.0
+* You are free to share and adapt the data
+* All Content in public GitHub repo
+
+
+
+---
+# Collaboration with [foojay.io](https://foojay.io/)
+
+* Data used to render the *Java Version Almanac* section
+* Share data about OpenJDK vendors and products
+
+
+
+---
+# Outlook
+
+--
+* [JavaDoc diffs](https://cr.openjdk.java.net/~mr/jigsaw/spec/diff/index.html)
+
+--
+* API Examples
+
+--
+* Data REST APIs
+
+--
+* Oak Sandbox
+
+
+
+---
+# Thank you!
+
+# Questions?
+
+Marc Hoffmann, @marcandsweep
+
+
+
+    </textarea>
+    <script src="remark/remark.min.js">
+    </script>
+    <script>
+      remark.create({
+        ratio: '16:9'
+      });
+    </script>
+  </body>
+</html>
