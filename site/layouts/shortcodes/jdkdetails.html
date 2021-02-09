@@ -116,13 +116,14 @@
       <th>Vendor</th>
       <th>Product</th>
       <th>License</th>
-      <th>Platforms</th>
+      <th>Platform Downloads</th>
     </tr>
   </thead>
   <tbody>
   {{- range $.Page.Site.Data.jdk.vendors }}
     {{- $vendor := . }}
     {{- range .products }}
+    {{- $product := . }}
     {{- if in .versions $version }}
     <tr>
       <td><a href="{{ $vendor.url }}">{{ $vendor.name }}</a></td>
@@ -131,7 +132,7 @@
       <td>
         <ul class="tag architecture">
           {{- range .platforms }}
-            <li>{{ . }}</li>
+            <li><a href="../download/#product={{ $product.id }}&version={{ $version }}&platform={{ . }}">{{ . }}</a></li>
           {{- end }}
         </ul>
       </td>
