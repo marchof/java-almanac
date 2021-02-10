@@ -1,11 +1,11 @@
-{{ partial "header.html" . }}
-{{ $opcode := .Params.Opcode }}
-{{ with (index $.Site.Data.bytecode.opcodes $opcode) }}
+{{- partial "header.html" . }}
+{{- $opcode := .Params.Opcode }}
+{{- with (index $.Site.Data.bytecode.opcodes $opcode) }}
 
 <h1>Opcode <code>{{ .mnemonic }}</code></h1>
 
 <p>
-{{ markdownify .shortdescr }}
+{{- markdownify .shortdescr }}
 </p>
 
 <table>
@@ -33,6 +33,6 @@
   <a href="{{ $.Site.Params.Sourcebase }}data/bytecode/opcodes.json">Data Source</a>
 </div>
 
-{{ end }}
-{{ partial "footer.html" . }}
+{{- end }}
+{{- partial "footer.html" . }}
 

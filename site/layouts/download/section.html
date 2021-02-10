@@ -1,6 +1,6 @@
-{{ partial "header.html" . }}
+{{- partial "header.html" . }}
 <h1>{{ .Title }}</h1>
-{{ .Content }}
+{{- .Content }}
 
 <p>
   Find your Java JDKs and JREs packages for direct download:
@@ -11,5 +11,5 @@
 <p>
   Data is provided by <a href="https://foojay.io">foojay.io</a>'s discovery API.
 </p>
-{{ partial "downloadscript.html" . }}
-{{ partial "footer.html" . }}
+{{- partial "downloadscript.html" . }}
+{{- partial "footer.html" . }}
