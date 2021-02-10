@@ -1,7 +1,5 @@
-{{ $version := index .Params 0 }}
-
-{{ with (index $.Site.Data.jdk.versions $version) }}
-
+{{- $version := index .Params 0 }}
+{{- with (index $.Site.Data.jdk.versions $version) }}
 <table>
   <tbody>
     <tr>
@@ -65,8 +63,7 @@
     </tr>
   </tbody>
 </table>
-
-{{ end }}
+{{- end }}
 
 <div class="datasource">
   <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $version }}.json">Data Source</a>
@@ -132,7 +129,11 @@
       <td>
         <ul class="tag architecture">
           {{- range .platforms }}
-            <li><a href="../download/#product={{ $product.id }}&version={{ $version }}&platform={{ . }}">{{ . }}</a></li>
+            {{- if $product.foojaydownload }}
+              <li><a href="../download/#product={{ $product.id }}&version={{ $version }}&platform={{ . }}">{{ . }}</a></li>
+            {{- else }}
+              <li>{{ . }}</li>
+            {{- end }}
           {{- end }}
         </ul>
       </td>
