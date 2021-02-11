@@ -1,10 +1,11 @@
-<table style="width:100%;">
+<table style="width:100%;white-space:nowrap;">
   <thead>
     <tr>
       <th>Details</th>
       <th>Status</th>
       <th>Documentation</th>
-      <th>Compare APIs with</th>
+      <th>Download</th>
+      <th style="width:20%">Compare API to</th>
     </tr>
   </thead>
   <tbody>
@@ -26,11 +27,30 @@
           | <a href="{{ . }}">Notes</a>
         {{- end }}
       </td>
-      <td style="text-align:right;">
+      <td>
+        {{- $version := .version }}
+        {{- $scratch := newScratch }}
+        {{- $scratch.Set "download" false }}
+        {{- range $.Page.Site.Data.jdk.vendors }}
+          {{- range .products }}
+            {{- if and .foojaydownload (in .versions $version) }}
+              {{- $scratch.Set "download" true }}
+            {{- end }}
+          {{- end }}
+        {{- end }}
+        {{- if $scratch.Get "download" }}
+          <a href="jdk/download/#version={{ .version }}&amp;type=jdk">JDK</a>|
+          <a href="jdk/download/#version={{ .version }}&amp;type=jre">JRE</a>
+        {{- end }}
+      </td>
+      <td>
+        {{- $maxdiffs := 10 }}
         {{- if .apidiff }}
-          {{- range $elem_index, $elem_val := (sort .apidiff "order" "desc") }}
-            {{- if lt 0 $elem_index }}| {{ end -}}
-            <a href="jdk/{{ $elem_val.target.feature }}/apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
+          {{- range $elem_index, $elem_val := first $maxdiffs (sort .apidiff "order" "desc") }}
+            <a class="diffversion" href="jdk/{{ $elem_val.target.feature }}/apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
+          {{- end }}
+          {{- if lt $maxdiffs (len .apidiff) }}
+            <a class="diffversion" href="jdk/{{ .version }}">...</a>
           {{- end }}
         {{- end }}
       </td>
