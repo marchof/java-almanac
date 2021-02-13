@@ -8,7 +8,7 @@ Vue.component('downloadlist', {
               <th>Version</th>
               <th>Type</th>
               <th>Platform</th>
-              <th>Download Link</th>
+              <th style="width:400px">Download Link</th>
             </tr>
             <tr>
               <td><select style="width:100%" v-model="product"><option v-for="o in productset" v-bind:value="o">{{ o.name }}</option></select></td>
