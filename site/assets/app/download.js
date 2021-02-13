@@ -1,7 +1,7 @@
 Vue.component('downloadlist', {
     template: `
         <div>
-        <table>
+        <table style="width:100%">
           <thead>
             <tr>
               <th>Product</th>
@@ -15,7 +15,7 @@ Vue.component('downloadlist', {
               <td><select style="width:100%" v-model="version"><option v-for="o in versionset" v-bind:value="o">{{ o.name }}</option></select></td>
               <td><select style="width:100%" v-model="type"><option v-for="o in typeset" v-bind:value="o">{{ o.name }}</option></select></td>
               <td><select style="width:100%" v-model="platform"><option v-for="o in platformset" v-bind:value="o">{{ o.name }}</option></select></td>
-              <td></td>
+              <td><input type="checkbox" v-model="latest"></input>Latest updates only</td>
             </tr>
           </thead>
           <tbody>
@@ -30,7 +30,7 @@ Vue.component('downloadlist', {
               <td>{{ package.java_version }}</td>
               <td>{{ package.package_type }}</td>
               <td style="white-space:nowrap">{{ package.operating_system }}-{{ package.architecture }}</td>
-              <td style="width:200px;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" href="" @click.prevent="download(package.id)">{{ package.filename }}</a></td>
+              <td style="white-space:nowrap;max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.filename" v-on:click.prevent="download(package.id)">{{ package.filename }}</a></td>
             </tr>
           </tbody>
         </table>
@@ -97,6 +97,7 @@ Vue.component('downloadlist', {
             ],
             product: null,
             version: null,
+            latest: true,
             type: null,
             platform: null,
             loading: true,
@@ -111,6 +112,10 @@ Vue.component('downloadlist', {
                     if (q) q += '&';
                     q += f.query;
                 }
+            }
+            if (this.latest) {
+                    if (q) q += '&';
+                    q += 'latest=per_version';
             }
             return q;
         }
