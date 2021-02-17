@@ -1,7 +1,8 @@
-{{ $style := resources.Get "almanac.css" | resources.Minify }}
+{{- $style := resources.Get "almanac.css" | resources.Minify -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8"/>
   <title>{{ $.Title }} - {{ $.Site.Title }}</title>
   <link rel="icon" type="image/png" href="/favicon32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon96.png" sizes="96x96">
