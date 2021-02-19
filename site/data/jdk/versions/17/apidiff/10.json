@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+9-653"
+		"version": "17-ea+10-723"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -2015,6 +2015,15 @@
 									"name": "leaveGroup(SocketAddress, NetworkInterface)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+								},
+								{
+									"type": "method",
+									"name": "setDatagramSocketImplFactory(DatagramSocketImplFactory)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},
@@ -2110,6 +2119,32 @@
 									"name": "ServerSocket(SocketImpl)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#%3Cinit%3E(java.net.SocketImpl)"
+								},
+								{
+									"type": "method",
+									"name": "setSocketFactory(SocketImplFactory)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Socket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setSocketImplFactory(SocketImplFactory)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},

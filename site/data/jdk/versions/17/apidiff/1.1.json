@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+9-653"
+		"version": "17-ea+10-723"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -17419,6 +17419,15 @@
 						},
 						{
 							"type": "method",
+							"name": "setSocketFactory(SocketImplFactory)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "supportedOptions()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#supportedOptions()"
@@ -17697,6 +17706,15 @@
 							"name": "setSendBufferSize(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html#setSendBufferSize(int)"
+						},
+						{
+							"type": "method",
+							"name": "setSocketImplFactory(SocketImplFactory)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
