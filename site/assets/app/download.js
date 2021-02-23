@@ -1,7 +1,7 @@
 Vue.component('downloadlist', {
     template: `
         <div>
-        <table style="width:100%">
+        <table style="width:100%;white-space:nowrap;">
           <thead>
             <tr>
               <th>Product</th>
@@ -29,8 +29,8 @@ Vue.component('downloadlist', {
               <td>{{ package.distribution }}</td>
               <td>{{ package.java_version }}</td>
               <td>{{ package.package_type }}</td>
-              <td style="white-space:nowrap">{{ package.operating_system }}-{{ package.architecture }}</td>
-              <td style="white-space:nowrap;max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.filename" v-on:click.prevent="download(package.id)">{{ package.filename }}</a></td>
+              <td>{{ package.operating_system }}-{{ package.architecture }}</td>
+              <td style="max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.filename" v-on:click.prevent="download(package.id)">{{ package.filename }}</a></td>
             </tr>
           </tbody>
         </table>
