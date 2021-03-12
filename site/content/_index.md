@@ -1,5 +1,5 @@
 ---
-title: Home
+title: The Java Version Almanac
 ---
 
 # The Java Version Almanac
