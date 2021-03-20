@@ -6,8 +6,8 @@
 	},
 	"target": {
 		"feature": "16",
-		"vendor": "open",
-		"version": "16+36-2231"
+		"vendor": "adpt",
+		"version": "16+36"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -15,31 +15,31 @@
 			"type": "module",
 			"name": "java.base",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.lang.invoke",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MethodHandles.Lookup",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "ORIGINAL",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL"
 								},
 								{
 									"type": "method",
 									"name": "defineHiddenClassWithClassData(byte[], Object, boolean, MethodHandles.Lookup.ClassOption...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte%5B%5D,java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte%5B%5D,java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption...)"
 								}
 							]
 						},
@@ -47,25 +47,25 @@
 							"type": "class",
 							"name": "MethodHandles",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "classData(MethodHandles.Lookup, String, Class)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"
 								},
 								{
 									"type": "method",
 									"name": "classDataAt(MethodHandles.Lookup, String, Class, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)"
 								},
 								{
 									"type": "method",
 									"name": "dropReturn(MethodHandle)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)"
 								}
 							]
 						},
@@ -73,25 +73,25 @@
 							"type": "class",
 							"name": "VarHandle",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "hasInvokeExactBehavior()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"
 								},
 								{
 									"type": "method",
 									"name": "withInvokeBehavior()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()"
 								},
 								{
 									"type": "method",
 									"name": "withInvokeExactBehavior()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"
 								}
 							]
 						}
@@ -101,19 +101,19 @@
 					"type": "package",
 					"name": "java.lang.ref",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Reference",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isEnqueued()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -122,7 +122,7 @@
 									"type": "method",
 									"name": "refersTo(Object)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"
 								}
 							]
 						}
@@ -132,19 +132,19 @@
 					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "InvocationHandler",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/reflect/InvocationHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/InvocationHandler.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "invokeDefault(Object, Method, Object...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object...)"
 								}
 							]
 						}
@@ -154,19 +154,19 @@
 					"type": "package",
 					"name": "java.lang",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Boolean",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Boolean(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -175,7 +175,7 @@
 									"type": "method",
 									"name": "Boolean(boolean)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -186,13 +186,13 @@
 							"type": "class",
 							"name": "Byte",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Byte.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Byte(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -201,7 +201,7 @@
 									"type": "method",
 									"name": "Byte(byte)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -212,13 +212,13 @@
 							"type": "class",
 							"name": "Character",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Character.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Character(char)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -229,13 +229,13 @@
 							"type": "class",
 							"name": "Class",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getPermittedSubclasses()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()"
 								},
 								{
 									"type": "method",
@@ -248,13 +248,13 @@
 							"type": "class",
 							"name": "Double",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Double(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -263,7 +263,7 @@
 									"type": "method",
 									"name": "Double(double)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -274,13 +274,13 @@
 							"type": "class",
 							"name": "Float",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Float(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -289,7 +289,7 @@
 									"type": "method",
 									"name": "Float(double)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -298,7 +298,7 @@
 									"type": "method",
 									"name": "Float(float)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -309,13 +309,13 @@
 							"type": "class",
 							"name": "IndexOutOfBoundsException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/IndexOutOfBoundsException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IndexOutOfBoundsException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "IndexOutOfBoundsException(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/IndexOutOfBoundsException.html#%3Cinit%3E(long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IndexOutOfBoundsException.html#%3Cinit%3E(long)"
 								}
 							]
 						},
@@ -323,13 +323,13 @@
 							"type": "class",
 							"name": "Integer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Integer(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -338,7 +338,7 @@
 									"type": "method",
 									"name": "Integer(int)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -349,13 +349,13 @@
 							"type": "class",
 							"name": "Long",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Long(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -364,7 +364,7 @@
 									"type": "method",
 									"name": "Long(long)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -375,13 +375,13 @@
 							"type": "class",
 							"name": "Short",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Short.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Short(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -390,7 +390,7 @@
 									"type": "method",
 									"name": "Short(short)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -401,13 +401,13 @@
 							"type": "class",
 							"name": "ThreadGroup",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ThreadGroup.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "destroy()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#destroy()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ThreadGroup.html#destroy()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -417,7 +417,7 @@
 									"type": "method",
 									"name": "isDaemon()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -427,7 +427,7 @@
 									"type": "method",
 									"name": "isDestroyed()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -437,7 +437,7 @@
 									"type": "method",
 									"name": "setDaemon(boolean)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -447,7 +447,7 @@
 									"type": "method",
 									"name": "stop()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/lang/ThreadGroup.html#stop()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ThreadGroup.html#stop()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -460,19 +460,19 @@
 					"type": "package",
 					"name": "java.net",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "URLDecoder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/URLDecoder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/URLDecoder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "URLDecoder()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/URLDecoder.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/URLDecoder.html#%3Cinit%3E()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -484,19 +484,19 @@
 							"type": "class",
 							"name": "UnixDomainSocketAddress",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/UnixDomainSocketAddress.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/UnixDomainSocketAddress.html"
 						},
 						{
 							"type": "enum",
 							"name": "StandardProtocolFamily",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/StandardProtocolFamily.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/StandardProtocolFamily.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "UNIX",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/net/StandardProtocolFamily.html#UNIX"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/StandardProtocolFamily.html#UNIX"
 								}
 							]
 						}
@@ -506,19 +506,19 @@
 					"type": "package",
 					"name": "java.nio",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ByteBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, ByteBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"
 								}
 							]
 						},
@@ -526,13 +526,13 @@
 							"type": "class",
 							"name": "CharBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, CharBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"
 								}
 							]
 						},
@@ -540,13 +540,13 @@
 							"type": "class",
 							"name": "DoubleBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, DoubleBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"
 								}
 							]
 						},
@@ -554,13 +554,13 @@
 							"type": "class",
 							"name": "FloatBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, FloatBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"
 								}
 							]
 						},
@@ -568,13 +568,13 @@
 							"type": "class",
 							"name": "IntBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, IntBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"
 								}
 							]
 						},
@@ -582,13 +582,13 @@
 							"type": "class",
 							"name": "LongBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, LongBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"
 								}
 							]
 						},
@@ -596,13 +596,13 @@
 							"type": "class",
 							"name": "ShortBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "put(int, ShortBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"
 								}
 							]
 						}
@@ -612,19 +612,19 @@
 					"type": "package",
 					"name": "java.security.cert",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "X509CRLSelector",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRLSelector.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CRLSelector.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "addIssuerName(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -635,13 +635,13 @@
 							"type": "class",
 							"name": "X509CRL",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRL.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CRL.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getIssuerDN()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CRL.html#getIssuerDN()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CRL.html#getIssuerDN()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -652,13 +652,13 @@
 							"type": "class",
 							"name": "X509CertSelector",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CertSelector.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getIssuerAsString()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuerAsString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuerAsString()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -667,7 +667,7 @@
 									"type": "method",
 									"name": "getSubjectAsString()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsString()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -676,7 +676,7 @@
 									"type": "method",
 									"name": "setIssuer(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -685,7 +685,7 @@
 									"type": "method",
 									"name": "setSubject(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -696,13 +696,13 @@
 							"type": "class",
 							"name": "X509Certificate",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509Certificate.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509Certificate.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getIssuerDN()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -711,7 +711,7 @@
 									"type": "method",
 									"name": "getSubjectDN()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -724,43 +724,43 @@
 					"type": "package",
 					"name": "java.security.spec",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MGF1ParameterSpec",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "SHA3_224",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_224"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_224"
 								},
 								{
 									"type": "field",
 									"name": "SHA3_256",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_256"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_256"
 								},
 								{
 									"type": "field",
 									"name": "SHA3_384",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_384"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_384"
 								},
 								{
 									"type": "field",
 									"name": "SHA3_512",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_512"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_512"
 								},
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()"
 								}
 							]
 						}
@@ -770,19 +770,19 @@
 					"type": "package",
 					"name": "java.time.format",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/time/format/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/time/format/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DateTimeFormatterBuilder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "appendDayPeriodText(TextStyle)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"
 								}
 							]
 						}
@@ -792,25 +792,25 @@
 					"type": "package",
 					"name": "java.util.stream",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "DoubleStream.DoubleMapMultiConsumer",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html"
 						},
 						{
 							"type": "interface",
 							"name": "DoubleStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/DoubleStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "mapMulti(DoubleStream.DoubleMapMultiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)"
 								}
 							]
 						},
@@ -818,19 +818,19 @@
 							"type": "interface",
 							"name": "IntStream.IntMapMultiConsumer",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html"
 						},
 						{
 							"type": "interface",
 							"name": "IntStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/IntStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "mapMulti(IntStream.IntMapMultiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)"
 								}
 							]
 						},
@@ -838,19 +838,19 @@
 							"type": "interface",
 							"name": "LongStream.LongMapMultiConsumer",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/LongStream.LongMapMultiConsumer.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.LongMapMultiConsumer.html"
 						},
 						{
 							"type": "interface",
 							"name": "LongStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/LongStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "mapMulti(LongStream.LongMapMultiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/LongStream.html#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.html#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer)"
 								}
 							]
 						},
@@ -858,37 +858,37 @@
 							"type": "interface",
 							"name": "Stream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "mapMulti(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)"
 								},
 								{
 									"type": "method",
 									"name": "mapMultiToDouble(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)"
 								},
 								{
 									"type": "method",
 									"name": "mapMultiToInt(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)"
 								},
 								{
 									"type": "method",
 									"name": "mapMultiToLong(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"
 								},
 								{
 									"type": "method",
 									"name": "toList()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/stream/Stream.html#toList()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()"
 								}
 							]
 						}
@@ -898,31 +898,31 @@
 					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Objects",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Objects.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "checkFromIndexSize(long, long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Objects.html#checkFromIndexSize(long,long,long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkFromIndexSize(long,long,long)"
 								},
 								{
 									"type": "method",
 									"name": "checkFromToIndex(long, long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Objects.html#checkFromToIndex(long,long,long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkFromToIndex(long,long,long)"
 								},
 								{
 									"type": "method",
 									"name": "checkIndex(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.base/java/util/Objects.html#checkIndex(long,long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkIndex(long,long)"
 								}
 							]
 						}
@@ -934,25 +934,25 @@
 			"type": "module",
 			"name": "java.compiler",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.lang.model",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "SourceVersion",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RELEASE_16",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_16"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_16"
 								}
 							]
 						}
@@ -962,13 +962,13 @@
 					"type": "package",
 					"name": "javax.tools",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/tools/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ToolProvider",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.compiler/javax/tools/ToolProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/tools/ToolProvider.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -985,25 +985,25 @@
 			"type": "module",
 			"name": "java.desktop",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.awt.color",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/color/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/color/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ICC_Profile",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/color/ICC_Profile.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/color/ICC_Profile.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1016,19 +1016,19 @@
 					"type": "package",
 					"name": "java.awt.dnd",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/dnd/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DragSourceAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "DragSourceAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1042,13 +1042,13 @@
 							"type": "class",
 							"name": "DropTargetAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "DropTargetAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1064,19 +1064,19 @@
 					"type": "package",
 					"name": "java.awt.event",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ComponentAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ComponentAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/ComponentAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ComponentAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1090,13 +1090,13 @@
 							"type": "class",
 							"name": "ContainerAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ContainerAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/ContainerAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ContainerAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1110,13 +1110,13 @@
 							"type": "class",
 							"name": "FocusAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/FocusAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/FocusAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FocusAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/FocusAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/FocusAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1130,13 +1130,13 @@
 							"type": "class",
 							"name": "HierarchyBoundsAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "HierarchyBoundsAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1150,13 +1150,13 @@
 							"type": "class",
 							"name": "KeyAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/KeyAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/KeyAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "KeyAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/KeyAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/KeyAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1170,13 +1170,13 @@
 							"type": "class",
 							"name": "MouseAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/MouseAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MouseAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/MouseAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1190,13 +1190,13 @@
 							"type": "class",
 							"name": "MouseMotionAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MouseMotionAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1210,13 +1210,13 @@
 							"type": "class",
 							"name": "WindowAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/WindowAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/WindowAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "WindowAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/event/WindowAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/event/WindowAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1232,19 +1232,19 @@
 					"type": "package",
 					"name": "java.awt.font",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "GlyphVector",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/GlyphVector.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/GlyphVector.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "GlyphVector()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/GlyphVector.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/GlyphVector.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1258,13 +1258,13 @@
 							"type": "class",
 							"name": "LayoutPath",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LayoutPath.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/LayoutPath.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "LayoutPath()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LayoutPath.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/LayoutPath.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1278,13 +1278,13 @@
 							"type": "class",
 							"name": "LineMetrics",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LineMetrics.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/LineMetrics.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "LineMetrics()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/font/LineMetrics.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/font/LineMetrics.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1300,19 +1300,19 @@
 					"type": "package",
 					"name": "java.awt.image",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractMultiResolutionImage",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/AbstractMultiResolutionImage.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/AbstractMultiResolutionImage.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractMultiResolutionImage()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/AbstractMultiResolutionImage.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/AbstractMultiResolutionImage.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1326,13 +1326,13 @@
 							"type": "class",
 							"name": "BufferStrategy",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/BufferStrategy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/BufferStrategy.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "BufferStrategy()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/BufferStrategy.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/BufferStrategy.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1346,13 +1346,13 @@
 							"type": "class",
 							"name": "ColorModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/ColorModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/ColorModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/ColorModel.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/ColorModel.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1363,13 +1363,13 @@
 							"type": "class",
 							"name": "IndexColorModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/IndexColorModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/IndexColorModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/IndexColorModel.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/IndexColorModel.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1380,13 +1380,13 @@
 							"type": "class",
 							"name": "RGBImageFilter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/RGBImageFilter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/RGBImageFilter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "RGBImageFilter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1400,13 +1400,13 @@
 							"type": "class",
 							"name": "VolatileImage",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/VolatileImage.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/VolatileImage.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "VolatileImage()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/image/VolatileImage.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/image/VolatileImage.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1422,19 +1422,19 @@
 					"type": "package",
 					"name": "java.awt.peer",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/peer/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "RobotPeer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "useAbsoluteCoordinates()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 								}
 							]
 						}
@@ -1444,19 +1444,19 @@
 					"type": "package",
 					"name": "java.awt",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FocusTraversalPolicy",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FocusTraversalPolicy()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1470,13 +1470,13 @@
 							"type": "class",
 							"name": "Image",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Image.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/Image.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Image()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Image.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/Image.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1490,13 +1490,13 @@
 							"type": "class",
 							"name": "PrintJob",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/PrintJob.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/PrintJob.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "PrintJob()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/PrintJob.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/PrintJob.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1510,13 +1510,13 @@
 							"type": "class",
 							"name": "Toolkit",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Toolkit.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/Toolkit.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Toolkit()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/awt/Toolkit.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/Toolkit.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1532,19 +1532,19 @@
 					"type": "package",
 					"name": "java.beans",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/beans/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "PersistenceDelegate",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/PersistenceDelegate.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/beans/PersistenceDelegate.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "PersistenceDelegate()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/java/beans/PersistenceDelegate.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/beans/PersistenceDelegate.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1560,19 +1560,19 @@
 					"type": "package",
 					"name": "javax.accessibility",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/accessibility/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AccessibleContext",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleContext.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/accessibility/AccessibleContext.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AccessibleContext()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1586,13 +1586,13 @@
 							"type": "class",
 							"name": "AccessibleHyperlink",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AccessibleHyperlink()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1608,19 +1608,19 @@
 					"type": "package",
 					"name": "javax.print.event",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/event/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/event/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "PrintJobAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "PrintJobAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1636,19 +1636,19 @@
 					"type": "package",
 					"name": "javax.print",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "PrintServiceLookup",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/PrintServiceLookup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/PrintServiceLookup.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "PrintServiceLookup()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/PrintServiceLookup.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/PrintServiceLookup.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1662,13 +1662,13 @@
 							"type": "class",
 							"name": "ServiceUIFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/ServiceUIFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/ServiceUIFactory.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ServiceUIFactory()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/ServiceUIFactory.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/ServiceUIFactory.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1682,13 +1682,13 @@
 							"type": "class",
 							"name": "StreamPrintServiceFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "StreamPrintServiceFactory()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1704,19 +1704,19 @@
 					"type": "package",
 					"name": "javax.sound.midi.spi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MidiDeviceProvider",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MidiDeviceProvider()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1730,13 +1730,13 @@
 							"type": "class",
 							"name": "MidiFileReader",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MidiFileReader()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1750,13 +1750,13 @@
 							"type": "class",
 							"name": "MidiFileWriter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MidiFileWriter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1770,13 +1770,13 @@
 							"type": "class",
 							"name": "SoundbankReader",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SoundbankReader()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1792,19 +1792,19 @@
 					"type": "package",
 					"name": "javax.sound.sampled.spi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AudioFileReader",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AudioFileReader()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1818,13 +1818,13 @@
 							"type": "class",
 							"name": "AudioFileWriter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AudioFileWriter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1838,13 +1838,13 @@
 							"type": "class",
 							"name": "FormatConversionProvider",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FormatConversionProvider()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1858,13 +1858,13 @@
 							"type": "class",
 							"name": "MixerProvider",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MixerProvider()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1880,19 +1880,19 @@
 					"type": "package",
 					"name": "javax.swing.border",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/border/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/border/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractBorder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/border/AbstractBorder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/border/AbstractBorder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractBorder()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1908,19 +1908,19 @@
 					"type": "package",
 					"name": "javax.swing.colorchooser",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/colorchooser/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/colorchooser/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractColorChooserPanel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractColorChooserPanel()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1936,19 +1936,19 @@
 					"type": "package",
 					"name": "javax.swing.event",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/event/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "InternalFrameAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "InternalFrameAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1962,13 +1962,13 @@
 							"type": "class",
 							"name": "MouseInputAdapter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MouseInputAdapter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -1984,19 +1984,19 @@
 					"type": "package",
 					"name": "javax.swing.filechooser",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FileFilter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FileFilter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/FileFilter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2010,13 +2010,13 @@
 							"type": "class",
 							"name": "FileView",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileView.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/FileView.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FileView()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/filechooser/FileView.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/FileView.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2032,19 +2032,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.basic",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "BasicLookAndFeel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicLookAndFeel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicLookAndFeel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "BasicLookAndFeel()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicLookAndFeel.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicLookAndFeel.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2058,7 +2058,7 @@
 							"type": "class",
 							"name": "BasicRadioButtonUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -2076,13 +2076,13 @@
 							"type": "class",
 							"name": "BasicSliderUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "BasicSliderUI()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()"
 								}
 							]
 						}
@@ -2092,19 +2092,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.metal",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/metal/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MetalTheme",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MetalTheme()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2120,19 +2120,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.synth",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "SynthDesktopIconUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "uninstallComponents()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html#uninstallComponents()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html#uninstallComponents()"
 								}
 							]
 						},
@@ -2140,13 +2140,13 @@
 							"type": "class",
 							"name": "SynthPainter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SynthPainter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2162,19 +2162,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ButtonUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ButtonUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ButtonUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ButtonUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ButtonUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ButtonUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2188,13 +2188,13 @@
 							"type": "class",
 							"name": "ColorChooserUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ColorChooserUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ColorChooserUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ColorChooserUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ColorChooserUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ColorChooserUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2208,13 +2208,13 @@
 							"type": "class",
 							"name": "ComboBoxUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ComboBoxUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2228,13 +2228,13 @@
 							"type": "class",
 							"name": "DesktopIconUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/DesktopIconUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/DesktopIconUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "DesktopIconUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/DesktopIconUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/DesktopIconUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2248,13 +2248,13 @@
 							"type": "class",
 							"name": "DesktopPaneUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/DesktopPaneUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/DesktopPaneUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "DesktopPaneUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/DesktopPaneUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/DesktopPaneUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2268,13 +2268,13 @@
 							"type": "class",
 							"name": "FileChooserUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FileChooserUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2288,13 +2288,13 @@
 							"type": "class",
 							"name": "InternalFrameUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/InternalFrameUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/InternalFrameUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "InternalFrameUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/InternalFrameUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/InternalFrameUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2308,13 +2308,13 @@
 							"type": "class",
 							"name": "LabelUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/LabelUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/LabelUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "LabelUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/LabelUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/LabelUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2328,13 +2328,13 @@
 							"type": "class",
 							"name": "ListUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ListUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ListUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ListUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ListUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ListUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2348,13 +2348,13 @@
 							"type": "class",
 							"name": "MenuBarUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/MenuBarUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/MenuBarUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MenuBarUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/MenuBarUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/MenuBarUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2368,13 +2368,13 @@
 							"type": "class",
 							"name": "MenuItemUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "MenuItemUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2388,13 +2388,13 @@
 							"type": "class",
 							"name": "OptionPaneUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "OptionPaneUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2408,13 +2408,13 @@
 							"type": "class",
 							"name": "PanelUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/PanelUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/PanelUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "PanelUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/PanelUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/PanelUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2428,13 +2428,13 @@
 							"type": "class",
 							"name": "PopupMenuUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "PopupMenuUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2448,13 +2448,13 @@
 							"type": "class",
 							"name": "ProgressBarUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ProgressBarUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2468,13 +2468,13 @@
 							"type": "class",
 							"name": "RootPaneUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/RootPaneUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/RootPaneUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "RootPaneUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/RootPaneUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/RootPaneUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2488,13 +2488,13 @@
 							"type": "class",
 							"name": "ScrollBarUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ScrollBarUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ScrollBarUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ScrollBarUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ScrollBarUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ScrollBarUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2508,13 +2508,13 @@
 							"type": "class",
 							"name": "ScrollPaneUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ScrollPaneUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ScrollPaneUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ScrollPaneUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ScrollPaneUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ScrollPaneUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2528,13 +2528,13 @@
 							"type": "class",
 							"name": "SeparatorUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SeparatorUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SeparatorUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SeparatorUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SeparatorUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SeparatorUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2548,13 +2548,13 @@
 							"type": "class",
 							"name": "SliderUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SliderUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SliderUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SliderUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SliderUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SliderUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2568,13 +2568,13 @@
 							"type": "class",
 							"name": "SpinnerUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SpinnerUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SpinnerUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SpinnerUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SpinnerUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SpinnerUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2588,13 +2588,13 @@
 							"type": "class",
 							"name": "SplitPaneUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SplitPaneUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2608,13 +2608,13 @@
 							"type": "class",
 							"name": "TabbedPaneUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "TabbedPaneUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2628,13 +2628,13 @@
 							"type": "class",
 							"name": "TableHeaderUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TableHeaderUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TableHeaderUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "TableHeaderUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TableHeaderUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TableHeaderUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2648,13 +2648,13 @@
 							"type": "class",
 							"name": "TableUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TableUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TableUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "TableUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TableUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TableUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2668,13 +2668,13 @@
 							"type": "class",
 							"name": "TextUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TextUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TextUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "TextUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TextUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TextUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2688,13 +2688,13 @@
 							"type": "class",
 							"name": "ToolBarUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ToolBarUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ToolBarUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ToolBarUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ToolBarUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ToolBarUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2708,13 +2708,13 @@
 							"type": "class",
 							"name": "ToolTipUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ToolTipUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ToolTipUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ToolTipUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ToolTipUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ToolTipUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2728,13 +2728,13 @@
 							"type": "class",
 							"name": "TreeUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TreeUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TreeUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "TreeUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2748,13 +2748,13 @@
 							"type": "class",
 							"name": "ViewportUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ViewportUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ViewportUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ViewportUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/plaf/ViewportUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/ViewportUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2770,19 +2770,19 @@
 					"type": "package",
 					"name": "javax.swing.table",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/table/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractTableModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractTableModel()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2796,13 +2796,13 @@
 							"type": "class",
 							"name": "TableStringConverter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/TableStringConverter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/table/TableStringConverter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "TableStringConverter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/table/TableStringConverter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/table/TableStringConverter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2818,19 +2818,19 @@
 					"type": "package",
 					"name": "javax.swing.text.html",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "HTMLDocument.Iterator",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "HTMLDocument.Iterator()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2844,13 +2844,13 @@
 							"type": "class",
 							"name": "HTMLEditorKit.Parser",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "HTMLEditorKit.Parser()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2866,19 +2866,19 @@
 					"type": "package",
 					"name": "javax.swing.text",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DefaultTextUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DefaultTextUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/DefaultTextUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "DefaultTextUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DefaultTextUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/DefaultTextUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2892,13 +2892,13 @@
 							"type": "class",
 							"name": "DocumentFilter.FilterBypass",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "DocumentFilter.FilterBypass()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2912,13 +2912,13 @@
 							"type": "class",
 							"name": "GlyphView.GlyphPainter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "GlyphView.GlyphPainter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2932,13 +2932,13 @@
 							"type": "class",
 							"name": "LayeredHighlighter.LayerPainter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "LayeredHighlighter.LayerPainter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2952,13 +2952,13 @@
 							"type": "class",
 							"name": "LayeredHighlighter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "LayeredHighlighter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2972,13 +2972,13 @@
 							"type": "class",
 							"name": "NavigationFilter.FilterBypass",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "NavigationFilter.FilterBypass()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -2994,19 +2994,19 @@
 					"type": "package",
 					"name": "javax.swing.tree",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/tree/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractLayoutCache.NodeDimensions",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractLayoutCache.NodeDimensions()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3020,13 +3020,13 @@
 							"type": "class",
 							"name": "AbstractLayoutCache",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractLayoutCache()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3042,19 +3042,19 @@
 					"type": "package",
 					"name": "javax.swing",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractButton",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractButton.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractButton.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractButton()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractButton.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractButton.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3068,13 +3068,13 @@
 							"type": "class",
 							"name": "AbstractCellEditor",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractCellEditor.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractCellEditor.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractCellEditor()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractCellEditor.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3088,13 +3088,13 @@
 							"type": "class",
 							"name": "AbstractListModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractListModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractListModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractListModel()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractListModel.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractListModel.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3108,13 +3108,13 @@
 							"type": "class",
 							"name": "AbstractSpinnerModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractSpinnerModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractSpinnerModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AbstractSpinnerModel()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/AbstractSpinnerModel.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/AbstractSpinnerModel.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3128,13 +3128,13 @@
 							"type": "class",
 							"name": "FocusManager",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/FocusManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/FocusManager.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "FocusManager()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/FocusManager.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/FocusManager.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3148,13 +3148,13 @@
 							"type": "class",
 							"name": "InputVerifier",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InputVerifier.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/InputVerifier.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "InputVerifier()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InputVerifier.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/InputVerifier.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3168,13 +3168,13 @@
 							"type": "class",
 							"name": "InternalFrameFocusTraversalPolicy",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "InternalFrameFocusTraversalPolicy()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3188,13 +3188,13 @@
 							"type": "class",
 							"name": "JFormattedTextField.AbstractFormatterFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "JFormattedTextField.AbstractFormatterFactory()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3208,13 +3208,13 @@
 							"type": "class",
 							"name": "JFormattedTextField.AbstractFormatter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "JFormattedTextField.AbstractFormatter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3228,13 +3228,13 @@
 							"type": "class",
 							"name": "JPasswordField",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JPasswordField.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JPasswordField.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "setText(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
 								}
 							]
 						},
@@ -3242,7 +3242,7 @@
 							"type": "class",
 							"name": "JSlider.AccessibleJSlider",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html",
 							"addedTags": [
 								"implements ChangeListener"
 							],
@@ -3251,7 +3251,7 @@
 									"type": "method",
 									"name": "stateChanged(ChangeEvent)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#stateChanged(javax.swing.event.ChangeEvent)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#stateChanged(javax.swing.event.ChangeEvent)"
 								}
 							]
 						},
@@ -3259,13 +3259,13 @@
 							"type": "class",
 							"name": "LookAndFeel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/LookAndFeel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/LookAndFeel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "LookAndFeel()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/LookAndFeel.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/LookAndFeel.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3279,13 +3279,13 @@
 							"type": "class",
 							"name": "RowFilter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/RowFilter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/RowFilter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "RowFilter()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.desktop/javax/swing/RowFilter.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/RowFilter.html#%3Cinit%3E()",
 									"addedTags": [
 										"protected"
 									],
@@ -3303,31 +3303,31 @@
 			"type": "module",
 			"name": "java.logging",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.util.logging",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "LogRecord",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getLongThreadID()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#getLongThreadID()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#getLongThreadID()"
 								},
 								{
 									"type": "method",
 									"name": "getThreadID()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#getThreadID()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#getThreadID()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -3336,13 +3336,13 @@
 									"type": "method",
 									"name": "setLongThreadID(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#setLongThreadID(long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#setLongThreadID(long)"
 								},
 								{
 									"type": "method",
 									"name": "setThreadID(int)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.logging/java/util/logging/LogRecord.html#setThreadID(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#setThreadID(int)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -3357,25 +3357,25 @@
 			"type": "module",
 			"name": "java.management",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.management/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.management.relation",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.management/javax/management/relation/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "RoleStatus",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/RoleStatus.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.management/javax/management/relation/RoleStatus.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "RoleStatus()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.management/javax/management/relation/RoleStatus.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.management/javax/management/relation/RoleStatus.html#%3Cinit%3E()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -3391,25 +3391,25 @@
 			"type": "module",
 			"name": "java.net.http",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.net.http/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.net.http",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.net.http/java/net/http/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "HttpRequest.BodyPublishers",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "concat(HttpRequest.BodyPublisher...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#concat(java.net.http.HttpRequest.BodyPublisher...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#concat(java.net.http.HttpRequest.BodyPublisher...)"
 								}
 							]
 						},
@@ -3417,13 +3417,13 @@
 							"type": "class",
 							"name": "HttpRequest",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.net.http/java/net/http/HttpRequest.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newBuilder(HttpRequest, BiPredicate)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk16/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.http.HttpRequest,java.util.function.BiPredicate)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.http.HttpRequest,java.util.function.BiPredicate)"
 								}
 							]
 						}
