@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+15-1230"
+		"version": "17-ea+16-1315"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -29,7 +29,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/Applet.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					],
 					"deltas": [
 						{
@@ -61,7 +62,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletContext.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					],
 					"deltas": [
 						{
@@ -90,7 +92,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletStub.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -99,7 +102,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AudioClip.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				}
 			]
@@ -8230,7 +8234,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -8523,7 +8528,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/AppletInitializer.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -9666,6 +9672,15 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "detail",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getCause()",
@@ -39792,6 +39807,7 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JApplet.html",
 					"addedTags": [
 						"deprecated",
+						"forRemoval",
 						"implements TransferHandler.HasGetTransferHandler"
 					],
 					"deltas": [

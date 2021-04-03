@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+15-1230"
+		"version": "17-ea+16-1315"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -223,6 +223,23 @@
 									"name": "nullReader()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Reader.html#nullReader()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "WriteAbortedException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "detail",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},
@@ -2719,9 +2736,33 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "compact()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()"
+								},
+								{
+									"type": "method",
+									"name": "duplicate()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()"
+								},
+								{
+									"type": "method",
 									"name": "force(int, int)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#force(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "slice()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()"
+								},
+								{
+									"type": "method",
+									"name": "slice(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)"
 								}
 							]
 						},
@@ -5202,10 +5243,105 @@
 		},
 		{
 			"type": "module",
+			"name": "java.datatransfer",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.awt.datatransfer",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DataFlavor",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "allHtmlFlavor",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor",
+									"addedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "field",
+									"name": "fragmentHtmlFlavor",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor",
+									"addedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "field",
+									"name": "selectionHtmlFlavor",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
 			"name": "java.desktop",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "java.applet",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Applet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/Applet.html",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletContext",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletContext.html",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletStub",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletStub.html",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AudioClip",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AudioClip.html",
+							"addedTags": [
+								"forRemoval"
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "java.awt.color",
@@ -5823,6 +5959,23 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Beans",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
+									"addedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "PersistenceDelegate",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/PersistenceDelegate.html",
@@ -5839,6 +5992,15 @@
 										"public"
 									]
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletInitializer",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/AppletInitializer.html",
+							"addedTags": [
+								"forRemoval"
 							]
 						}
 					]
@@ -7541,6 +7703,15 @@
 						},
 						{
 							"type": "class",
+							"name": "JApplet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JApplet.html",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
 							"name": "JFormattedTextField.AbstractFormatterFactory",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html",
@@ -7626,6 +7797,23 @@
 									],
 									"removedTags": [
 										"public"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "RepaintManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/RepaintManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addDirtyRegion(Applet, int, int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.applet.Applet,int,int,int,int)",
+									"addedTags": [
+										"forRemoval"
 									]
 								}
 							]
@@ -7834,6 +8022,23 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/package-summary.html",
 					"deltas": [
+						{
+							"type": "interface",
+							"name": "Context",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/Context.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "APPLET",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/Context.html#APPLET",
+									"addedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "Name",

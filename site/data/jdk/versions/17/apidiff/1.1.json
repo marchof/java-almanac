@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+15-1230"
+		"version": "17-ea+16-1315"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -29,7 +29,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/Applet.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					],
 					"deltas": [
 						{
@@ -68,7 +69,8 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletContext.html",
 					"addedTags": [
 						"abstract",
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					],
 					"deltas": [
 						{
@@ -98,7 +100,8 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletStub.html",
 					"addedTags": [
 						"abstract",
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -108,7 +111,8 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AudioClip.html",
 					"addedTags": [
 						"abstract",
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				}
 			]
@@ -10772,6 +10776,15 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "detail",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
+							"addedTags": [
+								"deprecated"
+							]
+						},
 						{
 							"type": "method",
 							"name": "getCause()",

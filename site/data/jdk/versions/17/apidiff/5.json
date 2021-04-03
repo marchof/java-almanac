@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+15-1230"
+		"version": "17-ea+16-1315"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -23,7 +23,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/Applet.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					],
 					"deltas": [
 						{
@@ -40,7 +41,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletContext.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -49,7 +51,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletStub.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -58,7 +61,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AudioClip.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				}
 			]
@@ -3637,7 +3641,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -3764,7 +3769,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/AppletInitializer.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				}
 			]
@@ -4293,6 +4299,23 @@
 					"name": "UncheckedIOException",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/UncheckedIOException.html"
+				},
+				{
+					"type": "class",
+					"name": "WriteAbortedException",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "detail",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
 				},
 				{
 					"type": "class",
@@ -11436,6 +11459,18 @@
 						},
 						{
 							"type": "method",
+							"name": "compact()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()"
+						},
+						{
+							"type": "method",
+							"name": "duplicate()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()"
+						},
+						{
+							"type": "method",
 							"name": "flip()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#flip()"
@@ -11475,6 +11510,18 @@
 							"name": "rewind()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#rewind()"
+						},
+						{
+							"type": "method",
+							"name": "slice()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()"
+						},
+						{
+							"type": "method",
+							"name": "slice(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)"
 						}
 					]
 				},
@@ -24472,7 +24519,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/Context.html#APPLET",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -31271,6 +31319,7 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JApplet.html",
 					"addedTags": [
 						"deprecated",
+						"forRemoval",
 						"implements TransferHandler.HasGetTransferHandler"
 					],
 					"deltas": [
