@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+16-1315"
+		"version": "17-ea+17-1401"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -19579,6 +19579,12 @@
 		},
 		{
 			"type": "package",
+			"name": "java.util.random",
+			"status": "added",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/random/package-summary.html"
+		},
+		{
+			"type": "package",
 			"name": "java.util.regex",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/regex/package-summary.html",
@@ -22840,8 +22846,14 @@
 				{
 					"type": "class",
 					"name": "Random",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html",
+					"addedTags": [
+						"extends RandomSupport$AbstractSpliteratorGenerator"
+					],
+					"removedTags": [
+						"extends Object"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -22914,6 +22926,24 @@
 							"name": "longs(long, long, long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#longs(long,long,long)"
+						},
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeLongsSpliterator(long,long,long,long)"
 						}
 					]
 				},

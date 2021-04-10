@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+16-1315"
+		"version": "17-ea+17-1401"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -10252,6 +10252,49 @@
 				},
 				{
 					"type": "class",
+					"name": "ThreadLocalRandom",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#makeLongsSpliterator(long,long,long,long)"
+						},
+						{
+							"type": "method",
+							"name": "nextFloat(float)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float)"
+						},
+						{
+							"type": "method",
+							"name": "nextFloat(float, float)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float,float)"
+						},
+						{
+							"type": "method",
+							"name": "nextGaussian()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "ThreadPoolExecutor",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
@@ -10640,6 +10683,12 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "package",
+			"name": "java.util.random",
+			"status": "added",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/random/package-summary.html"
 		},
 		{
 			"type": "package",
@@ -12163,6 +12212,38 @@
 				},
 				{
 					"type": "class",
+					"name": "Random",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html",
+					"addedTags": [
+						"extends RandomSupport$AbstractSpliteratorGenerator"
+					],
+					"removedTags": [
+						"extends Object"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeLongsSpliterator(long,long,long,long)"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "ResourceBundle",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/ResourceBundle.html",
@@ -12260,14 +12341,108 @@
 				{
 					"type": "class",
 					"name": "SplittableRandom",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html",
+					"addedTags": [
+						"extends RandomSupport$AbstractSplittableGenerator"
+					],
+					"removedTags": [
+						"extends Object"
+					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#makeLongsSpliterator(long,long,long,long)"
+						},
+						{
+							"type": "method",
+							"name": "nextBoolean()",
+							"status": "removed"
+						},
 						{
 							"type": "method",
 							"name": "nextBytes(byte[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#nextBytes(byte%5B%5D)"
+						},
+						{
+							"type": "method",
+							"name": "nextDouble()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextDouble(double)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextDouble(double, double)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextInt(int)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextInt(int, int)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextLong(long)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextLong(long, long)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "split(RandomGenerator.SplittableGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#split(java.util.random.RandomGenerator.SplittableGenerator)"
+						},
+						{
+							"type": "method",
+							"name": "splits()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits()"
+						},
+						{
+							"type": "method",
+							"name": "splits(RandomGenerator.SplittableGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(java.util.random.RandomGenerator.SplittableGenerator)"
+						},
+						{
+							"type": "method",
+							"name": "splits(long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long)"
+						},
+						{
+							"type": "method",
+							"name": "splits(long, RandomGenerator.SplittableGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"
 						}
 					]
 				},
