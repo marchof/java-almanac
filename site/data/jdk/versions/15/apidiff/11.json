@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "11",
 		"vendor": "adpt",
-		"version": "11.0.10+9"
+		"version": "11.0.11+9"
 	},
 	"target": {
 		"feature": "15",
@@ -3445,6 +3445,27 @@
 									"name": "getChooserShortcutPanelFiles()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChooserShortcutPanelFiles()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/javax/swing/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "JPasswordField",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/javax/swing/JPasswordField.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setText(String)",
+									"status": "removed"
 								}
 							]
 						}
