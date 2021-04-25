@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "8",
 		"vendor": "adpt",
-		"version": "8.0.275"
+		"version": "8.0.292"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -24218,6 +24218,20 @@
 							"name": "getBaselineResizeBehavior()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.DefaultEditor.html#getBaselineResizeBehavior--"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JSpinner.NumberEditor",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setComponentOrientation(ComponentOrientation)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html#setComponentOrientation-java.awt.ComponentOrientation-"
 						}
 					]
 				},
