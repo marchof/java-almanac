@@ -30,7 +30,6 @@ switch (c) {
         nother++;
         break;
 }
-```
 
 The statement was created for one reason: jump tables. If there are many cases, it is worthwhile to set up a table of the case labels and branch starts. If the table is sparse, locate the entry by dead reckoning. Otherwise, sort the table and use binary search. Then simply jump to the matching branch. In ancient times, this technique was called "computed goto". The `switch` statement makes it available in high-level languages.
 
@@ -315,4 +314,3 @@ The `yield` statement may in time join the labeled `break/continue` statements: 
 5. A `case` label can be followed by multiple constants, separated by commas
 6. In a `switch` expression, the `yield` statement exits and yields a value
 7. In a `switch` expression without fall through, the `->` token can be followed by a block statement that yields a value
-
