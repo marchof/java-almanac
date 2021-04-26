@@ -1,4 +1,4 @@
-{{ define "apidiffitem" }}
+{{- define "apidiffitem" }}
   {{- $indent := .indent -}}
   <tr>
     <td><div class="{{ .delta.type }}" style="margin-left:{{ $indent }}px">
@@ -29,19 +29,19 @@
   {{- range .delta.deltas -}}
     {{- template "apidiffitem" (dict "delta" . "indent" (add $indent 18) ) -}}
   {{- end -}}
-{{ end }}
+{{- end }}
 
-{{ partial "header.html" . }}
+{{- partial "header.html" . }}
 <h1>{{ .Title }}</h1>
 
-{{ $targetversion := .Params.Targetversion }}
-{{ $baseversion := .Params.Baseversion }}
+{{- $targetversion := .Params.Targetversion }}
+{{- $baseversion := .Params.Baseversion }}
 
-{{ with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
+{{- with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
 
 <p>
-  Comparing <a href="../../../{{ .target.version }}">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})
-  with <a href="../../../{{ .base.version }}"> Java {{ .base.feature }}</a> ({{ .base.version }}-{{ .base.vendor }}).
+  Comparing <a href="../../../{{ .target.feature }}">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})
+  with <a href="../../../{{ .base.feature }}"> Java {{ .base.feature }}</a> ({{ .base.version }}-{{ .base.vendor }}).
 </p>
 
 <table>
@@ -52,8 +52,8 @@
     </tr>
   </thead>
   <tbody>
-  {{ range .deltas -}}
-    {{- template "apidiffitem" (dict "delta" . "indent" 0 ) -}}
+  {{- range .deltas }}
+    {{- template "apidiffitem" (dict "delta" . "indent" 0 ) }}
   {{- end }}
   </tbody>
 </table>
@@ -75,6 +75,6 @@
   tool can be found <a href="https://github.com/AdoptOpenJDK/jdk-api-diff">here</a>.
 </p>
 
-{{ end }}
-{{ partial "footer.html" . }}
+{{- end }}
+{{- partial "footer.html" . }}
 

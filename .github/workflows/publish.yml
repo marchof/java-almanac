@@ -8,14 +8,18 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      HUGO_IMAGE: klakegg/hugo:0.82.0
     steps:
     - name: Checkout
       uses: actions/checkout@v1
-    - name: Build Docker Image
-      run: docker build -t java-almanac .github/workflows/publish
-    - name: Run Hugo Renderer and Upload
+    - name: Renderer
       run: >
-        docker run -v $(realpath ./site):/site
+        docker run -v $(realpath ./site):/src
+        ${{ env.HUGO_IMAGE }}
+    - name: Upload
+      run: >
+        docker run -v $(realpath ./site):/src
         -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
         -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        java-almanac
+        ${{ env.HUGO_IMAGE }} deploy --invalidateCDN

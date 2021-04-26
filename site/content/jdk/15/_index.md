@@ -16,16 +16,14 @@ Instantly compile and run Java 15 snippets without a local Java installation.
 public class Java15 {
     
     final static String helloTemplate = """
-        Hello Java
-        ==========
-        
-        %s""";
-    
-    record Platform(String name, int release) {
-    }
+        +===========+
+        |   Hello   |
+        +===========+
+        |  Java %s  |
+        +===========+""";
 
     public static void main(String[] args) {
-        System.out.printf(helloTemplate, new Platform("Java", 15));
+        System.out.printf(helloTemplate, 15);
     }
 
 }

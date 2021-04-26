@@ -1,7 +1,7 @@
 {
 	"version": "17",
 	"name": "Java 17",
-	"ga": "2021/09",
+	"ga": "2021/09/14",
 	"eol": "2030",
 	"status": "DEV",
 	"bytecode": "61.0",
@@ -16,5 +16,49 @@
 		}
 	],
 	"features": [
+		{
+			"title": "New macOS Rendering Pipeline",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "382"
+				}
+			]
+			
+		},
+		{
+			"title": "macOS/AArch64 Port",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "391"
+				}
+			]
+			
+		},
+		{
+			"title": "Enhanced Pseudo-Random Number Generators",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "356"
+				}
+			]
+			
+		},
+		{
+			"title": "Deprecate the Applet API for Removal",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "398"
+				}
+			]
+			
+		}
 	]
 }

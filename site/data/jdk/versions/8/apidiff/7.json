@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "8",
 		"vendor": "adpt",
-		"version": "8.0.275"
+		"version": "8.0.292"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -1957,6 +1957,24 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "RemoteStub",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteStub.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketSecurityException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SocketSecurityException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "UnicastRemoteObject",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html",
@@ -1970,6 +1988,32 @@
 								"deprecated"
 							]
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ServerRef",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.rmi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "RMISecurityManager",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityManager.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -7146,6 +7190,20 @@
 							"type": "method",
 							"name": "getAccessibleAction()",
 							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JSpinner.NumberEditor",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setComponentOrientation(ComponentOrientation)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html#setComponentOrientation-java.awt.ComponentOrientation-"
 						}
 					]
 				}

@@ -1,25 +1,25 @@
 ---
-title: Pattern matching for instanceof (JEP 305)
+title: Pattern matching for instanceof (JEP 394)
 copyright: Cay S. Horstmann 2020. All rights reserved.
-jep: 305
-jdkversion: 14
+jep: 394
+jdkversion: 16
 type: "sandbox"
 ---
 
-[JEP 305](http://openjdk.java.net/jeps/305) starts out with this statement: "Nearly every program includes some sort of logic that combines testing if an expression has a certain type or structure, and then conditionally extracting components of its state for further processing." This example follows:
+The motivation in [JEP 394](http://openjdk.java.net/jeps/305) starts out with this statement: "Nearly every program includes some sort of logic that combines testing if an expression has a certain type or structure, and then conditionally extracting components of its state for further processing." This example follows:
 
 ```
 if (obj instanceof String) {
-    String s = (String) obj;
-    // use s
+    String s = (String) obj;    // grr...
+    . . .
 }
 ```
 
 One would hope that this kind of type inquiry is not a part of "nearly every program". But certainly, there are times when it is necessary, and the classic Java approach of `instanceof` followed by a cast is rather verbose. Do we really need three occurrences of the type name `String`?
 
-That is what JEP 305 fixes. 
+That is what "pattern matching for `instanceof`" fixes. 
 
-{{< sandbox version="java14" preview="true" mainclass="InstanceofDemo" >}}
+{{< sandbox version="java16" mainclass="InstanceofDemo" >}}
 {{< sandboxsource "InstanceofDemo.java" >}}
 public class InstanceofDemo {
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ As always, if the tested value is `null`, the `instanceof` test fails.
 
 When an `instanceof` pattern introduces a variable, what is its scope? In the preceding example, it seems clear that the scope of `i` is the body of the `if` statement. But actually, the scope begins earlier. You can already use the variable in a compound expression that includes the `instanceof` test, provided that it is known that the test has passed:
 
-{{< sandbox version="java14" preview="true" mainclass="InstanceofDemo" >}}
+{{< sandbox version="java16" mainclass="InstanceofDemo" >}}
 {{< sandboxsource "InstanceofDemo.java" >}}
 public class InstanceofDemo {
     public static void main(String[] args) {
@@ -70,7 +70,7 @@ would be a compile-time error. The second operand of the `||` operator is execut
 
 You *can* use an `||` if the `instanceof` test is negated:
 
-{{< sandbox version="java14" preview="true" mainclass="InstanceofDemo" >}}
+{{< sandbox version="java16" mainclass="InstanceofDemo" >}}
 {{< sandboxsource "InstanceofDemo.java" >}}
 public class InstanceofDemo {
     public static void main(String[] args) {
@@ -96,7 +96,7 @@ Note that these scope rules do not apply to the `&` and `|` operators. They don'
 
 However, the conditional operator is fair game:
 
-{{< sandbox version="java14" preview="true" mainclass="InstanceofDemo" >}}
+{{< sandbox version="java16" mainclass="InstanceofDemo" >}}
 {{< sandboxsource "InstanceofDemo.java" >}}
 public class InstanceofDemo {
     public static void main(String[] args) {
@@ -110,6 +110,30 @@ public class InstanceofDemo {
 {{< /sandbox >}}
 
 Here, `i` is in scope in the `?` part. 
+
+## Useless Matches are Errors
+
+A pattern match that always succeeds is flagged as an error:
+
+{{< sandbox version="java16" mainclass="InstanceofDemo" >}}
+{{< sandboxsource "InstanceofDemo.java" >}}
+public class InstanceofDemo {
+    public static void main(String[] args) {
+        Double x = Math.PI;
+        if (x instanceof Number n) { // Error
+           System.out.println(n.longValue());
+        }
+        if (x instanceof Number) { // Ok
+           System.out.println(x.longValue());
+        }
+    }
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+Here, the match `x instanceof Number n` is useless. It always succeeds and should therefore be omitted. This is a compile-time error.
+
+The test `x instanceof Number` is equally useless, but ever since Java 1.0, such tests were allowed. 
 
 ## Use of `instanceof` in `equals`
 
@@ -130,7 +154,7 @@ public final class Point {
 
 An `instanceof` pattern makes this nicer:
 
-{{< sandbox version="java14" preview="true" mainclass="InstanceofDemo" >}}
+{{< sandbox version="java16" mainclass="InstanceofDemo" >}}
 {{< sandboxsource "Point.java" >}}
 public final class Point {
     public int x;
@@ -173,3 +197,6 @@ Java will, in time, have a syntax more or less like this. For now, the `instance
 ## References
 
 * [JEP 305: Pattern Matching for instanceof (Preview), OpenJDK](http://openjdk.java.net/jeps/305)
+* [JEP 375: Pattern Matching for instanceof (Second Preview), OpenJDK](http://openjdk.java.net/jeps/375)
+* [JEP 394: Pattern Matching for instanceof, OpenJDK](http://openjdk.java.net/jeps/394)
+

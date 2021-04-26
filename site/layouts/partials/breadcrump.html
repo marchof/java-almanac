@@ -1,12 +1,12 @@
 <ul  class="breadcrump">{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
-{{- define "breadcrumbnav" -}}
-{{- if .p1.Parent -}}
-{{- template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 ) -}}
-{{- else if not .p1.IsHome -}}
-{{- template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 ) -}}
-{{- end -}}
+{{- define "breadcrumbnav" }}
+{{- if .p1.Parent }}
+{{- template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 ) }}
+{{- else if not .p1.IsHome }}
+{{- template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 ) }}
+{{- end }}
 {{- if ne .p1 .p2 }}
   <li><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
-{{- end -}}
-{{- end -}}
+{{- end }}
+{{- end }}

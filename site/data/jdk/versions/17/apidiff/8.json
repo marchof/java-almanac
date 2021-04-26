@@ -2,15 +2,63 @@
 	"base": {
 		"feature": "8",
 		"vendor": "adpt",
-		"version": "8.0.275"
+		"version": "8.0.292"
 	},
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+2-51"
+		"version": "17-ea+18-1490"
 	},
 	"order": 8.0,
 	"deltas": [
+		{
+			"type": "package",
+			"name": "java.applet",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Applet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/Applet.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletContext",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletContext.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletStub",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletStub.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AudioClip",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AudioClip.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				}
+			]
+		},
 		{
 			"type": "package",
 			"name": "java.awt.color",
@@ -31,6 +79,49 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.awt.datatransfer",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "DataFlavor",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "allHtmlFlavor",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "fragmentHtmlFlavor",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "field",
+							"name": "selectionHtmlFlavor",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor",
+							"addedTags": [
+								"final"
 							]
 						}
 					]
@@ -1203,6 +1294,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Event",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/awt/Event.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileDialog",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/awt/FileDialog.html",
@@ -1729,7 +1829,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -1752,6 +1853,16 @@
 								"public"
 							]
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletInitializer",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/AppletInitializer.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				}
 			]
@@ -2077,6 +2188,23 @@
 							"name": "transferTo(Writer)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "WriteAbortedException",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "detail",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -3951,6 +4079,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Compiler.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5725,6 +5854,27 @@
 						},
 						{
 							"type": "method",
+							"name": "joinGroup(SocketAddress, NetworkInterface)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+						},
+						{
+							"type": "method",
+							"name": "leaveGroup(SocketAddress, NetworkInterface)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+						},
+						{
+							"type": "method",
+							"name": "setDatagramSocketImplFactory(DatagramSocketImplFactory)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setOption(SocketOption, Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#setOption(java.net.SocketOption,java.lang.Object)"
@@ -5893,6 +6043,15 @@
 						},
 						{
 							"type": "method",
+							"name": "setSocketFactory(SocketImplFactory)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "supportedOptions()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#supportedOptions()"
@@ -5942,6 +6101,15 @@
 							"name": "setOption(SocketOption, Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html#setOption(java.net.SocketOption,java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "setSocketImplFactory(SocketImplFactory)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
@@ -6023,12 +6191,7 @@
 						{
 							"type": "method",
 							"name": "URLDecoder()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/URLDecoder.html#%3Cinit%3E()",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -7075,6 +7238,18 @@
 						},
 						{
 							"type": "method",
+							"name": "compact()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()"
+						},
+						{
+							"type": "method",
+							"name": "duplicate()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()"
+						},
+						{
+							"type": "method",
 							"name": "flip()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#flip()"
@@ -7114,6 +7289,18 @@
 							"name": "rewind()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#rewind()"
+						},
+						{
+							"type": "method",
+							"name": "slice()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()"
+						},
+						{
+							"type": "method",
+							"name": "slice(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)"
 						}
 					]
 				},
@@ -7223,6 +7410,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/Activatable.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7232,6 +7420,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivateFailedException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7241,6 +7430,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7250,6 +7440,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7259,6 +7450,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7268,6 +7460,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7277,6 +7470,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7286,6 +7480,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7295,6 +7490,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationID.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7304,6 +7500,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/UnknownGroupException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7313,6 +7510,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/UnknownObjectException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7322,6 +7520,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7331,6 +7530,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7340,6 +7540,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7349,6 +7550,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/Activator.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				}
@@ -9821,6 +10023,24 @@
 							"name": "ForkJoinPool(int, ForkJoinPool.ForkJoinWorkerThreadFactory, Thread.UncaughtExceptionHandler, boolean, int, int, int, Predicate, long, TimeUnit)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean,int,int,int,java.util.function.Predicate,long,java.util.concurrent.TimeUnit)"
+						},
+						{
+							"type": "method",
+							"name": "invokeAll(Collection, long, TimeUnit)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"
+						},
+						{
+							"type": "method",
+							"name": "invokeAny(Collection)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection)"
+						},
+						{
+							"type": "method",
+							"name": "invokeAny(Collection, long, TimeUnit)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"
 						}
 					]
 				},
@@ -10027,6 +10247,49 @@
 							"name": "toString()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/SynchronousQueue.html#toString()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ThreadLocalRandom",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#makeLongsSpliterator(long,long,long,long)"
+						},
+						{
+							"type": "method",
+							"name": "nextFloat(float)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float)"
+						},
+						{
+							"type": "method",
+							"name": "nextFloat(float, float)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float,float)"
+						},
+						{
+							"type": "method",
+							"name": "nextGaussian()",
+							"status": "removed"
 						}
 					]
 				},
@@ -10409,8 +10672,23 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "LoggingMXBean",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/LoggingMXBean.html",
+					"addedTags": [
+						"deprecated"
+					]
 				}
 			]
+		},
+		{
+			"type": "package",
+			"name": "java.util.random",
+			"status": "added",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/random/package-summary.html"
 		},
 		{
 			"type": "package",
@@ -11415,6 +11693,12 @@
 				},
 				{
 					"type": "class",
+					"name": "HexFormat",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/HexFormat.html"
+				},
+				{
+					"type": "class",
 					"name": "IntSummaryStatistics",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/IntSummaryStatistics.html",
@@ -11543,6 +11827,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Observable",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Observable.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -11919,6 +12212,38 @@
 				},
 				{
 					"type": "class",
+					"name": "Random",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html",
+					"addedTags": [
+						"extends RandomSupport$AbstractSpliteratorGenerator"
+					],
+					"removedTags": [
+						"extends Object"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeLongsSpliterator(long,long,long,long)"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "ResourceBundle",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/ResourceBundle.html",
@@ -12016,14 +12341,108 @@
 				{
 					"type": "class",
 					"name": "SplittableRandom",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html",
+					"addedTags": [
+						"extends RandomSupport$AbstractSplittableGenerator"
+					],
+					"removedTags": [
+						"extends Object"
+					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "makeDoublesSpliterator(long, long, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#makeDoublesSpliterator(long,long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "makeIntsSpliterator(long, long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#makeIntsSpliterator(long,long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "makeLongsSpliterator(long, long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#makeLongsSpliterator(long,long,long,long)"
+						},
+						{
+							"type": "method",
+							"name": "nextBoolean()",
+							"status": "removed"
+						},
 						{
 							"type": "method",
 							"name": "nextBytes(byte[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#nextBytes(byte%5B%5D)"
+						},
+						{
+							"type": "method",
+							"name": "nextDouble()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextDouble(double)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextDouble(double, double)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextInt(int)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextInt(int, int)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextLong(long)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "nextLong(long, long)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "split(RandomGenerator.SplittableGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#split(java.util.random.RandomGenerator.SplittableGenerator)"
+						},
+						{
+							"type": "method",
+							"name": "splits()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits()"
+						},
+						{
+							"type": "method",
+							"name": "splits(RandomGenerator.SplittableGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(java.util.random.RandomGenerator.SplittableGenerator)"
+						},
+						{
+							"type": "method",
+							"name": "splits(long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long)"
+						},
+						{
+							"type": "method",
+							"name": "splits(long, RandomGenerator.SplittableGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"
 						}
 					]
 				},
@@ -12289,6 +12708,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Observer",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Observer.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -13791,6 +14219,12 @@
 						},
 						{
 							"type": "method",
+							"name": "isAutomaticModule(ModuleElement)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isAutomaticModule(javax.lang.model.element.ModuleElement)"
+						},
+						{
+							"type": "method",
 							"name": "isBridge(ExecutableElement)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isBridge(javax.lang.model.element.ExecutableElement)"
@@ -13941,6 +14375,15 @@
 				},
 				{
 					"type": "class",
+					"name": "RMIIIOPServerImpl",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.management.rmi/javax/management/remote/rmi/RMIIIOPServerImpl.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "_RMIConnectionImpl_Tie",
 					"status": "removed"
 				},
@@ -14072,7 +14515,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/Context.html#APPLET",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -14425,6 +14869,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/CertificateEncodingException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14434,6 +14879,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/CertificateException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14443,6 +14889,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/CertificateExpiredException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14452,6 +14899,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/CertificateNotYetValidException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14461,6 +14909,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/CertificateParsingException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14470,6 +14919,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/Certificate.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -14479,6 +14929,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/cert/X509Certificate.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				}
@@ -15206,6 +15657,24 @@
 							"name": "bumps",
 							"status": "removed"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.FileRenderer",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FileRenderer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.SingleClickListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.SingleClickListener.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -16916,6 +17385,16 @@
 				},
 				{
 					"type": "class",
+					"name": "JApplet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JApplet.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "JColorChooser",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JColorChooser.html",
@@ -16926,6 +17405,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color,boolean)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JComponent.AccessibleJComponent.AccessibleFocusHandler",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.AccessibleFocusHandler.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -17052,6 +17540,20 @@
 				},
 				{
 					"type": "class",
+					"name": "JPasswordField",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JPasswordField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setText(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "JRootPane",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JRootPane.html",
@@ -17082,20 +17584,6 @@
 							"name": "stateChanged(ChangeEvent)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#stateChanged(javax.swing.event.ChangeEvent)"
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "JSpinner.NumberEditor",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "setComponentOrientation(ComponentOrientation)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#setComponentOrientation(java.awt.ComponentOrientation)"
 						}
 					]
 				},
@@ -17165,7 +17653,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.applet.Applet,int,int,int,int)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]

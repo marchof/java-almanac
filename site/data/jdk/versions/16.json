@@ -1,13 +1,15 @@
 {
 	"version": "16",
 	"name": "Java 16",
-	"ga": "2021/03",
-	"eol": "2021/09",
-	"status": "DEV",
+	"ga": "2021/03/15",
+	"eol": "2021/09/14",
+	"status": "REL",
 	"bytecode": "60.0",
 	"documentation": {
-		"notes": "http://jdk.java.net/16/release-notes",
-		"api": "https://download.java.net/java/early_access/jdk16/docs/api/"
+		"notes": "https://www.oracle.com/java/technologies/javase/16u-relnotes.html",
+		"vm": "https://docs.oracle.com/javase/specs/jvms/se16/html/index.html",
+		"lang": "https://docs.oracle.com/javase/specs/jls/se16/html/index.html",
+		"api": "https://docs.oracle.com/en/java/javase/16/docs/api/"
 	},
 	"scm": [
 		{
@@ -17,17 +19,6 @@
 	],
 	"features": [
 		{
-			"title": "Alpine Linux Port",
-			"category": "jvm",
-			"refs": [
-				{
-					"type": "JEP",
-					"identifier": "386"
-				}
-			] 
-			
-		},
-		{
 			"title": "ZGC: Concurrent Thread Processing",
 			"category": "jvm",
 			"refs": [
@@ -35,8 +26,60 @@
 					"type": "JEP",
 					"identifier": "376"
 				}
-			] 
+			]
 			
+		},
+		{
+			"title": "Alpine Linux Port",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "386"
+				}
+			]
+			
+		},
+		{
+			"title": "Windows/AArch64 Port",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "388"
+				}
+			]
+			
+		},
+		{
+			"title": "Strongly Encapsulate JDK Internals by Default",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "396"
+				}
+			]
+		},
+		{
+			"title": "Warnings for Value-Based Classes",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "390"
+				}
+			]
+		},
+		{
+			"title": "Pattern Matching for instanceof",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "394"
+				}
+			]
 		},
 		{
 			"title": "Records",
@@ -46,7 +89,17 @@
 					"type": "JEP",
 					"identifier": "395"
 				}
-			] 
+			]
+		},
+		{
+			"title": "Static Members in Inner Classes",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "395"
+				}
+			]
 		},
 		{
 			"title": "Sealed Classes",
@@ -57,7 +110,7 @@
 					"type": "JEP",
 					"identifier": "397"
 				}
-			] 
+			]
 		},
 		{
 			"title": "Unix-Domain Socket Channels",
@@ -67,8 +120,18 @@
 					"type": "JEP",
 					"identifier": "380"
 				}
-			] 
+			]
 			
+		},
+		{
+			"title": "Packaging Tool",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "392"
+				}
+			] 
 		},
 		{
 			"title": "Enable C++14 Language Features",
@@ -78,7 +141,7 @@
 					"type": "JEP",
 					"identifier": "347"
 				}
-			] 
+			]
 			
 		},
 		{
@@ -93,7 +156,7 @@
 					"type": "JEP",
 					"identifier": "369"
 				}
-			] 
+			]
 		}
 	]
 }
