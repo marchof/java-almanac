@@ -118,7 +118,7 @@ public class Sandbox {
 
 Just like `return` exits a method with a value, `yield` exits the block with a value. 
 
-Prior versions (JEP 325 and 354) used the `break` keyword for the same purpose, but this was deemed to be confusing when previewed in JDK 12 and 13.
+Prior versions ([JEP 325](https://openjdk.java.net/jeps/325) and [354](https://openjdk.java.net/jeps/354)) used the `break` keyword for the same purpose, but this was deemed to be confusing when previewed in JDK 12 and 13.
 
 ## The Four Forms of Switch
 
