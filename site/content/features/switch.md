@@ -13,7 +13,7 @@ In preparation for a more general pattern matching construct, JEP 361 provides a
 
 The C language introduced a `switch` statement which is quite different from the more orderly control flow constructs (`if`, `while`, and so on). Execution jumps to a labeled branch, and falls through subsequent branches, unless explicitly terminated with a `break`. 
 
-Here is the classic example from Kernighan & Ritchie:
+Here is the classic example from [Kernighan & Ritchie](https://en.wikipedia.org/wiki/The_C_Programming_Language):
 
 ```
 switch (c) {
@@ -315,5 +315,4 @@ The `yield` statement may in time join the labeled `break/continue` statements: 
 5. A `case` label can be followed by multiple constants, separated by commas
 6. In a `switch` expression, the `yield` statement exits and yields a value
 7. In a `switch` expression without fall through, the `->` token can be followed by a block statement that yields a value
-
 
