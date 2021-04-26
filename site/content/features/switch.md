@@ -7,7 +7,7 @@ type: "sandbox"
 ---
 
 
-In preparation for a more general pattern matching construct, JEP 361 provides an expression that selects one of multiple values, given an operand that is an integer, string, or `enum` constant, using the familiar `switch` syntax The JEP also provides additional forms of `switch` expressions and statements, in order to make the feature more regular. The final release occurred in JDK 14.
+In preparation for a more general pattern matching construct, JEP 361 provides an expression that selects one of multiple values, given an operand that is an integer, string, or `enum` constant, using the familiar `switch` syntax. The JEP also provides additional forms of `switch` expressions and statements, in order to make the feature more regular. The final release occurred in JDK 14.
 
 ## The Classic Switch Statement
 
