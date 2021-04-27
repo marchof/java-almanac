@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+18-1490"
+		"version": "17-ea+19-1609"
 	},
 	"order": 13.0,
 	"deltas": [
@@ -5069,9 +5069,34 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html",
 							"addedTags": [
+								"implements AccessibleAction",
 								"implements ChangeListener"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "doAccessibleAction(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#doAccessibleAction(int)"
+								},
+								{
+									"type": "method",
+									"name": "getAccessibleAction()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleAction()"
+								},
+								{
+									"type": "method",
+									"name": "getAccessibleActionCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionCount()"
+								},
+								{
+									"type": "method",
+									"name": "getAccessibleActionDescription(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionDescription(int)"
+								},
 								{
 									"type": "method",
 									"name": "stateChanged(ChangeEvent)",
@@ -5495,6 +5520,50 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.xml.crypto",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.crypto.dsig.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "RSAPSSParameterSpec",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.html"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.xml.crypto.dsig",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "SignatureMethod",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RSA_PSS",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_PSS"
+								}
 							]
 						}
 					]
