@@ -30,6 +30,7 @@ switch (c) {
         nother++;
         break;
 }
+```
 
 The statement was created for one reason: jump tables. If there are many cases, it is worthwhile to set up a table of the case labels and branch starts. If the table is sparse, locate the entry by dead reckoning. Otherwise, sort the table and use binary search. Then simply jump to the matching branch. In ancient times, this technique was called "computed goto". The `switch` statement makes it available in high-level languages.
 
@@ -219,7 +220,6 @@ int numLetters = switch (seasonName) {
    case "Fall" -> 4;
    default -> -1;
 };
-```
 </pre>
 </td>
 <td>
