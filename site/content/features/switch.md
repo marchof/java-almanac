@@ -93,7 +93,7 @@ The match in a `switch` expression must be exhaustive. With integers and strings
 
 Suppose you need to do something in one of the branches, such as logging a value. In a `switch` statement, this isn't a problem. Each branch can contain multiple statements. But Java does not have general comma expressions (as in C/C++) or block expressions (as in Scala or Lisp). JEP 361 provides a restricted form inside `switch` expressions.
 
-The `->` token in a `switch` expression can be followed by a statement block, enclosed in `{ }`. The block must be exited through a `yield` statement that yield the block's value. For example:
+The `->` token in a `switch` expression can be followed by a statement block, enclosed in `{ }`. The block must be exited through a `yield` statement that yields the block's value. For example:
 
 {{< sandbox version=java14 preview="true" mainclass="Sandbox" >}}
 {{< sandboxsource "Sandbox.java" >}}
