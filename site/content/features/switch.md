@@ -314,3 +314,8 @@ The `yield` statement may in time join the labeled `break/continue` statements: 
 5. A `case` label can be followed by multiple constants, separated by commas
 6. In a `switch` expression, the `yield` statement exits and yields a value
 7. In a `switch` expression without fall through, the `->` token can be followed by a block statement that yields a value
+
+## References
+* [JEP 325: Switch Expressions (Preview), OpenJDK](https://openjdk.java.net/jeps/325)
+* [JEP 354: Switch Expressions (Second Preview), OpenJDK](https://openjdk.java.net/jeps/354)
+* [JEP 361: Switch Expressions, OpenJDK](https://openjdk.java.net/jeps/361)
