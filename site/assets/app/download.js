@@ -169,8 +169,10 @@ Vue.component('downloadlist', {
             this.packages = [];
             this.loading = true;
             var path = "packages" + query;
-            this.discoRequest(path, response => { 
-                this.packages = response.data;
+            this.discoRequest(path, response => {
+                if (Array.isArray(response.data)) {
+                    this.packages = response.data;
+                }
                 this.loading = false;
             });
         },
