@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+19-1609"
+		"version": "17-ea+20-1743"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -2843,6 +2843,34 @@
 				},
 				{
 					"type": "class",
+					"name": "CharArrayReader",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/CharArrayReader.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "read(CharBuffer)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/CharArrayReader.html#read(java.nio.CharBuffer)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Console",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "charset()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html#charset()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileInputStream",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html",
@@ -2930,6 +2958,20 @@
 							"name": "toPath()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/File.html#toPath()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "InputStreamReader",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/InputStreamReader.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "read(CharBuffer)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/InputStreamReader.html#read(java.nio.CharBuffer)"
 						}
 					]
 				},

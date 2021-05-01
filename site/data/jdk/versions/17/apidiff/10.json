@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+19-1609"
+		"version": "17-ea+20-1743"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -71,6 +71,34 @@
 									"name": "writeBytes(byte[])",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ByteArrayOutputStream.html#writeBytes(byte%5B%5D)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "CharArrayReader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/CharArrayReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "read(CharBuffer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/CharArrayReader.html#read(java.nio.CharBuffer)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Console",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "charset()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html#charset()"
 								}
 							]
 						},
@@ -149,6 +177,20 @@
 									"name": "FileWriter(String, Charset, boolean)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,boolean)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "InputStreamReader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/InputStreamReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "read(CharBuffer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/InputStreamReader.html#read(java.nio.CharBuffer)"
 								}
 							]
 						},
