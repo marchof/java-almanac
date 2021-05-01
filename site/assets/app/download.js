@@ -44,6 +44,7 @@ Vue.component('downloadlist', {
                 { id: 'corretto', name: 'Corretto', query: 'distro=corretto' },
                 { id: 'dragonwell', name: 'Dragonwell', query: 'distro=dragonwell' },
                 { id: 'liberica', name: 'Liberica', query: 'distro=liberica' },
+                { id: 'microsoft', name: 'Microsoft', query: 'distro=microsoft' },
                 { id: 'oracle', name: 'Oracle', query: 'distro=oracle' },
                 { id: 'oracle_open_jdk', name: 'Oracle OpenJDK', query: 'distro=oracle_open_jdk' },
                 { id: 'redhat', name: 'Redhat', query: 'distro=redhat' },
