@@ -116,7 +116,7 @@ Vue.component('downloadlist', {
             }
             if (this.latest) {
                     if (q) q += '&';
-                    q += 'latest=per_version';
+                    q += 'latest=available';
             }
             return q;
         }
