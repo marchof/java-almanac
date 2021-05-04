@@ -15,7 +15,7 @@ Vue.component('downloadlist', {
               <td><select style="width:100%" v-model="version"><option v-for="o in versionset" v-bind:value="o">{{ o.name }}</option></select></td>
               <td><select style="width:100%" v-model="type"><option v-for="o in typeset" v-bind:value="o">{{ o.name }}</option></select></td>
               <td><select style="width:100%" v-model="platform"><option v-for="o in platformset" v-bind:value="o">{{ o.name }}</option></select></td>
-              <td><input type="checkbox" v-model="latest"></input>Latest updates only</td>
+              <td></td>
             </tr>
           </thead>
           <tbody>
@@ -98,7 +98,6 @@ Vue.component('downloadlist', {
             ],
             product: null,
             version: null,
-            latest: true,
             type: null,
             platform: null,
             loading: true,
@@ -114,10 +113,8 @@ Vue.component('downloadlist', {
                     q += f.query;
                 }
             }
-            if (this.latest) {
-                    if (q) q += '&';
-                    q += 'latest=available';
-            }
+            if (q) q += '&';
+            q += 'latest=available';
             return q;
         }
     },
@@ -171,9 +168,7 @@ Vue.component('downloadlist', {
             this.loading = true;
             var path = "packages" + query;
             this.discoRequest(path, response => {
-                if (Array.isArray(response.data)) {
-                    this.packages = response.data;
-                }
+                this.packages = response.data.result;
                 this.loading = false;
             });
         },
@@ -186,7 +181,7 @@ Vue.component('downloadlist', {
             });
         },
         discoRequest(path, handler) {
-            axios.get("https://api.foojay.io/disco/v1.0/" + path).then(handler);
+            axios.get("https://api.foojay.io/disco/v2.0/" + path).then(handler);
         }
     }
 });
