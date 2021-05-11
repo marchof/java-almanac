@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+20-1743"
+		"version": "17-ea+21-1866"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -27179,10 +27179,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html",
 					"addedTags": [
-						"extends RandomSupport$AbstractSpliteratorGenerator"
-					],
-					"removedTags": [
-						"extends Object"
+						"implements RandomGenerator"
 					],
 					"deltas": [
 						{
@@ -27256,24 +27253,6 @@
 							"name": "longs(long, long, long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#longs(long,long,long)"
-						},
-						{
-							"type": "method",
-							"name": "makeDoublesSpliterator(long, long, double, double)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeDoublesSpliterator(long,long,double,double)"
-						},
-						{
-							"type": "method",
-							"name": "makeIntsSpliterator(long, long, int, int)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeIntsSpliterator(long,long,int,int)"
-						},
-						{
-							"type": "method",
-							"name": "makeLongsSpliterator(long, long, long, long)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html#makeLongsSpliterator(long,long,long,long)"
 						},
 						{
 							"type": "method",
