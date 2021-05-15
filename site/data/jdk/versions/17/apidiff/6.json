@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+21-1866"
+		"version": "17-ea+22-1964"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -22796,6 +22796,41 @@
 				},
 				{
 					"type": "class",
+					"name": "BasicDirectoryModel",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "intervalAdded(ListDataEvent)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalAdded(javax.swing.event.ListDataEvent)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "intervalRemoved(ListDataEvent)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalRemoved(javax.swing.event.ListDataEvent)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "lt(File, File)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#lt(java.io.File,java.io.File)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "BasicFileChooserUI",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html",
@@ -22874,6 +22909,15 @@
 				},
 				{
 					"type": "class",
+					"name": "BasicMenuItemUI.MouseInputHandler",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.MouseInputHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "BasicMenuItemUI",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.html",
@@ -22924,6 +22968,42 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#scrollBarWidth"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BasicScrollPaneUI.HSBChangeListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BasicScrollPaneUI.PropertyChangeHandler",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BasicScrollPaneUI.VSBChangeListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BasicScrollPaneUI.ViewportChangeHandler",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -22999,6 +23079,23 @@
 							"name": "viewToModel2D(JTextComponent, Point2D, Position.Bias[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#viewToModel2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D,javax.swing.text.Position.Bias%5B%5D)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BasicToolBarUI",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "createFloatingFrame(JToolBar)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(javax.swing.JToolBar)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
