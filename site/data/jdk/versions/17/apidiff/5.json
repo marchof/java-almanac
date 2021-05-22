@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+22-1964"
+		"version": "17-ea+23-2064"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -3877,6 +3877,18 @@
 							"type": "method",
 							"name": "finalize()",
 							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "readAllBytes()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html#readAllBytes()"
+						},
+						{
+							"type": "method",
+							"name": "readNBytes(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html#readNBytes(int)"
 						}
 					]
 				},

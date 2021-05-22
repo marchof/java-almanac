@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+22-1964"
+		"version": "17-ea+23-2064"
 	},
 	"order": 14.0,
 	"deltas": [
@@ -48,6 +48,26 @@
 									"name": "charset()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html#charset()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FileInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "readAllBytes()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html#readAllBytes()"
+								},
+								{
+									"type": "method",
+									"name": "readNBytes(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html#readNBytes(int)"
 								}
 							]
 						},
