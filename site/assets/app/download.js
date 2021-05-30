@@ -174,8 +174,9 @@ Vue.component('downloadlist', {
         },
         download(packageid) {
             this.discoRequest("packages/" + packageid, response => {
-                this.discoRequest("ephemeral_ids/" + response.data.ephemeral_id, response => {
-                    link = response.data.direct_download_uri || response.data.download_site_uri;
+                this.discoRequest("ephemeral_ids/" + response.data.result[0].ephemeral_id, response => {
+                    var item = response.data.result[0];
+                    link = item.direct_download_uri || item.download_site_uri;
                     window.open(link, "_self");
                 });
             });
