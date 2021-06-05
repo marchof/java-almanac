@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+24-2164"
+		"version": "17-ea+25-2252"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -106,6 +106,91 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.constant",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/ClassDesc.html",
+							"addedTags": [
+								"permitted subclass PrimitiveClassDescImpl",
+								"permitted subclass ReferenceClassDescImpl"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/ConstantDesc.html",
+							"addedTags": [
+								"permitted subclass ClassDesc",
+								"permitted subclass Double",
+								"permitted subclass DynamicConstantDesc",
+								"permitted subclass Float",
+								"permitted subclass Integer",
+								"permitted subclass Long",
+								"permitted subclass MethodHandleDesc",
+								"permitted subclass MethodTypeDesc",
+								"permitted subclass String"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DirectMethodHandleDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.html",
+							"addedTags": [
+								"permitted subclass DirectMethodHandleDescImpl"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodHandleDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+							"addedTags": [
+								"permitted subclass AsTypeMethodHandleDesc",
+								"permitted subclass DirectMethodHandleDesc"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTypeDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+							"addedTags": [
+								"permitted subclass MethodTypeDescImpl"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MethodHandles",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "tableSwitch(MethodHandle, MethodHandle...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/reflect/package-summary.html",
@@ -135,6 +220,99 @@
 							"addedTags": [
 								"permitted subclass Constructor",
 								"permitted subclass Method"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SecurityManager",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "checkMulticast(InetAddress, byte)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
+									"addedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "System",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getSecurityManager()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#getSecurityManager()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setSecurityManager(SecurityManager)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ThreadGroup",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "checkAccess()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Thread",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "checkAccess()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html#checkAccess()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
 							]
 						}
 					]
@@ -265,10 +443,126 @@
 				},
 				{
 					"type": "package",
+					"name": "java.security",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AccessControlContext",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessControlContext.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "AccessControlException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessControlException.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "AccessController",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessController.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PolicySpi",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/PolicySpi.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Policy",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/Policy.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DomainCombiner",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/DomainCombiner.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Policy.Parameters",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/Policy.Parameters.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util.concurrent",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Executors",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "privilegedCallable(Callable)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "privilegedCallableUsingCurrentClassLoader(Callable)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "privilegedThreadFactory()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "ForkJoinPool",
@@ -430,6 +724,62 @@
 									"name": "splits(long, RandomGenerator.SplittableGenerator)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.security.auth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SubjectDomainCombiner",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Subject",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "doAsPrivileged(Subject, PrivilegedAction, AccessControlContext)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "doAsPrivileged(Subject, PrivilegedExceptionAction, AccessControlContext)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getSubject(AccessControlContext)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
 								}
 							]
 						}
@@ -626,6 +976,28 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.swing.filechooser",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileSystemView",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getSystemIcon(File, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File,int,int)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.swing.plaf.basic",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
@@ -802,6 +1174,40 @@
 		},
 		{
 			"type": "module",
+			"name": "java.logging",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.util.logging",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "LogManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/LogManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "checkAccess()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
 			"name": "java.naming",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/module-summary.html",
@@ -827,6 +1233,36 @@
 										"forRemoval"
 									]
 								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.rmi",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.rmi.activation",
+					"status": "removed"
+				},
+				{
+					"type": "package",
+					"name": "java.rmi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "RMISecurityManager",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
+							"addedTags": [
+								"forRemoval"
 							]
 						}
 					]

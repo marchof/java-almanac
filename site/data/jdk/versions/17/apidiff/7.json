@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+24-2164"
+		"version": "17-ea+25-2252"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -2860,6 +2860,12 @@
 						},
 						{
 							"type": "method",
+							"name": "tableSwitch(MethodHandle, MethodHandle...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)"
+						},
+						{
+							"type": "method",
 							"name": "tryFinally(MethodHandle, MethodHandle)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tryFinally(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"
@@ -5655,8 +5661,12 @@
 				{
 					"type": "class",
 					"name": "SecurityManager",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -5672,6 +5682,15 @@
 							"type": "method",
 							"name": "checkMemberAccess(Class, int)",
 							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "checkMulticast(InetAddress, byte)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
+							"addedTags": [
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -6175,8 +6194,28 @@
 						},
 						{
 							"type": "method",
+							"name": "getSecurityManager()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#getSecurityManager()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "runFinalizersOnExit(boolean)",
 							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "setSecurityManager(SecurityManager)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						}
 					]
 				},
@@ -6192,6 +6231,16 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html#allowThreadSuspension(boolean)",
 							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkAccess()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()",
+							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -6289,6 +6338,16 @@
 							"name": "Thread(ThreadGroup, Runnable, String, long, boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long,boolean)"
+						},
+						{
+							"type": "method",
+							"name": "checkAccess()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html#checkAccess()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -8843,160 +8902,7 @@
 		{
 			"type": "package",
 			"name": "java.rmi.activation",
-			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/package-summary.html",
-			"deltas": [
-				{
-					"type": "class",
-					"name": "Activatable",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/Activatable.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivateFailedException",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivateFailedException.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationDesc",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationException",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationException.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationGroupDesc",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationGroupID",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationGroup",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationGroup_Stub",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "ActivationID",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationID.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "UnknownGroupException",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/UnknownGroupException.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "class",
-					"name": "UnknownObjectException",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/UnknownObjectException.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ActivationInstantiator",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ActivationMonitor",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ActivationSystem",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "Activator",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/Activator.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				}
-			]
+			"status": "removed"
 		},
 		{
 			"type": "package",
@@ -9102,7 +9008,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					]
 				}
 			]
@@ -9837,9 +9744,33 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AccessControlContext",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessControlContext.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "AccessControlException",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessControlException.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "AccessController",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessController.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -10090,6 +10021,26 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/PermissionCollection.html#elementsAsStream()"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "PolicySpi",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/PolicySpi.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Policy",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/Policy.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -10375,6 +10326,16 @@
 				},
 				{
 					"type": "interface",
+					"name": "DomainCombiner",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/DomainCombiner.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "KeyStore.Entry.Attribute",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/KeyStore.Entry.Attribute.html"
@@ -10408,6 +10369,16 @@
 								"deprecated"
 							]
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Policy.Parameters",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/Policy.Parameters.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -12682,6 +12653,36 @@
 							"name": "newWorkStealingPool(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool(int)"
+						},
+						{
+							"type": "method",
+							"name": "privilegedCallable(Callable)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "privilegedCallableUsingCurrentClassLoader(Callable)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "privilegedThreadFactory()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						}
 					]
 				},
@@ -13436,6 +13437,16 @@
 							"type": "method",
 							"name": "addPropertyChangeListener(PropertyChangeListener)",
 							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "checkAccess()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -19321,6 +19332,54 @@
 					"status": "removed"
 				},
 				{
+					"type": "class",
+					"name": "SubjectDomainCombiner",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Subject",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "doAsPrivileged(Subject, PrivilegedAction, AccessControlContext)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "doAsPrivileged(Subject, PrivilegedExceptionAction, AccessControlContext)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getSubject(AccessControlContext)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
 					"type": "interface",
 					"name": "Destroyable",
 					"status": "notmodified",
@@ -20150,6 +20209,12 @@
 							"name": "getLinkLocation(File)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getLinkLocation(java.io.File)"
+						},
+						{
+							"type": "method",
+							"name": "getSystemIcon(File, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File,int,int)"
 						},
 						{
 							"type": "method",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+24-2164"
+		"version": "17-ea+25-2252"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -14589,6 +14589,10 @@
 					"name": "SecurityManager",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					],
 					"removedTags": [
 						"abstract"
 					],
@@ -14626,7 +14630,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -15268,6 +15273,16 @@
 						},
 						{
 							"type": "method",
+							"name": "getSecurityManager()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#getSecurityManager()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getenv()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#getenv()"
@@ -15315,6 +15330,16 @@
 							"name": "setProperty(String, String)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "setSecurityManager(SecurityManager)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						}
 					]
 				},
@@ -15332,6 +15357,16 @@
 							"name": "allowThreadSuspension(boolean)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html#allowThreadSuspension(boolean)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "checkAccess()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -15445,7 +15480,9 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html#checkAccess()",
 							"addedTags": [
-								"final"
+								"deprecated",
+								"final",
+								"forRemoval"
 							]
 						},
 						{
@@ -18254,12 +18291,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.rmi.activation",
-			"status": "added",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/activation/package-summary.html"
-		},
-		{
-			"type": "package",
 			"name": "java.rmi.dgc",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/dgc/package-summary.html",
@@ -19114,7 +19145,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
 					"addedTags": [
-						"deprecated"
+						"deprecated",
+						"forRemoval"
 					],
 					"deltas": [
 						{
