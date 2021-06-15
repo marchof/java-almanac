@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+25-2252"
+		"version": "17-ea+26-2439"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -87,6 +87,26 @@
 						},
 						{
 							"type": "class",
+							"name": "ObjectInputFilter.Config",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.Config.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getSerialFilterFactory()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.Config.html#getSerialFilterFactory()"
+								},
+								{
+									"type": "method",
+									"name": "setSerialFilterFactory(BinaryOperator)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.Config.html#setSerialFilterFactory(java.util.function.BinaryOperator)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "WriteAbortedException",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
@@ -99,6 +119,38 @@
 									"addedTags": [
 										"deprecated"
 									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ObjectInputFilter",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowFilter(Predicate, ObjectInputFilter.Status)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#allowFilter(java.util.function.Predicate,java.io.ObjectInputFilter.Status)"
+								},
+								{
+									"type": "method",
+									"name": "merge(ObjectInputFilter, ObjectInputFilter)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#merge(java.io.ObjectInputFilter,java.io.ObjectInputFilter)"
+								},
+								{
+									"type": "method",
+									"name": "rejectFilter(Predicate, ObjectInputFilter.Status)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#rejectFilter(java.util.function.Predicate,java.io.ObjectInputFilter.Status)"
+								},
+								{
+									"type": "method",
+									"name": "rejectUndecidedClass(ObjectInputFilter)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#rejectUndecidedClass(java.io.ObjectInputFilter)"
 								}
 							]
 						}
@@ -226,10 +278,68 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.runtime",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/runtime/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SwitchBootstraps",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Process",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "errorReader()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#errorReader()"
+								},
+								{
+									"type": "method",
+									"name": "errorReader(Charset)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)"
+								},
+								{
+									"type": "method",
+									"name": "inputReader()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#inputReader()"
+								},
+								{
+									"type": "method",
+									"name": "inputReader(Charset)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)"
+								},
+								{
+									"type": "method",
+									"name": "outputWriter()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#outputWriter()"
+								},
+								{
+									"type": "method",
+									"name": "outputWriter(Charset)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "SecurityManager",
@@ -521,6 +631,29 @@
 				},
 				{
 					"type": "package",
+					"name": "java.time",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Clock",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/Clock.html",
+							"addedTags": [
+								"implements InstantSource"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InstantSource",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/InstantSource.html"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util.concurrent",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/package-summary.html",
@@ -724,6 +857,20 @@
 									"name": "splits(long, RandomGenerator.SplittableGenerator)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Map.Entry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.Entry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "copyOf(Map.Entry)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"
 								}
 							]
 						}

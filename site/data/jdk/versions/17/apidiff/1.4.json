@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+25-2252"
+		"version": "17-ea+26-2439"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -10026,9 +10026,33 @@
 						},
 						{
 							"type": "method",
+							"name": "errorReader()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#errorReader()"
+						},
+						{
+							"type": "method",
+							"name": "errorReader(Charset)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)"
+						},
+						{
+							"type": "method",
 							"name": "info()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#info()"
+						},
+						{
+							"type": "method",
+							"name": "inputReader()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#inputReader()"
+						},
+						{
+							"type": "method",
+							"name": "inputReader(Charset)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)"
 						},
 						{
 							"type": "method",
@@ -10041,6 +10065,18 @@
 							"name": "onExit()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#onExit()"
+						},
+						{
+							"type": "method",
+							"name": "outputWriter()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#outputWriter()"
+						},
+						{
+							"type": "method",
+							"name": "outputWriter(Charset)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"
 						},
 						{
 							"type": "method",
@@ -23837,6 +23873,12 @@
 							"name": "comparingByValue(Comparator)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.Entry.html#comparingByValue(java.util.Comparator)"
+						},
+						{
+							"type": "method",
+							"name": "copyOf(Map.Entry)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"
 						}
 					]
 				},
