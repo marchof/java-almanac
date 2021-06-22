@@ -21,13 +21,15 @@ Vue.component('sandbox', {
         };
     },
     mounted() {
-        url = "https://"  + this.version + ".sandbox.javaalmanac.io/version";
-        axios.get(url).then(response => { 
+        axios.get(this.serviceurl("version")).then(response => { 
             this.versioninfo = response.data['java.runtime.version'];
             this.versioninfoext = response.data['java.vendor'] + '\n' + response.data['java.vm.name'];
         })
     },
     methods: {
+        serviceurl(action) {
+            return "https://sandbox.javaalmanac.io/jdk/" + this.version.replace("java", "") + "/" + action;
+        },
         compileandrun() {
             this.output = "Compile and run with " + this.versioninfo + " ...";
             sourcefiles= [];
@@ -41,8 +43,7 @@ Vue.component('sandbox', {
                 preview: this.preview,
                 sourcefiles: sourcefiles
             };
-            url = "https://"  + this.version + ".sandbox.javaalmanac.io/compileandrun";
-            axios.post(url, request).then(response => { 
+            axios.post(this.serviceurl("compileandrun"), request).then(response => { 
                 this.output = response.data.output;
             })
         }
