@@ -1,13 +1,13 @@
 ---
-title: Sealed Types (JEP 360)
+title: Sealed Types (JEP 409)
 copyright: Cay S. Horstmann 2020. All rights reserved.
-jep: 360
-jdkversion: 15
+jep: 409
+jdkversion: 17
 type: "sandbox"
 ---
 
 
-Java 15 provides a preview of “sealed types”—types with a fixed set of direct subtypes. This feature allows for accurate modeling of type hierarchies that should not be open to arbitrary inheritance, and it allows the compiler to check for exhaustive pattern matching.
+Java 17 provides “sealed types”—types with a fixed set of direct subtypes. This feature allows for accurate modeling of type hierarchies that should not be open to arbitrary inheritance, and it allows the compiler to check for exhaustive pattern matching.
 
 ## Controlling Subtypes
 
@@ -34,7 +34,7 @@ this would be an error. And that's just as well, since JSON doesn't allow for co
 
 The dictionary defines sealing as (1) affixing a mark that attests to quality or absence of tampering, or (2) securing against access or damage. I am not sure that either of these describes what the `sealed` keyword does. A sealed class is protected from one specific evil, namely promiscuous subclassing.
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "JSONValue.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "JSONValue.java" >}}
 public sealed abstract class JSONValue
       permits JSONObject, JSONArray, JSONString, JSONNumber, JSONBoolean, JSONNull {
    // . . .
@@ -104,7 +104,7 @@ public static String type(JSONValue value) {
 }
 ```
 
-Actually, Java 15 does not carry out that analysis for `if` statements, but it is likely that a  future version of Java will do this with type patterns in `switch` expressions:
+Actually, Java 17 does not carry out that analysis for `if` statements, but it is likely that a  future version of Java will do this with type patterns in `switch` expressions:
 
 ```
 public static String type(JSONValue value) {
@@ -173,7 +173,7 @@ non-sealed class Element extends Node {
 
 The tokens `sealed` and `permits` are *restricted identifiers* that have a special meaning only in class and interface declarations, just like `record`, `var`, and `yield`. Code with variables named `sealed` and `permits` won't break. But you can no longer define classes named `sealed` and `permits`:
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "sealed.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "sealed.java" >}}
 sealed class sealed permits permits {}
 final class permits extends sealed {}
 
@@ -192,7 +192,7 @@ In contrast, `non-sealed` is a keyword. Obviously, you cannot use it as an ident
 
 And yes, you can continue to compute the difference of two variables `non` and `sealed`:
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "Sandbox.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "Sandbox.java" >}}
 public class Sandbox {
    public static void main(String[] args) {
       int non = 7 * 7;
@@ -216,7 +216,7 @@ There is one vexing situation. If you don't want to use modules, you cannot put 
 
 If the subclasses of a sealed class are all defined in the same source file, then you can omit the `permits` clause: 
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "DirectoryEntry.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "DirectoryEntry.java" >}}
 import java.io.*;
 import java.nio.file.*;
 import java.util.function.*;
@@ -314,7 +314,7 @@ As you can see, with a sealed interface, the situation is a bit more complex. It
 
 Sandbox with complete code:
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "IntSeq.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "IntSeq.java" >}}
 public sealed interface IntSeq permits FiniteSeq, IteratedSeq, GeneratedSeq {
    int next();
    default boolean hasNext() { return true; }
@@ -401,7 +401,7 @@ public static int sum(IntLst lst) {
 
 It is a bit wasteful to construct a separate instance of an `Empty` at the end of every list. We could have a single object for all empty lists. An excellent way to get a single instance is with an enumerations. An enumeration can extend an interface. Therefore it can appear as a permitted subtype of a sealed interface:
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "util/IntLst.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "util/IntLst.java" >}}
 package util;
 public sealed interface IntLst {
   record NonEmpty(int head, IntLst tail) implements IntLst {}
@@ -434,7 +434,7 @@ public class Sandbox {
 
 Sealed types and their direct subtypes can be generic. Just to show that it can be done, here is a generic Lisp-style list. As usual, some generic machinations look a bit forbidding, but it works without surprises.
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "util/Lst.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "util/Lst.java" >}}
 package util;
 public sealed interface Lst<T> {
    record NonEmpty<T>(T head, Lst<T> tail) implements Lst<T> {};
@@ -487,7 +487,7 @@ But what's a `ClassDesc`? Why not an array of good old `java.lang.Class`?
 
 A `ClassDesc` describes a class or interface with package and class/interface name, but without a class loader. This accurately describes what happens in the source file. It's just different from the rest of the reflection API. Looking at [this discussion on the expert group](https://mail.openjdk.java.net/pipermail/amber-spec-experts/2020-May/002196.html), there is some discomfort about the API.
 
-{{< sandbox version=java15 preview="true" mainclass="Sandbox" >}}{{< sandboxsource "IntLst.java" >}}
+{{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "IntLst.java" >}}
 public sealed interface IntLst {
   record NonEmpty(int head, IntLst tail) implements IntLst {}
   enum Empty implements IntLst { EMPTY }
@@ -525,5 +525,7 @@ Sealed types are fairly straightforward. Here are the key points to remember:
 ## References
 
 * [JEP 360: Sealed Classes (Preview), OpenJDK](https://openjdk.java.net/jeps/360)
+* [JEP 397: Sealed Classes (Second Preview), OpenJDK](https://openjdk.java.net/jeps/397)
+* [JEP 409: Sealed Classes, OpenJDK](https://openjdk.java.net/jeps/409)
 
 
