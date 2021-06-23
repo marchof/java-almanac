@@ -2,14 +2,20 @@
   <thead>
     <tr>
       <th>Version</th>
-      <th>Release Date</th>
+      <th>Status</th>
+      <th>Bytecode</th>
+      <th>Release</th>
+      <th>EOL</th>
     </tr>
   </thead>
   <tbody>
-    {{- range sort $.Site.Data.jdk.versions "ga" }}
+    {{- range sort $.Site.Data.jdk.versions "ga" "desc" }}
     <tr>
       <td><a href="{{ .version }}">{{ .name }}</a></td>
+      <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
+      <td>{{ .bytecode }}</td>
       <td>{{ .ga }}</td>
+      <td>{{ truncate 10 "" .eol }}</td>
     </tr>
     {{- end }}
   </tbody>
