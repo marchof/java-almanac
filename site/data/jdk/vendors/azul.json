@@ -232,18 +232,37 @@
 			"foojaydownload": true
 		},
 		{
-			"id": "zing",
-			"name": "Zing",
+			"id": "zulu",
+			"name": "Zulu Builds of OpenJDK 18",
+			"license": "GPLv2+CE",
+			"url": "https://www.azul.com/downloads/zulu-community/?version\u003djava-18-ea",
+			"platforms": [
+				"alpine-x64",
+				"linux-x86",
+				"linux-x64",
+				"windows-x86",
+				"windows-x64",
+				"macos-x64",
+				"macos-arm64"
+			],
+			"versions": [
+				"18"
+			],
+			"foojaydownload": true
+		},
+		{
+			"id": "prime",
+			"name": "Azul Prime",
 			"license": "Commercial",
-			"url": "https://www.azul.com/products/zing/",
+			"url": "https://www.azul.com/products/prime/",
 			"platforms": [
 				"linux-x64"
 			],
 			"versions": [
-				"7",
 				"8",
 				"11",
-				"13"
+				"13",
+				"15"
 			],
 			"foojaydownload": false
 		}
