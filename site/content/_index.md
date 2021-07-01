@@ -13,6 +13,7 @@ Collection of information about the history and future of Java.
 * [JDK Releases](jdk)
 * [Java Bytecode](bytecode)
 * [Features](features)
+* [Snippets of Modern Java](snippets)
 * [References](references)
 
 
