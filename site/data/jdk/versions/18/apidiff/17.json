@@ -2,15 +2,59 @@
 	"base": {
 		"feature": "17",
 		"vendor": "open",
-		"version": "17-ea+29-2576"
+		"version": "17-ea+30-2618"
 	},
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+4-122"
+		"version": "18-ea+5-159"
 	},
 	"order": 17.0,
 	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Math",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "unsignedMultiplyHigh(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#unsignedMultiplyHigh(long,long)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StrictMath",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "unsignedMultiplyHigh(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyHigh(long,long)"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
 		{
 			"type": "module",
 			"name": "java.compiler",
