@@ -20,11 +20,7 @@ import java.nio.file.Files;
 
 public class ReadWriteTextFiles {
 
-	static final String TEST_CONTENT = """
-			Line 1
-			Line 2
-			Line 3
-			""";
+	static final String TEST_CONTENT = "Line 1\nLine 2\nLine 3\n";
 
 	public static void main(String... args) throws IOException {
 
