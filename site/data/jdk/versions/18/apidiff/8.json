@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+7-288"
+		"version": "18-ea+8-350"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -4484,6 +4484,18 @@
 						},
 						{
 							"type": "method",
+							"name": "divideExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "divideExact(long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(long,long)"
+						},
+						{
+							"type": "method",
 							"name": "floorDiv(long, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#floorDiv(long,int)"
@@ -4966,6 +4978,18 @@
 							"name": "decrementExact(long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#decrementExact(long)"
+						},
+						{
+							"type": "method",
+							"name": "divideExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#divideExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "divideExact(long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#divideExact(long,long)"
 						},
 						{
 							"type": "method",
@@ -9004,6 +9028,12 @@
 							"name": "dividedBy(Duration)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/Duration.html#dividedBy(java.time.Duration)"
+						},
+						{
+							"type": "method",
+							"name": "isPositive()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/Duration.html#isPositive()"
 						},
 						{
 							"type": "method",
