@@ -18,7 +18,7 @@ Instantly compile and run Java 17 snippets without a local Java installation.
 import java.util.HexFormat;
 
 public class Java17 {
-    
+
     public static void main(String[] args) {
         var fmt = HexFormat.ofDelimiter(", ").withPrefix("0x");
         System.out.println(fmt.formatHex("I ❤️ Java".getBytes()));

@@ -20,7 +20,7 @@ Instantly compile and run Java 16 snippets without a local Java installation.
 public class Java16 {
 
     record Lang(String name, int version) {}
-    
+
     public static void main(String[] args) {
         var java = new Lang("Java", 16);
         System.out.printf("Hello %s!", java);

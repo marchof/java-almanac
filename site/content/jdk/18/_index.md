@@ -15,7 +15,7 @@ Instantly compile and run Java 18 snippets without a local Java installation.
 import javax.lang.model.SourceVersion;
 
 public class Java18 {
-    
+
     public static void main(String[] args) {
         System.out.println("Compiled with " + SourceVersion.RELEASE_18);
     }
