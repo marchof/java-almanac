@@ -20,7 +20,9 @@ Collection of information about the history and future of Java.
 
 ## Author & License
 
-![Creative Commons BY-SA](/img/cc-by-sa.png)
+{{< rawhtml >}}
+<img src="/img/cc-by-sa.png" title="Creative Commons BY-SA" width="88" height="31"/>
+{{< /rawhtml >}}
 
 This content is provided by Java Champions Marc R. Hoffmann and Cay S. Horstmann.
 Unless otherwise noted, this content is published under the
