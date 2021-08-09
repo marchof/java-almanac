@@ -1,6 +1,7 @@
 Vue.component('downloadlist', {
     template: `
         <div>
+        <div style="overflow-x:auto;">
         <table style="width:100%;white-space:nowrap;">
           <thead>
             <tr>
@@ -34,6 +35,7 @@ Vue.component('downloadlist', {
             </tr>
           </tbody>
         </table>
+        </div>
         </div>
     `,
     data() {

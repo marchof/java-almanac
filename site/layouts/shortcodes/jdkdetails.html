@@ -1,5 +1,6 @@
 {{- $version := index .Params 0 }}
 {{- with (index $.Site.Data.jdk.versions $version) }}
+<div style="overflow-x:auto;">
 <table>
   <tbody>
     <tr>
@@ -68,6 +69,7 @@
 <div class="datasource">
   <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $version }}.json">Data Source</a>
 </div>
+</div>
 
 <div>
 {{ .Inner | markdownify }}
@@ -107,6 +109,7 @@
 
 <h2>Downloads</h2>
 
+<div style="overflow-x:auto;">
 <table>
   <thead>
     <tr>
@@ -147,4 +150,4 @@
 <div class="datasource">
   <a href="{{ $.Site.Params.Sourcebase }}data/jdk/vendors">Data Source</a>
 </div>
-
+</div>
