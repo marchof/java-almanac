@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+10-469"
+		"version": "18-ea+11-557"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -2891,6 +2891,12 @@
 							"name": "readNBytes(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html#readNBytes(int)"
+						},
+						{
+							"type": "method",
+							"name": "transferTo(OutputStream)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html#transferTo(java.io.OutputStream)"
 						}
 					]
 				},
@@ -20376,6 +20382,12 @@
 							"name": "getOrigin(ModuleElement, ModuleElement.Directive)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.ModuleElement,javax.lang.model.element.ModuleElement.Directive)"
+						},
+						{
+							"type": "method",
+							"name": "getOutermostTypeElement(Element)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOutermostTypeElement(javax.lang.model.element.Element)"
 						},
 						{
 							"type": "method",
