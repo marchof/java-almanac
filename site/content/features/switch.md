@@ -179,7 +179,6 @@ public class Sandbox {
         String seasonName = switch (seasonCode) {
             case 0: 
                 System.out.println("spring time!");
-                yield "Spring";
             case 1:
                 yield "Summer";
             case 2:
