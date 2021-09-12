@@ -138,15 +138,13 @@ public class Sandbox {
     public static void main(String[] args) {
         int seasonCode = (int) (5 * Math.random());
         System.out.println(seasonCode);
-        String seasonName = switch (seasonCode) {
-            case 0 -> {
-                System.out.println("spring time!");
-                yield "Spring";
-            }
-            case 1 -> "Summer";
-            case 2 -> "Fall";
-            case 3 -> "Winter";
-            default -> "???";
+        String seasonName;
+        switch (seasonCode) {
+            case 0 -> seasonName = "Spring";
+            case 1 -> seasonName = "Summer";
+            case 2 -> seasonName = "Fall";
+            case 3 -> seasonName = "Winter";
+            default -> seasonName = "???";
         };
         System.out.println(seasonName);
     }
