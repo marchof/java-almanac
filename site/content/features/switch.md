@@ -168,7 +168,7 @@ case "Summer":
 case "Winter":
 ```
 
-Finally, for symmetry, a "fall through" version of switch expressions ia provided:
+Finally, for symmetry, a "fall through" version of switch expressions is provided:
 
 {{< sandbox version=java14 preview="true" mainclass="Sandbox" >}}
 {{< sandboxsource "Sandbox.java" >}}
