@@ -126,7 +126,7 @@ Prior versions ([JEP 325](https://openjdk.java.net/jeps/325) and [354](https://o
 The classic `switch` statement, which has been a part of Java since version 1.0, differs from the `switch` expression in two ways:
 
 * The classic switch is a statement, not an expression
-* In the classic switch, execution "falls through" to the next branch unless 
+* In the classic switch, execution "falls through" to the next branch, unless explicitly terminated with a `break`. 
 
 The "fall through" behavior, while sometimes necessary, is perceived as error-prone. For that reason, there is a `-Xlint:fallthrough` compiler option generates a warning when it occurs. 
 
