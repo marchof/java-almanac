@@ -126,7 +126,7 @@ Prior versions ([JEP 325](https://openjdk.java.net/jeps/325) and [354](https://o
 The classic `switch` statement, which has been a part of Java since version 1.0, differs from the `switch` expression in two ways:
 
 * The classic switch is a statement, not an expression
-* In the classic switch, execution "falls through" to the next branch unless 
+* In the classic switch, execution "falls through" to the next branch, unless explicitly terminated with a `break`. 
 
 The "fall through" behavior, while sometimes necessary, is perceived as error-prone. For that reason, there is a `-Xlint:fallthrough` compiler option generates a warning when it occurs. 
 
@@ -138,15 +138,13 @@ public class Sandbox {
     public static void main(String[] args) {
         int seasonCode = (int) (5 * Math.random());
         System.out.println(seasonCode);
-        String seasonName = switch (seasonCode) {
-            case 0 -> {
-                System.out.println("spring time!");
-                yield "Spring";
-            }
-            case 1 -> "Summer";
-            case 2 -> "Fall";
-            case 3 -> "Winter";
-            default -> "???";
+        String seasonName;
+        switch (seasonCode) {
+            case 0 -> seasonName = "Spring";
+            case 1 -> seasonName = "Summer";
+            case 2 -> seasonName = "Fall";
+            case 3 -> seasonName = "Winter";
+            default -> seasonName = "???";
         };
         System.out.println(seasonName);
     }
@@ -170,7 +168,7 @@ case "Summer":
 case "Winter":
 ```
 
-Finally, for symmetry, a "fall through" version of switch expressions ia provided:
+Finally, for symmetry, a "fall through" version of switch expressions is provided:
 
 {{< sandbox version=java14 preview="true" mainclass="Sandbox" >}}
 {{< sandboxsource "Sandbox.java" >}}
@@ -181,7 +179,6 @@ public class Sandbox {
         String seasonName = switch (seasonCode) {
             case 0: 
                 System.out.println("spring time!");
-                yield "Spring";
             case 1:
                 yield "Summer";
             case 2:
