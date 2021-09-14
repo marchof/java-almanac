@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+13-681"
+		"version": "18-ea+14-756"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -2619,6 +2619,15 @@
 							"name": "asSpreader(int, Class, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/MethodHandle.html#asSpreader(int,java.lang.Class,int)"
+						},
+						{
+							"type": "method",
+							"name": "asType(MethodType)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)",
+							"addedTags": [
+								"final"
+							]
 						},
 						{
 							"type": "method",
@@ -17092,6 +17101,50 @@
 					"name": "Generated",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Generated.html"
+				},
+				{
+					"type": "interface",
+					"name": "Messager",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "printError(CharSequence)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence)"
+						},
+						{
+							"type": "method",
+							"name": "printError(CharSequence, Element)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence,javax.lang.model.element.Element)"
+						},
+						{
+							"type": "method",
+							"name": "printNote(CharSequence)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence)"
+						},
+						{
+							"type": "method",
+							"name": "printNote(CharSequence, Element)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence,javax.lang.model.element.Element)"
+						},
+						{
+							"type": "method",
+							"name": "printWarning(CharSequence)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence)"
+						},
+						{
+							"type": "method",
+							"name": "printWarning(CharSequence, Element)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence,javax.lang.model.element.Element)"
+						}
+					]
 				},
 				{
 					"type": "interface",
