@@ -5,7 +5,7 @@ type: sandbox
 
 {{< jdkdetails "17" >}}
 
-Java 17 is the next long term support (LTS) release after Java 11.
+Java 17 is the latest long term support (LTS) release after [Java 11](../11).
 
 {{< /jdkdetails >}}
 
