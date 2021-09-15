@@ -14,7 +14,11 @@
     </div></td>
     <td><ul class="tag">
       {{- if eq "added" .delta.status -}}
-        <li class="tag newelement">added</li>
+        {{- if .delta.preview -}}
+          <li class="tag newelement">added preview</li>
+        {{- else -}}
+          <li class="tag newelement">added</li>
+        {{- end -}}
       {{- else if eq "removed" .delta.status -}}
         <li class="tag removedelement">removed</li>
       {{- end -}}
