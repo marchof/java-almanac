@@ -15,6 +15,12 @@
       <th>EOL Date</th>
       <td>{{ .eol }}</td>
     </tr>
+    {{- with .latestversion }}
+    <tr>
+      <th>Latest Version</th>
+      <td>{{ . }}</td>
+    </tr>
+    {{- end }}
     {{- with .codename }}
     <tr>
       <th>Codename</th>

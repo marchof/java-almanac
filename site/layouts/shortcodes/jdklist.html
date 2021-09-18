@@ -7,6 +7,7 @@
       <th>Bytecode</th>
       <th>Release</th>
       <th>EOL</th>
+      <th>Latest Version</th>
     </tr>
   </thead>
   <tbody>
@@ -16,7 +17,8 @@
       <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
       <td>{{ .bytecode }}</td>
       <td>{{ .ga }}</td>
-      <td>{{ truncate 10 "" .eol }}</td>
+      <td>{{ .eol }}</td>
+      <td>{{ .latestversion }}</td>
     </tr>
     {{- end }}
   </tbody>
