@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  publish:
+  publish-web:
     runs-on: ubuntu-latest
     env:
       HUGO_IMAGE: klakegg/hugo:0.82.0
@@ -23,3 +23,22 @@ jobs:
         -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
         -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
         ${{ env.HUGO_IMAGE }} deploy --invalidateCDN
+  
+  publish-data:
+    runs-on: ubuntu-latest
+    env:
+      BUCKET: ${{ secrets.DATA_API_BUCKET }}
+      DISTRIBUTION: ${{ secrets.DATA_API_DISTRIBUTION }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+    - name: Build and Run with Maven
+      run: |
+        cd dataapi
+        mvn -B clean compile exec:java -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
