@@ -32,6 +32,12 @@ public class ApiV1 implements ApiDefinition {
 	@Override
 	public PathElementDefinition getPathDefinition() {
 		return new PathElementDefinition() //
+				.path("bytecode", new PathElementDefinition() //
+						.path("opcodes", new PathElementDefinition() //
+								.get(new GetBytecodeOpcodesList())
+								.param("opcode", GetBytecodeOpcodesList.BYTECODE_OPCODES, new PathElementDefinition() //
+										.get(new GetBytecodeOpcode())) //
+						)) //
 				.path("jdk", new PathElementDefinition() //
 						.path("versions", new PathElementDefinition() //
 								.get(new GetJdkVersionList()) //
