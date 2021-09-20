@@ -15,25 +15,25 @@
 			"type": "module",
 			"name": "java.base",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.io",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "CharArrayReader",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/CharArrayReader.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/CharArrayReader.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "read(CharBuffer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/CharArrayReader.html#read(java.nio.CharBuffer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/CharArrayReader.html#read(java.nio.CharBuffer)"
 								}
 							]
 						},
@@ -41,13 +41,13 @@
 							"type": "class",
 							"name": "Console",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "charset()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/Console.html#charset()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html#charset()"
 								}
 							]
 						},
@@ -55,19 +55,19 @@
 							"type": "class",
 							"name": "FileInputStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/FileInputStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "readAllBytes()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html#readAllBytes()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/FileInputStream.html#readAllBytes()"
 								},
 								{
 									"type": "method",
 									"name": "readNBytes(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/FileInputStream.html#readNBytes(int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/FileInputStream.html#readNBytes(int)"
 								}
 							]
 						},
@@ -75,13 +75,13 @@
 							"type": "class",
 							"name": "InputStreamReader",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/InputStreamReader.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStreamReader.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "read(CharBuffer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/InputStreamReader.html#read(java.nio.CharBuffer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStreamReader.html#read(java.nio.CharBuffer)"
 								}
 							]
 						},
@@ -89,19 +89,19 @@
 							"type": "class",
 							"name": "ObjectInputFilter.Config",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.Config.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.Config.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getSerialFilterFactory()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.Config.html#getSerialFilterFactory()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.Config.html#getSerialFilterFactory()"
 								},
 								{
 									"type": "method",
 									"name": "setSerialFilterFactory(BinaryOperator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.Config.html#setSerialFilterFactory(java.util.function.BinaryOperator)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.Config.html#setSerialFilterFactory(java.util.function.BinaryOperator)"
 								}
 							]
 						},
@@ -109,13 +109,13 @@
 							"type": "class",
 							"name": "WriteAbortedException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/WriteAbortedException.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "detail",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/WriteAbortedException.html#detail",
 									"addedTags": [
 										"deprecated"
 									]
@@ -126,31 +126,31 @@
 							"type": "interface",
 							"name": "ObjectInputFilter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "allowFilter(Predicate, ObjectInputFilter.Status)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#allowFilter(java.util.function.Predicate,java.io.ObjectInputFilter.Status)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.html#allowFilter(java.util.function.Predicate,java.io.ObjectInputFilter.Status)"
 								},
 								{
 									"type": "method",
 									"name": "merge(ObjectInputFilter, ObjectInputFilter)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#merge(java.io.ObjectInputFilter,java.io.ObjectInputFilter)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.html#merge(java.io.ObjectInputFilter,java.io.ObjectInputFilter)"
 								},
 								{
 									"type": "method",
 									"name": "rejectFilter(Predicate, ObjectInputFilter.Status)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#rejectFilter(java.util.function.Predicate,java.io.ObjectInputFilter.Status)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.html#rejectFilter(java.util.function.Predicate,java.io.ObjectInputFilter.Status)"
 								},
 								{
 									"type": "method",
 									"name": "rejectUndecidedClass(ObjectInputFilter)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/io/ObjectInputFilter.html#rejectUndecidedClass(java.io.ObjectInputFilter)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/ObjectInputFilter.html#rejectUndecidedClass(java.io.ObjectInputFilter)"
 								}
 							]
 						}
@@ -160,13 +160,13 @@
 					"type": "package",
 					"name": "java.lang.constant",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "ClassDesc",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/ClassDesc.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/ClassDesc.html",
 							"addedTags": [
 								"permitted subclass PrimitiveClassDescImpl",
 								"permitted subclass ReferenceClassDescImpl"
@@ -176,7 +176,7 @@
 							"type": "interface",
 							"name": "ConstantDesc",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/ConstantDesc.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/ConstantDesc.html",
 							"addedTags": [
 								"permitted subclass ClassDesc",
 								"permitted subclass Double",
@@ -193,7 +193,7 @@
 							"type": "interface",
 							"name": "DirectMethodHandleDesc",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.html",
 							"addedTags": [
 								"permitted subclass DirectMethodHandleDescImpl"
 							]
@@ -202,7 +202,7 @@
 							"type": "interface",
 							"name": "MethodHandleDesc",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
 							"addedTags": [
 								"permitted subclass AsTypeMethodHandleDesc",
 								"permitted subclass DirectMethodHandleDesc"
@@ -212,7 +212,7 @@
 							"type": "interface",
 							"name": "MethodTypeDesc",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
 							"addedTags": [
 								"permitted subclass MethodTypeDescImpl"
 							]
@@ -223,19 +223,19 @@
 					"type": "package",
 					"name": "java.lang.invoke",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MethodHandles",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandles.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "tableSwitch(MethodHandle, MethodHandle...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)"
 								}
 							]
 						}
@@ -245,19 +245,19 @@
 					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AccessibleObject",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/reflect/AccessibleObject.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/AccessibleObject.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "AccessibleObject()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/reflect/AccessibleObject.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/AccessibleObject.html#%3Cinit%3E()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -268,7 +268,7 @@
 							"type": "class",
 							"name": "Executable",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/reflect/Executable.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Executable.html",
 							"addedTags": [
 								"permitted subclass Constructor",
 								"permitted subclass Method"
@@ -280,14 +280,14 @@
 					"type": "package",
 					"name": "java.lang.runtime",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/runtime/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/runtime/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "SwitchBootstraps",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html"
 						}
 					]
 				},
@@ -295,49 +295,49 @@
 					"type": "package",
 					"name": "java.lang",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Process",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "errorReader()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#errorReader()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#errorReader()"
 								},
 								{
 									"type": "method",
 									"name": "errorReader(Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)"
 								},
 								{
 									"type": "method",
 									"name": "inputReader()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#inputReader()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#inputReader()"
 								},
 								{
 									"type": "method",
 									"name": "inputReader(Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)"
 								},
 								{
 									"type": "method",
 									"name": "outputWriter()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#outputWriter()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#outputWriter()"
 								},
 								{
 									"type": "method",
 									"name": "outputWriter(Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"
 								}
 							]
 						},
@@ -345,7 +345,7 @@
 							"type": "class",
 							"name": "SecurityManager",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityManager.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -355,7 +355,7 @@
 									"type": "method",
 									"name": "checkMulticast(InetAddress, byte)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -366,13 +366,13 @@
 							"type": "class",
 							"name": "System",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getSecurityManager()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#getSecurityManager()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#getSecurityManager()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -382,7 +382,7 @@
 									"type": "method",
 									"name": "setSecurityManager(SecurityManager)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -394,13 +394,13 @@
 							"type": "class",
 							"name": "ThreadGroup",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadGroup.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "checkAccess()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -412,13 +412,13 @@
 							"type": "class",
 							"name": "Thread",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "checkAccess()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/lang/Thread.html#checkAccess()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html#checkAccess()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -432,31 +432,31 @@
 					"type": "package",
 					"name": "java.net",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DatagramSocket",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "joinGroup(SocketAddress, NetworkInterface)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"
 								},
 								{
 									"type": "method",
 									"name": "leaveGroup(SocketAddress, NetworkInterface)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"
 								},
 								{
 									"type": "method",
 									"name": "setDatagramSocketImplFactory(DatagramSocketImplFactory)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -467,13 +467,13 @@
 							"type": "class",
 							"name": "ServerSocket",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/ServerSocket.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "setSocketFactory(SocketImplFactory)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -484,13 +484,13 @@
 							"type": "class",
 							"name": "Socket",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/Socket.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "setSocketImplFactory(SocketImplFactory)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -501,7 +501,7 @@
 							"type": "class",
 							"name": "URLDecoder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/net/URLDecoder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLDecoder.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -516,37 +516,37 @@
 					"type": "package",
 					"name": "java.nio",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MappedByteBuffer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "compact()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()"
 								},
 								{
 									"type": "method",
 									"name": "duplicate()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()"
 								},
 								{
 									"type": "method",
 									"name": "slice()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()"
 								},
 								{
 									"type": "method",
 									"name": "slice(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)"
 								}
 							]
 						}
@@ -556,13 +556,13 @@
 					"type": "package",
 					"name": "java.security",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AccessControlContext",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessControlContext.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/AccessControlContext.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -572,7 +572,7 @@
 							"type": "class",
 							"name": "AccessControlException",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessControlException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/AccessControlException.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -582,7 +582,7 @@
 							"type": "class",
 							"name": "AccessController",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/AccessController.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/AccessController.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -592,7 +592,7 @@
 							"type": "class",
 							"name": "PolicySpi",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/PolicySpi.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/PolicySpi.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -602,7 +602,7 @@
 							"type": "class",
 							"name": "Policy",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/Policy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/Policy.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -612,7 +612,7 @@
 							"type": "interface",
 							"name": "DomainCombiner",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/DomainCombiner.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/DomainCombiner.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -622,7 +622,7 @@
 							"type": "interface",
 							"name": "Policy.Parameters",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/security/Policy.Parameters.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/Policy.Parameters.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -634,13 +634,13 @@
 					"type": "package",
 					"name": "java.time",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Clock",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/Clock.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Clock.html",
 							"addedTags": [
 								"implements InstantSource"
 							]
@@ -649,7 +649,7 @@
 							"type": "interface",
 							"name": "InstantSource",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/time/InstantSource.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/InstantSource.html"
 						}
 					]
 				},
@@ -657,19 +657,19 @@
 					"type": "package",
 					"name": "java.util.concurrent",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Executors",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "privilegedCallable(Callable)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -679,7 +679,7 @@
 									"type": "method",
 									"name": "privilegedCallableUsingCurrentClassLoader(Callable)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -689,7 +689,7 @@
 									"type": "method",
 									"name": "privilegedThreadFactory()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -701,25 +701,25 @@
 							"type": "class",
 							"name": "ForkJoinPool",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "invokeAll(Collection, long, TimeUnit)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"
 								},
 								{
 									"type": "method",
 									"name": "invokeAny(Collection)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection)"
 								},
 								{
 									"type": "method",
 									"name": "invokeAny(Collection, long, TimeUnit)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"
 								}
 							]
 						},
@@ -727,19 +727,19 @@
 							"type": "class",
 							"name": "ThreadLocalRandom",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "nextFloat(float)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float)"
 								},
 								{
 									"type": "method",
 									"name": "nextFloat(float, float)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float,float)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float,float)"
 								},
 								{
 									"type": "method",
@@ -754,25 +754,25 @@
 					"type": "package",
 					"name": "java.util.random",
 					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/random/package-summary.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html"
 				},
 				{
 					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "HexFormat",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/HexFormat.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HexFormat.html"
 						},
 						{
 							"type": "class",
 							"name": "Random",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Random.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html",
 							"addedTags": [
 								"implements RandomGenerator"
 							]
@@ -781,7 +781,7 @@
 							"type": "class",
 							"name": "SplittableRandom",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/SplittableRandom.html",
 							"addedTags": [
 								"implements RandomGenerator",
 								"implements RandomGenerator.SplittableGenerator"
@@ -831,31 +831,31 @@
 									"type": "method",
 									"name": "split(RandomGenerator.SplittableGenerator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#split(java.util.random.RandomGenerator.SplittableGenerator)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/SplittableRandom.html#split(java.util.random.RandomGenerator.SplittableGenerator)"
 								},
 								{
 									"type": "method",
 									"name": "splits()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/SplittableRandom.html#splits()"
 								},
 								{
 									"type": "method",
 									"name": "splits(RandomGenerator.SplittableGenerator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(java.util.random.RandomGenerator.SplittableGenerator)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/SplittableRandom.html#splits(java.util.random.RandomGenerator.SplittableGenerator)"
 								},
 								{
 									"type": "method",
 									"name": "splits(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/SplittableRandom.html#splits(long)"
 								},
 								{
 									"type": "method",
 									"name": "splits(long, RandomGenerator.SplittableGenerator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)"
 								}
 							]
 						},
@@ -863,13 +863,13 @@
 							"type": "interface",
 							"name": "Map.Entry",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.Entry.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.Entry.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "copyOf(Map.Entry)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"
 								}
 							]
 						}
@@ -879,13 +879,13 @@
 					"type": "package",
 					"name": "javax.security.auth",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/security/auth/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "SubjectDomainCombiner",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -895,13 +895,13 @@
 							"type": "class",
 							"name": "Subject",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/security/auth/Subject.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "doAsPrivileged(Subject, PrivilegedAction, AccessControlContext)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -911,7 +911,7 @@
 									"type": "method",
 									"name": "doAsPrivileged(Subject, PrivilegedExceptionAction, AccessControlContext)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -921,7 +921,7 @@
 									"type": "method",
 									"name": "getSubject(AccessControlContext)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -937,25 +937,25 @@
 			"type": "module",
 			"name": "java.compiler",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.lang.model.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "Elements",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/util/Elements.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/Elements.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isAutomaticModule(ModuleElement)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isAutomaticModule(javax.lang.model.element.ModuleElement)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isAutomaticModule(javax.lang.model.element.ModuleElement)"
 								}
 							]
 						}
@@ -965,19 +965,19 @@
 					"type": "package",
 					"name": "javax.lang.model",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "SourceVersion",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RELEASE_17",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_17"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_17"
 								}
 							]
 						}
@@ -989,25 +989,25 @@
 			"type": "module",
 			"name": "java.datatransfer",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.datatransfer/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.awt.datatransfer",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.datatransfer/java/awt/datatransfer/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DataFlavor",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "allHtmlFlavor",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor",
 									"addedTags": [
 										"final"
 									]
@@ -1016,7 +1016,7 @@
 									"type": "field",
 									"name": "fragmentHtmlFlavor",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor",
 									"addedTags": [
 										"final"
 									]
@@ -1025,7 +1025,7 @@
 									"type": "field",
 									"name": "selectionHtmlFlavor",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor",
 									"addedTags": [
 										"final"
 									]
@@ -1040,19 +1040,19 @@
 			"type": "module",
 			"name": "java.desktop",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.applet",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/applet/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Applet",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/Applet.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/applet/Applet.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1061,7 +1061,7 @@
 							"type": "interface",
 							"name": "AppletContext",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletContext.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/applet/AppletContext.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1070,7 +1070,7 @@
 							"type": "interface",
 							"name": "AppletStub",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AppletStub.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/applet/AppletStub.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1079,7 +1079,7 @@
 							"type": "interface",
 							"name": "AudioClip",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/applet/AudioClip.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/applet/AudioClip.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1090,19 +1090,19 @@
 					"type": "package",
 					"name": "java.beans",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/beans/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Beans",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/beans/Beans.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1113,7 +1113,7 @@
 							"type": "interface",
 							"name": "AppletInitializer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/java/beans/AppletInitializer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/beans/AppletInitializer.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1124,19 +1124,19 @@
 					"type": "package",
 					"name": "javax.swing.filechooser",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FileSystemView",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getSystemIcon(File, int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File,int,int)"
 								}
 							]
 						}
@@ -1146,19 +1146,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.basic",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "BasicDirectoryModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "intervalAdded(ListDataEvent)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalAdded(javax.swing.event.ListDataEvent)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalAdded(javax.swing.event.ListDataEvent)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1167,7 +1167,7 @@
 									"type": "method",
 									"name": "intervalRemoved(ListDataEvent)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalRemoved(javax.swing.event.ListDataEvent)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalRemoved(javax.swing.event.ListDataEvent)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1176,7 +1176,7 @@
 									"type": "method",
 									"name": "lt(File, File)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#lt(java.io.File,java.io.File)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#lt(java.io.File,java.io.File)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1187,7 +1187,7 @@
 							"type": "class",
 							"name": "BasicMenuItemUI.MouseInputHandler",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.MouseInputHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.MouseInputHandler.html",
 							"addedTags": [
 								"deprecated"
 							]
@@ -1196,7 +1196,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.HSBChangeListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html",
 							"addedTags": [
 								"deprecated"
 							]
@@ -1205,7 +1205,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.PropertyChangeHandler",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html",
 							"addedTags": [
 								"deprecated"
 							]
@@ -1214,7 +1214,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.VSBChangeListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html",
 							"addedTags": [
 								"deprecated"
 							]
@@ -1223,7 +1223,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.ViewportChangeHandler",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html",
 							"addedTags": [
 								"deprecated"
 							]
@@ -1232,13 +1232,13 @@
 							"type": "class",
 							"name": "BasicToolBarUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "createFloatingFrame(JToolBar)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(javax.swing.JToolBar)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(javax.swing.JToolBar)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1251,13 +1251,13 @@
 					"type": "package",
 					"name": "javax.swing",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "JApplet",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JApplet.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JApplet.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1266,7 +1266,7 @@
 							"type": "class",
 							"name": "JSlider.AccessibleJSlider",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html",
 							"addedTags": [
 								"implements AccessibleAction"
 							],
@@ -1275,25 +1275,25 @@
 									"type": "method",
 									"name": "doAccessibleAction(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#doAccessibleAction(int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#doAccessibleAction(int)"
 								},
 								{
 									"type": "method",
 									"name": "getAccessibleAction()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleAction()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleAction()"
 								},
 								{
 									"type": "method",
 									"name": "getAccessibleActionCount()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionCount()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionCount()"
 								},
 								{
 									"type": "method",
 									"name": "getAccessibleActionDescription(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionDescription(int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionDescription(int)"
 								}
 							]
 						},
@@ -1301,13 +1301,13 @@
 							"type": "class",
 							"name": "RepaintManager",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/RepaintManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/RepaintManager.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "addDirtyRegion(Applet, int, int, int, int)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.applet.Applet,int,int,int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.applet.Applet,int,int,int,int)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1322,25 +1322,25 @@
 			"type": "module",
 			"name": "java.logging",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.util.logging",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "LogManager",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/LogManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/LogManager.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "checkAccess()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -1356,25 +1356,25 @@
 			"type": "module",
 			"name": "java.naming",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.naming/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.naming",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.naming/javax/naming/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "Context",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/Context.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.naming/javax/naming/Context.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "APPLET",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.naming/javax/naming/Context.html#APPLET",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.naming/javax/naming/Context.html#APPLET",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1389,7 +1389,7 @@
 			"type": "module",
 			"name": "java.rmi",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.rmi/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
@@ -1400,13 +1400,13 @@
 					"type": "package",
 					"name": "java.rmi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.rmi/java/rmi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "RMISecurityManager",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -1419,19 +1419,19 @@
 			"type": "module",
 			"name": "java.xml.crypto",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.xml.crypto.dsig.spec",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "RSAPSSParameterSpec",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.html"
 						}
 					]
 				},
@@ -1439,19 +1439,19 @@
 					"type": "package",
 					"name": "javax.xml.crypto.dsig",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "SignatureMethod",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RSA_PSS",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_PSS"
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_PSS"
 								}
 							]
 						}
