@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keeping Pace with Java</title>
+    <meta charset="utf-8">
+    <style>
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('remark/droidserif.ttf');
+      }
+      @font-face{
+        font-family: 'Yanone Kaffeesatz';
+        src: url('remark/yanonekaffeesatz.ttf');
+      }
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('remark/ubuntumono.ttf');
+      }
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      li {
+        line-height: 175%;
+      }
+      .remark-slide-content {
+        font-size: 32px;
+      }
+      code.remark-code {
+        font-size: 28px;
+        line-height: 110%;
+      }
+      a, a:visited {
+        color: #589;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .left {
+        float: left;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+class: center, middle
+
+# Keeping Pace with Java Safely
+
+Marc R. Hoffmann, [@marcandsweep](https://twitter.com/marcandsweep)
+
+##SBB Developer Day 2021
+
+Online, 21.09.2021
+
+
+
+---
+# About me
+
+.left[
+  ![scale 50px](diagrams/marc.jpg)
+]
+
+* Java hacker since release of [Java 1.0.2](https://javaalmanac.io/jdk/1.0/api/)
+* CTO [@mtrail_gmbh](https://twitter.com/mtrail_gmbh)
+* FOSS developer
+* Java Champion
+* [@marcandsweep](https://twitter.com/marcandsweep)
+
+
+---
+# What I do at Day
+
+![:scale 920px](diagrams/ssp.png)
+
+
+Solution Architect // Railroad Traffic Management
+
+---
+# What I do at Day
+
+![:scale 500px](diagrams/ssp.png)
+
+* Working on "Legacy" Systems?
+--
+
+  * Yes! With a history of more than 15 years
+--
+
+* They actually provide real value ...
+--
+
+* and do work!
+
+---
+# Question
+
+* How old is the software, you're working on?
+* What Java version are you currently using?
+
+Share it in the chat! For example:
+
+**"15 Years / Java 11"**
+
+---
+# What I do at Night
+
+![:scale 920px](diagrams/coverage.png)
+
+FOSS Projects // JaCoCo, EclEmma, javaalmanac.io
+
+---
+# What I do at Night
+
+![:scale 500px](diagrams/coverage.png)
+
+* New &amp; Shiny Open Source Projects? Well...
+--
+
+  * First JaCoCo Release: 10 Years Ago
+  * First EclEmma Release: 15 Years Ago
+
+---
+# Build Matrix for JaCoCo
+
+![:scale 920px](diagrams/jacocomatrix.png)
+
+---
+# Different Kind of Software
+--
+
+![:scale 400px](diagrams/plumbing.jpg)
+<br/>**Product/Project Solutions:** Specific runtime version
+
+--
+
+![:scale 400px](diagrams/wrench.jpg)
+<br/>**Tools/Libraries:** Support for multiple runtime versions
+
+---
+# Following Java Releases
+
+* **Why?**
+
+* **How?**
+
+---
+# Why?
+
+--
+* Useful language features and APIs
+
+--
+* Bug/Security Fixes
+
+--
+* New Platforms like ARM
+
+![:scale 251px](diagrams/arm-apple.jpg)
+![:scale 251px](diagrams/arm-windows.jpg)
+![:scale 360px](diagrams/arm-aws.png)
+
+---
+# Why?
+
+* Useful language features and APIs
+* Bug/Security Fixes
+* New Platforms
+* Up-to-date Libraries
+
+--
+* Happy Developers :)
+
+---
+class: center, middle
+
+# How?
+
+---
+# In the Old Days of Java
+
+![Release Timeline](diagrams/javatimeline1.svg)
+
+---
+# The New Release Schedule of Java
+
+![Release Timeline](diagrams/javatimeline2.svg)
+
+---
+# Sustainable Update Strategy I
+
+--
+* Use a supported JDK in production
+  * Currently Java 8
+
+--
+* Cleanup Your Codebase
+
+--
+  * Remove usages of deprecated APIs
+    ```@Deprecated(forRemoval = true)```
+  * Avoid internal API Usage (directly or via libs)
+    <br/>The Java Module System will disallow access!
+
+---
+# Sustainable Update Strategy II
+
+--
+* Take JVM runtime warnings seriously
+
+--
+* Update your tools
+  * IDE
+  * Build tools &amp; plug-ins
+
+--
+* Update your dependencies
+  * As long as they do not require newer JDK versions
+
+---
+# Safe Update Strategy
+
+--
+* **Step 1:** Update your Runtime JDK
+  * Test and bring into production
+
+--
+* **Step 2:** Update your development target
+  * Use all the new and shiny features
+
+
+--
+![:scale 950px](diagrams/updates.svg)
+  
+---
+# Potential Update Issues
+
+--
+* Modified/changed JVM options
+  * [VM Option Explorer](https://chriswhocodes.com/vm-options-explorer.html) by Chris Newland
+
+--
+* Removed `javax.*` packages
+  * `javax.activation`, `javax.transaction`, `javax.jws`, `javax.xml.ws`, `javax.xml.bind`
+
+--
+* Encapsulated internal APIs
+  * `jdeps` tool
+  * `--illegal-access=debug` option
+
+
+---
+# What to do with non-LTS releases?
+
+--
+* Non-LTS releases will only be maintained for 6 months
+
+--
+* Test you software and tools on non-LTS releases
+  * Identify potential issues early
+  * Find bug and report them to OpenJDK :)
+
+--
+* Don't use non-LTS releases in production
+  * Unless you have a really quick update cycle
+
+
+---
+# What about preview features?
+
+* With `--enable-preview` you get access experimental
+  * language features
+  * JVM feature or
+  * new APIs
+
+--
+* These features are not yet finalized and may/will change!
+
+
+---
+# Thank you!
+
+# Questions?
+
+
+## Contact
+
+marc.hoffmann@sbb.ch
+
+marc.hoffmann@mtrail.ch
+
+Twitter @marcandsweep
+
+
+    </textarea>
+    <script src="remark/remark.min.js">
+    </script>
+    <script>
+        remark.macros.scale = function (percentage) {
+          var url = this;
+          return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    	};
+      remark.create({
+        ratio: '16:9'
+      });
+    </script>
+  </body>
+</html>
