@@ -40,19 +40,7 @@ Vue.component('downloadlist', {
     `,
     data() {
         return {
-            productset: [
-                { id: 'all', name: 'All', query: '' },
-                { id: 'aoj', name: 'AdoptOpenJDK', query: 'distro=aoj' },
-                { id: 'corretto', name: 'Corretto', query: 'distro=corretto' },
-                { id: 'dragonwell', name: 'Dragonwell', query: 'distro=dragonwell' },
-                { id: 'liberica', name: 'Liberica', query: 'distro=liberica' },
-                { id: 'microsoft', name: 'Microsoft', query: 'distro=microsoft' },
-                { id: 'oracle', name: 'Oracle', query: 'distro=oracle' },
-                { id: 'oracle_open_jdk', name: 'Oracle OpenJDK', query: 'distro=oracle_open_jdk' },
-                { id: 'redhat', name: 'Redhat', query: 'distro=redhat' },
-                { id: 'sap_machine', name: 'SAP Machine', query: 'distro=sap_machine' },
-                { id: 'zulu', name: 'Zulu', query: 'distro=zulu' }
-            ],
+            productset: [],
             versionset: [
                 { id: 'all', name:'All', query: '' },
                 { id: '6',  name: '6', query: 'version=6' },
@@ -131,7 +119,7 @@ Vue.component('downloadlist', {
         }
     },
     mounted() {
-        this.readHash();
+        this.loadDistributions();
         window.onhashchange = () => {
             this.readHash();
         };
@@ -157,7 +145,6 @@ Vue.component('downloadlist', {
                     h += f[0] + '=' + f[1].id;
                 }
             }
-            console.log('#' + h)
             window.location.hash = '#' + h;
         },
         getById(filterlist, id) {
@@ -165,6 +152,15 @@ Vue.component('downloadlist', {
                 if (f.id == id) return f;
             }
             return filterlist[0];
+        },
+        loadDistributions(query) {
+            this.productset = [ { id: 'all', name: 'All', query: '' } ];
+            this.discoRequest("distributions", response => {
+                for (var d of response.data.result) {
+                    this.productset.push({ id: d.api_parameter, name: d.name, query: 'distro=' + d.api_parameter })
+                }
+                this.readHash();
+            });
         },
         loadlist(query) {
             this.packages = [];
