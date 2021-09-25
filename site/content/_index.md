@@ -17,14 +17,19 @@ Collection of information about the history and future of Java.
 * [References](references)
 
 
+## About
 
-## Author & License
+This site is provided by Java Champions Marc R. Hoffmann and Cay S. Horstmann.
+All content is managed in a [public Github repository](https://github.com/marchof/java-almanac).
+The structured data about the JDK is also available via an [open API](https://editor.swagger.io/?url=https://data.javaalmanac.io/v1/openapi.yaml).
+
+
+## License
 
 {{< rawhtml >}}
 <img src="/img/cc-by-sa.png" title="Creative Commons BY-SA" width="88" height="31"/>
 {{< /rawhtml >}}
 
-This content is provided by Java Champions Marc R. Hoffmann and Cay S. Horstmann.
 Unless otherwise noted, this content is published under the
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
