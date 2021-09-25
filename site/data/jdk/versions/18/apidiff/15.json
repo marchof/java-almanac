@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+15-842"
+		"version": "18-ea+16-926"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -652,6 +652,54 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "ceilDiv(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDivExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDivExact(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(long,long)"
+								},
+								{
+									"type": "method",
 									"name": "divideExact(int, int)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(int,int)"
@@ -779,6 +827,54 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "ceilDiv(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,long)"
+								},
 								{
 									"type": "method",
 									"name": "divideExact(int, int)",
@@ -2011,6 +2107,20 @@
 									"type": "method",
 									"name": "ToolProvider()",
 									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "DocumentationTool.Location",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "SNIPPET_PATH",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#SNIPPET_PATH"
 								}
 							]
 						}
