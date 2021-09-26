@@ -59,9 +59,10 @@ public enum SchemaV1 implements NamedSchema {
 					.addEnum("class") //
 					.addEnum("interface") //
 					.addEnum("enum") //
+					.addEnum("annotation") //
+					.addEnum("record") //
 					.addEnum("field") //
-					.addEnum("method") //
-					.addEnum("annotation")) //
+					.addEnum("method")) //
 			.setProperty("name", new Schema() //
 					.setType("string")) //
 			.setProperty("status", new Schema() //
