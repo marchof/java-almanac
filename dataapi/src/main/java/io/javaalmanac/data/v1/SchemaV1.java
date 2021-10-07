@@ -75,6 +75,8 @@ public enum SchemaV1 implements NamedSchema {
 					.setType("boolean")) //
 			.setProperty("javadoc", new Schema() //
 					.setType("string")) //
+			.setProperty("csr", new Schema() //
+					.setType("string")) //
 			.setProperty("addedTags", new Schema() //
 					.setType("array") //
 					.setItemsSchema(new Schema() //
