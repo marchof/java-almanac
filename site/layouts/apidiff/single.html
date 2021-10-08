@@ -18,7 +18,7 @@
     <td><ul class="tag">
       {{- if eq "added" .delta.status -}}
         {{- if .delta.preview -}}
-          <li class="tag newelement">added preview</li>
+          <li class="tag newelement">added preview{{ template "csrlink" . }}</li>
         {{- else -}}
           <li class="tag newelement">added{{ template "csrlink" . }}</li>
         {{- end -}}

@@ -2075,7 +2075,8 @@
 							"type": "method",
 							"name": "charset()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html#charset()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html#charset()",
+							"csr": "JDK-8264209"
 						}
 					]
 				},
@@ -2862,7 +2863,8 @@
 							"type": "method",
 							"name": "tableSwitch(MethodHandle, MethodHandle...)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)",
+							"csr": "JDK-8267267"
 						},
 						{
 							"type": "method",
@@ -5567,13 +5569,15 @@
 							"type": "method",
 							"name": "errorReader()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#errorReader()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#errorReader()",
+							"csr": "JDK-8191490"
 						},
 						{
 							"type": "method",
 							"name": "errorReader(Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)",
+							"csr": "JDK-8191490"
 						},
 						{
 							"type": "method",
@@ -5585,13 +5589,15 @@
 							"type": "method",
 							"name": "inputReader()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#inputReader()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#inputReader()",
+							"csr": "JDK-8191490"
 						},
 						{
 							"type": "method",
 							"name": "inputReader(Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)",
+							"csr": "JDK-8191490"
 						},
 						{
 							"type": "method",
@@ -5609,13 +5615,15 @@
 							"type": "method",
 							"name": "outputWriter()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#outputWriter()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#outputWriter()",
+							"csr": "JDK-8191490"
 						},
 						{
 							"type": "method",
 							"name": "outputWriter(Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)",
+							"csr": "JDK-8191490"
 						},
 						{
 							"type": "method",
@@ -7221,13 +7229,15 @@
 							"type": "method",
 							"name": "joinGroup(SocketAddress, NetworkInterface)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)",
+							"csr": "JDK-8260667"
 						},
 						{
 							"type": "method",
 							"name": "leaveGroup(SocketAddress, NetworkInterface)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)",
+							"csr": "JDK-8260667"
 						},
 						{
 							"type": "method",
@@ -7556,7 +7566,8 @@
 						{
 							"type": "method",
 							"name": "URLDecoder()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8258522"
 						},
 						{
 							"type": "method",
@@ -8777,13 +8788,15 @@
 							"type": "method",
 							"name": "compact()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#compact()",
+							"csr": "JDK-8263620"
 						},
 						{
 							"type": "method",
 							"name": "duplicate()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#duplicate()",
+							"csr": "JDK-8263620"
 						},
 						{
 							"type": "method",
@@ -8831,13 +8844,15 @@
 							"type": "method",
 							"name": "slice()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice()",
+							"csr": "JDK-8263620"
 						},
 						{
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/MappedByteBuffer.html#slice(int,int)",
+							"csr": "JDK-8263620"
 						}
 					]
 				},
@@ -8938,7 +8953,8 @@
 		{
 			"type": "package",
 			"name": "java.rmi.activation",
-			"status": "removed"
+			"status": "removed",
+			"csr": "JDK-8267124"
 		},
 		{
 			"type": "package",
@@ -13138,13 +13154,15 @@
 							"type": "method",
 							"name": "nextFloat(float)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float)",
+							"csr": "JDK-8255395"
 						},
 						{
 							"type": "method",
 							"name": "nextFloat(float, float)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float,float)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextFloat(float,float)",
+							"csr": "JDK-8255395"
 						},
 						{
 							"type": "method",
@@ -13732,7 +13750,8 @@
 			"type": "package",
 			"name": "java.util.random",
 			"status": "added",
-			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html"
+			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html",
+			"csr": "JDK-8255395"
 		},
 		{
 			"type": "package",
@@ -15337,7 +15356,8 @@
 					"type": "class",
 					"name": "HexFormat",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HexFormat.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HexFormat.html",
+					"csr": "JDK-8251991"
 				},
 				{
 					"type": "class",
@@ -16612,7 +16632,8 @@
 							"type": "method",
 							"name": "copyOf(Map.Entry)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)",
+							"csr": "JDK-8268134"
 						}
 					]
 				},
@@ -18521,7 +18542,8 @@
 							"type": "method",
 							"name": "isAutomaticModule(ModuleElement)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isAutomaticModule(javax.lang.model.element.ModuleElement)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isAutomaticModule(javax.lang.model.element.ModuleElement)",
+							"csr": "JDK-8264865"
 						},
 						{
 							"type": "method",
@@ -18603,7 +18625,8 @@
 							"type": "field",
 							"name": "RELEASE_17",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_17"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_17",
+							"csr": "JDK-8257452"
 						},
 						{
 							"type": "field",
@@ -20256,7 +20279,8 @@
 							"type": "method",
 							"name": "getSystemIcon(File, int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File,int,int)",
+							"csr": "JDK-8188238"
 						},
 						{
 							"type": "method",
@@ -22538,25 +22562,29 @@
 							"type": "method",
 							"name": "doAccessibleAction(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#doAccessibleAction(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#doAccessibleAction(int)",
+							"csr": "JDK-8264592"
 						},
 						{
 							"type": "method",
 							"name": "getAccessibleAction()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleAction()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleAction()",
+							"csr": "JDK-8264592"
 						},
 						{
 							"type": "method",
 							"name": "getAccessibleActionCount()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionCount()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionCount()",
+							"csr": "JDK-8264592"
 						},
 						{
 							"type": "method",
 							"name": "getAccessibleActionDescription(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionDescription(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionDescription(int)",
+							"csr": "JDK-8264592"
 						},
 						{
 							"type": "method",
@@ -23112,7 +23140,8 @@
 					"type": "class",
 					"name": "RSAPSSParameterSpec",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/RSAPSSParameterSpec.html",
+					"csr": "JDK-8259575"
 				}
 			]
 		},
@@ -23256,7 +23285,8 @@
 							"type": "field",
 							"name": "RSA_PSS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_PSS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_PSS",
+							"csr": "JDK-8259575"
 						},
 						{
 							"type": "field",
