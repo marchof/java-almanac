@@ -33,13 +33,15 @@
 									"type": "field",
 									"name": "ORIGINAL",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL",
+									"csr": "JDK-8256214"
 								},
 								{
 									"type": "method",
 									"name": "defineHiddenClassWithClassData(byte[], Object, boolean, MethodHandles.Lookup.ClassOption...)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte%5B%5D,java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte%5B%5D,java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption...)",
+									"csr": "JDK-8256214"
 								}
 							]
 						},
@@ -53,19 +55,22 @@
 									"type": "method",
 									"name": "classData(MethodHandles.Lookup, String, Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)",
+									"csr": "JDK-8256214"
 								},
 								{
 									"type": "method",
 									"name": "classDataAt(MethodHandles.Lookup, String, Class, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)",
+									"csr": "JDK-8256214"
 								},
 								{
 									"type": "method",
 									"name": "dropReturn(MethodHandle)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)",
+									"csr": "JDK-8255398"
 								}
 							]
 						},
@@ -79,19 +84,22 @@
 									"type": "method",
 									"name": "hasInvokeExactBehavior()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()",
+									"csr": "JDK-8255375"
 								},
 								{
 									"type": "method",
 									"name": "withInvokeBehavior()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeBehavior()",
+									"csr": "JDK-8255375"
 								},
 								{
 									"type": "method",
 									"name": "withInvokeExactBehavior()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()",
+									"csr": "JDK-8255375"
 								}
 							]
 						}
@@ -122,7 +130,8 @@
 									"type": "method",
 									"name": "refersTo(Object)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)",
+									"csr": "JDK-8241029"
 								}
 							]
 						}
@@ -144,7 +153,8 @@
 									"type": "method",
 									"name": "invokeDefault(Object, Method, Object...)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object...)",
+									"csr": "JDK-8253870"
 								}
 							]
 						}
@@ -235,12 +245,14 @@
 									"type": "method",
 									"name": "getPermittedSubclasses()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()",
+									"csr": "JDK-8254183"
 								},
 								{
 									"type": "method",
 									"name": "permittedSubclasses()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8254183"
 								}
 							]
 						},
@@ -315,7 +327,8 @@
 									"type": "method",
 									"name": "IndexOutOfBoundsException(long)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IndexOutOfBoundsException.html#%3Cinit%3E(long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/IndexOutOfBoundsException.html#%3Cinit%3E(long)",
+									"csr": "JDK-8255151"
 								}
 							]
 						},
@@ -484,7 +497,8 @@
 							"type": "class",
 							"name": "UnixDomainSocketAddress",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/UnixDomainSocketAddress.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/UnixDomainSocketAddress.html",
+							"csr": "JDK-8247942"
 						},
 						{
 							"type": "enum",
@@ -496,7 +510,8 @@
 									"type": "field",
 									"name": "UNIX",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/StandardProtocolFamily.html#UNIX"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/StandardProtocolFamily.html#UNIX",
+									"csr": "JDK-8247942"
 								}
 							]
 						}
@@ -518,7 +533,8 @@
 									"type": "method",
 									"name": "put(int, ByteBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						},
@@ -532,7 +548,8 @@
 									"type": "method",
 									"name": "put(int, CharBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						},
@@ -546,7 +563,8 @@
 									"type": "method",
 									"name": "put(int, DoubleBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						},
@@ -560,7 +578,8 @@
 									"type": "method",
 									"name": "put(int, FloatBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,java.nio.FloatBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						},
@@ -574,7 +593,8 @@
 									"type": "method",
 									"name": "put(int, IntBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,java.nio.IntBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						},
@@ -588,7 +608,8 @@
 									"type": "method",
 									"name": "put(int, LongBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,java.nio.LongBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						},
@@ -602,7 +623,8 @@
 									"type": "method",
 									"name": "put(int, ShortBuffer, int, int)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)",
+									"csr": "JDK-8248431"
 								}
 							]
 						}
@@ -736,25 +758,29 @@
 									"type": "field",
 									"name": "SHA3_224",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_224"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_224",
+									"csr": "JDK-8252260"
 								},
 								{
 									"type": "field",
 									"name": "SHA3_256",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_256"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_256",
+									"csr": "JDK-8252260"
 								},
 								{
 									"type": "field",
 									"name": "SHA3_384",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_384"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_384",
+									"csr": "JDK-8252260"
 								},
 								{
 									"type": "field",
 									"name": "SHA3_512",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_512"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA3_512",
+									"csr": "JDK-8252260"
 								},
 								{
 									"type": "method",
@@ -782,7 +808,8 @@
 									"type": "method",
 									"name": "appendDayPeriodText(TextStyle)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendDayPeriodText(java.time.format.TextStyle)",
+									"csr": "JDK-8254629"
 								}
 							]
 						}
@@ -798,7 +825,8 @@
 							"type": "interface",
 							"name": "DoubleStream.DoubleMapMultiConsumer",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html",
+							"csr": "JDK-8248166"
 						},
 						{
 							"type": "interface",
@@ -810,7 +838,8 @@
 									"type": "method",
 									"name": "mapMulti(DoubleStream.DoubleMapMultiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)",
+									"csr": "JDK-8248166"
 								}
 							]
 						},
@@ -818,7 +847,8 @@
 							"type": "interface",
 							"name": "IntStream.IntMapMultiConsumer",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.IntMapMultiConsumer.html",
+							"csr": "JDK-8248166"
 						},
 						{
 							"type": "interface",
@@ -830,7 +860,8 @@
 									"type": "method",
 									"name": "mapMulti(IntStream.IntMapMultiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)",
+									"csr": "JDK-8248166"
 								}
 							]
 						},
@@ -838,7 +869,8 @@
 							"type": "interface",
 							"name": "LongStream.LongMapMultiConsumer",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.LongMapMultiConsumer.html"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.LongMapMultiConsumer.html",
+							"csr": "JDK-8248166"
 						},
 						{
 							"type": "interface",
@@ -850,7 +882,8 @@
 									"type": "method",
 									"name": "mapMulti(LongStream.LongMapMultiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.html#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/LongStream.html#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer)",
+									"csr": "JDK-8248166"
 								}
 							]
 						},
@@ -864,31 +897,36 @@
 									"type": "method",
 									"name": "mapMulti(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMulti(java.util.function.BiConsumer)",
+									"csr": "JDK-8248166"
 								},
 								{
 									"type": "method",
 									"name": "mapMultiToDouble(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToDouble(java.util.function.BiConsumer)",
+									"csr": "JDK-8248166"
 								},
 								{
 									"type": "method",
 									"name": "mapMultiToInt(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToInt(java.util.function.BiConsumer)",
+									"csr": "JDK-8248166"
 								},
 								{
 									"type": "method",
 									"name": "mapMultiToLong(BiConsumer)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#mapMultiToLong(java.util.function.BiConsumer)",
+									"csr": "JDK-8248166"
 								},
 								{
 									"type": "method",
 									"name": "toList()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()",
+									"csr": "JDK-8256441"
 								}
 							]
 						}
@@ -910,19 +948,22 @@
 									"type": "method",
 									"name": "checkFromIndexSize(long, long, long)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkFromIndexSize(long,long,long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkFromIndexSize(long,long,long)",
+									"csr": "JDK-8255151"
 								},
 								{
 									"type": "method",
 									"name": "checkFromToIndex(long, long, long)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkFromToIndex(long,long,long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkFromToIndex(long,long,long)",
+									"csr": "JDK-8255151"
 								},
 								{
 									"type": "method",
 									"name": "checkIndex(long, long)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkIndex(long,long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Objects.html#checkIndex(long,long)",
+									"csr": "JDK-8255151"
 								}
 							]
 						}
@@ -952,7 +993,8 @@
 									"type": "field",
 									"name": "RELEASE_16",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_16"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_16",
+									"csr": "JDK-8245592"
 								}
 							]
 						}
@@ -973,7 +1015,8 @@
 								{
 									"type": "method",
 									"name": "ToolProvider()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8249644"
 								}
 							]
 						}
@@ -2082,7 +2125,8 @@
 									"type": "method",
 									"name": "BasicSliderUI()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()",
+									"csr": "JDK-8251855"
 								}
 							]
 						}
@@ -3251,7 +3295,8 @@
 									"type": "method",
 									"name": "stateChanged(ChangeEvent)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#stateChanged(javax.swing.event.ChangeEvent)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#stateChanged(javax.swing.event.ChangeEvent)",
+									"csr": "JDK-8251002"
 								}
 							]
 						},
@@ -3321,7 +3366,8 @@
 									"type": "method",
 									"name": "getLongThreadID()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#getLongThreadID()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#getLongThreadID()",
+									"csr": "JDK-8247219"
 								},
 								{
 									"type": "method",
@@ -3336,7 +3382,8 @@
 									"type": "method",
 									"name": "setLongThreadID(long)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#setLongThreadID(long)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/LogRecord.html#setLongThreadID(long)",
+									"csr": "JDK-8247219"
 								},
 								{
 									"type": "method",
@@ -3409,7 +3456,8 @@
 									"type": "method",
 									"name": "concat(HttpRequest.BodyPublisher...)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#concat(java.net.http.HttpRequest.BodyPublisher...)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#concat(java.net.http.HttpRequest.BodyPublisher...)",
+									"csr": "JDK-8252382"
 								}
 							]
 						},
@@ -3423,7 +3471,8 @@
 									"type": "method",
 									"name": "newBuilder(HttpRequest, BiPredicate)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.http.HttpRequest,java.util.function.BiPredicate)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.http.HttpRequest,java.util.function.BiPredicate)",
+									"csr": "JDK-8255993"
 								}
 							]
 						}
