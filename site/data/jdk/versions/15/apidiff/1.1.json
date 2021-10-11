@@ -11145,7 +11145,8 @@
 						{
 							"type": "method",
 							"name": "Modifier()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8235548"
 						},
 						{
 							"type": "method",
@@ -11411,7 +11412,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Boolean.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Boolean.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -11525,7 +11527,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Byte.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Byte.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -11882,7 +11885,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Character.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Character.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -12688,7 +12692,8 @@
 							"type": "method",
 							"name": "isHidden()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isHidden()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isHidden()",
+							"csr": "JDK-8238359"
 						},
 						{
 							"type": "method",
@@ -12720,7 +12725,8 @@
 							"name": "isSealed()",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isSealed()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isSealed()",
+							"csr": "JDK-8244556"
 						},
 						{
 							"type": "method",
@@ -12742,7 +12748,8 @@
 							"name": "permittedSubclasses()",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#permittedSubclasses()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#permittedSubclasses()",
+							"csr": "JDK-8244556"
 						},
 						{
 							"type": "method",
@@ -13717,13 +13724,15 @@
 							"type": "method",
 							"name": "absExact(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(int)",
+							"csr": "JDK-8241805"
 						},
 						{
 							"type": "method",
 							"name": "absExact(long)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(long)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(long)",
+							"csr": "JDK-8241805"
 						},
 						{
 							"type": "method",
@@ -14510,7 +14519,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Short.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Short.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -19095,19 +19105,22 @@
 					"type": "interface",
 					"name": "EdECKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECKey.html",
+					"csr": "JDK-8190219"
 				},
 				{
 					"type": "interface",
 					"name": "EdECPrivateKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPrivateKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPrivateKey.html",
+					"csr": "JDK-8190219"
 				},
 				{
 					"type": "interface",
 					"name": "EdECPublicKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPublicKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPublicKey.html",
+					"csr": "JDK-8190219"
 				},
 				{
 					"type": "interface",
@@ -24310,7 +24323,8 @@
 							"type": "method",
 							"name": "getMonetaryGroupingSeparator()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()",
+							"csr": "JDK-8235942"
 						},
 						{
 							"type": "method",
@@ -24346,7 +24360,8 @@
 							"type": "method",
 							"name": "setMonetaryGroupingSeparator(char)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)",
+							"csr": "JDK-8235942"
 						}
 					]
 				},
@@ -26510,13 +26525,15 @@
 							"type": "method",
 							"name": "NoSuchElementException(String, Throwable)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+							"csr": "JDK-8233856"
 						},
 						{
 							"type": "method",
 							"name": "NoSuchElementException(Throwable)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.Throwable)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.Throwable)",
+							"csr": "JDK-8233856"
 						}
 					]
 				},
