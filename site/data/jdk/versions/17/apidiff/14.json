@@ -165,6 +165,31 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.annotation",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "ElementType",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/ElementType.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RECORD_COMPONENT",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/ElementType.html#RECORD_COMPONENT",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.constant",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/package-summary.html",
@@ -496,6 +521,15 @@
 							]
 						},
 						{
+							"type": "class",
+							"name": "RecordComponent",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/RecordComponent.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
 							"type": "interface",
 							"name": "AnnotatedType",
 							"status": "notmodified",
@@ -544,6 +578,15 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/runtime/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ObjectMethods",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/runtime/ObjectMethods.html",
+							"removedTags": [
+								"preview"
+							]
+						},
 						{
 							"type": "class",
 							"name": "SwitchBootstraps",
@@ -727,9 +770,27 @@
 								},
 								{
 									"type": "method",
+									"name": "getRecordComponents()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#getRecordComponents()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
 									"name": "isHidden()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#isHidden()"
+								},
+								{
+									"type": "method",
+									"name": "isRecord()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#isRecord()",
+									"removedTags": [
+										"preview"
+									]
 								},
 								{
 									"type": "method",
@@ -953,6 +1014,15 @@
 						},
 						{
 							"type": "class",
+							"name": "Record",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
 							"name": "SecurityManager",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityManager.html",
@@ -1024,6 +1094,41 @@
 									"name": "absExact(long)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StrictMath.html#absExact(long)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "String",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "formatted(Object...)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "stripIndent()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#stripIndent()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "translateEscapes()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#translateEscapes()",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						},
@@ -2456,6 +2561,41 @@
 					"deltas": [
 						{
 							"type": "enum",
+							"name": "ElementKind",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/ElementKind.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "BINDING_VARIABLE",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#BINDING_VARIABLE",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "field",
+									"name": "RECORD",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "field",
+									"name": "RECORD_COMPONENT",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD_COMPONENT",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "enum",
 							"name": "Modifier",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
@@ -2479,6 +2619,23 @@
 						},
 						{
 							"type": "interface",
+							"name": "ElementVisitor",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "visitRecordComponent(RecordComponentElement, Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "Element",
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/Element.html",
@@ -2493,6 +2650,15 @@
 						},
 						{
 							"type": "interface",
+							"name": "RecordComponentElement",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "TypeElement",
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
@@ -2502,6 +2668,15 @@
 									"name": "getPermittedSubclasses()",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getPermittedSubclasses()"
+								},
+								{
+									"type": "method",
+									"name": "getRecordComponents()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getRecordComponents()",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						}
@@ -2548,6 +2723,85 @@
 					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
 					"deltas": [
 						{
+							"type": "class",
+							"name": "AbstractElementVisitor14",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor14.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ElementFilter",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "recordComponentsIn(Iterable)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#recordComponentsIn(java.lang.Iterable)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "recordComponentsIn(Set)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#recordComponentsIn(java.util.Set)",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ElementKindVisitor14",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor14.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ElementKindVisitor6",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "visitTypeAsRecord(TypeElement, Object)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsRecord(javax.lang.model.element.TypeElement,java.lang.Object)",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ElementScanner14",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/ElementScanner14.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "SimpleElementVisitor14",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor14.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
 							"type": "interface",
 							"name": "Elements",
 							"status": "notmodified",
@@ -2559,6 +2813,15 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/Elements.html#isAutomaticModule(javax.lang.model.element.ModuleElement)",
 									"csr": "JDK-8264865"
+								},
+								{
+									"type": "method",
+									"name": "recordComponentFor(ExecutableElement)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/util/Elements.html#recordComponentFor(javax.lang.model.element.ExecutableElement)",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						}

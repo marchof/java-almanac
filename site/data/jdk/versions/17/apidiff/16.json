@@ -308,6 +308,32 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Class",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermittedSubclasses()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "isSealed()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html#isSealed()",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Process",
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html",
@@ -981,6 +1007,57 @@
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model.element",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "Modifier",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "NON_SEALED",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/Modifier.html#NON_SEALED",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "field",
+									"name": "SEALED",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/Modifier.html#SEALED",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeElement",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermittedSubclasses()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getPermittedSubclasses()",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "javax.lang.model.util",

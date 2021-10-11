@@ -331,6 +331,32 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Class",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Class.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermittedSubclasses()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Class.html#getPermittedSubclasses()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "isSealed()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Class.html#isSealed()",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Math",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html",
@@ -1270,6 +1296,57 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence,javax.lang.model.element.Element)",
 									"csr": "JDK-8273160"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.lang.model.element",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "Modifier",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "NON_SEALED",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/Modifier.html#NON_SEALED",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "field",
+									"name": "SEALED",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/Modifier.html#SEALED",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermittedSubclasses()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getPermittedSubclasses()",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						}

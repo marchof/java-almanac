@@ -321,12 +321,14 @@
 									"type": "method",
 									"name": "isSealed()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isSealed()"
 								},
 								{
 									"type": "method",
 									"name": "permittedSubclasses()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#permittedSubclasses()"
 								}
 							]
@@ -399,6 +401,41 @@
 									"name": "absExact(long)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/StrictMath.html#absExact(long)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "String",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "formatted(Object...)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "stripIndent()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#stripIndent()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "translateEscapes()",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#translateEscapes()",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						},
@@ -781,12 +818,14 @@
 									"type": "field",
 									"name": "NON_SEALED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.compiler/javax/lang/model/element/Modifier.html#NON_SEALED"
 								},
 								{
 									"type": "field",
 									"name": "SEALED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.compiler/javax/lang/model/element/Modifier.html#SEALED"
 								}
 							]
@@ -815,6 +854,7 @@
 									"type": "method",
 									"name": "getPermittedSubclasses()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getPermittedSubclasses()"
 								}
 							]
