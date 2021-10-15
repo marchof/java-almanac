@@ -94,7 +94,7 @@ Sealed classes enable the compiler to reason about *exhaustiveness*. For example
 
 ```
 public static String type(JSONValue value) {
-   if (value == null) throw new NullPointerException;
+   if (value == null) throw new NullPointerException();
    else if (value instanceof JSONObject) return "object";
    else if (value instanceof JSONArray) return "array";
    else if (value instanceof JSONString) return "string";
@@ -104,22 +104,76 @@ public static String type(JSONValue value) {
 }
 ```
 
-Actually, Java 17 does not carry out that analysis for `if` statements, but it is likely that a  future version of Java will do this with type patterns in `switch` expressions:
+Actually, Java 17 does not carry out that analysis for `if` statements, but it does so for type patterns in `switch` expressions (which are a preview feature in Java 17).
 
-```
-public static String type(JSONValue value) {
-   if (value == null) throw new NullPointerException;
-   return switch (value) {
-      case instanceof JSONObject -> "object"; // A guess at the syntax of the future
-      case instanceof JSONArray -> "array";
-      case instanceof JSONString -> "string";
-      case instanceof JSONNumber -> "number";
-      case instanceof JSONBoolean -> "boolean";
-      case instanceof JSONNull -> "null";
-      // No default needed here
-   };
+{{< sandbox version="java17" preview="true" mainclass="Sandbox" >}}
+{{< sandboxsource "Sandbox.java" >}}
+public class Sandbox {
+   public static String type(JSONValue value) {
+      return switch (value) {
+         case JSONObject j-> "object";
+         case JSONArray j -> "array";
+         case JSONString j -> "string";
+         case JSONNumber j -> "number";
+         case JSONBoolean j -> "boolean";
+         case JSONNull j -> "null";
+         // No default needed here
+      };
+   }
+   
+   public static void main(String[] args) {
+      System.out.println(type(new JSONObject()));
+   }
 }
-```
+{{< /sandboxsource >}}
+
+{{< sandboxsource "JSONValue.java" >}}
+public sealed abstract class JSONValue
+      permits JSONObject, JSONArray, JSONString, JSONNumber, JSONBoolean, JSONNull {
+   // . . .
+}
+
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONObject.java" >}}
+public final class JSONObject extends JSONValue {
+   // . . .
+}
+
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONArray.java" >}}
+public final class JSONArray extends JSONValue {
+   // . . .
+}
+
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONString.java" >}}
+public final class JSONString extends JSONValue {
+   // . . .
+}
+
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONNumber.java" >}}
+public final class JSONNumber extends JSONValue {
+   // . . .
+}
+
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONBoolean.java" >}}
+public final class JSONBoolean extends JSONValue {
+   // . . .
+}
+
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONNull.java" >}}
+public final class JSONNull extends JSONValue {
+   // . . .
+
+}
+
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+
 
 ## Subclasses Must Specify Their Sealedness
 
@@ -169,7 +223,7 @@ non-sealed class Element extends Node {
 }
 ```
 
-# New Keywords and Restricted Identifiers
+## New Keywords and Restricted Identifiers
 
 The tokens `sealed` and `permits` are *restricted identifiers* that have a special meaning only in class and interface declarations, just like `record`, `var`, and `yield`. Code with variables named `sealed` and `permits` won't break. But you can no longer define classes named `sealed` and `permits`:
 
@@ -372,7 +426,7 @@ public class Sandbox {
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-# Records and Enums
+## Records and Enums
 
 A sealed interface can be implemented by a record, which is implicitly `final`. Consider the classic example of a Lisp-style list:
 
@@ -475,17 +529,9 @@ public class Sandbox {
 
 ## Reflection
 
-Two methods have been added to `java.lang.Class` to support sealed classes. The method `isSealed` returns `true` for a sealed class:
+Two methods have been added to `java.lang.Class` to support sealed classes. The method `isSealed` returns `true` for a sealed class.
 
-```
-System.out.println(JSONValue.isSealed()) // Prints true
-```
-
-The `permittedSubclasses` method returns an array of `ClassDesc` objects describing the permitted subclasses. (For `Class` objects that don't describe sealed classes, the result is a zero length array.)
-
-But what's a `ClassDesc`? Why not an array of good old `java.lang.Class`?
-
-A `ClassDesc` describes a class or interface with package and class/interface name, but without a class loader. This accurately describes what happens in the source file. It's just different from the rest of the reflection API. Looking at [this discussion on the expert group](https://mail.openjdk.java.net/pipermail/amber-spec-experts/2020-May/002196.html), there is some discomfort about the API.
+The `getPermittedSubclasses` method returns an array of `Class` objects describing the permitted subclasses. (For `Class` objects that don't describe sealed classes, the result is `null`.)
 
 {{< sandbox version="java17" mainclass="Sandbox" >}}{{< sandboxsource "IntLst.java" >}}
 public sealed interface IntLst {
@@ -503,10 +549,9 @@ import java.lang.constant.*;
 public class Sandbox {
    public static void main(String[] args) throws Exception {
       System.out.println(IntLst.class.isSealed());
-      ClassDesc[] descriptors = IntLst.class.permittedSubclasses();
-      System.out.println(Arrays.asList(descriptors));
-      Class<?> clazz = Class.forName(descriptors[0].displayName());
-      System.out.println(clazz);
+      Class[] permittedSubclasses = IntLst.class.getPermittedSubclasses();
+      System.out.println(List.of(permittedSubclasses));
+      System.out.println(String.class.getPermittedSubclasses());
    }
 }
 
