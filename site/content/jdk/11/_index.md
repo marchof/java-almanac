@@ -21,10 +21,10 @@ import java.util.function.Function;
 public class Java11 {
 
     public static void main(String[] args) {
-        
+
         Function<String, String> hello = (var s) -> String.format("Hello %s!", s);
         System.out.println(hello.apply("Java 11"));
-        
+
     }
 
 }

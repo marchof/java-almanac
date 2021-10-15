@@ -1,7 +1,6 @@
-{{ $version := index .Params 0 }}
-
-{{ with (index $.Site.Data.jdk.versions $version) }}
-
+{{- $version := index .Params 0 }}
+{{- with (index $.Site.Data.jdk.versions $version) }}
+<div style="overflow-x:auto;">
 <table>
   <tbody>
     <tr>
@@ -16,6 +15,12 @@
       <th>EOL Date</th>
       <td>{{ .eol }}</td>
     </tr>
+    {{- with .latestversion }}
+    <tr>
+      <th>Latest Version</th>
+      <td>{{ . }}</td>
+    </tr>
+    {{- end }}
     {{- with .codename }}
     <tr>
       <th>Codename</th>
@@ -65,11 +70,11 @@
     </tr>
   </tbody>
 </table>
-
-{{ end }}
+{{- end }}
 
 <div class="datasource">
-  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $version }}.json">Data Source</a>
+  <a href="{{ $.Site.Params.Dataapibase }}jdk/versions/{{ $version }}">Data Source</a>
+</div>
 </div>
 
 <div>
@@ -110,19 +115,21 @@
 
 <h2>Downloads</h2>
 
+<div style="overflow-x:auto;">
 <table>
   <thead>
     <tr>
       <th>Vendor</th>
       <th>Product</th>
       <th>License</th>
-      <th>Platforms</th>
+      <th>Platform Downloads</th>
     </tr>
   </thead>
   <tbody>
   {{- range $.Page.Site.Data.jdk.vendors }}
     {{- $vendor := . }}
     {{- range .products }}
+    {{- $product := . }}
     {{- if in .versions $version }}
     <tr>
       <td><a href="{{ $vendor.url }}">{{ $vendor.name }}</a></td>
@@ -131,7 +138,11 @@
       <td>
         <ul class="tag architecture">
           {{- range .platforms }}
-            <li>{{ . }}</li>
+            {{- if $product.foojaydownload }}
+              <li><a href="../download/#product={{ $product.id }}&version={{ $version }}&platform={{ . }}">{{ . }}</a></li>
+            {{- else }}
+              <li>{{ . }}</li>
+            {{- end }}
           {{- end }}
         </ul>
       </td>
@@ -143,6 +154,6 @@
 </table>
 
 <div class="datasource">
-  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/vendors.json">Data Source</a>
+  <a href="{{ $.Site.Params.Dataapibase }}jdk/versions/{{ $version }}">Data Source</a>
 </div>
-
+</div>

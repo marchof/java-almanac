@@ -1,20 +1,30 @@
+<div style="overflow-x:auto;">
 <table>
   <thead>
     <tr>
       <th>Version</th>
-      <th>Release Date</th>
+      <th>Status</th>
+      <th>Bytecode</th>
+      <th>Release</th>
+      <th>EOL</th>
+      <th>Latest Version</th>
     </tr>
   </thead>
   <tbody>
-    {{ range sort $.Site.Data.jdk.versions "ga" }}
+    {{- range sort $.Site.Data.jdk.versions "ga" "desc" }}
     <tr>
       <td><a href="{{ .version }}">{{ .name }}</a></td>
+      <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
+      <td>{{ .bytecode }}</td>
       <td>{{ .ga }}</td>
+      <td>{{ .eol }}</td>
+      <td>{{ .latestversion }}</td>
     </tr>
-    {{ end }}
+    {{- end }}
   </tbody>
 </table>
 
 <div class="datasource">
-  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/">Data Source</a>
+  <a href="{{ $.Site.Params.Dataapibase }}jdk/versions">Data Source</a>
+</div>
 </div>

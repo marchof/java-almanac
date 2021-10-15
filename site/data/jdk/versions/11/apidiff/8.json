@@ -1,16 +1,60 @@
 {
 	"base": {
 		"feature": "8",
-		"vendor": "adpt",
-		"version": "8.0.275"
+		"vendor": "tem",
+		"version": "8.0.302"
 	},
 	"target": {
 		"feature": "11",
-		"vendor": "adpt",
-		"version": "11.0.9.1+1"
+		"vendor": "tem",
+		"version": "11.0.12+7"
 	},
 	"order": 8.0,
 	"deltas": [
+		{
+			"type": "package",
+			"name": "java.applet",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/applet/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Applet",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/applet/Applet.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletContext",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/applet/AppletContext.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletStub",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/applet/AppletStub.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AudioClip",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/applet/AudioClip.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
 		{
 			"type": "package",
 			"name": "java.awt.color",
@@ -833,6 +877,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Event",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Event.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileDialog",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html",
@@ -1298,6 +1351,15 @@
 								"deprecated"
 							]
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletInitializer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/AppletInitializer.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -3006,6 +3068,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Compiler.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5404,6 +5467,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/AclNotFoundException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5413,6 +5477,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/LastOwnerException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5422,6 +5487,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/NotOwnerException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5431,6 +5497,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/AclEntry.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5440,6 +5507,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/Acl.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5449,6 +5517,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/Group.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5458,6 +5527,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/Owner.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -5467,6 +5537,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/acl/Permission.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				}
@@ -7692,6 +7763,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Pack200.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -7701,6 +7773,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Pack200.Packer.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					],
 					"deltas": [
@@ -7722,6 +7795,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Pack200.Unpacker.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					],
 					"deltas": [
@@ -7857,6 +7931,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "LoggingMXBean",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LoggingMXBean.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -8881,6 +8964,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Observable",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Observable.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "OptionalDouble",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html",
@@ -9585,6 +9677,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Observer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Observer.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -10565,6 +10666,15 @@
 				},
 				{
 					"type": "class",
+					"name": "RMIIIOPServerImpl",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIIIOPServerImpl.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "_RMIConnectionImpl_Tie",
 					"status": "removed"
 				},
@@ -10857,6 +10967,77 @@
 					"type": "class",
 					"name": "Policy",
 					"status": "removed"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.security.cert",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "CertificateEncodingException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/CertificateEncodingException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "CertificateException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/CertificateException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "CertificateExpiredException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/CertificateExpiredException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "CertificateNotYetValidException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/CertificateNotYetValidException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "CertificateParsingException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/CertificateParsingException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Certificate",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/Certificate.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "X509Certificate",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/cert/X509Certificate.html",
+					"addedTags": [
+						"deprecated"
+					]
 				}
 			]
 		},
@@ -11228,6 +11409,24 @@
 							"name": "bumps",
 							"status": "removed"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.FileRenderer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FileRenderer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.SingleClickListener",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.SingleClickListener.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -11904,6 +12103,15 @@
 				},
 				{
 					"type": "class",
+					"name": "JApplet",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JApplet.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "JColorChooser",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html",
@@ -11914,6 +12122,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color,boolean)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JComponent.AccessibleJComponent.AccessibleFocusHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.AccessibleFocusHandler.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -12000,6 +12217,20 @@
 				},
 				{
 					"type": "class",
+					"name": "JPasswordField",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setText(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "JRootPane",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html",
@@ -12013,20 +12244,6 @@
 							"type": "field",
 							"name": "defaultReleaseAction",
 							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "JSpinner.NumberEditor",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "setComponentOrientation(ComponentOrientation)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#setComponentOrientation(java.awt.ComponentOrientation)"
 						}
 					]
 				},

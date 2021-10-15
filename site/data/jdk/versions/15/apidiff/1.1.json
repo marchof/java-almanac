@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "15",
 		"vendor": "adpt",
-		"version": "15.0.1+9"
+		"version": "15.0.2+7"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -26,8 +26,11 @@
 				{
 					"type": "class",
 					"name": "Applet",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/java/applet/Applet.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -64,7 +67,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/java/applet/AppletContext.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -93,7 +97,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/java/applet/AppletStub.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{
@@ -102,7 +107,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/java/applet/AudioClip.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				}
 			]
@@ -5250,6 +5256,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Event",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/java/awt/Event.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileDialog",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.desktop/java/awt/FileDialog.html",
@@ -9209,7 +9224,8 @@
 					"type": "annotation",
 					"name": "Serial",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/Serial.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/Serial.html",
+					"csr": "JDK-8217698"
 				},
 				{
 					"type": "class",
@@ -9753,6 +9769,15 @@
 				},
 				{
 					"type": "class",
+					"name": "LineNumberInputStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/LineNumberInputStream.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "ObjectInputFilter.Config",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/ObjectInputFilter.Config.html"
@@ -10227,13 +10252,15 @@
 							"type": "method",
 							"name": "write(byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/PrintStream.html#write(byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/PrintStream.html#write(byte%5B%5D)",
+							"csr": "JDK-8230625"
 						},
 						{
 							"type": "method",
 							"name": "writeBytes(byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/PrintStream.html#writeBytes(byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/PrintStream.html#writeBytes(byte%5B%5D)",
+							"csr": "JDK-8230625"
 						}
 					]
 				},
@@ -10481,6 +10508,15 @@
 					"name": "SerializablePermission",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/SerializablePermission.html"
+				},
+				{
+					"type": "class",
+					"name": "StringBufferInputStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/io/StringBufferInputStream.html",
+					"addedTags": [
+						"deprecated"
+					]
 				},
 				{
 					"type": "class",
@@ -11112,7 +11148,8 @@
 						{
 							"type": "method",
 							"name": "Modifier()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8235548"
 						},
 						{
 							"type": "method",
@@ -11174,7 +11211,9 @@
 					"type": "class",
 					"name": "RecordComponent",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/reflect/RecordComponent.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/reflect/RecordComponent.html",
+					"csr": "JDK-8233436"
 				},
 				{
 					"type": "class",
@@ -11289,7 +11328,8 @@
 			"type": "package",
 			"name": "java.lang.runtime",
 			"status": "added",
-			"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/runtime/package-summary.html"
+			"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/runtime/package-summary.html",
+			"csr": "JDK-8233436"
 		},
 		{
 			"type": "package",
@@ -11377,7 +11417,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Boolean.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Boolean.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -11491,7 +11532,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Byte.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Byte.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -11848,7 +11890,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Character.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Character.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -12605,7 +12648,9 @@
 							"type": "method",
 							"name": "getRecordComponents()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#getRecordComponents()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#getRecordComponents()",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "method",
@@ -12653,7 +12698,8 @@
 							"type": "method",
 							"name": "isHidden()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isHidden()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isHidden()",
+							"csr": "JDK-8238359"
 						},
 						{
 							"type": "method",
@@ -12677,13 +12723,17 @@
 							"type": "method",
 							"name": "isRecord()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isRecord()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isRecord()",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "method",
 							"name": "isSealed()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isSealed()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#isSealed()",
+							"csr": "JDK-8244556"
 						},
 						{
 							"type": "method",
@@ -12704,7 +12754,9 @@
 							"type": "method",
 							"name": "permittedSubclasses()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#permittedSubclasses()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Class.html#permittedSubclasses()",
+							"csr": "JDK-8244556"
 						},
 						{
 							"type": "method",
@@ -12720,6 +12772,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Compiler.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -13678,13 +13731,15 @@
 							"type": "method",
 							"name": "absExact(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(int)",
+							"csr": "JDK-8241805"
 						},
 						{
 							"type": "method",
 							"name": "absExact(long)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(long)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Math.html#absExact(long)",
+							"csr": "JDK-8241805"
 						},
 						{
 							"type": "method",
@@ -14157,7 +14212,9 @@
 					"type": "class",
 					"name": "Record",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Record.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Record.html",
+					"csr": "JDK-8233436"
 				},
 				{
 					"type": "class",
@@ -14470,7 +14527,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Short.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Short.html#describeConstable()",
+							"csr": "JDK-8241667"
 						},
 						{
 							"type": "method",
@@ -17983,7 +18041,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/registry/RegistryHandler.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18026,8 +18085,11 @@
 				{
 					"type": "class",
 					"name": "LogStream",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/LogStream.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18129,8 +18191,11 @@
 				{
 					"type": "class",
 					"name": "Operation",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/Operation.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18276,8 +18341,11 @@
 				{
 					"type": "class",
 					"name": "RemoteStub",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/RemoteStub.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18307,8 +18375,11 @@
 				{
 					"type": "class",
 					"name": "SkeletonMismatchException",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/SkeletonMismatchException.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18319,6 +18390,24 @@
 								"deprecated"
 							]
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SkeletonNotFoundException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/SkeletonNotFoundException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketSecurityException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/SocketSecurityException.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -18386,7 +18475,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/LoaderHandler.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18445,7 +18535,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/RemoteCall.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18569,7 +18660,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/ServerRef.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18586,7 +18678,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/server/Skeleton.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					],
 					"deltas": [
 						{
@@ -18688,8 +18781,11 @@
 				{
 					"type": "class",
 					"name": "RMISecurityException",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/RMISecurityException.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18714,8 +18810,11 @@
 				{
 					"type": "class",
 					"name": "RMISecurityManager",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18886,8 +18985,11 @@
 				{
 					"type": "class",
 					"name": "ServerRuntimeException",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.rmi/java/rmi/ServerRuntimeException.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -18914,7 +19016,8 @@
 		{
 			"type": "package",
 			"name": "java.security.acl",
-			"status": "removed"
+			"status": "removed",
+			"csr": "JDK-8217101"
 		},
 		{
 			"type": "package",
@@ -19011,19 +19114,22 @@
 					"type": "interface",
 					"name": "EdECKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECKey.html",
+					"csr": "JDK-8190219"
 				},
 				{
 					"type": "interface",
 					"name": "EdECPrivateKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPrivateKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPrivateKey.html",
+					"csr": "JDK-8190219"
 				},
 				{
 					"type": "interface",
 					"name": "EdECPublicKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPublicKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/interfaces/EdECPublicKey.html",
+					"csr": "JDK-8190219"
 				},
 				{
 					"type": "interface",
@@ -19233,6 +19339,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/IdentityScope.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19242,6 +19349,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/Identity.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -20187,6 +20295,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/Signer.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -20251,6 +20360,7 @@
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/Certificate.html",
 					"addedTags": [
 						"abstract",
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -24222,7 +24332,8 @@
 							"type": "method",
 							"name": "getMonetaryGroupingSeparator()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()",
+							"csr": "JDK-8235942"
 						},
 						{
 							"type": "method",
@@ -24258,7 +24369,8 @@
 							"type": "method",
 							"name": "setMonetaryGroupingSeparator(char)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)",
+							"csr": "JDK-8235942"
 						}
 					]
 				},
@@ -26422,13 +26534,15 @@
 							"type": "method",
 							"name": "NoSuchElementException(String, Throwable)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+							"csr": "JDK-8233856"
 						},
 						{
 							"type": "method",
 							"name": "NoSuchElementException(Throwable)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.Throwable)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/NoSuchElementException.html#%3Cinit%3E(java.lang.Throwable)",
+							"csr": "JDK-8233856"
 						}
 					]
 				},
@@ -26437,6 +26551,15 @@
 					"name": "Objects",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/Objects.html"
+				},
+				{
+					"type": "class",
+					"name": "Observable",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/Observable.html",
+					"addedTags": [
+						"deprecated"
+					]
 				},
 				{
 					"type": "class",
@@ -27773,7 +27896,8 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/Observer.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"deprecated"
 					]
 				},
 				{

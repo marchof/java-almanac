@@ -20,8 +20,11 @@
 				{
 					"type": "class",
 					"name": "Applet",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/applet/Applet.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -29,6 +32,33 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/applet/Applet.html#isValidateRoot()"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletContext",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/applet/AppletContext.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletStub",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/applet/AppletStub.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AudioClip",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/applet/AudioClip.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -1410,6 +1440,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Event",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/awt/Event.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileDialog",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/awt/FileDialog.html",
@@ -2271,6 +2310,15 @@
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/beans/XMLEncoder.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,boolean,int)"
 						}
 					]
+				},
+				{
+					"type": "interface",
+					"name": "AppletInitializer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/java/beans/AppletInitializer.html",
+					"addedTags": [
+						"deprecated"
+					]
 				}
 			]
 		},
@@ -2284,7 +2332,8 @@
 					"type": "annotation",
 					"name": "Serial",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/Serial.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/Serial.html",
+					"csr": "JDK-8217698"
 				},
 				{
 					"type": "class",
@@ -2570,13 +2619,15 @@
 							"type": "method",
 							"name": "write(byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/PrintStream.html#write(byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/PrintStream.html#write(byte%5B%5D)",
+							"csr": "JDK-8230625"
 						},
 						{
 							"type": "method",
 							"name": "writeBytes(byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/PrintStream.html#writeBytes(byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/PrintStream.html#writeBytes(byte%5B%5D)",
+							"csr": "JDK-8230625"
 						}
 					]
 				},
@@ -2741,7 +2792,9 @@
 							"type": "field",
 							"name": "RECORD_COMPONENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/annotation/ElementType.html#RECORD_COMPONENT"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/annotation/ElementType.html#RECORD_COMPONENT",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "field",
@@ -3391,7 +3444,9 @@
 					"type": "class",
 					"name": "RecordComponent",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/reflect/RecordComponent.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/reflect/RecordComponent.html",
+					"csr": "JDK-8233436"
 				},
 				{
 					"type": "class",
@@ -3517,7 +3572,8 @@
 			"type": "package",
 			"name": "java.lang.runtime",
 			"status": "added",
-			"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/runtime/package-summary.html"
+			"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/runtime/package-summary.html",
+			"csr": "JDK-8233436"
 		},
 		{
 			"type": "package",
@@ -5123,7 +5179,9 @@
 							"type": "method",
 							"name": "getRecordComponents()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Class.html#getRecordComponents()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Class.html#getRecordComponents()",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "method",
@@ -5141,7 +5199,9 @@
 							"type": "method",
 							"name": "isRecord()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Class.html#isRecord()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Class.html#isRecord()",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "method",
@@ -5166,6 +5226,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Compiler.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -6206,7 +6267,9 @@
 					"type": "class",
 					"name": "Record",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Record.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Record.html",
+					"csr": "JDK-8233436"
 				},
 				{
 					"type": "class",
@@ -6463,13 +6526,15 @@
 							"type": "method",
 							"name": "decrementExact(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#decrementExact(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#decrementExact(int)",
+							"csr": "JDK-8229702"
 						},
 						{
 							"type": "method",
 							"name": "decrementExact(long)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#decrementExact(long)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#decrementExact(long)",
+							"csr": "JDK-8229702"
 						},
 						{
 							"type": "method",
@@ -6523,13 +6588,15 @@
 							"type": "method",
 							"name": "incrementExact(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#incrementExact(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#incrementExact(int)",
+							"csr": "JDK-8229702"
 						},
 						{
 							"type": "method",
 							"name": "incrementExact(long)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#incrementExact(long)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#incrementExact(long)",
+							"csr": "JDK-8229702"
 						},
 						{
 							"type": "method",
@@ -6565,13 +6632,15 @@
 							"type": "method",
 							"name": "negateExact(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#negateExact(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#negateExact(int)",
+							"csr": "JDK-8229702"
 						},
 						{
 							"type": "method",
 							"name": "negateExact(long)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#negateExact(long)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StrictMath.html#negateExact(long)",
+							"csr": "JDK-8229702"
 						},
 						{
 							"type": "method",
@@ -6671,6 +6740,7 @@
 							"type": "method",
 							"name": "formatted(Object...)",
 							"status": "added",
+							"preview": true,
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)"
 						},
 						{
@@ -6725,6 +6795,7 @@
 							"type": "method",
 							"name": "stripIndent()",
 							"status": "added",
+							"preview": true,
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#stripIndent()"
 						},
 						{
@@ -6749,6 +6820,7 @@
 							"type": "method",
 							"name": "translateEscapes()",
 							"status": "added",
+							"preview": true,
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#translateEscapes()"
 						}
 					]
@@ -9057,6 +9129,24 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "RemoteStub",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/RemoteStub.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketSecurityException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/SocketSecurityException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "UnicastRemoteObject",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html",
@@ -9104,8 +9194,11 @@
 				{
 					"type": "interface",
 					"name": "ServerRef",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/server/ServerRef.html",
+					"addedTags": [
+						"deprecated"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -9122,8 +9215,26 @@
 		},
 		{
 			"type": "package",
+			"name": "java.rmi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "RMISecurityManager",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.rmi/java/rmi/RMISecurityManager.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "java.security.acl",
-			"status": "removed"
+			"status": "removed",
+			"csr": "JDK-8217101"
 		},
 		{
 			"type": "package",
@@ -9883,7 +9994,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.PasswordProtection(char[], String, AlgorithmParameterSpec)",
+							"name": "PasswordProtection(char[], String, AlgorithmParameterSpec)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec)"
 						},
@@ -9909,7 +10020,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.PrivateKeyEntry(PrivateKey, Certificate[], Set)",
+							"name": "PrivateKeyEntry(PrivateKey, Certificate[], Set)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate%5B%5D,java.util.Set)"
 						},
@@ -9929,7 +10040,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.SecretKeyEntry(SecretKey, Set)",
+							"name": "SecretKeyEntry(SecretKey, Set)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey,java.util.Set)"
 						},
@@ -9949,7 +10060,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.TrustedCertificateEntry(Certificate, Set)",
+							"name": "TrustedCertificateEntry(Certificate, Set)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate,java.util.Set)"
 						},
@@ -12122,7 +12233,8 @@
 							"type": "method",
 							"name": "setCurrentBlocker(Object)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#setCurrentBlocker(java.lang.Object)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#setCurrentBlocker(java.lang.Object)",
+							"csr": "JDK-8230240"
 						}
 					]
 				},
@@ -13227,17 +13339,20 @@
 				{
 					"type": "class",
 					"name": "Pack200",
-					"status": "removed"
+					"status": "removed",
+					"csr": "JDK-8234596"
 				},
 				{
 					"type": "interface",
 					"name": "Pack200.Packer",
-					"status": "removed"
+					"status": "removed",
+					"csr": "JDK-8234596"
 				},
 				{
 					"type": "interface",
 					"name": "Pack200.Unpacker",
-					"status": "removed"
+					"status": "removed",
+					"csr": "JDK-8234596"
 				}
 			]
 		},
@@ -13485,6 +13600,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.logging/java/util/logging/Logger.html#warning(java.util.function.Supplier)"
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "LoggingMXBean",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.logging/java/util/logging/LoggingMXBean.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -15375,13 +15499,15 @@
 							"type": "method",
 							"name": "toArray()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/HashSet.html#toArray()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/HashSet.html#toArray()",
+							"csr": "JDK-8225393"
 						},
 						{
 							"type": "method",
 							"name": "toArray(Object[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/HashSet.html#toArray(java.lang.Object%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/HashSet.html#toArray(java.lang.Object%5B%5D)",
+							"csr": "JDK-8225393"
 						}
 					]
 				},
@@ -15732,6 +15858,15 @@
 					"name": "Objects",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Objects.html"
+				},
+				{
+					"type": "class",
+					"name": "Observable",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Observable.html",
+					"addedTags": [
+						"deprecated"
+					]
 				},
 				{
 					"type": "class",
@@ -16915,6 +17050,15 @@
 				},
 				{
 					"type": "interface",
+					"name": "Observer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Observer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "PrimitiveIterator.OfDouble",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html"
@@ -17708,7 +17852,9 @@
 							"type": "field",
 							"name": "BINDING_VARIABLE",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#BINDING_VARIABLE"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#BINDING_VARIABLE",
+							"csr": "JDK-8235590"
 						},
 						{
 							"type": "field",
@@ -17720,13 +17866,17 @@
 							"type": "field",
 							"name": "RECORD",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "field",
 							"name": "RECORD_COMPONENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD_COMPONENT"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD_COMPONENT",
+							"csr": "JDK-8233436"
 						},
 						{
 							"type": "field",
@@ -17798,7 +17948,9 @@
 							"type": "method",
 							"name": "visitRecordComponent(RecordComponentElement, Object)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)",
+							"csr": "JDK-8233546"
 						}
 					]
 				},
@@ -17945,7 +18097,9 @@
 					"type": "interface",
 					"name": "RecordComponentElement",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html",
+					"csr": "JDK-8233436"
 				},
 				{
 					"type": "interface",
@@ -17979,7 +18133,9 @@
 							"type": "method",
 							"name": "getRecordComponents()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getRecordComponents()"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getRecordComponents()",
+							"csr": "JDK-8233546"
 						},
 						{
 							"type": "method",
@@ -18169,7 +18325,8 @@
 					"type": "class",
 					"name": "AbstractAnnotationValueVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor14.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18210,7 +18367,9 @@
 					"type": "class",
 					"name": "AbstractElementVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor14.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18237,7 +18396,8 @@
 							"type": "method",
 							"name": "visitRecordComponent(RecordComponentElement, Object)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)",
+							"csr": "JDK-8233546"
 						}
 					]
 				},
@@ -18263,7 +18423,8 @@
 					"type": "class",
 					"name": "AbstractTypeVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor14.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18352,13 +18513,17 @@
 							"type": "method",
 							"name": "recordComponentsIn(Iterable)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#recordComponentsIn(java.lang.Iterable)"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#recordComponentsIn(java.lang.Iterable)",
+							"csr": "JDK-8233546"
 						},
 						{
 							"type": "method",
 							"name": "recordComponentsIn(Set)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#recordComponentsIn(java.util.Set)"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html#recordComponentsIn(java.util.Set)",
+							"csr": "JDK-8233546"
 						},
 						{
 							"type": "method",
@@ -18378,7 +18543,9 @@
 					"type": "class",
 					"name": "ElementKindVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor14.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18408,13 +18575,16 @@
 							"type": "method",
 							"name": "visitTypeAsRecord(TypeElement, Object)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsRecord(javax.lang.model.element.TypeElement,java.lang.Object)"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitTypeAsRecord(javax.lang.model.element.TypeElement,java.lang.Object)",
+							"csr": "JDK-8233546"
 						},
 						{
 							"type": "method",
 							"name": "visitVariableAsBindingVariable(VariableElement, Object)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsBindingVariable(javax.lang.model.element.VariableElement,java.lang.Object)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor6.html#visitVariableAsBindingVariable(javax.lang.model.element.VariableElement,java.lang.Object)",
+							"csr": "JDK-8235590"
 						},
 						{
 							"type": "method",
@@ -18446,7 +18616,9 @@
 					"type": "class",
 					"name": "ElementScanner14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementScanner14.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/ElementScanner14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18496,7 +18668,8 @@
 					"type": "class",
 					"name": "SimpleAnnotationValueVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor14.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18546,7 +18719,9 @@
 					"type": "class",
 					"name": "SimpleElementVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor14.html"
+					"preview": true,
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18596,7 +18771,8 @@
 					"type": "class",
 					"name": "SimpleTypeVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor14.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18646,7 +18822,8 @@
 					"type": "class",
 					"name": "TypeKindVisitor14",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor14.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor14.html",
+					"csr": "JDK-8233546"
 				},
 				{
 					"type": "class",
@@ -18786,7 +18963,9 @@
 							"type": "method",
 							"name": "recordComponentFor(ExecutableElement)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/Elements.html#recordComponentFor(javax.lang.model.element.ExecutableElement)"
+							"preview": true,
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/util/Elements.html#recordComponentFor(javax.lang.model.element.ExecutableElement)",
+							"csr": "JDK-8233546"
 						}
 					]
 				}
@@ -18838,7 +19017,8 @@
 							"type": "field",
 							"name": "RELEASE_14",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_14"
+							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_14",
+							"csr": "JDK-8225363"
 						},
 						{
 							"type": "field",
@@ -18910,6 +19090,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#SERIAL_FILTER_PATTERN"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "RMIIIOPServerImpl",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.management.rmi/javax/management/remote/rmi/RMIIIOPServerImpl.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -19720,6 +19909,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/CertificateEncodingException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19729,6 +19919,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/CertificateException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19738,6 +19929,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/CertificateExpiredException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19747,6 +19939,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/CertificateNotYetValidException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19756,6 +19949,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/CertificateParsingException.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19765,6 +19959,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/Certificate.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				},
@@ -19774,6 +19969,7 @@
 					"status": "modified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.base/javax/security/cert/X509Certificate.html",
 					"addedTags": [
+						"deprecated",
 						"forRemoval"
 					]
 				}
@@ -21241,6 +21437,24 @@
 				},
 				{
 					"type": "class",
+					"name": "MetalFileChooserUI.FileRenderer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FileRenderer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "MetalFileChooserUI.SingleClickListener",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.SingleClickListener.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "MetalFileChooserUI",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.html",
@@ -22498,6 +22712,15 @@
 				},
 				{
 					"type": "class",
+					"name": "JApplet",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/JApplet.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "JColorChooser",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/JColorChooser.html",
@@ -22522,6 +22745,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/JComboBox.html#processKeyBinding(javax.swing.KeyStroke,java.awt.event.KeyEvent,int,boolean)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JComponent.AccessibleJComponent.AccessibleFocusHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/14/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.AccessibleFocusHandler.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{

@@ -4,10 +4,11 @@ title: 'javaalmanac.io'
 disableKinds: ['RSS', 'taxonomyTerm']
 
 params:
-    sourcebase: 'https://github.com/marchof/java-almanac/blob/master/site/'
+    dataapibase: 'https://data.javaalmanac.io/v1/'
     jvmspecbase: 'https://docs.oracle.com/javase/specs/jvms/se11/html/'
 
 deployment:
     targets:
         name: 'javaalmanac.io'
         URL: 's3://javaalmanac.io?region=us-east-1'
+        cloudFrontDistributionID: ECI1PGYSTNAWG

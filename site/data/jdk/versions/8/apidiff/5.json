@@ -6,8 +6,8 @@
 	},
 	"target": {
 		"feature": "8",
-		"vendor": "adpt",
-		"version": "8.0.275"
+		"vendor": "tem",
+		"version": "8.0.302"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -6467,6 +6467,24 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "RemoteStub",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteStub.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketSecurityException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SocketSecurityException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "UnicastRemoteObject",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html",
@@ -6480,6 +6498,32 @@
 								"deprecated"
 							]
 						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ServerRef",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.rmi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "RMISecurityManager",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityManager.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]
@@ -6929,9 +6973,9 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.PasswordProtection(char[], String, AlgorithmParameterSpec)",
+							"name": "PasswordProtection(char[], String, AlgorithmParameterSpec)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PasswordProtection.html#KeyStore.PasswordProtection-char:A-java.lang.String-java.security.spec.AlgorithmParameterSpec-"
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PasswordProtection.html#PasswordProtection-char:A-java.lang.String-java.security.spec.AlgorithmParameterSpec-"
 						},
 						{
 							"type": "method",
@@ -6955,9 +6999,9 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.PrivateKeyEntry(PrivateKey, Certificate[], Set)",
+							"name": "PrivateKeyEntry(PrivateKey, Certificate[], Set)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PrivateKeyEntry.html#KeyStore.PrivateKeyEntry-java.security.PrivateKey-java.security.cert.Certificate:A-java.util.Set-"
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PrivateKeyEntry.html#PrivateKeyEntry-java.security.PrivateKey-java.security.cert.Certificate:A-java.util.Set-"
 						},
 						{
 							"type": "method",
@@ -6975,9 +7019,9 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.SecretKeyEntry(SecretKey, Set)",
+							"name": "SecretKeyEntry(SecretKey, Set)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.SecretKeyEntry.html#KeyStore.SecretKeyEntry-javax.crypto.SecretKey-java.util.Set-"
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.SecretKeyEntry.html#SecretKeyEntry-javax.crypto.SecretKey-java.util.Set-"
 						},
 						{
 							"type": "method",
@@ -6995,9 +7039,9 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "KeyStore.TrustedCertificateEntry(Certificate, Set)",
+							"name": "TrustedCertificateEntry(Certificate, Set)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.TrustedCertificateEntry.html#KeyStore.TrustedCertificateEntry-java.security.cert.Certificate-java.util.Set-"
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.TrustedCertificateEntry.html#TrustedCertificateEntry-java.security.cert.Certificate-java.util.Set-"
 						},
 						{
 							"type": "method",
@@ -20963,6 +21007,20 @@
 							"name": "getBaselineResizeBehavior()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.DefaultEditor.html#getBaselineResizeBehavior--"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JSpinner.NumberEditor",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setComponentOrientation(ComponentOrientation)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html#setComponentOrientation-java.awt.ComponentOrientation-"
 						}
 					]
 				},

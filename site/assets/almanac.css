@@ -1,9 +1,32 @@
+/* noto-sans-regular - latin */
+@font-face {
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+		url('fonts/noto-sans-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('fonts/noto-sans-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-sans-700 - latin */
+@font-face {
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+		url('fonts/noto-sans-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('fonts/noto-sans-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 11pt;
 	background-color: #fff;
 	color: #000;
 	margin: 0px;
+	-webkit-text-size-adjust: 100%;
 }
 
 div.header-bar {
@@ -101,6 +124,12 @@ div.content a, a:visited {
 
 div.content a:hover {
 	text-decoration: underline;
+}
+
+div.content a.diffversion {
+	display: inline-block;
+	width:25px;
+	text-align:right;
 }
 
 div.content table {
@@ -231,14 +260,16 @@ div.content div.datasource a {
 	font-weight: bold;
 }
 
+div.footer-bar {
+	border-top: 1px solid #ccc;
+}
+
 div.footer {
 	clear: both;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	border-top: 1px solid #ccc;
-	padding-top: 2px;
-	padding-bottom: 8px;
+	padding: 2px 8px 8px 8px;
 	color: #999;
 	font-size: 9pt;
 }
@@ -251,60 +282,47 @@ div.footer a:hover {
 	text-decoration: none;
 }
 
-.annotation {
+.annotation, .class, .enum, .field, .interface, .method, .module, .package, .record {
 	padding-left:18px;
-	background-image:url("img/annotation.png");
+	background-size: 16px 16px;
 	background-position:left center;
 	background-repeat:no-repeat;
+}
+
+.annotation {
+	background-image:url("img/annotation.png");
 }
 
 .class {
-	padding-left:18px;
 	background-image:url("img/class.png");
-	background-position:left center;
-	background-repeat:no-repeat;
 }
 
 .enum {
-	padding-left:18px;
 	background-image:url("img/enum.png");
-	background-position:left center;
-	background-repeat:no-repeat;
 }
 
 .field {
-	padding-left:18px;
 	background-image:url("img/field.png");
-	background-position:left center;
-	background-repeat:no-repeat;
 }
 
 .interface {
-	padding-left:18px;
 	background-image:url("img/interface.png");
-	background-position:left center;
-	background-repeat:no-repeat;
 }
 
 .method {
-	padding-left:18px;
 	background-image:url("img/method.png");
-	background-position:left center;
-	background-repeat:no-repeat;
-}
-
-.package {
-	padding-left:18px;
-	background-image:url("img/package.png");
-	background-position:left center;
-	background-repeat:no-repeat;
 }
 
 .module {
-	padding-left:18px;
 	background-image:url("img/module.png");
-	background-position:left center;
-	background-repeat:no-repeat;
+}
+
+.package {
+	background-image:url("img/package.png");
+}
+
+.record {
+	background-image:url("img/record.png");
 }
 
 .removed {
@@ -331,13 +349,30 @@ ul.tag li.removedtag {
 	background-color: #666;
 }
 
+ul.tag li a.csr {
+	padding-right:16px;
+	background-size: 16px 16px;
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-image:url("img/csr.png");
+}
+
 [v-cloak] > * { display:none }
 [v-cloak]::before { content: "loading…" }
 div.tabs {
+	position: relative;
 	background-color: #eee;
 	padding-top: 3px;
 	padding-left: 6px;
 	padding-right: 6px;
+}
+div.tabs span.infotext {
+	position: absolute;
+	right: 4px;
+	bottom: 0px;
+	color: #999;
+	font-size: 9pt;
+	cursor: help;
 }
 div.tabs ul {
 	list-style: none;

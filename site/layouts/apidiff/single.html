@@ -1,4 +1,11 @@
-{{ define "apidiffitem" }}
+{{- define "csrlink" }}
+  {{- if .delta.csr -}}
+    <a class="csr" title="{{ .delta.csr }}" href="https://bugs.openjdk.java.net/browse/{{ .delta.csr }}">{{ .label }}</a>
+  {{- else -}}
+    {{ .label }}
+  {{- end -}}
+{{- end }}
+{{- define "apidiffitem" }}
   {{- $indent := .indent -}}
   <tr>
     <td><div class="{{ .delta.type }}" style="margin-left:{{ $indent }}px">
@@ -14,9 +21,13 @@
     </div></td>
     <td><ul class="tag">
       {{- if eq "added" .delta.status -}}
-        <li class="tag newelement">added</li>
+        {{- if .delta.preview -}}
+          <li class="tag newelement">{{ template "csrlink" dict "delta" .delta "label" "added preview" }}</li>
+        {{- else -}}
+          <li class="tag newelement">{{ template "csrlink" dict "delta" .delta "label" "added" }}</li>
+        {{- end -}}
       {{- else if eq "removed" .delta.status -}}
-        <li class="tag removedelement">removed</li>
+        <li class="tag removedelement">{{ template "csrlink" dict "delta" .delta "label" "removed" }}</li>
       {{- end -}}
       {{- range .delta.removedTags -}}
         <li class="tag removedtag"><b>-</b> {{ . }}</li>
@@ -29,21 +40,22 @@
   {{- range .delta.deltas -}}
     {{- template "apidiffitem" (dict "delta" . "indent" (add $indent 18) ) -}}
   {{- end -}}
-{{ end }}
+{{- end }}
 
-{{ partial "header.html" . }}
+{{- partial "header.html" . }}
 <h1>{{ .Title }}</h1>
 
-{{ $targetversion := .Params.Targetversion }}
-{{ $baseversion := .Params.Baseversion }}
+{{- $targetversion := .Params.Targetversion }}
+{{- $baseversion := .Params.Baseversion }}
 
-{{ with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
+{{- with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
 
 <p>
-  Comparing <a href="../../../{{ .target.version }}">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})
-  with <a href="../../../{{ .base.version }}"> Java {{ .base.feature }}</a> ({{ .base.version }}-{{ .base.vendor }}).
+  Comparing <a href="../../../{{ .target.feature }}">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})
+  with <a href="../../../{{ .base.feature }}"> Java {{ .base.feature }}</a> ({{ .base.version }}-{{ .base.vendor }}).
 </p>
 
+<div style="overflow-x:auto;">
 <table>
   <thead>
     <tr>
@@ -52,14 +64,15 @@
     </tr>
   </thead>
   <tbody>
-  {{ range .deltas -}}
-    {{- template "apidiffitem" (dict "delta" . "indent" 0 ) -}}
+  {{- range .deltas }}
+    {{- template "apidiffitem" (dict "delta" . "indent" 0 ) }}
   {{- end }}
   </tbody>
 </table>
 
 <div class="datasource">
-  <a href="{{ $.Site.Params.Sourcebase }}data/jdk/versions/{{ $targetversion }}/apidiff/{{ $baseversion }}.json">Data Source</a>
+  <a href="{{ $.Site.Params.Dataapibase }}jdk/versions/{{ $targetversion }}/apidiffs/{{ $baseversion }}">Data Source</a>
+</div>
 </div>
 
 <p>
@@ -69,12 +82,18 @@
   {{ .base.version }}-{{ .base.vendor }}. It does not make statements about
   <a href="https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility">compatibility</a>.
 </p>
+  
+<p>
+  For the latest Java versions the corresponding CSRs
+  (<a href="https://wiki.openjdk.java.net/display/csr">Compatibility &amp; Specification Review</a>)
+  are <ul class="tag"><li class="newelement"><a>linked</a></li></ul> for a quick reference to find out about the reasoning of the change.
+</p>
 
 <p>
   More detailed API comparisons based on the <a href="https://github.com/siom79/japicmp">japicmp</a>
   tool can be found <a href="https://github.com/AdoptOpenJDK/jdk-api-diff">here</a>.
 </p>
 
-{{ end }}
-{{ partial "footer.html" . }}
+{{- end }}
+{{- partial "footer.html" . }}
 

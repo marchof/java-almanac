@@ -3,6 +3,7 @@ title: References
 ---
 
 * [Java Version History, Wikipedia](https://en.wikipedia.org/wiki/Java_version_history)
+* [Java Releases, Oracle](https://www.java.com/releases/)
 * [Java Class File, Wikipedia](https://en.wikipedia.org/wiki/Java_class_file)
 * [JEP Index, OpenJDK Project](https://openjdk.java.net/jeps/)
 * [List of all JSRs, JCP](https://jcp.org/en/jsr/all)
@@ -13,3 +14,4 @@ title: References
 * [JVM Anatomy Quarks, Aleksey Shipilёv](https://shipilev.net/jvm/anatomy-quarks/)
 * [Inside the Java Platform Group, Java Platform Group](https://inside.java/)
 * [foojay.io - Friends of OpenJDK, Azul Systems](https://foojay.io/)
+* [Java Modules in Maven Central, Christian Stein](https://github.com/sormuras/modules)

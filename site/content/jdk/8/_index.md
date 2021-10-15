@@ -1,5 +1,6 @@
 ---
 title: Java 8
+type: sandbox
 ---
 
 {{< jdkdetails "8" >}}
@@ -15,3 +16,24 @@ integrated into the JDK as a new package `java.time`. Instead of the mostly depr
 for calculations with dates and times.
 
 {{< /jdkdetails >}}
+
+
+## Sandbox
+
+Instantly compile and run Java 8 snippets without a local Java installation.
+
+{{< sandbox version="java8" mainclass="Java8" >}}
+{{< sandboxsource "Java8.java" >}}
+import java.util.stream.Stream;
+
+public class Java8 {
+
+    public static void main(String[] args) {
+
+        Stream.of("Hello", "Java", "8").map(String::toUpperCase).forEach(System.out::println);
+
+    }
+
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}

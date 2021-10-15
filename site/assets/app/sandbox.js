@@ -1,6 +1,6 @@
 Vue.component('sandbox', {
     template: `
-        <tabs>
+        <tabs v-bind:infotext="versioninfo" v-bind:infotooltip="versioninfoext">
             <slot></slot>
             <tab v-bind:onTabClicked="compileandrun" name="▶︎ Run">
                 <div class="sandbox-console">{{ output }}</div>
@@ -15,12 +15,23 @@ Vue.component('sandbox', {
     },
     data() {
         return {
-            output: 'Output comes here...'
+            versioninfo: '',
+            versioninfoext: '',
+            output: ''
         };
     },
+    mounted() {
+        axios.get(this.serviceurl("version")).then(response => { 
+            this.versioninfo = response.data['java.runtime.version'];
+            this.versioninfoext = response.data['java.vendor'] + '\n' + response.data['java.vm.name'];
+        })
+    },
     methods: {
+        serviceurl(action) {
+            return "https://sandbox.javaalmanac.io/jdk/" + this.version.replace("java", "") + "/" + action;
+        },
         compileandrun() {
-            this.output = "Compile and run with " + this.version + " ...";
+            this.output = "Compile and run with " + this.versioninfo + " ...";
             sourcefiles= [];
             this.$children[0].$children.forEach(tab => {
                 if (tab.source) {
@@ -32,8 +43,7 @@ Vue.component('sandbox', {
                 preview: this.preview,
                 sourcefiles: sourcefiles
             };
-            url = "https://"  + this.version + ".sandbox.javaalmanac.io/compileandrun";
-            axios.post(url , request).then(response => { 
+            axios.post(this.serviceurl("compileandrun"), request).then(response => { 
                 this.output = response.data.output;
             })
         }

@@ -6,8 +6,8 @@
 	},
 	"target": {
 		"feature": "11",
-		"vendor": "adpt",
-		"version": "11.0.9.1+1"
+		"vendor": "tem",
+		"version": "11.0.12+7"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -1138,6 +1138,7 @@
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Pack200.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -1147,6 +1148,7 @@
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Pack200.Packer.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						},
@@ -1156,6 +1158,7 @@
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Pack200.Unpacker.html",
 							"addedTags": [
+								"deprecated",
 								"forRemoval"
 							]
 						}
@@ -1541,6 +1544,20 @@
 									"name": "addAll(int, Collection)",
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(int,java.util.Collection)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JPasswordField",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setText(String)",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
 								}
 							]
 						},

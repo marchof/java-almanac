@@ -1,0 +1,434 @@
+{
+	"base": {
+		"feature": "17",
+		"vendor": "tem",
+		"version": "17+35"
+	},
+	"target": {
+		"feature": "18",
+		"vendor": "open",
+		"version": "18-ea+18-1093"
+	},
+	"order": 17.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.io",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "transferTo(OutputStream)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html#transferTo(java.io.OutputStream)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MethodHandle",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "asType(MethodType)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Math",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ceilDiv(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(int,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,long)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDivExact(int,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDivExact(long,long)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(int,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(long,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(long,long)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "divideExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(int,int)",
+									"csr": "JDK-8270378"
+								},
+								{
+									"type": "method",
+									"name": "divideExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(long,long)",
+									"csr": "JDK-8270378"
+								},
+								{
+									"type": "method",
+									"name": "floorDivExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#floorDivExact(int,int)",
+									"csr": "JDK-8271518"
+								},
+								{
+									"type": "method",
+									"name": "floorDivExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#floorDivExact(long,long)",
+									"csr": "JDK-8271518"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyHigh(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#unsignedMultiplyHigh(long,long)",
+									"csr": "JDK-8269705"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StrictMath",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ceilDiv(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(int,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDiv(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,long)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(int,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilDivExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(long,long)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(int,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,int)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "ceilMod(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,long)",
+									"csr": "JDK-8273090"
+								},
+								{
+									"type": "method",
+									"name": "divideExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#divideExact(int,int)",
+									"csr": "JDK-8270378"
+								},
+								{
+									"type": "method",
+									"name": "divideExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#divideExact(long,long)",
+									"csr": "JDK-8270378"
+								},
+								{
+									"type": "method",
+									"name": "floorDivExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#floorDivExact(int,int)",
+									"csr": "JDK-8271518"
+								},
+								{
+									"type": "method",
+									"name": "floorDivExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#floorDivExact(long,long)",
+									"csr": "JDK-8271518"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyHigh(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyHigh(long,long)",
+									"csr": "JDK-8269705"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.time",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Duration",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/Duration.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isPositive()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/Duration.html#isPositive()",
+									"csr": "JDK-8271167"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.annotation.processing",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Messager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "printError(CharSequence)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence)",
+									"csr": "JDK-8273160"
+								},
+								{
+									"type": "method",
+									"name": "printError(CharSequence, Element)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence,javax.lang.model.element.Element)",
+									"csr": "JDK-8273160"
+								},
+								{
+									"type": "method",
+									"name": "printNote(CharSequence)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence)",
+									"csr": "JDK-8273160"
+								},
+								{
+									"type": "method",
+									"name": "printNote(CharSequence, Element)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence,javax.lang.model.element.Element)",
+									"csr": "JDK-8273160"
+								},
+								{
+									"type": "method",
+									"name": "printWarning(CharSequence)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence)",
+									"csr": "JDK-8273160"
+								},
+								{
+									"type": "method",
+									"name": "printWarning(CharSequence, Element)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence,javax.lang.model.element.Element)",
+									"csr": "JDK-8273160"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.lang.model.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Elements",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getOutermostTypeElement(Element)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOutermostTypeElement(javax.lang.model.element.Element)",
+									"csr": "JDK-8271903"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_18",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_18",
+									"csr": "JDK-8268156"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.tools",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "DocumentationTool.Location",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "SNIPPET_PATH",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#SNIPPET_PATH",
+									"csr": "JDK-8266669"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

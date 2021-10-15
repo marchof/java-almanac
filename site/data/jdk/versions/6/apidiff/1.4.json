@@ -2720,6 +2720,15 @@
 				},
 				{
 					"type": "class",
+					"name": "LineNumberInputStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/io/LineNumberInputStream.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "ObjectStreamClass",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/io/ObjectStreamClass.html",
@@ -2991,6 +3000,15 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/io/Reader.html#read(java.nio.CharBuffer)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "StringBufferInputStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/io/StringBufferInputStream.html",
+					"addedTags": [
+						"deprecated"
 					]
 				},
 				{
@@ -6389,15 +6407,121 @@
 		},
 		{
 			"type": "package",
+			"name": "java.rmi.registry",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/registry/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "RegistryHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/registry/RegistryHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "java.rmi.server",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/package-summary.html",
 			"deltas": [
 				{
 					"type": "class",
+					"name": "LogStream",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/LogStream.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Operation",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/Operation.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "RemoteObjectInvocationHandler",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/RemoteObjectInvocationHandler.html"
+				},
+				{
+					"type": "class",
+					"name": "SkeletonMismatchException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/SkeletonMismatchException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "SkeletonNotFoundException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/SkeletonNotFoundException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "LoaderHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/LoaderHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "RemoteCall",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/RemoteCall.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Skeleton",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/server/Skeleton.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.rmi",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "RMISecurityException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/RMISecurityException.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ServerRuntimeException",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/rmi/ServerRuntimeException.html",
+					"addedTags": [
+						"deprecated"
+					]
 				}
 			]
 		},
@@ -7061,6 +7185,24 @@
 				},
 				{
 					"type": "class",
+					"name": "IdentityScope",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/IdentityScope.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Identity",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/Identity.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "InvalidAlgorithmParameterException",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/InvalidAlgorithmParameterException.html",
@@ -7559,6 +7701,15 @@
 				},
 				{
 					"type": "class",
+					"name": "Signer",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/Signer.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "Timestamp",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/Timestamp.html"
@@ -7624,6 +7775,15 @@
 					"name": "KeyRep.Type",
 					"status": "added",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/KeyRep.Type.html"
+				},
+				{
+					"type": "interface",
+					"name": "Certificate",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/java/security/Certificate.html",
+					"addedTags": [
+						"deprecated"
+					]
 				},
 				{
 					"type": "interface",
@@ -10958,6 +11118,15 @@
 				},
 				{
 					"type": "class",
+					"name": "AccessibleResourceBundle",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleResourceBundle.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "AccessibleRole",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/accessibility/AccessibleRole.html",
@@ -12470,6 +12639,23 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.security.auth",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/security/auth/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Policy",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/security/auth/Policy.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.security.sasl",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/security/sasl/package-summary.html"
@@ -12625,7 +12811,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "AudioFileFormat.Type(String, String)",
+							"name": "Type(String, String)",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFileFormat.Type.html#AudioFileFormat.Type(java.lang.String, java.lang.String)",
 							"addedTags": [
@@ -12671,7 +12857,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "AudioFormat.Encoding(String)",
+							"name": "Encoding(String)",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/sound/sampled/AudioFormat.Encoding.html#AudioFormat.Encoding(java.lang.String)",
 							"addedTags": [
@@ -14460,6 +14646,15 @@
 				},
 				{
 					"type": "class",
+					"name": "MetalComboBoxUI.MetalComboPopup",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "MetalComboBoxUI",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.html",
@@ -14888,6 +15083,15 @@
 				},
 				{
 					"type": "class",
+					"name": "DefaultTextUI",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/text/DefaultTextUI.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FlowView",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/text/FlowView.html",
@@ -15245,6 +15449,15 @@
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/text/TabSet.html#hashCode()"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "TableView.TableCell",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/text/TableView.TableCell.html",
+					"addedTags": [
+						"deprecated"
+					]
 				}
 			]
 		},
@@ -15563,7 +15776,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "JComboBox.AccessibleJComboBox(JComboBox)",
+							"name": "AccessibleJComboBox(JComboBox)",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/JComboBox.AccessibleJComboBox.html#JComboBox.AccessibleJComboBox(javax.swing.JComboBox)",
 							"addedTags": [
@@ -16472,7 +16685,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "JTable.AccessibleJTable(JTable)",
+							"name": "AccessibleJTable(JTable)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/JTable.AccessibleJTable.html#JTable.AccessibleJTable(javax.swing.JTable)"
 						}
@@ -16829,7 +17042,7 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "SpringLayout.Constraints(Component)",
+							"name": "Constraints(Component)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/6/docs/api/javax/swing/SpringLayout.Constraints.html#SpringLayout.Constraints(java.awt.Component)"
 						}

@@ -1,0 +1,8 @@
+{{- range sort $.Page.Pages ".Params.Order" }}
+<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<ul>
+{{- range .Pages }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{- end }}
+</ul>
+{{- end }}

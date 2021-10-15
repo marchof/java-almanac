@@ -1,6 +1,6 @@
-{{ partial "header.html" . }}
+{{- partial "header.html" . }}
 <h1>{{ .Title }}</h1>
-{{ with .Params.copyright }}<div class="copyright">&copy; {{ . }}</div>{{ end }}
-{{ .Content }}
-{{ partial "sandboxscript.html" . }}
-{{ partial "footer.html" . }}
+{{- with .Params.copyright }}<div class="copyright">&copy; {{ . }}</div>{{ end }}
+{{- .Content }}
+{{- partial "sandboxscript.html" . }}
+{{- partial "footer.html" . }}

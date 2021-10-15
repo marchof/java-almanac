@@ -1,20 +1,158 @@
 {
 	"version": "17",
 	"name": "Java 17",
-	"ga": "2021/09",
+	"ga": "2021-09-14",
 	"eol": "2030",
-	"status": "DEV",
+	"latestversion": "17",
+	"status": "LTS",
 	"bytecode": "61.0",
 	"documentation": {
-		"notes": "http://jdk.java.net/17/release-notes",
-		"api": "https://download.java.net/java/early_access/jdk17/docs/api/"
+		"notes": "https://www.oracle.com/java/technologies/javase/17-relnotes.html",
+		"vm": "https://docs.oracle.com/javase/specs/jvms/se17/html/index.html",
+		"lang": "https://docs.oracle.com/javase/specs/jls/se17/html/index.html",
+		"api": "https://docs.oracle.com/en/java/javase/17/docs/api/"
 	},
 	"scm": [
 		{
 			"type": "git",
-			"url": "https://github.com/openjdk/jdk"
+			"url": "https://github.com/openjdk/jdk17"
 		}
 	],
 	"features": [
+		{
+			"title": "Restore Always-Strict Floating-Point Semantics",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "306"
+				}
+			]
+		},
+		{
+			"title": "New macOS Rendering Pipeline",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "382"
+				}
+			]
+			
+		},
+		{
+			"title": "macOS/AArch64 Port",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "391"
+				}
+			]
+			
+		},
+		{
+			"title": "Enhanced Pseudo-Random Number Generators",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "356"
+				}
+			]
+			
+		},
+		{
+			"title": "Deprecate the Applet API for Removal",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "398"
+				}
+			]
+			
+		},
+		{
+			"title": "Strongly Encapsulate JDK Internals",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "403"
+				}
+			]
+		},
+		{
+			"title": "Pattern Matching for switch",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "406"
+				}
+			]
+		},
+		{
+			"title": "Remove RMI Activation",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "407"
+				}
+			]
+		},
+		{
+			"title": "Sealed Classes",
+			"category": "lang",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "409"
+				}
+			]
+		},
+		{
+			"title": "Remove the Experimental AOT and JIT Compiler",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "410"
+				}
+			] 
+		},
+		{
+			"title": "Deprecate the Security Manager for Removal",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "411"
+				}
+			]
+		},
+		{
+			"title": "Foreign Function & Memory API (Incubator)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "412"
+				}
+			]
+		},
+		{
+			"title": "Vector API (Second Incubator)",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "414"
+				}
+			]
+		}
 	]
 }
