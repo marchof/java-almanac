@@ -1,5 +1,9 @@
 {{- define "csrlink" }}
-  {{- if .delta.csr }} <a title="{{ .delta.csr }}" href="https://bugs.openjdk.java.net/browse/{{ .delta.csr }}">&rarr; CSR</a>{{ end -}}
+  {{- if .delta.csr -}}
+    <a class="csr" title="{{ .delta.csr }}" href="https://bugs.openjdk.java.net/browse/{{ .delta.csr }}">{{ .label }}</a>
+  {{- else -}}
+    {{ .label }}
+  {{- end -}}
 {{- end }}
 {{- define "apidiffitem" }}
   {{- $indent := .indent -}}
@@ -18,12 +22,12 @@
     <td><ul class="tag">
       {{- if eq "added" .delta.status -}}
         {{- if .delta.preview -}}
-          <li class="tag newelement">added preview{{ template "csrlink" . }}</li>
+          <li class="tag newelement">{{ template "csrlink" dict "delta" .delta "label" "added preview" }}</li>
         {{- else -}}
-          <li class="tag newelement">added{{ template "csrlink" . }}</li>
+          <li class="tag newelement">{{ template "csrlink" dict "delta" .delta "label" "added" }}</li>
         {{- end -}}
       {{- else if eq "removed" .delta.status -}}
-        <li class="tag removedelement">removed{{ template "csrlink" . }}</li>
+        <li class="tag removedelement">{{ template "csrlink" dict "delta" .delta "label" "removed" }}</li>
       {{- end -}}
       {{- range .delta.removedTags -}}
         <li class="tag removedtag"><b>-</b> {{ . }}</li>
@@ -82,7 +86,7 @@
 <p>
   For the latest Java versions the corresponding CSRs
   (<a href="https://wiki.openjdk.java.net/display/csr">Compatibility &amp; Specification Review</a>)
-  are linked for a quick reference to find out about the reasoning of the change.
+  are <ul class="tag"><li class="newelement"><a>linked</a></li></ul> for a quick reference to find out about the reasoning of the change.
 </p>
 
 <p>

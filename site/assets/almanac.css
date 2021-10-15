@@ -334,19 +334,9 @@ ul.tag li.newelement {
 	background-color: #080;
 }
 
-ul.tag li.newelement a {
-	color: #040;
-	font-weight:bold;
-}
-
 ul.tag li.removedelement {
 	color: #edd;
 	background-color: #c00;
-}
-
-ul.tag li.removedelement a {
-	color: #400;
-	font-weight:bold;
 }
 
 ul.tag li.newtag {
@@ -357,6 +347,14 @@ ul.tag li.newtag {
 ul.tag li.removedtag {
 	color: #eee;
 	background-color: #666;
+}
+
+ul.tag li a.csr {
+	padding-right:16px;
+	background-size: 16px 16px;
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-image:url("img/csr.png");
 }
 
 [v-cloak] > * { display:none }
