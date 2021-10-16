@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+18-1093"
+		"version": "18-ea+19-1178"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -1986,12 +1986,7 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/ColorModel.html#finalize()",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -2380,12 +2375,6 @@
 							"name": "equals(Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/IndexColorModel.html#equals(java.lang.Object)"
-						},
-						{
-							"type": "method",
-							"name": "finalize()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/IndexColorModel.html#finalize()"
 						},
 						{
 							"type": "method",

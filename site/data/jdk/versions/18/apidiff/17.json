@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+18-1093"
+		"version": "18-ea+19-1178"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -423,6 +423,69 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#SNIPPET_PATH",
 									"csr": "JDK-8266669"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.awt.color",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/color/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ICC_Profile",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt.image",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ColorModel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/ColorModel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "IndexColorModel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/IndexColorModel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed"
 								}
 							]
 						}
