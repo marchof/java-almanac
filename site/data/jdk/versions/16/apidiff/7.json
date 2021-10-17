@@ -3794,7 +3794,8 @@
 							"type": "field",
 							"name": "EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -3806,7 +3807,8 @@
 							"type": "field",
 							"name": "ELYMAIC",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELYMAIC"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELYMAIC",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4018,7 +4020,8 @@
 							"type": "field",
 							"name": "NANDINAGARI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NANDINAGARI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NANDINAGARI",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4036,7 +4039,8 @@
 							"type": "field",
 							"name": "NYIAKENG_PUACHUE_HMONG",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4078,7 +4082,8 @@
 							"type": "field",
 							"name": "OTTOMAN_SIYAQ_NUMBERS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OTTOMAN_SIYAQ_NUMBERS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OTTOMAN_SIYAQ_NUMBERS",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4132,7 +4137,8 @@
 							"type": "field",
 							"name": "SMALL_KANA_EXTENSION",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_KANA_EXTENSION"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_KANA_EXTENSION",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4180,7 +4186,8 @@
 							"type": "field",
 							"name": "SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4205,7 +4212,8 @@
 							"type": "field",
 							"name": "TAMIL_SUPPLEMENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL_SUPPLEMENT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL_SUPPLEMENT",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -4236,7 +4244,8 @@
 							"type": "field",
 							"name": "WANCHO",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WANCHO"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WANCHO",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -5592,12 +5601,14 @@
 						{
 							"type": "method",
 							"name": "traceInstructions(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8225330"
 						},
 						{
 							"type": "method",
 							"name": "traceMethodCalls(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8225330"
 						},
 						{
 							"type": "method",
@@ -6031,7 +6042,8 @@
 							"type": "method",
 							"name": "formatted(Object...)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
+							"csr": "JDK-8203630"
 						},
 						{
 							"type": "method",
@@ -6085,7 +6097,8 @@
 							"type": "method",
 							"name": "stripIndent()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripIndent()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripIndent()",
+							"csr": "JDK-8223776"
 						},
 						{
 							"type": "method",
@@ -6109,7 +6122,8 @@
 							"type": "method",
 							"name": "translateEscapes()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#translateEscapes()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#translateEscapes()",
+							"csr": "JDK-8223781"
 						}
 					]
 				},
@@ -6415,7 +6429,8 @@
 							"type": "field",
 							"name": "ELYMAIC",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#ELYMAIC"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#ELYMAIC",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -6554,7 +6569,8 @@
 							"type": "field",
 							"name": "NANDINAGARI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#NANDINAGARI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#NANDINAGARI",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -6572,7 +6588,8 @@
 							"type": "field",
 							"name": "NYIAKENG_PUACHUE_HMONG",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#NYIAKENG_PUACHUE_HMONG"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#NYIAKENG_PUACHUE_HMONG",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -6686,7 +6703,8 @@
 							"type": "field",
 							"name": "WANCHO",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#WANCHO"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeScript.html#WANCHO",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -7728,19 +7746,22 @@
 							"type": "method",
 							"name": "newFileSystem(Path)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path)",
+							"csr": "JDK-8219793"
 						},
 						{
 							"type": "method",
 							"name": "newFileSystem(Path, Map)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map)",
+							"csr": "JDK-8219793"
 						},
 						{
 							"type": "method",
 							"name": "newFileSystem(Path, Map, ClassLoader)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map,java.lang.ClassLoader)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map,java.lang.ClassLoader)",
+							"csr": "JDK-8219793"
 						}
 					]
 				},
@@ -8027,7 +8048,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/Buffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/Buffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8065,13 +8087,15 @@
 							"type": "method",
 							"name": "get(int, byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#get(int,byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#get(int,byte%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, byte[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#get(int,byte%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#get(int,byte%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8108,13 +8132,15 @@
 							"type": "method",
 							"name": "put(int, byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, byte[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8132,7 +8158,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ByteBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8164,13 +8191,15 @@
 							"type": "method",
 							"name": "get(int, char[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#get(int,char%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#get(int,char%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, char[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#get(int,char%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#get(int,char%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8214,13 +8243,15 @@
 							"type": "method",
 							"name": "put(int, char[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,char%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,char%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, char[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,char%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#put(int,char%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8238,7 +8269,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/CharBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8264,13 +8296,15 @@
 							"type": "method",
 							"name": "get(int, double[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#get(int,double%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#get(int,double%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, double[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#get(int,double%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#get(int,double%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8307,13 +8341,15 @@
 							"type": "method",
 							"name": "put(int, double[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, double[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8331,7 +8367,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/DoubleBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8357,13 +8394,15 @@
 							"type": "method",
 							"name": "get(int, float[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#get(int,float%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#get(int,float%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, float[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#get(int,float%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#get(int,float%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8400,13 +8439,15 @@
 							"type": "method",
 							"name": "put(int, float[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, float[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8424,7 +8465,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/FloatBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8450,13 +8492,15 @@
 							"type": "method",
 							"name": "get(int, int[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#get(int,int%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#get(int,int%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, int[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#get(int,int%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#get(int,int%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8493,13 +8537,15 @@
 							"type": "method",
 							"name": "put(int, int[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,int%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,int%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, int[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,int%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#put(int,int%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8517,7 +8563,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/IntBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8543,13 +8590,15 @@
 							"type": "method",
 							"name": "get(int, long[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#get(int,long%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#get(int,long%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, long[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#get(int,long%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#get(int,long%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8586,13 +8635,15 @@
 							"type": "method",
 							"name": "put(int, long[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,long%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,long%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, long[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,long%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#put(int,long%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8610,7 +8661,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/LongBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				},
@@ -8636,7 +8688,8 @@
 							"type": "method",
 							"name": "force(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/MappedByteBuffer.html#force(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/MappedByteBuffer.html#force(int,int)",
+							"csr": "JDK-8222261"
 						},
 						{
 							"type": "method",
@@ -8692,13 +8745,15 @@
 							"type": "method",
 							"name": "get(int, short[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#get(int,short%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#get(int,short%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "get(int, short[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#get(int,short%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#get(int,short%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8735,13 +8790,15 @@
 							"type": "method",
 							"name": "put(int, short[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short%5B%5D)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
 							"name": "put(int, short[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short%5B%5D,int,int)",
+							"csr": "JDK-8212619"
 						},
 						{
 							"type": "method",
@@ -8759,7 +8816,8 @@
 							"type": "method",
 							"name": "slice(int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#slice(int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/nio/ShortBuffer.html#slice(int,int)",
+							"csr": "JDK-8219608"
 						}
 					]
 				}
@@ -16902,7 +16960,8 @@
 							"type": "method",
 							"name": "isPreviewEnabled()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#isPreviewEnabled()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#isPreviewEnabled()",
+							"csr": "JDK-8222424"
 						}
 					]
 				},
@@ -17380,7 +17439,8 @@
 							"type": "method",
 							"name": "asType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#asType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#asType()",
+							"csr": "JDK-8225027"
 						},
 						{
 							"type": "method",
@@ -17454,7 +17514,8 @@
 							"type": "method",
 							"name": "asType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#asType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#asType()",
+							"csr": "JDK-8225027"
 						},
 						{
 							"type": "method",
@@ -17481,7 +17542,8 @@
 							"type": "method",
 							"name": "asType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#asType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#asType()",
+							"csr": "JDK-8225027"
 						},
 						{
 							"type": "method",
@@ -17510,7 +17572,8 @@
 							"type": "method",
 							"name": "asType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#asType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#asType()",
+							"csr": "JDK-8225027"
 						}
 					]
 				},
@@ -17524,7 +17587,8 @@
 							"type": "method",
 							"name": "asType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#asType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#asType()",
+							"csr": "JDK-8225027"
 						},
 						{
 							"type": "method",
@@ -18465,7 +18529,8 @@
 							"type": "field",
 							"name": "RELEASE_13",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_13"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_13",
+							"csr": "JDK-8205395"
 						},
 						{
 							"type": "field",
@@ -19194,7 +19259,8 @@
 							"type": "field",
 							"name": "KRB_NT_ENTERPRISE",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_ENTERPRISE"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_ENTERPRISE",
+							"csr": "JDK-8223172"
 						}
 					]
 				},
@@ -22695,7 +22761,8 @@
 							"type": "method",
 							"name": "getJavaFileObjectsFromPaths(Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.util.Collection)",
+							"csr": "JDK-8220695"
 						},
 						{
 							"type": "method",
@@ -22802,7 +22869,8 @@
 							"type": "field",
 							"name": "EC_TYPE",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#EC_TYPE"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#EC_TYPE",
+							"csr": "JDK-8223682"
 						}
 					]
 				}
@@ -22824,13 +22892,15 @@
 							"type": "field",
 							"name": "INCLUSIVE_11",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#INCLUSIVE_11"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#INCLUSIVE_11",
+							"csr": "JDK-8224773"
 						},
 						{
 							"type": "field",
 							"name": "INCLUSIVE_11_WITH_COMMENTS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#INCLUSIVE_11_WITH_COMMENTS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#INCLUSIVE_11_WITH_COMMENTS",
+							"csr": "JDK-8224773"
 						}
 					]
 				},
@@ -23063,19 +23133,22 @@
 							"type": "method",
 							"name": "newDefaultNSInstance()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultNSInstance()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultNSInstance()",
+							"csr": "JDK-8223423"
 						},
 						{
 							"type": "method",
 							"name": "newNSInstance()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newNSInstance()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newNSInstance()",
+							"csr": "JDK-8223423"
 						},
 						{
 							"type": "method",
 							"name": "newNSInstance(String, ClassLoader)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)",
+							"csr": "JDK-8223423"
 						}
 					]
 				},
@@ -23095,19 +23168,22 @@
 							"type": "method",
 							"name": "newDefaultNSInstance()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newDefaultNSInstance()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newDefaultNSInstance()",
+							"csr": "JDK-8223423"
 						},
 						{
 							"type": "method",
 							"name": "newNSInstance()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance()",
+							"csr": "JDK-8223423"
 						},
 						{
 							"type": "method",
 							"name": "newNSInstance(String, ClassLoader)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)",
+							"csr": "JDK-8223423"
 						}
 					]
 				}

@@ -10779,7 +10779,8 @@
 							"type": "field",
 							"name": "EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -10791,7 +10792,8 @@
 							"type": "field",
 							"name": "ELYMAIC",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELYMAIC"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELYMAIC",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11295,7 +11297,8 @@
 							"type": "field",
 							"name": "NANDINAGARI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NANDINAGARI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NANDINAGARI",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11325,7 +11328,8 @@
 							"type": "field",
 							"name": "NYIAKENG_PUACHUE_HMONG",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11409,7 +11413,8 @@
 							"type": "field",
 							"name": "OTTOMAN_SIYAQ_NUMBERS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OTTOMAN_SIYAQ_NUMBERS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OTTOMAN_SIYAQ_NUMBERS",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11541,7 +11546,8 @@
 							"type": "field",
 							"name": "SMALL_KANA_EXTENSION",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_KANA_EXTENSION"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_KANA_EXTENSION",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11646,7 +11652,8 @@
 							"type": "field",
 							"name": "SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11712,7 +11719,8 @@
 							"type": "field",
 							"name": "TAMIL_SUPPLEMENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL_SUPPLEMENT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL_SUPPLEMENT",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11802,7 +11810,8 @@
 							"type": "field",
 							"name": "WANCHO",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WANCHO"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WANCHO",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -14430,12 +14439,14 @@
 						{
 							"type": "method",
 							"name": "traceInstructions(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8225330"
 						},
 						{
 							"type": "method",
 							"name": "traceMethodCalls(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8225330"
 						},
 						{
 							"type": "method",
@@ -14885,7 +14896,8 @@
 							"type": "method",
 							"name": "formatted(Object...)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
+							"csr": "JDK-8203630"
 						},
 						{
 							"type": "method",
@@ -14993,7 +15005,8 @@
 							"type": "method",
 							"name": "stripIndent()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#stripIndent()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#stripIndent()",
+							"csr": "JDK-8223776"
 						},
 						{
 							"type": "method",
@@ -15023,7 +15036,8 @@
 							"type": "method",
 							"name": "translateEscapes()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#translateEscapes()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#translateEscapes()",
+							"csr": "JDK-8223781"
 						}
 					]
 				},
