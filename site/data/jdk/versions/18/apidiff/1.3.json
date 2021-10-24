@@ -6529,7 +6529,8 @@
 							"type": "method",
 							"name": "getMenuShortcutKeyMaskEx()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()",
+							"csr": "JDK-8192637"
 						},
 						{
 							"type": "method",
@@ -7587,7 +7588,8 @@
 							"type": "method",
 							"name": "toString(Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8334,7 +8336,8 @@
 							"type": "method",
 							"name": "PrintStream(File, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8346,7 +8349,8 @@
 							"type": "method",
 							"name": "PrintStream(OutputStream, boolean, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8364,7 +8368,8 @@
 							"type": "method",
 							"name": "PrintStream(String, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8452,7 +8457,8 @@
 							"type": "method",
 							"name": "PrintWriter(File, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8464,7 +8470,8 @@
 							"type": "method",
 							"name": "PrintWriter(OutputStream, boolean, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8476,7 +8483,8 @@
 							"type": "method",
 							"name": "PrintWriter(String, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8612,7 +8620,8 @@
 							"type": "method",
 							"name": "transferTo(Writer)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)",
+							"csr": "JDK-8191737"
 						}
 					]
 				},
@@ -14103,12 +14112,14 @@
 						{
 							"type": "method",
 							"name": "getLocalizedInputStream(InputStream)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8193162"
 						},
 						{
 							"type": "method",
 							"name": "getLocalizedOutputStream(OutputStream)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8193162"
 						},
 						{
 							"type": "method",
@@ -14175,7 +14186,8 @@
 						{
 							"type": "field",
 							"name": "inCheck",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
@@ -14214,37 +14226,44 @@
 						{
 							"type": "method",
 							"name": "classDepth(String)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "classLoaderDepth()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "currentClassLoader()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "currentLoadedClass()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "getInCheck()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "inClass(String)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "inClassLoader()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						}
 					]
 				},
@@ -17438,7 +17457,8 @@
 							"type": "method",
 							"name": "decode(String, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -17467,7 +17487,8 @@
 							"type": "method",
 							"name": "encode(String, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -23591,7 +23612,8 @@
 							"type": "method",
 							"name": "getRealName()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/jar/JarEntry.html#getRealName()"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/jar/JarEntry.html#getRealName()",
+							"csr": "JDK-8191426"
 						}
 					]
 				},
@@ -23641,7 +23663,8 @@
 							"type": "method",
 							"name": "versionedStream()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()",
+							"csr": "JDK-8191426"
 						}
 					]
 				}
@@ -26589,7 +26612,8 @@
 							"type": "method",
 							"name": "Properties(int)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Properties.html#%3Cinit%3E(int)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Properties.html#%3Cinit%3E(int)",
+							"csr": "JDK-8189407"
 						},
 						{
 							"type": "method",
@@ -26793,7 +26817,8 @@
 							"type": "method",
 							"name": "storeToXML(OutputStream, String, Charset)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -27843,7 +27868,8 @@
 							"type": "method",
 							"name": "copyOf(Collection)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)",
+							"csr": "JDK-8191517"
 						},
 						{
 							"type": "method",
@@ -28004,7 +28030,8 @@
 							"type": "method",
 							"name": "copyOf(Map)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)",
+							"csr": "JDK-8191517"
 						},
 						{
 							"type": "method",
@@ -28207,7 +28234,8 @@
 							"type": "method",
 							"name": "copyOf(Collection)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)",
+							"csr": "JDK-8191517"
 						},
 						{
 							"type": "method",
@@ -40208,7 +40236,8 @@
 							"type": "method",
 							"name": "getGroup()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/swing/ButtonModel.html#getGroup()"
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/swing/ButtonModel.html#getGroup()",
+							"csr": "JDK-8182695"
 						}
 					]
 				},
