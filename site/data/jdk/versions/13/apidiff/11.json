@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "11",
 		"vendor": "tem",
-		"version": "11.0.12+7"
+		"version": "11.0.13+8"
 	},
 	"target": {
 		"feature": "13",
@@ -2322,6 +2322,34 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChooserShortcutPanelFiles()",
 									"csr": "JDK-8210210"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.basic",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "BasicRadioButtonUI",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "installListeners(AbstractButton)",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html#installListeners(javax.swing.AbstractButton)"
+								},
+								{
+									"type": "method",
+									"name": "uninstallListeners(AbstractButton)",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html#uninstallListeners(javax.swing.AbstractButton)"
 								}
 							]
 						}
