@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+21-1341"
+		"version": "18-ea+22-1416"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -868,6 +868,23 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/reflect/MalformedParameterizedTypeException.html#%3Cinit%3E(java.lang.String)",
 									"csr": "JDK-8183177"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Method",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/reflect/Method.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "invoke(Object, Object...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object...)",
+									"removedTags": [
+										"throws IllegalArgumentException"
+									]
 								}
 							]
 						},
@@ -7299,6 +7316,18 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_18",
 									"csr": "JDK-8268156"
+								},
+								{
+									"type": "method",
+									"name": "runtimeVersion()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#runtimeVersion()"
+								},
+								{
+									"type": "method",
+									"name": "valueOf(Runtime.Version)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.Runtime.Version)"
 								}
 							]
 						}
