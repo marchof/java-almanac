@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+22-1416"
+		"version": "18-ea+23-1525"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -14702,6 +14702,24 @@
 							"name": "availableProcessors()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#availableProcessors()"
+						},
+						{
+							"type": "method",
+							"name": "exec(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "exec(String, String[])",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String%5B%5D)",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
