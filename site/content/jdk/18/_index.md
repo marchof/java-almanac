@@ -17,7 +17,7 @@ import javax.lang.model.SourceVersion;
 public class Java18 {
 
     public static void main(String[] args) {
-        System.out.println("Compiled with " + SourceVersion.RELEASE_18);
+        System.out.println("Runtime required for this: " + SourceVersion.RELEASE_18.runtimeVersion());
     }
 
 }
