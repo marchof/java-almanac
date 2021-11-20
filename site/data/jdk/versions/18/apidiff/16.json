@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+23-1525"
+		"version": "18-ea+24-1608"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -745,6 +745,38 @@
 				},
 				{
 					"type": "package",
+					"name": "java.net.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "InetAddressResolver.LookupPolicy",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolver.LookupPolicy.html"
+						},
+						{
+							"type": "class",
+							"name": "InetAddressResolverProvider",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolverProvider.html"
+						},
+						{
+							"type": "interface",
+							"name": "InetAddressResolverProvider.Configuration",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolverProvider.Configuration.html"
+						},
+						{
+							"type": "interface",
+							"name": "InetAddressResolver",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolver.html"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.net",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/package-summary.html",
@@ -1277,6 +1309,38 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "callAs(Subject, Callable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#callAs(javax.security.auth.Subject,java.util.concurrent.Callable)"
+								},
+								{
+									"type": "method",
+									"name": "current()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#current()"
+								},
+								{
+									"type": "method",
+									"name": "doAs(Subject, PrivilegedAction)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "doAs(Subject, PrivilegedExceptionAction)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "doAsPrivileged(Subject, PrivilegedAction, AccessControlContext)",
@@ -1983,6 +2047,36 @@
 									"addedTags": [
 										"forRemoval"
 									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.net.http",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.net.http",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/java/net/http/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "HttpRequest.Builder",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "HEAD()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#HEAD()"
 								}
 							]
 						}

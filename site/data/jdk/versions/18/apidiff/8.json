@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+23-1525"
+		"version": "18-ea+24-1608"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -15810,6 +15810,38 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "callAs(Subject, Callable)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#callAs(javax.security.auth.Subject,java.util.concurrent.Callable)"
+						},
+						{
+							"type": "method",
+							"name": "current()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#current()"
+						},
+						{
+							"type": "method",
+							"name": "doAs(Subject, PrivilegedAction)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "doAs(Subject, PrivilegedExceptionAction)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
 						{
 							"type": "method",
 							"name": "doAsPrivileged(Subject, PrivilegedAction, AccessControlContext)",
