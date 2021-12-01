@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+24-1608"
+		"version": "18-ea+25-1670"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -299,6 +299,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "charset()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#charset()"
+								},
 								{
 									"type": "method",
 									"name": "write(byte[])",
@@ -6036,6 +6042,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#asType()",
 									"csr": "JDK-8225027"
+								},
+								{
+									"type": "method",
+									"name": "getEnclosingElement()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getEnclosingElement()"
 								}
 							]
 						},
@@ -6512,6 +6524,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "getFileObjectOf(Element)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getFileObjectOf(javax.lang.model.element.Element)"
+								},
 								{
 									"type": "method",
 									"name": "getOutermostTypeElement(Element)",

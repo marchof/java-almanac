@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+24-1608"
+		"version": "18-ea+25-1670"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -3134,6 +3134,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
 							"csr": "JDK-8190577"
+						},
+						{
+							"type": "method",
+							"name": "charset()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#charset()"
 						},
 						{
 							"type": "method",
@@ -20010,6 +20016,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getEnclosingElement()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getEnclosingElement()"
+						},
+						{
+							"type": "method",
 							"name": "getReceiverType()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReceiverType()"
@@ -20957,6 +20969,12 @@
 							"name": "getAllTypeElements(CharSequence)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"
+						},
+						{
+							"type": "method",
+							"name": "getFileObjectOf(Element)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getFileObjectOf(javax.lang.model.element.Element)"
 						},
 						{
 							"type": "method",

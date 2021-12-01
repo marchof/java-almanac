@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+24-1608"
+		"version": "18-ea+25-1670"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -111,6 +111,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ObjectInputFilter.Config.html#setSerialFilterFactory(java.util.function.BinaryOperator)",
 									"csr": "JDK-8264860"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PrintStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "charset()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#charset()"
 								}
 							]
 						},
@@ -1481,6 +1495,20 @@
 						},
 						{
 							"type": "interface",
+							"name": "ExecutableElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getEnclosingElement()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getEnclosingElement()"
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "TypeElement",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
@@ -1510,6 +1538,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "getFileObjectOf(Element)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getFileObjectOf(javax.lang.model.element.Element)"
+								},
 								{
 									"type": "method",
 									"name": "getOutermostTypeElement(Element)",
