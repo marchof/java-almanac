@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+25-1670"
+		"version": "18-ea+26-1787"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -34,6 +34,23 @@
 									"name": "transferTo(OutputStream)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html#transferTo(java.io.OutputStream)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ObjectInputStream.GetField",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ObjectInputStream.GetField.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "get(String, Object)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)",
+									"addedTags": [
+										"throws ClassNotFoundException"
+									]
 								}
 							]
 						},
@@ -340,6 +357,23 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyHigh(long,long)",
 									"csr": "JDK-8269705"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Thread",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Thread.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "stop()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Thread.html#stop()",
+									"addedTags": [
+										"forRemoval"
+									]
 								}
 							]
 						}
