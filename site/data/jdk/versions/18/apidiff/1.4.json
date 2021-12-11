@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+26-1787"
+		"version": "18-ea+27-1924"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -3230,7 +3230,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -3527,7 +3528,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -10147,7 +10149,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Object.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -10417,6 +10420,16 @@
 							"name": "getLocalizedOutputStream(OutputStream)",
 							"status": "removed",
 							"csr": "JDK-8193162"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -11499,6 +11512,16 @@
 							"name": "nanoTime()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#nanoTime()"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -16662,6 +16685,12 @@
 						},
 						{
 							"type": "method",
+							"name": "engineGetAttributes(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetAttributes(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "engineGetEntry(String, KeyStore.ProtectionParameter)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"
@@ -16703,6 +16732,12 @@
 							"name": "entryInstanceOf(String, Class)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html#entryInstanceOf(java.lang.String,java.lang.Class)"
+						},
+						{
+							"type": "method",
+							"name": "getAttributes(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html#getAttributes(java.lang.String)"
 						},
 						{
 							"type": "method",
@@ -25742,7 +25777,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -25809,7 +25845,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+26-1787"
+		"version": "18-ea+27-1924"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -1413,7 +1413,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -1543,7 +1544,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -3114,6 +3116,23 @@
 							"name": "isDaemon()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/ThreadInfo.html#isDaemon()"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MemoryMXBean",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/MemoryMXBean.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getObjectPendingFinalizationCount()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},
@@ -4964,6 +4983,16 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Enum.html#describeConstable()",
 							"csr": "JDK-8202031"
+						},
+						{
+							"type": "method",
+							"name": "finalize()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Enum.html#finalize()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						}
 					]
 				},
@@ -5734,7 +5763,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Object.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -5975,6 +6005,16 @@
 							"name": "getLocalizedOutputStream(OutputStream)",
 							"status": "removed",
 							"csr": "JDK-8193162"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -6668,6 +6708,16 @@
 							"name": "getSecurityManager()",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#getSecurityManager()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#runFinalization()",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -10630,6 +10680,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "engineGetAttributes(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetAttributes(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "engineProbe(InputStream)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineProbe(java.io.InputStream)"
@@ -10642,6 +10698,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "getAttributes(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html#getAttributes(java.lang.String)"
+						},
 						{
 							"type": "method",
 							"name": "getInstance(File, KeyStore.LoadStoreParameter)",
@@ -13808,7 +13870,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -17970,7 +18033,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -17995,7 +18059,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -18012,7 +18077,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -18029,7 +18095,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -18046,7 +18113,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -18063,7 +18131,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -23626,6 +23695,18 @@
 						},
 						{
 							"type": "method",
+							"name": "getFileForOutputForOriginatingFiles(JavaFileManager.Location, String, String, FileObject...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject...)"
+						},
+						{
+							"type": "method",
+							"name": "getJavaFileForOutputForOriginatingFiles(JavaFileManager.Location, String, JavaFileObject.Kind, FileObject...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)"
+						},
+						{
+							"type": "method",
 							"name": "getLocationForModule(JavaFileManager.Location, JavaFileObject)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)"
@@ -23792,6 +23873,18 @@
 							"name": "contains(JavaFileManager.Location, FileObject)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)"
+						},
+						{
+							"type": "method",
+							"name": "getFileForOutputForOriginatingFiles(JavaFileManager.Location, String, String, FileObject...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject...)"
+						},
+						{
+							"type": "method",
+							"name": "getJavaFileForOutputForOriginatingFiles(JavaFileManager.Location, String, JavaFileObject.Kind, FileObject...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)"
 						},
 						{
 							"type": "method",
@@ -24598,6 +24691,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "getProperty(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getProperty(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "newDefaultInstance()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"
@@ -24619,6 +24718,12 @@
 							"removedTags": [
 								"final"
 							]
+						},
+						{
+							"type": "method",
+							"name": "setProperty(String, String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setProperty(java.lang.String,java.lang.String)"
 						}
 					]
 				},

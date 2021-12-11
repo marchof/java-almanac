@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+26-1787"
+		"version": "18-ea+27-1924"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -6298,7 +6298,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -7207,7 +7208,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -14508,7 +14510,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Object.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -14769,6 +14772,16 @@
 							"name": "removeShutdownHook(Thread)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -15578,6 +15591,16 @@
 							"name": "nanoTime()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#nanoTime()"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",

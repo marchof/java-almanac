@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+26-1787"
+		"version": "18-ea+27-1924"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -2756,7 +2756,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -2989,7 +2990,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -4819,6 +4821,17 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/MemoryMXBean.html",
 					"addedTags": [
 						"implements PlatformManagedObject"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getObjectPendingFinalizationCount()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()",
+							"addedTags": [
+								"deprecated"
+							]
+						}
 					]
 				},
 				{
@@ -8381,7 +8394,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Object.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -8694,6 +8708,16 @@
 							"name": "getLocalizedOutputStream(OutputStream)",
 							"status": "removed",
 							"csr": "JDK-8193162"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -9493,6 +9517,16 @@
 							"name": "lineSeparator()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#lineSeparator()"
+						},
+						{
+							"type": "method",
+							"name": "runFinalization()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#runFinalization()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -13456,6 +13490,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "engineGetAttributes(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetAttributes(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "engineProbe(InputStream)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineProbe(java.io.InputStream)"
@@ -13468,6 +13508,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "getAttributes(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html#getAttributes(java.lang.String)"
+						},
 						{
 							"type": "method",
 							"name": "getInstance(File, KeyStore.LoadStoreParameter)",
@@ -18096,7 +18142,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -23561,7 +23608,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -23628,7 +23676,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
 							"addedTags": [
-								"deprecated"
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -34148,6 +34197,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "getProperty(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getProperty(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "newDefaultInstance()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"
@@ -34175,6 +34230,12 @@
 							"name": "newInstance(String, String, ClassLoader)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"
+						},
+						{
+							"type": "method",
+							"name": "setProperty(String, String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setProperty(java.lang.String,java.lang.String)"
 						}
 					]
 				},
