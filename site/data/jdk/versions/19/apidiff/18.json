@@ -1,0 +1,45 @@
+{
+	"base": {
+		"feature": "18",
+		"vendor": "open",
+		"version": "18-ea+27-1924"
+	},
+	"target": {
+		"feature": "19",
+		"vendor": "open",
+		"version": "19-ea+1-6"
+	},
+	"order": 18.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_19",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_19"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
