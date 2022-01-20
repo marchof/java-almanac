@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+4-144"
+		"version": "19-ea+5-210"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -801,6 +801,12 @@
 							"deltas": [
 								{
 									"type": "field",
+									"name": "ARABIC_EXTENDED_B",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_EXTENDED_B"
+								},
+								{
+									"type": "field",
 									"name": "CHORASMIAN",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHORASMIAN",
@@ -812,6 +818,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_G",
 									"csr": "JDK-8239504"
+								},
+								{
+									"type": "field",
+									"name": "CYPRO_MINOAN",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYPRO_MINOAN"
 								},
 								{
 									"type": "field",
@@ -836,10 +848,34 @@
 								},
 								{
 									"type": "field",
+									"name": "ETHIOPIC_EXTENDED_B",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC_EXTENDED_B"
+								},
+								{
+									"type": "field",
+									"name": "KANA_EXTENDED_B",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_B"
+								},
+								{
+									"type": "field",
 									"name": "KHITAN_SMALL_SCRIPT",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHITAN_SMALL_SCRIPT",
 									"csr": "JDK-8239504"
+								},
+								{
+									"type": "field",
+									"name": "LATIN_EXTENDED_F",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_F"
+								},
+								{
+									"type": "field",
+									"name": "LATIN_EXTENDED_G",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_G"
 								},
 								{
 									"type": "field",
@@ -861,6 +897,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG",
 									"csr": "JDK-8222771"
+								},
+								{
+									"type": "field",
+									"name": "OLD_UYGHUR",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_UYGHUR"
 								},
 								{
 									"type": "field",
@@ -899,10 +941,34 @@
 								},
 								{
 									"type": "field",
+									"name": "TANGSA",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGSA"
+								},
+								{
+									"type": "field",
 									"name": "TANGUT_SUPPLEMENT",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_SUPPLEMENT",
 									"csr": "JDK-8239504"
+								},
+								{
+									"type": "field",
+									"name": "TOTO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TOTO"
+								},
+								{
+									"type": "field",
+									"name": "UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED_A",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED_A"
+								},
+								{
+									"type": "field",
+									"name": "VITHKUQI",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VITHKUQI"
 								},
 								{
 									"type": "field",
@@ -917,6 +983,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#YEZIDI",
 									"csr": "JDK-8239504"
+								},
+								{
+									"type": "field",
+									"name": "ZNAMENNY_MUSICAL_NOTATION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZNAMENNY_MUSICAL_NOTATION"
 								}
 							]
 						},
@@ -1846,6 +1918,12 @@
 								},
 								{
 									"type": "field",
+									"name": "CYPRO_MINOAN",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYPRO_MINOAN"
+								},
+								{
+									"type": "field",
 									"name": "DIVES_AKURU",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#DIVES_AKURU",
@@ -1878,6 +1956,30 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#NYIAKENG_PUACHUE_HMONG",
 									"csr": "JDK-8222771"
+								},
+								{
+									"type": "field",
+									"name": "OLD_UYGHUR",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_UYGHUR"
+								},
+								{
+									"type": "field",
+									"name": "TANGSA",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#TANGSA"
+								},
+								{
+									"type": "field",
+									"name": "TOTO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#TOTO"
+								},
+								{
+									"type": "field",
+									"name": "VITHKUQI",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#VITHKUQI"
 								},
 								{
 									"type": "field",
