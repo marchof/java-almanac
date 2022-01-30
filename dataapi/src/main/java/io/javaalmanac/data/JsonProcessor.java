@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -39,7 +38,7 @@ public interface JsonProcessor extends BiFunction<JsonNode, ProcessingContext, J
 	public default List<String> applyAsStringList(JsonNode rootdata, Map<String, String> parameters) {
 		return StreamSupport.stream(apply(rootdata, parameters).spliterator(), false) //
 				.map(JsonNode::asText) //
-				.collect(Collectors.toList());
+				.toList();
 	}
 
 	// Chaining

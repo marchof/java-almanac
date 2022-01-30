@@ -3,7 +3,6 @@ package io.javaalmanac.data;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +32,7 @@ public class JsonLoader {
 	}
 
 	private void parseAll(Path folder, ObjectNode parent) throws IOException {
-		for (Path p : Files.list(folder).collect(Collectors.<Path>toList())) {
+		for (Path p : Files.list(folder).toList()) {
 			String name = p.getFileName().toString();
 			if (Files.isDirectory(p)) {
 				parseAll(p, getOrCreateChild(parent, name));
