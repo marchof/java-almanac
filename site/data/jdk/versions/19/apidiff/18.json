@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+31-2049"
+		"version": "18-ea+33-2077"
 	},
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+5-210"
+		"version": "19-ea+7-366"
 	},
 	"order": 18.0,
 	"deltas": [
@@ -155,6 +155,28 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#VITHKUQI",
 									"csr": "JDK-8279542"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Objects",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Objects.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "toIdentityString(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Objects.html#toIdentityString(java.lang.Object)"
 								}
 							]
 						}
