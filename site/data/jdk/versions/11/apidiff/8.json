@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "11",
 		"vendor": "tem",
-		"version": "11.0.13+8"
+		"version": "11.0.14+9"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -645,6 +645,25 @@
 							"name": "setQuitStrategy(QuitStrategy)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/DesktopPeer.html#setQuitStrategy(java.awt.desktop.QuitStrategy)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "RobotPeer",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "dispose()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "useAbsoluteCoordinates()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 						}
 					]
 				},

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "11",
 		"vendor": "tem",
-		"version": "11.0.13+8"
+		"version": "11.0.14+9"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -3001,15 +3001,15 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "dispose()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html#dispose()"
-						},
-						{
-							"type": "method",
 							"name": "mouseWheel(int)",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html#mouseWheel(int)"
+						},
+						{
+							"type": "method",
+							"name": "useAbsoluteCoordinates()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 						}
 					]
 				},

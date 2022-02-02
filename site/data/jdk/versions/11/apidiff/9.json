@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "11",
 		"vendor": "tem",
-		"version": "11.0.13+8"
+		"version": "11.0.14+9"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -2700,6 +2700,33 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#trimToSize()",
 									"csr": "JDK-8186365"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt.peer",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "RobotPeer",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "dispose()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "useAbsoluteCoordinates()",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
 								}
 							]
 						}
