@@ -32,7 +32,7 @@ public class UnixDomainSockets {
 		Path socketfile = Files.createTempFile("UnixDomainSockets", ".socket");
 		Files.delete(socketfile);
 
-		// Creqte a server server socket
+		// Create a server server socket
 		ServerSocketChannel server = ServerSocketChannel.open(StandardProtocolFamily.UNIX);
 		server.bind(UnixDomainSocketAddress.of(socketfile));
 
