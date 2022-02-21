@@ -3,8 +3,8 @@ title: Records
 type: sandbox
 ---
 
-Records are a new kind of Java classes which allows simple definition of
- immutable data structures.
+Records are Java classes which allows simple definition of immutable data
+ structures.
 
 Since [Java 16](/jdk/16)
 
