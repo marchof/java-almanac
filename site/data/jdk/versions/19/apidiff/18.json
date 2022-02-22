@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "18",
 		"vendor": "open",
-		"version": "18-ea+35-2085"
+		"version": "18+36-2087"
 	},
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+9-500"
+		"version": "19-ea+10-582"
 	},
 	"order": 18.0,
 	"deltas": [
@@ -155,6 +155,28 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#VITHKUQI",
 									"csr": "JDK-8279542"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.math",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "BigInteger",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigInteger.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "parallelMultiply(BigInteger)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigInteger.html#parallelMultiply(java.math.BigInteger)"
 								}
 							]
 						}
