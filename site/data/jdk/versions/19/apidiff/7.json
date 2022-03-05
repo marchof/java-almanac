@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+11-661"
+		"version": "19-ea+12-732"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -18334,6 +18334,30 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RECORD_COMPONENT",
 							"csr": "JDK-8233436"
+						},
+						{
+							"type": "method",
+							"name": "isDeclaredType()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isDeclaredType()"
+						},
+						{
+							"type": "method",
+							"name": "isExecutable()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isExecutable()"
+						},
+						{
+							"type": "method",
+							"name": "isInitializer()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInitializer()"
+						},
+						{
+							"type": "method",
+							"name": "isVariable()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isVariable()"
 						}
 					]
 				},

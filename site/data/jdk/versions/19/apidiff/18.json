@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+11-661"
+		"version": "19-ea+12-732"
 	},
 	"order": 18.0,
 	"deltas": [
@@ -227,6 +227,24 @@
 				},
 				{
 					"type": "package",
+					"name": "java.time",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ZoneId",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneId.html",
+							"addedTags": [
+								"permitted subclass ZoneOffset",
+								"permitted subclass ZoneRegion"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/package-summary.html",
@@ -256,6 +274,46 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model.element",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "ElementKind",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isDeclaredType()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isDeclaredType()"
+								},
+								{
+									"type": "method",
+									"name": "isExecutable()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isExecutable()"
+								},
+								{
+									"type": "method",
+									"name": "isInitializer()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInitializer()"
+								},
+								{
+									"type": "method",
+									"name": "isVariable()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isVariable()"
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "javax.lang.model",
