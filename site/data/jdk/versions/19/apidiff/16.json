@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+12-732"
+		"version": "19-ea+13-808"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -95,6 +95,40 @@
 						},
 						{
 							"type": "class",
+							"name": "InvalidClassException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidClassException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "InvalidClassException(String, String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidClassException.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Throwable)"
+								},
+								{
+									"type": "method",
+									"name": "InvalidClassException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidClassException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "InvalidObjectException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidObjectException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "InvalidObjectException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidObjectException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "ObjectInputFilter.Config",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectInputFilter.Config.html",
@@ -129,6 +163,26 @@
 									"addedTags": [
 										"throws ClassNotFoundException"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ObjectStreamException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ObjectStreamException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								},
+								{
+									"type": "method",
+									"name": "ObjectStreamException(Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamException.html#%3Cinit%3E(java.lang.Throwable)"
 								}
 							]
 						},
@@ -1085,6 +1139,26 @@
 									"addedTags": [
 										"deprecated"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/SocketException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SocketException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								},
+								{
+									"type": "method",
+									"name": "SocketException(Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.Throwable)"
 								}
 							]
 						},
