@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+13-808"
+		"version": "19-ea+14-870"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -4815,6 +4815,12 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html",
 					"deltas": [
 						{
+							"type": "field",
+							"name": "TAU",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html#TAU"
+						},
+						{
 							"type": "method",
 							"name": "absExact(int)",
 							"status": "added",
@@ -5437,6 +5443,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/StrictMath.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "TAU",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/StrictMath.html#TAU"
+						},
 						{
 							"type": "method",
 							"name": "absExact(int)",
@@ -12766,6 +12778,16 @@
 				},
 				{
 					"type": "class",
+					"name": "EnumSet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/EnumSet.html",
+					"addedTags": [
+						"permitted subclass JumboEnumSet",
+						"permitted subclass RegularEnumSet"
+					]
+				},
+				{
+					"type": "class",
 					"name": "Formatter",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Formatter.html",
@@ -15953,6 +15975,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getSignatureSchemes()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSignatureSchemes()"
+						},
+						{
+							"type": "method",
 							"name": "setEnableRetransmissions(boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#setEnableRetransmissions(boolean)"
@@ -15962,6 +15990,12 @@
 							"name": "setMaximumPacketSize(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#setMaximumPacketSize(int)"
+						},
+						{
+							"type": "method",
+							"name": "setSignatureSchemes(String[])",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSignatureSchemes(java.lang.String%5B%5D)"
 						}
 					]
 				},

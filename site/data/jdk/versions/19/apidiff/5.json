@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+13-808"
+		"version": "19-ea+14-870"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -8137,6 +8137,12 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html",
 					"deltas": [
 						{
+							"type": "field",
+							"name": "TAU",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html#TAU"
+						},
+						{
 							"type": "method",
 							"name": "absExact(int)",
 							"status": "added",
@@ -9095,6 +9101,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/StrictMath.html",
 					"deltas": [
+						{
+							"type": "field",
+							"name": "TAU",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/StrictMath.html#TAU"
+						},
 						{
 							"type": "method",
 							"name": "absExact(int)",
@@ -20835,6 +20847,16 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/EnumMap.html#hashCode()"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "EnumSet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/EnumSet.html",
+					"addedTags": [
+						"permitted subclass JumboEnumSet",
+						"permitted subclass RegularEnumSet"
 					]
 				},
 				{
