@@ -15,25 +15,25 @@
 			"type": "module",
 			"name": "java.base",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.io",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FileInputStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/FileInputStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "transferTo(OutputStream)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/FileInputStream.html#transferTo(java.io.OutputStream)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/FileInputStream.html#transferTo(java.io.OutputStream)",
 									"csr": "JDK-8272297"
 								}
 							]
@@ -42,13 +42,13 @@
 							"type": "class",
 							"name": "ObjectInputStream.GetField",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ObjectInputStream.GetField.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/ObjectInputStream.GetField.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "get(String, Object)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)",
 									"addedTags": [
 										"throws ClassNotFoundException"
 									]
@@ -59,13 +59,13 @@
 							"type": "class",
 							"name": "PrintStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/PrintStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "charset()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/io/PrintStream.html#charset()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/io/PrintStream.html#charset()",
 									"csr": "JDK-8277078"
 								}
 							]
@@ -76,19 +76,19 @@
 					"type": "package",
 					"name": "java.lang.invoke",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/invoke/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "MethodHandle",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/invoke/MethodHandle.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "asType(MethodType)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)",
 									"addedTags": [
 										"final"
 									]
@@ -101,19 +101,19 @@
 					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Method",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/reflect/Method.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/Method.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "invoke(Object, Object...)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object...)",
 									"csr": "JDK-8272387",
 									"removedTags": [
 										"throws IllegalArgumentException"
@@ -127,19 +127,19 @@
 					"type": "package",
 					"name": "java.lang",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Enum",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Enum.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Enum.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Enum.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Enum.html#finalize()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -151,97 +151,97 @@
 							"type": "class",
 							"name": "Math",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ceilDiv(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilDiv(int,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDiv(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDiv(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilDiv(long,long)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDivExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDivExact(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilDivExact(int,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDivExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilDivExact(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilDivExact(long,long)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilMod(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilMod(int,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilMod(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(long,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilMod(long,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilMod(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#ceilMod(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#ceilMod(long,long)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "divideExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#divideExact(int,int)",
 									"csr": "JDK-8270378"
 								},
 								{
 									"type": "method",
 									"name": "divideExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#divideExact(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#divideExact(long,long)",
 									"csr": "JDK-8270378"
 								},
 								{
 									"type": "method",
 									"name": "floorDivExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#floorDivExact(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#floorDivExact(int,int)",
 									"csr": "JDK-8271518"
 								},
 								{
 									"type": "method",
 									"name": "floorDivExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#floorDivExact(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#floorDivExact(long,long)",
 									"csr": "JDK-8271518"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyHigh(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Math.html#unsignedMultiplyHigh(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Math.html#unsignedMultiplyHigh(long,long)",
 									"csr": "JDK-8269705"
 								}
 							]
@@ -250,13 +250,13 @@
 							"type": "class",
 							"name": "Object",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Object.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Object.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -267,13 +267,13 @@
 							"type": "class",
 							"name": "Runtime",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Runtime.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "exec(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -282,7 +282,7 @@
 									"type": "method",
 									"name": "exec(String, String[])",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String%5B%5D)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String%5B%5D)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -291,7 +291,7 @@
 									"type": "method",
 									"name": "exec(String, String[], File)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String%5B%5D,java.io.File)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String%5B%5D,java.io.File)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -300,7 +300,7 @@
 									"type": "method",
 									"name": "runFinalization()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Runtime.html#runFinalization()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Runtime.html#runFinalization()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -312,97 +312,97 @@
 							"type": "class",
 							"name": "StrictMath",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ceilDiv(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(int,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDiv(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDiv(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilDiv(long,long)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDivExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(int,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilDivExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilDivExact(long,long)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilMod(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(int,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilMod(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,int)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "ceilMod(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,long)",
 									"csr": "JDK-8273090"
 								},
 								{
 									"type": "method",
 									"name": "divideExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#divideExact(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#divideExact(int,int)",
 									"csr": "JDK-8270378"
 								},
 								{
 									"type": "method",
 									"name": "divideExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#divideExact(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#divideExact(long,long)",
 									"csr": "JDK-8270378"
 								},
 								{
 									"type": "method",
 									"name": "floorDivExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#floorDivExact(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#floorDivExact(int,int)",
 									"csr": "JDK-8271518"
 								},
 								{
 									"type": "method",
 									"name": "floorDivExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#floorDivExact(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#floorDivExact(long,long)",
 									"csr": "JDK-8271518"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyHigh(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyHigh(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyHigh(long,long)",
 									"csr": "JDK-8269705"
 								}
 							]
@@ -411,13 +411,13 @@
 							"type": "class",
 							"name": "System",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/System.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "runFinalization()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/System.html#runFinalization()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/System.html#runFinalization()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -429,13 +429,13 @@
 							"type": "class",
 							"name": "Thread",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Thread.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Thread.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "stop()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/lang/Thread.html#stop()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Thread.html#stop()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -448,34 +448,34 @@
 					"type": "package",
 					"name": "java.net.spi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/net/spi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "InetAddressResolver.LookupPolicy",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolver.LookupPolicy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/net/spi/InetAddressResolver.LookupPolicy.html",
 							"csr": "JDK-8274558"
 						},
 						{
 							"type": "class",
 							"name": "InetAddressResolverProvider",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolverProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/net/spi/InetAddressResolverProvider.html",
 							"csr": "JDK-8274558"
 						},
 						{
 							"type": "interface",
 							"name": "InetAddressResolverProvider.Configuration",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolverProvider.Configuration.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/net/spi/InetAddressResolverProvider.Configuration.html",
 							"csr": "JDK-8274558"
 						},
 						{
 							"type": "interface",
 							"name": "InetAddressResolver",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/net/spi/InetAddressResolver.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/net/spi/InetAddressResolver.html",
 							"csr": "JDK-8274558"
 						}
 					]
@@ -484,19 +484,19 @@
 					"type": "package",
 					"name": "java.nio.charset",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/nio/charset/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/nio/charset/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Charset",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/nio/charset/Charset.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/nio/charset/Charset.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "forName(String, Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String,java.nio.charset.Charset)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String,java.nio.charset.Charset)",
 									"csr": "JDK-8275348"
 								}
 							]
@@ -507,19 +507,19 @@
 					"type": "package",
 					"name": "java.security",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "KeyStoreSpi",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/KeyStoreSpi.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "engineGetAttributes(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetAttributes(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetAttributes(java.lang.String)",
 									"csr": "JDK-8275748"
 								}
 							]
@@ -528,13 +528,13 @@
 							"type": "class",
 							"name": "KeyStore",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/KeyStore.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getAttributes(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/security/KeyStore.html#getAttributes(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/KeyStore.html#getAttributes(java.lang.String)",
 									"csr": "JDK-8275748"
 								}
 							]
@@ -545,19 +545,19 @@
 					"type": "package",
 					"name": "java.time",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Duration",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/Duration.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/Duration.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isPositive()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/time/Duration.html#isPositive()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/Duration.html#isPositive()",
 									"csr": "JDK-8271167"
 								}
 							]
@@ -568,19 +568,19 @@
 					"type": "package",
 					"name": "java.util.concurrent",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/concurrent/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ThreadPoolExecutor",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -593,33 +593,33 @@
 					"type": "package",
 					"name": "javax.security.auth",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/javax/security/auth/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Subject",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/javax/security/auth/Subject.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "callAs(Subject, Callable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#callAs(javax.security.auth.Subject,java.util.concurrent.Callable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/javax/security/auth/Subject.html#callAs(javax.security.auth.Subject,java.util.concurrent.Callable)",
 									"csr": "JDK-8275529"
 								},
 								{
 									"type": "method",
 									"name": "current()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#current()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/javax/security/auth/Subject.html#current()",
 									"csr": "JDK-8275529"
 								},
 								{
 									"type": "method",
 									"name": "doAs(Subject, PrivilegedAction)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -629,7 +629,7 @@
 									"type": "method",
 									"name": "doAs(Subject, PrivilegedExceptionAction)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -645,60 +645,60 @@
 			"type": "module",
 			"name": "java.compiler",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.annotation.processing",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "Messager",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "printError(CharSequence)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence)",
 									"csr": "JDK-8273160"
 								},
 								{
 									"type": "method",
 									"name": "printError(CharSequence, Element)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence,javax.lang.model.element.Element)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printError(java.lang.CharSequence,javax.lang.model.element.Element)",
 									"csr": "JDK-8273160"
 								},
 								{
 									"type": "method",
 									"name": "printNote(CharSequence)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence)",
 									"csr": "JDK-8273160"
 								},
 								{
 									"type": "method",
 									"name": "printNote(CharSequence, Element)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence,javax.lang.model.element.Element)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printNote(java.lang.CharSequence,javax.lang.model.element.Element)",
 									"csr": "JDK-8273160"
 								},
 								{
 									"type": "method",
 									"name": "printWarning(CharSequence)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence)",
 									"csr": "JDK-8273160"
 								},
 								{
 									"type": "method",
 									"name": "printWarning(CharSequence, Element)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence,javax.lang.model.element.Element)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/annotation/processing/Messager.html#printWarning(java.lang.CharSequence,javax.lang.model.element.Element)",
 									"csr": "JDK-8273160"
 								}
 							]
@@ -709,19 +709,19 @@
 					"type": "package",
 					"name": "javax.lang.model.element",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "ExecutableElement",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getEnclosingElement()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getEnclosingElement()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getEnclosingElement()",
 									"csr": "JDK-8272106"
 								}
 							]
@@ -732,26 +732,26 @@
 					"type": "package",
 					"name": "javax.lang.model.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "Elements",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/util/Elements.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getFileObjectOf(Element)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getFileObjectOf(javax.lang.model.element.Element)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getFileObjectOf(javax.lang.model.element.Element)",
 									"csr": "JDK-8272106"
 								},
 								{
 									"type": "method",
 									"name": "getOutermostTypeElement(Element)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOutermostTypeElement(javax.lang.model.element.Element)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOutermostTypeElement(javax.lang.model.element.Element)",
 									"csr": "JDK-8271903"
 								}
 							]
@@ -762,33 +762,33 @@
 					"type": "package",
 					"name": "javax.lang.model",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "SourceVersion",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RELEASE_18",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_18",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_18",
 									"csr": "JDK-8268156"
 								},
 								{
 									"type": "method",
 									"name": "runtimeVersion()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#runtimeVersion()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#runtimeVersion()",
 									"csr": "JDK-8275888"
 								},
 								{
 									"type": "method",
 									"name": "valueOf(Runtime.Version)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.Runtime.Version)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.Runtime.Version)",
 									"csr": "JDK-8275888"
 								}
 							]
@@ -799,26 +799,26 @@
 					"type": "package",
 					"name": "javax.tools",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ForwardingJavaFileManager",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getFileForOutputForOriginatingFiles(JavaFileManager.Location, String, String, FileObject...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject...)",
 									"csr": "JDK-8275508"
 								},
 								{
 									"type": "method",
 									"name": "getJavaFileForOutputForOriginatingFiles(JavaFileManager.Location, String, JavaFileObject.Kind, FileObject...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)",
 									"csr": "JDK-8275508"
 								}
 							]
@@ -827,13 +827,13 @@
 							"type": "enum",
 							"name": "DocumentationTool.Location",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "SNIPPET_PATH",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#SNIPPET_PATH",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#SNIPPET_PATH",
 									"csr": "JDK-8266669"
 								}
 							]
@@ -842,20 +842,20 @@
 							"type": "interface",
 							"name": "JavaFileManager",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/JavaFileManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/JavaFileManager.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getFileForOutputForOriginatingFiles(JavaFileManager.Location, String, String, FileObject...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject...)",
 									"csr": "JDK-8275508"
 								},
 								{
 									"type": "method",
 									"name": "getJavaFileForOutputForOriginatingFiles(JavaFileManager.Location, String, JavaFileObject.Kind, FileObject...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)",
 									"csr": "JDK-8275508"
 								}
 							]
@@ -868,19 +868,19 @@
 			"type": "module",
 			"name": "java.desktop",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.awt.color",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/color/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/color/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ICC_Profile",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -896,13 +896,13 @@
 					"type": "package",
 					"name": "java.awt.image",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/image/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ColorModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/ColorModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/image/ColorModel.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -916,7 +916,7 @@
 							"type": "class",
 							"name": "IndexColorModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/image/IndexColorModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/image/IndexColorModel.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -932,19 +932,19 @@
 					"type": "package",
 					"name": "java.awt",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Graphics",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Graphics.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/Graphics.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/Graphics.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -955,13 +955,13 @@
 							"type": "class",
 							"name": "PrintJob",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/PrintJob.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/PrintJob.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/java/awt/PrintJob.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -974,19 +974,19 @@
 					"type": "package",
 					"name": "javax.imageio.spi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/spi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/spi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ServiceRegistry",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -999,19 +999,19 @@
 					"type": "package",
 					"name": "javax.imageio.stream",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FileCacheImageInputStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1022,13 +1022,13 @@
 							"type": "class",
 							"name": "FileImageInputStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1039,13 +1039,13 @@
 							"type": "class",
 							"name": "FileImageOutputStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1056,13 +1056,13 @@
 							"type": "class",
 							"name": "ImageInputStreamImpl",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1073,13 +1073,13 @@
 							"type": "class",
 							"name": "MemoryCacheImageInputStream",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "finalize()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html#finalize()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html#finalize()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1094,25 +1094,25 @@
 			"type": "module",
 			"name": "java.management",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.management/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.lang.management",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.management/java/lang/management/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "MemoryMXBean",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/MemoryMXBean.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.management/java/lang/management/MemoryMXBean.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getObjectPendingFinalizationCount()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1127,25 +1127,25 @@
 			"type": "module",
 			"name": "java.net.http",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.net.http/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.net.http",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/java/net/http/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.net.http/java/net/http/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "HttpRequest.Builder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "HEAD()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#HEAD()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#HEAD()",
 									"csr": "JDK-8276996"
 								}
 							]
@@ -1158,32 +1158,32 @@
 			"type": "module",
 			"name": "java.xml",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.xml.xpath",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/javax/xml/xpath/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "XPathFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getProperty(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getProperty(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getProperty(java.lang.String)",
 									"csr": "JDK-8276143"
 								},
 								{
 									"type": "method",
 									"name": "setProperty(String, String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setProperty(java.lang.String,java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setProperty(java.lang.String,java.lang.String)",
 									"csr": "JDK-8276143"
 								}
 							]
