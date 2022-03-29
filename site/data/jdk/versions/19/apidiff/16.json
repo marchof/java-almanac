@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+14-870"
+		"version": "19-ea+15-942"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -355,6 +355,26 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)",
 									"csr": "JDK-8267267"
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.ref",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Reference",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/Reference.html",
+							"addedTags": [
+								"permitted subclass FinalReference",
+								"permitted subclass PhantomReference",
+								"permitted subclass SoftReference",
+								"permitted subclass WeakReference"
 							]
 						}
 					]
@@ -1384,6 +1404,28 @@
 				},
 				{
 					"type": "package",
+					"name": "java.text",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/text/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DecimalFormatSymbols",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/text/DecimalFormatSymbols.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getLocale()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/text/DecimalFormatSymbols.html#getLocale()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.time.format",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/package-summary.html",
@@ -1764,6 +1806,34 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "SSLHandshakeException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SSLHandshakeException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SSLKeyException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLKeyException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SSLKeyException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLKeyException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SSLParameters",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html",
@@ -1779,6 +1849,34 @@
 									"name": "setSignatureSchemes(String[])",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSignatureSchemes(java.lang.String%5B%5D)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SSLPeerUnverifiedException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SSLPeerUnverifiedException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SSLProtocolException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLProtocolException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "SSLProtocolException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLProtocolException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
 								}
 							]
 						}
