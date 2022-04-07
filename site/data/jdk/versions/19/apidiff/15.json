@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+15-942"
+		"version": "19-ea+16-1057"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -167,6 +167,15 @@
 										"throws ClassNotFoundException"
 									]
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ObjectStreamClass",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamClass.html",
+							"addedTags": [
+								"final"
 							]
 						},
 						{
@@ -357,9 +366,26 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "CallSite",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/CallSite.html",
+							"addedTags": [
+								"permitted subclass ConstantCallSite",
+								"permitted subclass MutableCallSite",
+								"permitted subclass VolatileCallSite"
+							]
+						},
+						{
+							"type": "class",
 							"name": "MethodHandle",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+							"addedTags": [
+								"permitted subclass BoundMethodHandle",
+								"permitted subclass DelegatingMethodHandle",
+								"permitted subclass DirectMethodHandle",
+								"permitted subclass NativeMethodHandle"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -433,8 +459,45 @@
 						{
 							"type": "class",
 							"name": "VarHandle",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/VarHandle.html",
+							"addedTags": [
+								"permitted subclass IndirectVarHandle",
+								"permitted subclass MemoryAccessVarHandleBase",
+								"permitted subclass VarHandleBooleans$Array",
+								"permitted subclass VarHandleBooleans$FieldInstanceReadOnly",
+								"permitted subclass VarHandleBooleans$FieldStaticReadOnly",
+								"permitted subclass VarHandleByteArrayAsChars$ByteArrayViewVarHandle",
+								"permitted subclass VarHandleByteArrayAsDoubles$ByteArrayViewVarHandle",
+								"permitted subclass VarHandleByteArrayAsFloats$ByteArrayViewVarHandle",
+								"permitted subclass VarHandleByteArrayAsInts$ByteArrayViewVarHandle",
+								"permitted subclass VarHandleByteArrayAsLongs$ByteArrayViewVarHandle",
+								"permitted subclass VarHandleByteArrayAsShorts$ByteArrayViewVarHandle",
+								"permitted subclass VarHandleBytes$Array",
+								"permitted subclass VarHandleBytes$FieldInstanceReadOnly",
+								"permitted subclass VarHandleBytes$FieldStaticReadOnly",
+								"permitted subclass VarHandleChars$Array",
+								"permitted subclass VarHandleChars$FieldInstanceReadOnly",
+								"permitted subclass VarHandleChars$FieldStaticReadOnly",
+								"permitted subclass VarHandleDoubles$Array",
+								"permitted subclass VarHandleDoubles$FieldInstanceReadOnly",
+								"permitted subclass VarHandleDoubles$FieldStaticReadOnly",
+								"permitted subclass VarHandleFloats$Array",
+								"permitted subclass VarHandleFloats$FieldInstanceReadOnly",
+								"permitted subclass VarHandleFloats$FieldStaticReadOnly",
+								"permitted subclass VarHandleInts$Array",
+								"permitted subclass VarHandleInts$FieldInstanceReadOnly",
+								"permitted subclass VarHandleInts$FieldStaticReadOnly",
+								"permitted subclass VarHandleLongs$Array",
+								"permitted subclass VarHandleLongs$FieldInstanceReadOnly",
+								"permitted subclass VarHandleLongs$FieldStaticReadOnly",
+								"permitted subclass VarHandleReferences$Array",
+								"permitted subclass VarHandleReferences$FieldInstanceReadOnly",
+								"permitted subclass VarHandleReferences$FieldStaticReadOnly",
+								"permitted subclass VarHandleShorts$Array",
+								"permitted subclass VarHandleShorts$FieldInstanceReadOnly",
+								"permitted subclass VarHandleShorts$FieldStaticReadOnly"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1618,6 +1681,16 @@
 						},
 						{
 							"type": "class",
+							"name": "InetAddress",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/InetAddress.html",
+							"addedTags": [
+								"permitted subclass Inet4Address",
+								"permitted subclass Inet6Address"
+							]
+						},
+						{
+							"type": "class",
 							"name": "ServerSocket",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/ServerSocket.html",
@@ -1741,9 +1814,28 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Buffer",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/Buffer.html",
+							"addedTags": [
+								"permitted subclass ByteBuffer",
+								"permitted subclass CharBuffer",
+								"permitted subclass DoubleBuffer",
+								"permitted subclass FloatBuffer",
+								"permitted subclass IntBuffer",
+								"permitted subclass LongBuffer",
+								"permitted subclass ShortBuffer"
+							]
+						},
+						{
+							"type": "class",
 							"name": "ByteBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ByteBuffer.html",
+							"addedTags": [
+								"permitted subclass HeapByteBuffer",
+								"permitted subclass MappedByteBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1757,8 +1849,16 @@
 						{
 							"type": "class",
 							"name": "CharBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/CharBuffer.html",
+							"addedTags": [
+								"permitted subclass ByteBufferAsCharBufferB",
+								"permitted subclass ByteBufferAsCharBufferL",
+								"permitted subclass DirectCharBufferS",
+								"permitted subclass DirectCharBufferU",
+								"permitted subclass HeapCharBuffer",
+								"permitted subclass StringCharBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1772,8 +1872,15 @@
 						{
 							"type": "class",
 							"name": "DoubleBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/DoubleBuffer.html",
+							"addedTags": [
+								"permitted subclass ByteBufferAsDoubleBufferB",
+								"permitted subclass ByteBufferAsDoubleBufferL",
+								"permitted subclass DirectDoubleBufferS",
+								"permitted subclass DirectDoubleBufferU",
+								"permitted subclass HeapDoubleBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1787,8 +1894,15 @@
 						{
 							"type": "class",
 							"name": "FloatBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/FloatBuffer.html",
+							"addedTags": [
+								"permitted subclass ByteBufferAsFloatBufferB",
+								"permitted subclass ByteBufferAsFloatBufferL",
+								"permitted subclass DirectFloatBufferS",
+								"permitted subclass DirectFloatBufferU",
+								"permitted subclass HeapFloatBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1802,8 +1916,15 @@
 						{
 							"type": "class",
 							"name": "IntBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/IntBuffer.html",
+							"addedTags": [
+								"permitted subclass ByteBufferAsIntBufferB",
+								"permitted subclass ByteBufferAsIntBufferL",
+								"permitted subclass DirectIntBufferS",
+								"permitted subclass DirectIntBufferU",
+								"permitted subclass HeapIntBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1817,8 +1938,15 @@
 						{
 							"type": "class",
 							"name": "LongBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/LongBuffer.html",
+							"addedTags": [
+								"permitted subclass ByteBufferAsLongBufferB",
+								"permitted subclass ByteBufferAsLongBufferL",
+								"permitted subclass DirectLongBufferS",
+								"permitted subclass DirectLongBufferU",
+								"permitted subclass HeapLongBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1832,8 +1960,11 @@
 						{
 							"type": "class",
 							"name": "MappedByteBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/MappedByteBuffer.html",
+							"addedTags": [
+								"permitted subclass DirectByteBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1868,8 +1999,15 @@
 						{
 							"type": "class",
 							"name": "ShortBuffer",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ShortBuffer.html",
+							"addedTags": [
+								"permitted subclass ByteBufferAsShortBufferB",
+								"permitted subclass ByteBufferAsShortBufferL",
+								"permitted subclass DirectShortBufferS",
+								"permitted subclass DirectShortBufferU",
+								"permitted subclass HeapShortBuffer"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -2268,6 +2406,20 @@
 							]
 						},
 						{
+							"type": "class",
+							"name": "ZoneOffset",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneOffset.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "normalized()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneOffset.html#normalized()"
+								}
+							]
+						},
+						{
 							"type": "interface",
 							"name": "InstantSource",
 							"status": "added",
@@ -2349,8 +2501,11 @@
 						{
 							"type": "class",
 							"name": "ThreadLocalRandom",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -2539,6 +2694,26 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HexFormat.html",
 							"csr": "JDK-8251991"
+						},
+						{
+							"type": "class",
+							"name": "IllegalFormatException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/IllegalFormatException.html",
+							"addedTags": [
+								"permitted subclass DuplicateFormatFlagsException",
+								"permitted subclass FormatFlagsConversionMismatchException",
+								"permitted subclass IllegalFormatArgumentIndexException",
+								"permitted subclass IllegalFormatCodePointException",
+								"permitted subclass IllegalFormatConversionException",
+								"permitted subclass IllegalFormatFlagsException",
+								"permitted subclass IllegalFormatPrecisionException",
+								"permitted subclass IllegalFormatWidthException",
+								"permitted subclass MissingFormatArgumentException",
+								"permitted subclass MissingFormatWidthException",
+								"permitted subclass UnknownFormatConversionException",
+								"permitted subclass UnknownFormatFlagsException"
+							]
 						},
 						{
 							"type": "class",
@@ -3482,9 +3657,31 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "ICC_ProfileGray",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ICC_ProfileRGB",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "ICC_Profile",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
+							"addedTags": [
+								"permitted subclass ICC_ProfileGray",
+								"permitted subclass ICC_ProfileRGB"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -3492,6 +3689,43 @@
 									"status": "removed",
 									"csr": "JDK-8273103"
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.awt.desktop",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AppEvent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/AppEvent.html",
+							"addedTags": [
+								"permitted subclass AboutEvent",
+								"permitted subclass AppForegroundEvent",
+								"permitted subclass AppHiddenEvent",
+								"permitted subclass AppReopenedEvent",
+								"permitted subclass FilesEvent",
+								"permitted subclass OpenURIEvent",
+								"permitted subclass PreferencesEvent",
+								"permitted subclass QuitEvent",
+								"permitted subclass ScreenSleepEvent",
+								"permitted subclass SystemSleepEvent",
+								"permitted subclass UserSessionEvent"
+							]
+						},
+						{
+							"type": "class",
+							"name": "FilesEvent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/FilesEvent.html",
+							"addedTags": [
+								"permitted subclass OpenFilesEvent",
+								"permitted subclass PrintFilesEvent"
 							]
 						}
 					]
@@ -3540,6 +3774,15 @@
 										"public"
 									]
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "DropTargetContext",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html",
+							"addedTags": [
+								"final"
 							]
 						}
 					]
@@ -3628,6 +3871,16 @@
 										"public"
 									]
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "InputEvent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/InputEvent.html",
+							"addedTags": [
+								"permitted subclass KeyEvent",
+								"permitted subclass MouseEvent"
 							]
 						},
 						{
@@ -3963,6 +4216,15 @@
 						},
 						{
 							"type": "class",
+							"name": "GridBagLayoutInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/GridBagLayoutInfo.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "Image",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/Image.html",
@@ -3979,6 +4241,15 @@
 										"public"
 									]
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PointerInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/PointerInfo.html",
+							"addedTags": [
+								"final"
 							]
 						},
 						{
@@ -4008,6 +4279,25 @@
 										"forRemoval"
 									]
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ScrollPaneAdjustable",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "TextComponent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/TextComponent.html",
+							"addedTags": [
+								"permitted subclass TextArea",
+								"permitted subclass TextField"
 							]
 						},
 						{

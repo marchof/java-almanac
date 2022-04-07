@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+15-942"
+		"version": "19-ea+16-1057"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -75,9 +75,31 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "ICC_ProfileGray",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ICC_ProfileRGB",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
 					"name": "ICC_Profile",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
+					"addedTags": [
+						"permitted subclass ICC_ProfileGray",
+						"permitted subclass ICC_ProfileRGB"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -332,8 +354,11 @@
 				{
 					"type": "class",
 					"name": "DropTargetContext",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -502,8 +527,12 @@
 				{
 					"type": "class",
 					"name": "InputEvent",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/InputEvent.html",
+					"addedTags": [
+						"permitted subclass KeyEvent",
+						"permitted subclass MouseEvent"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -3630,6 +3659,15 @@
 				},
 				{
 					"type": "class",
+					"name": "ScrollPaneAdjustable",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
 					"name": "SplashScreen",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/SplashScreen.html"
@@ -3667,8 +3705,12 @@
 				{
 					"type": "class",
 					"name": "TextComponent",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/TextComponent.html",
+					"addedTags": [
+						"permitted subclass TextArea",
+						"permitted subclass TextField"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -4976,8 +5018,11 @@
 				{
 					"type": "class",
 					"name": "ObjectStreamClass",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamClass.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -12957,8 +13002,12 @@
 				{
 					"type": "class",
 					"name": "InetAddress",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/InetAddress.html",
+					"addedTags": [
+						"permitted subclass Inet4Address",
+						"permitted subclass Inet6Address"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14147,8 +14196,17 @@
 				{
 					"type": "class",
 					"name": "Buffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/Buffer.html",
+					"addedTags": [
+						"permitted subclass ByteBuffer",
+						"permitted subclass CharBuffer",
+						"permitted subclass DoubleBuffer",
+						"permitted subclass FloatBuffer",
+						"permitted subclass IntBuffer",
+						"permitted subclass LongBuffer",
+						"permitted subclass ShortBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14261,8 +14319,12 @@
 				{
 					"type": "class",
 					"name": "ByteBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ByteBuffer.html",
+					"addedTags": [
+						"permitted subclass HeapByteBuffer",
+						"permitted subclass MappedByteBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14387,7 +14449,13 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/CharBuffer.html",
 					"addedTags": [
 						"implements Appendable",
-						"implements Readable"
+						"implements Readable",
+						"permitted subclass ByteBufferAsCharBufferB",
+						"permitted subclass ByteBufferAsCharBufferL",
+						"permitted subclass DirectCharBufferS",
+						"permitted subclass DirectCharBufferU",
+						"permitted subclass HeapCharBuffer",
+						"permitted subclass StringCharBuffer"
 					],
 					"deltas": [
 						{
@@ -14545,8 +14613,15 @@
 				{
 					"type": "class",
 					"name": "DoubleBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/DoubleBuffer.html",
+					"addedTags": [
+						"permitted subclass ByteBufferAsDoubleBufferB",
+						"permitted subclass ByteBufferAsDoubleBufferL",
+						"permitted subclass DirectDoubleBufferS",
+						"permitted subclass DirectDoubleBufferU",
+						"permitted subclass HeapDoubleBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14655,8 +14730,15 @@
 				{
 					"type": "class",
 					"name": "FloatBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/FloatBuffer.html",
+					"addedTags": [
+						"permitted subclass ByteBufferAsFloatBufferB",
+						"permitted subclass ByteBufferAsFloatBufferL",
+						"permitted subclass DirectFloatBufferS",
+						"permitted subclass DirectFloatBufferU",
+						"permitted subclass HeapFloatBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14765,8 +14847,15 @@
 				{
 					"type": "class",
 					"name": "IntBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/IntBuffer.html",
+					"addedTags": [
+						"permitted subclass ByteBufferAsIntBufferB",
+						"permitted subclass ByteBufferAsIntBufferL",
+						"permitted subclass DirectIntBufferS",
+						"permitted subclass DirectIntBufferU",
+						"permitted subclass HeapIntBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14875,8 +14964,15 @@
 				{
 					"type": "class",
 					"name": "LongBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/LongBuffer.html",
+					"addedTags": [
+						"permitted subclass ByteBufferAsLongBufferB",
+						"permitted subclass ByteBufferAsLongBufferL",
+						"permitted subclass DirectLongBufferS",
+						"permitted subclass DirectLongBufferU",
+						"permitted subclass HeapLongBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -14985,8 +15081,11 @@
 				{
 					"type": "class",
 					"name": "MappedByteBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/MappedByteBuffer.html",
+					"addedTags": [
+						"permitted subclass DirectByteBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -15070,8 +15169,15 @@
 				{
 					"type": "class",
 					"name": "ShortBuffer",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ShortBuffer.html",
+					"addedTags": [
+						"permitted subclass ByteBufferAsShortBufferB",
+						"permitted subclass ByteBufferAsShortBufferL",
+						"permitted subclass DirectShortBufferS",
+						"permitted subclass DirectShortBufferU",
+						"permitted subclass HeapShortBuffer"
+					],
 					"deltas": [
 						{
 							"type": "method",
