@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+16-1057"
+		"version": "19-ea+17-1142"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -738,8 +738,12 @@
 				{
 					"type": "class",
 					"name": "Path2D",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/Path2D.html",
+					"addedTags": [
+						"permitted subclass Path2D$Double",
+						"permitted subclass Path2D$Float"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -9122,6 +9126,32 @@
 				},
 				{
 					"type": "class",
+					"name": "PSSParameterSpec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "DEFAULT",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "PSSParameterSpec(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "X509EncodedKeySpec",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
@@ -13102,9 +13132,54 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "Locale(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Locale(String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Locale(String, String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getISOCountries(Locale.IsoCountryCode)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#getISOCountries(java.util.Locale.IsoCountryCode)"
+						},
+						{
+							"type": "method",
+							"name": "of(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "of(String, String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "of(String, String, String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String,java.lang.String)"
 						}
 					]
 				},

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+16-1057"
+		"version": "19-ea+17-1142"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -16469,6 +16469,15 @@
 						},
 						{
 							"type": "method",
+							"name": "PSSParameterSpec(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getDigestAlgorithm()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getDigestAlgorithm()"
@@ -23292,6 +23301,33 @@
 						},
 						{
 							"type": "method",
+							"name": "Locale(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Locale(String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "Locale(String, String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "filter(List, Collection)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#filter(java.util.List,java.util.Collection)"
@@ -23397,6 +23433,24 @@
 							"name": "lookupTag(List, Collection)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#lookupTag(java.util.List,java.util.Collection)"
+						},
+						{
+							"type": "method",
+							"name": "of(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "of(String, String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "of(String, String, String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String,java.lang.String)"
 						},
 						{
 							"type": "method",
