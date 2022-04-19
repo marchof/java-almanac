@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+17-1142"
+		"version": "19-ea+18-1211"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -32130,6 +32130,15 @@
 				},
 				{
 					"type": "class",
+					"name": "BasicSplitPaneUI.BasicHorizontalLayoutManager",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
+					"addedTags": [
+						"permitted subclass BasicSplitPaneUI$BasicVerticalLayoutManager"
+					]
+				},
+				{
+					"type": "class",
 					"name": "BasicSplitPaneUI.FocusHandler",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.FocusHandler.html",
@@ -34835,6 +34844,24 @@
 				},
 				{
 					"type": "class",
+					"name": "StyleSheet.BoxPainter",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleSheet.ListPainter",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
 					"name": "TableView.RowView",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/TableView.RowView.html",
@@ -35875,8 +35902,11 @@
 				{
 					"type": "class",
 					"name": "StyleConstants.CharacterConstants",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.CharacterConstants.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -35948,8 +35978,11 @@
 				{
 					"type": "class",
 					"name": "StyleConstants.ColorConstants",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.ColorConstants.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -35966,8 +35999,11 @@
 				{
 					"type": "class",
 					"name": "StyleConstants.FontConstants",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.FontConstants.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -35994,8 +36030,11 @@
 				{
 					"type": "class",
 					"name": "StyleConstants.ParagraphConstants",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.ParagraphConstants.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -36047,8 +36086,14 @@
 				{
 					"type": "class",
 					"name": "StyleConstants",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
+					"addedTags": [
+						"permitted subclass StyleConstants$CharacterConstants",
+						"permitted subclass StyleConstants$ColorConstants",
+						"permitted subclass StyleConstants$FontConstants",
+						"permitted subclass StyleConstants$ParagraphConstants"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -40306,6 +40351,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/Timer.html#setActionCommand(java.lang.String)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ToolTipManager",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/ToolTipManager.html",
+					"addedTags": [
+						"final"
 					]
 				},
 				{

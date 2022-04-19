@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+17-1142"
+		"version": "19-ea+18-1211"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -29412,6 +29412,15 @@
 				},
 				{
 					"type": "class",
+					"name": "BasicSplitPaneUI.BasicHorizontalLayoutManager",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
+					"addedTags": [
+						"permitted subclass BasicSplitPaneUI$BasicVerticalLayoutManager"
+					]
+				},
+				{
+					"type": "class",
 					"name": "BasicTabbedPaneUI",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.html",
@@ -31390,6 +31399,15 @@
 				},
 				{
 					"type": "class",
+					"name": "FormSubmitEvent",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
 					"name": "HTMLDocument.Iterator",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html",
@@ -31449,6 +31467,24 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/Option.html",
 					"addedTags": [
 						"implements Serializable"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleSheet.BoxPainter",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleSheet.ListPainter",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html",
+					"addedTags": [
+						"final"
 					]
 				},
 				{
@@ -31961,6 +31997,54 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/Segment.html#subSequence(int,int)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleConstants.CharacterConstants",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.CharacterConstants.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleConstants.ColorConstants",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.ColorConstants.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleConstants.FontConstants",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.FontConstants.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleConstants.ParagraphConstants",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.ParagraphConstants.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StyleConstants",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
+					"addedTags": [
+						"permitted subclass StyleConstants$CharacterConstants",
+						"permitted subclass StyleConstants$ColorConstants",
+						"permitted subclass StyleConstants$FontConstants",
+						"permitted subclass StyleConstants$ParagraphConstants"
 					]
 				},
 				{
@@ -34062,6 +34146,15 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/Timer.html#setActionCommand(java.lang.String)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ToolTipManager",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/ToolTipManager.html",
+					"addedTags": [
+						"final"
 					]
 				},
 				{
