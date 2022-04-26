@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+18-1211"
+		"version": "19-ea+19-1283"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -13179,6 +13179,12 @@
 						},
 						{
 							"type": "method",
+							"name": "compress(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#compress(int,int)"
+						},
+						{
+							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#describeConstable()",
@@ -13189,6 +13195,12 @@
 							"name": "divideUnsigned(int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#divideUnsigned(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "expand(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#expand(int,int)"
 						},
 						{
 							"type": "method",
@@ -13444,6 +13456,12 @@
 						},
 						{
 							"type": "method",
+							"name": "compress(long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#compress(long,long)"
+						},
+						{
+							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#describeConstable()",
@@ -13454,6 +13472,12 @@
 							"name": "divideUnsigned(long, long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#divideUnsigned(long,long)"
+						},
+						{
+							"type": "method",
+							"name": "expand(long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#expand(long,long)"
 						},
 						{
 							"type": "method",
@@ -26334,6 +26358,12 @@
 						},
 						{
 							"type": "method",
+							"name": "newHashMap(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashMap.html#newHashMap(int)"
+						},
+						{
+							"type": "method",
 							"name": "putIfAbsent(Object, Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashMap.html#putIfAbsent(java.lang.Object,java.lang.Object)"
@@ -27985,6 +28015,12 @@
 							"name": "keySet()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html#keySet()"
+						},
+						{
+							"type": "method",
+							"name": "newWeakHashMap(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html#newWeakHashMap(int)"
 						},
 						{
 							"type": "method",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+18-1211"
+		"version": "19-ea+19-1283"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -661,6 +661,46 @@
 										"deprecated",
 										"forRemoval"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Integer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "compress(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#compress(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "expand(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#expand(int,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Long",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "compress(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#compress(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "expand(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#expand(long,long)"
 								}
 							]
 						},
@@ -1916,6 +1956,20 @@
 						},
 						{
 							"type": "class",
+							"name": "HashMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newHashMap(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashMap.html#newHashMap(int)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "HexFormat",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HexFormat.html",
@@ -1939,6 +1993,20 @@
 								"permitted subclass MissingFormatWidthException",
 								"permitted subclass UnknownFormatConversionException",
 								"permitted subclass UnknownFormatFlagsException"
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedHashMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newLinkedHashMap(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashMap.html#newLinkedHashMap(int)"
+								}
 							]
 						},
 						{
@@ -2110,6 +2178,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)",
 									"csr": "JDK-8255395"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "WeakHashMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newWeakHashMap(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html#newWeakHashMap(int)"
 								}
 							]
 						},
@@ -2936,6 +3018,16 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/GridBagLayoutInfo.html",
 							"addedTags": [
 								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MultipleGradientPaint",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/MultipleGradientPaint.html",
+							"addedTags": [
+								"permitted subclass LinearGradientPaint",
+								"permitted subclass RadialGradientPaint"
 							]
 						},
 						{
