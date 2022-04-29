@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+19-1283"
+		"version": "19-ea+20-1369"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -371,6 +371,20 @@
 						},
 						{
 							"type": "class",
+							"name": "Double",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Double.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "PRECISION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Double.html#PRECISION"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Enum",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Enum.html",
@@ -384,6 +398,20 @@
 										"deprecated",
 										"forRemoval"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Float",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Float.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "PRECISION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Float.html#PRECISION"
 								}
 							]
 						},
@@ -1397,6 +1425,31 @@
 									"name": "newWeakHashMap(int)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html#newWeakHashMap(int)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/crypto/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "OAEPParameterSpec",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DEFAULT",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						}
