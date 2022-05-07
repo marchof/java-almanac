@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+20-1369"
+		"version": "19-ea+21-1482"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -707,6 +707,46 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "CubicCurve2D.Double",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "CubicCurve2D.Float",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "CubicCurve2D",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds2D()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Path2D.Double",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/Path2D.Double.html",
@@ -751,6 +791,46 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/Path2D.html#trimToSize()",
 							"csr": "JDK-8186365"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "QuadCurve2D.Double",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "QuadCurve2D.Float",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "QuadCurve2D",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getBounds2D()"
 						}
 					]
 				}
@@ -11192,6 +11272,12 @@
 						},
 						{
 							"type": "method",
+							"name": "exceptionNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#exceptionNow()"
+						},
+						{
+							"type": "method",
 							"name": "exceptionallyAsync(Function)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function)",
@@ -11254,6 +11340,18 @@
 							"name": "orTimeout(long, TimeUnit)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#orTimeout(long,java.util.concurrent.TimeUnit)"
+						},
+						{
+							"type": "method",
+							"name": "resultNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#resultNow()"
+						},
+						{
+							"type": "method",
+							"name": "state()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#state()"
 						}
 					]
 				},
@@ -11421,6 +11519,18 @@
 							"name": "invokeAny(Collection, long, TimeUnit)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAny(java.util.Collection,long,java.util.concurrent.TimeUnit)"
+						},
+						{
+							"type": "method",
+							"name": "lazySubmit(ForkJoinTask)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#lazySubmit(java.util.concurrent.ForkJoinTask)"
+						},
+						{
+							"type": "method",
+							"name": "setParallelism(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#setParallelism(int)"
 						}
 					]
 				},
@@ -11432,9 +11542,59 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "adaptInterruptible(Callable)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.util.concurrent.Callable)"
+						},
+						{
+							"type": "method",
+							"name": "exceptionNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#exceptionNow()"
+						},
+						{
+							"type": "method",
 							"name": "pollSubmission()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#pollSubmission()"
+						},
+						{
+							"type": "method",
+							"name": "quietlyJoin(long, TimeUnit)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin(long,java.util.concurrent.TimeUnit)"
+						},
+						{
+							"type": "method",
+							"name": "quietlyJoinUninterruptibly(long, TimeUnit)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoinUninterruptibly(long,java.util.concurrent.TimeUnit)"
+						},
+						{
+							"type": "method",
+							"name": "resultNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#resultNow()"
+						},
+						{
+							"type": "method",
+							"name": "state()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#state()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ForkJoinWorkerThread",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ForkJoinWorkerThread(ThreadGroup, ForkJoinPool, boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#%3Cinit%3E(java.lang.ThreadGroup,java.util.concurrent.ForkJoinPool,boolean)"
 						}
 					]
 				},
@@ -11444,6 +11604,24 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "exceptionNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#exceptionNow()"
+						},
+						{
+							"type": "method",
+							"name": "resultNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#resultNow()"
+						},
+						{
+							"type": "method",
+							"name": "state()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#state()"
+						},
 						{
 							"type": "method",
 							"name": "toString()",
@@ -11682,6 +11860,12 @@
 				},
 				{
 					"type": "enum",
+					"name": "Future.State",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.State.html"
+				},
+				{
+					"type": "enum",
 					"name": "TimeUnit",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/TimeUnit.html",
@@ -11758,6 +11942,23 @@
 				},
 				{
 					"type": "interface",
+					"name": "ExecutorService",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ExecutorService.html",
+					"addedTags": [
+						"implements AutoCloseable"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ExecutorService.html#close()"
+						}
+					]
+				},
+				{
+					"type": "interface",
 					"name": "Flow.Processor",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Flow.Processor.html"
@@ -11779,6 +11980,32 @@
 					"name": "Flow.Subscription",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Flow.Subscription.html"
+				},
+				{
+					"type": "interface",
+					"name": "Future",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "exceptionNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#exceptionNow()"
+						},
+						{
+							"type": "method",
+							"name": "resultNow()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#resultNow()"
+						},
+						{
+							"type": "method",
+							"name": "state()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#state()"
+						}
+					]
 				}
 			]
 		},
@@ -13778,6 +14005,14 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html",
 					"addedTags": [
 						"implements RandomGenerator"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "from(RandomGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html#from(java.util.random.RandomGenerator)"
+						}
 					]
 				},
 				{
@@ -16363,6 +16598,23 @@
 				},
 				{
 					"type": "class",
+					"name": "KeyManagerFactory",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getDefaultAlgorithm()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "SSLEngineResult",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLEngineResult.html",
@@ -16488,6 +16740,23 @@
 					]
 				},
 				{
+					"type": "class",
+					"name": "TrustManagerFactory",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getDefaultAlgorithm()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm()",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
 					"type": "enum",
 					"name": "SSLEngineResult.HandshakeStatus",
 					"status": "notmodified",
@@ -16498,6 +16767,32 @@
 							"name": "NEED_UNWRAP_AGAIN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_UNWRAP_AGAIN"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "SSLSessionContext",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setSessionCacheSize(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)",
+							"removedTags": [
+								"throws IllegalArgumentException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setSessionTimeout(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)",
+							"removedTags": [
+								"throws IllegalArgumentException"
+							]
 						}
 					]
 				},

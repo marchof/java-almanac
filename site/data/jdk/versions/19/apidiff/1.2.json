@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+20-1369"
+		"version": "19-ea+21-1482"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -2223,6 +2223,13 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html",
 					"addedTags": [
 						"implements Serializable"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
 					]
 				},
 				{
@@ -2232,6 +2239,13 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html",
 					"addedTags": [
 						"implements Serializable"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
 					]
 				},
 				{
@@ -2243,7 +2257,11 @@
 						{
 							"type": "method",
 							"name": "getBounds2D()",
-							"status": "removed"
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds2D()",
+							"removedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -2511,6 +2529,13 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html",
 					"addedTags": [
 						"implements Serializable"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
 					]
 				},
 				{
@@ -2520,6 +2545,13 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html",
 					"addedTags": [
 						"implements Serializable"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getBounds2D()",
+							"status": "removed"
+						}
 					]
 				},
 				{
@@ -2531,7 +2563,11 @@
 						{
 							"type": "method",
 							"name": "getBounds2D()",
-							"status": "removed"
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getBounds2D()",
+							"removedTags": [
+								"abstract"
+							]
 						},
 						{
 							"type": "method",
@@ -28298,6 +28334,12 @@
 							"name": "doubles(long, double, double)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html#doubles(long,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "from(RandomGenerator)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html#from(java.util.random.RandomGenerator)"
 						},
 						{
 							"type": "method",
