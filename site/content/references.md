@@ -4,6 +4,7 @@ title: References
 
 * [Java Version History, Wikipedia](https://en.wikipedia.org/wiki/Java_version_history)
 * [Java Releases, Oracle](https://www.java.com/releases/)
+* [Java Release History, java.dev/Oracle](https://dev.java/download/releases/)
 * [Java Class File, Wikipedia](https://en.wikipedia.org/wiki/Java_class_file)
 * [JEP Index, OpenJDK Project](https://openjdk.java.net/jeps/)
 * [List of all JSRs, JCP](https://jcp.org/en/jsr/all)
