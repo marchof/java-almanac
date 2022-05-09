@@ -3023,7 +3023,8 @@
 									"type": "method",
 									"name": "normalized()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneOffset.html#normalized()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneOffset.html#normalized()",
+									"csr": "JDK-8283681"
 								}
 							]
 						},
@@ -3052,19 +3053,22 @@
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#exceptionNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#exceptionNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#resultNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#resultNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#state()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#state()",
+									"csr": "JDK-8285450"
 								}
 							]
 						},
@@ -3143,13 +3147,15 @@
 									"type": "method",
 									"name": "lazySubmit(ForkJoinTask)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#lazySubmit(java.util.concurrent.ForkJoinTask)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#lazySubmit(java.util.concurrent.ForkJoinTask)",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "setParallelism(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#setParallelism(int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#setParallelism(int)",
+									"csr": "JDK-8285450"
 								}
 							]
 						},
@@ -3163,37 +3169,43 @@
 									"type": "method",
 									"name": "adaptInterruptible(Callable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.util.concurrent.Callable)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.util.concurrent.Callable)",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#exceptionNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#exceptionNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "quietlyJoin(long, TimeUnit)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin(long,java.util.concurrent.TimeUnit)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin(long,java.util.concurrent.TimeUnit)",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "quietlyJoinUninterruptibly(long, TimeUnit)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoinUninterruptibly(long,java.util.concurrent.TimeUnit)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoinUninterruptibly(long,java.util.concurrent.TimeUnit)",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#resultNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#resultNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#state()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#state()",
+									"csr": "JDK-8285450"
 								}
 							]
 						},
@@ -3207,7 +3219,8 @@
 									"type": "method",
 									"name": "ForkJoinWorkerThread(ThreadGroup, ForkJoinPool, boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#%3Cinit%3E(java.lang.ThreadGroup,java.util.concurrent.ForkJoinPool,boolean)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#%3Cinit%3E(java.lang.ThreadGroup,java.util.concurrent.ForkJoinPool,boolean)",
+									"csr": "JDK-8285450"
 								}
 							]
 						},
@@ -3221,19 +3234,22 @@
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#exceptionNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#exceptionNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#resultNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#resultNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#state()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#state()",
+									"csr": "JDK-8285450"
 								}
 							]
 						},
@@ -3289,7 +3305,8 @@
 							"type": "enum",
 							"name": "Future.State",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.State.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.State.html",
+							"csr": "JDK-8285450"
 						},
 						{
 							"type": "interface",
@@ -3304,7 +3321,8 @@
 									"type": "method",
 									"name": "close()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ExecutorService.html#close()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ExecutorService.html#close()",
+									"csr": "JDK-8285450"
 								}
 							]
 						},
@@ -3318,19 +3336,22 @@
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#exceptionNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#exceptionNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#resultNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#resultNow()",
+									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#state()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#state()",
+									"csr": "JDK-8285450"
 								}
 							]
 						}
@@ -3660,7 +3681,8 @@
 									"type": "method",
 									"name": "from(RandomGenerator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html#from(java.util.random.RandomGenerator)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html#from(java.util.random.RandomGenerator)",
+									"csr": "JDK-8282928"
 								}
 							]
 						},
@@ -5164,7 +5186,8 @@
 								{
 									"type": "method",
 									"name": "getBounds2D()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8283602"
 								}
 							]
 						},
@@ -5177,7 +5200,8 @@
 								{
 									"type": "method",
 									"name": "getBounds2D()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8283602"
 								}
 							]
 						},
@@ -5191,7 +5215,8 @@
 									"type": "method",
 									"name": "getBounds2D()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds2D()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds2D()",
+									"csr": "JDK-8283602"
 								}
 							]
 						},
@@ -5214,7 +5239,8 @@
 								{
 									"type": "method",
 									"name": "getBounds2D()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8283602"
 								}
 							]
 						},
@@ -5227,7 +5253,8 @@
 								{
 									"type": "method",
 									"name": "getBounds2D()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8283602"
 								}
 							]
 						},
@@ -5241,7 +5268,8 @@
 									"type": "method",
 									"name": "getBounds2D()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getBounds2D()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getBounds2D()",
+									"csr": "JDK-8283602"
 								}
 							]
 						}
