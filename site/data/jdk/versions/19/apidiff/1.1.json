@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+21-1482"
+		"version": "19-ea+22-1598"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -15958,6 +15958,33 @@
 						},
 						{
 							"type": "method",
+							"name": "isVirtual()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()"
+						},
+						{
+							"type": "method",
+							"name": "join(Duration)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)"
+						},
+						{
+							"type": "method",
+							"name": "ofPlatform()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()"
+						},
+						{
+							"type": "method",
+							"name": "ofVirtual()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()"
+						},
+						{
+							"type": "method",
 							"name": "onSpinWait()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#onSpinWait()"
@@ -15992,6 +16019,19 @@
 						},
 						{
 							"type": "method",
+							"name": "sleep(Duration)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)"
+						},
+						{
+							"type": "method",
+							"name": "startVirtualThread(Runnable)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)"
+						},
+						{
+							"type": "method",
 							"name": "stop()",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#stop()",
@@ -16015,6 +16055,12 @@
 								"deprecated",
 								"forRemoval"
 							]
+						},
+						{
+							"type": "method",
+							"name": "threadId()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()"
 						}
 					]
 				},
@@ -16131,6 +16177,12 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WeakPairMap.Pair.Weak.html"
 				},
 				{
+					"type": "class",
+					"name": "WrongThreadException",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html"
+				},
+				{
 					"type": "enum",
 					"name": "Character.UnicodeScript",
 					"status": "added",
@@ -16237,6 +16289,27 @@
 					"name": "System.Logger",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/System.Logger.html"
+				},
+				{
+					"type": "interface",
+					"name": "Thread.Builder.OfPlatform",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html"
+				},
+				{
+					"type": "interface",
+					"name": "Thread.Builder.OfVirtual",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html"
+				},
+				{
+					"type": "interface",
+					"name": "Thread.Builder",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html"
 				},
 				{
 					"type": "interface",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+21-1482"
+		"version": "19-ea+22-1598"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -5158,6 +5158,23 @@
 				},
 				{
 					"type": "class",
+					"name": "ReferenceQueue",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/ReferenceQueue.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "remove(long)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)",
+							"removedTags": [
+								"throws IllegalArgumentException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Reference",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/Reference.html",
@@ -10027,6 +10044,42 @@
 						},
 						{
 							"type": "method",
+							"name": "getId()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#getId()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "isVirtual()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()"
+						},
+						{
+							"type": "method",
+							"name": "join(Duration)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)"
+						},
+						{
+							"type": "method",
+							"name": "ofPlatform()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()"
+						},
+						{
+							"type": "method",
+							"name": "ofVirtual()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()"
+						},
+						{
+							"type": "method",
 							"name": "onSpinWait()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#onSpinWait()"
@@ -10039,6 +10092,19 @@
 							"addedTags": [
 								"forRemoval"
 							]
+						},
+						{
+							"type": "method",
+							"name": "sleep(Duration)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)"
+						},
+						{
+							"type": "method",
+							"name": "startVirtualThread(Runnable)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)"
 						},
 						{
 							"type": "method",
@@ -10063,6 +10129,12 @@
 							"addedTags": [
 								"forRemoval"
 							]
+						},
+						{
+							"type": "method",
+							"name": "threadId()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()"
 						}
 					]
 				},
@@ -10123,6 +10195,12 @@
 					"name": "WeakPairMap.Pair.Weak",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WeakPairMap.Pair.Weak.html"
+				},
+				{
+					"type": "class",
+					"name": "WrongThreadException",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html"
 				},
 				{
 					"type": "enum",
@@ -10248,6 +10326,27 @@
 					"name": "System.Logger",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/System.Logger.html"
+				},
+				{
+					"type": "interface",
+					"name": "Thread.Builder.OfPlatform",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html"
+				},
+				{
+					"type": "interface",
+					"name": "Thread.Builder.OfVirtual",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html"
+				},
+				{
+					"type": "interface",
+					"name": "Thread.Builder",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html"
 				}
 			]
 		},
@@ -18294,6 +18393,20 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "newThreadPerTaskExecutor(ThreadFactory)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)"
+						},
+						{
+							"type": "method",
+							"name": "newVirtualThreadPerTaskExecutor()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()"
+						},
 						{
 							"type": "method",
 							"name": "newWorkStealingPool()",
