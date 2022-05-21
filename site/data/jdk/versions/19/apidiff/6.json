@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+22-1598"
+		"version": "19-ea+23-1706"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -3624,6 +3624,12 @@
 		},
 		{
 			"type": "package",
+			"name": "java.lang.foreign",
+			"status": "added",
+			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html"
+		},
+		{
+			"type": "package",
 			"name": "java.lang.instrument",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.instrument/java/lang/instrument/package-summary.html",
@@ -7045,6 +7051,13 @@
 				},
 				{
 					"type": "class",
+					"name": "MatchException",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html"
+				},
+				{
+					"type": "class",
 					"name": "Math",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html",
@@ -8983,6 +8996,12 @@
 							]
 						},
 						{
+							"type": "field",
+							"name": "TWO",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO"
+						},
+						{
 							"type": "method",
 							"name": "divide(BigDecimal, int)",
 							"status": "modified",
@@ -9928,6 +9947,13 @@
 						"implements ByteChannel"
 					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)"
+						},
 						{
 							"type": "method",
 							"name": "open(Path, OpenOption...)",

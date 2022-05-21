@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+22-1598"
+		"version": "19-ea+23-1706"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -360,6 +360,12 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.foreign",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html"
+				},
+				{
+					"type": "package",
 					"name": "java.lang.invoke",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/package-summary.html",
@@ -442,10 +448,59 @@
 								},
 								{
 									"type": "method",
+									"name": "collectCoordinates(VarHandle, int, MethodHandle)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)"
+								},
+								{
+									"type": "method",
+									"name": "dropCoordinates(VarHandle, int, Class...)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)"
+								},
+								{
+									"type": "method",
 									"name": "dropReturn(MethodHandle)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)",
 									"csr": "JDK-8255398"
+								},
+								{
+									"type": "method",
+									"name": "filterCoordinates(VarHandle, int, MethodHandle...)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)"
+								},
+								{
+									"type": "method",
+									"name": "filterValue(VarHandle, MethodHandle, MethodHandle)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"
+								},
+								{
+									"type": "method",
+									"name": "insertCoordinates(VarHandle, int, Object...)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)"
+								},
+								{
+									"type": "method",
+									"name": "memorySegmentViewVarHandle(ValueLayout)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)"
+								},
+								{
+									"type": "method",
+									"name": "permuteCoordinates(VarHandle, List, int...)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)"
 								},
 								{
 									"type": "method",
@@ -463,7 +518,6 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/VarHandle.html",
 							"addedTags": [
 								"permitted subclass IndirectVarHandle",
-								"permitted subclass MemoryAccessVarHandleBase",
 								"permitted subclass VarHandleBooleans$Array",
 								"permitted subclass VarHandleBooleans$FieldInstanceReadOnly",
 								"permitted subclass VarHandleBooleans$FieldStaticReadOnly",
@@ -494,6 +548,7 @@
 								"permitted subclass VarHandleReferences$Array",
 								"permitted subclass VarHandleReferences$FieldInstanceReadOnly",
 								"permitted subclass VarHandleReferences$FieldStaticReadOnly",
+								"permitted subclass VarHandleSegmentViewBase",
 								"permitted subclass VarHandleShorts$Array",
 								"permitted subclass VarHandleShorts$FieldInstanceReadOnly",
 								"permitted subclass VarHandleShorts$FieldStaticReadOnly"
@@ -1084,6 +1139,13 @@
 									"csr": "JDK-8283893"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "MatchException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html"
 						},
 						{
 							"type": "class",
@@ -1732,6 +1794,20 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "BigDecimal",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "TWO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "BigInteger",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigInteger.html",
@@ -1919,6 +1995,29 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/StandardProtocolFamily.html#UNIX",
 									"csr": "JDK-8247942"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.channels",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileChannel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)"
 								}
 							]
 						}
@@ -7438,6 +7537,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.http.HttpRequest,java.util.function.BiPredicate)",
 									"csr": "JDK-8255993"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "HttpClient.Builder",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "localAddress(InetAddress)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#localAddress(java.net.InetAddress)"
 								}
 							]
 						},

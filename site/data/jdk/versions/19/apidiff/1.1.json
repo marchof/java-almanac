@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+22-1598"
+		"version": "19-ea+23-1706"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -11099,6 +11099,12 @@
 		},
 		{
 			"type": "package",
+			"name": "java.lang.foreign",
+			"status": "added",
+			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html"
+		},
+		{
+			"type": "package",
 			"name": "java.lang.instrument",
 			"status": "added",
 			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.instrument/java/lang/instrument/package-summary.html"
@@ -14136,6 +14142,13 @@
 				},
 				{
 					"type": "class",
+					"name": "MatchException",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html"
+				},
+				{
+					"type": "class",
 					"name": "Math",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html",
@@ -16417,6 +16430,12 @@
 							"name": "TEN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TEN"
+						},
+						{
+							"type": "field",
+							"name": "TWO",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO"
 						},
 						{
 							"type": "field",
