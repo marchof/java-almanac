@@ -55,7 +55,8 @@ Vue.component('downloadlist', {
                 { id: '15', name: '15', query: 'version=15' },
                 { id: '16', name: '16', query: 'version=16' },
                 { id: '17', name: '17', query: 'version=17' },
-                { id: '18', name: '18', query: 'version=18-ea' }
+                { id: '18', name: '18', query: 'version=18-ea' },
+                { id: '19', name: '19', query: 'version=19-ea' }
             ],
             typeset: [
                 { id: 'all', name: 'All', query: '' },

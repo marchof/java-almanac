@@ -6537,7 +6537,8 @@
 							"type": "method",
 							"name": "getMenuShortcutKeyMaskEx()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/java/awt/Toolkit.html#getMenuShortcutKeyMaskEx()",
+							"csr": "JDK-8192637"
 						},
 						{
 							"type": "method",
@@ -7564,19 +7565,22 @@
 							"type": "method",
 							"name": "readAllBytes()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayInputStream.html#readAllBytes()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayInputStream.html#readAllBytes()",
+							"csr": "JDK-8193148"
 						},
 						{
 							"type": "method",
 							"name": "readNBytes(byte[], int, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayInputStream.html#readNBytes(byte%5B%5D,int,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayInputStream.html#readNBytes(byte%5B%5D,int,int)",
+							"csr": "JDK-8193148"
 						},
 						{
 							"type": "method",
 							"name": "transferTo(OutputStream)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayInputStream.html#transferTo(java.io.OutputStream)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayInputStream.html#transferTo(java.io.OutputStream)",
+							"csr": "JDK-8193148"
 						}
 					]
 				},
@@ -7590,13 +7594,15 @@
 							"type": "method",
 							"name": "toString(Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
 							"name": "writeBytes(byte[])",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayOutputStream.html#writeBytes(byte%5B%5D)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/ByteArrayOutputStream.html#writeBytes(byte%5B%5D)",
+							"csr": "JDK-8199713"
 						}
 					]
 				},
@@ -7641,7 +7647,8 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8212050"
 						},
 						{
 							"type": "method",
@@ -7666,7 +7673,8 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8212050"
 						},
 						{
 							"type": "method",
@@ -7686,13 +7694,15 @@
 							"type": "method",
 							"name": "FileReader(File, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileReader.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileReader.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)",
+							"csr": "JDK-8198790"
 						},
 						{
 							"type": "method",
 							"name": "FileReader(String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileReader.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileReader.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8198790"
 						}
 					]
 				},
@@ -7706,13 +7716,15 @@
 							"type": "method",
 							"name": "FileWriter(File, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)",
+							"csr": "JDK-8198790"
 						},
 						{
 							"type": "method",
 							"name": "FileWriter(File, Charset, boolean)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,boolean)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,boolean)",
+							"csr": "JDK-8198790"
 						},
 						{
 							"type": "method",
@@ -7724,13 +7736,15 @@
 							"type": "method",
 							"name": "FileWriter(String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8198790"
 						},
 						{
 							"type": "method",
 							"name": "FileWriter(String, Charset, boolean)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,boolean)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,boolean)",
+							"csr": "JDK-8198790"
 						}
 					]
 				},
@@ -7893,7 +7907,8 @@
 							"type": "method",
 							"name": "nullInputStream()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/InputStream.html#nullInputStream()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/InputStream.html#nullInputStream()",
+							"csr": "JDK-8192925"
 						},
 						{
 							"type": "method",
@@ -7911,13 +7926,15 @@
 							"type": "method",
 							"name": "readNBytes(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/InputStream.html#readNBytes(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/InputStream.html#readNBytes(int)",
+							"csr": "JDK-8192925"
 						},
 						{
 							"type": "method",
 							"name": "skipNBytes(long)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/InputStream.html#skipNBytes(long)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/InputStream.html#skipNBytes(long)",
+							"csr": "JDK-8214072"
 						},
 						{
 							"type": "method",
@@ -8222,7 +8239,8 @@
 							"type": "method",
 							"name": "nullOutputStream()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()",
+							"csr": "JDK-8192925"
 						}
 					]
 				},
@@ -8286,7 +8304,8 @@
 							"type": "method",
 							"name": "PrintStream(File, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8298,7 +8317,8 @@
 							"type": "method",
 							"name": "PrintStream(OutputStream, boolean, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8316,7 +8336,8 @@
 							"type": "method",
 							"name": "PrintStream(String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8404,7 +8425,8 @@
 							"type": "method",
 							"name": "PrintWriter(File, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8416,7 +8438,8 @@
 							"type": "method",
 							"name": "PrintWriter(OutputStream, boolean, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8428,7 +8451,8 @@
 							"type": "method",
 							"name": "PrintWriter(String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -8551,7 +8575,8 @@
 							"type": "method",
 							"name": "nullReader()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Reader.html#nullReader()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Reader.html#nullReader()",
+							"csr": "JDK-8196350"
 						},
 						{
 							"type": "method",
@@ -8563,7 +8588,8 @@
 							"type": "method",
 							"name": "transferTo(Writer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)",
+							"csr": "JDK-8191737"
 						}
 					]
 				},
@@ -8655,7 +8681,8 @@
 							"type": "method",
 							"name": "nullWriter()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Writer.html#nullWriter()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/io/Writer.html#nullWriter()",
+							"csr": "JDK-8196350"
 						}
 					]
 				},
@@ -8745,7 +8772,8 @@
 			"type": "package",
 			"name": "java.lang.constant",
 			"status": "added",
-			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/constant/package-summary.html"
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/constant/package-summary.html",
+			"csr": "JDK-8202031"
 		},
 		{
 			"type": "package",
@@ -8793,7 +8821,8 @@
 							"type": "method",
 							"name": "clone()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html#clone()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/ref/Reference.html#clone()",
+							"csr": "JDK-8202260"
 						},
 						{
 							"type": "method",
@@ -9720,7 +9749,8 @@
 							"type": "field",
 							"name": "ADLAM",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ADLAM"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ADLAM",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -9822,7 +9852,8 @@
 							"type": "field",
 							"name": "BHAIKSUKI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BHAIKSUKI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BHAIKSUKI",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -9900,7 +9931,8 @@
 							"type": "field",
 							"name": "CHESS_SYMBOLS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHESS_SYMBOLS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CHESS_SYMBOLS",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -9961,7 +9993,8 @@
 							"type": "field",
 							"name": "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10040,7 +10073,8 @@
 							"type": "field",
 							"name": "CYRILLIC_EXTENDED_C",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_C"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_C",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10071,7 +10105,8 @@
 							"type": "field",
 							"name": "DOGRA",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DOGRA"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DOGRA",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10101,7 +10136,8 @@
 							"type": "field",
 							"name": "EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -10113,7 +10149,8 @@
 							"type": "field",
 							"name": "ELYMAIC",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELYMAIC"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ELYMAIC",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -10167,7 +10204,8 @@
 							"type": "field",
 							"name": "GEORGIAN_EXTENDED",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEORGIAN_EXTENDED"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEORGIAN_EXTENDED",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10185,7 +10223,8 @@
 							"type": "field",
 							"name": "GLAGOLITIC_SUPPLEMENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GLAGOLITIC_SUPPLEMENT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GLAGOLITIC_SUPPLEMENT",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10203,7 +10242,8 @@
 							"type": "field",
 							"name": "GUNJALA_GONDI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GUNJALA_GONDI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GUNJALA_GONDI",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10221,7 +10261,8 @@
 							"type": "field",
 							"name": "HANIFI_ROHINGYA",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANIFI_ROHINGYA"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#HANIFI_ROHINGYA",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10257,7 +10298,8 @@
 							"type": "field",
 							"name": "IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10269,7 +10311,8 @@
 							"type": "field",
 							"name": "INDIC_SIYAQ_NUMBERS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#INDIC_SIYAQ_NUMBERS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#INDIC_SIYAQ_NUMBERS",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10299,7 +10342,8 @@
 							"type": "field",
 							"name": "KANA_EXTENDED_A",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_A"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_A",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10457,7 +10501,8 @@
 							"type": "field",
 							"name": "MAKASAR",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MAKASAR"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MAKASAR",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10475,13 +10520,15 @@
 							"type": "field",
 							"name": "MARCHEN",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MARCHEN"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MARCHEN",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
 							"name": "MASARAM_GONDI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MASARAM_GONDI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MASARAM_GONDI",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10493,13 +10540,15 @@
 							"type": "field",
 							"name": "MAYAN_NUMERALS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MAYAN_NUMERALS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MAYAN_NUMERALS",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
 							"name": "MEDEFAIDRIN",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MEDEFAIDRIN"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MEDEFAIDRIN",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10583,7 +10632,8 @@
 							"type": "field",
 							"name": "MONGOLIAN_SUPPLEMENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MONGOLIAN_SUPPLEMENT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MONGOLIAN_SUPPLEMENT",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10631,13 +10681,15 @@
 							"type": "field",
 							"name": "NANDINAGARI",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NANDINAGARI"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NANDINAGARI",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
 							"name": "NEWA",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NEWA"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NEWA",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10655,13 +10707,15 @@
 							"type": "field",
 							"name": "NUSHU",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NUSHU"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NUSHU",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
 							"name": "NYIAKENG_PUACHUE_HMONG",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NYIAKENG_PUACHUE_HMONG",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -10703,7 +10757,8 @@
 							"type": "field",
 							"name": "OLD_SOGDIAN",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_SOGDIAN"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_SOGDIAN",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10733,7 +10788,8 @@
 							"type": "field",
 							"name": "OSAGE",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OSAGE"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OSAGE",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10745,7 +10801,8 @@
 							"type": "field",
 							"name": "OTTOMAN_SIYAQ_NUMBERS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OTTOMAN_SIYAQ_NUMBERS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OTTOMAN_SIYAQ_NUMBERS",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -10877,13 +10934,15 @@
 							"type": "field",
 							"name": "SMALL_KANA_EXTENSION",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_KANA_EXTENSION"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SMALL_KANA_EXTENSION",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
 							"name": "SOGDIAN",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SOGDIAN"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SOGDIAN",
+							"csr": "JDK-8212120"
 						},
 						{
 							"type": "field",
@@ -10895,7 +10954,8 @@
 							"type": "field",
 							"name": "SOYOMBO",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SOYOMBO"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SOYOMBO",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -10982,7 +11042,8 @@
 							"type": "field",
 							"name": "SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11001,7 +11062,8 @@
 							"type": "field",
 							"name": "SYRIAC_SUPPLEMENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYRIAC_SUPPLEMENT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYRIAC_SUPPLEMENT",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -11055,19 +11117,22 @@
 							"type": "field",
 							"name": "TAMIL_SUPPLEMENT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL_SUPPLEMENT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAMIL_SUPPLEMENT",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
 							"name": "TANGUT",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
 							"name": "TANGUT_COMPONENTS",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_COMPONENTS"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_COMPONENTS",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "field",
@@ -11152,7 +11217,8 @@
 							"type": "field",
 							"name": "WANCHO",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WANCHO"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#WANCHO",
+							"csr": "JDK-8222771"
 						},
 						{
 							"type": "field",
@@ -11189,7 +11255,8 @@
 							"type": "field",
 							"name": "ZANABAZAR_SQUARE",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZANABAZAR_SQUARE"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZANABAZAR_SQUARE",
+							"csr": "JDK-8191411"
 						},
 						{
 							"type": "method",
@@ -11786,7 +11853,8 @@
 							"type": "method",
 							"name": "toString(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.html#toString(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Character.html#toString(int)",
+							"csr": "JDK-8198837"
 						},
 						{
 							"type": "method",
@@ -11997,7 +12065,8 @@
 							"type": "method",
 							"name": "arrayType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#arrayType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#arrayType()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12015,19 +12084,22 @@
 							"type": "method",
 							"name": "componentType()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#componentType()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#componentType()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#describeConstable()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
 							"name": "descriptorString()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#descriptorString()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#descriptorString()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12150,13 +12222,15 @@
 							"type": "method",
 							"name": "getNestHost()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getNestHost()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getNestHost()",
+							"csr": "JDK-8197445"
 						},
 						{
 							"type": "method",
 							"name": "getNestMembers()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getNestMembers()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#getNestMembers()",
+							"csr": "JDK-8197445"
 						},
 						{
 							"type": "method",
@@ -12244,7 +12318,8 @@
 							"type": "method",
 							"name": "isNestmateOf(Class)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)",
+							"csr": "JDK-8197445"
 						},
 						{
 							"type": "method",
@@ -12369,7 +12444,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html#describeConstable()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12399,7 +12475,8 @@
 							"type": "method",
 							"name": "resolveConstantDesc(MethodHandles.Lookup)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Double.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12425,7 +12502,8 @@
 					"type": "class",
 					"name": "Enum.EnumDesc",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Enum.EnumDesc.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Enum.EnumDesc.html",
+					"csr": "JDK-8202031"
 				},
 				{
 					"type": "class",
@@ -12617,7 +12695,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#describeConstable()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12647,7 +12726,8 @@
 							"type": "method",
 							"name": "resolveConstantDesc(MethodHandles.Lookup)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Float.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12847,7 +12927,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html#describeConstable()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -12931,7 +13012,8 @@
 							"type": "method",
 							"name": "resolveConstantDesc(MethodHandles.Lookup)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Integer.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -13110,7 +13192,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html#describeConstable()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -13194,7 +13277,8 @@
 							"type": "method",
 							"name": "resolveConstantDesc(MethodHandles.Lookup)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Long.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -13847,12 +13931,14 @@
 						{
 							"type": "method",
 							"name": "getLocalizedInputStream(InputStream)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8193162"
 						},
 						{
 							"type": "method",
 							"name": "getLocalizedOutputStream(OutputStream)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8193162"
 						},
 						{
 							"type": "method",
@@ -13863,17 +13949,20 @@
 						{
 							"type": "method",
 							"name": "runFinalizersOnExit(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8198250"
 						},
 						{
 							"type": "method",
 							"name": "traceInstructions(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8225330"
 						},
 						{
 							"type": "method",
 							"name": "traceMethodCalls(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8225330"
 						},
 						{
 							"type": "method",
@@ -13912,17 +14001,20 @@
 						{
 							"type": "field",
 							"name": "inCheck",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "checkAwtEventQueueAccess()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8200185"
 						},
 						{
 							"type": "method",
 							"name": "checkMemberAccess(Class, int)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8200185"
 						},
 						{
 							"type": "method",
@@ -13936,47 +14028,56 @@
 						{
 							"type": "method",
 							"name": "checkSystemClipboardAccess()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8200185"
 						},
 						{
 							"type": "method",
 							"name": "checkTopLevelWindow(Object)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8200185"
 						},
 						{
 							"type": "method",
 							"name": "classDepth(String)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "classLoaderDepth()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "currentClassLoader()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "currentLoadedClass()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "getInCheck()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "inClass(String)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						},
 						{
 							"type": "method",
 							"name": "inClassLoader()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8189750"
 						}
 					]
 				},
@@ -14471,7 +14572,8 @@
 							"type": "method",
 							"name": "compareTo(StringBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/StringBuffer.html#compareTo(java.lang.StringBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/StringBuffer.html#compareTo(java.lang.StringBuffer)",
+							"csr": "JDK-8195867"
 						},
 						{
 							"type": "method",
@@ -14627,7 +14729,8 @@
 							"type": "method",
 							"name": "describeConstable()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#describeConstable()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#describeConstable()",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -14645,7 +14748,8 @@
 							"type": "method",
 							"name": "formatted(Object...)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)",
+							"csr": "JDK-8203630"
 						},
 						{
 							"type": "method",
@@ -14657,13 +14761,15 @@
 							"type": "method",
 							"name": "indent(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#indent(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#indent(int)",
+							"csr": "JDK-8200435"
 						},
 						{
 							"type": "method",
 							"name": "isBlank()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#isBlank()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#isBlank()",
+							"csr": "JDK-8200437"
 						},
 						{
 							"type": "method",
@@ -14687,7 +14793,8 @@
 							"type": "method",
 							"name": "lines()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#lines()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#lines()",
+							"csr": "JDK-8200425"
 						},
 						{
 							"type": "method",
@@ -14705,7 +14812,8 @@
 							"type": "method",
 							"name": "repeat(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#repeat(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#repeat(int)",
+							"csr": "JDK-8198296"
 						},
 						{
 							"type": "method",
@@ -14729,7 +14837,8 @@
 							"type": "method",
 							"name": "resolveConstantDesc(MethodHandles.Lookup)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+							"csr": "JDK-8202031"
 						},
 						{
 							"type": "method",
@@ -14747,25 +14856,29 @@
 							"type": "method",
 							"name": "strip()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#strip()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#strip()",
+							"csr": "JDK-8200378"
 						},
 						{
 							"type": "method",
 							"name": "stripIndent()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripIndent()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripIndent()",
+							"csr": "JDK-8223776"
 						},
 						{
 							"type": "method",
 							"name": "stripLeading()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripLeading()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripLeading()",
+							"csr": "JDK-8200378"
 						},
 						{
 							"type": "method",
 							"name": "stripTrailing()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripTrailing()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#stripTrailing()",
+							"csr": "JDK-8200378"
 						},
 						{
 							"type": "method",
@@ -14777,13 +14890,15 @@
 							"type": "method",
 							"name": "transform(Function)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#transform(java.util.function.Function)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#transform(java.util.function.Function)",
+							"csr": "JDK-8203703"
 						},
 						{
 							"type": "method",
 							"name": "translateEscapes()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#translateEscapes()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html#translateEscapes()",
+							"csr": "JDK-8223781"
 						}
 					]
 				},
@@ -14859,7 +14974,8 @@
 						{
 							"type": "method",
 							"name": "runFinalizersOnExit(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8198250"
 						}
 					]
 				},
@@ -15000,7 +15116,8 @@
 						{
 							"type": "method",
 							"name": "destroy()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8204260"
 						},
 						{
 							"type": "method",
@@ -15074,7 +15191,8 @@
 						{
 							"type": "method",
 							"name": "stop(Throwable)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8204260"
 						},
 						{
 							"type": "method",
@@ -16486,7 +16604,8 @@
 							"type": "method",
 							"name": "ServerSocket(SocketImpl)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/ServerSocket.html#%3Cinit%3E(java.net.SocketImpl)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/ServerSocket.html#%3Cinit%3E(java.net.SocketImpl)",
+							"csr": "JDK-8213217"
 						},
 						{
 							"type": "method",
@@ -16984,7 +17103,8 @@
 							"type": "method",
 							"name": "decode(String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/URLDecoder.html#decode(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -17013,7 +17133,8 @@
 							"type": "method",
 							"name": "encode(String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -18391,7 +18512,8 @@
 							"type": "method",
 							"name": "getParams()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams()",
+							"csr": "JDK-8190180"
 						}
 					]
 				},
@@ -18447,19 +18569,22 @@
 					"type": "interface",
 					"name": "XECKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/XECKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/XECKey.html",
+					"csr": "JDK-8189806"
 				},
 				{
 					"type": "interface",
 					"name": "XECPrivateKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/XECPrivateKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/XECPrivateKey.html",
+					"csr": "JDK-8189806"
 				},
 				{
 					"type": "interface",
 					"name": "XECPublicKey",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/XECPublicKey.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/interfaces/XECPublicKey.html",
+					"csr": "JDK-8189806"
 				}
 			]
 		},
@@ -18601,7 +18726,8 @@
 					"type": "class",
 					"name": "NamedParameterSpec",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/NamedParameterSpec.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/NamedParameterSpec.html",
+					"csr": "JDK-8189806"
 				},
 				{
 					"type": "class",
@@ -18633,13 +18759,15 @@
 							"type": "method",
 							"name": "RSAKeyGenParameterSpec(int, BigInteger, AlgorithmParameterSpec)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+							"csr": "JDK-8190180"
 						},
 						{
 							"type": "method",
 							"name": "getKeyParams()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#getKeyParams()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#getKeyParams()",
+							"csr": "JDK-8190180"
 						}
 					]
 				},
@@ -18665,7 +18793,8 @@
 							"type": "method",
 							"name": "RSAPrivateCrtKeySpec(BigInteger, BigInteger, BigInteger, BigInteger, BigInteger, BigInteger, BigInteger, BigInteger, AlgorithmParameterSpec)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+							"csr": "JDK-8190180"
 						}
 					]
 				},
@@ -18679,13 +18808,15 @@
 							"type": "method",
 							"name": "RSAPrivateKeySpec(BigInteger, BigInteger, AlgorithmParameterSpec)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+							"csr": "JDK-8190180"
 						},
 						{
 							"type": "method",
 							"name": "getParams()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html#getParams()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html#getParams()",
+							"csr": "JDK-8190180"
 						}
 					]
 				},
@@ -18699,13 +18830,15 @@
 							"type": "method",
 							"name": "RSAPublicKeySpec(BigInteger, BigInteger, AlgorithmParameterSpec)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)",
+							"csr": "JDK-8190180"
 						},
 						{
 							"type": "method",
 							"name": "getParams()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getParams()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getParams()",
+							"csr": "JDK-8190180"
 						}
 					]
 				},
@@ -18727,13 +18860,15 @@
 					"type": "class",
 					"name": "XECPrivateKeySpec",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html",
+					"csr": "JDK-8189806"
 				},
 				{
 					"type": "class",
 					"name": "XECPublicKeySpec",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/XECPublicKeySpec.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/XECPublicKeySpec.html",
+					"csr": "JDK-8189806"
 				},
 				{
 					"type": "interface",
@@ -22739,7 +22874,8 @@
 					"type": "class",
 					"name": "CompactNumberFormat",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/CompactNumberFormat.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/CompactNumberFormat.html",
+					"csr": "JDK-8188147"
 				},
 				{
 					"type": "class",
@@ -23071,13 +23207,15 @@
 							"type": "method",
 							"name": "getCompactNumberInstance()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/NumberFormat.html#getCompactNumberInstance()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/NumberFormat.html#getCompactNumberInstance()",
+							"csr": "JDK-8188147"
 						},
 						{
 							"type": "method",
 							"name": "getCompactNumberInstance(Locale, NumberFormat.Style)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/NumberFormat.html#getCompactNumberInstance(java.util.Locale,java.text.NumberFormat.Style)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/NumberFormat.html#getCompactNumberInstance(java.util.Locale,java.text.NumberFormat.Style)",
+							"csr": "JDK-8188147"
 						},
 						{
 							"type": "method",
@@ -23141,7 +23279,8 @@
 					"type": "enum",
 					"name": "NumberFormat.Style",
 					"status": "added",
-					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/NumberFormat.Style.html"
+					"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/text/NumberFormat.Style.html",
+					"csr": "JDK-8188147"
 				}
 			]
 		},
@@ -23262,7 +23401,8 @@
 							"type": "method",
 							"name": "getRealName()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/jar/JarEntry.html#getRealName()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/jar/JarEntry.html#getRealName()",
+							"csr": "JDK-8191426"
 						}
 					]
 				},
@@ -23312,7 +23452,8 @@
 							"type": "method",
 							"name": "versionedStream()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()",
+							"csr": "JDK-8191426"
 						}
 					]
 				}
@@ -23464,13 +23605,15 @@
 							"type": "method",
 							"name": "deflate(ByteBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer)",
+							"csr": "JDK-8200527"
 						},
 						{
 							"type": "method",
 							"name": "deflate(ByteBuffer, int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer,int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer,int)",
+							"csr": "JDK-8200527"
 						},
 						{
 							"type": "method",
@@ -23481,7 +23624,8 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8212198"
 						},
 						{
 							"type": "method",
@@ -23499,13 +23643,15 @@
 							"type": "method",
 							"name": "setDictionary(ByteBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(java.nio.ByteBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(java.nio.ByteBuffer)",
+							"csr": "JDK-8200527"
 						},
 						{
 							"type": "method",
 							"name": "setInput(ByteBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#setInput(java.nio.ByteBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Deflater.html#setInput(java.nio.ByteBuffer)",
+							"csr": "JDK-8200527"
 						}
 					]
 				},
@@ -23575,7 +23721,8 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8212198"
 						},
 						{
 							"type": "method",
@@ -23593,19 +23740,22 @@
 							"type": "method",
 							"name": "inflate(ByteBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Inflater.html#inflate(java.nio.ByteBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Inflater.html#inflate(java.nio.ByteBuffer)",
+							"csr": "JDK-8200527"
 						},
 						{
 							"type": "method",
 							"name": "setDictionary(ByteBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Inflater.html#setDictionary(java.nio.ByteBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Inflater.html#setDictionary(java.nio.ByteBuffer)",
+							"csr": "JDK-8200527"
 						},
 						{
 							"type": "method",
 							"name": "setInput(ByteBuffer)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Inflater.html#setInput(java.nio.ByteBuffer)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/zip/Inflater.html#setInput(java.nio.ByteBuffer)",
+							"csr": "JDK-8200527"
 						}
 					]
 				},
@@ -23701,7 +23851,8 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8212198"
 						},
 						{
 							"type": "method",
@@ -26236,7 +26387,8 @@
 							"type": "method",
 							"name": "Properties(int)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html#%3Cinit%3E(int)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html#%3Cinit%3E(int)",
+							"csr": "JDK-8189407"
 						},
 						{
 							"type": "method",
@@ -26440,7 +26592,8 @@
 							"type": "method",
 							"name": "storeToXML(OutputStream, String, Charset)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)",
+							"csr": "JDK-8190577"
 						},
 						{
 							"type": "method",
@@ -27319,7 +27472,8 @@
 							"type": "method",
 							"name": "toArray(IntFunction)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)",
+							"csr": "JDK-8193155"
 						}
 					]
 				},
@@ -27486,7 +27640,8 @@
 							"type": "method",
 							"name": "copyOf(Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)",
+							"csr": "JDK-8191517"
 						},
 						{
 							"type": "method",
@@ -27640,7 +27795,8 @@
 							"type": "method",
 							"name": "copyOf(Map)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)",
+							"csr": "JDK-8191517"
 						},
 						{
 							"type": "method",
@@ -27843,7 +27999,8 @@
 							"type": "method",
 							"name": "copyOf(Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)",
+							"csr": "JDK-8191517"
 						},
 						{
 							"type": "method",
@@ -28559,7 +28716,8 @@
 			"type": "package",
 			"name": "javax.naming.ldap.spi",
 			"status": "added",
-			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.naming/javax/naming/ldap/spi/package-summary.html"
+			"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.naming/javax/naming/ldap/spi/package-summary.html",
+			"csr": "JDK-8192975"
 		},
 		{
 			"type": "package",
@@ -30005,7 +30163,8 @@
 							"type": "method",
 							"name": "getChooserShortcutPanelFiles()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChooserShortcutPanelFiles()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChooserShortcutPanelFiles()",
+							"csr": "JDK-8210210"
 						},
 						{
 							"type": "method",
@@ -36132,13 +36291,15 @@
 							"type": "method",
 							"name": "addAll(Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(java.util.Collection)",
+							"csr": "JDK-8201289"
 						},
 						{
 							"type": "method",
 							"name": "addAll(int, Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(int,java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(int,java.util.Collection)",
+							"csr": "JDK-8201289"
 						}
 					]
 				},
@@ -36201,13 +36362,15 @@
 							"type": "method",
 							"name": "addAll(Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(java.util.Collection)",
+							"csr": "JDK-8201289"
 						},
 						{
 							"type": "method",
 							"name": "addAll(int, Collection)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(int,java.util.Collection)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(int,java.util.Collection)",
+							"csr": "JDK-8201289"
 						}
 					]
 				},
@@ -39719,7 +39882,8 @@
 							"type": "method",
 							"name": "getGroup()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/ButtonModel.html#getGroup()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/ButtonModel.html#getGroup()",
+							"csr": "JDK-8182695"
 						}
 					]
 				},
@@ -39733,13 +39897,15 @@
 							"type": "method",
 							"name": "getSelectedIndices()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedIndices()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedIndices()",
+							"csr": "JDK-8199395"
 						},
 						{
 							"type": "method",
 							"name": "getSelectedItemsCount()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedItemsCount()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedItemsCount()",
+							"csr": "JDK-8199395"
 						}
 					]
 				},

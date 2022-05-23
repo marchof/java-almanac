@@ -1,20 +1,94 @@
 {
 	"version": "18",
 	"name": "Java 18",
-	"ga": "2022-03-15",
+	"ga": "2022-03-22",
 	"eol": "2022-09-15",
-	"status": "DEV",
+	"latestversion": "18.0.1",
+	"status": "REL",
 	"bytecode": "62.0",
 	"documentation": {
-		"notes": "http://jdk.java.net/18/release-notes",
-		"api": "https://download.java.net/java/early_access/jdk18/docs/api/"
+		"notes": "https://www.oracle.com/java/technologies/javase/18-relnotes.html",
+		"vm": "https://docs.oracle.com/javase/specs/jvms/se18/html/index.html",
+		"lang": "https://docs.oracle.com/javase/specs/jls/se18/html/index.html",
+		"api": "https://docs.oracle.com/en/java/javase/18/docs/api/"
 	},
 	"scm": [
 		{
 			"type": "git",
-			"url": "https://github.com/openjdk/jdk"
+			"url": "https://github.com/openjdk/jdk18"
 		}
 	],
 	"features": [
+		{
+			"title": "UTF-8 by Default",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "400"
+				}
+			]
+		},
+		{
+			"title": "Simple Web Server",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "408"
+				}
+			]
+		},
+		{
+			"title": "Code Snippets in Java API Documentation",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "413"
+				}
+			]
+		},
+		{
+			"title": "Pattern Matching for switch (Second Preview)",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "420"
+				}
+			]
+		},
+		{
+			"title": "Reimplement Core Reflection with Method Handles",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "416"
+				}
+			]
+		},
+		{
+			"title": "Internet-Address Resolution SPI",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "418"
+				}
+			]
+		},
+		{
+			"title": "Deprecate Finalization for Removal",
+			"category": "api",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "421"
+				}
+			]
+		}
 	]
 }

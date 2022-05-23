@@ -5,7 +5,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import org.openapi4j.core.exception.EncodeException;
 import org.openapi4j.parser.model.SerializationFlag;
@@ -88,7 +87,7 @@ public class S3Output implements ApiOutput {
 			LOG.info("Deleting obsolete files {}", existingContent.keySet());
 			var ids = existingContent.keySet().stream().map( //
 					key -> ObjectIdentifier.builder().key(key).build() //
-			).collect(Collectors.toList());
+			).toList();
 			s3.deleteObjects(b -> b //
 					.bucket(bucket) //
 					.delete(d -> d.objects(ids)));

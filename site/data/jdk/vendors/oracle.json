@@ -268,7 +268,7 @@
 			"id": "oracle",
 			"name": "Oracle JDK 16",
 			"license": "Commercial",
-			"url": "https://www.oracle.com/java/technologies/downloads/#java16",
+			"url": "https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html",
 			"platforms": [
 				"linux-arm64",
 				"linux-x64",
@@ -298,26 +298,10 @@
 			"foojaydownload": true
 		},
 		{
-			"id": "oracle_open_jdk",
-			"name": "Oracle OpenJDK 16",
-			"license": "GPLv2+CE",
-			"url": "http://jdk.java.net/16/",
-			"platforms": [
-				"linux-arm64",
-				"linux-x64",
-				"macos-x64",
-				"windows-x64"
-			],
-			"versions": [
-				"16"
-			],
-			"foojaydownload": true
-		},
-		{
-			"id": "oracle_open_jdk",
-			"name": "Oracle OpenJDK 17",
-			"license": "GPLv2+CE",
-			"url": "http://jdk.java.net/17/",
+			"id": "oracle",
+			"name": "Oracle JDK 18",
+			"license": "Oracle No-Fee",
+			"url": "https://www.oracle.com/java/technologies/downloads/#java18",
 			"platforms": [
 				"linux-arm64",
 				"linux-x64",
@@ -326,15 +310,32 @@
 				"windows-x64"
 			],
 			"versions": [
-				"17"
+				"18"
 			],
-			"foojaydownload": true
+			"foojaydownload": false
 		},
 		{
 			"id": "oracle_open_jdk",
 			"name": "Oracle OpenJDK 18",
 			"license": "GPLv2+CE",
 			"url": "http://jdk.java.net/18/",
+			"platforms": [
+				"linux-arm64",
+				"linux-x64",
+				"macos-arm64",
+				"macos-x64",
+				"windows-x64"
+			],
+			"versions": [
+				"18"
+			],
+			"foojaydownload": true
+		},
+		{
+			"id": "oracle_open_jdk",
+			"name": "Oracle OpenJDK 19",
+			"license": "GPLv2+CE",
+			"url": "http://jdk.java.net/19/",
 			"platforms": [
 				"alpine-x64",
 				"linux-arm64",
@@ -344,7 +345,7 @@
 				"windows-x64"
 			],
 			"versions": [
-				"18"
+				"19"
 			],
 			"foojaydownload": true
 		}

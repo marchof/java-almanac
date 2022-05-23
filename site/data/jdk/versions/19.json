@@ -1,0 +1,63 @@
+{
+	"version": "19",
+	"name": "Java 19",
+	"ga": "2022-09-15",
+	"eol": "2023-03-15",
+	"status": "DEV",
+	"bytecode": "63.0",
+	"documentation": {
+		"notes": "http://jdk.java.net/19/release-notes",
+		"api": "https://download.java.net/java/early_access/jdk19/docs/api/"
+	},
+	"scm": [
+		{
+			"type": "git",
+			"url": "https://github.com/openjdk/jdk"
+		}
+	],
+	"features": [
+		{
+			"title": "Linux/RISC-V Port",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "422"
+				}
+			]
+		},
+		{
+			"title": "Pattern Matching for switch (Third Preview)",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "427"
+				}
+			]
+		},
+		{
+			"title": "Foreign Function & Memory API",
+			"category": "api",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "424"
+				}
+			]
+		},
+		{
+			"title": "Virtual Threads",
+			"category": "api",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "425"
+				}
+			]
+		}
+	]
+}
