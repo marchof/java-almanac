@@ -7,7 +7,7 @@ type: "sandbox"
 ---
 
 
-Pattern matching for switch expressions and statements appeared as a preview feature in Java 17 (JEP 406) and Java 18 (JEP 420). This article covers the third round of preview in Java 19 (JEP 427). The feature is mostly straightforward, with a few sharp edges. At the end of each section is a “sandbox” with somewhat contrived code to try out the syntax variations.
+Pattern matching for switch expressions and statements appeared as a preview feature in Java 17 ([JEP 406](https://openjdk.java.net/jeps/406)) and Java 18 ([JEP 420](https://openjdk.java.net/jeps/420)). This article covers the third round of preview in Java 19 ([JEP 427](https://openjdk.java.net/jeps/427)). The feature is mostly straightforward, with a few sharp edges. At the end of each section is a “sandbox” with somewhat contrived code to try out the syntax variations.
 
 ## Type Checks with Switch
 
@@ -40,13 +40,13 @@ else if (out instanceof ObjectOutputStream oout) oout.writeObject(str);
 else out.write(str.getBytes()); 
 ```
 
-Note the use of [pattern matching for `instanceof`](https://javaalmanac.io/features/instanceof-patterns/). The code snippet declares variables ( `bout`, `dout`, `oout`) that contain `out`, cast to the matching type.
+Note the use of [pattern matching for `instanceof`](https://javaalmanac.io/features/instanceof-patterns/). The code snippet declares variables (`bout`, `dout`, `oout`) that contain `out`, cast to the matching type.
 
 The equivalent pattern matching `switch` is:
 
 ```
 switch (out) {
-   case ByteArrayOutputStream bout -> bout.writeBytes(str);
+   case ByteArrayOutputStream bout -> bout.writeBytes(str.getBytes());
    case DataOutputStream dout -> dout.writeUTF(str);
    case ObjectOutputStream oout -> oout.writeObject(str);
    default -> out.write(str.getBytes());
@@ -109,7 +109,7 @@ Sometimes, it is convenient to select a case of a `switch` only when a certain c
 
 ```
 switch (out) {
-   case ByteArrayOutputStream bout -> bout.writeBytes(str);
+   case ByteArrayOutputStream bout -> bout.writeBytes(str.getBytes());
    case DataOutputStream dout -> dout.writeUTF(str);
    case ObjectOutputStream oout when str.length() > 0 -> oout.writeObject(str);
    default -> out.write(str.getBytes());
@@ -286,7 +286,6 @@ The second case can never execute, and a compile-time error occurs.
 Since the compiler cannot determine when a guard is true, the guards are never used for dominance checking. Consider
 
 ```
-
 case Integer n when n >= 600 -> ... 
 case Integer n when n > 599 -> ... // Not a compile-time error
 ```
@@ -529,7 +528,7 @@ As you saw, the devil is in the details. Put `default` last. Stay away from fall
 
 ## References
 
-* [JEP 394: Pattern Matching for switch, OpenJDK](https://openjdk.java.net/jeps/394)
+* [JEP 394: Pattern Matching for instanceof, OpenJDK](https://openjdk.java.net/jeps/394)
 * [JEP 406: Pattern Matching for switch (Preview), OpenJDK](https://openjdk.java.net/jeps/406)
 * [JEP 420: Pattern Matching for switch (Second Preview), OpenJDK](https://openjdk.java.net/jeps/420)
 * [JEP 427: Pattern Matching for switch (Third Preview), OpenJDK](https://openjdk.java.net/jeps/427)
