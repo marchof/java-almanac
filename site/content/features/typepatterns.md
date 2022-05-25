@@ -34,7 +34,7 @@ message = switch (code) {
 A sequence of type checks can be similarly repetitive: 
 
 ```
-if (out instanceof ByteArrayOutputStream bout) bout.writeBytes(str);
+if (out instanceof ByteArrayOutputStream bout) bout.writeBytes(str.getBytes());
 else if (out instanceof DataOutputStream dout) dout.writeUTF(str);
 else if (out instanceof ObjectOutputStream oout) oout.writeObject(str); 
 else out.write(str.getBytes()); 
