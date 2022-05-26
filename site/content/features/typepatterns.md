@@ -78,15 +78,18 @@ import java.util.*;
 public class Main {
    public static void main(String[] args) throws Exception {
       ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-      // A switch expression with no fall through, no type patterns
-      OutputStream out = switch ((int)(4 * Math.random())) {
-            case 0 -> bytes;
-            case 1 -> new DataOutputStream(bytes);
-            case 2 -> new ObjectOutputStream(bytes);
-            case 3 -> System.out;
-            default -> throw new Error("Math.random() is broken");
-         };
+      run(bytes, bytes);
+      bytes = new ByteArrayOutputStream();
+      run(new DataOutputStream(bytes), bytes);
+      bytes = new ByteArrayOutputStream();
+      run(new ObjectOutputStream(bytes), bytes);
+      run(System.out, null);
+   }
+
+   public static void run(OutputStream out, ByteArrayOutputStream bytes) throws Exception {
+      System.out.printf("%n=== %s ===%n", out.getClass().getName());
       String str = "Hello\n";
+
       // A switch statement with no fall through, type patterns
       switch (out) {
          case ByteArrayOutputStream bout -> bout.writeBytes(str.getBytes());
@@ -94,12 +97,13 @@ public class Main {
          case ObjectOutputStream oout -> oout.writeObject(str);
          case OutputStream __ -> out.write(str.getBytes());
       };
-      
-      bytes.close();
-      System.out.println(Arrays.toString(bytes.toByteArray()));   
+
+      if (bytes != null) { 
+         bytes.close();
+         System.out.println(Arrays.toString(bytes.toByteArray()));
+      }   
    }
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
@@ -224,24 +228,25 @@ import java.sql.*;
 import java.util.*;
 
 public class Main {
-   public static void main(String[] args) throws Throwable {
-      Throwable ex = switch ((int)(4 * Math.random())) {
-            case 0 -> new NullPointerException();
-            case 1 -> new SQLException(new MissingResourceException("No database", null, null));
-            case 2 -> new IOException("File not found");
-            case 3 -> null;
-            default -> new Error("Math.random() is broken");
-         };
+   public static void main(String[] args) {
+      run(new NullPointerException());
+      run(new SQLException(new MissingResourceException("No database", null, null)));
+      run(new IOException("File not found"));
+      run(null);
+   }
+
+   public static void run(Throwable ex) {
+      System.out.printf("%n=== %s ===%n", ex == null ? "null" : ex.getClass().getName());
 
       Throwable ex2 = switch (ex) {
          case IOException ioe -> new UncheckedIOException(ioe);
          case Exception __ when ex.getCause() != null -> ex.getCause();
          default -> ex;
       };
+
       ex2.printStackTrace();
    }
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
@@ -348,9 +353,15 @@ Here is a little exercise to practice the dominance rules. And yes, it is weird 
 {{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
-      int r = (int) (4 * Math.random());
-      Integer status = (new int[] { 200, 404, 500, 600 })[r];
-      
+      run(200);
+      run(404);
+      run(500);
+      run(600);
+   }
+
+   public static void run(Integer status) {
+      System.out.printf("%n=== %d ===%n", status);
+
       String text = switch (status) {
          // Sort these lines according to the dominance rules
          default -> "Valid";
@@ -358,10 +369,10 @@ public class Main {
          case 200 -> "Ok";
          case 404 -> "Not found";
       };
+
       System.out.println(text);
    }
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
@@ -412,17 +423,16 @@ public class Main {
       JSONObject obj = new JSONObject();
       obj.put("name", new JSONString("Harry"));
       obj.put("married", JSONBoolean.FALSE);
-      var jobj = switch ((int)(6 * Math.random())) {
-         case 0 -> arr;         
-         case 1 -> obj;
-         case 2 -> arr.get(0);
-         case 3 -> obj.get("name");
-         case 4 -> obj.get("married");      
-         case 5 -> arr.get(1);
-         default -> throw new Error("Math.random() is broken");
-      };
-      
-      var type = switch (jobj) {
+      run(arr);
+      run(obj);
+      run(arr.get(0));
+      run(obj.get("name"));
+      run(obj.get("married"));      
+      run(arr.get(1));
+   }
+
+   public static void run(JSONValue jval) {
+      var type = switch (jval) {
          case JSONArray __ -> "array";
          case JSONObject __ -> "object";
          case JSONNumber __ -> "number";
@@ -430,10 +440,9 @@ public class Main {
          case JSONBoolean __ -> "boolean";
          case JSONNull __ -> "null";
       };
-      System.out.println(type + " " + jobj);
+      System.out.println(type + " " + jval);
    }
 }
-
 {{< /sandboxsource >}}
 {{< sandboxsource "JSONValue.java" >}}
 import java.util.*;
@@ -492,27 +501,28 @@ Here is a complete example, as contrived as all fall through examples that I hav
 import java.text.*;
 import java.util.*;
 
-public class Main
-{
+public class Main {
    public static void main(String[] args) {
       Locale loc = Locale.forLanguageTag("de-DE");
-      Object obj = switch ((int)(4 * Math.random())) {
-            case 0 -> "Bob";
-            case 1 -> "Fred";
-            case 2 -> Math.PI;
-            case 3 -> loc;
-            default -> throw new Error("Math.random() is broken");
-         };
+      run("Bob", loc);
+      run("Fred", loc);
+      run("Math.PI", loc);
+      run(loc, loc);
+   }
+
+   public static void run(Object obj, Locale loc) {
+      System.out.printf("%n=== %s ===%n", obj);
+
       String formatted = switch (obj) {
          case Number n: yield NumberFormat.getNumberInstance(loc).format(n);
          case String s when s.length() > 3: obj = s.substring(0, 3) + "...";
          default: yield obj.toString();
          case String s: yield '"' + s + '"';
       };
+
       System.out.println(formatted);
    }
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
