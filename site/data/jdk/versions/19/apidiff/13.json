@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+23-1706"
+		"version": "19-ea+24-1832"
 	},
 	"order": 13.0,
 	"deltas": [
@@ -3326,6 +3326,84 @@
 				},
 				{
 					"type": "package",
+					"name": "java.time.chrono",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "IsoChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JapaneseChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MinguoChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ThaiBuddhistChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Chronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html#isIsoBased()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.time.format",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/package-summary.html",
@@ -3855,6 +3933,28 @@
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/random/package-summary.html",
 					"csr": "JDK-8255395"
+				},
+				{
+					"type": "package",
+					"name": "java.util.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ToolProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "description()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html#description()"
+								}
+							]
+						}
+					]
 				},
 				{
 					"type": "package",
@@ -6560,6 +6660,23 @@
 										"public"
 									]
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.sound.midi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Track",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/Track.html",
+							"addedTags": [
+								"final"
 							]
 						}
 					]

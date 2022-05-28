@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+23-1706"
+		"version": "19-ea+24-1832"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -5576,6 +5576,34 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "IsoChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JapaneseChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "JapaneseEra",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseEra.html",
@@ -5586,6 +5614,34 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseEra.html#REIWA",
 									"csr": "JDK-8193826"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MinguoChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html#isIsoBased()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ThaiBuddhistChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#isIsoBased()"
 								}
 							]
 						},
@@ -5631,6 +5687,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)",
 									"csr": "JDK-8186752"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Chronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html#isIsoBased()"
 								}
 							]
 						}
@@ -6442,6 +6512,20 @@
 									"name": "getDisplayUnicodeExtensionType(String, String, Locale)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/LocaleNameProvider.html#getDisplayUnicodeExtensionType(java.lang.String,java.lang.String,java.util.Locale)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ToolProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "description()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html#description()"
 								}
 							]
 						}
@@ -10336,6 +10420,23 @@
 										"public"
 									]
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.sound.midi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Track",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/Track.html",
+							"addedTags": [
+								"final"
 							]
 						}
 					]

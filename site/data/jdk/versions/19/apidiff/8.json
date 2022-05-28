@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+23-1706"
+		"version": "19-ea+24-1832"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -10250,6 +10250,26 @@
 							"name": "epochSecond(int, int, int, int, int, int, ZoneOffset)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"
+						},
+						{
+							"type": "method",
+							"name": "isIsoBased()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html#isIsoBased()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JapaneseChronology",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "isIsoBased()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html#isIsoBased()"
 						}
 					]
 				},
@@ -10265,6 +10285,34 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseEra.html#REIWA",
 							"csr": "JDK-8193826"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "MinguoChronology",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "isIsoBased()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html#isIsoBased()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ThaiBuddhistChronology",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "isIsoBased()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#isIsoBased()"
 						}
 					]
 				},
@@ -10330,6 +10378,12 @@
 							"name": "epochSecond(int, int, int, int, int, int, ZoneOffset)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"
+						},
+						{
+							"type": "method",
+							"name": "isIsoBased()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html#isIsoBased()"
 						}
 					]
 				}
@@ -17472,6 +17526,23 @@
 								"public"
 							]
 						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.sound.midi",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Track",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/Track.html",
+					"addedTags": [
+						"final"
 					]
 				}
 			]
