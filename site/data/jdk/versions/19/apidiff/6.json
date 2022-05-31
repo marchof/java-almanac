@@ -97,8 +97,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
 					"addedTags": [
-						"permitted subclass ICC_ProfileGray",
-						"permitted subclass ICC_ProfileRGB"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -400,8 +399,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/InputEvent.html",
 					"addedTags": [
-						"permitted subclass KeyEvent",
-						"permitted subclass MouseEvent"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -911,8 +909,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/Path2D.html",
 					"addedTags": [
-						"permitted subclass Path2D$Double",
-						"permitted subclass Path2D$Float"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -2203,8 +2200,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/MultipleGradientPaint.html",
 					"addedTags": [
-						"permitted subclass LinearGradientPaint",
-						"permitted subclass RadialGradientPaint"
+						"sealed"
 					]
 				},
 				{
@@ -2337,8 +2333,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/TextComponent.html",
 					"addedTags": [
-						"permitted subclass TextArea",
-						"permitted subclass TextField"
+						"sealed"
 					]
 				},
 				{
@@ -3938,10 +3933,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/Reference.html",
 					"addedTags": [
-						"permitted subclass FinalReference",
-						"permitted subclass PhantomReference",
-						"permitted subclass SoftReference",
-						"permitted subclass WeakReference"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -9307,8 +9299,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/InetAddress.html",
 					"addedTags": [
-						"permitted subclass Inet4Address",
-						"permitted subclass Inet6Address"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10280,13 +10271,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/Buffer.html",
 					"addedTags": [
-						"permitted subclass ByteBuffer",
-						"permitted subclass CharBuffer",
-						"permitted subclass DoubleBuffer",
-						"permitted subclass FloatBuffer",
-						"permitted subclass IntBuffer",
-						"permitted subclass LongBuffer",
-						"permitted subclass ShortBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10379,8 +10364,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ByteBuffer.html",
 					"addedTags": [
-						"permitted subclass HeapByteBuffer",
-						"permitted subclass MappedByteBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10494,12 +10478,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/CharBuffer.html",
 					"addedTags": [
-						"permitted subclass ByteBufferAsCharBufferB",
-						"permitted subclass ByteBufferAsCharBufferL",
-						"permitted subclass DirectCharBufferS",
-						"permitted subclass DirectCharBufferU",
-						"permitted subclass HeapCharBuffer",
-						"permitted subclass StringCharBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10625,11 +10604,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/DoubleBuffer.html",
 					"addedTags": [
-						"permitted subclass ByteBufferAsDoubleBufferB",
-						"permitted subclass ByteBufferAsDoubleBufferL",
-						"permitted subclass DirectDoubleBufferS",
-						"permitted subclass DirectDoubleBufferU",
-						"permitted subclass HeapDoubleBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10731,11 +10706,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/FloatBuffer.html",
 					"addedTags": [
-						"permitted subclass ByteBufferAsFloatBufferB",
-						"permitted subclass ByteBufferAsFloatBufferL",
-						"permitted subclass DirectFloatBufferS",
-						"permitted subclass DirectFloatBufferU",
-						"permitted subclass HeapFloatBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10837,11 +10808,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/IntBuffer.html",
 					"addedTags": [
-						"permitted subclass ByteBufferAsIntBufferB",
-						"permitted subclass ByteBufferAsIntBufferL",
-						"permitted subclass DirectIntBufferS",
-						"permitted subclass DirectIntBufferU",
-						"permitted subclass HeapIntBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -10943,11 +10910,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/LongBuffer.html",
 					"addedTags": [
-						"permitted subclass ByteBufferAsLongBufferB",
-						"permitted subclass ByteBufferAsLongBufferL",
-						"permitted subclass DirectLongBufferS",
-						"permitted subclass DirectLongBufferU",
-						"permitted subclass HeapLongBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -11049,7 +11012,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/MappedByteBuffer.html",
 					"addedTags": [
-						"permitted subclass DirectByteBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -11137,11 +11100,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ShortBuffer.html",
 					"addedTags": [
-						"permitted subclass ByteBufferAsShortBufferB",
-						"permitted subclass ByteBufferAsShortBufferL",
-						"permitted subclass DirectShortBufferS",
-						"permitted subclass DirectShortBufferU",
-						"permitted subclass HeapShortBuffer"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -17971,8 +17930,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/EnumSet.html",
 					"addedTags": [
-						"permitted subclass JumboEnumSet",
-						"permitted subclass RegularEnumSet"
+						"sealed"
 					]
 				},
 				{
@@ -18270,18 +18228,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/IllegalFormatException.html",
 					"addedTags": [
-						"permitted subclass DuplicateFormatFlagsException",
-						"permitted subclass FormatFlagsConversionMismatchException",
-						"permitted subclass IllegalFormatArgumentIndexException",
-						"permitted subclass IllegalFormatCodePointException",
-						"permitted subclass IllegalFormatConversionException",
-						"permitted subclass IllegalFormatFlagsException",
-						"permitted subclass IllegalFormatPrecisionException",
-						"permitted subclass IllegalFormatWidthException",
-						"permitted subclass MissingFormatArgumentException",
-						"permitted subclass MissingFormatWidthException",
-						"permitted subclass UnknownFormatConversionException",
-						"permitted subclass UnknownFormatFlagsException"
+						"sealed"
 					]
 				},
 				{
@@ -25014,7 +24961,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
 					"addedTags": [
-						"permitted subclass BasicSplitPaneUI$BasicVerticalLayoutManager"
+						"sealed"
 					]
 				},
 				{
@@ -27042,10 +26989,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
 					"addedTags": [
-						"permitted subclass StyleConstants$CharacterConstants",
-						"permitted subclass StyleConstants$ColorConstants",
-						"permitted subclass StyleConstants$FontConstants",
-						"permitted subclass StyleConstants$ParagraphConstants"
+						"sealed"
 					]
 				},
 				{
@@ -27560,8 +27504,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.Group.html",
 					"addedTags": [
-						"permitted subclass GroupLayout$ParallelGroup",
-						"permitted subclass GroupLayout$SequentialGroup"
+						"sealed"
 					]
 				},
 				{
@@ -27570,7 +27513,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html",
 					"addedTags": [
-						"permitted subclass GroupLayout$BaselineGroup"
+						"sealed"
 					]
 				},
 				{
