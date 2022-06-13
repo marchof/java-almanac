@@ -31,7 +31,7 @@ Vue.component('downloadlist', {
               <td>{{ package.java_version }}</td>
               <td>{{ package.package_type }}</td>
               <td>{{ package.operating_system }}-{{ package.architecture }}</td>
-              <td style="max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.filename" v-on:click.prevent="download(package.id)">{{ package.filename }}</a></td>
+              <td style="max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.links.pkg_download_redirect">{{ package.filename }}</a></td>
             </tr>
           </tbody>
         </table>
@@ -55,8 +55,9 @@ Vue.component('downloadlist', {
                 { id: '15', name: '15', query: 'version=15' },
                 { id: '16', name: '16', query: 'version=16' },
                 { id: '17', name: '17', query: 'version=17' },
-                { id: '18', name: '18', query: 'version=18-ea' },
-                { id: '19', name: '19', query: 'version=19-ea' }
+                { id: '18', name: '18', query: 'version=18' },
+                { id: '19', name: '19', query: 'version=19-ea' },
+                { id: '20', name: '20', query: 'version=20-ea' }
             ],
             typeset: [
                 { id: 'all', name: 'All', query: '' },
@@ -172,17 +173,8 @@ Vue.component('downloadlist', {
                 this.loading = false;
             });
         },
-        download(packageid) {
-            this.discoRequest("packages/" + packageid, response => {
-                this.discoRequest("ephemeral_ids/" + response.data.result[0].ephemeral_id, response => {
-                    var item = response.data.result[0];
-                    link = item.direct_download_uri || item.download_site_uri;
-                    window.open(link, "_self");
-                });
-            });
-        },
         discoRequest(path, handler) {
-            axios.get("https://api.foojay.io/disco/v2.0/" + path).then(handler);
+            axios.get("https://api.foojay.io/disco/v3.0/" + path).then(handler);
         }
     }
 });
