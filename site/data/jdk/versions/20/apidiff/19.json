@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+25-1892"
+		"version": "19-ea+26-2060"
 	},
 	"target": {
 		"feature": "20",
@@ -11,50 +11,6 @@
 	},
 	"order": 19.0,
 	"deltas": [
-		{
-			"type": "module",
-			"name": "java.base",
-			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/module-summary.html",
-			"deltas": [
-				{
-					"type": "package",
-					"name": "java.util",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/package-summary.html",
-					"deltas": [
-						{
-							"type": "class",
-							"name": "HashSet",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/HashSet.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "newHashSet(int)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/HashSet.html#newHashSet(int)"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "LinkedHashSet",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/LinkedHashSet.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "newLinkedHashSet(int)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/LinkedHashSet.html#newLinkedHashSet(int)"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
 		{
 			"type": "module",
 			"name": "java.compiler",

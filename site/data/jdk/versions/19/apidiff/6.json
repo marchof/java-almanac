@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+25-1892"
+		"version": "19-ea+26-2060"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -18118,6 +18118,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "newHashSet(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#newHashSet(int)"
+						},
+						{
+							"type": "method",
 							"name": "spliterator()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#spliterator()"
@@ -18317,6 +18323,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashSet.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "newLinkedHashSet(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashSet.html#newLinkedHashSet(int)"
+						},
 						{
 							"type": "method",
 							"name": "spliterator()",

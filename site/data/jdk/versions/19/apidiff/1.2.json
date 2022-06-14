@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+25-1892"
+		"version": "19-ea+26-2060"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -27556,6 +27556,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "newHashSet(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#newHashSet(int)"
+						},
 						{
 							"type": "method",
 							"name": "spliterator()",
