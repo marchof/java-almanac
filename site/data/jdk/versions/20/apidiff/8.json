@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+1-3"
+		"version": "20-ea+2-50"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -8985,6 +8985,23 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "CertStore",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/cert/CertStore.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getDefaultType()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/cert/CertStore.html#getDefaultType()",
+							"removedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "URICertStoreParameters",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/cert/URICertStoreParameters.html"
@@ -9101,6 +9118,32 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/interfaces/package-summary.html",
 			"deltas": [
+				{
+					"type": "interface",
+					"name": "DSAKeyPairGenerator",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "initialize(DSAParams, SecureRandom)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)",
+							"removedTags": [
+								"throws InvalidParameterException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "initialize(int, boolean, SecureRandom)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom)",
+							"removedTags": [
+								"throws InvalidParameterException"
+							]
+						}
+					]
+				},
 				{
 					"type": "interface",
 					"name": "DSAPrivateKey",
