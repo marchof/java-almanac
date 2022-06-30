@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+23-1706"
+		"version": "19-ea+28-2110"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -307,8 +307,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/constant/ClassDesc.html",
 							"addedTags": [
-								"permitted subclass PrimitiveClassDescImpl",
-								"permitted subclass ReferenceClassDescImpl"
+								"sealed"
 							]
 						},
 						{
@@ -317,15 +316,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/constant/ConstantDesc.html",
 							"addedTags": [
-								"permitted subclass ClassDesc",
-								"permitted subclass Double",
-								"permitted subclass DynamicConstantDesc",
-								"permitted subclass Float",
-								"permitted subclass Integer",
-								"permitted subclass Long",
-								"permitted subclass MethodHandleDesc",
-								"permitted subclass MethodTypeDesc",
-								"permitted subclass String"
+								"sealed"
 							]
 						},
 						{
@@ -334,7 +325,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/constant/DirectMethodHandleDesc.html",
 							"addedTags": [
-								"permitted subclass DirectMethodHandleDescImpl"
+								"sealed"
 							]
 						},
 						{
@@ -343,8 +334,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
 							"addedTags": [
-								"permitted subclass AsTypeMethodHandleDesc",
-								"permitted subclass DirectMethodHandleDesc"
+								"sealed"
 							]
 						},
 						{
@@ -353,7 +343,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
 							"addedTags": [
-								"permitted subclass MethodTypeDescImpl"
+								"sealed"
 							]
 						}
 					]
@@ -362,7 +352,8 @@
 					"type": "package",
 					"name": "java.lang.foreign",
 					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"csr": "JDK-8282192"
 				},
 				{
 					"type": "package",
@@ -376,9 +367,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/CallSite.html",
 							"addedTags": [
-								"permitted subclass ConstantCallSite",
-								"permitted subclass MutableCallSite",
-								"permitted subclass VolatileCallSite"
+								"sealed"
 							]
 						},
 						{
@@ -387,10 +376,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandle.html",
 							"addedTags": [
-								"permitted subclass BoundMethodHandle",
-								"permitted subclass DelegatingMethodHandle",
-								"permitted subclass DirectMethodHandle",
-								"permitted subclass NativeMethodHandle"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -451,14 +437,16 @@
 									"name": "collectCoordinates(VarHandle, int, MethodHandle)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
 									"name": "dropCoordinates(VarHandle, int, Class...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
@@ -472,35 +460,40 @@
 									"name": "filterCoordinates(VarHandle, int, MethodHandle...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
 									"name": "filterValue(VarHandle, MethodHandle, MethodHandle)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
 									"name": "insertCoordinates(VarHandle, int, Object...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
 									"name": "memorySegmentViewVarHandle(ValueLayout)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
 									"name": "permuteCoordinates(VarHandle, List, int...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)",
+									"csr": "JDK-8282192"
 								},
 								{
 									"type": "method",
@@ -517,41 +510,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/VarHandle.html",
 							"addedTags": [
-								"permitted subclass IndirectVarHandle",
-								"permitted subclass VarHandleBooleans$Array",
-								"permitted subclass VarHandleBooleans$FieldInstanceReadOnly",
-								"permitted subclass VarHandleBooleans$FieldStaticReadOnly",
-								"permitted subclass VarHandleByteArrayAsChars$ByteArrayViewVarHandle",
-								"permitted subclass VarHandleByteArrayAsDoubles$ByteArrayViewVarHandle",
-								"permitted subclass VarHandleByteArrayAsFloats$ByteArrayViewVarHandle",
-								"permitted subclass VarHandleByteArrayAsInts$ByteArrayViewVarHandle",
-								"permitted subclass VarHandleByteArrayAsLongs$ByteArrayViewVarHandle",
-								"permitted subclass VarHandleByteArrayAsShorts$ByteArrayViewVarHandle",
-								"permitted subclass VarHandleBytes$Array",
-								"permitted subclass VarHandleBytes$FieldInstanceReadOnly",
-								"permitted subclass VarHandleBytes$FieldStaticReadOnly",
-								"permitted subclass VarHandleChars$Array",
-								"permitted subclass VarHandleChars$FieldInstanceReadOnly",
-								"permitted subclass VarHandleChars$FieldStaticReadOnly",
-								"permitted subclass VarHandleDoubles$Array",
-								"permitted subclass VarHandleDoubles$FieldInstanceReadOnly",
-								"permitted subclass VarHandleDoubles$FieldStaticReadOnly",
-								"permitted subclass VarHandleFloats$Array",
-								"permitted subclass VarHandleFloats$FieldInstanceReadOnly",
-								"permitted subclass VarHandleFloats$FieldStaticReadOnly",
-								"permitted subclass VarHandleInts$Array",
-								"permitted subclass VarHandleInts$FieldInstanceReadOnly",
-								"permitted subclass VarHandleInts$FieldStaticReadOnly",
-								"permitted subclass VarHandleLongs$Array",
-								"permitted subclass VarHandleLongs$FieldInstanceReadOnly",
-								"permitted subclass VarHandleLongs$FieldStaticReadOnly",
-								"permitted subclass VarHandleReferences$Array",
-								"permitted subclass VarHandleReferences$FieldInstanceReadOnly",
-								"permitted subclass VarHandleReferences$FieldStaticReadOnly",
-								"permitted subclass VarHandleSegmentViewBase",
-								"permitted subclass VarHandleShorts$Array",
-								"permitted subclass VarHandleShorts$FieldInstanceReadOnly",
-								"permitted subclass VarHandleShorts$FieldStaticReadOnly"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -608,10 +567,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/Reference.html",
 							"addedTags": [
-								"permitted subclass FinalReference",
-								"permitted subclass PhantomReference",
-								"permitted subclass SoftReference",
-								"permitted subclass WeakReference"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -663,8 +619,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/reflect/Executable.html",
 							"addedTags": [
-								"permitted subclass Constructor",
-								"permitted subclass Method"
+								"sealed"
 							]
 						},
 						{
@@ -1145,7 +1100,8 @@
 							"name": "MatchException",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html",
+							"csr": "JDK-8284528"
 						},
 						{
 							"type": "class",
@@ -1662,40 +1618,46 @@
 									"name": "isVirtual()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "join(Duration)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "ofPlatform()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "ofVirtual()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "sleep(Duration)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "startVirtualThread(Runnable)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
@@ -1710,7 +1672,8 @@
 									"type": "method",
 									"name": "threadId()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()",
+									"csr": "JDK-8284169"
 								}
 							]
 						},
@@ -1718,7 +1681,8 @@
 							"type": "class",
 							"name": "WrongThreadException",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "enum",
@@ -1768,21 +1732,24 @@
 							"name": "Thread.Builder.OfPlatform",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "interface",
 							"name": "Thread.Builder.OfVirtual",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "interface",
 							"name": "Thread.Builder",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html",
+							"csr": "JDK-8284169"
 						}
 					]
 				},
@@ -1802,7 +1769,8 @@
 									"type": "field",
 									"name": "TWO",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO",
+									"csr": "JDK-8286841"
 								}
 							]
 						},
@@ -1902,8 +1870,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/InetAddress.html",
 							"addedTags": [
-								"permitted subclass Inet4Address",
-								"permitted subclass Inet6Address"
+								"sealed"
 							]
 						},
 						{
@@ -2017,7 +1984,8 @@
 									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)",
+									"csr": "JDK-8282192"
 								}
 							]
 						}
@@ -2058,13 +2026,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/Buffer.html",
 							"addedTags": [
-								"permitted subclass ByteBuffer",
-								"permitted subclass CharBuffer",
-								"permitted subclass DoubleBuffer",
-								"permitted subclass FloatBuffer",
-								"permitted subclass IntBuffer",
-								"permitted subclass LongBuffer",
-								"permitted subclass ShortBuffer"
+								"sealed"
 							]
 						},
 						{
@@ -2073,8 +2035,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ByteBuffer.html",
 							"addedTags": [
-								"permitted subclass HeapByteBuffer",
-								"permitted subclass MappedByteBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2092,12 +2053,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/CharBuffer.html",
 							"addedTags": [
-								"permitted subclass ByteBufferAsCharBufferB",
-								"permitted subclass ByteBufferAsCharBufferL",
-								"permitted subclass DirectCharBufferS",
-								"permitted subclass DirectCharBufferU",
-								"permitted subclass HeapCharBuffer",
-								"permitted subclass StringCharBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2115,11 +2071,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/DoubleBuffer.html",
 							"addedTags": [
-								"permitted subclass ByteBufferAsDoubleBufferB",
-								"permitted subclass ByteBufferAsDoubleBufferL",
-								"permitted subclass DirectDoubleBufferS",
-								"permitted subclass DirectDoubleBufferU",
-								"permitted subclass HeapDoubleBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2137,11 +2089,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/FloatBuffer.html",
 							"addedTags": [
-								"permitted subclass ByteBufferAsFloatBufferB",
-								"permitted subclass ByteBufferAsFloatBufferL",
-								"permitted subclass DirectFloatBufferS",
-								"permitted subclass DirectFloatBufferU",
-								"permitted subclass HeapFloatBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2159,11 +2107,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/IntBuffer.html",
 							"addedTags": [
-								"permitted subclass ByteBufferAsIntBufferB",
-								"permitted subclass ByteBufferAsIntBufferL",
-								"permitted subclass DirectIntBufferS",
-								"permitted subclass DirectIntBufferU",
-								"permitted subclass HeapIntBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2181,11 +2125,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/LongBuffer.html",
 							"addedTags": [
-								"permitted subclass ByteBufferAsLongBufferB",
-								"permitted subclass ByteBufferAsLongBufferL",
-								"permitted subclass DirectLongBufferS",
-								"permitted subclass DirectLongBufferU",
-								"permitted subclass HeapLongBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2203,7 +2143,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/MappedByteBuffer.html",
 							"addedTags": [
-								"permitted subclass DirectByteBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2242,11 +2182,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ShortBuffer.html",
 							"addedTags": [
-								"permitted subclass ByteBufferAsShortBufferB",
-								"permitted subclass ByteBufferAsShortBufferL",
-								"permitted subclass DirectShortBufferS",
-								"permitted subclass DirectShortBufferU",
-								"permitted subclass HeapShortBuffer"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -2581,6 +2517,89 @@
 				},
 				{
 					"type": "package",
+					"name": "java.time.chrono",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "IsoChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html#isIsoBased()",
+									"csr": "JDK-8282278"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JapaneseChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html#isIsoBased()",
+									"csr": "JDK-8282278"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MinguoChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html#isIsoBased()",
+									"csr": "JDK-8282278"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ThaiBuddhistChronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#isIsoBased()",
+									"csr": "JDK-8282278"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Chronology",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isIsoBased()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html#isIsoBased()",
+									"csr": "JDK-8282278"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.time.format",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/package-summary.html",
@@ -2667,8 +2686,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneId.html",
 							"addedTags": [
-								"permitted subclass ZoneOffset",
-								"permitted subclass ZoneRegion"
+								"sealed"
 							]
 						},
 						{
@@ -2750,14 +2768,16 @@
 									"name": "newThreadPerTaskExecutor(ThreadFactory)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "newVirtualThreadPerTaskExecutor()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()",
+									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
@@ -2801,7 +2821,8 @@
 									"type": "method",
 									"name": "close()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#close()"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#close()",
+									"csr": "JDK-8286341"
 								},
 								{
 									"type": "method",
@@ -3044,6 +3065,29 @@
 				},
 				{
 					"type": "package",
+					"name": "java.util.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ToolProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "description()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html#description()",
+									"csr": "JDK-8286659"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util.stream",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/stream/package-summary.html",
@@ -3171,8 +3215,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/EnumSet.html",
 							"addedTags": [
-								"permitted subclass JumboEnumSet",
-								"permitted subclass RegularEnumSet"
+								"sealed"
 							]
 						},
 						{
@@ -3192,6 +3235,21 @@
 						},
 						{
 							"type": "class",
+							"name": "HashSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newHashSet(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#newHashSet(int)",
+									"csr": "JDK-8287419"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "HexFormat",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HexFormat.html",
@@ -3203,18 +3261,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/IllegalFormatException.html",
 							"addedTags": [
-								"permitted subclass DuplicateFormatFlagsException",
-								"permitted subclass FormatFlagsConversionMismatchException",
-								"permitted subclass IllegalFormatArgumentIndexException",
-								"permitted subclass IllegalFormatCodePointException",
-								"permitted subclass IllegalFormatConversionException",
-								"permitted subclass IllegalFormatFlagsException",
-								"permitted subclass IllegalFormatPrecisionException",
-								"permitted subclass IllegalFormatWidthException",
-								"permitted subclass MissingFormatArgumentException",
-								"permitted subclass MissingFormatWidthException",
-								"permitted subclass UnknownFormatConversionException",
-								"permitted subclass UnknownFormatFlagsException"
+								"sealed"
 							]
 						},
 						{
@@ -3229,6 +3276,21 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashMap.html#newLinkedHashMap(int)",
 									"csr": "JDK-8284377"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedHashSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newLinkedHashSet(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashSet.html#newLinkedHashSet(int)",
+									"csr": "JDK-8287419"
 								}
 							]
 						},
@@ -4361,8 +4423,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
 							"addedTags": [
-								"permitted subclass ICC_ProfileGray",
-								"permitted subclass ICC_ProfileRGB"
+								"sealed"
 							],
 							"deltas": [
 								{
@@ -4387,17 +4448,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/AppEvent.html",
 							"addedTags": [
-								"permitted subclass AboutEvent",
-								"permitted subclass AppForegroundEvent",
-								"permitted subclass AppHiddenEvent",
-								"permitted subclass AppReopenedEvent",
-								"permitted subclass FilesEvent",
-								"permitted subclass OpenURIEvent",
-								"permitted subclass PreferencesEvent",
-								"permitted subclass QuitEvent",
-								"permitted subclass ScreenSleepEvent",
-								"permitted subclass SystemSleepEvent",
-								"permitted subclass UserSessionEvent"
+								"sealed"
 							]
 						},
 						{
@@ -4406,8 +4457,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/FilesEvent.html",
 							"addedTags": [
-								"permitted subclass OpenFilesEvent",
-								"permitted subclass PrintFilesEvent"
+								"sealed"
 							]
 						}
 					]
@@ -4561,8 +4611,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/InputEvent.html",
 							"addedTags": [
-								"permitted subclass KeyEvent",
-								"permitted subclass MouseEvent"
+								"sealed"
 							]
 						},
 						{
@@ -4770,8 +4819,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/Path2D.html",
 							"addedTags": [
-								"permitted subclass Path2D$Double",
-								"permitted subclass Path2D$Float"
+								"sealed"
 							]
 						},
 						{
@@ -5035,8 +5083,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/MultipleGradientPaint.html",
 							"addedTags": [
-								"permitted subclass LinearGradientPaint",
-								"permitted subclass RadialGradientPaint"
+								"sealed"
 							]
 						},
 						{
@@ -5092,8 +5139,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/TextComponent.html",
 							"addedTags": [
-								"permitted subclass TextArea",
-								"permitted subclass TextField"
+								"sealed"
 							]
 						},
 						{
@@ -5524,6 +5570,23 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.sound.midi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Track",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/Track.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.sound.sampled.spi",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/sampled/spi/package-summary.html",
@@ -5930,7 +5993,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
 							"addedTags": [
-								"permitted subclass BasicSplitPaneUI$BasicVerticalLayoutManager"
+								"sealed"
 							]
 						},
 						{
@@ -6922,10 +6985,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
 							"addedTags": [
-								"permitted subclass StyleConstants$CharacterConstants",
-								"permitted subclass StyleConstants$ColorConstants",
-								"permitted subclass StyleConstants$FontConstants",
-								"permitted subclass StyleConstants$ParagraphConstants"
+								"sealed"
 							]
 						}
 					]
@@ -7090,8 +7150,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.Group.html",
 							"addedTags": [
-								"permitted subclass GroupLayout$ParallelGroup",
-								"permitted subclass GroupLayout$SequentialGroup"
+								"sealed"
 							]
 						},
 						{
@@ -7100,7 +7159,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html",
 							"addedTags": [
-								"permitted subclass GroupLayout$BaselineGroup"
+								"sealed"
 							]
 						},
 						{
@@ -7550,7 +7609,8 @@
 									"type": "method",
 									"name": "localAddress(InetAddress)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#localAddress(java.net.InetAddress)"
+									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#localAddress(java.net.InetAddress)",
+									"csr": "JDK-8286583"
 								}
 							]
 						},

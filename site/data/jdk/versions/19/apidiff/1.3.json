@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+23-1706"
+		"version": "19-ea+28-2110"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -166,8 +166,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
 					"addedTags": [
-						"permitted subclass ICC_ProfileGray",
-						"permitted subclass ICC_ProfileRGB"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -917,8 +916,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/InputEvent.html",
 					"addedTags": [
-						"permitted subclass KeyEvent",
-						"permitted subclass MouseEvent"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -6324,8 +6322,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/TextComponent.html",
 					"addedTags": [
-						"permitted subclass TextArea",
-						"permitted subclass TextField"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -8966,7 +8963,8 @@
 			"type": "package",
 			"name": "java.lang.foreign",
 			"status": "added",
-			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html"
+			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html",
+			"csr": "JDK-8282192"
 		},
 		{
 			"type": "package",
@@ -9027,10 +9025,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/Reference.html",
 					"addedTags": [
-						"permitted subclass FinalReference",
-						"permitted subclass PhantomReference",
-						"permitted subclass SoftReference",
-						"permitted subclass WeakReference"
+						"sealed"
 					],
 					"deltas": [
 						{
@@ -13700,7 +13695,8 @@
 					"name": "MatchException",
 					"status": "added",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html",
+					"csr": "JDK-8284528"
 				},
 				{
 					"type": "class",
@@ -15863,27 +15859,31 @@
 							"name": "isVirtual()",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "method",
 							"name": "join(Duration)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "method",
 							"name": "ofPlatform()",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "method",
 							"name": "ofVirtual()",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "method",
@@ -15916,14 +15916,16 @@
 							"type": "method",
 							"name": "sleep(Duration)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "method",
 							"name": "startVirtualThread(Runnable)",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
+							"csr": "JDK-8284169"
 						},
 						{
 							"type": "method",
@@ -15953,7 +15955,8 @@
 							"type": "method",
 							"name": "threadId()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()",
+							"csr": "JDK-8284169"
 						}
 					]
 				},
@@ -16081,7 +16084,8 @@
 					"type": "class",
 					"name": "WrongThreadException",
 					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html",
+					"csr": "JDK-8284169"
 				},
 				{
 					"type": "enum",
@@ -16172,21 +16176,24 @@
 					"name": "Thread.Builder.OfPlatform",
 					"status": "added",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
+					"csr": "JDK-8284169"
 				},
 				{
 					"type": "interface",
 					"name": "Thread.Builder.OfVirtual",
 					"status": "added",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
+					"csr": "JDK-8284169"
 				},
 				{
 					"type": "interface",
 					"name": "Thread.Builder",
 					"status": "added",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html",
+					"csr": "JDK-8284169"
 				},
 				{
 					"type": "interface",
@@ -16296,7 +16303,8 @@
 							"type": "field",
 							"name": "TWO",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO"
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO",
+							"csr": "JDK-8286841"
 						},
 						{
 							"type": "field",
@@ -17162,8 +17170,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/InetAddress.html",
 					"addedTags": [
-						"permitted subclass Inet4Address",
-						"permitted subclass Inet6Address"
+						"sealed"
 					],
 					"removedTags": [
 						"final"
@@ -26570,6 +26577,13 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "newHashSet(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#newHashSet(int)",
+							"csr": "JDK-8287419"
+						},
+						{
+							"type": "method",
 							"name": "spliterator()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#spliterator()"
@@ -30050,8 +30064,11 @@
 				{
 					"type": "class",
 					"name": "Track",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/Track.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -32349,7 +32366,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
 					"addedTags": [
-						"permitted subclass BasicSplitPaneUI$BasicVerticalLayoutManager"
+						"sealed"
 					]
 				},
 				{
@@ -36304,10 +36321,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
 					"addedTags": [
-						"permitted subclass StyleConstants$CharacterConstants",
-						"permitted subclass StyleConstants$ColorConstants",
-						"permitted subclass StyleConstants$FontConstants",
-						"permitted subclass StyleConstants$ParagraphConstants"
+						"sealed"
 					],
 					"deltas": [
 						{

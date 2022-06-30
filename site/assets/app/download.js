@@ -31,7 +31,7 @@ Vue.component('downloadlist', {
               <td>{{ package.java_version }}</td>
               <td>{{ package.package_type }}</td>
               <td>{{ package.operating_system }}-{{ package.architecture }}</td>
-              <td style="max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.filename" v-on:click.prevent="download(package.id)">{{ package.filename }}</a></td>
+              <td style="max-width:400px;overflow:hidden;text-overflow:ellipsis;"><a style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" v-bind:href="package.links.pkg_download_redirect">{{ package.filename }}</a></td>
             </tr>
           </tbody>
         </table>
@@ -55,8 +55,9 @@ Vue.component('downloadlist', {
                 { id: '15', name: '15', query: 'version=15' },
                 { id: '16', name: '16', query: 'version=16' },
                 { id: '17', name: '17', query: 'version=17' },
-                { id: '18', name: '18', query: 'version=18-ea' },
-                { id: '19', name: '19', query: 'version=19-ea' }
+                { id: '18', name: '18', query: 'version=18' },
+                { id: '19', name: '19', query: 'version=19-ea' },
+                { id: '20', name: '20', query: 'version=20-ea' }
             ],
             typeset: [
                 { id: 'all', name: 'All', query: '' },
@@ -69,13 +70,13 @@ Vue.component('downloadlist', {
                 { id: 'alpine-arm64', name: 'alpine-arm64', query: 'libc_type=musl&architecture=arm64,aarch64' },
                 { id: 'alpine-x64', name: 'alpine-x64', query: 'libc_type=musl&architecture=x64,amd64' },
                 { id: 'linux-arm32', name: 'linux-arm32', query: 'operating_system=linux&architecture=arm' },
-                { id: 'linux-arm64', name: 'linux-arm64', query: 'operating_system=linux&architecture=arm64,aarch64' },
+                { id: 'linux-arm64', name: 'linux-arm64', query: 'libc_type=libc,glibc&operating_system=linux&architecture=arm64,aarch64' },
                 { id: 'linux-ia64', name: 'linux-ia64', query: 'operating_system=linux&architecture=ia64' },
                 { id: 'linux-ppc64', name: 'linux-ppc64', query: 'operating_system=linux&architecture=ppc64' },
                 { id: 'linux-ppc64le', name: 'linux-ppc64le', query: 'operating_system=linux&architecture=ppc64le' },
                 { id: 'linux-s390x', name: 'linux-s390x', query: 'operating_system=linux&architecture=s390x' },
                 { id: 'linux-x86', name: 'linux-x86', query: 'operating_system=linux&architecture=x86' },
-                { id: 'linux-x64', name: 'linux-x64', query: 'operating_system=linux&architecture=x64,amd64' },
+                { id: 'linux-x64', name: 'linux-x64', query: 'libc_type=libc,glibc&operating_system=linux&architecture=x64,amd64' },
                 { id: 'macos-arm64', name: 'macos-arm64', query: 'operating_system=macos&architecture=arm64,aarch64' },
                 { id: 'macos-x64', name: 'macos-x64', query: 'operating_system=macos&architecture=x64,amd64' },
                 { id: 'solaris-x86', name: 'solaris-x86', query: 'operating_system=solaris&architecture=x86' },
@@ -172,17 +173,8 @@ Vue.component('downloadlist', {
                 this.loading = false;
             });
         },
-        download(packageid) {
-            this.discoRequest("packages/" + packageid, response => {
-                this.discoRequest("ephemeral_ids/" + response.data.result[0].ephemeral_id, response => {
-                    var item = response.data.result[0];
-                    link = item.direct_download_uri || item.download_site_uri;
-                    window.open(link, "_self");
-                });
-            });
-        },
         discoRequest(path, handler) {
-            axios.get("https://api.foojay.io/disco/v2.0/" + path).then(handler);
+            axios.get("https://api.foojay.io/disco/v3.0/" + path).then(handler);
         }
     }
 });
