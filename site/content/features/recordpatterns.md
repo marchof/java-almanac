@@ -106,7 +106,7 @@ The following sandbox contains the complete example. Note that a record pattern 
 case Initial(var seq, var end) when s == 0
 ```
 
-{{< sandbox version=java19 preview="true" mainclass="SubSequence" >}}{{< sandboxsource "SubSequence.java" >}}
+{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
 
 sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
@@ -417,7 +417,7 @@ This too exceeds the capabilities of the Java type system. In Scala 3, these inf
 
 Here is a sandbox so that you can play with the code of this section.
 
-{{< sandbox version=java19 preview="true" mainclass="JSONValue" >}}{{< sandboxsource "JSONValue.java" >}}
+{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 sealed interface JSONValue {}
 sealed interface JSONPrimitive<T> extends JSONValue {}
 record JSONNumber(double value) implements JSONPrimitive<Double> {}
@@ -525,7 +525,7 @@ What if those methods throw an exception?
 
 In that case, the `switch` throws a `MatchError` whose cause is that exception. Check it out in this sandbox:
 
-{{< sandbox version=java19 preview="true" mainclass="SubSequence" >}}{{< sandboxsource "SubSequence.java" >}}
+{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
 
 sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
@@ -610,10 +610,3 @@ Record patterns are a piece of the pattern matching toolset that Java is buildin
 
 * [JEP 394: Record Patterns (Preview), OpenJDK](https://openjdk.java.net/jeps/405)
 * [JEP 427: Pattern Matching for switch (Third Preview), OpenJDK](https://openjdk.java.net/jeps/427)
-
-Comments powered by [Talkyard](https://www.talkyard.io).
-
-* [More Entries](../index.html)
-* [RSS Feed ![.png](../rss-icon.png)](../rss.xml)
-
-
