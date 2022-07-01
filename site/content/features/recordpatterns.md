@@ -608,5 +608,5 @@ Record patterns are a piece of the pattern matching toolset that Java is buildin
 
 ## References
 
-* [JEP 394: Record Patterns (Preview), OpenJDK](https://openjdk.java.net/jeps/405)
+* [JEP 405: Record Patterns (Preview), OpenJDK](https://openjdk.java.net/jeps/405)
 * [JEP 427: Pattern Matching for switch (Third Preview), OpenJDK](https://openjdk.java.net/jeps/427)
