@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+3-101"
+		"version": "20-ea+4-158"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -3452,6 +3452,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Executable.html#accessFlags()"
+						},
+						{
+							"type": "method",
 							"name": "getParameterCount()",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Executable.html#getParameterCount()",
@@ -3467,6 +3473,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Field.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Field.html#accessFlags()"
+						},
 						{
 							"type": "method",
 							"name": "setAccessible(boolean)",
@@ -3536,6 +3548,20 @@
 				},
 				{
 					"type": "class",
+					"name": "Parameter",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Parameter.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Parameter.html#accessFlags()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Proxy",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Proxy.html",
@@ -3579,6 +3605,18 @@
 							"status": "removed"
 						}
 					]
+				},
+				{
+					"type": "enum",
+					"name": "AccessFlag.Location",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html"
+				},
+				{
+					"type": "enum",
+					"name": "AccessFlag",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/AccessFlag.html"
 				},
 				{
 					"type": "interface",
@@ -3680,6 +3718,20 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invokeDefault(java.lang.Object,java.lang.reflect.Method,java.lang.Object...)",
 							"csr": "JDK-8253870"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Member",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Member.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Member.html#accessFlags()"
 						}
 					]
 				}
@@ -4640,6 +4692,12 @@
 						"implements TypeDescriptor.OfField"
 					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Class.html#accessFlags()"
+						},
 						{
 							"type": "method",
 							"name": "arrayType()",

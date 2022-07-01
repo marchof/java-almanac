@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+3-101"
+		"version": "20-ea+4-158"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -10344,6 +10344,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Field.html#accessFlags()"
+						},
+						{
+							"type": "method",
 							"name": "getAnnotatedType()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Field.html#getAnnotatedType()"
@@ -10654,6 +10660,18 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/UndeclaredThrowableException.html"
 				},
 				{
+					"type": "enum",
+					"name": "AccessFlag.Location",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html"
+				},
+				{
+					"type": "enum",
+					"name": "AccessFlag",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/AccessFlag.html"
+				},
+				{
 					"type": "interface",
 					"name": "AnnotatedArrayType",
 					"status": "added",
@@ -10713,6 +10731,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Member.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/Member.html#accessFlags()"
+						},
 						{
 							"type": "method",
 							"name": "isSynthetic()",
@@ -13392,6 +13416,12 @@
 						"implements TypeDescriptor.OfField"
 					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "accessFlags()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Class.html#accessFlags()"
+						},
 						{
 							"type": "method",
 							"name": "arrayType()",
