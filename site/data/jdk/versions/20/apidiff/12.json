@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+4-158"
+		"version": "20-ea+5-220"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -2868,6 +2868,34 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String,java.nio.charset.Charset)",
 									"csr": "JDK-8275348"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.file.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileSystemProvider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "exists(Path, LinkOption...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#exists(java.nio.file.Path,java.nio.file.LinkOption...)"
+								},
+								{
+									"type": "method",
+									"name": "readAttributesIfExists(Path, Class, LinkOption...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributesIfExists(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption...)"
 								}
 							]
 						}
