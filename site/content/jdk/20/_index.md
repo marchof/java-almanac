@@ -8,7 +8,7 @@ type: sandbox
 
 ## Sandbox
 
-Instantly compile and run Java 19 snippets without a local Java installation.
+Instantly compile and run Java 20 snippets without a local Java installation.
 
 {{< sandbox version="java20" mainclass="Java20" preview="true" >}}
 {{< sandboxsource "Java20.java" >}}
