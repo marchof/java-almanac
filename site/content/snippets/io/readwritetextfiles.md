@@ -3,7 +3,7 @@ title: Read and Write Text Files
 type: sandbox
 ---
 
-The [`Files`](https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
+The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
  to read and write text content from/to files. When converting between Unicode
  strings and binary files content a encoding is applied. Do not rely on system
  defaults, always supply an encoding for portable behavior.

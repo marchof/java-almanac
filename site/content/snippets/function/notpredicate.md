@@ -4,7 +4,7 @@ type: sandbox
 ---
 
 With the static method
- [`Predicate.not()`](https://download.java.net/java/early_access/jdk17/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)) we can
+ [`Predicate.not()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)) we can
  invert conditions. This is particular useful in combination with method
  references.
 
