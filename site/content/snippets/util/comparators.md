@@ -13,6 +13,7 @@ Since [Java 8](/jdk/8)
 {{< sandbox version="java17" mainclass="Comparators" >}}
 {{< sandboxsource "Comparators.java" >}}
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -26,13 +27,16 @@ public class Comparators {
 	static Comparator<String> c2 = String::compareTo;
 
 	// There is a factory method to compare on attributes
-	static Comparator<String> c3 = Comparator.comparing(String::length);
+	static Comparator<String> c3 = Comparator.comparingInt(String::length);
 
 	// Comparators can be reversed and chained
 	static Comparator<String> c4 = Comparator //
-			.comparing(String::length) //
+			.comparingInt(String::length) //
 			.reversed() //
 			.thenComparing(String::compareToIgnoreCase);
+
+	// Comparators can be made null safe:
+	static Comparator<String> c5 = Comparator.nullsFirst(c1);
 
 	public static void main(String[] args) {
 		var input = List.of("apple", "Cherry", "Fig", "Pear", "Mango");
@@ -42,6 +46,10 @@ public class Comparators {
 		System.out.println(input.stream().sorted(c2).toList());
 		System.out.println(input.stream().sorted(c3).toList());
 		System.out.println(input.stream().sorted(c4).toList());
+
+		// Sort a list with nulls:
+		var inputWithNulls = Arrays.asList("c", null, null, "a", "B");
+		System.out.println(inputWithNulls.stream().sorted(c5).toList());
 
 		// Find the minimal element in respect to a Comparator:
 		System.out.println(Collections.min(input, c4));
