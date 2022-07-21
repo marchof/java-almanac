@@ -2,7 +2,7 @@ Vue.component('tabs', {
     template: `
         <div>
             <div class="tabs">
-              <span class="infotext" v-bind:title="infotooltip">{{ infotext }}</span>
+              <slot name="info"></slot>
               <ul>
                 <li v-for="tab in tabs" :class="{ 'active': tab.active }">
                     <a href="" @click.prevent="selectTab(tab)">{{ tab.name }}</a>
@@ -14,10 +14,6 @@ Vue.component('tabs', {
             </div>
         </div>
     `,
-    props: {
-        infotext: '',
-        infotooltip: ''
-    },
     data() {
         return {
             tabs: []

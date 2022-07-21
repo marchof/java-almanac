@@ -1,6 +1,26 @@
 Vue.component('sandbox', {
     template: `
-        <tabs v-bind:infotext="versioninfo" v-bind:infotooltip="versioninfoext">
+        <tabs>
+            <template #info>
+              <span class="infotext">
+                <span v-bind:title="versioninfoext">{{ versioninfo }}</span>
+                <select v-model="version">
+                  <option>java8</option>
+                  <option>java9</option>
+                  <option>java10</option>
+                  <option>java11</option>
+                  <option>java12</option>
+                  <option>java13</option>
+                  <option>java14</option>
+                  <option>java15</option>
+                  <option>java16</option>
+                  <option>java17</option>
+                  <option>java18</option>
+                  <option>java19</option>
+                  <option>java20</option>
+                </select>
+              </span>
+            </template>
             <slot></slot>
             <tab v-bind:onTabClicked="compileandrun" name="▶︎ Run">
                 <div class="sandbox-console">{{ output }}</div>
@@ -21,14 +41,22 @@ Vue.component('sandbox', {
         };
     },
     mounted() {
-        axios.get(this.serviceurl("version")).then(response => { 
-            this.versioninfo = response.data['java.runtime.version'];
-            this.versioninfoext = response.data['java.vendor'] + '\n' + response.data['java.vm.name'];
-        })
+        this.updateversioninfo();
+    },
+    watch: {
+        version: function (oldvalue, newvalue) {
+            this.updateversioninfo();
+        }
     },
     methods: {
         serviceurl(action) {
             return "https://sandbox.javaalmanac.io/jdk/" + this.version.replace("java", "") + "/" + action;
+        },
+        updateversioninfo() {
+            axios.get(this.serviceurl("version")).then(response => { 
+                this.versioninfo = response.data['java.runtime.version'];
+                this.versioninfoext = response.data['java.vendor'] + '\n' + response.data['java.vm.name'];
+            });
         },
         compileandrun() {
             this.output = "Compile and run with " + this.versioninfo + " ...";
