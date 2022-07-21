@@ -70,13 +70,13 @@ Vue.component('sandbox-source', {
             mode: "ace/mode/java",
             theme: 'ace/theme/almanac',
             highlightActiveLine: false,
-            showGutter: false,
             showPrintMargin: false,
+            showFoldWidgets: false,
             maxLines: Infinity,
             useSoftTabs: false,
             showInvisibles: this.$parent.$parent.showInvisibles
         });
-        this.editor.setValue(this.source, 1);
+        this.editor.setValue(this.source, -1);
         this.editor.on('change', () => {
             this.source = this.editor.getValue()
         });

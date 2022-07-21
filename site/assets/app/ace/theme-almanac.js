@@ -4,7 +4,7 @@ exports.isDark = false;
 exports.cssClass = "ace-almanac";
 exports.cssText = "\
 .ace-almanac .ace_gutter {\
-background: #e8e8e8;\
+background: #fff;\
 color: #AAA;\
 }\
 .ace-almanac  {\
@@ -79,6 +79,9 @@ border: 1px solid rgb(192, 192, 192);\
 }\
 .ace-almanac .ace_gutter-active-line {\
 background-color : rgba(0, 0, 0, 0.07);\
+}\
+.ace-almanac .ace_gutter-cell {\
+padding-left: 9px;\
 }\
 .ace-almanac .ace_marker-layer .ace_selected-word {\
 background: rgb(250, 250, 255);\
