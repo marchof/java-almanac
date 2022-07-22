@@ -53,6 +53,8 @@ Vue.component('sandbox', {
             return "https://sandbox.javaalmanac.io/jdk/" + this.version.replace("java", "") + "/" + action;
         },
         updateversioninfo() {
+            this.versioninfo = "";
+            this.versioninfoext = "";
             axios.get(this.serviceurl("version")).then(response => { 
                 this.versioninfo = response.data['java.runtime.version'];
                 this.versioninfoext = response.data['java.vendor'] + '\n' + response.data['java.vm.name'];
