@@ -130,7 +130,7 @@ public class S3Output implements ApiOutput {
 				.contentType(contentType) //
 				.contentMD5(md5.base64()), //
 				body);
-		stats.addFile(body.contentLength());
+		body.optionalContentLength().ifPresent(stats::addFile);
 	}
 
 }
