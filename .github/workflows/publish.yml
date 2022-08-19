@@ -9,7 +9,7 @@ jobs:
   publish-web:
     runs-on: ubuntu-latest
     env:
-      HUGO_IMAGE: klakegg/hugo:0.82.0
+      HUGO_IMAGE: klakegg/hugo:0.101.0
     steps:
     - name: Checkout
       uses: actions/checkout@v1
