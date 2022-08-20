@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "19",
 		"vendor": "open",
-		"version": "19-ea+34-2229"
+		"version": "19+36-2238"
 	},
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+9-505"
+		"version": "20-ea+11-661"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -158,6 +158,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/AccessFlag.html",
 							"csr": "JDK-8281660"
+						},
+						{
+							"type": "enum",
+							"name": "ClassFileFormatVersion",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html"
 						},
 						{
 							"type": "interface",
@@ -318,6 +324,34 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.compiler/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Elements",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.compiler/javax/lang/model/util/Elements.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isCanonicalConstructor(ExecutableElement)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.compiler/javax/lang/model/util/Elements.html#isCanonicalConstructor(javax.lang.model.element.ExecutableElement)"
+								},
+								{
+									"type": "method",
+									"name": "isCompactConstructor(ExecutableElement)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.compiler/javax/lang/model/util/Elements.html#isCompactConstructor(javax.lang.model.element.ExecutableElement)"
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "javax.lang.model",
