@@ -67,6 +67,7 @@ Vue.component('downloadlist', {
             platformset: [
                 { id: 'all', name: 'All', query: '' },
                 { id: 'aix-ppc64', name: 'aix-ppc64', query: 'operating_system=aix&architecture=ppc64' },
+                { id: 'alpine-arm62', name: 'alpine-arm62', query: 'libc_type=musl&architecture=arm' },
                 { id: 'alpine-arm64', name: 'alpine-arm64', query: 'libc_type=musl&architecture=arm64,aarch64' },
                 { id: 'alpine-x64', name: 'alpine-x64', query: 'libc_type=musl&architecture=x64,amd64' },
                 { id: 'linux-arm32', name: 'linux-arm32', query: 'operating_system=linux&architecture=arm' },
