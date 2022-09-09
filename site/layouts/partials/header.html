@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.75">
   <title>{{ $.Title }} - {{ $.Site.Title }}</title>
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="shortcut icon" type="image/png" href="{{ "img/duke64.png" | relURL }}" />
 </head>
 <body>
 <div class="header-bar">
 <div class="header">
+  <img src="{{ "img/duke.svg" | relURL }}" title="Duke" width=52 height="56" align="left" style="margin-right:8px"></a>
   <a href="https://github.com/marchof/java-almanac"><img src="{{ "img/github.png" | relURL }}" title="Java Almanac on GitHub.com" width="32" height="32" align="right"></a>
   <span style="font-size:11pt;color:#888;font-weight:bold">The Java Version Almanac</span><br>
   <span><a style="font-size:19pt;text-decoration:none;color:#000;font-weight:bold" href="{{ $.Site.BaseURL }}">{{ $.Site.Title }}</a></span>
