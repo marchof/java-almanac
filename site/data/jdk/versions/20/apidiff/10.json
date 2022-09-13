@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+13-860"
+		"version": "20-ea+14-949"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -11060,6 +11060,26 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.desktop/javax/swing/text/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "DefaultEditorKit",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "beginLineUpAction",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginLineUpAction"
+								},
+								{
+									"type": "field",
+									"name": "endLineDownAction",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endLineDownAction"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "DefaultTextUI",
