@@ -15,32 +15,32 @@
 			"type": "module",
 			"name": "java.base",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.io",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "InvalidClassException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidClassException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InvalidClassException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "InvalidClassException(String, String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidClassException.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InvalidClassException.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282697"
 								},
 								{
 									"type": "method",
 									"name": "InvalidClassException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidClassException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InvalidClassException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282697"
 								}
 							]
@@ -49,13 +49,13 @@
 							"type": "class",
 							"name": "InvalidObjectException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidObjectException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InvalidObjectException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "InvalidObjectException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/InvalidObjectException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InvalidObjectException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282697"
 								}
 							]
@@ -64,7 +64,7 @@
 							"type": "class",
 							"name": "ObjectStreamClass",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamClass.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/ObjectStreamClass.html",
 							"addedTags": [
 								"final"
 							]
@@ -73,20 +73,20 @@
 							"type": "class",
 							"name": "ObjectStreamException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/ObjectStreamException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ObjectStreamException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/ObjectStreamException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282697"
 								},
 								{
 									"type": "method",
 									"name": "ObjectStreamException(Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/io/ObjectStreamException.html#%3Cinit%3E(java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/ObjectStreamException.html#%3Cinit%3E(java.lang.Throwable)",
 									"csr": "JDK-8282697"
 								}
 							]
@@ -97,20 +97,20 @@
 					"type": "package",
 					"name": "java.lang.foreign",
 					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/foreign/package-summary.html",
 					"csr": "JDK-8282192"
 				},
 				{
 					"type": "package",
 					"name": "java.lang.invoke",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "CallSite",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/CallSite.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/CallSite.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -119,7 +119,7 @@
 							"type": "class",
 							"name": "MethodHandle",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandle.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandle.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -128,14 +128,14 @@
 							"type": "class",
 							"name": "MethodHandles",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "collectCoordinates(VarHandle, int, MethodHandle)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)",
 									"csr": "JDK-8282192"
 								},
 								{
@@ -143,7 +143,7 @@
 									"name": "dropCoordinates(VarHandle, int, Class...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)",
 									"csr": "JDK-8282192"
 								},
 								{
@@ -151,7 +151,7 @@
 									"name": "filterCoordinates(VarHandle, int, MethodHandle...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)",
 									"csr": "JDK-8282192"
 								},
 								{
@@ -159,7 +159,7 @@
 									"name": "filterValue(VarHandle, MethodHandle, MethodHandle)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
 									"csr": "JDK-8282192"
 								},
 								{
@@ -167,7 +167,7 @@
 									"name": "insertCoordinates(VarHandle, int, Object...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)",
 									"csr": "JDK-8282192"
 								},
 								{
@@ -175,7 +175,7 @@
 									"name": "memorySegmentViewVarHandle(ValueLayout)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)",
 									"csr": "JDK-8282192"
 								},
 								{
@@ -183,7 +183,7 @@
 									"name": "permuteCoordinates(VarHandle, List, int...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)",
 									"csr": "JDK-8282192"
 								}
 							]
@@ -192,7 +192,7 @@
 							"type": "class",
 							"name": "VarHandle",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/invoke/VarHandle.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/invoke/VarHandle.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -203,19 +203,19 @@
 					"type": "package",
 					"name": "java.lang.ref",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/ref/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ReferenceQueue",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/ReferenceQueue.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/ref/ReferenceQueue.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "remove(long)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)",
 									"removedTags": [
 										"throws IllegalArgumentException"
 									]
@@ -226,7 +226,7 @@
 							"type": "class",
 							"name": "Reference",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/ref/Reference.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/ref/Reference.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -237,96 +237,96 @@
 					"type": "package",
 					"name": "java.lang",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Character.UnicodeBlock",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "ARABIC_EXTENDED_B",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_EXTENDED_B",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_EXTENDED_B",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "CYPRO_MINOAN",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYPRO_MINOAN",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYPRO_MINOAN",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "ETHIOPIC_EXTENDED_B",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC_EXTENDED_B",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ETHIOPIC_EXTENDED_B",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "KANA_EXTENDED_B",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_B",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_B",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "LATIN_EXTENDED_F",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_F",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_F",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "LATIN_EXTENDED_G",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_G",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#LATIN_EXTENDED_G",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "OLD_UYGHUR",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_UYGHUR",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OLD_UYGHUR",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "TANGSA",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGSA",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGSA",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "TOTO",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TOTO",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TOTO",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED_A",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED_A",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED_A",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "VITHKUQI",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VITHKUQI",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#VITHKUQI",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "ZNAMENNY_MUSICAL_NOTATION",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZNAMENNY_MUSICAL_NOTATION",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ZNAMENNY_MUSICAL_NOTATION",
 									"csr": "JDK-8279542"
 								}
 							]
@@ -335,13 +335,13 @@
 							"type": "class",
 							"name": "Double",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Double.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "PRECISION",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Double.html#PRECISION",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html#PRECISION",
 									"csr": "JDK-8285241"
 								}
 							]
@@ -350,13 +350,13 @@
 							"type": "class",
 							"name": "Float",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Float.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "PRECISION",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Float.html#PRECISION",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html#PRECISION",
 									"csr": "JDK-8285241"
 								}
 							]
@@ -365,20 +365,20 @@
 							"type": "class",
 							"name": "Integer",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "compress(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#compress(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html#compress(int,int)",
 									"csr": "JDK-8283893"
 								},
 								{
 									"type": "method",
 									"name": "expand(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Integer.html#expand(int,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html#expand(int,int)",
 									"csr": "JDK-8283893"
 								}
 							]
@@ -387,20 +387,20 @@
 							"type": "class",
 							"name": "Long",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "compress(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#compress(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html#compress(long,long)",
 									"csr": "JDK-8283893"
 								},
 								{
 									"type": "method",
 									"name": "expand(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Long.html#expand(long,long)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html#expand(long,long)",
 									"csr": "JDK-8283893"
 								}
 							]
@@ -410,20 +410,20 @@
 							"name": "MatchException",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/MatchException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/MatchException.html",
 							"csr": "JDK-8284528"
 						},
 						{
 							"type": "class",
 							"name": "Math",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Math.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "TAU",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Math.html#TAU",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Math.html#TAU",
 									"csr": "JDK-8283136"
 								}
 							]
@@ -432,13 +432,13 @@
 							"type": "class",
 							"name": "StrictMath",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/StrictMath.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/StrictMath.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "TAU",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/StrictMath.html#TAU",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/StrictMath.html#TAU",
 									"csr": "JDK-8283136"
 								}
 							]
@@ -447,13 +447,13 @@
 							"type": "class",
 							"name": "Thread",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getId()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#getId()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#getId()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -463,14 +463,14 @@
 									"name": "isVirtual()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#isVirtual()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#isVirtual()",
 									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "join(Duration)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#join(java.time.Duration)",
 									"csr": "JDK-8284169"
 								},
 								{
@@ -478,7 +478,7 @@
 									"name": "ofPlatform()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
 									"csr": "JDK-8284169"
 								},
 								{
@@ -486,14 +486,14 @@
 									"name": "ofVirtual()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
 									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "sleep(Duration)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#sleep(java.time.Duration)",
 									"csr": "JDK-8284169"
 								},
 								{
@@ -501,14 +501,14 @@
 									"name": "startVirtualThread(Runnable)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
 									"csr": "JDK-8284169"
 								},
 								{
 									"type": "method",
 									"name": "threadId()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.html#threadId()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html#threadId()",
 									"csr": "JDK-8284169"
 								}
 							]
@@ -517,48 +517,48 @@
 							"type": "class",
 							"name": "WrongThreadException",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/WrongThreadException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/WrongThreadException.html",
 							"csr": "JDK-8284169"
 						},
 						{
 							"type": "enum",
 							"name": "Character.UnicodeScript",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeScript.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "CYPRO_MINOAN",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYPRO_MINOAN",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYPRO_MINOAN",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "OLD_UYGHUR",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_UYGHUR",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_UYGHUR",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "TANGSA",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#TANGSA",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeScript.html#TANGSA",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "TOTO",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#TOTO",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeScript.html#TOTO",
 									"csr": "JDK-8279542"
 								},
 								{
 									"type": "field",
 									"name": "VITHKUQI",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Character.UnicodeScript.html#VITHKUQI",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Character.UnicodeScript.html#VITHKUQI",
 									"csr": "JDK-8279542"
 								}
 							]
@@ -568,7 +568,7 @@
 							"name": "Thread.Builder.OfPlatform",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
 							"csr": "JDK-8284169"
 						},
 						{
@@ -576,7 +576,7 @@
 							"name": "Thread.Builder.OfVirtual",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
 							"csr": "JDK-8284169"
 						},
 						{
@@ -584,7 +584,7 @@
 							"name": "Thread.Builder",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/lang/Thread.Builder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.Builder.html",
 							"csr": "JDK-8284169"
 						}
 					]
@@ -593,19 +593,19 @@
 					"type": "package",
 					"name": "java.math",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "BigDecimal",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "TWO",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigDecimal.html#TWO",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html#TWO",
 									"csr": "JDK-8286841"
 								}
 							]
@@ -614,13 +614,13 @@
 							"type": "class",
 							"name": "BigInteger",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigInteger.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigInteger.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "parallelMultiply(BigInteger)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/math/BigInteger.html#parallelMultiply(java.math.BigInteger)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigInteger.html#parallelMultiply(java.math.BigInteger)",
 									"csr": "JDK-8278886"
 								}
 							]
@@ -631,13 +631,13 @@
 					"type": "package",
 					"name": "java.net",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "InetAddress",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/InetAddress.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/InetAddress.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -646,20 +646,20 @@
 							"type": "class",
 							"name": "SocketException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/SocketException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/SocketException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SocketException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282688"
 								},
 								{
 									"type": "method",
 									"name": "SocketException(Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.Throwable)",
 									"csr": "JDK-8282688"
 								}
 							]
@@ -670,20 +670,20 @@
 					"type": "package",
 					"name": "java.nio.channels",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/channels/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FileChannel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/channels/FileChannel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)",
 									"csr": "JDK-8282192"
 								}
 							]
@@ -694,13 +694,13 @@
 					"type": "package",
 					"name": "java.nio",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Buffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/Buffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/Buffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -709,7 +709,7 @@
 							"type": "class",
 							"name": "ByteBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ByteBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/ByteBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -718,7 +718,7 @@
 							"type": "class",
 							"name": "CharBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/CharBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/CharBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -727,7 +727,7 @@
 							"type": "class",
 							"name": "DoubleBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/DoubleBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/DoubleBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -736,7 +736,7 @@
 							"type": "class",
 							"name": "FloatBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/FloatBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/FloatBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -745,7 +745,7 @@
 							"type": "class",
 							"name": "IntBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/IntBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/IntBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -754,7 +754,7 @@
 							"type": "class",
 							"name": "LongBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/LongBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/LongBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -763,7 +763,7 @@
 							"type": "class",
 							"name": "MappedByteBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/MappedByteBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/MappedByteBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -772,7 +772,7 @@
 							"type": "class",
 							"name": "ShortBuffer",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/nio/ShortBuffer.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/ShortBuffer.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -783,19 +783,19 @@
 					"type": "package",
 					"name": "java.security.spec",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/security/spec/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "PSSParameterSpec",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/security/spec/PSSParameterSpec.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "DEFAULT",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT",
 									"addedTags": [
 										"deprecated"
 									]
@@ -804,7 +804,7 @@
 									"type": "method",
 									"name": "PSSParameterSpec(int)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -817,19 +817,19 @@
 					"type": "package",
 					"name": "java.text",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/text/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DecimalFormatSymbols",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/text/DecimalFormatSymbols.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormatSymbols.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getLocale()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/text/DecimalFormatSymbols.html#getLocale()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormatSymbols.html#getLocale()",
 									"csr": "JDK-8282687"
 								}
 							]
@@ -840,19 +840,19 @@
 					"type": "package",
 					"name": "java.time.chrono",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "IsoChronology",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/IsoChronology.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isIsoBased()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/IsoChronology.html#isIsoBased()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/IsoChronology.html#isIsoBased()",
 									"csr": "JDK-8282278"
 								}
 							]
@@ -861,13 +861,13 @@
 							"type": "class",
 							"name": "JapaneseChronology",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/JapaneseChronology.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isIsoBased()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/JapaneseChronology.html#isIsoBased()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/JapaneseChronology.html#isIsoBased()",
 									"csr": "JDK-8282278"
 								}
 							]
@@ -876,13 +876,13 @@
 							"type": "class",
 							"name": "MinguoChronology",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/MinguoChronology.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isIsoBased()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/MinguoChronology.html#isIsoBased()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/MinguoChronology.html#isIsoBased()",
 									"csr": "JDK-8282278"
 								}
 							]
@@ -891,13 +891,13 @@
 							"type": "class",
 							"name": "ThaiBuddhistChronology",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isIsoBased()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#isIsoBased()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#isIsoBased()",
 									"csr": "JDK-8282278"
 								}
 							]
@@ -906,13 +906,13 @@
 							"type": "interface",
 							"name": "Chronology",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/Chronology.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isIsoBased()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/chrono/Chronology.html#isIsoBased()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/chrono/Chronology.html#isIsoBased()",
 									"csr": "JDK-8282278"
 								}
 							]
@@ -923,26 +923,26 @@
 					"type": "package",
 					"name": "java.time.format",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DateTimeFormatterBuilder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "appendLocalized(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.lang.String)",
 									"csr": "JDK-8243445"
 								},
 								{
 									"type": "method",
 									"name": "getLocalizedDateTimePattern(String, Chronology, Locale)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.lang.String,java.time.chrono.Chronology,java.util.Locale)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.lang.String,java.time.chrono.Chronology,java.util.Locale)",
 									"csr": "JDK-8243445"
 								}
 							]
@@ -951,13 +951,13 @@
 							"type": "class",
 							"name": "DateTimeFormatter",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/DateTimeFormatter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/DateTimeFormatter.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ofLocalizedPattern(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedPattern(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedPattern(java.lang.String)",
 									"csr": "JDK-8243445"
 								}
 							]
@@ -968,13 +968,13 @@
 					"type": "package",
 					"name": "java.time",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ZoneId",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneId.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/ZoneId.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -983,13 +983,13 @@
 							"type": "class",
 							"name": "ZoneOffset",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneOffset.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/ZoneOffset.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "normalized()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/time/ZoneOffset.html#normalized()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/ZoneOffset.html#normalized()",
 									"csr": "JDK-8283681"
 								}
 							]
@@ -1000,33 +1000,33 @@
 					"type": "package",
 					"name": "java.util.concurrent",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "CompletableFuture",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/CompletableFuture.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#exceptionNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#exceptionNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#resultNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#resultNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#state()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/CompletableFuture.html#state()",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1035,7 +1035,7 @@
 							"type": "class",
 							"name": "ConcurrentHashMap.KeySetView",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html",
 							"addedTags": [
 								"final"
 							]
@@ -1044,14 +1044,14 @@
 							"type": "class",
 							"name": "Executors",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Executors.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newThreadPerTaskExecutor(ThreadFactory)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)",
 									"csr": "JDK-8284169"
 								},
 								{
@@ -1059,7 +1059,7 @@
 									"name": "newVirtualThreadPerTaskExecutor()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()",
 									"csr": "JDK-8284169"
 								}
 							]
@@ -1068,27 +1068,27 @@
 							"type": "class",
 							"name": "ForkJoinPool",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "close()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#close()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#close()",
 									"csr": "JDK-8286341"
 								},
 								{
 									"type": "method",
 									"name": "lazySubmit(ForkJoinTask)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#lazySubmit(java.util.concurrent.ForkJoinTask)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#lazySubmit(java.util.concurrent.ForkJoinTask)",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "setParallelism(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#setParallelism(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#setParallelism(int)",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1097,48 +1097,48 @@
 							"type": "class",
 							"name": "ForkJoinTask",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "adaptInterruptible(Callable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.util.concurrent.Callable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.util.concurrent.Callable)",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#exceptionNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#exceptionNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "quietlyJoin(long, TimeUnit)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin(long,java.util.concurrent.TimeUnit)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin(long,java.util.concurrent.TimeUnit)",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "quietlyJoinUninterruptibly(long, TimeUnit)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoinUninterruptibly(long,java.util.concurrent.TimeUnit)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoinUninterruptibly(long,java.util.concurrent.TimeUnit)",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#resultNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#resultNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#state()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#state()",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1147,13 +1147,13 @@
 							"type": "class",
 							"name": "ForkJoinWorkerThread",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ForkJoinWorkerThread(ThreadGroup, ForkJoinPool, boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#%3Cinit%3E(java.lang.ThreadGroup,java.util.concurrent.ForkJoinPool,boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#%3Cinit%3E(java.lang.ThreadGroup,java.util.concurrent.ForkJoinPool,boolean)",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1162,27 +1162,27 @@
 							"type": "class",
 							"name": "FutureTask",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/FutureTask.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#exceptionNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/FutureTask.html#exceptionNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#resultNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/FutureTask.html#resultNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/FutureTask.html#state()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/FutureTask.html#state()",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1191,7 +1191,7 @@
 							"type": "class",
 							"name": "ThreadLocalRandom",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
 							"addedTags": [
 								"final"
 							]
@@ -1200,14 +1200,14 @@
 							"type": "enum",
 							"name": "Future.State",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.State.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Future.State.html",
 							"csr": "JDK-8285450"
 						},
 						{
 							"type": "interface",
 							"name": "ExecutorService",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ExecutorService.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ExecutorService.html",
 							"addedTags": [
 								"implements AutoCloseable"
 							],
@@ -1216,7 +1216,7 @@
 									"type": "method",
 									"name": "close()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/ExecutorService.html#close()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ExecutorService.html#close()",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1225,27 +1225,27 @@
 							"type": "interface",
 							"name": "Future",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Future.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "exceptionNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#exceptionNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Future.html#exceptionNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "resultNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#resultNow()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Future.html#resultNow()",
 									"csr": "JDK-8285450"
 								},
 								{
 									"type": "method",
 									"name": "state()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/concurrent/Future.html#state()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Future.html#state()",
 									"csr": "JDK-8285450"
 								}
 							]
@@ -1256,19 +1256,19 @@
 					"type": "package",
 					"name": "java.util.spi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/spi/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "ToolProvider",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/spi/ToolProvider.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "description()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/spi/ToolProvider.html#description()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/spi/ToolProvider.html#description()",
 									"csr": "JDK-8286659"
 								}
 							]
@@ -1279,13 +1279,13 @@
 					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "EnumSet",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/EnumSet.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/EnumSet.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1294,13 +1294,13 @@
 							"type": "class",
 							"name": "HashMap",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashMap.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/HashMap.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newHashMap(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashMap.html#newHashMap(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/HashMap.html#newHashMap(int)",
 									"csr": "JDK-8284377"
 								}
 							]
@@ -1309,13 +1309,13 @@
 							"type": "class",
 							"name": "HashSet",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/HashSet.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newHashSet(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/HashSet.html#newHashSet(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/HashSet.html#newHashSet(int)",
 									"csr": "JDK-8287419"
 								}
 							]
@@ -1324,7 +1324,7 @@
 							"type": "class",
 							"name": "IllegalFormatException",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/IllegalFormatException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/IllegalFormatException.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1333,13 +1333,13 @@
 							"type": "class",
 							"name": "LinkedHashMap",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashMap.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashMap.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newLinkedHashMap(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashMap.html#newLinkedHashMap(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashMap.html#newLinkedHashMap(int)",
 									"csr": "JDK-8284377"
 								}
 							]
@@ -1348,13 +1348,13 @@
 							"type": "class",
 							"name": "LinkedHashSet",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashSet.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashSet.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newLinkedHashSet(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/LinkedHashSet.html#newLinkedHashSet(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashSet.html#newLinkedHashSet(int)",
 									"csr": "JDK-8287419"
 								}
 							]
@@ -1363,13 +1363,13 @@
 							"type": "class",
 							"name": "Locale",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Locale(String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1378,7 +1378,7 @@
 									"type": "method",
 									"name": "Locale(String, String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1387,7 +1387,7 @@
 									"type": "method",
 									"name": "Locale(String, String, String)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1396,21 +1396,21 @@
 									"type": "method",
 									"name": "of(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html#of(java.lang.String)",
 									"csr": "JDK-8283478"
 								},
 								{
 									"type": "method",
 									"name": "of(String, String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String)",
 									"csr": "JDK-8283478"
 								},
 								{
 									"type": "method",
 									"name": "of(String, String, String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String,java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html#of(java.lang.String,java.lang.String,java.lang.String)",
 									"csr": "JDK-8283478"
 								}
 							]
@@ -1419,13 +1419,13 @@
 							"type": "class",
 							"name": "Objects",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Objects.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Objects.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "toIdentityString(Object)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Objects.html#toIdentityString(java.lang.Object)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Objects.html#toIdentityString(java.lang.Object)",
 									"csr": "JDK-8280184"
 								}
 							]
@@ -1434,13 +1434,13 @@
 							"type": "class",
 							"name": "Random",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Random.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "from(RandomGenerator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/Random.html#from(java.util.random.RandomGenerator)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Random.html#from(java.util.random.RandomGenerator)",
 									"csr": "JDK-8282928"
 								}
 							]
@@ -1449,13 +1449,13 @@
 							"type": "class",
 							"name": "WeakHashMap",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/WeakHashMap.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "newWeakHashMap(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/java/util/WeakHashMap.html#newWeakHashMap(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/WeakHashMap.html#newWeakHashMap(int)",
 									"csr": "JDK-8284377"
 								}
 							]
@@ -1466,19 +1466,19 @@
 					"type": "package",
 					"name": "javax.crypto.spec",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/crypto/spec/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/crypto/spec/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "OAEPParameterSpec",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "DEFAULT",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html#DEFAULT",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1491,19 +1491,19 @@
 					"type": "package",
 					"name": "javax.net.ssl",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "KeyManagerFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getDefaultAlgorithm()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()",
 									"removedTags": [
 										"final"
 									]
@@ -1514,13 +1514,13 @@
 							"type": "class",
 							"name": "SSLHandshakeException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SSLHandshakeException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282724"
 								}
 							]
@@ -1529,13 +1529,13 @@
 							"type": "class",
 							"name": "SSLKeyException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLKeyException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLKeyException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SSLKeyException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLKeyException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLKeyException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282724"
 								}
 							]
@@ -1544,20 +1544,20 @@
 							"type": "class",
 							"name": "SSLParameters",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLParameters.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getSignatureSchemes()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSignatureSchemes()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSignatureSchemes()",
 									"csr": "JDK-8280495"
 								},
 								{
 									"type": "method",
 									"name": "setSignatureSchemes(String[])",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSignatureSchemes(java.lang.String%5B%5D)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSignatureSchemes(java.lang.String%5B%5D)",
 									"csr": "JDK-8280495"
 								}
 							]
@@ -1566,13 +1566,13 @@
 							"type": "class",
 							"name": "SSLPeerUnverifiedException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SSLPeerUnverifiedException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282724"
 								}
 							]
@@ -1581,13 +1581,13 @@
 							"type": "class",
 							"name": "SSLProtocolException",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLProtocolException.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLProtocolException.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "SSLProtocolException(String, Throwable)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLProtocolException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLProtocolException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282724"
 								}
 							]
@@ -1596,13 +1596,13 @@
 							"type": "class",
 							"name": "TrustManagerFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getDefaultAlgorithm()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm()",
 									"removedTags": [
 										"final"
 									]
@@ -1613,13 +1613,13 @@
 							"type": "interface",
 							"name": "SSLSessionContext",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "setSessionCacheSize(int)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)",
 									"removedTags": [
 										"throws IllegalArgumentException"
 									]
@@ -1628,7 +1628,7 @@
 									"type": "method",
 									"name": "setSessionTimeout(int)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)",
 									"removedTags": [
 										"throws IllegalArgumentException"
 									]
@@ -1643,46 +1643,46 @@
 			"type": "module",
 			"name": "java.compiler",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.lang.model.element",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "ElementKind",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isDeclaredType()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isDeclaredType()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isDeclaredType()",
 									"csr": "JDK-8282461"
 								},
 								{
 									"type": "method",
 									"name": "isExecutable()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isExecutable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isExecutable()",
 									"csr": "JDK-8282461"
 								},
 								{
 									"type": "method",
 									"name": "isInitializer()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInitializer()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInitializer()",
 									"csr": "JDK-8282461"
 								},
 								{
 									"type": "method",
 									"name": "isVariable()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isVariable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isVariable()",
 									"csr": "JDK-8282461"
 								}
 							]
@@ -1693,19 +1693,19 @@
 					"type": "package",
 					"name": "javax.lang.model",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "SourceVersion",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RELEASE_19",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_19",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_19",
 									"csr": "JDK-8277512"
 								}
 							]
@@ -1718,19 +1718,19 @@
 			"type": "module",
 			"name": "java.desktop",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.awt.color",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/color/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ICC_ProfileGray",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html",
 							"addedTags": [
 								"final"
 							]
@@ -1739,7 +1739,7 @@
 							"type": "class",
 							"name": "ICC_ProfileRGB",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html",
 							"addedTags": [
 								"final"
 							]
@@ -1748,7 +1748,7 @@
 							"type": "class",
 							"name": "ICC_Profile",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/color/ICC_Profile.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1759,13 +1759,13 @@
 					"type": "package",
 					"name": "java.awt.desktop",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/desktop/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AppEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/AppEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/desktop/AppEvent.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1774,7 +1774,7 @@
 							"type": "class",
 							"name": "FilesEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/desktop/FilesEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/desktop/FilesEvent.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1785,13 +1785,13 @@
 					"type": "package",
 					"name": "java.awt.dnd",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/dnd/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/dnd/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DropTargetContext",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html",
 							"addedTags": [
 								"final"
 							]
@@ -1802,13 +1802,13 @@
 					"type": "package",
 					"name": "java.awt.event",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/event/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "InputEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/event/InputEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/event/InputEvent.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1819,13 +1819,13 @@
 					"type": "package",
 					"name": "java.awt.geom",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "CubicCurve2D.Double",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1839,7 +1839,7 @@
 							"type": "class",
 							"name": "CubicCurve2D.Float",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1853,13 +1853,13 @@
 							"type": "class",
 							"name": "CubicCurve2D",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getBounds2D()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds2D()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds2D()",
 									"csr": "JDK-8283602"
 								}
 							]
@@ -1868,7 +1868,7 @@
 							"type": "class",
 							"name": "Path2D",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/Path2D.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/Path2D.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1877,7 +1877,7 @@
 							"type": "class",
 							"name": "QuadCurve2D.Double",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1891,7 +1891,7 @@
 							"type": "class",
 							"name": "QuadCurve2D.Float",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1905,13 +1905,13 @@
 							"type": "class",
 							"name": "QuadCurve2D",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getBounds2D()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getBounds2D()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getBounds2D()",
 									"csr": "JDK-8283602"
 								}
 							]
@@ -1922,13 +1922,13 @@
 					"type": "package",
 					"name": "java.awt",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "GridBagLayoutInfo",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/GridBagLayoutInfo.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/GridBagLayoutInfo.html",
 							"addedTags": [
 								"final"
 							]
@@ -1937,7 +1937,7 @@
 							"type": "class",
 							"name": "MultipleGradientPaint",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/MultipleGradientPaint.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/MultipleGradientPaint.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1946,7 +1946,7 @@
 							"type": "class",
 							"name": "PointerInfo",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/PointerInfo.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/PointerInfo.html",
 							"addedTags": [
 								"final"
 							]
@@ -1955,7 +1955,7 @@
 							"type": "class",
 							"name": "ScrollPaneAdjustable",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html",
 							"addedTags": [
 								"final"
 							]
@@ -1964,7 +1964,7 @@
 							"type": "class",
 							"name": "TextComponent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/java/awt/TextComponent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/java/awt/TextComponent.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -1975,13 +1975,13 @@
 					"type": "package",
 					"name": "javax.sound.midi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/sound/midi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Track",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/sound/midi/Track.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/sound/midi/Track.html",
 							"addedTags": [
 								"final"
 							]
@@ -1992,19 +1992,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.basic",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "BasicDirectoryModel",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "intervalAdded(ListDataEvent)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalAdded(javax.swing.event.ListDataEvent)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalAdded(javax.swing.event.ListDataEvent)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -2013,7 +2013,7 @@
 									"type": "method",
 									"name": "intervalRemoved(ListDataEvent)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalRemoved(javax.swing.event.ListDataEvent)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#intervalRemoved(javax.swing.event.ListDataEvent)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -2022,7 +2022,7 @@
 									"type": "method",
 									"name": "lt(File, File)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#lt(java.io.File,java.io.File)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#lt(java.io.File,java.io.File)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -2033,7 +2033,7 @@
 							"type": "class",
 							"name": "BasicMenuItemUI.MouseInputHandler",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.MouseInputHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.MouseInputHandler.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -2042,7 +2042,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.HSBChangeListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -2051,7 +2051,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.PropertyChangeHandler",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -2060,7 +2060,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.VSBChangeListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -2069,7 +2069,7 @@
 							"type": "class",
 							"name": "BasicScrollPaneUI.ViewportChangeHandler",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html",
 							"addedTags": [
 								"forRemoval"
 							]
@@ -2078,7 +2078,7 @@
 							"type": "class",
 							"name": "BasicSplitPaneUI.BasicHorizontalLayoutManager",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -2087,13 +2087,13 @@
 							"type": "class",
 							"name": "BasicToolBarUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "createFloatingFrame(JToolBar)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(javax.swing.JToolBar)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(javax.swing.JToolBar)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -2106,13 +2106,13 @@
 					"type": "package",
 					"name": "javax.swing.text.html",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "FormSubmitEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html",
 							"addedTags": [
 								"final"
 							]
@@ -2121,7 +2121,7 @@
 							"type": "class",
 							"name": "StyleSheet.BoxPainter",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html",
 							"addedTags": [
 								"final"
 							]
@@ -2130,7 +2130,7 @@
 							"type": "class",
 							"name": "StyleSheet.ListPainter",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html",
 							"addedTags": [
 								"final"
 							]
@@ -2141,13 +2141,13 @@
 					"type": "package",
 					"name": "javax.swing.text",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "StyleConstants.CharacterConstants",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.CharacterConstants.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/StyleConstants.CharacterConstants.html",
 							"addedTags": [
 								"final"
 							]
@@ -2156,7 +2156,7 @@
 							"type": "class",
 							"name": "StyleConstants.ColorConstants",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.ColorConstants.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/StyleConstants.ColorConstants.html",
 							"addedTags": [
 								"final"
 							]
@@ -2165,7 +2165,7 @@
 							"type": "class",
 							"name": "StyleConstants.FontConstants",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.FontConstants.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/StyleConstants.FontConstants.html",
 							"addedTags": [
 								"final"
 							]
@@ -2174,7 +2174,7 @@
 							"type": "class",
 							"name": "StyleConstants.ParagraphConstants",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.ParagraphConstants.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/StyleConstants.ParagraphConstants.html",
 							"addedTags": [
 								"final"
 							]
@@ -2183,7 +2183,7 @@
 							"type": "class",
 							"name": "StyleConstants",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/text/StyleConstants.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -2194,13 +2194,13 @@
 					"type": "package",
 					"name": "javax.swing",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "GroupLayout.Group",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.Group.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/GroupLayout.Group.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -2209,7 +2209,7 @@
 							"type": "class",
 							"name": "GroupLayout.ParallelGroup",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html",
 							"addedTags": [
 								"sealed"
 							]
@@ -2218,7 +2218,7 @@
 							"type": "class",
 							"name": "GroupLayout.SequentialGroup",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html",
 							"addedTags": [
 								"final"
 							]
@@ -2227,7 +2227,7 @@
 							"type": "class",
 							"name": "ToolTipManager",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.desktop/javax/swing/ToolTipManager.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.desktop/javax/swing/ToolTipManager.html",
 							"addedTags": [
 								"final"
 							]
@@ -2240,25 +2240,25 @@
 			"type": "module",
 			"name": "java.net.http",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.net.http",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "HttpClient.Builder",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "localAddress(InetAddress)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#localAddress(java.net.InetAddress)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#localAddress(java.net.InetAddress)",
 									"csr": "JDK-8286583"
 								}
 							]
