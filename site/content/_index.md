@@ -20,7 +20,7 @@ Collection of information about the history and future of Java.
 ## About
 
 This site is provided by Java Champions Marc R. Hoffmann and Cay S. Horstmann.
-All content is managed in a [public Github repository](https://github.com/marchof/java-almanac).
+All content is managed in a [public GitHub repository](https://github.com/marchof/java-almanac).
 The structured data about the JDK is also available via an [open API](https://editor.swagger.io/?url=https://data.javaalmanac.io/v1/openapi.yaml).
 
 
