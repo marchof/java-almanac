@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+17-1181"
+		"version": "20-ea+18-1281"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -29,6 +29,20 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Serial.html",
 							"csr": "JDK-8217698"
+						},
+						{
+							"type": "class",
+							"name": "BufferedInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/BufferedInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "transferTo(OutputStream)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/BufferedInputStream.html#transferTo(java.io.OutputStream)"
+								}
+							]
 						},
 						{
 							"type": "class",
@@ -4548,6 +4562,86 @@
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/random/package-summary.html",
 					"csr": "JDK-8255395"
+				},
+				{
+					"type": "package",
+					"name": "java.util.regex",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Matcher",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/Matcher.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "hasMatch()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/Matcher.html#hasMatch()"
+								},
+								{
+									"type": "method",
+									"name": "namedGroups()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/Matcher.html#namedGroups()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Pattern",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/Pattern.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "namedGroups()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/Pattern.html#namedGroups()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MatchResult",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "end(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html#end(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "group(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html#group(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "hasMatch()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html#hasMatch()"
+								},
+								{
+									"type": "method",
+									"name": "namedGroups()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html#namedGroups()"
+								},
+								{
+									"type": "method",
+									"name": "start(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html#start(java.lang.String)"
+								}
+							]
+						}
+					]
 				},
 				{
 					"type": "package",
