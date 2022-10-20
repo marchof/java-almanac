@@ -6,7 +6,7 @@ type: sandbox
 Functional interface instances can be directly created from methods and
  constructors.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="MethodReferences" >}}
 {{< sandboxsource "MethodReferences.java" >}}
@@ -52,7 +52,7 @@ public class MethodReferences {
 		Consumer<Foo> consumer = Foo::instanceMethod;
 		consumer.accept(foo);
 
-		// Unbound instance method with oarameter as reference
+		// Unbound instance method with parameter as reference
 		BiConsumer<Foo, String> biconsumer = Foo::instanceMethod;
 		biconsumer.accept(foo, "hello");
 

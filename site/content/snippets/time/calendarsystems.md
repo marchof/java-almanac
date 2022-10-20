@@ -6,7 +6,7 @@ type: sandbox
 There are different calendar systems in the world. Let's write the Java 17
  release date in the systems known to Java.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="CalendarSystems" >}}
 {{< sandboxsource "CalendarSystems.java" >}}

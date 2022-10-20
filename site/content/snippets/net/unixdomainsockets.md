@@ -6,7 +6,7 @@ type: sandbox
 Since Java 16 finally Unix domain local interprocess communication is
  supported.
 
-Since [Java 16](/jdk/16)
+Since [Java 16](/jdk/16/)
 
 {{< sandbox version="java17" mainclass="UnixDomainSockets" >}}
 {{< sandboxsource "UnixDomainSockets.java" >}}

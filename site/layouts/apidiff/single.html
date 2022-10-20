@@ -51,8 +51,8 @@
 {{- with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
 
 <p>
-  Comparing <a href="../../../{{ .target.feature }}">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})
-  with <a href="../../../{{ .base.feature }}"> Java {{ .base.feature }}</a> ({{ .base.version }}-{{ .base.vendor }}).
+  Comparing <a href="../../../{{ .target.feature }}/">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})
+  with <a href="../../../{{ .base.feature }}/"> Java {{ .base.feature }}</a> ({{ .base.version }}-{{ .base.vendor }}).
 </p>
 
 <div style="overflow-x:auto;">

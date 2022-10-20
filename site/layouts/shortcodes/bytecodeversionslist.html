@@ -8,7 +8,7 @@
   <tbody>
     {{- range sort $.Site.Data.jdk.versions "ga" }}
     <tr>
-      <td><a href="../../jdk/{{ .version }}">{{ .name }}</a></td>
+      <td><a href="../../jdk/{{ .version }}/">{{ .name }}</a></td>
       <td>{{ .bytecode }}</td>
     </tr>
     {{- end }}

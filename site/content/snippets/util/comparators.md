@@ -8,7 +8,7 @@ With the `java.util.Comparator` interface you can define an ordering for
  which is implemented by the sorted elements itself, `Comparator`s are
  *external* and depending on the use case different orderings can be defined.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="Comparators" >}}
 {{< sandboxsource "Comparators.java" >}}

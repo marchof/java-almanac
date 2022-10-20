@@ -6,7 +6,7 @@ type: sandbox
 To find all Friday 13th we iterate over a range of YearMonth and check
  whether the LocalDate with day 13 is a Friday.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="Friday13th" >}}
 {{< sandboxsource "Friday13th.java" >}}

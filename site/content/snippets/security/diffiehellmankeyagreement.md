@@ -6,7 +6,7 @@ type: sandbox
 With key agreement algorithms two parties can agree on a shared secret by
  exchanging information over public channels only.
 
-Since [Java 1.4](/jdk/1.4)
+Since [Java 1.4](/jdk/1.4/)
 
 {{< sandbox version="java17" mainclass="DiffieHellmanKeyAgreement" >}}
 {{< sandboxsource "DiffieHellmanKeyAgreement.java" >}}

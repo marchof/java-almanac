@@ -6,7 +6,7 @@ type: sandbox
 Records are Java classes which allows simple definition of immutable data
  structures.
 
-Since [Java 16](/jdk/16)
+Since [Java 16](/jdk/16/)
 
 {{< sandbox version="java17" mainclass="Records" >}}
 {{< sandboxsource "Records.java" >}}

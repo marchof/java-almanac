@@ -9,7 +9,7 @@ The Java time API uses the [tz
  times the API also allows to query the database and e.g. list all DST
  transitions for a specific time zone.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="DaylightSavingTime" >}}
 {{< sandboxsource "DaylightSavingTime.java" >}}

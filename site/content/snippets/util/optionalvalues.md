@@ -15,7 +15,7 @@ Instead of passing using `null` references optional values can be wrapped in
  you are calling [`Optional.get()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html#get()) you're most likely on the
  wrong track.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="OptionalValues" >}}
 {{< sandboxsource "OptionalValues.java" >}}

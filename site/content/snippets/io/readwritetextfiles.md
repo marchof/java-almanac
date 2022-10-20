@@ -8,7 +8,7 @@ The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/
  strings and binary files content a encoding is applied. Do not rely on system
  defaults, always supply an encoding for portable behavior.
 
-Since [Java 11](/jdk/11)
+Since [Java 11](/jdk/11/)
 
 {{< sandbox version="java17" mainclass="ReadWriteTextFiles" >}}
 {{< sandboxsource "ReadWriteTextFiles.java" >}}

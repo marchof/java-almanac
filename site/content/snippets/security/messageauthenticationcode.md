@@ -10,7 +10,7 @@ A message authentication code is calculated based with a private key. Only
  transmitted over unsafe transport channels. For example verification links
  send via email.
 
-Since [Java 1.4](/jdk/1.4)
+Since [Java 1.4](/jdk/1.4/)
 
 {{< sandbox version="java17" mainclass="MessageAuthenticationCode" >}}
 {{< sandboxsource "MessageAuthenticationCode.java" >}}

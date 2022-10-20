@@ -8,7 +8,7 @@ With the static method
  invert conditions. This is particular useful in combination with method
  references.
 
-Since [Java 11](/jdk/11)
+Since [Java 11](/jdk/11/)
 
 {{< sandbox version="java17" mainclass="NotPredicate" >}}
 {{< sandboxsource "NotPredicate.java" >}}

@@ -7,7 +7,7 @@ Print the current time in all time zones known to the JDK (from the [tz
  database](https://en.wikipedia.org/wiki/Tz_database)) together with their
  current UTC offset and the DST status.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="WorldClock" >}}
 {{< sandboxsource "WorldClock.java" >}}

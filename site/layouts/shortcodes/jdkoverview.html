@@ -12,7 +12,7 @@
   <tbody>
     {{- range sort $.Site.Data.jdk.versions "ga" "desc" }}
     <tr>
-      <td><a href="jdk/{{ .version }}">{{ .name }}</a></td>
+      <td><a href="jdk/{{ .version }}/">{{ .name }}</a></td>
       <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
       <td>
         {{- with .documentation.api }}
@@ -48,10 +48,10 @@
         {{- $maxdiffs := 10 }}
         {{- if .apidiff }}
           {{- range $elem_index, $elem_val := first $maxdiffs (sort .apidiff "order" "desc") }}
-            <a class="diffversion" href="jdk/{{ $elem_val.target.feature }}/apidiff/{{ $elem_val.base.feature }}">{{ $elem_val.base.feature }}</a>
+            <a class="diffversion" href="jdk/{{ $elem_val.target.feature }}/apidiff/{{ $elem_val.base.feature }}/">{{ $elem_val.base.feature }}</a>
           {{- end }}
           {{- if lt $maxdiffs (len .apidiff) }}
-            <a class="diffversion" href="jdk/{{ .version }}">...</a>
+            <a class="diffversion" href="jdk/{{ .version }}/">...</a>
           {{- end }}
         {{- end }}
       </td>

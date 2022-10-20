@@ -6,7 +6,7 @@ type: sandbox
 Local dates can be used for various calendar calculations of based on
  granularity days.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="CalculateWithLocalDates" >}}
 {{< sandboxsource "CalculateWithLocalDates.java" >}}

@@ -6,7 +6,7 @@ type: sandbox
 With time zones a given timestamp can be represented in different local dates
  and times.
 
-Since [Java 8](/jdk/8)
+Since [Java 8](/jdk/8/)
 
 {{< sandbox version="java17" mainclass="ConvertBetweenTimeZones" >}}
 {{< sandboxsource "ConvertBetweenTimeZones.java" >}}

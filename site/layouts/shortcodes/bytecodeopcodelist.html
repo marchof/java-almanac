@@ -9,7 +9,7 @@
   <tbody>
     {{- range sort $.Site.Data.bytecode.opcodes "opcode" }}
     <tr>
-      <td><a href="../op/{{ .mnemonic }}"><code>{{ .opcode }}</code></a></td>
+      <td><a href="../op/{{ .mnemonic }}/"><code>{{ .opcode }}</code></a></td>
       <td>{{ .mnemonic }}</td>
       <td>{{ markdownify .shortdescr }}</td>
     </tr>
