@@ -1,6 +1,5 @@
 ---
 title: Java 15
-type: sandbox
 ---
 
 {{< jdkdetails "15" >}}

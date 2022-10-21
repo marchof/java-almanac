@@ -1,3 +1,4 @@
+{{- if .Page.Store.Get "hasSandbox" }}
 {{- $vue := resources.Get "app/vue.min.js" }}
 {{- $axios := resources.Get "app/axios.min.js" }}
 {{- $tabs := resources.Get "app/tabs.js" | resources.Minify }}
@@ -8,3 +9,4 @@
 {{- $js := slice $vue $axios $tabs $sandbox $ace $ace_java $ace_theme | resources.Concat "app/sandbox-bundle.js" }}
 <script src="{{ $js.RelPermalink }}"></script>
 <script>new Vue({ el: '#content' })</script>
+{{- end }}

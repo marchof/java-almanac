@@ -1,6 +1,5 @@
 ---
 title: Comparators
-type: sandbox
 ---
 
 With the `java.util.Comparator` interface you can define an ordering for

@@ -1,6 +1,5 @@
 ---
 title: Java 11
-type: sandbox
 ---
 
 {{< jdkdetails "11" >}}

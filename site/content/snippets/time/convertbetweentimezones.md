@@ -1,6 +1,5 @@
 ---
 title: Convert Between Time Zones
-type: sandbox
 ---
 
 With time zones a given timestamp can be represented in different local dates

@@ -1,6 +1,5 @@
 ---
 title: Text Blocks
-type: sandbox
 ---
 
 Text blocks allow multiline strings literals.

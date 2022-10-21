@@ -1,6 +1,5 @@
 ---
 title: World Clock
-type: sandbox
 ---
 
 Print the current time in all time zones known to the JDK (from the [tz

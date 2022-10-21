@@ -1,6 +1,5 @@
 ---
 title: Diffie-Hellman Key Agreement
-type: sandbox
 ---
 
 With key agreement algorithms two parties can agree on a shared secret by

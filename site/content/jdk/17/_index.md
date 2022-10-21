@@ -1,6 +1,5 @@
 ---
 title: Java 17
-type: sandbox
 ---
 
 {{< jdkdetails "17" >}}

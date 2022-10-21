@@ -1,6 +1,5 @@
 ---
 title: Read and Write Binary Files
-type: sandbox
 ---
 
 The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods

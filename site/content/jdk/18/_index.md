@@ -1,6 +1,5 @@
 ---
 title: Java 18
-type: sandbox
 ---
 
 {{< jdkdetails "18" >}}

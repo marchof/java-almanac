@@ -1,6 +1,5 @@
 ---
 title: Numeric Literals
-type: sandbox
 ---
 
 Integer literals can be written in binary, octal, decimal or hexadecimal

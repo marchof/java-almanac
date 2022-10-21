@@ -1,6 +1,5 @@
 ---
 title: Java 9
-type: sandbox
 ---
 
 {{< jdkdetails "9" >}}

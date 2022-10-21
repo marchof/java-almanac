@@ -1,6 +1,5 @@
 ---
 title: Java 20
-type: sandbox
 ---
 
 {{< jdkdetails "20" >}}

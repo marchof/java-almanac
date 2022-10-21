@@ -1,6 +1,5 @@
 ---
 title: Friday 13th
-type: sandbox
 ---
 
 To find all Friday 13th we iterate over a range of YearMonth and check

@@ -1,6 +1,5 @@
 ---
 title: Java 12
-type: sandbox
 ---
 
 {{< jdkdetails "12" >}}

@@ -1,6 +1,5 @@
 ---
 title: Method References
-type: sandbox
 ---
 
 Functional interface instances can be directly created from methods and

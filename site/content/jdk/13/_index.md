@@ -1,6 +1,5 @@
 ---
 title: Java 13
-type: sandbox
 ---
 
 {{< jdkdetails "13" >}}

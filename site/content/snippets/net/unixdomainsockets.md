@@ -1,6 +1,5 @@
 ---
 title: Unix Domain Sockets
-type: sandbox
 ---
 
 Since Java 16 finally Unix domain local interprocess communication is

@@ -1,6 +1,5 @@
 ---
 title: Daylight Saving Time
-type: sandbox
 ---
 
 The Java time API uses the [tz

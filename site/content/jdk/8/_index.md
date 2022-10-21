@@ -1,6 +1,5 @@
 ---
 title: Java 8
-type: sandbox
 ---
 
 {{< jdkdetails "8" >}}

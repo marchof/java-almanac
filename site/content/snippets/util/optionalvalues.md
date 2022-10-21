@@ -1,6 +1,5 @@
 ---
 title: Optional Values
-type: sandbox
 ---
 
 Instead of passing using `null` references optional values can be wrapped in

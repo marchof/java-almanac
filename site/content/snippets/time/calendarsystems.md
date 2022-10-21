@@ -1,6 +1,5 @@
 ---
 title: Calendar Systems
-type: sandbox
 ---
 
 There are different calendar systems in the world. Let's write the Java 17

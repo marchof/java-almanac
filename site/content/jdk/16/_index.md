@@ -1,6 +1,5 @@
 ---
 title: Java 16
-type: sandbox
 ---
 
 {{< jdkdetails "16" >}}

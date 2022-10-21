@@ -1,6 +1,5 @@
 ---
 title: Message Authentication Code
-type: sandbox
 ---
 
 A message authentication code is calculated based with a private key. Only

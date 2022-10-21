@@ -1,6 +1,5 @@
 ---
 title: Java 10
-type: sandbox
 ---
 
 {{< jdkdetails "10" >}}

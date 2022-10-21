@@ -1,6 +1,5 @@
 ---
 title: Calculate With Local Dates
-type: sandbox
 ---
 
 Local dates can be used for various calendar calculations of based on

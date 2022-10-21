@@ -1,6 +1,5 @@
 ---
 title: Not Predicate
-type: sandbox
 ---
 
 With the static method

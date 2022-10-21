@@ -1,6 +1,5 @@
 ---
 title: Collection Constants
-type: sandbox
 ---
 
 The collection interfaces [`Set`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html), [`List`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html) and [`Map`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html) have several static `of(...)`

@@ -1,6 +1,5 @@
 ---
 title: Java 14
-type: sandbox
 ---
 
 {{< jdkdetails "14" >}}

@@ -1,6 +1,5 @@
 ---
 title: Records
-type: sandbox
 ---
 
 Records are Java classes which allows simple definition of immutable data
