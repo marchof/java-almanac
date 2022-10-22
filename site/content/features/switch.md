@@ -307,7 +307,7 @@ The `yield` statement may in time join the labeled `break/continue` statements: 
 1. There are four forms of `switch`: statements and expressions, with and without fall through
 2. A `switch` expression selects one or more values, matching an operand. 
 3. The cases in a `switch` expression must be disjoint and exhaustive
-4. A `switch` expression or statemnt with `->` tokens does not have fall through behavior
+4. A `switch` expression or statement with `->` tokens does not have fall through behavior
 5. A `case` label can be followed by multiple constants, separated by commas
 6. In a `switch` expression, the `yield` statement exits and yields a value
 7. In a `switch` expression without fall through, the `->` token can be followed by a block statement that yields a value

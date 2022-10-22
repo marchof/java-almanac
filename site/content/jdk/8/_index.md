@@ -6,7 +6,7 @@ title: Java 8
 
 Java 8 finally added *lambda* syntax and *method references* as a modern language
 constructs. The main application within the JDK API is the new `java.util.streams`
-package. A initial set of common functional interfaces is shipped in the new
+package. An initial set of common functional interfaces is shipped in the new
 package `java.util.function`.
 
 The extremely useful [Joda-Time](https://www.joda.org/joda-time/) library has been
