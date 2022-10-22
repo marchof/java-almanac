@@ -36,7 +36,7 @@ The `var` can be used in the following places:
 * Variables declared in `for` loops (classic or enhanced)
 * Variables in `try`-with-resources blocks
 
-A local variable declared with `var` might also be explicitely declared final:
+A local variable declared with `var` might also be explicitly declared final:
 
     final var word = "World";
 

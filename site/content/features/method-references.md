@@ -71,7 +71,7 @@ public class StaticMethodReference {
 
 ## References to unbound instance methods
 
-If you create a reference to an instance method the situation becomes more tricky. In the next example we make a direct reference to the method of a certain type. So the method is *unbound* which means that at the point in time when we call the method a instance to call the method on must be provided.
+If you create a reference to an instance method the situation becomes more tricky. In the next example we make a direct reference to the method of a certain type. So the method is *unbound* which means that at the point in time when we call the method an instance to call the method on must be provided.
 
 When we for example want to call `String.length()` we need to provide a `String` instance. The compatible functional interface needs to define the method references' type as the first parameter:
 
@@ -229,7 +229,7 @@ Method references can come with type parameters. Both for the referenced type an
 
 While at most places references can be used instead of direct method or constructor invocations there are situations where method references will not result in valid Java source code.
 
-For example there is no method reference syntax to create a inner class for a given enclosing outer class instance like with this direct invocation:
+For example there is no method reference syntax to create an inner class for a given enclosing outer class instance like with this direct invocation:
 
     Inner i = outer.new Inner();
 
