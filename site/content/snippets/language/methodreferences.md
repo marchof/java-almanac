@@ -25,15 +25,15 @@ public class MethodReferences {
 
 		void instanceMethod() {
 			System.out.println("instanceMethod");
-		};
+		}
 
 		void instanceMethod(String parameter) {
 			System.out.println("instanceMethod " + parameter);
-		};
+		}
 
 		static void classMethod() {
 			System.out.println("classMethod");
-		};
+		}
 
 	}
 
