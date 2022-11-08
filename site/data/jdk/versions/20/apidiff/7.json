@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+21-1545"
+		"version": "20-ea+22-1594"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -4264,6 +4264,12 @@
 						},
 						{
 							"type": "field",
+							"name": "ARABIC_EXTENDED_C",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_EXTENDED_C"
+						},
+						{
+							"type": "field",
 							"name": "ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS"
@@ -4335,6 +4341,12 @@
 						},
 						{
 							"type": "field",
+							"name": "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H"
+						},
+						{
+							"type": "field",
 							"name": "COMBINING_DIACRITICAL_MARKS_EXTENDED",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#COMBINING_DIACRITICAL_MARKS_EXTENDED"
@@ -4358,6 +4370,18 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_C",
 							"csr": "JDK-8191411"
+						},
+						{
+							"type": "field",
+							"name": "CYRILLIC_EXTENDED_D",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CYRILLIC_EXTENDED_D"
+						},
+						{
+							"type": "field",
+							"name": "DEVANAGARI_EXTENDED_A",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#DEVANAGARI_EXTENDED_A"
 						},
 						{
 							"type": "field",
@@ -4474,6 +4498,12 @@
 						},
 						{
 							"type": "field",
+							"name": "KAKTOVIK_NUMERALS",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KAKTOVIK_NUMERALS"
+						},
+						{
+							"type": "field",
 							"name": "KANA_EXTENDED_A",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_A",
@@ -4485,6 +4515,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KANA_EXTENDED_B",
 							"csr": "JDK-8279542"
+						},
+						{
+							"type": "field",
+							"name": "KAWI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KAWI"
 						},
 						{
 							"type": "field",
@@ -4651,6 +4687,12 @@
 							"name": "NABATAEAN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NABATAEAN"
+						},
+						{
+							"type": "field",
+							"name": "NAG_MUNDARI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NAG_MUNDARI"
 						},
 						{
 							"type": "field",
@@ -7712,6 +7754,12 @@
 						},
 						{
 							"type": "field",
+							"name": "KAWI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAWI"
+						},
+						{
+							"type": "field",
 							"name": "KHITAN_SMALL_SCRIPT",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHITAN_SMALL_SCRIPT",
@@ -7822,6 +7870,12 @@
 							"name": "NABATAEAN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeScript.html#NABATAEAN"
+						},
+						{
+							"type": "field",
+							"name": "NAG_MUNDARI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Character.UnicodeScript.html#NAG_MUNDARI"
 						},
 						{
 							"type": "field",
@@ -9364,6 +9418,12 @@
 							"removedTags": [
 								"abstract"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getExtension()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/Path.html#getExtension()"
 						},
 						{
 							"type": "method",
