@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+22-1594"
+		"version": "20-ea+23-1677"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -18156,9 +18156,69 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "URL(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "URL(String, String, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "URL(String, String, int, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "URL(String, String, int, String, URLStreamHandler)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "URL(URL, String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "URL(URL, String, URLStreamHandler)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String,java.net.URLStreamHandler)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getDefaultPort()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#getDefaultPort()"
+						},
+						{
+							"type": "method",
+							"name": "of(URI, URLStreamHandler)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#of(java.net.URI,java.net.URLStreamHandler)"
 						},
 						{
 							"type": "method",
@@ -19968,6 +20028,26 @@
 							"name": "InvalidKeyException(Throwable)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidKeyException.html#%3Cinit%3E(java.lang.Throwable)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "InvalidParameterException",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "InvalidParameterException(String, Throwable)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+						},
+						{
+							"type": "method",
+							"name": "InvalidParameterException(Throwable)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html#%3Cinit%3E(java.lang.Throwable)"
 						}
 					]
 				},

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+22-1594"
+		"version": "20-ea+23-1677"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -355,6 +355,82 @@
 				},
 				{
 					"type": "package",
+					"name": "java.net",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "URL",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "URL(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "URL(String, String, String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "URL(String, String, int, String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "URL(String, String, int, String, URLStreamHandler)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "URL(URL, String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "URL(URL, String, URLStreamHandler)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String,java.net.URLStreamHandler)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "of(URI, URLStreamHandler)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/net/URL.html#of(java.net.URI,java.net.URLStreamHandler)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.nio.file.spi",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/package-summary.html",
@@ -466,6 +542,34 @@
 				},
 				{
 					"type": "package",
+					"name": "java.security",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "InvalidParameterException",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "InvalidParameterException(String, Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)"
+								},
+								{
+									"type": "method",
+									"name": "InvalidParameterException(Throwable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html#%3Cinit%3E(java.lang.Throwable)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util.regex",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/package-summary.html",
@@ -539,6 +643,34 @@
 									"name": "start(String)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/regex/MatchResult.html#start(java.lang.String)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "IdentityHashMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/IdentityHashMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "remove(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/IdentityHashMap.html#remove(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "replace(Object, Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/IdentityHashMap.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"
 								}
 							]
 						}
