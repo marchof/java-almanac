@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+23-1677"
+		"version": "20-ea+24-1795"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -149,6 +149,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/PrintStream.html#charset()",
 									"csr": "JDK-8277078"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PushbackInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/PushbackInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "transferTo(OutputStream)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/PushbackInputStream.html#transferTo(java.io.OutputStream)"
 								}
 							]
 						}
@@ -2339,6 +2353,58 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/spi/ToolProvider.html#description()",
 									"csr": "JDK-8286659"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.zip",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ZipInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "read()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html#read()"
+								},
+								{
+									"type": "method",
+									"name": "readAllBytes()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html#readAllBytes()"
+								},
+								{
+									"type": "method",
+									"name": "readNBytes(byte[], int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html#readNBytes(byte%5B%5D,int,int)"
+								},
+								{
+									"type": "method",
+									"name": "readNBytes(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html#readNBytes(int)"
+								},
+								{
+									"type": "method",
+									"name": "skipNBytes(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html#skipNBytes(long)"
+								},
+								{
+									"type": "method",
+									"name": "transferTo(OutputStream)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/zip/ZipInputStream.html#transferTo(java.io.OutputStream)"
 								}
 							]
 						}
