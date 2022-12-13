@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+26-2022"
+		"version": "20-ea+27-2213"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -3034,8 +3034,11 @@
 				{
 					"type": "class",
 					"name": "Console",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Console.html",
+					"removedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -3485,6 +3488,20 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)",
 							"csr": "JDK-8191737"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SequenceInputStream",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "transferTo(OutputStream)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)"
 						}
 					]
 				},
@@ -10168,11 +10185,10 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+							"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)",
-							"csr": "JDK-8282192"
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)"
 						},
 						{
 							"type": "method",
@@ -22554,6 +22570,54 @@
 		},
 		{
 			"type": "package",
+			"name": "javax.management.loading",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "MLetContent",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLetContent.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "MLet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLet.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "PrivateMLet",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/PrivateMLet.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "MLetMBean",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLetMBean.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "javax.management.relation",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/relation/package-summary.html",
@@ -23135,6 +23199,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#getNamedGroups()"
+						},
+						{
+							"type": "method",
 							"name": "getSNIMatchers()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSNIMatchers()"
@@ -23187,6 +23257,12 @@
 							"name": "setMaximumPacketSize(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#setMaximumPacketSize(int)"
+						},
+						{
+							"type": "method",
+							"name": "setNamedGroups(String[])",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#setNamedGroups(java.lang.String%5B%5D)"
 						},
 						{
 							"type": "method",

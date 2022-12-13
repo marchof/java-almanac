@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+26-2022"
+		"version": "20-ea+27-2213"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -5499,6 +5499,20 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)",
 							"csr": "JDK-8191737"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SequenceInputStream",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "transferTo(OutputStream)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)"
 						}
 					]
 				},
@@ -14267,11 +14281,10 @@
 					"deltas": [
 						{
 							"type": "method",
-							"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+							"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)",
-							"csr": "JDK-8282192"
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)"
 						},
 						{
 							"type": "method",

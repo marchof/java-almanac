@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+26-2022"
+		"version": "20-ea+27-2213"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -40,6 +40,15 @@
 						},
 						{
 							"type": "class",
+							"name": "Console",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Console.html",
+							"removedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "PushbackInputStream",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/PushbackInputStream.html",
@@ -50,6 +59,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/PushbackInputStream.html#transferTo(java.io.OutputStream)",
 									"csr": "JDK-8296431"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SequenceInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "transferTo(OutputStream)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)"
 								}
 							]
 						}
@@ -73,6 +96,1343 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/constant/ClassDesc.html#ofInternalName(java.lang.String)",
 									"csr": "JDK-8288670"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.foreign",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Addressable",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "Arena",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Arena.html"
+						},
+						{
+							"type": "interface",
+							"name": "FunctionDescriptor",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html",
+							"addedTags": [
+								"abstract"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "appendArgumentLayouts(MemoryLayout...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#appendArgumentLayouts(java.lang.foreign.MemoryLayout...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "argumentLayouts()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#argumentLayouts()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "asVariadic(MemoryLayout...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "changeReturnLayout(MemoryLayout)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#changeReturnLayout(java.lang.foreign.MemoryLayout)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "dropReturnLayout()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#dropReturnLayout()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "equals(Object)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "firstVariadicArgumentIndex()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "hashCode()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "insertArgumentLayouts(int, MemoryLayout...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#insertArgumentLayouts(int,java.lang.foreign.MemoryLayout...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "returnLayout()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#returnLayout()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toMethodType()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#toMethodType()"
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "GroupLayout",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/GroupLayout.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"sealed"
+							],
+							"removedTags": [
+								"extends AbstractLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "equals(Object)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "hashCode()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "isStruct()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "isUnion()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "memberLayouts()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/GroupLayout.html#memberLayouts()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/GroupLayout.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/GroupLayout.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Linker.Option.CaptureCallState",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Linker.Option.CaptureCallState.html"
+						},
+						{
+							"type": "interface",
+							"name": "Linker.Option",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Linker.Option.html"
+						},
+						{
+							"type": "interface",
+							"name": "Linker",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Linker.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "downcallHandle(Addressable, FunctionDescriptor)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "downcallHandle(FunctionDescriptor)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "downcallHandle(FunctionDescriptor, Linker.Option...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Linker.html#downcallHandle(java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker.Option...)"
+								},
+								{
+									"type": "method",
+									"name": "downcallHandle(MemorySegment, FunctionDescriptor, Linker.Option...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Linker.html#downcallHandle(java.lang.foreign.MemorySegment,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker.Option...)"
+								},
+								{
+									"type": "method",
+									"name": "downcallType(FunctionDescriptor)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "upcallStub(MethodHandle, FunctionDescriptor, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "upcallStub(MethodHandle, FunctionDescriptor, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/Linker.html#upcallStub(java.lang.invoke.MethodHandle,java.lang.foreign.FunctionDescriptor,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "upcallType(FunctionDescriptor)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemoryAddress",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "MemoryLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isPadding()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "paddingLayout(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#paddingLayout(long)"
+								},
+								{
+									"type": "method",
+									"name": "paddingLayout(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "sequenceLayout(MemoryLayout)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#sequenceLayout(java.lang.foreign.MemoryLayout)"
+								},
+								{
+									"type": "method",
+									"name": "structLayout(MemoryLayout...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#structLayout(java.lang.foreign.MemoryLayout...)"
+								},
+								{
+									"type": "method",
+									"name": "structLayout(MemoryLayout...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "unionLayout(MemoryLayout...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#unionLayout(java.lang.foreign.MemoryLayout...)"
+								},
+								{
+									"type": "method",
+									"name": "unionLayout(MemoryLayout...)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemorySegment",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+							"removedTags": [
+								"implements Addressable"
+							],
+							"deltas": [
+								{
+									"type": "field",
+									"name": "NULL",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#NULL"
+								},
+								{
+									"type": "method",
+									"name": "address()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#address()"
+								},
+								{
+									"type": "method",
+									"name": "address()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(MemoryLayout, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(MemoryLayout, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(java.lang.foreign.MemoryLayout,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(long, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(long, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(long,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(long, long, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(long, long, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(long,long,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "array()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#array()"
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfAddress, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfAddress,long)"
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfAddress, long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfAddress, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfAddress,long)"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfAddress, long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "mismatch(MemorySegment)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#mismatch(java.lang.foreign.MemorySegment)",
+									"removedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "mismatch(MemorySegment, long, long, MemorySegment, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#mismatch(java.lang.foreign.MemorySegment,long,long,java.lang.foreign.MemorySegment,long,long)"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(MemoryAddress, long, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long)"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, long, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, long, SegmentScope, Runnable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long,java.lang.foreign.SegmentScope,java.lang.Runnable)"
+								},
+								{
+									"type": "method",
+									"name": "scope()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#scope()"
+								},
+								{
+									"type": "method",
+									"name": "session()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfAddress, long, Addressable)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfAddress, long, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfAddress,long,java.lang.foreign.MemorySegment)"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfAddress, long, Addressable)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfAddress, long, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfAddress,long,java.lang.foreign.MemorySegment)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemorySession",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "PaddingLayout",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/PaddingLayout.html"
+						},
+						{
+							"type": "interface",
+							"name": "SegmentAllocator",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfAddress, Addressable)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfAddress, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.ValueLayout.OfAddress,java.lang.foreign.MemorySegment)"
+								},
+								{
+									"type": "method",
+									"name": "implicitAllocator()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "nativeAllocator(SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#nativeAllocator(java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "newNativeArena(MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "newNativeArena(long, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "newNativeArena(long, long, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "slicingAllocator(MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#slicingAllocator(java.lang.foreign.MemorySegment)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SegmentScope",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SegmentScope.html"
+						},
+						{
+							"type": "interface",
+							"name": "SequenceLayout",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"sealed"
+							],
+							"removedTags": [
+								"extends AbstractLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "elementCount()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#elementCount()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "elementLayout()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#elementLayout()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "equals(Object)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "flatten()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#flatten()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "hashCode()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "reshape(long...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#reshape(long...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withElementCount(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withElementCount(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructLayout",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/StructLayout.html"
+						},
+						{
+							"type": "interface",
+							"name": "SymbolLookup",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "find(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SymbolLookup.html#find(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(Path, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(Path, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.nio.file.Path,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(String, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(String, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.lang.String,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "lookup(String)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "UnionLayout",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/UnionLayout.html"
+						},
+						{
+							"type": "interface",
+							"name": "VaList.Builder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.Builder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addVarg(ValueLayout.OfAddress, Addressable)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "addVarg(ValueLayout.OfAddress, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.Builder.html#addVarg(java.lang.foreign.ValueLayout.OfAddress,java.lang.foreign.MemorySegment)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "VaList",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.html",
+							"removedTags": [
+								"implements Addressable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "address()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "make(Consumer, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "make(Consumer, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.html#make(java.util.function.Consumer,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "nextVarg(ValueLayout.OfAddress)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.html#nextVarg(java.lang.foreign.ValueLayout.OfAddress)"
+								},
+								{
+									"type": "method",
+									"name": "nextVarg(ValueLayout.OfAddress)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(MemoryAddress, MemorySession)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, SegmentScope)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.html#ofAddress(long,java.lang.foreign.SegmentScope)"
+								},
+								{
+									"type": "method",
+									"name": "segment()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/VaList.html#segment()"
+								},
+								{
+									"type": "method",
+									"name": "session()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfAddress",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "asUnbounded()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#asUnbounded()"
+								},
+								{
+									"type": "method",
+									"name": "isUnbounded()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#isUnbounded()"
+								},
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfBoolean",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfByte",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfChar",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfDouble",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfFloat",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfInt",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfLong",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfShort",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html",
+							"addedTags": [
+								"abstract",
+								"extends Object",
+								"implements ValueLayout",
+								"sealed"
+							],
+							"removedTags": [
+								"extends ValueLayout",
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html",
+							"addedTags": [
+								"abstract",
+								"extends Object"
+							],
+							"removedTags": [
+								"extends AbstractLayout"
+							],
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ADDRESS_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#ADDRESS_UNALIGNED"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_CHAR_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_CHAR_UNALIGNED"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_DOUBLE_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_DOUBLE_UNALIGNED"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_FLOAT_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_FLOAT_UNALIGNED"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_INT_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_INT_UNALIGNED"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_LONG_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_LONG_UNALIGNED"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_SHORT_UNALIGNED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_SHORT_UNALIGNED"
+								},
+								{
+									"type": "method",
+									"name": "arrayElementVarHandle(int...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#arrayElementVarHandle(int...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "carrier()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#carrier()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "equals(Object)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "hashCode()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "order()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#order()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#withBitAlignment(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withName(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#withName(java.lang.String)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "withOrder(ByteOrder)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/foreign/ValueLayout.html#withOrder(java.nio.ByteOrder)",
+									"addedTags": [
+										"abstract"
+									]
 								}
 							]
 						}
@@ -346,6 +1706,36 @@
 						},
 						{
 							"type": "class",
+							"name": "ModuleLayer.Controller",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/ModuleLayer.Controller.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "enableNativeAccess(Module)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/ModuleLayer.Controller.html#enableNativeAccess(java.lang.Module)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Module",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Module.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isNativeAccessEnabled()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Module.html#isNativeAccessEnabled()"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "ThreadDeath",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/ThreadDeath.html",
@@ -457,6 +1847,35 @@
 				},
 				{
 					"type": "package",
+					"name": "java.nio.channels",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileChannel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.nio.file.spi",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/package-summary.html",
@@ -480,28 +1899,6 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributesIfExists(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption...)",
 									"csr": "JDK-8283336"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "package",
-					"name": "java.nio.file",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/package-summary.html",
-					"deltas": [
-						{
-							"type": "interface",
-							"name": "Path",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/Path.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "getExtension()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/Path.html#getExtension()"
 								}
 							]
 						}
@@ -591,6 +1988,42 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/security/InvalidParameterException.html#%3Cinit%3E(java.lang.Throwable)",
 									"csr": "JDK-8296237"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ForkJoinPool",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "externalSubmit(ForkJoinTask)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#externalSubmit(java.util.concurrent.ForkJoinTask)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ForkJoinWorkerThread",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getQueuedTaskCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getQueuedTaskCount()"
 								}
 							]
 						}
@@ -771,6 +2204,34 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "package",
+					"name": "javax.net.ssl",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SSLParameters",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getNamedGroups()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#getNamedGroups()"
+								},
+								{
+									"type": "method",
+									"name": "setNamedGroups(String[])",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#setNamedGroups(java.lang.String%5B%5D)"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -890,6 +2351,62 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endLineDownAction",
 									"csr": "JDK-8291468"
 								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.loading",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MLetContent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLetContent.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MLet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLet.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PrivateMLet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/PrivateMLet.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MLetMBean",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLetMBean.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]

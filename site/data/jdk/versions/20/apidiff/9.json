@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "20",
 		"vendor": "open",
-		"version": "20-ea+26-2022"
+		"version": "20-ea+27-2213"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -119,8 +119,11 @@
 						{
 							"type": "class",
 							"name": "Console",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Console.html",
+							"removedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -514,6 +517,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)",
 									"csr": "JDK-8191737"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SequenceInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "transferTo(OutputStream)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)"
 								}
 							]
 						},
@@ -2518,6 +2535,36 @@
 						},
 						{
 							"type": "class",
+							"name": "ModuleLayer.Controller",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/ModuleLayer.Controller.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "enableNativeAccess(Module)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/ModuleLayer.Controller.html#enableNativeAccess(java.lang.Module)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Module",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Module.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isNativeAccessEnabled()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/Module.html#isNativeAccessEnabled()"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "NullPointerException",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/lang/NullPointerException.html",
@@ -4214,11 +4261,10 @@
 							"deltas": [
 								{
 									"type": "method",
-									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+									"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.MemorySession)",
-									"csr": "JDK-8282192"
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)"
 								}
 							]
 						},
@@ -4457,12 +4503,6 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/Path.html",
 							"deltas": [
-								{
-									"type": "method",
-									"name": "getExtension()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/nio/file/Path.html#getExtension()"
-								},
 								{
 									"type": "method",
 									"name": "of(String, String...)",
@@ -6452,6 +6492,12 @@
 								},
 								{
 									"type": "method",
+									"name": "externalSubmit(ForkJoinTask)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#externalSubmit(java.util.concurrent.ForkJoinTask)"
+								},
+								{
+									"type": "method",
 									"name": "invokeAll(Collection, long, TimeUnit)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"
@@ -6546,6 +6592,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#%3Cinit%3E(java.lang.ThreadGroup,java.util.concurrent.ForkJoinPool,boolean)",
 									"csr": "JDK-8285450"
+								},
+								{
+									"type": "method",
+									"name": "getQueuedTaskCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getQueuedTaskCount()"
 								}
 							]
 						},
@@ -8304,10 +8356,22 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "getNamedGroups()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#getNamedGroups()"
+								},
+								{
+									"type": "method",
 									"name": "getSignatureSchemes()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSignatureSchemes()",
 									"csr": "JDK-8280495"
+								},
+								{
+									"type": "method",
+									"name": "setNamedGroups(String[])",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.base/javax/net/ssl/SSLParameters.html#setNamedGroups(java.lang.String%5B%5D)"
 								},
 								{
 									"type": "method",
@@ -13124,6 +13188,54 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long%5B%5D,boolean,boolean,int)",
 									"csr": "JDK-8185705"
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management.loading",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MLetContent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLetContent.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MLet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLet.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PrivateMLet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/PrivateMLet.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MLetMBean",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk20/docs/api/java.management/javax/management/loading/MLetMBean.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
