@@ -1,7 +1,7 @@
 {
 	"version": "20",
 	"name": "Java 20",
-	"ga": "2023-03-15",
+	"ga": "2023-03-21",
 	"eol": "2023-09-15",
 	"status": "DEV",
 	"bytecode": "64.0",
@@ -12,9 +12,53 @@
 	"scm": [
 		{
 			"type": "git",
-			"url": "https://github.com/openjdk/jdk"
+			"url": "https://github.com/openjdk/jdk20"
 		}
 	],
 	"features": [
+		{
+			"title": "Record Patterns (Second Preview)",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "432"
+				}
+			]
+		},
+		{
+			"title": "Pattern Matching for switch (Fourth Preview)",
+			"category": "lang",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "433"
+				}
+			]
+		},
+		{
+			"title": "Foreign Function & Memory API (Second Preview)",
+			"category": "api",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "434"
+				}
+			]
+		},
+		{
+			"title": "Virtual Threads (Second Preview)",
+			"category": "api",
+			"preview": true,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "436"
+				}
+			]
+		}
 	]
 }
