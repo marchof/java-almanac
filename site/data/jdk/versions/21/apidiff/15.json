@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+1-1"
+		"version": "21-ea+2-59"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -1845,6 +1845,11 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/ThreadGroup.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "allowThreadSuspension(boolean)",
+									"status": "removed"
+								},
 								{
 									"type": "method",
 									"name": "checkAccess()",
