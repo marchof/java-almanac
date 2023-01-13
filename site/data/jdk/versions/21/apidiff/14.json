@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+4-184"
+		"version": "21-ea+5-271"
 	},
 	"order": 14.0,
 	"deltas": [
@@ -7474,6 +7474,20 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthComboBoxUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getMinimumSize(JComponent)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "SynthDesktopIconUI",
