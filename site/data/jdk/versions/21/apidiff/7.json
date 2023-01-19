@@ -2700,7 +2700,8 @@
 							"type": "method",
 							"name": "transferTo(OutputStream)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)",
+							"csr": "JDK-8297298"
 						}
 					]
 				},
@@ -7394,7 +7395,8 @@
 						{
 							"type": "method",
 							"name": "allowThreadSuspension(boolean)",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8297331"
 						},
 						{
 							"type": "method",
@@ -9172,7 +9174,8 @@
 							"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)",
+							"csr": "JDK-8295045"
 						}
 					]
 				},
@@ -14520,7 +14523,8 @@
 							"type": "method",
 							"name": "externalSubmit(ForkJoinTask)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#externalSubmit(java.util.concurrent.ForkJoinTask)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#externalSubmit(java.util.concurrent.ForkJoinTask)",
+							"csr": "JDK-8297648"
 						},
 						{
 							"type": "method",
@@ -14659,7 +14663,8 @@
 							"type": "method",
 							"name": "getQueuedTaskCount()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getQueuedTaskCount()"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getQueuedTaskCount()",
+							"csr": "JDK-8297648"
 						}
 					]
 				},
@@ -21027,7 +21032,8 @@
 							"type": "field",
 							"name": "RELEASE_21",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_21"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_21",
+							"csr": "JDK-8296179"
 						},
 						{
 							"type": "field",
@@ -21549,7 +21555,8 @@
 							"type": "method",
 							"name": "getNamedGroups()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/SSLParameters.html#getNamedGroups()"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/SSLParameters.html#getNamedGroups()",
+							"csr": "JDK-8291950"
 						},
 						{
 							"type": "method",
@@ -21598,7 +21605,8 @@
 							"type": "method",
 							"name": "setNamedGroups(String[])",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/SSLParameters.html#setNamedGroups(java.lang.String%5B%5D)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/SSLParameters.html#setNamedGroups(java.lang.String%5B%5D)",
+							"csr": "JDK-8291950"
 						},
 						{
 							"type": "method",
@@ -23421,7 +23429,8 @@
 							"type": "method",
 							"name": "getMinimumSize(JComponent)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)",
+							"csr": "https://bugs.openjdk.org/browse/JDK-8218474"
 						}
 					]
 				},
