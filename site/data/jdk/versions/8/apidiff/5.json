@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "8",
 		"vendor": "tem",
-		"version": "8.0.345"
+		"version": "8.0.362"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -3203,6 +3203,29 @@
 							"name": "isSynchronizerUsageSupported()",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported--"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "java.lang.ref",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/ref/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Reference",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/ref/Reference.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "clone()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/lang/ref/Reference.html#clone--",
+							"csr": "JDK-8202260"
 						}
 					]
 				}

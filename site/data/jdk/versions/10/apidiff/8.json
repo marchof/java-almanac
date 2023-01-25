@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "8",
 		"vendor": "tem",
-		"version": "8.0.345"
+		"version": "8.0.362"
 	},
 	"target": {
 		"feature": "10",
@@ -2036,6 +2036,11 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/lang/ref/Reference.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "clone()",
+							"status": "removed"
+						},
 						{
 							"type": "method",
 							"name": "reachabilityFence(Object)",
