@@ -76,6 +76,7 @@ Vue.component('downloadlist', {
                 { id: 'linux-ia64', name: 'linux-ia64', query: 'operating_system=linux&architecture=ia64' },
                 { id: 'linux-ppc64', name: 'linux-ppc64', query: 'operating_system=linux&architecture=ppc64' },
                 { id: 'linux-ppc64le', name: 'linux-ppc64le', query: 'operating_system=linux&architecture=ppc64le' },
+                { id: 'linux-riscv64', name: 'linux-riscv64', query: 'operating_system=linux&architecture=riscv64' },
                 { id: 'linux-s390x', name: 'linux-s390x', query: 'operating_system=linux&architecture=s390x' },
                 { id: 'linux-x86', name: 'linux-x86', query: 'operating_system=linux&architecture=x86' },
                 { id: 'linux-x64', name: 'linux-x64', query: 'libc_type=libc,glibc&operating_system=linux&architecture=x64,amd64' },
