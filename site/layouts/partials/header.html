@@ -1,11 +1,11 @@
-{{- $style := resources.Get "almanac.css" | resources.Minify -}}
+{{- $style := resources.Get "almanac.css" | resources.Minify | resources.Fingerprint -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=0.75">
   <title>{{ $.Title }} - {{ $.Site.Title }}</title>
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   <link rel="shortcut icon" type="image/png" href="{{ "img/duke64.png" | relURL }}" />
 </head>
 <body>

@@ -6,7 +6,7 @@
 {{- $ace := resources.Get "app/ace/ace.js" }}
 {{- $ace_java := resources.Get "app/ace/mode-java.js" }}
 {{- $ace_theme := resources.Get "app/ace/theme-almanac.js" }}
-{{- $js := slice $vue $axios $tabs $sandbox $ace $ace_java $ace_theme | resources.Concat "app/sandbox-bundle.js" }}
-<script src="{{ $js.RelPermalink }}"></script>
+{{- $js := slice $vue $axios $tabs $sandbox $ace $ace_java $ace_theme | resources.Concat "app/sandbox-bundle.js" | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 <script>new Vue({ el: '#content' })</script>
 {{- end }}
