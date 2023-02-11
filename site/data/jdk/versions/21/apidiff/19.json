@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+8-578"
+		"version": "21-ea+9-678"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -2319,7 +2319,8 @@
 									"type": "method",
 									"name": "shuffle(List, RandomGenerator)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.random.RandomGenerator)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.random.RandomGenerator)",
+									"csr": "JDK-8294694"
 								}
 							]
 						},
@@ -2471,6 +2472,24 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)",
 									"csr": "https://bugs.openjdk.org/browse/JDK-8218474"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SynthLookAndFeel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "load(URL)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
 								}
 							]
 						},
