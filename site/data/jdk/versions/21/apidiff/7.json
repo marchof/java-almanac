@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+9-678"
+		"version": "21-ea+10-784"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -6162,6 +6162,30 @@
 						},
 						{
 							"type": "method",
+							"name": "clamp(double, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(double,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "clamp(float, float, float)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(float,float,float)"
+						},
+						{
+							"type": "method",
+							"name": "clamp(long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "clamp(long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(long,long,long)"
+						},
+						{
+							"type": "method",
 							"name": "decrementExact(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#decrementExact(int)"
@@ -6963,6 +6987,30 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#ceilMod(long,long)",
 							"csr": "JDK-8273090"
+						},
+						{
+							"type": "method",
+							"name": "clamp(double, double, double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(double,double,double)"
+						},
+						{
+							"type": "method",
+							"name": "clamp(float, float, float)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(float,float,float)"
+						},
+						{
+							"type": "method",
+							"name": "clamp(long, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(long,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "clamp(long, long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(long,long,long)"
 						},
 						{
 							"type": "method",
