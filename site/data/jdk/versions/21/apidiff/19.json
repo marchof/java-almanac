@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+11-905"
+		"version": "21-ea+12-971"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -2407,6 +2407,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/IdentityHashMap.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)",
 									"csr": "JDK-8284901"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Locale",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "availableLocales()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()"
 								}
 							]
 						}
