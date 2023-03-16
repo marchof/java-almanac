@@ -1,4 +1,5 @@
 {{- partial "header.html" . }}
 <h1>{{ .Title }}</h1>
+{{- with .Params.copyright }}<div class="copyright">&copy; {{ . }}</div>{{ end }}
 {{- .Content }}
 {{- partial "footer.html" . }}
