@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+13-1060"
+		"version": "21-ea+14-1161"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -5402,25 +5402,29 @@
 							"type": "method",
 							"name": "clamp(double, double, double)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(double,double,double)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(double,double,double)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
 							"name": "clamp(float, float, float)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(float,float,float)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(float,float,float)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
 							"name": "clamp(long, int, int)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(long,int,int)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(long,int,int)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
 							"name": "clamp(long, long, long)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(long,long,long)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Math.html#clamp(long,long,long)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
@@ -6056,25 +6060,29 @@
 							"type": "method",
 							"name": "clamp(double, double, double)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(double,double,double)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(double,double,double)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
 							"name": "clamp(float, float, float)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(float,float,float)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(float,float,float)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
 							"name": "clamp(long, int, int)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(long,int,int)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(long,int,int)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
 							"name": "clamp(long, long, long)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(long,long,long)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StrictMath.html#clamp(long,long,long)",
+							"csr": "JDK-8301301"
 						},
 						{
 							"type": "method",
@@ -6280,7 +6288,8 @@
 							"type": "method",
 							"name": "indexOf(int, int, int)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#indexOf(int,int,int)"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#indexOf(int,int,int)",
+							"csr": "JDK-8302680"
 						},
 						{
 							"type": "method",
@@ -14348,7 +14357,8 @@
 							"type": "method",
 							"name": "availableLocales()",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()",
+							"csr": "JDK-8301293"
 						},
 						{
 							"type": "method",
@@ -17355,6 +17365,32 @@
 					"type": "class",
 					"name": "_RMIServer_Stub",
 					"status": "removed"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "javax.management.remote",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.management/javax/management/remote/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "JMXConnector",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.management/javax/management/remote/JMXConnector.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getMBeanServerConnection(Subject)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
 				}
 			]
 		},
