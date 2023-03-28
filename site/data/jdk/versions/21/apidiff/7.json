@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+14-1161"
+		"version": "21-ea+15-1232"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -5112,6 +5112,42 @@
 						},
 						{
 							"type": "method",
+							"name": "isEmoji(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmoji(int)"
+						},
+						{
+							"type": "method",
+							"name": "isEmojiComponent(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiComponent(int)"
+						},
+						{
+							"type": "method",
+							"name": "isEmojiModifier(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiModifier(int)"
+						},
+						{
+							"type": "method",
+							"name": "isEmojiModifierBase(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiModifierBase(int)"
+						},
+						{
+							"type": "method",
+							"name": "isEmojiPresentation(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiPresentation(int)"
+						},
+						{
+							"type": "method",
+							"name": "isExtendedPictographic(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isExtendedPictographic(int)"
+						},
+						{
+							"type": "method",
 							"name": "toString(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#toString(int)",
@@ -7285,6 +7321,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#indent(int)",
 							"csr": "JDK-8200435"
+						},
+						{
+							"type": "method",
+							"name": "indexOf(String, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int,int)"
 						},
 						{
 							"type": "method",

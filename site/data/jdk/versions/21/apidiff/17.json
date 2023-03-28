@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+14-1161"
+		"version": "21-ea+15-1232"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -203,6 +203,44 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ConstantDescs",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "BSM_CLASS_DATA",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html#BSM_CLASS_DATA"
+								},
+								{
+									"type": "field",
+									"name": "BSM_CLASS_DATA_AT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html#BSM_CLASS_DATA_AT"
+								},
+								{
+									"type": "field",
+									"name": "CLASS_INIT_NAME",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html#CLASS_INIT_NAME"
+								},
+								{
+									"type": "field",
+									"name": "INIT_NAME",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html#INIT_NAME"
+								},
+								{
+									"type": "field",
+									"name": "MTD_void",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html#MTD_void"
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "ClassDesc",
@@ -704,6 +742,50 @@
 						},
 						{
 							"type": "class",
+							"name": "Character",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isEmoji(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmoji(int)"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiComponent(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiComponent(int)"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiModifier(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiModifier(int)"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiModifierBase(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiModifierBase(int)"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiPresentation(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isEmojiPresentation(int)"
+								},
+								{
+									"type": "method",
+									"name": "isExtendedPictographic(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Character.html#isExtendedPictographic(int)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Class",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Class.html",
@@ -1199,6 +1281,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "indexOf(String, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int,int)"
+								},
 								{
 									"type": "method",
 									"name": "indexOf(int, int, int)",
