@@ -7,6 +7,7 @@
   <title>{{ $.Title }} - {{ $.Site.Title }}</title>
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   <link rel="shortcut icon" type="image/png" href="{{ "img/duke64.png" | relURL }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
 </head>
 <body>
 <div class="header-bar">
