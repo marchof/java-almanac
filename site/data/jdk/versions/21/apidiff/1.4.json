@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+16-1326"
+		"version": "21-ea+17-1421"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -11698,6 +11698,7 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html",
 					"addedTags": [
 						"extends AbstractStringBuilder",
+						"implements Appendable",
 						"implements Comparable"
 					],
 					"removedTags": [
@@ -11770,6 +11771,18 @@
 							"name": "offsetByCodePoints(int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html#offsetByCodePoints(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "repeat(CharSequence, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html#repeat(java.lang.CharSequence,int)"
+						},
+						{
+							"type": "method",
+							"name": "repeat(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html#repeat(int,int)"
 						},
 						{
 							"type": "method",
@@ -21900,8 +21913,11 @@
 				{
 					"type": "class",
 					"name": "Arrays",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Arrays.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",

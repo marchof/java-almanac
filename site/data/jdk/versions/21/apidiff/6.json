@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+16-1326"
+		"version": "21-ea+17-1421"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -8500,6 +8500,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html",
 					"addedTags": [
+						"implements Appendable",
 						"implements Comparable"
 					],
 					"deltas": [
@@ -8509,6 +8510,18 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html#compareTo(java.lang.StringBuffer)",
 							"csr": "JDK-8195867"
+						},
+						{
+							"type": "method",
+							"name": "repeat(CharSequence, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html#repeat(java.lang.CharSequence,int)"
+						},
+						{
+							"type": "method",
+							"name": "repeat(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuffer.html#repeat(int,int)"
 						}
 					]
 				},
@@ -8518,6 +8531,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuilder.html",
 					"addedTags": [
+						"implements Appendable",
 						"implements Comparable"
 					],
 					"deltas": [
@@ -8527,6 +8541,18 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuilder.html#compareTo(java.lang.StringBuilder)",
 							"csr": "JDK-8195867"
+						},
+						{
+							"type": "method",
+							"name": "repeat(CharSequence, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuilder.html#repeat(java.lang.CharSequence,int)"
+						},
+						{
+							"type": "method",
+							"name": "repeat(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringBuilder.html#repeat(int,int)"
 						}
 					]
 				},
@@ -15619,6 +15645,20 @@
 				},
 				{
 					"type": "class",
+					"name": "DelayQueue",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/DelayQueue.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "remove()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/DelayQueue.html#remove()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "Executors",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/Executors.html",
@@ -17428,8 +17468,11 @@
 				{
 					"type": "class",
 					"name": "Arrays",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Arrays.html",
+					"addedTags": [
+						"final"
+					],
 					"deltas": [
 						{
 							"type": "method",
