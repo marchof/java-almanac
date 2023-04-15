@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+17-1421"
+		"version": "21-ea+18-1480"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -80,6 +80,48 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ConstantDescs.html#MTD_void",
 									"csr": "JDK-8304140"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ClassDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolveConstantDesc(MethodHandles.Lookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ClassDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodHandleDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolveConstantDesc(MethodHandles.Lookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodHandleDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTypeDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolveConstantDesc(MethodHandles.Lookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
 								}
 							]
 						}
@@ -163,6 +205,11 @@
 									"csr": "JDK-8304027"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "Compiler",
+							"status": "removed"
 						},
 						{
 							"type": "class",
@@ -321,6 +368,123 @@
 									"csr": "JDK-8297331"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "Thread",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isVirtual()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#isVirtual()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ofPlatform()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ofVirtual()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "startVirtualThread(Runnable)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Thread.Builder.OfPlatform",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowSetThreadLocals(boolean)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Thread.Builder.OfVirtual",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowSetThreadLocals(boolean)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Thread.Builder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.Builder.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowSetThreadLocals(boolean)",
+									"status": "removed"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security.cert",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/security/cert/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CertStore",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/security/cert/CertStore.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getDefaultType()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/security/cert/CertStore.html#getDefaultType()",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
 						}
 					]
 				},
@@ -342,6 +506,32 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/DelayQueue.html#remove()",
 									"csr": "JDK-8304686"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Executors",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/Executors.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newThreadPerTaskExecutor(ThreadFactory)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "newVirtualThreadPerTaskExecutor()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						}
@@ -389,6 +579,48 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()",
 									"csr": "JDK-8301293"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.net.ssl",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "KeyManagerFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getDefaultAlgorithm()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TrustManagerFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getDefaultAlgorithm()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm()",
+									"addedTags": [
+										"final"
+									]
 								}
 							]
 						}
@@ -450,7 +682,7 @@
 									"name": "getMinimumSize(JComponent)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)",
-									"csr": "https://bugs.openjdk.org/browse/JDK-8218474"
+									"csr": "JDK-8218474"
 								}
 							]
 						},
@@ -526,6 +758,63 @@
 										"deprecated",
 										"forRemoval"
 									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.net.http",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.net.http",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HttpClient",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "awaitTermination(Duration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#awaitTermination(java.time.Duration)"
+								},
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#close()"
+								},
+								{
+									"type": "method",
+									"name": "isTerminated()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#isTerminated()"
+								},
+								{
+									"type": "method",
+									"name": "shutdown()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdown()"
+								},
+								{
+									"type": "method",
+									"name": "shutdownNow()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdownNow()"
 								}
 							]
 						}

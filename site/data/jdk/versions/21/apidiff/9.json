@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+17-1421"
+		"version": "21-ea+18-1480"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -2097,6 +2097,11 @@
 						},
 						{
 							"type": "class",
+							"name": "Compiler",
+							"status": "removed"
+						},
+						{
+							"type": "class",
 							"name": "Double",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Double.html",
@@ -3553,7 +3558,6 @@
 									"type": "method",
 									"name": "isVirtual()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#isVirtual()",
 									"csr": "JDK-8284169"
 								},
@@ -3568,7 +3572,6 @@
 									"type": "method",
 									"name": "ofPlatform()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
 									"csr": "JDK-8284169"
 								},
@@ -3576,7 +3579,6 @@
 									"type": "method",
 									"name": "ofVirtual()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
 									"csr": "JDK-8284169"
 								},
@@ -3600,7 +3602,6 @@
 									"type": "method",
 									"name": "startVirtualThread(Runnable)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
 									"csr": "JDK-8284169"
 								},
@@ -3924,7 +3925,6 @@
 							"type": "interface",
 							"name": "Thread.Builder.OfPlatform",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
 							"csr": "JDK-8284169"
 						},
@@ -3932,7 +3932,6 @@
 							"type": "interface",
 							"name": "Thread.Builder.OfVirtual",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
 							"csr": "JDK-8284169"
 						},
@@ -3940,7 +3939,6 @@
 							"type": "interface",
 							"name": "Thread.Builder",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Thread.Builder.html",
 							"csr": "JDK-8284169"
 						}
@@ -5178,23 +5176,6 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/security/cert/package-summary.html",
 					"deltas": [
-						{
-							"type": "class",
-							"name": "CertStore",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/security/cert/CertStore.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "getDefaultType()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/security/cert/CertStore.html#getDefaultType()",
-									"removedTags": [
-										"final"
-									]
-								}
-							]
-						},
 						{
 							"type": "class",
 							"name": "X509CRLSelector",
@@ -6594,7 +6575,6 @@
 									"type": "method",
 									"name": "newThreadPerTaskExecutor(ThreadFactory)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)",
 									"csr": "JDK-8284169"
 								},
@@ -6602,7 +6582,6 @@
 									"type": "method",
 									"name": "newVirtualThreadPerTaskExecutor()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()",
 									"csr": "JDK-8284169"
 								},
@@ -8497,23 +8476,6 @@
 						},
 						{
 							"type": "class",
-							"name": "KeyManagerFactory",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "getDefaultAlgorithm()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()",
-									"removedTags": [
-										"final"
-									]
-								}
-							]
-						},
-						{
-							"type": "class",
 							"name": "SSLHandshakeException",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html",
@@ -8605,23 +8567,6 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/SSLProtocolException.html#%3Cinit%3E(java.lang.String,java.lang.Throwable)",
 									"csr": "JDK-8282724"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "TrustManagerFactory",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "getDefaultAlgorithm()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm()",
-									"removedTags": [
-										"final"
-									]
 								}
 							]
 						},
@@ -11764,7 +11709,7 @@
 									"name": "getMinimumSize(JComponent)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)",
-									"csr": "https://bugs.openjdk.org/browse/JDK-8218474"
+									"csr": "JDK-8218474"
 								}
 							]
 						},
