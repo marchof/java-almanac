@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+19-1566"
+		"version": "21-ea+20-1677"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -13233,7 +13233,8 @@
 				{
 					"type": "class",
 					"name": "Compiler",
-					"status": "removed"
+					"status": "removed",
+					"csr": "JDK-8304458"
 				},
 				{
 					"type": "class",
@@ -29213,6 +29214,24 @@
 					"name": "RandomAccess",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/RandomAccess.html"
+				},
+				{
+					"type": "interface",
+					"name": "SequencedCollection",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SequencedCollection.html"
+				},
+				{
+					"type": "interface",
+					"name": "SequencedMap",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SequencedMap.html"
+				},
+				{
+					"type": "interface",
+					"name": "SequencedSet",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SequencedSet.html"
 				},
 				{
 					"type": "interface",

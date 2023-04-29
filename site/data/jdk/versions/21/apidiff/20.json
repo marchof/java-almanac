@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+19-1566"
+		"version": "21-ea+20-1677"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -93,7 +93,8 @@
 									"type": "method",
 									"name": "resolveConstantDesc(MethodHandles.Lookup)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ClassDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ClassDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+									"csr": "JDK-8304012"
 								}
 							]
 						},
@@ -107,7 +108,8 @@
 									"type": "method",
 									"name": "resolveConstantDesc(MethodHandles.Lookup)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodHandleDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodHandleDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+									"csr": "JDK-8304012"
 								}
 							]
 						},
@@ -121,7 +123,8 @@
 									"type": "method",
 									"name": "resolveConstantDesc(MethodHandles.Lookup)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+									"csr": "JDK-8304012"
 								}
 							]
 						}
@@ -209,7 +212,8 @@
 						{
 							"type": "class",
 							"name": "Compiler",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8304458"
 						},
 						{
 							"type": "class",
@@ -425,7 +429,8 @@
 								{
 									"type": "method",
 									"name": "allowSetThreadLocals(boolean)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8304920"
 								}
 							]
 						},
@@ -441,7 +446,8 @@
 								{
 									"type": "method",
 									"name": "allowSetThreadLocals(boolean)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8304920"
 								}
 							]
 						},
@@ -457,7 +463,8 @@
 								{
 									"type": "method",
 									"name": "allowSetThreadLocals(boolean)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8304920"
 								}
 							]
 						}
@@ -494,6 +501,96 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ConcurrentSkipListMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#putFirst(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#putLast(java.lang.Object,java.lang.Object)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ConcurrentSkipListSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#addLast(java.lang.Object)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "CopyOnWriteArrayList",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addLast(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#getFirst()"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#getLast()"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeFirst()"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeLast()"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#reversed()"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "DelayQueue",
@@ -545,6 +642,50 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "ArrayList",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html#addLast(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html#getFirst()"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html#getLast()"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html#removeFirst()"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/ArrayList.html#removeLast()"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Arrays",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Arrays.html",
@@ -560,10 +701,154 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "newSequencedSetFromMap(SequencedMap)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#newSequencedSetFromMap(java.util.SequencedMap)"
+								},
+								{
+									"type": "method",
 									"name": "shuffle(List, RandomGenerator)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.random.RandomGenerator)",
 									"csr": "JDK-8294694"
+								},
+								{
+									"type": "method",
+									"name": "unmodifiableSequencedCollection(SequencedCollection)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#unmodifiableSequencedCollection(java.util.SequencedCollection)"
+								},
+								{
+									"type": "method",
+									"name": "unmodifiableSequencedMap(SequencedMap)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#unmodifiableSequencedMap(java.util.SequencedMap)"
+								},
+								{
+									"type": "method",
+									"name": "unmodifiableSequencedSet(SequencedSet)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Collections.html#unmodifiableSequencedSet(java.util.SequencedSet)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedHashMap",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html",
+							"addedTags": [
+								"implements SequencedMap"
+							],
+							"removedTags": [
+								"implements Map"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html#putFirst(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html#putLast(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html#reversed()"
+								},
+								{
+									"type": "method",
+									"name": "sequencedEntrySet()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html#sequencedEntrySet()"
+								},
+								{
+									"type": "method",
+									"name": "sequencedKeySet()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html#sequencedKeySet()"
+								},
+								{
+									"type": "method",
+									"name": "sequencedValues()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashMap.html#sequencedValues()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedHashSet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html",
+							"addedTags": [
+								"implements SequencedSet"
+							],
+							"removedTags": [
+								"implements Set"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#addLast(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#getFirst()"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#getLast()"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#removeFirst()"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#removeLast()"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedHashSet.html#reversed()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedList",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedList.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/LinkedList.html#reversed()"
 								}
 							]
 						},
@@ -579,6 +864,262 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()",
 									"csr": "JDK-8301293"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TreeMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/TreeMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/TreeMap.html#putFirst(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/TreeMap.html#putLast(java.lang.Object,java.lang.Object)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TreeSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/TreeSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/TreeSet.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/TreeSet.html#addLast(java.lang.Object)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Deque",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Deque.html",
+							"addedTags": [
+								"implements SequencedCollection"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Deque.html#reversed()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "List",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html",
+							"addedTags": [
+								"implements SequencedCollection"
+							],
+							"removedTags": [
+								"implements Collection"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#addLast(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#getFirst()"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#getLast()"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#removeFirst()"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#removeLast()"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/List.html#reversed()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NavigableMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/NavigableMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/NavigableMap.html#reversed()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NavigableSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/NavigableSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/NavigableSet.html#removeFirst()"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/NavigableSet.html#removeLast()"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/NavigableSet.html#reversed()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SequencedCollection",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SequencedCollection.html"
+						},
+						{
+							"type": "interface",
+							"name": "SequencedMap",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SequencedMap.html"
+						},
+						{
+							"type": "interface",
+							"name": "SequencedSet",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SequencedSet.html"
+						},
+						{
+							"type": "interface",
+							"name": "SortedMap",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedMap.html",
+							"addedTags": [
+								"implements SequencedMap"
+							],
+							"removedTags": [
+								"implements Map"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedMap.html#putFirst(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedMap.html#putLast(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedMap.html#reversed()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SortedSet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html",
+							"addedTags": [
+								"implements SequencedSet"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#addFirst(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#addLast(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#getFirst()"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#getLast()"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#removeFirst()"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#removeLast()"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/SortedSet.html#reversed()"
 								}
 							]
 						}
@@ -790,31 +1331,36 @@
 									"type": "method",
 									"name": "awaitTermination(Duration)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#awaitTermination(java.time.Duration)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#awaitTermination(java.time.Duration)",
+									"csr": "JDK-8304165"
 								},
 								{
 									"type": "method",
 									"name": "close()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#close()"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#close()",
+									"csr": "JDK-8304165"
 								},
 								{
 									"type": "method",
 									"name": "isTerminated()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#isTerminated()"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#isTerminated()",
+									"csr": "JDK-8304165"
 								},
 								{
 									"type": "method",
 									"name": "shutdown()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdown()"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdown()",
+									"csr": "JDK-8304165"
 								},
 								{
 									"type": "method",
 									"name": "shutdownNow()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdownNow()"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdownNow()",
+									"csr": "JDK-8304165"
 								}
 							]
 						}
