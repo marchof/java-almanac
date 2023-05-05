@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+20-1677"
+		"version": "21-ea+21-1778"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -182,6 +182,18 @@
 									"csr": "JDK-8304012"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleDesc",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ModuleDesc.html"
+						},
+						{
+							"type": "interface",
+							"name": "PackageDesc",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/PackageDesc.html"
 						}
 					]
 				},
@@ -191,6 +203,19 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ValueLayout.OfAddress",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "AddressLayout",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/AddressLayout.html"
+						},
 						{
 							"type": "interface",
 							"name": "Addressable",
@@ -381,16 +406,14 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/GroupLayout.html#withoutName()"
 								}
 							]
-						},
-						{
-							"type": "interface",
-							"name": "Linker.Option.CaptureCallState",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/Linker.Option.CaptureCallState.html",
-							"csr": "JDK-8295045"
 						},
 						{
 							"type": "interface",
@@ -441,15 +464,14 @@
 								},
 								{
 									"type": "method",
-									"name": "upcallStub(MethodHandle, FunctionDescriptor, MemorySession)",
-									"status": "removed",
-									"csr": "JDK-8295045"
+									"name": "upcallStub(MethodHandle, FunctionDescriptor, Arena, Linker.Option...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/Linker.html#upcallStub(java.lang.invoke.MethodHandle,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Arena,java.lang.foreign.Linker.Option...)"
 								},
 								{
 									"type": "method",
-									"name": "upcallStub(MethodHandle, FunctionDescriptor, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/Linker.html#upcallStub(java.lang.invoke.MethodHandle,java.lang.foreign.FunctionDescriptor,java.lang.foreign.SegmentScope)",
+									"name": "upcallStub(MethodHandle, FunctionDescriptor, MemorySession)",
+									"status": "removed",
 									"csr": "JDK-8295045"
 								},
 								{
@@ -469,11 +491,41 @@
 						},
 						{
 							"type": "interface",
+							"name": "MemoryLayout.PathElement",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "dereferenceElement()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html#dereferenceElement()"
+								},
+								{
+									"type": "method",
+									"name": "groupElement(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html#groupElement(long)"
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "MemoryLayout",
 							"status": "notmodified",
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "byteAlignment()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html#byteAlignment()",
+									"addedTags": [
+										"abstract"
+									]
+								},
 								{
 									"type": "method",
 									"name": "isPadding()",
@@ -525,8 +577,26 @@
 									"name": "unionLayout(MemoryLayout...)",
 									"status": "removed",
 									"csr": "JDK-8295045"
+								},
+								{
+									"type": "method",
+									"name": "valueLayout(Class, ByteOrder)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html#withoutName()"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "MemorySegment.Scope",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.Scope.html"
 						},
 						{
 							"type": "interface",
@@ -566,22 +636,8 @@
 								},
 								{
 									"type": "method",
-									"name": "allocateNative(MemoryLayout, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(java.lang.foreign.MemoryLayout,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
 									"name": "allocateNative(long, MemorySession)",
 									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "allocateNative(long, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(long,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
 								{
@@ -592,24 +648,30 @@
 								},
 								{
 									"type": "method",
-									"name": "allocateNative(long, long, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(long,long,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
+									"name": "asSlice(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#asSlice(long)",
+									"addedTags": [
+										"abstract"
+									]
 								},
 								{
 									"type": "method",
-									"name": "array()",
+									"name": "asSlice(long, MemoryLayout)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#array()",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#asSlice(long,java.lang.foreign.MemoryLayout)"
 								},
 								{
 									"type": "method",
-									"name": "get(ValueLayout.OfAddress, long)",
+									"name": "asSlice(long, long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfAddress,long)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#asSlice(long,long,long)"
+								},
+								{
+									"type": "method",
+									"name": "get(AddressLayout, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.AddressLayout,long)"
 								},
 								{
 									"type": "method",
@@ -619,16 +681,39 @@
 								},
 								{
 									"type": "method",
-									"name": "getAtIndex(ValueLayout.OfAddress, long)",
+									"name": "getAtIndex(AddressLayout, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfAddress,long)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.AddressLayout,long)"
 								},
 								{
 									"type": "method",
 									"name": "getAtIndex(ValueLayout.OfAddress, long)",
 									"status": "removed",
 									"csr": "JDK-8295045"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfBoolean, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfBoolean,long)"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfByte, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfByte,long)"
+								},
+								{
+									"type": "method",
+									"name": "heapBase()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#heapBase()"
+								},
+								{
+									"type": "method",
+									"name": "isAccessibleBy(Thread)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#isAccessibleBy(java.lang.Thread)"
 								},
 								{
 									"type": "method",
@@ -661,31 +746,27 @@
 								},
 								{
 									"type": "method",
-									"name": "ofAddress(long, long)",
+									"name": "reinterpret(Arena, Consumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#reinterpret(java.lang.foreign.Arena,java.util.function.Consumer)"
 								},
 								{
 									"type": "method",
-									"name": "ofAddress(long, long, SegmentScope)",
+									"name": "reinterpret(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#reinterpret(long)"
 								},
 								{
 									"type": "method",
-									"name": "ofAddress(long, long, SegmentScope, Runnable)",
+									"name": "reinterpret(long, Arena, Consumer)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long,java.lang.foreign.SegmentScope,java.lang.Runnable)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#reinterpret(long,java.lang.foreign.Arena,java.util.function.Consumer)"
 								},
 								{
 									"type": "method",
 									"name": "scope()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#scope()",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#scope()"
 								},
 								{
 									"type": "method",
@@ -695,16 +776,21 @@
 								},
 								{
 									"type": "method",
+									"name": "set(AddressLayout, long, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)"
+								},
+								{
+									"type": "method",
 									"name": "set(ValueLayout.OfAddress, long, Addressable)",
 									"status": "removed",
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
-									"name": "set(ValueLayout.OfAddress, long, MemorySegment)",
+									"name": "setAtIndex(AddressLayout, long, MemorySegment)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfAddress,long,java.lang.foreign.MemorySegment)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)"
 								},
 								{
 									"type": "method",
@@ -714,10 +800,15 @@
 								},
 								{
 									"type": "method",
-									"name": "setAtIndex(ValueLayout.OfAddress, long, MemorySegment)",
+									"name": "setAtIndex(ValueLayout.OfBoolean, long, boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfAddress,long,java.lang.foreign.MemorySegment)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfBoolean,long,boolean)"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfByte, long, byte)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfByte,long,byte)"
 								}
 							]
 						},
@@ -745,28 +836,20 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "allocate(AddressLayout, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.AddressLayout,java.lang.foreign.MemorySegment)"
+								},
+								{
+									"type": "method",
 									"name": "allocate(ValueLayout.OfAddress, Addressable)",
 									"status": "removed",
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
-									"name": "allocate(ValueLayout.OfAddress, MemorySegment)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.ValueLayout.OfAddress,java.lang.foreign.MemorySegment)",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
 									"name": "implicitAllocator()",
 									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "nativeAllocator(SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#nativeAllocator(java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
 								{
@@ -795,14 +878,6 @@
 									"csr": "JDK-8295045"
 								}
 							]
-						},
-						{
-							"type": "interface",
-							"name": "SegmentScope",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SegmentScope.html",
-							"csr": "JDK-8295045"
 						},
 						{
 							"type": "interface",
@@ -900,6 +975,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withoutName()"
 								}
 							]
 						},
@@ -927,28 +1008,26 @@
 								},
 								{
 									"type": "method",
+									"name": "libraryLookup(Path, Arena)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.nio.file.Path,java.lang.foreign.Arena)"
+								},
+								{
+									"type": "method",
 									"name": "libraryLookup(Path, MemorySession)",
 									"status": "removed",
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
-									"name": "libraryLookup(Path, SegmentScope)",
+									"name": "libraryLookup(String, Arena)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.nio.file.Path,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.lang.String,java.lang.foreign.Arena)"
 								},
 								{
 									"type": "method",
 									"name": "libraryLookup(String, MemorySession)",
 									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "libraryLookup(String, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.lang.String,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
 								{
@@ -970,154 +1049,14 @@
 						{
 							"type": "interface",
 							"name": "VaList.Builder",
-							"status": "notmodified",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.Builder.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "addVarg(ValueLayout.OfAddress, Addressable)",
-									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "addVarg(ValueLayout.OfAddress, MemorySegment)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.Builder.html#addVarg(java.lang.foreign.ValueLayout.OfAddress,java.lang.foreign.MemorySegment)",
-									"csr": "JDK-8295045"
-								}
-							]
+							"status": "removed",
+							"preview": true
 						},
 						{
 							"type": "interface",
 							"name": "VaList",
-							"status": "modified",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.html",
-							"removedTags": [
-								"implements Addressable"
-							],
-							"deltas": [
-								{
-									"type": "method",
-									"name": "address()",
-									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "make(Consumer, MemorySession)",
-									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "make(Consumer, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.html#make(java.util.function.Consumer,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "nextVarg(ValueLayout.OfAddress)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.html#nextVarg(java.lang.foreign.ValueLayout.OfAddress)",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "nextVarg(ValueLayout.OfAddress)",
-									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "ofAddress(MemoryAddress, MemorySession)",
-									"status": "removed",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "ofAddress(long, SegmentScope)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.html#ofAddress(long,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "segment()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/VaList.html#segment()",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "session()",
-									"status": "removed",
-									"csr": "JDK-8295045"
-								}
-							]
-						},
-						{
-							"type": "interface",
-							"name": "ValueLayout.OfAddress",
-							"status": "modified",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html",
-							"addedTags": [
-								"abstract",
-								"extends Object",
-								"implements ValueLayout",
-								"sealed"
-							],
-							"removedTags": [
-								"extends ValueLayout",
-								"final"
-							],
-							"deltas": [
-								{
-									"type": "method",
-									"name": "asUnbounded()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#asUnbounded()",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "isUnbounded()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#isUnbounded()",
-									"csr": "JDK-8295045"
-								},
-								{
-									"type": "method",
-									"name": "withBitAlignment(long)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withBitAlignment(long)",
-									"addedTags": [
-										"abstract"
-									]
-								},
-								{
-									"type": "method",
-									"name": "withName(String)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withName(java.lang.String)",
-									"addedTags": [
-										"abstract"
-									]
-								},
-								{
-									"type": "method",
-									"name": "withOrder(ByteOrder)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withOrder(java.nio.ByteOrder)",
-									"addedTags": [
-										"abstract"
-									]
-								}
-							]
+							"status": "removed",
+							"preview": true
 						},
 						{
 							"type": "interface",
@@ -1162,6 +1101,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withoutName()"
 								}
 							]
 						},
@@ -1208,6 +1153,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withoutName()"
 								}
 							]
 						},
@@ -1254,6 +1205,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withoutName()"
 								}
 							]
 						},
@@ -1300,6 +1257,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withoutName()"
 								}
 							]
 						},
@@ -1346,6 +1309,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withoutName()"
 								}
 							]
 						},
@@ -1392,6 +1361,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withoutName()"
 								}
 							]
 						},
@@ -1438,6 +1413,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withoutName()"
 								}
 							]
 						},
@@ -1484,6 +1465,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withoutName()"
 								}
 							]
 						},
@@ -1621,6 +1608,12 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.html#withoutName()"
 								}
 							]
 						}
@@ -2358,17 +2351,16 @@
 							"deltas": [
 								{
 									"type": "method",
-									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
-									"status": "removed",
+									"name": "map(FileChannel.MapMode, long, long, Arena)",
+									"status": "added",
 									"preview": true,
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.Arena)"
 								},
 								{
 									"type": "method",
-									"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
-									"status": "added",
+									"name": "map(FileChannel.MapMode, long, long, MemorySession)",
+									"status": "removed",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								}
 							]

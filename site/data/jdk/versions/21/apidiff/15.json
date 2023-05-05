@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+20-1677"
+		"version": "21-ea+21-1778"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -473,6 +473,18 @@
 									"csr": "JDK-8304012"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleDesc",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/ModuleDesc.html"
+						},
+						{
+							"type": "interface",
+							"name": "PackageDesc",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/PackageDesc.html"
 						}
 					]
 				},
@@ -2631,11 +2643,10 @@
 							"deltas": [
 								{
 									"type": "method",
-									"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
+									"name": "map(FileChannel.MapMode, long, long, Arena)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.SegmentScope)",
-									"csr": "JDK-8295045"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.Arena)"
 								}
 							]
 						}
