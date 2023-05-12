@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+21-1778"
+		"version": "21-ea+22-1890"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -8661,6 +8661,12 @@
 						},
 						{
 							"type": "method",
+							"name": "splitWithDelimiters(String, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#splitWithDelimiters(java.lang.String,int)"
+						},
+						{
+							"type": "method",
 							"name": "strip()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#strip()",
@@ -9188,6 +9194,27 @@
 					"name": "StackWalker.StackFrame",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StackWalker.StackFrame.html"
+				},
+				{
+					"type": "interface",
+					"name": "StringTemplate.Processor.Linkage",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringTemplate.Processor.Linkage.html"
+				},
+				{
+					"type": "interface",
+					"name": "StringTemplate.Processor",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringTemplate.Processor.html"
+				},
+				{
+					"type": "interface",
+					"name": "StringTemplate",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringTemplate.html"
 				},
 				{
 					"type": "interface",
@@ -16823,6 +16850,12 @@
 							"name": "splitAsStream(CharSequence)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/regex/Pattern.html#splitAsStream(java.lang.CharSequence)"
+						},
+						{
+							"type": "method",
+							"name": "splitWithDelimiters(CharSequence, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/regex/Pattern.html#splitWithDelimiters(java.lang.CharSequence,int)"
 						}
 					]
 				},
@@ -18609,6 +18642,24 @@
 				},
 				{
 					"type": "class",
+					"name": "Digits.DecimalDigits",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.DecimalDigits.html"
+				},
+				{
+					"type": "class",
+					"name": "Digits.HexDigits",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.HexDigits.html"
+				},
+				{
+					"type": "class",
+					"name": "Digits.OctalDigits",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.OctalDigits.html"
+				},
+				{
+					"type": "class",
 					"name": "DoubleSummaryStatistics",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/DoubleSummaryStatistics.html"
@@ -18635,6 +18686,19 @@
 					"addedTags": [
 						"sealed"
 					]
+				},
+				{
+					"type": "class",
+					"name": "FormatItem.FormatItemModifier",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/FormatItem.FormatItemModifier.html"
+				},
+				{
+					"type": "class",
+					"name": "FormatProcessor",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/FormatProcessor.html"
 				},
 				{
 					"type": "class",
@@ -19226,6 +19290,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()",
 							"csr": "JDK-8301293"
+						},
+						{
+							"type": "method",
+							"name": "caseFoldLanguageTag(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#caseFoldLanguageTag(java.lang.String)"
 						},
 						{
 							"type": "method",
@@ -23325,11 +23395,7 @@
 				{
 					"type": "class",
 					"name": "RMIIIOPServerImpl",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.management.rmi/javax/management/remote/rmi/RMIIIOPServerImpl.html",
-					"addedTags": [
-						"deprecated"
-					]
+					"status": "removed"
 				},
 				{
 					"type": "class",

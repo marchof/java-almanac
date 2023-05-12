@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+21-1778"
+		"version": "21-ea+22-1890"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -797,6 +797,50 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "StringConcatFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "MAX_INDY_CONCAT_ARG_SLOTS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#MAX_INDY_CONCAT_ARG_SLOTS"
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplate(List, List)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplate(java.util.List,java.util.List)"
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplateCluster(List, List, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplateCluster(java.util.List,java.util.List,int)"
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplateGetters(List, List, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplateGetters(java.util.List,java.util.List,int)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/reflect/package-summary.html",
@@ -815,6 +859,39 @@
 									"csr": "JDK-8296179"
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.runtime",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ReferenceKey.SoftKey",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/ReferenceKey.SoftKey.html"
+						},
+						{
+							"type": "class",
+							"name": "ReferenceKey.StrongKey",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/ReferenceKey.StrongKey.html"
+						},
+						{
+							"type": "class",
+							"name": "ReferenceKey.WeakKey",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/ReferenceKey.WeakKey.html"
+						},
+						{
+							"type": "class",
+							"name": "TemplateRuntime",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/TemplateRuntime.html"
 						}
 					]
 				},
@@ -1021,6 +1098,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#indexOf(int,int,int)",
 									"csr": "JDK-8302680"
+								},
+								{
+									"type": "method",
+									"name": "splitWithDelimiters(String, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/String.html#splitWithDelimiters(java.lang.String,int)"
 								}
 							]
 						},
@@ -1081,6 +1164,27 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate.Processor.Linkage",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringTemplate.Processor.Linkage.html"
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate.Processor",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringTemplate.Processor.html"
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/StringTemplate.html"
 						},
 						{
 							"type": "interface",
@@ -1341,6 +1445,28 @@
 				},
 				{
 					"type": "package",
+					"name": "java.util.regex",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/regex/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Pattern",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/regex/Pattern.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "splitWithDelimiters(CharSequence, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/regex/Pattern.html#splitWithDelimiters(java.lang.CharSequence,int)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/package-summary.html",
@@ -1446,6 +1572,37 @@
 									"csr": "JDK-8266572"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "Digits.DecimalDigits",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.DecimalDigits.html"
+						},
+						{
+							"type": "class",
+							"name": "Digits.HexDigits",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.HexDigits.html"
+						},
+						{
+							"type": "class",
+							"name": "Digits.OctalDigits",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.OctalDigits.html"
+						},
+						{
+							"type": "class",
+							"name": "FormatItem.FormatItemModifier",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/FormatItem.FormatItemModifier.html"
+						},
+						{
+							"type": "class",
+							"name": "FormatProcessor",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/FormatProcessor.html"
 						},
 						{
 							"type": "class",
@@ -1593,6 +1750,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#availableLocales()",
 									"csr": "JDK-8301293"
+								},
+								{
+									"type": "method",
+									"name": "caseFoldLanguageTag(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Locale.html#caseFoldLanguageTag(java.lang.String)"
 								}
 							]
 						},
@@ -2025,6 +2188,27 @@
 									"csr": "JDK-8273986"
 								}
 							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management.rmi",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.management.rmi/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.remote.rmi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.management.rmi/javax/management/remote/rmi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "RMIIIOPServerImpl",
+							"status": "removed"
 						}
 					]
 				}
