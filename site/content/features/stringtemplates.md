@@ -1,13 +1,13 @@
 ---
-title: String Templates (JEP 405)
-copyright: Cay S. Horstmann 2022. All rights reserved.
-jep: 405
-jdkversion: 19
+title: String Templates (JEP 430)
+copyright: Cay S. Horstmann 2023. All rights reserved.
+jep: 430
+jdkversion: 21
 type: "sandbox"
 ---
 
 
-String templates, previewed in Java 21 are a mechanism for producing objects from templates that contain string fragments and embedded expressions. The syntax is different from that of other languages, but the differences are minor and make sense for Java. The JDK provides processors for plain interpolation and formatted output. It is easy to implement your own processors.
+String templates, previewed in Java 21, are a mechanism for producing objects from templates that contain string fragments and embedded expressions. The syntax is different from that of other languages, but the differences are minor and make sense for Java. The JDK provides processors for plain interpolation and formatted output. It is easy to implement your own processors.
       
 
 ## String Interpolation
@@ -29,7 +29,8 @@ message = "Hello, %s! Next year, you'll be %d.".formatted(name, age + 1);
 or
 
 ```
-message = MessageFormat.format("Hello, {0}! Next year, you''ll be {1,choice,0≤{1}|50<even wiser}.", name, age + 1);
+message = MessageFormat.format("Hello, {0}! Next year, you''ll be {1,choice,0≤{1}|50<even wiser}.", 
+   name, age + 1);
 ```
 
 Now the contents of the composite string is easier to make out, but the variable parts are separated from their final location.
@@ -44,7 +45,7 @@ message = STR."Hello, \{name}! Next year, you'll be \{age + 1}.";
 
 Here is a sandbox to play with these alternatives.
 
-{{< sandbox version=java19 preview="true" mainclass="Demo" >}}{{< sandboxsource "Demo.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Demo" >}}{{< sandboxsource "Demo.java" >}}
 import java.text.MessageFormat;
 
 public class Demo {
@@ -68,7 +69,7 @@ public class Demo {
 
 A template expression starts with an expression whose value is a template processor, an instance of a class that implements the `StringTemplate.Processor` interface. That interface has a single method `process`.
 
-    The template processor is followed by a dot, which the JEP describes unhelpfully as “a dot character (U+002E), as seen in other kinds of expressions.” Why a dot? Perhaps to remind the reader that this is a shorthand for a method call:
+The template processor is followed by a dot, which the JEP describes unhelpfully as “a dot character (U+002E), as seen in other kinds of expressions.” Why a dot? Perhaps to remind the reader that this is a shorthand for a method call:
 
 ```
 STR.process(templateArgument)
@@ -76,7 +77,7 @@ STR.process(templateArgument)
 
 To the right of the dot is the *template argument*, which can be one of four things:
 
-1. A *string template * (as in the example)
+1. A *string template* (as in the example)
 2. A *text block template*
 3. A string literal
 4. A text block
@@ -101,7 +102,7 @@ String message = STR."Hello, \{ name /* Ok to add a comment */ }! Next year, you
    }.";
 ```
 
-A template is *not a *`String`. It is an instance of the  `StringTemplate` class. You will see soon what that class does. 
+A template is *not* a `String`. It is an instance of the  `StringTemplate` class. You will see soon what that class does. 
 
 Unlike a string literal or text block, a template is only a valid expression when it follows a template processor and a dot. The processor is responsible for turning the text and embedded expressions of the template into a result. Without a processor, a template doesn't have a value.
 
@@ -113,7 +114,7 @@ message = STR."Hello, TODO! Next year, you'll be TODO.";
 
 This sandbox shows the four kinds of template arguments.
 
-{{< sandbox version=java19 preview="true" mainclass="TemplateArguments" >}}{{< sandboxsource "TemplateArguments.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="TemplateArguments" >}}{{< sandboxsource "TemplateArguments.java" >}}
 public class TemplateArguments {
    public static void main(String[] args) {
       String name = "Fred";
@@ -188,7 +189,7 @@ Note that a template processor can produce an object of any class. The `FMT` pro
 
 Here is a sandbox with these examples. Try adding a space after a format specifier. Also try incrementing `age` after the template with the embedded expression `\{age + 1}` was formed. Is the value updated? Should it be?
 
-{{< sandbox version=java19 preview="true" mainclass="TemplateProcessors" >}}{{< sandboxsource "TemplateProcessors.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="TemplateProcessors" >}}{{< sandboxsource "TemplateProcessors.java" >}}
 import static java.util.FormatProcessor.FMT;
 import static java.lang.StringTemplate.RAW;
 
@@ -240,26 +241,20 @@ The static `interpolate` method merges a list of fragments and values. As you wi
 I don't think that many programmers will create `StringTemplate` instances, but there are three ways to do so:
 
 * With the `RAW` processor:
-          ```
-RAW."Hello, \{name}!"
-```
-
-
+  ```
+  RAW."Hello, \{name}!"
+  ```
 * With the static `of` methods:
-          ```
-StringTemplate.of(List("Hello, ", "!"), List(name))
-StringTemplate.of("Hello, Sailor!")
-```
-
-
+  ```
+  StringTemplate.of(List("Hello, ", "!"), List(name))
+  StringTemplate.of("Hello, Sailor!")
+  ```
 * With the static `combine` methods:
-          ```
-StringTemplate.combine(RAW."Hello, \{name}! ", RAW."Next year, you'll be \{age + 1}.")
-```
+  ```
+  StringTemplate.combine(RAW."Hello, \{name}! ", RAW."Next year, you'll be \{age + 1}.")
+  ```
 
-
-
-There are two `combine` methods, with parameter types `StringTemplate...` and `List<StringTemplate>`.
+There are two `combine` methods, with parameter types `StringTemplate...` and `List<StringTemplate>`. 
 
 Finally, the `process` method lets you apply a processor, just in case you prefer
 
@@ -275,7 +270,7 @@ processor.process(template)
 
 This sandbox shows the API in action, even though you probably only need to worry about the first two methods. 
 
-{{< sandbox version=java19 preview="true" mainclass="StringTemplateDemo" >}}{{< sandboxsource "StringTemplateDemo.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="StringTemplateDemo" >}}{{< sandboxsource "StringTemplateDemo.java" >}}
 import static java.lang.StringTemplate.RAW;
 import java.util.List;
 
@@ -297,6 +292,8 @@ public class StringTemplateDemo {
       // Demo of the of and combine methods.
       // For each entry in System.getProperties(), one StringTemplate is created.
       // They are all combined and then processed with the STR processor
+      // Note that each StringTemplate has two fragments, and combine fuses
+      // the second fragment with the first fragment of its successor. 
       template = StringTemplate.combine(
          System.getProperties()
             .entrySet()
@@ -314,27 +311,28 @@ public class StringTemplateDemo {
 
 The `format` method of a template processor turns `StringTemplate` instances into objects. Since `StringTemplate.Processor` is a functional interface, you can construct an instance from a lambda expression. Here is a simple example that places the values in boxes:
 
-{{< sandbox version=java19 preview="true" mainclass="MyFirstTemplateProcessor" >}}{{< sandboxsource "MyFirstTemplateProcessor.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="MyFirstTemplateProcessor" >}}{{< sandboxsource "MyFirstTemplateProcessor.java" >}}
 public class MyFirstTemplateProcessor {
-   public static StringTemplate.Processor<String, RuntimeExpression> BOX =
+   public static StringTemplate.Processor<String, RuntimeException> BOX =
       (StringTemplate template) -> {
-         StringBuilder result = new StringBuilder();
-         for (int i = 0; i < template.fragments.size(); i++) {
+         var result = new StringBuilder();
+         for (int i = 0; i < template.fragments().size(); i++) {
             if (i > 0) {
                result.append('[');
-               result.append("" + template.values.get(i));
+               result.append("" + template.values().get(i - 1));
                result.append(']'); 
             }
-            result.append(fragments.get(i));
+            result.append(template.fragments().get(i));
          }
          return result.toString();
       };
 
    public static void main(String[] args) {
+      String name = "Fred";
+      int age = 42;
       System.out.println(BOX."Hello, \{name}! Next year, you'll be \{age + 1}.");
    }
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
@@ -344,7 +342,7 @@ Here, the values are transformed and then interpolated with the fragments. The `
 
 ```
 public static StringTemplate.Processor<String, RuntimeException> BOX =
-   (StringTemplate template) -> StringTemplate.interpolate(template.fragments(),
+   template -> StringTemplate.interpolate(template.fragments(),
       template.values().stream().map(v -> "[" + v + "]").toList());
 ```
 
@@ -352,7 +350,7 @@ As an aside, in the JEP, all template processors are written in uppercase, even 
 
 ```
 public static StringTemplate.Processor<String, RuntimeException> box(String left, String right) {
-   return (StringTemplate template) -> StringTemplate.interpolate(template.fragments(),
+   return template -> StringTemplate.interpolate(template.fragments(),
       template.values().stream().map(v -> left + v + right).toList());
 }
 ...
@@ -361,7 +359,7 @@ String result = box("{", "}")."Hello, \{name}! Next year, you'll be \{age + 1}."
 
 String processors can protect against injection attacks. When creating HTML, XML, JSON, SQL, and so on, from arbitrary values, you want to escape special characters such as quotation marks and bracket delimiters. The JEP has a useful example of using a `PreparedStatement` for a SQL query. This sandbox shows a simpler example for processing XML.
 
-{{< sandbox version=java19 preview="true" mainclass="Xml" >}}{{< sandboxsource "Xml.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Xml" >}}{{< sandboxsource "Xml.java" >}}
 import java.io.*;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
@@ -378,7 +376,7 @@ public class Xml {
    }
 
    public static StringTemplate.Processor<Document, Exception> XML = 
-      (StringTemplate template) -> {
+      template -> {
          String escaped = StringTemplate.interpolate(template.fragments(),
             template.values().stream().map(String::valueOf).map(Xml::escape).toList());
          return parse(escaped);
@@ -423,40 +421,31 @@ MAP."key1 \{value1} key2 \{value2} ..."
 
 Trim the fragments and ignore the last one.
 
-{{< sandbox version=java19 preview="true" mainclass="Challenge" >}}{{< sandboxsource "Challenge.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Challenge" >}}{{< sandboxsource "Challenge.java" >}}
 import java.time.*;
 
 public class Challenge {
    public static ... MAP = ...;
    public static void main(String[] args) {
       LocalDate today = LocalDate.now();
-      System.out.println(MAP."""
+      Map<String, Object> todayMap = MAP."""
 day \{today.getDayOfMonth()}
 month \{today.getMonth()}
 year \{today.getYear()}
 """);
+      System.out.println(todayMap);
    }
 }
 
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-```
-public static StringTemplate.Processor<Map<String, Object>, RuntimeException> MAP = template -> {
-   List<Object> values = template.values();
-   var result = new HashMap<String, Object>();
-   for (int i = 0; i < values.size(); i++)
-      result.put(template.fragments().get(i).trim(), values.get(i));
-   return result;
-};
-```
-
 ## Conclusion
 
 String templates provide interpolation in a way that should be familiar to anyone who has used this feature in another programming language. Here are the highlights:
 
 * Embedded expressions are enclosed in `\{...}`. This makes sense for Java since `\{` has previously not been a valid escape sequence in strings.
-* Template expressions have the form `.`, where the argument is a string template, text block template, string, or text block.
+* Template expressions have the form `processor.argument`, where the argument is a string template, text block template, string, or text block.
 * To write your own template processor, provide a method that turns the fragments and values of a `StringTemplate` instance into an object.
 
 ## References
