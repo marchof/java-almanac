@@ -1,6 +1,6 @@
 {{- $style := resources.Get "almanac.css" | resources.Minify -}}
 {{- $stylefp := $style | resources.Fingerprint -}}
-{{- $triggerOutputForThirdPartySites := $style.RelPermalink }}">
+{{- $triggerOutputForThirdPartySites := $style.RelPermalink -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
