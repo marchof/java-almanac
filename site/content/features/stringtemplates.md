@@ -423,6 +423,7 @@ Trim the fragments and ignore the last one.
 
 {{< sandbox version=java21 preview="true" mainclass="Challenge" >}}{{< sandboxsource "Challenge.java" >}}
 import java.time.*;
+import java.util.*;
 
 public class Challenge {
    public static ... MAP = ...;
@@ -432,13 +433,25 @@ public class Challenge {
 day \{today.getDayOfMonth()}
 month \{today.getMonth()}
 year \{today.getYear()}
-""");
+""";
       System.out.println(todayMap);
    }
 }
 
 {{< /sandboxsource >}}
 {{< /sandbox >}}
+
+{{< details "Show Solution" >}}
+```
+public static StringTemplate.Processor<Map<String, Object>, RuntimeException> MAP = template -> {
+   List<Object> values = template.values();
+   var result = new HashMap<String, Object>();
+   for (int i = 0; i < values.size(); i++)
+      result.put(template.fragments().get(i).trim(), values.get(i));
+   return result;
+};
+```
+{{< /details >}}
 
 ## Conclusion
 
