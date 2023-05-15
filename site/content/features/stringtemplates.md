@@ -26,14 +26,14 @@ Formatted output can be a better alternative:
 message = "Hello, %s! Next year, you'll be %d.".formatted(name, age + 1);
 ```
 
-or
+`MessageFormat` is similar, but optimized for internationalization:
 
 ```
 message = MessageFormat.format("Hello, {0}! Next year, you''ll be {1,choice,0≤{1}|50<even wiser}.", 
    name, age + 1);
 ```
 
-Now the contents of the composite string is easier to make out, but the variable parts are separated from their final location.
+In both cases, the contents of the composite string is easier to make out, but the variable parts are separated from their final location.
 
 Many programming languages provide *interpolation* of expressions that are embedded inside a string. (The Merriam-Webster dictionary [defines “interpolate”](https://www.merriam-webster.com/dictionary/interpolate) as “to insert between other things or parts”.) Java 21 adds a preview feature with the same capability. Here is how it looks like: 
 
@@ -187,7 +187,7 @@ See the following section for more information about the `StringTemplate` class.
 
 Note that a template processor can produce an object of any class. The `FMT` processor yields a `String`, but the `RAW` processor yields an object of the class `StringTemplate`.
 
-Here is a sandbox with these examples. Try adding a space after a format specifier. Also try incrementing `age` after the template with the embedded expression `\{age + 1}` was formed. Is the value updated? Should it be?
+Here is a sandbox with these examples. Try adding a space before or after a format specifier. Also try reassigning `item` after the raw template was formed. Are the values updated? Should they be?
 
 {{< sandbox version=java21 preview="true" mainclass="TemplateProcessors" >}}{{< sandboxsource "TemplateProcessors.java" >}}
 import static java.util.FormatProcessor.FMT;
@@ -197,15 +197,15 @@ public class TemplateProcessors {
    record Item(String description, int quantity, double price) {}
 
    public static void main(String[] args) {
-      String name = "Fred";
-      int age = 42;
       var item = new Item("Blackwell Toaster", 2, 29.95);
-      String line = FMT."%-20s\{item.description} | %5d\{item.quantity} | %10.2f\{item.price}%n";
+      String line = FMT."%-20s\{item.description()} | %5d\{item.quantity()} | %10.2f\{item.price()}%n";
       System.out.print(line);
       item = new Item("Zappa Microwave Oven", 1, 109.95);
-      line = FMT."%-20s\{item.description} | %5d\{item.quantity} | %10.2f\{item.price}%n";
+      // TODO What happens if you add a space before or after %-20s?
+      line = FMT."%-20s\{item.description()} | %5d\{item.quantity()} | %10.2f\{item.price()}%n";
       System.out.print(line);
-      StringTemplate template = RAW."Hello, \{name}! Next year, you'll be \{age + 1}.";
+      StringTemplate template = RAW."%-20s\{item.description()} | %5d\{item.quantity()} | %10.2f\{item.price()}%n";
+      // TODO What happens if you assign another instance to item here?
       System.out.println(template);
    }
 }
