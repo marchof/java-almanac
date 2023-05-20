@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+22-1890"
+		"version": "21-ea+23-1988"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -599,15 +599,12 @@
 						{
 							"type": "class",
 							"name": "ClassSpecializer.Factory",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/ClassSpecializer.Factory.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "Factory(ClassSpecializer)",
-									"status": "removed"
-								}
-							]
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "ClassSpecializer.SpeciesData",
+							"status": "removed"
 						},
 						{
 							"type": "class",
@@ -2154,6 +2151,21 @@
 									"status": "removed"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Cbrt",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Hypot",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Pow",
+							"status": "removed"
 						},
 						{
 							"type": "class",

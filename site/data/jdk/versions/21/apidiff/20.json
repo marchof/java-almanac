@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+22-1890"
+		"version": "21-ea+23-1988"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -292,6 +292,15 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/Linker.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "downcallHandle(MemorySegment, FunctionDescriptor, Linker.Option...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/Linker.html#downcallHandle(java.lang.foreign.MemorySegment,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker.Option...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
 								{
 									"type": "method",
 									"name": "upcallStub(MethodHandle, FunctionDescriptor, Arena, Linker.Option...)",
@@ -880,6 +889,16 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "ClassSpecializer.Factory",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "ClassSpecializer.SpeciesData",
+							"status": "removed"
+						},
+						{
+							"type": "class",
 							"name": "StringConcatFactory",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
@@ -1038,6 +1057,21 @@
 							"name": "Compiler",
 							"status": "removed",
 							"csr": "JDK-8304458"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Cbrt",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Hypot",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Pow",
+							"status": "removed"
 						},
 						{
 							"type": "class",

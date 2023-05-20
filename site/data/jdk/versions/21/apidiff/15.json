@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+22-1890"
+		"version": "21-ea+23-1988"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -511,6 +511,16 @@
 							"addedTags": [
 								"sealed"
 							]
+						},
+						{
+							"type": "class",
+							"name": "ClassSpecializer.Factory",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "ClassSpecializer.SpeciesData",
+							"status": "removed"
 						},
 						{
 							"type": "class",
@@ -1421,6 +1431,21 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Cbrt",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Hypot",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Pow",
+							"status": "removed"
 						},
 						{
 							"type": "class",
