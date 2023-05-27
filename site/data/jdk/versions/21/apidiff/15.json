@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+23-1988"
+		"version": "21-ea+24-2086"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -465,6 +465,18 @@
 								"sealed"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "of(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc)"
+								},
+								{
+									"type": "method",
+									"name": "of(ClassDesc, List)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc,java.util.List)"
+								},
 								{
 									"type": "method",
 									"name": "resolveConstantDesc(MethodHandles.Lookup)",
@@ -1047,7 +1059,6 @@
 							"type": "class",
 							"name": "SwitchBootstraps",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html",
 							"csr": "JDK-8265981"
 						},
@@ -1602,7 +1613,6 @@
 							"type": "class",
 							"name": "MatchException",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/MatchException.html",
 							"csr": "JDK-8284528"
 						},
@@ -5729,6 +5739,21 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "VariableElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isUnnamed()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()"
+								}
+							]
 						}
 					]
 				},
@@ -9658,6 +9683,18 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
 							"deltas": [
+								{
+									"type": "field",
+									"name": "ED25519",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED25519"
+								},
+								{
+									"type": "field",
+									"name": "ED448",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED448"
+								},
 								{
 									"type": "field",
 									"name": "RSA_PSS",

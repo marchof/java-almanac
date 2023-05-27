@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+23-1988"
+		"version": "21-ea+24-2086"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -119,6 +119,18 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "of(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc)"
+								},
+								{
+									"type": "method",
+									"name": "of(ClassDesc, List)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc,java.util.List)"
+								},
 								{
 									"type": "method",
 									"name": "resolveConstantDesc(MethodHandles.Lookup)",
@@ -235,6 +247,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/GroupLayout.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/GroupLayout.html#withoutName()",
@@ -348,6 +371,26 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "bitAlignment()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "bitOffset(MemoryLayout.PathElement...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "bitOffsetHandle(MemoryLayout.PathElement...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "bitSize()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
 									"name": "byteAlignment()",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html#byteAlignment()",
@@ -360,6 +403,17 @@
 									"name": "valueLayout(Class, ByteOrder)",
 									"status": "removed",
 									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html#withByteAlignment(long)"
 								},
 								{
 									"type": "method",
@@ -589,6 +643,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/PaddingLayout.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/PaddingLayout.html#withoutName()",
@@ -640,6 +705,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withoutName()",
@@ -654,6 +730,17 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/StructLayout.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/StructLayout.html#withByteAlignment(long)"
+								},
 								{
 									"type": "method",
 									"name": "withoutName()",
@@ -695,6 +782,12 @@
 									"name": "libraryLookup(String, SegmentScope)",
 									"status": "removed",
 									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "or(SymbolLookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#or(java.lang.foreign.SymbolLookup)"
 								}
 							]
 						},
@@ -705,6 +798,17 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/UnionLayout.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/UnionLayout.html#withByteAlignment(long)"
+								},
 								{
 									"type": "method",
 									"name": "withoutName()",
@@ -744,6 +848,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withoutName()",
@@ -758,6 +873,17 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withByteAlignment(long)"
+								},
 								{
 									"type": "method",
 									"name": "withoutName()",
@@ -776,6 +902,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withoutName()",
@@ -790,6 +927,17 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withByteAlignment(long)"
+								},
 								{
 									"type": "method",
 									"name": "withoutName()",
@@ -808,6 +956,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withoutName()",
@@ -822,6 +981,17 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withByteAlignment(long)"
+								},
 								{
 									"type": "method",
 									"name": "withoutName()",
@@ -840,6 +1010,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withoutName()",
@@ -856,6 +1037,17 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withByteAlignment(long)"
+								},
+								{
+									"type": "method",
 									"name": "withoutName()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withoutName()",
@@ -870,6 +1062,17 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.html#withByteAlignment(long)"
+								},
 								{
 									"type": "method",
 									"name": "withoutName()",
@@ -988,6 +1191,15 @@
 						},
 						{
 							"type": "class",
+							"name": "SwitchBootstraps",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
 							"name": "TemplateRuntime",
 							"status": "added",
 							"preview": true,
@@ -1072,6 +1284,15 @@
 							"type": "class",
 							"name": "FdLibm.Pow",
 							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "MatchException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/MatchException.html",
+							"removedTags": [
+								"preview"
+							]
 						},
 						{
 							"type": "class",
@@ -2223,6 +2444,29 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "javax.lang.model.element",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "VariableElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isUnnamed()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.lang.model",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/package-summary.html",
@@ -2429,6 +2673,42 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.net.http/java/net/http/HttpClient.html#shutdownNow()",
 									"csr": "JDK-8304165"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.xml.crypto",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.crypto.dsig",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "SignatureMethod",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ED25519",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED25519"
+								},
+								{
+									"type": "field",
+									"name": "ED448",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED448"
 								}
 							]
 						}

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+23-1988"
+		"version": "21-ea+24-2086"
 	},
 	"order": 11.0,
 	"deltas": [
@@ -2075,7 +2075,6 @@
 							"type": "class",
 							"name": "MatchException",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/MatchException.html",
 							"csr": "JDK-8284528"
 						},
@@ -7960,6 +7959,13 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#asType()",
 									"csr": "JDK-8225027"
+								},
+								{
+									"type": "method",
+									"name": "isUnnamed()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()"
 								}
 							]
 						}
@@ -12402,6 +12408,18 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
 							"deltas": [
+								{
+									"type": "field",
+									"name": "ED25519",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED25519"
+								},
+								{
+									"type": "field",
+									"name": "ED448",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED448"
+								},
 								{
 									"type": "field",
 									"name": "RSA_PSS",
