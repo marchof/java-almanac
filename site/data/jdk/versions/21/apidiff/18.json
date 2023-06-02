@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+24-2086"
+		"version": "21-ea+25-2212"
 	},
 	"order": 18.0,
 	"deltas": [
@@ -641,24 +641,6 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/package-summary.html",
 					"deltas": [
-						{
-							"type": "class",
-							"name": "ReferenceKey.SoftKey",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/ReferenceKey.SoftKey.html"
-						},
-						{
-							"type": "class",
-							"name": "ReferenceKey.StrongKey",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/ReferenceKey.StrongKey.html"
-						},
-						{
-							"type": "class",
-							"name": "ReferenceKey.WeakKey",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/runtime/ReferenceKey.WeakKey.html"
-						},
 						{
 							"type": "class",
 							"name": "SwitchBootstraps",
@@ -2644,24 +2626,6 @@
 						},
 						{
 							"type": "class",
-							"name": "Digits.DecimalDigits",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.DecimalDigits.html"
-						},
-						{
-							"type": "class",
-							"name": "Digits.HexDigits",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.HexDigits.html"
-						},
-						{
-							"type": "class",
-							"name": "Digits.OctalDigits",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/Digits.OctalDigits.html"
-						},
-						{
-							"type": "class",
 							"name": "EnumSet",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/EnumSet.html",
@@ -3316,6 +3280,62 @@
 									]
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DecapsulateException",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/DecapsulateException.html"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Decapsulator",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Decapsulator.html"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Encapsulated",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Encapsulated.html"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Encapsulator",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Encapsulator.html"
+						},
+						{
+							"type": "class",
+							"name": "KEM",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.html"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi.DecapsulatorSpi",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.DecapsulatorSpi.html"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi.EncapsulatorSpi",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.EncapsulatorSpi.html"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.html"
 						}
 					]
 				},
