@@ -123,13 +123,15 @@
 									"type": "method",
 									"name": "of(ClassDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc)",
+									"csr": "JDK-8306699"
 								},
 								{
 									"type": "method",
 									"name": "of(ClassDesc, List)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc,java.util.List)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc,java.util.List)",
+									"csr": "JDK-8306699"
 								},
 								{
 									"type": "method",
@@ -248,13 +250,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/GroupLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/GroupLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -372,22 +376,26 @@
 								{
 									"type": "method",
 									"name": "bitAlignment()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "bitOffset(MemoryLayout.PathElement...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "bitOffsetHandle(MemoryLayout.PathElement...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "bitSize()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -407,13 +415,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/MemoryLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -644,13 +654,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/PaddingLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/PaddingLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -706,13 +718,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -733,13 +747,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/StructLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/StructLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -787,7 +803,8 @@
 									"type": "method",
 									"name": "or(SymbolLookup)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#or(java.lang.foreign.SymbolLookup)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/SymbolLookup.html#or(java.lang.foreign.SymbolLookup)",
+									"csr": "JDK-8308002"
 								}
 							]
 						},
@@ -801,13 +818,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/UnionLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/UnionLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -849,13 +868,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -876,13 +897,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -903,13 +926,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -930,13 +955,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -957,13 +984,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -984,13 +1013,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -1011,13 +1042,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -1038,13 +1071,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -1065,13 +1100,15 @@
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
 									"name": "withByteAlignment(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.html#withByteAlignment(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/foreign/ValueLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
 								},
 								{
 									"type": "method",
@@ -1093,12 +1130,14 @@
 						{
 							"type": "class",
 							"name": "ClassSpecializer.Factory",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8308239"
 						},
 						{
 							"type": "class",
 							"name": "ClassSpecializer.SpeciesData",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8308239"
 						},
 						{
 							"type": "class",
@@ -1255,17 +1294,20 @@
 						{
 							"type": "class",
 							"name": "FdLibm.Cbrt",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8308049"
 						},
 						{
 							"type": "class",
 							"name": "FdLibm.Hypot",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8308049"
 						},
 						{
 							"type": "class",
 							"name": "FdLibm.Pow",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8308049"
 						},
 						{
 							"type": "class",
@@ -2366,49 +2408,57 @@
 							"type": "class",
 							"name": "DecapsulateException",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/DecapsulateException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/DecapsulateException.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "class",
 							"name": "KEM.Decapsulator",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Decapsulator.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Decapsulator.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "class",
 							"name": "KEM.Encapsulated",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Encapsulated.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Encapsulated.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "class",
 							"name": "KEM.Encapsulator",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Encapsulator.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.Encapsulator.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "class",
 							"name": "KEM",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEM.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "interface",
 							"name": "KEMSpi.DecapsulatorSpi",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.DecapsulatorSpi.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.DecapsulatorSpi.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "interface",
 							"name": "KEMSpi.EncapsulatorSpi",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.EncapsulatorSpi.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.EncapsulatorSpi.html",
+							"csr": "JDK-8305384"
 						},
 						{
 							"type": "interface",
 							"name": "KEMSpi",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/javax/crypto/KEMSpi.html",
+							"csr": "JDK-8305384"
 						}
 					]
 				},
@@ -2479,7 +2529,8 @@
 									"name": "isUnnamed()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()",
+									"csr": "JDK-8304246"
 								}
 							]
 						}
@@ -2722,13 +2773,15 @@
 									"type": "field",
 									"name": "ED25519",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED25519"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED25519",
+									"csr": "JDK-8307507"
 								},
 								{
 									"type": "field",
 									"name": "ED448",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED448"
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED448",
+									"csr": "JDK-8307507"
 								}
 							]
 						}
