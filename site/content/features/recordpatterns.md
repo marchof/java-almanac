@@ -3,7 +3,6 @@ title: Record Patterns (JEP 405)
 copyright: Cay S. Horstmann 2022. All rights reserved.
 jep: 405
 jdkversion: 19
-type: "sandbox"
 ---
 
 

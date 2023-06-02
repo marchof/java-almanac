@@ -3,7 +3,6 @@ title: Pattern Matching for switch (JEP 427)
 copyright: Cay S. Horstmann 2022. All rights reserved.
 jep: 427
 jdkversion: 19
-type: "sandbox"
 ---
 
 

@@ -2,7 +2,6 @@
 title: var Keyword (JEP 286)
 jep: 286
 jdkversion: 10
-type: "sandbox"
 author: "Marc R. Hoffmann"
 ---
 

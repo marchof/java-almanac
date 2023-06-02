@@ -3,7 +3,6 @@ title: Unnamed Patterns and Variables (JEP 443)
 copyright: Cay S. Horstmann 2023. All rights reserved.
 jep: 443
 jdkversion: 21
-type: "sandbox"
 ---
 
 

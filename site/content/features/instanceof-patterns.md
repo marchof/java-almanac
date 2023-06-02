@@ -3,7 +3,6 @@ title: Pattern matching for instanceof (JEP 394)
 copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 394
 jdkversion: 16
-type: "sandbox"
 ---
 
 The motivation in [JEP 394](http://openjdk.java.net/jeps/305) starts out with this statement: "Nearly every program includes some sort of logic that combines testing if an expression has a certain type or structure, and then conditionally extracting components of its state for further processing." This example follows:

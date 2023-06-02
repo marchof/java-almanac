@@ -3,7 +3,6 @@ title: Text Blocks (JEP 378)
 copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 378
 jdkversion: 15
-type: "sandbox"
 ---
 
 

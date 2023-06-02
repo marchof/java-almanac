@@ -3,7 +3,6 @@ title: Sealed Types (JEP 409)
 copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 409
 jdkversion: 17
-type: "sandbox"
 ---
 
 

@@ -3,7 +3,6 @@ title: String Templates (JEP 430)
 copyright: Cay S. Horstmann 2023. All rights reserved.
 jep: 430
 jdkversion: 21
-type: "sandbox"
 ---
 
 

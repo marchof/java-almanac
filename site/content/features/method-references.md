@@ -2,7 +2,6 @@
 title: Method References (JSR 335)
 JSR: 335
 jdkversion: 8
-type: "sandbox"
 author: "Marc R. Hoffmann"
 ---
 

@@ -3,7 +3,6 @@ title: Records (JEP 395)
 copyright: Cay S. Horstmann 2020. All rights reserved.
 jep: 395
 jdkversion: 16
-type: "sandbox"
 ---
 
 Records were a major preview feature of JDK 14 and are an official feature since JDK 16. A record is an immutable class whose state is visible to all — think of a `Point` with `x` and `y` coordinates. There is no need to hide them. Records make it very easy to declare such classes. A constructor, accessors, `equals`, `hashCode`, and `toString` come for free. 

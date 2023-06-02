@@ -3,7 +3,6 @@ title: Switch Expressions (JEP 361)
 copyright: Cay S. Horstmann 2021. All rights reserved.
 jep: 361
 jdkversion: 14
-type: "sandbox"
 ---
 
 
