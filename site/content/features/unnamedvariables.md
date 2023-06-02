@@ -11,7 +11,7 @@ Sometimes, Java syntax requires you to specify a variable name even when you nev
 
 Both in record patterns and variable declarations, you specify variables by providing a type (or `var`) and a name. It can happen that you don't need the name, or even the type. Under certain circumstances, you can then use an underscore `_` placeholder for the name, or for both type and name. 
 
-Note that the variable name `_` was deprecated for removal in Java 8 and removed in Java 9. This pertains only to a single underscore. Identifiers containing underscores, such as `UTF_8`, continue to be fine.
+The variable name `_` was deprecated for removal in Java 8 and, as part of JEP 213, removed in Java 9. This pertains only to a single underscore. Identifiers containing underscores, such as `UTF_8`, continue to be fine.
 
 If you have ancient source code where `_` is used as a variable name, chances are good that you used `_` for exactly the use case that unnamed variables are meant to address. Then you need to do nothing. If you need to update your code, you can always use two underscores `__` or, if you like, any [Connecting Punctuation Character](https://www.fileformat.info/info/unicode/category/Pc/list.htm). My favorite choice is ﹏, U+FE4F WAVY LOW LINE.
 
@@ -44,7 +44,9 @@ description = switch (p) {
 };
 ```
 
-This is called an “unnamed pattern”.
+This is called an “unnamed pattern”. 
+
+The unnamed pattern can only occur inside record patterns, not at the top level of a `switch`. There, just use `default`.
 
 The same syntax holds for `instanceof` patterns:
 
@@ -57,8 +59,6 @@ In all preceding examples, I used `var` for the type, but you can also specify t
 ```
 if (p instanceof Point(int _, int y) && y == 0) System.out.println("on x-axis");
 ```
-
-The unnamed pattern `_` and `var _` can only occur inside records. They are not allowed at the top level. There, just use `default`.
 
 This sandbox shows unnamed variables and the unnamed pattern with records.
 
@@ -260,30 +260,16 @@ public class Unnamed4 {
 
 ## Lambdas
 
-When a method has a parameter whose type is a functional interface, it can happen that you pass a lambda expression where not all arguments are needed. Here is an example. The `Map::merge` method has three parameters:
-
-* A key 
-* An initial value for the key, to be used if the key was not present
-* A function that combines the current and the initial value
-
-To increment a value, you use:
+When a method has a parameter whose type is a functional interface, it can happen that you pass a lambda expression where not all arguments are needed. For example, the `Map::computeIfAbsent` method lazily computes an initial value when a key is absent:
 
 ```
-map.merge(key, 1, (v, w) -> v + w);
+var index = new TreeMap<String, TreeSet<Integer>>();
+...
+index.computeIfAbsent(word, _ -> new TreeSet<>()).add(pageNumber);
 ```
 
-or
-
-```
-map.merge(key, 1, Integer::sum);
-```
-
-I always find it a bit baffling that the initial value is used in the lambda. I just want to say: “Set the value to 1 or increment it”. I think it looks pretty clear with the `_` parameter:
-
-```
-map.merge(key, 1, (v, _) -> v + 1);
-```
-
+If the map does not contain the key `word`, it is added, with an empty set as value. The lambda that computes the empty set does not use its argument.
+      
 Here is another example, splitting up a list into two random sublists:
 
 ```
@@ -301,11 +287,11 @@ import java.util.stream.*;
 
 public class Unnamed5 {
    public static void main(String[] args) {
-      Map<Integer, Integer> map = new HashMap<>();
-      int n = 42;
-      map.merge(n, 1, (v, _) -> v + 1);
-      map.merge(n, 1, (v, _) -> v + 1);
-      System.out.println(map);
+      var index = new TreeMap<String, TreeSet<Integer>>();
+      var word = "Mary";
+      int pageNumber = 42;
+      index.computeIfAbsent(word, _ -> new TreeSet<>()).add(pageNumber);
+      System.out.println(index);
       var partitioned = Stream.of("Mary had a little lamb".split(" ")).collect(Collectors.partitioningBy(_ -> Math.random() < 0.5));
       System.out.println(partitioned);
    }
@@ -382,5 +368,6 @@ public class Unnamed6 {
 ## References
 
 * [JEP 443: String Unnamed Patterns and Variables (Preview), OpenJDK](https://openjdk.java.net/jeps/443)
+* [JEP 213: Milling Project Coin, OpenJDK](https://openjdk.java.net/jeps/213)
 
 
