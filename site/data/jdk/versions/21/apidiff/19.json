@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+25-2212"
+		"version": "21-ea+26-2328"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -174,6 +174,15 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "descriptorString()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#descriptorString()",
+									"addedTags": [
+										"abstract"
+									]
+								},
 								{
 									"type": "method",
 									"name": "of(ClassDesc)",
@@ -2138,6 +2147,13 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Class.html#accessFlags()",
 									"csr": "JDK-8281660"
+								},
+								{
+									"type": "method",
+									"name": "isUnnamedClass()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Class.html#isUnnamedClass()"
 								}
 							]
 						},
@@ -2263,6 +2279,20 @@
 									"csr": "JDK-8295045"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue.Carrier",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/ScopedValue.Carrier.html"
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/ScopedValue.html"
 						},
 						{
 							"type": "class",
@@ -2925,6 +2955,48 @@
 									"csr": "JDK-8297648"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "StructureViolationException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/StructureViolationException.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnFailure",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnFailure.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnSuccess",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnSuccess.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html"
+						},
+						{
+							"type": "enum",
+							"name": "StructuredTaskScope.Subtask.State",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.State.html"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Subtask",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html"
 						}
 					]
 				},
@@ -3810,6 +3882,21 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
 					"deltas": [
+						{
+							"type": "interface",
+							"name": "TypeElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isUnnamed()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#isUnnamed()"
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "VariableElement",

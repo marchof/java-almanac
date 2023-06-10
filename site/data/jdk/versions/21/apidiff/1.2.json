@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+25-2212"
+		"version": "21-ea+26-2328"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -13843,6 +13843,13 @@
 						},
 						{
 							"type": "method",
+							"name": "isUnnamedClass()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Class.html#isUnnamedClass()"
+						},
+						{
+							"type": "method",
 							"name": "newInstance()",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Class.html#newInstance()",
@@ -15732,6 +15739,20 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/Runtime.html#version()"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "ScopedValue.Carrier",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/ScopedValue.Carrier.html"
+				},
+				{
+					"type": "class",
+					"name": "ScopedValue",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/ScopedValue.html"
 				},
 				{
 					"type": "class",
