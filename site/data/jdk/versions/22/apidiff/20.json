@@ -1,0 +1,2905 @@
+{
+	"base": {
+		"feature": "20",
+		"vendor": "tem",
+		"version": "20.0.1+9"
+	},
+	"target": {
+		"feature": "22",
+		"vendor": "open",
+		"version": "22-ea+1-7"
+	},
+	"order": 20.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.io",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Console",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/Console.html",
+							"addedTags": [
+								"sealed"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.constant",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ConstantDescs",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ConstantDescs.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "BSM_CLASS_DATA",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ConstantDescs.html#BSM_CLASS_DATA",
+									"csr": "JDK-8304181"
+								},
+								{
+									"type": "field",
+									"name": "BSM_CLASS_DATA_AT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ConstantDescs.html#BSM_CLASS_DATA_AT",
+									"csr": "JDK-8304181"
+								},
+								{
+									"type": "field",
+									"name": "CLASS_INIT_NAME",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ConstantDescs.html#CLASS_INIT_NAME",
+									"csr": "JDK-8304140"
+								},
+								{
+									"type": "field",
+									"name": "INIT_NAME",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ConstantDescs.html#INIT_NAME",
+									"csr": "JDK-8304140"
+								},
+								{
+									"type": "field",
+									"name": "MTD_void",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ConstantDescs.html#MTD_void",
+									"csr": "JDK-8304140"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ClassDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolveConstantDesc(MethodHandles.Lookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ClassDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+									"csr": "JDK-8304012"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodHandleDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodHandleDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolveConstantDesc(MethodHandles.Lookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodHandleDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+									"csr": "JDK-8304012"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTypeDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodTypeDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "descriptorString()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#descriptorString()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "of(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc)",
+									"csr": "JDK-8306699"
+								},
+								{
+									"type": "method",
+									"name": "of(ClassDesc, List)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#of(java.lang.constant.ClassDesc,java.util.List)",
+									"csr": "JDK-8306699"
+								},
+								{
+									"type": "method",
+									"name": "resolveConstantDesc(MethodHandles.Lookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/MethodTypeDesc.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
+									"csr": "JDK-8304012"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleDesc",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/ModuleDesc.html",
+							"csr": "JDK-8306730"
+						},
+						{
+							"type": "interface",
+							"name": "PackageDesc",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/constant/PackageDesc.html",
+							"csr": "JDK-8306730"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.foreign",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "AddressLayout",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/AddressLayout.html",
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "Arena",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "global()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html#global()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "isCloseableBy(Thread)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "ofAuto()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html#ofAuto()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "ofConfined()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html#ofConfined()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "ofShared()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html#ofShared()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "openConfined()",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "openShared()",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "scope()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html#scope()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "scope()",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "GroupLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/GroupLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/GroupLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/GroupLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Linker.Option.CaptureCallState",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "Linker.Option",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "captureCallState(String...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html#captureCallState(java.lang.String...)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "captureCallState(String...)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "captureStateLayout()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html#captureStateLayout()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "isTrivial()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html#isTrivial()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Linker",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "downcallHandle(MemorySegment, FunctionDescriptor, Linker.Option...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html#downcallHandle(java.lang.foreign.MemorySegment,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker.Option...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "upcallStub(MethodHandle, FunctionDescriptor, Arena, Linker.Option...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html#upcallStub(java.lang.invoke.MethodHandle,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Arena,java.lang.foreign.Linker.Option...)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "upcallStub(MethodHandle, FunctionDescriptor, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemoryLayout.PathElement",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "dereferenceElement()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html#dereferenceElement()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "groupElement(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html#groupElement(long)",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemoryLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "bitAlignment()",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "bitOffset(MemoryLayout.PathElement...)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "bitOffsetHandle(MemoryLayout.PathElement...)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "bitSize()",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "byteAlignment()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#byteAlignment()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "valueLayout(Class, ByteOrder)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemorySegment.Scope",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.Scope.html",
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "MemorySegment",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocateNative(MemoryLayout, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(long, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "allocateNative(long, long, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "array()",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "asSlice(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#asSlice(long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "asSlice(long, MemoryLayout)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#asSlice(long,java.lang.foreign.MemoryLayout)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "asSlice(long, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#asSlice(long,long,long)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "get(AddressLayout, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.AddressLayout,long)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfAddress, long)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(AddressLayout, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.AddressLayout,long)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfAddress, long)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfBoolean, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfBoolean,long)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfByte, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfByte,long)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "heapBase()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#heapBase()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "isAccessibleBy(Thread)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#isAccessibleBy(java.lang.Thread)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, long)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, long, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "ofAddress(long, long, SegmentScope, Runnable)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "reinterpret(Arena, Consumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#reinterpret(java.lang.foreign.Arena,java.util.function.Consumer)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "reinterpret(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#reinterpret(long)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "reinterpret(long, Arena, Consumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#reinterpret(long,java.lang.foreign.Arena,java.util.function.Consumer)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "scope()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#scope()",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "scope()",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "set(AddressLayout, long, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfAddress, long, MemorySegment)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(AddressLayout, long, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfAddress, long, MemorySegment)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfBoolean, long, boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfBoolean,long,boolean)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfByte, long, byte)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfByte,long,byte)",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PaddingLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/PaddingLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/PaddingLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/PaddingLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SegmentAllocator",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocate(AddressLayout, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.AddressLayout,java.lang.foreign.MemorySegment)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfAddress, MemorySegment)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "nativeAllocator(SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SegmentScope",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "SequenceLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SequenceLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/StructLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/StructLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/StructLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SymbolLookup",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "libraryLookup(Path, Arena)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.nio.file.Path,java.lang.foreign.Arena)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(Path, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(String, Arena)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.lang.String,java.lang.foreign.Arena)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "libraryLookup(String, SegmentScope)",
+									"status": "removed",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "or(SymbolLookup)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SymbolLookup.html#or(java.lang.foreign.SymbolLookup)",
+									"csr": "JDK-8308002"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "UnionLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/UnionLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/UnionLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/UnionLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "VaList.Builder",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "VaList",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfAddress",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8303240"
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfBoolean",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfByte",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfChar",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfDouble",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfFloat",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfInt",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfLong",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfShort",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "withBitAlignment(long)",
+									"status": "removed",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withByteAlignment(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html#withByteAlignment(long)",
+									"csr": "JDK-8308279"
+								},
+								{
+									"type": "method",
+									"name": "withoutName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html#withoutName()",
+									"csr": "JDK-8303240"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ClassSpecializer.Factory",
+							"status": "removed",
+							"csr": "JDK-8308239"
+						},
+						{
+							"type": "class",
+							"name": "ClassSpecializer.SpeciesData",
+							"status": "removed",
+							"csr": "JDK-8308239"
+						},
+						{
+							"type": "class",
+							"name": "StringConcatFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "MAX_INDY_CONCAT_ARG_SLOTS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#MAX_INDY_CONCAT_ARG_SLOTS",
+									"csr": "JDK-8286021"
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplate(List, List)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplate(java.util.List,java.util.List)",
+									"csr": "JDK-8286021"
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplateCluster(List, List, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplateCluster(java.util.List,java.util.List,int)",
+									"csr": "JDK-8286021"
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplateGetters(List, List, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplateGetters(java.util.List,java.util.List,int)",
+									"csr": "JDK-8286021"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.reflect",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "ClassFileFormatVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_21",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_21",
+									"csr": "JDK-8296179"
+								},
+								{
+									"type": "field",
+									"name": "RELEASE_22",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_22"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.runtime",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/runtime/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SwitchBootstraps",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "TemplateRuntime",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/runtime/TemplateRuntime.html",
+							"csr": "JDK-8286021"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Character",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isEmoji(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html#isEmoji(int)",
+									"csr": "JDK-8304027"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiComponent(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html#isEmojiComponent(int)",
+									"csr": "JDK-8304027"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiModifier(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html#isEmojiModifier(int)",
+									"csr": "JDK-8304027"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiModifierBase(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html#isEmojiModifierBase(int)",
+									"csr": "JDK-8304027"
+								},
+								{
+									"type": "method",
+									"name": "isEmojiPresentation(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html#isEmojiPresentation(int)",
+									"csr": "JDK-8304027"
+								},
+								{
+									"type": "method",
+									"name": "isExtendedPictographic(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.html#isExtendedPictographic(int)",
+									"csr": "JDK-8304027"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Class",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Class.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isUnnamedClass()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Class.html#isUnnamedClass()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Compiler",
+							"status": "removed",
+							"csr": "JDK-8304458"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Cbrt",
+							"status": "removed",
+							"csr": "JDK-8308049"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Hypot",
+							"status": "removed",
+							"csr": "JDK-8308049"
+						},
+						{
+							"type": "class",
+							"name": "FdLibm.Pow",
+							"status": "removed",
+							"csr": "JDK-8308049"
+						},
+						{
+							"type": "class",
+							"name": "MatchException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/MatchException.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Math",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Math.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "clamp(double, double, double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Math.html#clamp(double,double,double)",
+									"csr": "JDK-8301301"
+								},
+								{
+									"type": "method",
+									"name": "clamp(float, float, float)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Math.html#clamp(float,float,float)",
+									"csr": "JDK-8301301"
+								},
+								{
+									"type": "method",
+									"name": "clamp(long, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Math.html#clamp(long,int,int)",
+									"csr": "JDK-8301301"
+								},
+								{
+									"type": "method",
+									"name": "clamp(long, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Math.html#clamp(long,long,long)",
+									"csr": "JDK-8301301"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue.Carrier",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ScopedValue.Carrier.html"
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ScopedValue.html"
+						},
+						{
+							"type": "class",
+							"name": "StrictMath",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StrictMath.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "clamp(double, double, double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StrictMath.html#clamp(double,double,double)",
+									"csr": "JDK-8301301"
+								},
+								{
+									"type": "method",
+									"name": "clamp(float, float, float)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StrictMath.html#clamp(float,float,float)",
+									"csr": "JDK-8301301"
+								},
+								{
+									"type": "method",
+									"name": "clamp(long, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StrictMath.html#clamp(long,int,int)",
+									"csr": "JDK-8301301"
+								},
+								{
+									"type": "method",
+									"name": "clamp(long, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StrictMath.html#clamp(long,long,long)",
+									"csr": "JDK-8301301"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StringBuffer",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringBuffer.html",
+							"addedTags": [
+								"implements Appendable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "repeat(CharSequence, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringBuffer.html#repeat(java.lang.CharSequence,int)",
+									"csr": "JDK-8302686"
+								},
+								{
+									"type": "method",
+									"name": "repeat(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringBuffer.html#repeat(int,int)",
+									"csr": "JDK-8302686"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StringBuilder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringBuilder.html",
+							"addedTags": [
+								"implements Appendable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "repeat(CharSequence, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringBuilder.html#repeat(java.lang.CharSequence,int)",
+									"csr": "JDK-8302686"
+								},
+								{
+									"type": "method",
+									"name": "repeat(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringBuilder.html#repeat(int,int)",
+									"csr": "JDK-8302686"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "String",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/String.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "indexOf(String, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int,int)",
+									"csr": "JDK-8303650"
+								},
+								{
+									"type": "method",
+									"name": "indexOf(int, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/String.html#indexOf(int,int,int)",
+									"csr": "JDK-8302680"
+								},
+								{
+									"type": "method",
+									"name": "splitWithDelimiters(String, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/String.html#splitWithDelimiters(java.lang.String,int)",
+									"csr": "JDK-8305488"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ThreadGroup",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ThreadGroup.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowThreadSuspension(boolean)",
+									"status": "removed",
+									"csr": "JDK-8297331"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Thread",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "countStackFrames()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "isVirtual()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.html#isVirtual()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ofPlatform()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.html#ofPlatform()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ofVirtual()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.html#ofVirtual()",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "startVirtualThread(Runnable)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate.Processor.Linkage",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringTemplate.Processor.Linkage.html",
+							"csr": "JDK-8286021"
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate.Processor",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringTemplate.Processor.html",
+							"csr": "JDK-8286021"
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StringTemplate.html",
+							"csr": "JDK-8286021"
+						},
+						{
+							"type": "interface",
+							"name": "Thread.Builder.OfPlatform",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowSetThreadLocals(boolean)",
+									"status": "removed",
+									"csr": "JDK-8304920"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Thread.Builder.OfVirtual",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.Builder.OfVirtual.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowSetThreadLocals(boolean)",
+									"status": "removed",
+									"csr": "JDK-8304920"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Thread.Builder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.Builder.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allowSetThreadLocals(boolean)",
+									"status": "removed",
+									"csr": "JDK-8304920"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.channels",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileChannel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/FileChannel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "map(FileChannel.MapMode, long, long, Arena)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.Arena)",
+									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "map(FileChannel.MapMode, long, long, SegmentScope)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8303240"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security.cert",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/cert/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CertStore",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/cert/CertStore.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getDefaultType()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/cert/CertStore.html#getDefaultType()",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ConcurrentSkipListMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#putFirst(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#putLast(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ConcurrentSkipListSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "CopyOnWriteArrayList",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#getFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#getLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "DelayQueue",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/DelayQueue.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "remove()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/DelayQueue.html#remove()",
+									"csr": "JDK-8304686"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Executors",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/Executors.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newThreadPerTaskExecutor(ThreadFactory)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/Executors.html#newThreadPerTaskExecutor(java.util.concurrent.ThreadFactory)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "newVirtualThreadPerTaskExecutor()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/Executors.html#newVirtualThreadPerTaskExecutor()",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StructureViolationException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructureViolationException.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnFailure",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnFailure.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnSuccess",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnSuccess.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html"
+						},
+						{
+							"type": "enum",
+							"name": "StructuredTaskScope.Subtask.State",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.State.html"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Subtask",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.regex",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/regex/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Pattern",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/regex/Pattern.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "splitWithDelimiters(CharSequence, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/regex/Pattern.html#splitWithDelimiters(java.lang.CharSequence,int)",
+									"csr": "JDK-8305488"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ArrayList",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html#getFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html#getLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html#removeFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/ArrayList.html#removeLast()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Arrays",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Arrays.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Collections",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Collections.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "newSequencedSetFromMap(SequencedMap)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Collections.html#newSequencedSetFromMap(java.util.SequencedMap)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "shuffle(List, RandomGenerator)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.random.RandomGenerator)",
+									"csr": "JDK-8294694"
+								},
+								{
+									"type": "method",
+									"name": "unmodifiableSequencedCollection(SequencedCollection)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Collections.html#unmodifiableSequencedCollection(java.util.SequencedCollection)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "unmodifiableSequencedMap(SequencedMap)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Collections.html#unmodifiableSequencedMap(java.util.SequencedMap)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "unmodifiableSequencedSet(SequencedSet)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Collections.html#unmodifiableSequencedSet(java.util.SequencedSet)",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FormatItem.FormatItemModifier",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/FormatItem.FormatItemModifier.html"
+						},
+						{
+							"type": "class",
+							"name": "FormatProcessor",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/FormatProcessor.html",
+							"csr": "JDK-8286021"
+						},
+						{
+							"type": "class",
+							"name": "LinkedHashMap",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html",
+							"addedTags": [
+								"implements SequencedMap"
+							],
+							"removedTags": [
+								"implements Map"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html#putFirst(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html#putLast(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html#reversed()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "sequencedEntrySet()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html#sequencedEntrySet()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "sequencedKeySet()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html#sequencedKeySet()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "sequencedValues()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashMap.html#sequencedValues()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedHashSet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html",
+							"addedTags": [
+								"implements SequencedSet"
+							],
+							"removedTags": [
+								"implements Set"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#getFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#getLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#removeFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#removeLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedHashSet.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkedList",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedList.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/LinkedList.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Locale",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Locale.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "availableLocales()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Locale.html#availableLocales()",
+									"csr": "JDK-8301293"
+								},
+								{
+									"type": "method",
+									"name": "caseFoldLanguageTag(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Locale.html#caseFoldLanguageTag(java.lang.String)",
+									"csr": "JDK-8305623"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TreeMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/TreeMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/TreeMap.html#putFirst(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/TreeMap.html#putLast(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TreeSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/TreeSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/TreeSet.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/TreeSet.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Deque",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Deque.html",
+							"addedTags": [
+								"implements SequencedCollection"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/Deque.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "List",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html",
+							"addedTags": [
+								"implements SequencedCollection"
+							],
+							"removedTags": [
+								"implements Collection"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#getFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#getLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#removeFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#removeLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/List.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NavigableMap",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/NavigableMap.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/NavigableMap.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NavigableSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/NavigableSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/NavigableSet.html#removeFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/NavigableSet.html#removeLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/NavigableSet.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SequencedCollection",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SequencedCollection.html",
+							"csr": "JDK-8266572"
+						},
+						{
+							"type": "interface",
+							"name": "SequencedMap",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SequencedMap.html",
+							"csr": "JDK-8266572"
+						},
+						{
+							"type": "interface",
+							"name": "SequencedSet",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SequencedSet.html",
+							"csr": "JDK-8266572"
+						},
+						{
+							"type": "interface",
+							"name": "SortedMap",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedMap.html",
+							"addedTags": [
+								"implements SequencedMap"
+							],
+							"removedTags": [
+								"implements Map"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "putFirst(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedMap.html#putFirst(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "putLast(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedMap.html#putLast(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedMap.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SortedSet",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html",
+							"addedTags": [
+								"implements SequencedSet"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addFirst(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#addFirst(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "addLast(Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#addLast(java.lang.Object)",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#getFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "getLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#getLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeFirst()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#removeFirst()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "removeLast()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#removeLast()",
+									"csr": "JDK-8266572"
+								},
+								{
+									"type": "method",
+									"name": "reversed()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/SortedSet.html#reversed()",
+									"csr": "JDK-8266572"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DecapsulateException",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/DecapsulateException.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Decapsulator",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEM.Decapsulator.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Encapsulated",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEM.Encapsulated.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Encapsulator",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEM.Encapsulator.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "class",
+							"name": "KEM",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEM.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi.DecapsulatorSpi",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEMSpi.DecapsulatorSpi.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi.EncapsulatorSpi",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEMSpi.EncapsulatorSpi.html",
+							"csr": "JDK-8305384"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/KEMSpi.html",
+							"csr": "JDK-8305384"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.net.ssl",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/net/ssl/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "KeyManagerFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getDefaultAlgorithm()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TrustManagerFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getDefaultAlgorithm()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getDefaultAlgorithm()",
+									"addedTags": [
+										"final"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model.element",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "TypeElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/TypeElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isUnnamed()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#isUnnamed()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "VariableElement",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/VariableElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isUnnamed()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()",
+									"csr": "JDK-8304246"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_21",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_21",
+									"csr": "JDK-8296179"
+								},
+								{
+									"type": "field",
+									"name": "RELEASE_22",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_22"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.synth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthComboBoxUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getMinimumSize(JComponent)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)",
+									"csr": "JDK-8218474"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SynthLookAndFeel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "load(URL)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.text.html",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AccessibleHTML.HTMLAccessibleContext",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/text/html/AccessibleHTML.HTMLAccessibleContext.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setElementInfo(AccessibleHTML.ElementInfo)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/text/html/AccessibleHTML.HTMLAccessibleContext.html#setElementInfo(javax.swing.text.html.AccessibleHTML.ElementInfo)",
+									"csr": "JDK-8273986"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management.rmi",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.management.rmi/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.remote.rmi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.management.rmi/javax/management/remote/rmi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "RMIIIOPServerImpl",
+							"status": "removed",
+							"csr": "JDK-8307329"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.remote",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.management/javax/management/remote/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "JMXConnector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.management/javax/management/remote/JMXConnector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getMBeanServerConnection(Subject)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.net.http",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.net.http",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HttpClient",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/HttpClient.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "awaitTermination(Duration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/HttpClient.html#awaitTermination(java.time.Duration)",
+									"csr": "JDK-8304165"
+								},
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/HttpClient.html#close()",
+									"csr": "JDK-8304165"
+								},
+								{
+									"type": "method",
+									"name": "isTerminated()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/HttpClient.html#isTerminated()",
+									"csr": "JDK-8304165"
+								},
+								{
+									"type": "method",
+									"name": "shutdown()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/HttpClient.html#shutdown()",
+									"csr": "JDK-8304165"
+								},
+								{
+									"type": "method",
+									"name": "shutdownNow()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.net.http/java/net/http/HttpClient.html#shutdownNow()",
+									"csr": "JDK-8304165"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.xml.crypto",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml.crypto/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.crypto.dsig",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "SignatureMethod",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ED25519",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED25519",
+									"csr": "JDK-8307507"
+								},
+								{
+									"type": "field",
+									"name": "ED448",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ED448",
+									"csr": "JDK-8307507"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
