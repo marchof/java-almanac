@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+26-2328"
+		"version": "21-ea+27-2343"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -958,6 +958,15 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()",
 									"csr": "JDK-8255375"
+								},
+								{
+									"type": "method",
+									"name": "isAccessModeSupported(VarHandle.AccessMode)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk21/docs/api/java.base/java/lang/invoke/VarHandle.html#isAccessModeSupported(java.lang.invoke.VarHandle.AccessMode)",
+									"removedTags": [
+										"final"
+									]
 								},
 								{
 									"type": "method",
