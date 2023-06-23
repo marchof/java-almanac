@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+27-2343"
+		"version": "21-ea+28-2377"
 	},
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+2-90"
+		"version": "22-ea+3-184"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -68,6 +68,28 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ElementScanner6",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "visitRecordComponent(RecordComponentElement, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)"
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "javax.lang.model",
