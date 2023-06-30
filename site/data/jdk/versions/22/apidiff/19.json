@@ -2170,7 +2170,8 @@
 									"name": "isUnnamedClass()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Class.html#isUnnamedClass()"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Class.html#isUnnamedClass()",
+									"csr": "JDK-8308916"
 								}
 							]
 						},
@@ -2302,14 +2303,16 @@
 							"name": "ScopedValue.Carrier",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ScopedValue.Carrier.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
+							"csr": "JDK-8306573"
 						},
 						{
 							"type": "class",
 							"name": "ScopedValue",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ScopedValue.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ScopedValue.html",
+							"csr": "JDK-8306573"
 						},
 						{
 							"type": "class",
@@ -2459,7 +2462,8 @@
 								{
 									"type": "method",
 									"name": "countStackFrames()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8309201"
 								},
 								{
 									"type": "method",
@@ -2983,42 +2987,48 @@
 							"name": "StructureViolationException",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructureViolationException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructureViolationException.html",
+							"csr": "JDK-8306916"
 						},
 						{
 							"type": "class",
 							"name": "StructuredTaskScope.ShutdownOnFailure",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnFailure.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnFailure.html",
+							"csr": "JDK-8306916"
 						},
 						{
 							"type": "class",
 							"name": "StructuredTaskScope.ShutdownOnSuccess",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnSuccess.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnSuccess.html",
+							"csr": "JDK-8306916"
 						},
 						{
 							"type": "class",
 							"name": "StructuredTaskScope",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+							"csr": "JDK-8306916"
 						},
 						{
 							"type": "enum",
 							"name": "StructuredTaskScope.Subtask.State",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.State.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.State.html",
+							"csr": "JDK-8306916"
 						},
 						{
 							"type": "interface",
 							"name": "StructuredTaskScope.Subtask",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html",
+							"csr": "JDK-8306916"
 						}
 					]
 				},
@@ -3915,7 +3925,8 @@
 									"name": "isUnnamed()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#isUnnamed()"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#isUnnamed()",
+									"csr": "JDK-8306113"
 								}
 							]
 						},
@@ -3953,7 +3964,8 @@
 									"type": "method",
 									"name": "visitRecordComponent(RecordComponentElement, Object)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)",
+									"csr": "JDK-8309964"
 								}
 							]
 						},
@@ -4011,7 +4023,8 @@
 									"type": "field",
 									"name": "RELEASE_22",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_22"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_22",
+									"csr": "JDK-8306627"
 								}
 							]
 						}
