@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+3-184"
+		"version": "22-ea+4-286"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -1198,6 +1198,20 @@
 					"name": "TaskbarPeer",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/java/awt/peer/TaskbarPeer.html"
+				},
+				{
+					"type": "interface",
+					"name": "WindowPeer",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/java/awt/peer/WindowPeer.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getAppropriateGraphicsConfiguration(GraphicsConfiguration)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/java/awt/peer/WindowPeer.html#getAppropriateGraphicsConfiguration(java.awt.GraphicsConfiguration)"
+						}
+					]
 				}
 			]
 		},
@@ -17543,12 +17557,6 @@
 					"addedTags": [
 						"sealed"
 					]
-				},
-				{
-					"type": "class",
-					"name": "FormatItem.FormatItemModifier",
-					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/FormatItem.FormatItemModifier.html"
 				},
 				{
 					"type": "class",

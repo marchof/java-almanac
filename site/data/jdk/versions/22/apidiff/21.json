@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+28-2377"
+		"version": "21-ea+29-2411"
 	},
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+3-184"
+		"version": "22-ea+4-286"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -111,6 +111,36 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_22",
 									"csr": "JDK-8306627"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.awt.peer",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/java/awt/peer/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "WindowPeer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/java/awt/peer/WindowPeer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getAppropriateGraphicsConfiguration(GraphicsConfiguration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/java/awt/peer/WindowPeer.html#getAppropriateGraphicsConfiguration(java.awt.GraphicsConfiguration)"
 								}
 							]
 						}
