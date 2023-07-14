@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+5-350"
+		"version": "22-ea+6-393"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -4327,6 +4327,32 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String,java.nio.charset.Charset)",
 									"csr": "JDK-8275348"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StandardCharsets",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/charset/StandardCharsets.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "UTF_32BE",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_32BE"
+								},
+								{
+									"type": "field",
+									"name": "UTF_32LE",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_32LE"
+								},
+								{
+									"type": "field",
+									"name": "UTF_32",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_32"
 								}
 							]
 						}
