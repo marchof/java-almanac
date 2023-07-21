@@ -138,9 +138,7 @@ public class VirtualThreadDemo {
          var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
          return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
       } catch (Exception ex) {
-         var rex = new RuntimeException();
-         rex.initCause(ex);
-         throw rex;
+         throw new RuntimeException(ex);
       }
    }   
 }
