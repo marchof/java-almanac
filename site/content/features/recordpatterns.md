@@ -1,16 +1,15 @@
 ---
-title: Record Patterns (JEP 405)
-copyright: Cay S. Horstmann 2022. All rights reserved.
-jep: 405
-jdkversion: 19
+title: Record Patterns (JEP 440)
+copyright: Cay S. Horstmann 2022-2023. All rights reserved.
+jep: 440
+jdkversion: 21
 ---
 
-
-Record patterns,  a preview feature of Java 19, let you “deconstruct” record values, binding each component to a variable. Record patterns work with instanceof and switch pattern matching. Guards are supported. They are particularly compelling with nested deconstruction and sealed record hierarchies.
+Record patterns, previewed in JEP 405 and JEP 432, and finalized in JEP 440, let you “deconstruct” record values, binding components to variables. Record patterns work with instanceof and switch pattern matching. Guards are supported. They are particularly compelling with nested deconstruction and sealed record hierarchies.
 
 ## Deconstructing a Record
 
-Java 19 has one public `record`:
+Java 19 introduced this public `record`:
 
 ```
 public record UnixDomainPrincipal(UserPrincipal user, GroupPrincipal group)
@@ -88,9 +87,9 @@ Of course, we need to implement the `CharSequence` methods. That's easily done i
 ```
 default int length() {
    return switch (this) {
-      case Initial(var __, var end) -> end;
+      case Initial(var _, var end) -> end;
       case Final(var seq, var start) -> seq.length() - start();
-      case Middle(var __, var start, var end) -> end - start;
+      case Middle(var _, var start, var end) -> end - start;
    };
 }
 ```
@@ -105,7 +104,7 @@ The following sandbox contains the complete example. Note that a record pattern 
 case Initial(var seq, var end) when s == 0
 ```
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
 
 sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
@@ -121,9 +120,9 @@ sealed interface SubSequence extends CharSequence permits Initial, Final, Middle
 
    default int length() {
       return switch (this) {
-         case Initial(var __, var end) -> end;
+         case Initial(var _, var end) -> end;
          case Final(var seq, var start) -> seq.length() - start();
-         case Middle(var __, var start, var end) -> end - start;
+         case Middle(var _, var start, var end) -> end - start;
       };
    }
    
@@ -193,17 +192,9 @@ A `switch` can match `0`  or `null` at the top level, but not when it is nested.
 case Final(var cs, var s) when s == 0 -> cs;
 ```
 
-You can also define bindings for an entire record, as you do in a type pattern:
-
-```
-case Initial(Final(var cs, var s1) fseq, var e2) iseq -> ...
-```
-
-Now `fseq` and `iseq` refer to the matched records.
-
 This sandbox has the complete definition of the `simplify` method. The details are fussy, but have a look at the overall structure and the elegance of the variable extraction, guards, and pattern nesting.
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static CharSequence simplify(SubSequence seq) {
       return switch (seq) {
@@ -255,9 +246,9 @@ public sealed interface SubSequence extends CharSequence permits Initial, Final,
 
    default int length() {
       return switch (this) {
-         case Initial(var __, var end) -> end;
+         case Initial(var _, var end) -> end;
          case Final(var seq, var start) -> seq.length() - start();
-         case Middle(var __, var start, var end) -> end - start;
+         case Middle(var _, var start, var end) -> end - start;
       };
    }
    
@@ -290,7 +281,7 @@ record Middle(CharSequence seq, int start, int end) implements SubSequence {
 
 ## Generics
 
-A pattern for a generic type must use a type parameter. For example, given
+If you omit generic type arguments in a type pattern, they are inferred. For example, consider:
 
 ```
 record Pair<T>(T first, T second) {
@@ -298,29 +289,16 @@ record Pair<T>(T first, T second) {
 }
 ```
 
-the type pattern
+You can use a type pattern where `Pair` has an explicit type argument:
 
 ```
 Pair<String>(var first, var second)
 ```
 
-is ok, as is
+Alternatively, provide sufficient type information so that the type argument can be inferred:
 
 ```
-Pair<?>(String first, String second)
-```
-
-or even
-
-```
-Pair<?>(var first, var second)
-   // The variables first and second have type Object
-```
-
-But a “raw” type pattern is a compile-time error:
-
-```
-Pair(String first, String second) // Error
+Pair(String first, String second) // Pair<String> inferred
 ```
 
 When generic types are involved, the compiler may need to work pretty hard to verify exhaustiveness. Consider this incomplete hierarchy of JSON types:
@@ -343,7 +321,7 @@ public static <T> double toNumber(JSONPrimitive<T> v) {
       case JSONString(var s) -> {
          try {
             yield Double.parseDouble(s);
-         } catch (NumberFormatException __) {
+         } catch (NumberFormatException _) {
             yield Double.NaN;
          }
       }
@@ -416,7 +394,7 @@ This too exceeds the capabilities of the Java type system. In Scala 3, these inf
 
 Here is a sandbox so that you can play with the code of this section.
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 sealed interface JSONValue {}
 sealed interface JSONPrimitive<T> extends JSONValue {}
 record JSONNumber(double value) implements JSONPrimitive<Double> {}
@@ -435,7 +413,7 @@ public class Main {
          case JSONString(var s) -> {
             try {
                yield Double.parseDouble(s);
-            } catch (NumberFormatException __) {
+            } catch (NumberFormatException _) {
                yield Double.NaN;
             }
          }
@@ -524,7 +502,7 @@ What if those methods throw an exception?
 
 In that case, the `switch` throws a `MatchError` whose cause is that exception. Check it out in this sandbox:
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
 
 sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
@@ -540,9 +518,9 @@ sealed interface SubSequence extends CharSequence permits Initial, Final, Middle
 
    default int length() {
       return switch (this) {
-         case Initial(var __, var end) -> end;
+         case Initial(var _, var end) -> end;
          case Final(var seq, var start) -> seq.length() - start();
-         case Middle(var __, var start, var end) -> end - start;
+         case Middle(var _, var start, var end) -> end - start;
       };
    }
    
@@ -596,6 +574,59 @@ public class Main {
 Rémi Forax has a [more amusing example](https://mail.openjdk.org/pipermail/amber-spec-observers/2022-June/003626.html) which generates a linked list of match errors.
 
 I think it is best not to override component accessors so that they throw exceptions. It is ok to throw an exception in the constructor when construction parameters are `null` or out of range. But once the record instance is constructed, one should be able to extract its state, no matter what it is.
+
+## null
+
+No discussion of Java pattern matching would be complete without talking about `null`. As always in Java, `instanceof` is `null`-friendly and `switch` is `null`-hostile (unless there is a `case null`):
+
+```
+record Box<T>(T contents) { }
+...
+Box<String> b = null;
+if (b instanceof Box(c)) ... // instanceof yields false
+
+switch (b) { // throws NullPointerException
+  case Box(c): ...; 
+}
+```
+
+What about a boxed `null`? 
+
+```
+b = new Box<String>(null);
+if (b instanceof Box(c)) ... // instanceof yields true, c is null
+
+switch (b) { 
+  case Box(c): ...; // matches, c is null
+}
+
+```
+
+Now consider this subtly different situation, with nested records where `null` appears in the middle:
+
+```
+Box<Box<String>> bb = new Box<Box<String>>(null);
+if (bb instanceof Box(Box(c))) ... // instanceof yields false
+
+switch (bb) { 
+  case Box(Box(c)): ...; // throws MatchException
+}
+
+```
+
+Since `null` does not match the inner `Box(c)`, the `switch` statement throws a `MatchException`, not a `NullPointerException`.
+
+Also note that you cannot use:
+
+```
+case Box(null):
+```
+
+To guard against this situation, you need:
+
+```
+case Box(c) where c == null: 
+```
 
 ## How Momentous Are Record Patterns?
 

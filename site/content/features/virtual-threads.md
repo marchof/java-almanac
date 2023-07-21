@@ -271,16 +271,24 @@ public class RateLimitDemo {
 
 The virtual thread scheduler mounts virtual threads onto carrier threads. By default, there are as many carrier threads as there are CPU cores. You can tune that count with the `jdk.virtualThreadScheduler.parallelism` VM option.
 
-When a virtual thread executes a blocking operation, it is supposed to be unmounted from its its carrier thread, which can then execute a different virtual thread. There are two situations in which this does *not* happen:
+When a virtual thread executes a blocking operation, it is supposed to be unmounted from its its carrier thread, which can then execute a different virtual thread. The Java libraries have been instrumented so that unmounting works for:
+
+* Sleeping 
+* Blocking on `ReentrantLock`
+* Network I/O
+
+In some situations, the virtual thread scheduler cannot unmount a thread that is about to block, but will compensate by starting another carrier thread. In JDK 21, this happens for synchronous file I/O operations, and when calling `Object.wait`. (This is an implementation detail that may change.) You can control the maximum number of carrier threads with the `jdk.virtualThreadScheduler.maxPoolSize` VM option.
+
+A virtual thread can never be unmounted when it is *pinned*, which happens in the following two situations: 
 
 1. When executing a `synchronized` method or block
 2. When calling a native method or foreign function
 
-A thread that does either of  these is called *pinned*. Being pinned is not bad in itself. But when a pinned thread blocks, there is a problem. The thread cannot be unmounted, and the carrier thread is blocked. That leaves fewer carrier threads for running virtual threads.
+The first cause for pinning is due to implementation issues in the JVM that will eventually be overcome. The second cause is unavoidable.
 
-In some situations, the virtual thread scheduler will compensate by starting another carrier thread. For example, in JDK 21, this happens for many file I/O operations, and when calling `Object.wait`. But this is an implementation detail that may change. You can control the maximum number of carrier threads with the `jdk.virtualThreadScheduler.maxPoolSize` VM option.
+Being pinned is not bad in itself. But when a pinned thread blocks, there is a problem. The thread cannot be unmounted, and the carrier thread is blocked. That leaves fewer carrier threads for running virtual threads.
 
-Pinning is harmless if `synchronized` is used to avoid a race condition in an in-memory operation. However, if there are blocking calls, it would be best to replace `synchronized` with a `ReentrantLock`. This is of course only an option if you have control over the source code. 
+Pinning is harmless if `synchronized` is used to avoid a race condition in an in-memory operation. However, if there are blocking calls inside the `synchronized` method or block, it would be best to replace `synchronized` with a `ReentrantLock`. This is of course only an option if you have control over the source code. 
 
 You always have the option whether or not to use virtual threads. In particular, heavy file I/O work may be better suited for platform threads.
 
