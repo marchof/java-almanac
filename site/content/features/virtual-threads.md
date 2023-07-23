@@ -117,9 +117,10 @@ result = combine(f1.get(), f2.get());
 Before virtual threads, you might have felt bad about the blocking `get` calls. But now blocking is cheap. Here is a sandbox with a more concrete example:
 
 {{< sandbox version=java21 preview="true" mainclass="VirtualThreadDemo" >}}{{< sandboxsource "VirtualThreadDemo.java" >}}
-import java.util.concurrent.*;
+import java.io.*;
 import java.net.*;
 import java.net.http.*;
+import java.util.concurrent.*;
 
 public class VirtualThreadDemo {
    public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -133,16 +134,11 @@ public class VirtualThreadDemo {
 
    private static HttpClient client = HttpClient.newHttpClient();
 
-   public static String get(String url) {
-      try {
-         var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
-         return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
-      } catch (Exception ex) {
-         throw new RuntimeException(ex);
-      }
+   public static String get(String url) throws InterruptedException, IOException, URISyntaxException {
+      var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
+      return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
    }   
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
@@ -158,10 +154,11 @@ for (Future<T> f : service.invokeAll(callables))
 Again, a more concrete sandbox:
 
 {{< sandbox version=java21 preview="true" mainclass="VirtualThreadDemo" >}}{{< sandboxsource "VirtualThreadDemo.java" >}}
-import java.util.*;
-import java.util.concurrent.*;
+import java.io.*;
 import java.net.*;
 import java.net.http.*;
+import java.util.*;
+import java.util.concurrent.*;
 
 public class VirtualThreadDemo {
    public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -180,18 +177,11 @@ public class VirtualThreadDemo {
 
    private static HttpClient client = HttpClient.newHttpClient();
 
-   public static String get(String url) {
-      try {
-         var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
-         return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
-      } catch (Exception ex) {
-         var rex = new RuntimeException();
-         rex.initCause(ex);
-         throw rex;
-      }
+   public static String get(String url) throws InterruptedException, IOException, URISyntaxException {
+      var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
+      return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
    }   
 }
-
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
@@ -223,10 +213,11 @@ As an example, on my personal web site, I provide demo services for producing ra
 The following sandbox shows rate limiting with a simple semaphore that allows a small number of concurrent requests. When the maximum is exceeded, the `acquire` method blocks, but that is ok. With virtual threads, blocking is cheap.
 
 {{< sandbox version=java21 preview="true" mainclass="RateLimitDemo" >}}{{< sandboxsource "RateLimitDemo.java" >}}
-import java.util.*;
-import java.util.concurrent.*;
+import java.io.*;
 import java.net.*;
 import java.net.http.*;
+import java.util.*;
+import java.util.concurrent.*;
 
 public class RateLimitDemo {
    public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -245,21 +236,14 @@ public class RateLimitDemo {
 
    private static final Semaphore SEMAPHORE = new Semaphore(20);
    
-   public static String get(String url) {
+   public static String get(String url) throws InterruptedException, IOException, URISyntaxException {
+      var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
+      SEMAPHORE.acquire();
       try {
-         var request = HttpRequest.newBuilder().uri(new URI(url)).GET().build();
-         SEMAPHORE.acquire();
-         try {
-            Thread.sleep(100);
-            return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
-         } finally {
-            SEMAPHORE.release();
-         }
-      } catch (Exception ex) {
-         ex.printStackTrace();
-         var rex = new RuntimeException();
-         rex.initCause(ex);
-         throw rex;
+         Thread.sleep(100);
+         return client.send(request, HttpResponse.BodyHandlers.ofString()).body();
+      } finally {
+         SEMAPHORE.release();
       }
    }   
 }
@@ -310,8 +294,6 @@ org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) 
 Note that you get only one warning per pinning location!
 
 Alternatively, record with Java Flight Recorder, view with your favorite mission control viewer, and look for `VirtualThreadPinned` and `VirtualThreadSubmitFailed` events.
-
-The JVM will eventually be implemented so that `synchronized` methods or blocks no longer lead to pinning. Then you only need to worry about pinning for native code. 
 
 The following sandbox shows pinning in action. We launch a number of virtual threads that sleep in a synchronized method, blocking their carrier threads. A number of virtual threads are added that do no work at all. But they can't be scheduled until the blocking threads complete, because the carrier thread pool has been completely exhausted. Try modifying the program in one of two ways:
 
