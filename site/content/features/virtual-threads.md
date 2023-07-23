@@ -3,7 +3,6 @@ title: Virtual Threads (JEP 444)
 copyright: Cay S. Horstmann 2023. All rights reserved.
 jep: 444
 jdkversion: 21
-type: "sandbox"
 ---
 
 
