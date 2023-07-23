@@ -90,6 +90,7 @@ public class GetJdkVersion extends GetOperationDefinition {
 												.setType("object") //
 												.setProperty("type", new Schema() //
 														.setType("string") //
+														.addEnum("AlmanacFeature") //
 														.addEnum("JEP") //
 														.addEnum("JSR") //
 														.addEnum("JDKIssue")) //
@@ -144,6 +145,8 @@ public class GetJdkVersion extends GetOperationDefinition {
 			return "https://jcp.org/en/jsr/detail?id=" + identifier;
 		case "JDKIssue":
 			return "https://bugs.openjdk.java.net/browse/JDK-" + identifier;
+		case "AlmanacFeature":
+			return "https://javaalmanac.io/features/" + identifier + "/";
 		default:
 			throw new AssertionError(type);
 		}
