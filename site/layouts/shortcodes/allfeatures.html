@@ -9,6 +9,7 @@
 <tbody>
 {{- range $jdk := sort $.Site.Data.jdk.versions "ga" "asc" }}
 {{- range $jdk.features }}
+{{- if not .preview }}
 <tr>
   <td>{{ .title }}</td>
   <td>{{ with .refs }}{{ range $idx, $item := . -}}
@@ -17,6 +18,7 @@
         {{- end }}{{ end }}</td>
   <td><a href="../jdk/{{ $jdk.version }}/">{{ $jdk.name }}</a></td>
 </tr>
+{{- end }}
 {{- end }}
 {{- end }}
 </tbody>
