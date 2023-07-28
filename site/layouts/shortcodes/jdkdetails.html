@@ -83,20 +83,6 @@
 
 <h2>New Features</h2>
 
-{{- define "featureref" -}}
-  {{ if eq .type "JEP" -}}
-    <a href="https://openjdk.java.net/jeps/{{ .identifier }}">JEP {{ .identifier }}</a>
-  {{- else if eq .type "JSR" -}}
-    <a href="https://jcp.org/en/jsr/detail?id={{ .identifier }}">JSR {{ .identifier }}</a>
-  {{- else if eq .type "JDKIssue" -}}
-    <a href="https://bugs.openjdk.java.net/browse/JDK-{{ .identifier }}">JDK-{{ .identifier }}</a>
-  {{- else if eq .type "AlmanacFeature" -}}
-    <a href="/features/{{ .identifier }}/">Java Almanac</a>
-  {{- else -}}
-    {{ errorf "Undefined feature reference type %s" .type }}
-  {{- end }}
-{{- end }}
-
 {{- $allfeatures := index (index $.Site.Data.jdk.versions $version) "features" }}
 {{- range sort $.Site.Data.jdk.featurecategories "order" }}
   {{- $currenttitle := .title }}
@@ -109,7 +95,7 @@
         {{- if .preview}} <span class="tag feature">Preview</span>{{ end -}}
         {{ with .refs }} ({{ range $idx, $item := . -}}
           {{ if gt $idx 0 }}, {{ end -}}
-          {{ template "featureref" $item }}
+          {{ partial "featureref" $item }}
         {{- end }}){{ end }}
       </li>
     {{- end }}

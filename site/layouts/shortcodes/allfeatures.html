@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>References</th>
+      <th>Release</th>
+    </tr>
+  </thead>
+<tbody>
+{{- range $jdk := sort $.Site.Data.jdk.versions "ga" "asc" }}
+{{- range $jdk.features }}
+<tr>
+  <td>{{ .title }}</td>
+  <td>{{ with .refs }}{{ range $idx, $item := . -}}
+          {{ if gt $idx 0 }}, {{ end -}}
+          {{ partial "featureref" $item }}
+        {{- end }}{{ end }}</td>
+  <td><a href="../jdk/{{ $jdk.version }}/">{{ $jdk.name }}</a></td>
+</tr>
+{{- end }}
+{{- end }}
+</tbody>
+</table>

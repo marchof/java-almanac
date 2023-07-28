@@ -1,0 +1,11 @@
+{{ if eq .type "JEP" -}}
+  <a href="https://openjdk.java.net/jeps/{{ .identifier }}">JEP {{ .identifier }}</a>
+{{- else if eq .type "JSR" -}}
+  <a href="https://jcp.org/en/jsr/detail?id={{ .identifier }}">JSR {{ .identifier }}</a>
+{{- else if eq .type "JDKIssue" -}}
+  <a href="https://bugs.openjdk.java.net/browse/JDK-{{ .identifier }}">JDK-{{ .identifier }}</a>
+{{- else if eq .type "AlmanacFeature" -}}
+  <a href="/features/{{ .identifier }}/">Java Almanac</a>
+{{- else -}}
+  {{ errorf "Undefined feature reference type %s" .type }}
+{{- end -}}
