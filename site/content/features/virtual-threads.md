@@ -355,15 +355,13 @@ public class PinningDemo {
 
 ## Thread Locals
 
-A *thread-local variable* is an object whose `get` and `set` methods access a value that depends on the current thread. Why would you want such a thing instead of using a global or local variable? The classic application is a service that is not threadsafe, such as `SimpleDateFormat`, or that would suffer from contention, such as a random number generator. In these cases, a per-thread shared instance makes sense.
+A *thread-local variable* is an object whose `get` and `set` methods access a value that depends on the current thread. Why would you want such a thing instead of using a global or local variable? The classic application is a service that is not threadsafe, such as `SimpleDateFormat`, or that would suffer from contention, such as a random number generator. With a per-thread instance, you don't have to use a lock. 
 
-However, if the shared instance is resource-intensive, there can be a problem when migrating to virtual threads. There will likely be far more of them than threads in a thread pool, and now you have many more expensive instances. In such a situation, you should rethink your sharing strategy.
+Another common use for thread locals is to provide “implicit” context, such as a database connection, that is properly configured for each task. Instead of passing the context from one method to another, the task code simply reads the thread-local variable whenever it needs to access the context. You can even propagate thread-local variables to subtasks by using an *inheritable thread-local variable*. When a new thread is started, it receives a copy of the parent's inheritable thread locals. This is just the behavior that you want for context information, but making these copies can be expensive. The copies are necessary because the child thread might mutate the thread-local values.
 
-Another common use for thread locals is to provide “implicit” context, such as a database connection, that is properly configured for each task. Instead of passing the context from one method to another, the task code simply reads the thread-local variable. This is actually hard to get right with thread pools, since you don't want another thread use your database. But tasks are mapped 1:1 to virtual threads, so a thread-local context makes sense. 
+However, thread locals can be a problem when migrating to virtual threads. There will likely be far more of them than threads in a thread pool, and now you have many more instances. In such a situation, you should rethink your sharing strategy.
 
-An *inheritable thread-local variable* is a special kind of thread-local variable. When a new thread is started, it receives a copy of the parent's inheritable thread locals. This is just the behavior that you want for context information, but making these copies can be expensive. The copies are necessary because the child thread might mutate the thread-local values.
-
-Such mutation is uncommon. Run with the VM flag `jdk.traceVirtualThreadLocals` to get a stack trace when a virtual thread mutates a thread-local variable.
+To find where your app uses thread locals, run with the VM flag `jdk.traceVirtualThreadLocals`. You will get a stack trace when a virtual thread mutates a thread-local variable.
 
 Consider migrating to *scoped values*  instead. Scoped values have per-thread instances, but they are immutable and have a bounded lifetime. Scoped values are inherited in virtual threads created by a `StructuredTaskScope`. In Java 21, they are a preview feature, described in JEP 446. I don't discuss them in detail here, but the following sandbox shows how to use them:
 
@@ -410,5 +408,4 @@ public class ScopedValueDemo {
 * [JEP 444: Virtual Threads, OpenJDK](https://openjdk.java.net/jeps/444)
 * [JEP 446: Scoped Values (Preview), OpenJDK](https://openjdk.java.net/jeps/444)
 * [JEP 453: Structured Concurrency (Preview), OpenJDK](https://openjdk.java.net/jeps/444)
-
 
