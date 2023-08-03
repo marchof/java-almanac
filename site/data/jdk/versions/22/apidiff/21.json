@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "21",
 		"vendor": "open",
-		"version": "21-ea+32-2482"
+		"version": "21-ea+33-2490"
 	},
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+7-489"
+		"version": "22-ea+8-563"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -17,6 +17,28 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "java.io",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Console",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/Console.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isTerminal()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/Console.html#isTerminal()"
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "java.lang.reflect",
@@ -105,6 +127,34 @@
 									"name": "UTF_32",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_32"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.file",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Path",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/Path.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolve(Path, Path...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/Path.html#resolve(java.nio.file.Path,java.nio.file.Path...)"
+								},
+								{
+									"type": "method",
+									"name": "resolve(String, String...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/Path.html#resolve(java.lang.String,java.lang.String...)"
 								}
 							]
 						}

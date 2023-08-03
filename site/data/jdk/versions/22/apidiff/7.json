@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+7-489"
+		"version": "22-ea+8-563"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -2273,6 +2273,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/Console.html#charset()",
 							"csr": "JDK-8264209"
+						},
+						{
+							"type": "method",
+							"name": "isTerminal()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/Console.html#isTerminal()"
 						}
 					]
 				},
@@ -9755,12 +9761,24 @@
 						},
 						{
 							"type": "method",
+							"name": "resolve(Path, Path...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/Path.html#resolve(java.nio.file.Path,java.nio.file.Path...)"
+						},
+						{
+							"type": "method",
 							"name": "resolve(String)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/Path.html#resolve(java.lang.String)",
 							"removedTags": [
 								"abstract"
 							]
+						},
+						{
+							"type": "method",
+							"name": "resolve(String, String...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/file/Path.html#resolve(java.lang.String,java.lang.String...)"
 						},
 						{
 							"type": "method",
