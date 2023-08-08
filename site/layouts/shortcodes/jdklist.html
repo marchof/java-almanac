@@ -13,7 +13,7 @@
   <tbody>
     {{- range sort $.Site.Data.jdk.versions "ga" "desc" }}
     <tr>
-      <td><a href="{{ .version }}">{{ .name }}</a></td>
+      <td><a href="{{ .version }}/">{{ .name }}</a></td>
       <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
       <td>{{ .bytecode }}</td>
       <td>{{ .ga }}</td>
