@@ -33,11 +33,11 @@
 {{ end }}
 </ul>
 
-<li>All JDK preview features must have a revision.</li>
+<li>All JDK incubator and preview features must have a revision.</li>
 <ul>
 {{ range $jdkversions }}
   {{ range .features }}
-    {{ if and .preview (not .revision) }}{{ errorf "Preview without revision: %s" .title }}{{ end }}
+    {{ if and (or .incubator .preview) (not .revision) }}{{ errorf "Preview without revision: %s" .title }}{{ end }}
     <li>{{ .title }} &check;</li>
   {{ end }}
 {{ end }}

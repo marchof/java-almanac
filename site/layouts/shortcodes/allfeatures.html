@@ -9,7 +9,7 @@
 <tbody>
 {{- range $jdk := sort $.Site.Data.jdk.versions "ga" "asc" }}
 {{- range $jdk.features }}
-{{- if not .preview }}
+{{- if and (not .incubator) (not .preview) }}
 <tr>
   <td>{{ .title }}</td>
   <td>{{ with .refs }}{{ range $idx, $item := . -}}

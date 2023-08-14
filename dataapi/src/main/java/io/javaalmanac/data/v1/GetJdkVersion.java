@@ -82,6 +82,8 @@ public class GetJdkVersion extends GetOperationDefinition {
 										.addEnum("jvm") //
 										.addEnum("tools") //
 										.addEnum("internal")) //
+								.setProperty("incubator", new Schema() //
+										.setType("boolean")) //
 								.setProperty("preview", new Schema() //
 										.setType("boolean")) //
 								.setProperty("revision", new Schema() //
