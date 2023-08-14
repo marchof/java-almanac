@@ -84,6 +84,9 @@ public class GetJdkVersion extends GetOperationDefinition {
 										.addEnum("internal")) //
 								.setProperty("preview", new Schema() //
 										.setType("boolean")) //
+								.setProperty("revision", new Schema() //
+										.setType("integer") //
+										.setMinimum(1)) //
 								.setProperty("refs", new Schema() //
 										.setType("array") //
 										.setItemsSchema(new Schema() //

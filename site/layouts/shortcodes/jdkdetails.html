@@ -92,7 +92,7 @@
     {{- range . }}
       <li>
         {{ .title }}
-        {{- if .preview}} <span class="tag feature">Preview</span>{{ end -}}
+        {{- if .preview}} <span class="tag feature">{{ .revision }}. Preview</span>{{ end -}}
         {{ with .refs }} ({{ range $idx, $item := . -}}
           {{ if gt $idx 0 }}, {{ end -}}
           {{ partial "featureref" $item }}
