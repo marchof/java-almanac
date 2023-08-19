@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="{{ $stylefp.RelPermalink }}" integrity="{{ $stylefp.Data.Integrity }}">
   <link rel="shortcut icon" type="image/png" href="{{ "img/duke64.png" | relURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
+  {{ with .Params.description -}}
+  <meta name="description" content="{{ . }}">
+  {{- end }}
 </head>
 <body>
 <div class="header-bar">
