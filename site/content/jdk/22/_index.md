@@ -1,5 +1,6 @@
 ---
 title: Java 22
+description: Information about Java 22 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "22" >}}

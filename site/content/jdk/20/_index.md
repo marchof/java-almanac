@@ -1,5 +1,6 @@
 ---
 title: Java 20
+description: Information about Java 20 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "20" >}}

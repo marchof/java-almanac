@@ -1,5 +1,6 @@
 ---
 title: Java 9
+description: Information about Java 9 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "9" >}}

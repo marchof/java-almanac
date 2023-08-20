@@ -1,5 +1,6 @@
 ---
 title: Java 1.0
+description: Information about Java 1.0 with documentation links.
 ---
 
 {{< jdkdetails "1.0" >}}

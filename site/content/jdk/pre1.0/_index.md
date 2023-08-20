@@ -1,5 +1,6 @@
 ---
 title: Pre Java 1.0
+description: Some information about the early pre Java 1.0 area.
 ---
 
 Some early implementations and specification can be found in the Internet which

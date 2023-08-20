@@ -1,5 +1,6 @@
 ---
 title: Java 16
+description: Information about Java 16 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "16" >}}

@@ -1,5 +1,6 @@
 ---
 title: Java 12
+description: Information about Java 12 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "12" >}}
