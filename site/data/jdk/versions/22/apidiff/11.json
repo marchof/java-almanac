@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+14-1033"
+		"version": "22-ea+15-1134"
 	},
 	"order": 11.0,
 	"deltas": [
@@ -3258,6 +3258,20 @@
 							]
 						},
 						{
+							"type": "enum",
+							"name": "StackWalker.Option",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StackWalker.Option.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DROP_METHOD_INFO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StackWalker.Option.html#DROP_METHOD_INFO"
+								}
+							]
+						},
+						{
 							"type": "interface",
 							"name": "CharSequence",
 							"status": "notmodified",
@@ -5077,6 +5091,12 @@
 						},
 						{
 							"type": "class",
+							"name": "ListFormat",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/ListFormat.html"
+						},
+						{
+							"type": "class",
 							"name": "NumberFormat.Field",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/NumberFormat.Field.html",
@@ -5118,6 +5138,18 @@
 									"csr": "JDK-8188147"
 								}
 							]
+						},
+						{
+							"type": "enum",
+							"name": "ListFormat.Style",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/ListFormat.Style.html"
+						},
+						{
+							"type": "enum",
+							"name": "ListFormat.Type",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/ListFormat.Type.html"
 						},
 						{
 							"type": "enum",
@@ -8559,6 +8591,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/Elements.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "getEnumConstantBody(VariableElement)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/Elements.html#getEnumConstantBody(javax.lang.model.element.VariableElement)"
+								},
 								{
 									"type": "method",
 									"name": "getFileObjectOf(Element)",

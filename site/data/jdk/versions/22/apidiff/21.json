@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+14-1033"
+		"version": "22-ea+15-1134"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -97,6 +97,20 @@
 									"csr": "JDK-8309201"
 								}
 							]
+						},
+						{
+							"type": "enum",
+							"name": "StackWalker.Option",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StackWalker.Option.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DROP_METHOD_INFO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StackWalker.Option.html#DROP_METHOD_INFO"
+								}
+							]
 						}
 					]
 				},
@@ -164,6 +178,32 @@
 									"csr": "JDK-8312123"
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.text",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ListFormat",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/ListFormat.html"
+						},
+						{
+							"type": "enum",
+							"name": "ListFormat.Style",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/ListFormat.Style.html"
+						},
+						{
+							"type": "enum",
+							"name": "ListFormat.Type",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/text/ListFormat.Type.html"
 						}
 					]
 				},
@@ -238,6 +278,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitRecordComponent(javax.lang.model.element.RecordComponentElement,java.lang.Object)",
 									"csr": "JDK-8310172"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Elements",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/Elements.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getEnumConstantBody(VariableElement)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/util/Elements.html#getEnumConstantBody(javax.lang.model.element.VariableElement)"
 								}
 							]
 						}
