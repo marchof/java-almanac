@@ -20,11 +20,8 @@ Vue.component('downloadlist', {
             </tr>
           </thead>
           <tbody>
-            <tr v-if="loading">
-              <td colspan="5">Loading...</td>
-            </tr>
-            <tr v-if="!loading && !packages.length">
-              <td colspan="5">Sorry, no matching packages.</td>
+            <tr v-if="message">
+              <td colspan="5"><i>{{ message }}</i></td>
             </tr>
             <tr v-for="package in packages">
               <td>{{ package.distribution }}</td>
@@ -97,7 +94,7 @@ Vue.component('downloadlist', {
             version: null,
             type: null,
             platform: null,
-            loading: true,
+            message: "",
             packages: []
         };
     },
@@ -170,15 +167,21 @@ Vue.component('downloadlist', {
         },
         loadlist(query) {
             this.packages = [];
-            this.loading = true;
+            this.message = "Loading...";
             var path = "packages" + query;
             this.discoRequest(path, response => {
                 this.packages = response.data.result;
-                this.loading = false;
+                if (this.packages.length) {
+                    this.message = "";
+                } else {
+                    this.message = "Sorry, no matching packages."
+                }
             });
         },
         discoRequest(path, handler) {
-            axios.get("https://api.foojay.io/disco/v3.0/" + path).then(handler);
+            axios.get("https://api.foojay.io/disco/v3.0/" + path)
+                .then(handler)
+                .catch(error => { this.message = "" + error });
         }
     }
 });
