@@ -1,5 +1,6 @@
 ---
 title: Java 15
+description: Information about Java 15 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "15" >}}

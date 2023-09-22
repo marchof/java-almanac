@@ -1,5 +1,6 @@
 ---
 title: Java 17
+description: Information about Java 17 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "17" >}}

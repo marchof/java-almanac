@@ -1,5 +1,6 @@
 ---
 title: Java 21
+description: Information about Java 21 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "21" >}}

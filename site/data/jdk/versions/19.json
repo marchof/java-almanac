@@ -33,21 +33,31 @@
 			"title": "Record Patterns",
 			"category": "lang",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "405"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "recordpatterns"
 				}
 			]
 		},
 		{
-			"title": "Pattern Matching for switch (Third Preview)",
+			"title": "Pattern Matching for switch",
 			"category": "lang",
 			"preview": true,
+			"revision": 3,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "427"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "typepatterns"
 				}
 			]
 		},
@@ -55,6 +65,7 @@
 			"title": "Foreign Function & Memory API",
 			"category": "api",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
@@ -66,10 +77,39 @@
 			"title": "Virtual Threads",
 			"category": "api",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "425"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "virtual-threads"
+				}
+			]
+		},
+		{
+			"title": "Vector API",
+			"category": "api",
+			"incubator": true,
+			"revision": 4,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "426"
+				}
+			]
+		},
+		{
+			"title": "Structured Concurrency",
+			"category": "api",
+			"incubator": true,
+			"revision": 1,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "428"
 				}
 			]
 		}

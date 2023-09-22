@@ -306,7 +306,26 @@
 			"id": "zulu",
 			"name": "Zulu Builds of OpenJDK 21",
 			"license": "GPLv2+CE",
-			"url": "https://www.azul.com/downloads/?version\u003djava-21-ea",
+			"url": "https://www.azul.com/downloads/?version\u003djava-21-lts",
+			"platforms": [
+				"alpine-arm64",
+				"alpine-x64",
+				"linux-arm64",
+				"linux-x64",
+				"macos-arm64",
+				"macos-x64",
+				"windows-x64"
+			],
+			"versions": [
+				"21"
+			],
+			"foojaydownload": true
+		},
+		{
+			"id": "zulu",
+			"name": "Zulu Builds of OpenJDK 22",
+			"license": "GPLv2+CE",
+			"url": "https://www.azul.com/downloads/?version\u003djava-22-ea",
 			"platforms": [
 				"alpine-x64",
 				"linux-x86",
@@ -317,7 +336,7 @@
 				"macos-arm64"
 			],
 			"versions": [
-				"21"
+				"22"
 			],
 			"foojaydownload": true
 		},
@@ -327,13 +346,12 @@
 			"license": "Commercial",
 			"url": "https://www.azul.com/products/prime/",
 			"platforms": [
-				"linux-x64"
+				"linux-x64",
+				"linux-arm64"
 			],
 			"versions": [
 				"8",
 				"11",
-				"13",
-				"15",
 				"17"
 			],
 			"foojaydownload": false

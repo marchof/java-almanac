@@ -1,5 +1,6 @@
 ---
 title: Java 6
+description: Information about Java 6 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "6" >}}

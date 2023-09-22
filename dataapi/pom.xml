@@ -10,7 +10,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
 
-		<jackson.version>2.13.3</jackson.version>
+		<jackson.version>2.15.2</jackson.version>
 	</properties>
 
 	<dependencies>
@@ -25,6 +25,7 @@
 			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
+			<!-- Upgrade is blocked due to https://github.com/json-path/JsonPath/issues/951 -->
 			<groupId>com.jayway.jsonpath</groupId>
 			<artifactId>json-path</artifactId>
 			<version>2.6.0</version>
@@ -42,12 +43,12 @@
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>s3</artifactId>
-			<version>2.17.256</version>
+			<version>2.20.140</version>
 		</dependency>
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>cloudfront</artifactId>
-			<version>2.17.256</version>
+			<version>2.20.140</version>
 		</dependency>
 	</dependencies>
 
@@ -56,12 +57,12 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
+				<version>3.11.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.1.0</version>
 				<configuration>
 					<mainClass>io.javaalmanac.data.ApiGenerator</mainClass>
 				</configuration>

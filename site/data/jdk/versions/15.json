@@ -63,10 +63,15 @@
 			"title": "Sealed Classes",
 			"category": "lang",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "360"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "sealedtypes"
 				}
 			] 
 		},
@@ -74,6 +79,7 @@
 			"title": "Pattern Matching for instanceof",
 			"category": "lang",
 			"preview": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
@@ -88,6 +94,10 @@
 				{
 					"type": "JEP",
 					"identifier": "378"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "textblocks"
 				}
 			] 
 		},
@@ -95,10 +105,15 @@
 			"title": "Records",
 			"category": "lang",
 			"preview": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "384"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "records"
 				}
 			] 
 		},
@@ -106,6 +121,7 @@
 			"title": "Local Interfaces and Enums",
 			"category": "lang",
 			"preview": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
@@ -144,8 +160,10 @@
 			] 
 		},
 		{
-			"title": "Foreign-Memory Access API (Second Incubator)",
+			"title": "Foreign-Memory Access API",
 			"category": "api",
+			"incubator": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
