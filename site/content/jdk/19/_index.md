@@ -1,5 +1,6 @@
 ---
 title: Java 19
+description: Information about Java 19 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "19" >}}

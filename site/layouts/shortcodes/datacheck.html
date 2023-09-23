@@ -23,12 +23,39 @@
 {{ end }}
 </ul>
 
-<li>All JDK Features have valid categories.</li>
+<li>All JDK features have valid categories.</li>
 <ul>
 {{ range $jdkversions }}
   {{ range .features }}
     {{ if not (index $.Page.Site.Data.jdk.featurecategories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
     <li>{{ .title }} &check;</li>
+  {{ end }}
+{{ end }}
+</ul>
+
+<li>All JDK incubator and preview features must have a revision.</li>
+<ul>
+{{ range $jdkversions }}
+  {{ range .features }}
+    {{ if and (or .incubator .preview) (not .revision) }}{{ errorf "Preview without revision: %s" .title }}{{ end }}
+    <li>{{ .title }} &check;</li>
+  {{ end }}
+{{ end }}
+</ul>
+
+
+<li>All JDK features have valid Java Almanac links.</li>
+<ul>
+{{ range $jdkversions }}
+  {{ range .features }}
+    {{ range .refs }}
+      {{ if eq .type "AlmanacFeature" }}
+        {{ if not ($.Site.Home.GetPage (printf "/features/%s" .identifier)) }}
+          {{ errorf "Invalid Java Almanac feature %s" .identifier }}
+        {{ end }}
+        <li>{{ .identifier }} &check;</li>
+      {{ end }}
+    {{ end }}
   {{ end }}
 {{ end }}
 </ul>

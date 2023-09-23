@@ -3,7 +3,7 @@
 	"name": "Java 17",
 	"ga": "2021-09-14",
 	"eol": "2030",
-	"latestversion": "17.0.7",
+	"latestversion": "17.0.8.1",
 	"status": "LTS",
 	"bytecode": "61.0",
 	"documentation": {
@@ -87,10 +87,15 @@
 			"title": "Pattern Matching for switch",
 			"category": "lang",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "406"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "typepatterns"
 				}
 			]
 		},
@@ -111,6 +116,10 @@
 				{
 					"type": "JEP",
 					"identifier": "409"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "sealedtypes"
 				}
 			]
 		},
@@ -135,8 +144,10 @@
 			]
 		},
 		{
-			"title": "Foreign Function & Memory API (Incubator)",
+			"title": "Foreign Function & Memory API",
 			"category": "api",
+			"incubator": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
@@ -145,8 +156,10 @@
 			]
 		},
 		{
-			"title": "Vector API (Second Incubator)",
+			"title": "Vector API",
 			"category": "api",
+			"incubator": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",

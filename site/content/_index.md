@@ -1,10 +1,11 @@
 ---
 title: The Java Version Almanac
+description: Systematic collection of information about the history and the future of Java.
 ---
 
 # The Java Version Almanac
 
-Collection of information about the history and future of Java.
+Systematic collection of information about the history and the future of Java.
 
 {{< jdkoverview >}}
 

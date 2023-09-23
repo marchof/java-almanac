@@ -1,5 +1,6 @@
 ---
 title: Java 18
+description: Information about Java 18 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "18" >}}

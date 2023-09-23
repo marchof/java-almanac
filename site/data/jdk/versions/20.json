@@ -2,9 +2,9 @@
 	"version": "20",
 	"name": "Java 20",
 	"ga": "2023-03-21",
-	"eol": "2023-09-15",
-	"latestversion": "20.0.1",
-	"status": "REL",
+	"eol": "2023-09-19",
+	"latestversion": "20.0.2",
+	"status": "EOL",
 	"bytecode": "64.0",
 	"documentation": {
 		"notes": "https://www.oracle.com/java/technologies/javase/20u-relnotes.html",
@@ -20,31 +20,54 @@
 	],
 	"features": [
 		{
-			"title": "Record Patterns (Second Preview)",
+			"title": "Record Patterns",
 			"category": "lang",
 			"preview": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "432"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "recordpatterns"
 				}
 			]
 		},
 		{
-			"title": "Pattern Matching for switch (Fourth Preview)",
+			"title": "Pattern Matching for switch",
 			"category": "lang",
 			"preview": true,
+			"revision": 4,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "433"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "typepatterns"
 				}
 			]
 		},
 		{
-			"title": "Foreign Function & Memory API (Second Preview)",
+			"title": "Scoped Values",
+			"category": "api",
+			"incubator": true,
+			"revision": 1,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "429"
+				}
+			]
+		},
+		{
+			"title": "Foreign Function & Memory API",
 			"category": "api",
 			"preview": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
@@ -53,13 +76,42 @@
 			]
 		},
 		{
-			"title": "Virtual Threads (Second Preview)",
+			"title": "Virtual Threads",
 			"category": "api",
 			"preview": true,
+			"revision": 2,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "436"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "virtual-threads"
+				}
+			]
+		},
+		{
+			"title": "Structured Concurrency",
+			"category": "api",
+			"incubator": true,
+			"revision": 2,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "437"
+				}
+			]
+		},
+		{
+			"title": "Vector API",
+			"category": "api",
+			"incubator": true,
+			"revision": 5,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "438"
 				}
 			]
 		}

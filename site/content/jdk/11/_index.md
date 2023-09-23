@@ -1,5 +1,6 @@
 ---
 title: Java 11
+description: Information about Java 11 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "11" >}}

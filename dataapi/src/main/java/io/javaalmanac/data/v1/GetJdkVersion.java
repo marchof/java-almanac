@@ -82,14 +82,20 @@ public class GetJdkVersion extends GetOperationDefinition {
 										.addEnum("jvm") //
 										.addEnum("tools") //
 										.addEnum("internal")) //
+								.setProperty("incubator", new Schema() //
+										.setType("boolean")) //
 								.setProperty("preview", new Schema() //
 										.setType("boolean")) //
+								.setProperty("revision", new Schema() //
+										.setType("integer") //
+										.setMinimum(1)) //
 								.setProperty("refs", new Schema() //
 										.setType("array") //
 										.setItemsSchema(new Schema() //
 												.setType("object") //
 												.setProperty("type", new Schema() //
 														.setType("string") //
+														.addEnum("AlmanacFeature") //
 														.addEnum("JEP") //
 														.addEnum("JSR") //
 														.addEnum("JDKIssue")) //
@@ -144,6 +150,8 @@ public class GetJdkVersion extends GetOperationDefinition {
 			return "https://jcp.org/en/jsr/detail?id=" + identifier;
 		case "JDKIssue":
 			return "https://bugs.openjdk.java.net/browse/JDK-" + identifier;
+		case "AlmanacFeature":
+			return "https://javaalmanac.io/features/" + identifier + "/";
 		default:
 			throw new AssertionError(type);
 		}

@@ -1,5 +1,6 @@
 ---
 title: Java 7
+description: Information about Java 7 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "7" >}}

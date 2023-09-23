@@ -17,7 +17,7 @@ public class ApiV1 implements ApiDefinition {
 		return new Info() //
 				.setTitle("data.javaalmanac.io") //
 				.setDescription("Open data behind javaalmanac.io") //
-				.setVersion("1.0.0") //
+				.setVersion("1.1.0") //
 				.setLicense(new License() //
 						.setName("CC BY-SA 4.0") //
 						.setUrl("https://creativecommons.org/licenses/by-sa/4.0/") //

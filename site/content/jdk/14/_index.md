@@ -1,5 +1,6 @@
 ---
 title: Java 14
+description: Information about Java 14 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "14" >}}

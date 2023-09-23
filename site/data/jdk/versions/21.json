@@ -1,31 +1,24 @@
 {
 	"version": "21",
 	"name": "Java 21",
-	"ga": "2023-09-15",
+	"ga": "2023-09-19",
 	"eol": "2028-09",
-	"status": "DEV",
+	"latestversion": "21+35",
+	"status": "LTS",
 	"bytecode": "65.0",
 	"documentation": {
-		"notes": "http://jdk.java.net/21/release-notes",
-		"api": "https://download.java.net/java/early_access/jdk21/docs/api/"
+		"notes": "https://www.oracle.com/java/technologies/javase/21u-relnotes.html",
+		"vm": "https://docs.oracle.com/javase/specs/jvms/se21/html/index.html",
+		"lang": "https://docs.oracle.com/javase/specs/jls/se21/html/index.html",
+		"api": "https://docs.oracle.com/en/java/javase/21/docs/api/"
 	},
 	"scm": [
 		{
 			"type": "git",
-			"url": "https://github.com/openjdk/jdk"
+			"url": "https://github.com/openjdk/jdk21u"
 		}
 	],
 	"features": [
-		{
-			"title": "Generational Shenandoah (Experimental)",
-			"category": "jvm",
-			"refs": [
-				{
-					"type": "JEP",
-					"identifier": "404"
-				}
-			]
-		},
 		{
 			"title": "Generational ZGC",
 			"category": "jvm",
@@ -60,10 +53,15 @@
 			"title": "String Templates",
 			"category": "lang",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "430"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "stringtemplates"
 				}
 			]
 		},
@@ -74,6 +72,10 @@
 				{
 					"type": "JEP",
 					"identifier": "440"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "recordpatterns"
 				}
 			]
 		},
@@ -84,6 +86,10 @@
 				{
 					"type": "JEP",
 					"identifier": "441"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "typepatterns"
 				}
 			]
 		},
@@ -91,6 +97,7 @@
 			"title": "Unnamed Patterns and Variables",
 			"category": "lang",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
@@ -102,10 +109,15 @@
 			"title": "Unnamed Classes and Instance Main Methods",
 			"category": "lang",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "445"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "jep445"
 				}
 			]
 		},
@@ -120,9 +132,10 @@
 			]
 		},
 		{
-			"title": "Foreign Function & Memory API (Third Preview)",
+			"title": "Foreign Function & Memory API",
 			"category": "api",
 			"preview": true,
+			"revision": 3,
 			"refs": [
 				{
 					"type": "JEP",
@@ -137,6 +150,34 @@
 				{
 					"type": "JEP",
 					"identifier": "444"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "virtual-threads"
+				}
+			]
+		},
+		{
+			"title": "Scoped Values",
+			"category": "api",
+			"preview": true,
+			"revision": 1,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "446"
+				}
+			]
+		},
+		{
+			"title": "Vector API",
+			"category": "api",
+			"incubator": true,
+			"revision": 6,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "448"
 				}
 			]
 		},
@@ -151,20 +192,10 @@
 			]
 		},
 		{
-			"title": "Scoped Values",
-			"category": "api",
-			"preview": true,
-			"refs": [
-				{
-					"type": "JEP",
-					"identifier": "446"
-				}
-			]
-		},
-		{
 			"title": "Structured Concurrency",
 			"category": "api",
 			"preview": true,
+			"revision": 1,
 			"refs": [
 				{
 					"type": "JEP",

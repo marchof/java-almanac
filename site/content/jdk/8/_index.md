@@ -1,5 +1,6 @@
 ---
 title: Java 8
+description: Information about Java 8 including documentation links, new APIs, added features and download options.
 ---
 
 {{< jdkdetails "8" >}}
