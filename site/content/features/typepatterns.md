@@ -59,17 +59,17 @@ You *must* use a variable after the type, even if you don't need it. In the prec
 case OutputStream -> out.write(str.getBytes()); // Error—no variable
 ```
 
-Instead, take advantage of [JEP 443](https://openjdk.java.net/jeps/443) and use 
+Once [JEP 443](https://openjdk.java.net/jeps/443) is no longer a preview feature, we can use the `_` keyword:
 
 ```
 case OutputStream _ -> ...
 ```
 
-Or, if you don't want to use a preview feature, use `case OutputStream __`. 
+For now, just use two underscores: `case OutputStream __`. 
 
 In the sandbox, try using fall through for the second `switch`. Try using a `default` in the last case.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.io.*;
 import java.util.*;
 
@@ -93,7 +93,7 @@ public class Main {
          case ByteArrayOutputStream bout -> bout.writeBytes(str.getBytes());
          case DataOutputStream dout -> dout.writeUTF(str);
          case ObjectOutputStream oout -> oout.writeObject(str);
-         case OutputStream _ -> out.write(str.getBytes());
+         case OutputStream __ -> out.write(str.getBytes());
       };
 
       if (bytes != null) { 
@@ -130,7 +130,7 @@ It seemed reasonable to use `&&` to combine multiple tests, but there were subtl
 
 This sandbox demonstrates a typical use of type patterns. An XML node can be an element, text node, comment, entity reference, processing instruction, or one of several other exotic things. This code only handles the first two, leaving the others as an exercise to the reader. Note the `when` clause for skipping whitespace.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import org.w3c.dom.*;
 import org.xml.sax.*;
 import java.io.*;
@@ -203,7 +203,7 @@ case null, default -> ...
 
 In this sandbox, fix the second switch so that it doesn't throw a `NullPointerException` if `ex` is `null`!
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.io.*;
 import java.sql.*;
 import java.util.*;
@@ -221,7 +221,7 @@ public class Main {
 
       Throwable ex2 = switch (ex) {
          case IOException ioe -> new UncheckedIOException(ioe);
-         case Exception _ when ex.getCause() != null -> ex.getCause();
+         case Exception __ when ex.getCause() != null -> ex.getCause();
          default -> ex;
       };
 
@@ -261,8 +261,8 @@ An unguarded type pattern dominates a pattern with the same case and a guard:
 
 ```
 switch (ex) {
-   case Exception _ -> ... 
-   case Exception _ when ex.getCause() != null -> ... // Error
+   case Exception __ -> ... 
+   case Exception __ when ex.getCause() != null -> ... // Error
    default -> ...
 }
 ```
@@ -329,7 +329,7 @@ switch (num) {
 
 Here is a little exercise to practice the dominance rules. And yes, it is weird that you can use `case Object n` or `case Number n` when the only possible type match is `Integer`.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
       run(200);
@@ -393,7 +393,7 @@ In a switch statement with only constant cases, there is no exhaustiveness check
 
 This sandbox shows exhaustiveness checking with sealed classes. Try adding another subclass `JSONComment`. (I know, JSON won't ever have comments.)
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
       JSONArray arr = new JSONArray();
@@ -412,12 +412,12 @@ public class Main {
 
    public static void run(JSONValue jval) {
       var type = switch (jval) {
-         case JSONArray _ -> "array";
-         case JSONObject _ -> "object";
-         case JSONNumber _ -> "number";
-         case JSONString _ -> "string";
-         case JSONBoolean _ -> "boolean";
-         case JSONNull _ -> "null";
+         case JSONArray __ -> "array";
+         case JSONObject __ -> "object";
+         case JSONNumber __ -> "number";
+         case JSONString __ -> "string";
+         case JSONBoolean __ -> "boolean";
+         case JSONNull __ -> "null";
       };
       System.out.println(type + " " + jval);
    }
@@ -476,7 +476,7 @@ You cannot fall through a type pattern with a variable binding. That is, you can
 
 Here is a complete example, as contrived as all fall through examples that I have ever seen.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.text.*;
 import java.util.*;
 
@@ -536,7 +536,7 @@ In this situation, you can use case labels with `enum` constants. However, they 
 
 With `enum` constants (but not with numeric or `String` constants), the rule that the selector type must match the constant type has been relaxed. The selector type can be any supertype.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
       JSONPrimitive p = new JSONString("42");
@@ -552,7 +552,7 @@ public class Main {
 {{< /sandboxsource >}}
 {{< sandboxsource "JSONValue.java" >}}
 
-sealed interface JSONPrimitive extends JSONValue
+sealed interface JSONPrimitive
       permits JSONNumber, JSONString, JSONBoolean, JSONNull {}
 
 final record JSONNumber(double value) implements JSONPrimitive {}

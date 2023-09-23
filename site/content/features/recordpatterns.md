@@ -87,16 +87,16 @@ Of course, we need to implement the `CharSequence` methods. That's easily done i
 ```
 default int length() {
    return switch (this) {
-      case Initial(var _, var end) -> end;
+      case Initial(var __, var end) -> end;
       case Final(var seq, var start) -> seq.length() - start();
-      case Middle(var _, var start, var end) -> end - start;
+      case Middle(var __, var start, var end) -> end - start;
    };
 }
 ```
 
 No `default` is required because we provided cases for all classes that implement the sealed interface.
 
-Note the double underscore for the variables that we don't care about. (A single underscore is a Java keyword, held in reserve for future use.)
+Note the double underscore for the variables that we don't care about. Once [JEP 443](https://openjdk.java.net/jeps/443) is no longer a preview feature, we can use a single underscore.
 
 The following sandbox contains the complete example. Note that a record pattern can have a guard:
 
@@ -104,7 +104,7 @@ The following sandbox contains the complete example. Note that a record pattern 
 case Initial(var seq, var end) when s == 0
 ```
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
 
 sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
@@ -120,9 +120,9 @@ sealed interface SubSequence extends CharSequence permits Initial, Final, Middle
 
    default int length() {
       return switch (this) {
-         case Initial(var _, var end) -> end;
+         case Initial(var __, var end) -> end;
          case Final(var seq, var start) -> seq.length() - start();
-         case Middle(var _, var start, var end) -> end - start;
+         case Middle(var ___, var start, var end) -> end - start;
       };
    }
    
@@ -194,7 +194,7 @@ case Final(var cs, var s) when s == 0 -> cs;
 
 This sandbox has the complete definition of the `simplify` method. The details are fussy, but have a look at the overall structure and the elegance of the variable extraction, guards, and pattern nesting.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static CharSequence simplify(SubSequence seq) {
       return switch (seq) {
@@ -246,9 +246,9 @@ public sealed interface SubSequence extends CharSequence permits Initial, Final,
 
    default int length() {
       return switch (this) {
-         case Initial(var _, var end) -> end;
+         case Initial(var __, var end) -> end;
          case Final(var seq, var start) -> seq.length() - start();
-         case Middle(var _, var start, var end) -> end - start;
+         case Middle(var __, var start, var end) -> end - start;
       };
    }
    
@@ -325,7 +325,7 @@ public static <T> double toNumber(JSONPrimitive<T> v) {
       case JSONString(var s) -> {
          try {
             yield Double.parseDouble(s);
-         } catch (NumberFormatException _) {
+         } catch (NumberFormatException __) {
             yield Double.NaN;
          }
       }
@@ -388,7 +388,7 @@ The Java compiler does not know how to prove that the cast from `Pair<T>` to `Pa
 
 Here is a sandbox so that you can play with the code of this section.
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 sealed interface JSONValue {}
 sealed interface JSONPrimitive<T> extends JSONValue {}
 record JSONNumber(double value) implements JSONPrimitive<Double> {}
@@ -407,7 +407,7 @@ public class Main {
          case JSONString(var s) -> {
             try {
                yield Double.parseDouble(s);
-            } catch (NumberFormatException _) {
+            } catch (NumberFormatException __) {
                yield Double.NaN;
             }
          }
@@ -482,7 +482,7 @@ What if those methods throw an exception?
 
 In that case, the `switch` throws a `MatchError` whose cause is that exception. Check it out in this sandbox:
 
-{{< sandbox version=java21 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
 
 sealed interface SubSequence extends CharSequence permits Initial, Final, Middle {
@@ -498,9 +498,9 @@ sealed interface SubSequence extends CharSequence permits Initial, Final, Middle
 
    default int length() {
       return switch (this) {
-         case Initial(var _, var end) -> end;
+         case Initial(var __, var end) -> end;
          case Final(var seq, var start) -> seq.length() - start();
-         case Middle(var _, var start, var end) -> end - start;
+         case Middle(var ___, var start, var end) -> end - start;
       };
    }
    
@@ -605,7 +605,7 @@ case Box(null):
 To guard against this situation, you need:
 
 ```
-case Box(c) where c == null: 
+case Box(c) when c == null: 
 ```
 
 ## How Momentous Are Record Patterns?
