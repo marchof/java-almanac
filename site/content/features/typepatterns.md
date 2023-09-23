@@ -1,11 +1,11 @@
 ---
-title: Pattern Matching for switch (JEP 427)
+title: Pattern Matching for switch (JEP 441)
 copyright: Cay S. Horstmann 2022. All rights reserved.
 jep: 441
 jdkversion: 21
 ---
 
-Pattern matching for switch expressions and statements appeared as a preview feature in Java 17 ([JEP 406](https://openjdk.java.net/jeps/406)), Java 18 ([JEP 420](https://openjdk.java.net/jeps/420)), Java 19 ([JEP 427](https://openjdk.java.net/jeps/427)), and Java 20 ([JEP 433](https://openjdk.java.net/jeps/433)) This article covers the final specification which is part of Java 21 ([JEP 441](https://openjdk.java.net/jeps/441)). The feature is mostly straightforward, with a few sharp edges. At the end of each section is a “sandbox” with somewhat contrived code to try out the syntax variations.
+Pattern matching for switch expressions and statements appeared as a preview feature in Java 17 ([JEP 406](https://openjdk.java.net/jeps/406)), Java 18 ([JEP 420](https://openjdk.java.net/jeps/420)), Java 19 ([JEP 427](https://openjdk.java.net/jeps/427)), and Java 20 ([JEP 433](https://openjdk.java.net/jeps/433)). This article covers the final specification which is part of Java 21 ([JEP 441](https://openjdk.java.net/jeps/441)). The feature is mostly straightforward, with a few sharp edges. At the end of each section is a “sandbox” with somewhat contrived code to try out the syntax variations.
 
 ## Type Checks with Switch
 
@@ -545,7 +545,7 @@ public class Main {
          case JSONString s -> Integer.parseInt(p.value);
          case JSONNull.INSTANCE, JSONBoolean.FALSE -> 0; // Can't be case INSTANCE
          case JSONBoolean.TRUE -> 1;
-      }
+      };
       System.out.println(result);
    }
 }
