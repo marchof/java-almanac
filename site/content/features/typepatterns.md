@@ -522,8 +522,8 @@ Note also that the labels are not “qualified”—that is, you omit the enum t
 Now consider a more complex case—a sealed hierarchy in which some subtypes are enumerations:
 
 ```
-JSONPrimitive p = ...;
-switch (p) {
+JSONPrimitive value = ...;
+switch (value) {
    case JSONNumber n -> ...;
    case JSONString s -> ...;
    case JSONNull.INSTANCE -> ...; // Can't be case INSTANCE
@@ -539,11 +539,11 @@ With `enum` constants (but not with numeric or `String` constants), the rule tha
 {{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
-      JSONPrimitive p = new JSONString("42");
+      JSONPrimitive value = new JSONString("42");
       int result = switch (value) {
          case JSONNumber n -> n.intValue();
          case JSONString s -> Integer.parseInt(p.value);
-         case JSONNull.INSTANCE, JSONBoolean.FALSE -> 0; // Can't be case INSTANCE
+         case JSONNull.INSTANCE, JSONBoolean.FALSE -> 0; 
          case JSONBoolean.TRUE -> 1;
       };
       System.out.println(result);
