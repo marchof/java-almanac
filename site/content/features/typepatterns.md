@@ -1,12 +1,11 @@
 ---
-title: Pattern Matching for switch (JEP 427)
+title: Pattern Matching for switch (JEP 441)
 copyright: Cay S. Horstmann 2022. All rights reserved.
-jep: 427
-jdkversion: 19
+jep: 441
+jdkversion: 21
 ---
 
-
-Pattern matching for switch expressions and statements appeared as a preview feature in Java 17 ([JEP 406](https://openjdk.java.net/jeps/406)) and Java 18 ([JEP 420](https://openjdk.java.net/jeps/420)). This article covers the third round of preview in Java 19 ([JEP 427](https://openjdk.java.net/jeps/427)). The feature is mostly straightforward, with a few sharp edges. At the end of each section is a “sandbox” with somewhat contrived code to try out the syntax variations.
+Pattern matching for switch expressions and statements appeared as a preview feature in Java 17 ([JEP 406](https://openjdk.java.net/jeps/406)), Java 18 ([JEP 420](https://openjdk.java.net/jeps/420)), Java 19 ([JEP 427](https://openjdk.java.net/jeps/427)), and Java 20 ([JEP 433](https://openjdk.java.net/jeps/433)). This article covers the final specification which is part of Java 21 ([JEP 441](https://openjdk.java.net/jeps/441)). The feature is mostly straightforward, with a few sharp edges. At the end of each section is a “sandbox” with somewhat contrived code to try out the syntax variations.
 
 ## Type Checks with Switch
 
@@ -60,17 +59,17 @@ You *must* use a variable after the type, even if you don't need it. In the prec
 case OutputStream -> out.write(str.getBytes()); // Error—no variable
 ```
 
-Instead, you can use 
+Once [JEP 443](https://openjdk.java.net/jeps/443) is no longer a preview feature, we can use the `_` keyword:
 
 ```
-case OutputStream __ -> ...
+case OutputStream _ -> ...
 ```
 
-Note the double underscore. A single underscore is a keyword (held for future use).
+For now, just use two underscores: `case OutputStream __`. 
 
 In the sandbox, try using fall through for the second `switch`. Try using a `default` in the last case.
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.io.*;
 import java.util.*;
 
@@ -127,11 +126,11 @@ In the [Java 18 preview](https://openjdk.java.net/jeps/420), guards were written
 case ObjectOutputStream oout && str.length() > 0
 ```
 
-It seemed reasonable to use `&&` to combine multiple tests, but there were subtle issues. The current design is similar to Scala `match` expressions, where the `if` keyword is used for guards.
+It seemed reasonable to use `&&` to combine multiple tests, but there were subtle issues. The final design is similar to Scala `match` expressions, where the `if` keyword is used for guards.
 
 This sandbox demonstrates a typical use of type patterns. An XML node can be an element, text node, comment, entity reference, processing instruction, or one of several other exotic things. This code only handles the first two, leaving the others as an exercise to the reader. Note the `when` clause for skipping whitespace.
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import org.w3c.dom.*;
 import org.xml.sax.*;
 import java.io.*;
@@ -181,39 +180,22 @@ public class Main {
 
 The classic `switch` throws a `NullPointerException` when the tested value is `null`. That makes sense when switching on strings or enumerations. But with a type match, the issue is less clear. Ever since Java 1.0, `instanceof` tests have been tolerant of `null`. A test such as `null instanceof String` simply returns `false`.
 
-You can now add a `null` case to a `switch`. In that case, the switch does not throw a `NullPointerException`.
-
-A `null` case can be as simple as
+You can now add a `null` case to a `switch`. In that case, the switch does not throw a `NullPointerException`. The syntax is simply:
 
 ```
 case null -> ...
 ```
 
-You can also combine it with type tests:
+In preview versions of this feature, you were allowed to combine `null` with type tests:
 
 ```
 switch (obj) { 
-   case String s, null -> ... // s is obj cast as a String or null
+   case String s, null -> ... // No longer allowed
    ...
 }
 ```
 
-The order doesn't matter: `case null, String s -> ...` does the same.
-
-In the fall through form, you use
-
-```
-case String s, null: 
-```
-
-or
-
-```
-case String s:
-case null:
-```
-
-You can also group the `null` and `default` cases:
+However, you can group the `null` and `default` cases:
 
 ```
 case null, default -> ...
@@ -221,7 +203,7 @@ case null, default -> ...
 
 In this sandbox, fix the second switch so that it doesn't throw a `NullPointerException` if `ex` is `null`!
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.io.*;
 import java.sql.*;
 import java.util.*;
@@ -287,7 +269,7 @@ switch (ex) {
 
 The second case can never execute, and a compile-time error occurs.
 
-Since the compiler cannot determine when a guard is true, the guards are never used for dominance checking. Consider
+Since the compiler cannot determine when a guard is true, guarded cases are never used for dominance checking. Consider
 
 ```
 case Integer n when n >= 600 -> ... 
@@ -296,20 +278,27 @@ case Integer n when n > 599 -> ... // Not a compile-time error
 
 The second case can never execute. But the compiler does not know that.
 
-A type pattern dominates a constant pattern. Guards are ignored. Both 
+An unguarded type pattern dominates a constant pattern:  
 
 ```
 case Integer n
-case Integer n where n > 600
 ```
 
-dominate
+dominates
 
 ```
 case 404
 ```
 
-The point is that you should list constant patterns first, then type patterns:
+but 
+
+```
+case Integer n where n >= 400
+```
+
+does not.
+
+It is a good idea to list constant patterns first, then type patterns:
 
 ```
 case 200 -> ...
@@ -318,16 +307,7 @@ case Integer n when n >= 600 -> ...
 case Integer n -> ...
 ```
 
-Weirdly enough, the `default` case doesn't dominate anything, and you can place it anywhere:  
-
-```
-case 200 -> ...
-case 404 -> ...
-default -> ... // Ok
-case Integer n when n >= 600 -> ...
-```
-
-With the no fall through form, there is no reason to do this. Just put the `default` case last.
+The `default` clause must come last. Even after `case null`, which it does not cover!
 
 By the way, the rules for constant cases have not changed. The constants *and selector* must be of type `int`, `char`, `short`, `byte` or their wrapper classes, `String`, or an enumerated type.
 
@@ -349,7 +329,7 @@ switch (num) {
 
 Here is a little exercise to practice the dominance rules. And yes, it is weird that you can use `case Object n` or `case Number n` when the only possible type match is `Integer`.
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
       run(200);
@@ -381,7 +361,7 @@ A switch *expression* must be *exhaustive*; that is, yield a value for every inp
 
 If the switch input is a [sealed type](https://javaalmanac.io/features/sealedtypes/), there is a known, finite number of subtypes. The switch is exhaustive if there are type patterns covering all subtypes.
 
-It is possible that a sealed type evolves, acquiring additional subtypes. Then a switch over that type may no longer be exhaustive. That is problematic if the source file containing the switch is not recompiled. After all, it might be in a third party JAR. In order to detect such a scenario at runtime, the compiler adds a `default` case that throws an `IncompatibleClassChangeError`.
+It is possible that a sealed type evolves, acquiring additional subtypes. Then a switch over that type may no longer be exhaustive. That is problematic if the source file containing the switch is not recompiled. After all, it might be in a third party JAR. In order to detect such a scenario at runtime, the compiler adds a `default` case that throws a `MatchError`.
 
 The compiler cannot interpret guards, so you need to have at least one unguarded pattern. For example, 
 
@@ -413,7 +393,7 @@ In a switch statement with only constant cases, there is no exhaustiveness check
 
 This sandbox shows exhaustiveness checking with sealed classes. Try adding another subclass `JSONComment`. (I know, JSON won't ever have comments.)
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
       JSONArray arr = new JSONArray();
@@ -492,11 +472,11 @@ case String s when s.length() > 3: ... // No break/yield required
 default: ...
 ```
 
-You cannot fall through a type pattern. That is, you cannot fall into the the second case. After all, falling through skips the test and goes directly into the code that follows. However, you can fall through from a type pattern into another case that isn't a type pattern. In the preceding example, it is ok to fall through the default.
+You cannot fall through a type pattern with a variable binding. That is, you cannot fall into the the second case. After all, falling through skips the test and goes directly into the code that follows. However, you can fall through from a type pattern into another case that isn't a type pattern, or that is a type pattern with an unnamed variable. In the preceding example, it is ok to fall through the default.
 
 Here is a complete example, as contrived as all fall through examples that I have ever seen.
 
-{{< sandbox version=java19 preview="true" mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.text.*;
 import java.util.*;
 
@@ -505,7 +485,7 @@ public class Main {
       Locale loc = Locale.forLanguageTag("de-DE");
       run("Bob", loc);
       run("Fred", loc);
-      run("Math.PI", loc);
+      run(Math.PI, loc);
       run(loc, loc);
    }
 
@@ -516,11 +496,74 @@ public class Main {
          case Number n: yield NumberFormat.getNumberInstance(loc).format(n);
          case String s when s.length() > 3: obj = s.substring(0, 3) + "...";
          default: yield obj.toString();
-         case String s: yield '"' + s + '"';
       };
 
       System.out.println(formatted);
    }
+}
+{{< /sandboxsource >}}
+{{< /sandbox >}}
+
+## Enum Constants
+
+When the selector of a `switch` has `enum` type, then the `case` labels are constants in the enumeration:
+
+```
+System.Logger.Level level = ...;
+switch (level) {
+   case ERROR: ...; // i.e. System.Logger.Level.ERROR
+   ...
+}
+```
+
+Note also that the labels are not “qualified”—that is, you omit the enum type name in a `case` label.
+
+Now consider a more complex case—a sealed hierarchy in which some subtypes are enumerations:
+
+```
+JSONPrimitive p = ...;
+switch (p) {
+   case JSONNumber n -> ...;
+   case JSONString s -> ...;
+   case JSONNull.INSTANCE -> ...; // Can't be case INSTANCE
+   case JSONBoolean.FALSE -> ...; 
+   case JSONBoolean.TRUE -> ...;
+}
+```
+
+In this situation, you can use case labels with `enum` constants. However, they need to be qualified, since the compiler cannot deduce the `enum` type from the selector.
+
+With `enum` constants (but not with numeric or `String` constants), the rule that the selector type must match the constant type has been relaxed. The selector type can be any supertype.
+
+{{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
+public class Main {
+   public static void main(String[] args) {
+      JSONPrimitive p = new JSONString("42");
+      double result = switch (p) {
+         case JSONNumber n -> n.value();
+         case JSONString s -> Double.parseDouble(s.value());
+         case JSONNull.INSTANCE, JSONBoolean.FALSE -> 0; 
+         case JSONBoolean.TRUE -> 1;
+      };
+      System.out.println(result);
+   }
+}
+{{< /sandboxsource >}}
+{{< sandboxsource "JSONValue.java" >}}
+
+sealed interface JSONPrimitive
+      permits JSONNumber, JSONString, JSONBoolean, JSONNull {}
+
+final record JSONNumber(double value) implements JSONPrimitive {}
+
+final record JSONString(String value) implements JSONPrimitive {}
+
+enum JSONBoolean implements JSONPrimitive {
+   FALSE, TRUE;
+}
+
+enum JSONNull implements JSONPrimitive {
+   INSTANCE;
 }
 {{< /sandboxsource >}}
 {{< /sandbox >}}
@@ -541,3 +584,6 @@ As you saw, the devil is in the details. Put `default` last. Stay away from fall
 * [JEP 406: Pattern Matching for switch (Preview), OpenJDK](https://openjdk.java.net/jeps/406)
 * [JEP 420: Pattern Matching for switch (Second Preview), OpenJDK](https://openjdk.java.net/jeps/420)
 * [JEP 427: Pattern Matching for switch (Third Preview), OpenJDK](https://openjdk.java.net/jeps/427)
+* [JEP 433: Pattern Matching for switch (Fourth Preview), OpenJDK](https://openjdk.java.net/jeps/433)
+* [JEP 441: Pattern Matching for switch, OpenJDK](https://openjdk.java.net/jeps/441)
+
