@@ -485,7 +485,7 @@ public class Main {
       Locale loc = Locale.forLanguageTag("de-DE");
       run("Bob", loc);
       run("Fred", loc);
-      run("Math.PI", loc);
+      run(Math.PI, loc);
       run(loc, loc);
    }
 
@@ -496,7 +496,6 @@ public class Main {
          case Number n: yield NumberFormat.getNumberInstance(loc).format(n);
          case String s when s.length() > 3: obj = s.substring(0, 3) + "...";
          default: yield obj.toString();
-         case String s: yield '"' + s + '"';
       };
 
       System.out.println(formatted);
@@ -522,8 +521,8 @@ Note also that the labels are not “qualified”—that is, you omit the enum t
 Now consider a more complex case—a sealed hierarchy in which some subtypes are enumerations:
 
 ```
-JSONPrimitive value = ...;
-switch (value) {
+JSONPrimitive p = ...;
+switch (p) {
    case JSONNumber n -> ...;
    case JSONString s -> ...;
    case JSONNull.INSTANCE -> ...; // Can't be case INSTANCE
@@ -539,10 +538,10 @@ With `enum` constants (but not with numeric or `String` constants), the rule tha
 {{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 public class Main {
    public static void main(String[] args) {
-      JSONPrimitive value = new JSONString("42");
-      int result = switch (value) {
-         case JSONNumber n -> n.intValue();
-         case JSONString s -> Integer.parseInt(p.value);
+      JSONPrimitive p = new JSONString("42");
+      double result = switch (p) {
+         case JSONNumber n -> n.value();
+         case JSONString s -> Double.parseDouble(s.value());
          case JSONNull.INSTANCE, JSONBoolean.FALSE -> 0; 
          case JSONBoolean.TRUE -> 1;
       };
