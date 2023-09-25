@@ -480,7 +480,7 @@ if (cs instanceof Initial) {
 
 What if those methods throw an exception?
 
-In that case, the `switch` throws a `MatchError` whose cause is that exception. Check it out in this sandbox:
+In that case, the `switch` throws a `MatchException` whose cause is that exception. Check it out in this sandbox:
 
 {{< sandbox version=java21 mainclass="Main" >}}{{< sandboxsource "Main.java" >}}
 import java.util.*;
