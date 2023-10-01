@@ -5,7 +5,7 @@ description: Information about Java 17 including documentation links, new APIs, 
 
 {{< jdkdetails "17" >}}
 
-Java 17 is the latest long term support (LTS) release after [Java 11](../11).
+Java 17 is a current long term support (LTS) release.
 
 {{< /jdkdetails >}}
 
