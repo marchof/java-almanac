@@ -16,7 +16,7 @@ Instead of passing using `null` references optional values can be wrapped in
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="OptionalValues" >}}
+{{< sandbox version="java21" mainclass="OptionalValues" >}}
 {{< sandboxsource "OptionalValues.java" >}}
 
 import java.util.Optional;

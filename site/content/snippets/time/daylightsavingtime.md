@@ -10,7 +10,7 @@ The Java time API uses the [tz
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="DaylightSavingTime" >}}
+{{< sandbox version="java21" mainclass="DaylightSavingTime" >}}
 {{< sandboxsource "DaylightSavingTime.java" >}}
 
 import java.time.Instant;

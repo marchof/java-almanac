@@ -9,7 +9,7 @@ With the static method
 
 Since [Java 11](/jdk/11/)
 
-{{< sandbox version="java17" mainclass="NotPredicate" >}}
+{{< sandbox version="java21" mainclass="NotPredicate" >}}
 {{< sandboxsource "NotPredicate.java" >}}
 
 import static java.util.function.Predicate.not;

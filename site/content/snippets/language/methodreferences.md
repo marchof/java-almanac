@@ -7,7 +7,7 @@ Functional interface instances can be directly created from methods and
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="MethodReferences" >}}
+{{< sandbox version="java21" mainclass="MethodReferences" >}}
 {{< sandboxsource "MethodReferences.java" >}}
 
 import java.util.function.BiConsumer;

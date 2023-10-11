@@ -7,7 +7,7 @@ With key agreement algorithms two parties can agree on a shared secret by
 
 Since [Java 1.4](/jdk/1.4/)
 
-{{< sandbox version="java17" mainclass="DiffieHellmanKeyAgreement" >}}
+{{< sandbox version="java21" mainclass="DiffieHellmanKeyAgreement" >}}
 {{< sandboxsource "DiffieHellmanKeyAgreement.java" >}}
 
 import java.security.KeyPair;

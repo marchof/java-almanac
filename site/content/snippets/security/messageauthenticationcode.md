@@ -11,7 +11,7 @@ A message authentication code is calculated based with a private key. Only
 
 Since [Java 1.4](/jdk/1.4/)
 
-{{< sandbox version="java17" mainclass="MessageAuthenticationCode" >}}
+{{< sandbox version="java21" mainclass="MessageAuthenticationCode" >}}
 {{< sandboxsource "MessageAuthenticationCode.java" >}}
 
 import java.nio.charset.StandardCharsets;

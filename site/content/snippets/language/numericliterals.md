@@ -11,7 +11,7 @@ Integer literals can be written in binary, octal, decimal or hexadecimal
 
 Since [Java 7](/jdk/7/)
 
-{{< sandbox version="java17" mainclass="NumericLiterals" >}}
+{{< sandbox version="java21" mainclass="NumericLiterals" >}}
 {{< sandboxsource "NumericLiterals.java" >}}
 
 public class NumericLiterals {

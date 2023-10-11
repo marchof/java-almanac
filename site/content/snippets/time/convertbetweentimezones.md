@@ -7,7 +7,7 @@ With time zones a given timestamp can be represented in different local dates
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="ConvertBetweenTimeZones" >}}
+{{< sandbox version="java21" mainclass="ConvertBetweenTimeZones" >}}
 {{< sandboxsource "ConvertBetweenTimeZones.java" >}}
 
 import java.time.LocalDate;

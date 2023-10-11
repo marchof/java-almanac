@@ -7,7 +7,7 @@ The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/
 
 Since [Java 11](/jdk/11/)
 
-{{< sandbox version="java17" mainclass="ReadWriteBinaryFiles" >}}
+{{< sandbox version="java21" mainclass="ReadWriteBinaryFiles" >}}
 {{< sandboxsource "ReadWriteBinaryFiles.java" >}}
 
 import java.io.IOException;

@@ -7,7 +7,7 @@ Since Java 16 finally Unix domain local interprocess communication is
 
 Since [Java 16](/jdk/16/)
 
-{{< sandbox version="java17" mainclass="UnixDomainSockets" >}}
+{{< sandbox version="java21" mainclass="UnixDomainSockets" >}}
 {{< sandboxsource "UnixDomainSockets.java" >}}
 
 import static java.net.StandardProtocolFamily.UNIX;

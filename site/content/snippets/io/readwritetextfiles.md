@@ -9,7 +9,7 @@ The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/
 
 Since [Java 11](/jdk/11/)
 
-{{< sandbox version="java17" mainclass="ReadWriteTextFiles" >}}
+{{< sandbox version="java21" mainclass="ReadWriteTextFiles" >}}
 {{< sandboxsource "ReadWriteTextFiles.java" >}}
 
 import java.io.IOException;

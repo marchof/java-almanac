@@ -12,7 +12,7 @@ Cryptographic signatures are based on public/private key pairs. In contrast
 
 Since [Java 1.1](/jdk/1.1/)
 
-{{< sandbox version="java17" mainclass="MessageSignature" >}}
+{{< sandbox version="java21" mainclass="MessageSignature" >}}
 {{< sandboxsource "MessageSignature.java" >}}
 
 import java.security.KeyPair;
@@ -34,12 +34,12 @@ public class MessageSignature {
 
 		// Verify the message with the public key:
 		signature.initVerify(keypair.getPublic());
-		signature.update("The price is 39.99$.".getBytes());
+		signature.update("The price is 39.99€".getBytes());
 		System.out.println(signature.verify(signed));
 
 		// When the message is altered the signature cannot be verified:
 		signature.initVerify(keypair.getPublic());
-		signature.update("The price is 29.99$.".getBytes());
+		signature.update("The price is 29.99€".getBytes());
 		System.out.println(signature.verify(signed));
 
 	}

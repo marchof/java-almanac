@@ -8,7 +8,7 @@ Print the current time in all time zones known to the JDK (from the [tz
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="WorldClock" >}}
+{{< sandbox version="java21" mainclass="WorldClock" >}}
 {{< sandboxsource "WorldClock.java" >}}
 
 import java.time.Instant;

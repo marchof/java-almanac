@@ -7,7 +7,7 @@ Local dates can be used for various calendar calculations of based on
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="CalculateWithLocalDates" >}}
+{{< sandbox version="java21" mainclass="CalculateWithLocalDates" >}}
 {{< sandboxsource "CalculateWithLocalDates.java" >}}
 
 import java.time.DayOfWeek;

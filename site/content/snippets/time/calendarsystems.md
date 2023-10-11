@@ -7,7 +7,7 @@ There are different calendar systems in the world. Let's write the Java 17
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="CalendarSystems" >}}
+{{< sandbox version="java21" mainclass="CalendarSystems" >}}
 {{< sandboxsource "CalendarSystems.java" >}}
 
 import java.time.LocalDate;

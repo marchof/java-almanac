@@ -7,7 +7,7 @@ To find all Friday 13th we iterate over a range of YearMonth and check
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="Friday13th" >}}
+{{< sandbox version="java21" mainclass="Friday13th" >}}
 {{< sandboxsource "Friday13th.java" >}}
 
 import java.time.DayOfWeek;

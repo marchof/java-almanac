@@ -11,7 +11,7 @@ The collection interfaces [`Set`](https://docs.oracle.com/en/java/javase/17/docs
 
 Since [Java 9](/jdk/9/)
 
-{{< sandbox version="java17" mainclass="CollectionConstants" >}}
+{{< sandbox version="java21" mainclass="CollectionConstants" >}}
 {{< sandboxsource "CollectionConstants.java" >}}
 
 import java.awt.Color;

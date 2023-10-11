@@ -9,7 +9,7 @@ With the `java.util.Comparator` interface you can define an ordering for
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java17" mainclass="Comparators" >}}
+{{< sandbox version="java21" mainclass="Comparators" >}}
 {{< sandboxsource "Comparators.java" >}}
 
 import java.util.Arrays;
