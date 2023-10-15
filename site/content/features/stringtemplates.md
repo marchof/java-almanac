@@ -214,7 +214,7 @@ public class TemplateProcessors {
 
 ## The `StringTemplate` class
 
-When a template expression is evaluated, the template arguments are placed in an object that is then passed to the `format` method of the template processor.
+When a template expression is evaluated, the template arguments are placed in an object that is then passed to the `process` method of the template processor.
 
 The name `StringTemplate` is perhaps unfortunate.  *Any* of the four possible template argument types is turned into a `StringTemplate` instance. `TemplateArguments` might have been a better choice for the class name.
 
@@ -308,7 +308,7 @@ public class StringTemplateDemo {
 
 ## Writing Your Own Template Processor
 
-The `format` method of a template processor turns `StringTemplate` instances into objects. Since `StringTemplate.Processor` is a functional interface, you can construct an instance from a lambda expression. Here is a simple example that places the values in boxes:
+The `process` method of a template processor turns `StringTemplate` instances into objects. Since `StringTemplate.Processor` is a functional interface, you can construct an instance from a lambda expression. Here is a simple example that places the values in boxes:
 
 {{< sandbox version=java21 preview="true" mainclass="MyFirstTemplateProcessor" >}}{{< sandboxsource "MyFirstTemplateProcessor.java" >}}
 public class MyFirstTemplateProcessor {
