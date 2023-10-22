@@ -348,7 +348,8 @@
 									"type": "method",
 									"name": "critical()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html#critical()"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html#critical()",
+									"csr": "JDK-8312523"
 								}
 							]
 						},
@@ -365,7 +366,8 @@
 									"type": "method",
 									"name": "canonicalLayouts()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html#canonicalLayouts()"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html#canonicalLayouts()",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -462,18 +464,21 @@
 									"type": "method",
 									"name": "scale(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#scale(long,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#scale(long,long)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "scaleHandle()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#scaleHandle()"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#scaleHandle()",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "sequenceLayout(MemoryLayout)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -610,18 +615,21 @@
 									"type": "method",
 									"name": "getString(long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "getString(long, Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "getUtf8String(long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -692,7 +700,8 @@
 								{
 									"type": "method",
 									"name": "segmentOffset(MemorySegment)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -738,18 +747,21 @@
 									"type": "method",
 									"name": "setString(long, String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setString(long,java.lang.String)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setString(long,java.lang.String)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "setString(long, String, Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setString(long,java.lang.String,java.nio.charset.Charset)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setString(long,java.lang.String,java.nio.charset.Charset)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "setUtf8String(long, String)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								}
 							]
 						},
@@ -797,7 +809,8 @@
 									"type": "method",
 									"name": "allocate(MemoryLayout, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.MemoryLayout,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.MemoryLayout,long)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -808,190 +821,224 @@
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfByte, byte)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfChar, char)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfDouble, double)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfFloat, float)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfInt, int)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfLong, long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfShort, short)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(MemoryLayout, long)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfByte, byte...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfChar, char...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfDouble, double...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfFloat, float...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfInt, int...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfLong, long...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateArray(ValueLayout.OfShort, short...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(AddressLayout, MemorySegment)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.AddressLayout,java.lang.foreign.MemorySegment)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.AddressLayout,java.lang.foreign.MemorySegment)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(String, Charset)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout, MemorySegment, ValueLayout, long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout,java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout,java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,long)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfByte, byte)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfByte,byte)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfByte,byte)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfByte, byte...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfByte,byte...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfByte,byte...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfChar, char)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfChar,char)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfChar,char)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfChar, char...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfChar,char...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfChar,char...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfDouble, double)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfDouble,double)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfDouble,double)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfDouble, double...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfDouble,double...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfDouble,double...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfFloat, float)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfFloat,float)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfFloat,float)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfFloat, float...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfFloat,float...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfFloat,float...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfInt, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfInt,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfInt,int)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfInt, int...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfInt,int...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfInt,int...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfLong, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfLong,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfLong,long)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfLong, long...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfLong,long...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfLong,long...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfShort, short)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfShort,short)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfShort,short)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateFrom(ValueLayout.OfShort, short...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfShort,short...)"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfShort,short...)",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "allocateUtf8String(String)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -1426,13 +1473,15 @@
 								{
 									"type": "method",
 									"name": "arrayElementVarHandle(int...)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
 									"name": "varHandle()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html#varHandle()"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html#varHandle()",
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -1531,7 +1580,8 @@
 									"type": "method",
 									"name": "memorySegmentViewVarHandle(ValueLayout)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8312523"
 								},
 								{
 									"type": "method",
@@ -1674,7 +1724,8 @@
 									"type": "field",
 									"name": "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I"
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I",
+									"csr": "JDK-8316217"
 								}
 							]
 						},
