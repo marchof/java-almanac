@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+19-1460"
+		"version": "22-ea+20-1570"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -35,6 +35,621 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/io/Console.html#isTerminal()",
 									"csr": "JDK-8309141"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.foreign",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "AddressLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/AddressLayout.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Arena",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocate(long, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Arena.html#allocate(long,long)",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FunctionDescriptor",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "GroupLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/GroupLayout.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Linker.Option",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "critical()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.Option.html#critical()"
+								},
+								{
+									"type": "method",
+									"name": "isTrivial()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Linker",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "canonicalLayouts()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/Linker.html#canonicalLayouts()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemoryLayout.PathElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.PathElement.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemoryLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "scale(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#scale(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "scaleHandle()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#scaleHandle()"
+								},
+								{
+									"type": "method",
+									"name": "sequenceLayout(MemoryLayout)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemorySegment.Scope",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.Scope.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemorySegment",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getString(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long)"
+								},
+								{
+									"type": "method",
+									"name": "getString(long, Charset)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset)"
+								},
+								{
+									"type": "method",
+									"name": "getUtf8String(long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "segmentOffset(MemorySegment)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "setString(long, String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setString(long,java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "setString(long, String, Charset)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setString(long,java.lang.String,java.nio.charset.Charset)"
+								},
+								{
+									"type": "method",
+									"name": "setUtf8String(long, String)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PaddingLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/PaddingLayout.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SegmentAllocator",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocate(AddressLayout, MemorySegment)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(MemoryLayout, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.MemoryLayout,long)"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfByte, byte)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfChar, char)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfDouble, double)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfFloat, float)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfInt, int)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfLong, long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocate(ValueLayout.OfShort, short)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(MemoryLayout, long)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfByte, byte...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfChar, char...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfDouble, double...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfFloat, float...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfInt, int...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfLong, long...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateArray(ValueLayout.OfShort, short...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(AddressLayout, MemorySegment)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.AddressLayout,java.lang.foreign.MemorySegment)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(String, Charset)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout, MemorySegment, ValueLayout, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout,java.lang.foreign.MemorySegment,java.lang.foreign.ValueLayout,long,long)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfByte, byte)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfByte,byte)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfByte, byte...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfByte,byte...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfChar, char)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfChar,char)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfChar, char...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfChar,char...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfDouble, double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfDouble,double)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfDouble, double...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfDouble,double...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfFloat, float)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfFloat,float)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfFloat, float...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfFloat,float...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfInt, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfInt,int)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfInt, int...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfInt,int...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfLong, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfLong,long)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfLong, long...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfLong,long...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfShort, short)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfShort,short)"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(ValueLayout.OfShort, short...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.foreign.ValueLayout.OfShort,short...)"
+								},
+								{
+									"type": "method",
+									"name": "allocateUtf8String(String)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SequenceLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SequenceLayout.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/StructLayout.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SymbolLookup",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "UnionLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/UnionLayout.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfBoolean",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfByte",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfChar",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfDouble",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfFloat",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfInt",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfLong",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout.OfShort",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ValueLayout",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html",
+							"removedTags": [
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "arrayElementVarHandle(int...)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "varHandle()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/ValueLayout.html#varHandle()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MethodHandles",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "collectCoordinates(VarHandle, int, MethodHandle)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "dropCoordinates(VarHandle, int, Class...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "filterCoordinates(VarHandle, int, MethodHandle...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "filterValue(VarHandle, MethodHandle, MethodHandle)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "insertCoordinates(VarHandle, int, Object...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)",
+									"removedTags": [
+										"preview"
+									]
+								},
+								{
+									"type": "method",
+									"name": "memorySegmentViewVarHandle(ValueLayout)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "permuteCoordinates(VarHandle, List, int...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						}
@@ -100,6 +715,40 @@
 						},
 						{
 							"type": "class",
+							"name": "ModuleLayer.Controller",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ModuleLayer.Controller.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "enableNativeAccess(Module)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/ModuleLayer.Controller.html#enableNativeAccess(java.lang.Module)",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Module",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Module.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isNativeAccessEnabled()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Module.html#isNativeAccessEnabled()",
+									"removedTags": [
+										"preview"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Thread",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Thread.html",
@@ -124,6 +773,31 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/StackWalker.Option.html#DROP_METHOD_INFO",
 									"csr": "JDK-8314811"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.channels",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileChannel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/FileChannel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "map(FileChannel.MapMode, long, long, Arena)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.Arena)",
+									"removedTags": [
+										"preview"
+									]
 								}
 							]
 						}

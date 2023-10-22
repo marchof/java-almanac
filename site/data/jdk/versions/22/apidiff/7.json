@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+19-1460"
+		"version": "22-ea+20-1570"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -3179,7 +3179,6 @@
 							"type": "method",
 							"name": "collectCoordinates(VarHandle, int, MethodHandle)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle)",
 							"csr": "JDK-8282192"
 						},
@@ -3211,7 +3210,6 @@
 							"type": "method",
 							"name": "dropCoordinates(VarHandle, int, Class...)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropCoordinates(java.lang.invoke.VarHandle,int,java.lang.Class...)",
 							"csr": "JDK-8282192"
 						},
@@ -3232,7 +3230,6 @@
 							"type": "method",
 							"name": "filterCoordinates(VarHandle, int, MethodHandle...)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterCoordinates(java.lang.invoke.VarHandle,int,java.lang.invoke.MethodHandle...)",
 							"csr": "JDK-8282192"
 						},
@@ -3240,7 +3237,6 @@
 							"type": "method",
 							"name": "filterValue(VarHandle, MethodHandle, MethodHandle)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterValue(java.lang.invoke.VarHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)",
 							"csr": "JDK-8282192"
 						},
@@ -3254,7 +3250,6 @@
 							"type": "method",
 							"name": "insertCoordinates(VarHandle, int, Object...)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertCoordinates(java.lang.invoke.VarHandle,int,java.lang.Object...)",
 							"csr": "JDK-8282192"
 						},
@@ -3272,17 +3267,8 @@
 						},
 						{
 							"type": "method",
-							"name": "memorySegmentViewVarHandle(ValueLayout)",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#memorySegmentViewVarHandle(java.lang.foreign.ValueLayout)",
-							"csr": "JDK-8282192"
-						},
-						{
-							"type": "method",
 							"name": "permuteCoordinates(VarHandle, List, int...)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteCoordinates(java.lang.invoke.VarHandle,java.util.List,int...)",
 							"csr": "JDK-8282192"
 						},
@@ -9360,7 +9346,6 @@
 							"type": "method",
 							"name": "map(FileChannel.MapMode, long, long, Arena)",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long,java.lang.foreign.Arena)",
 							"csr": "JDK-8303240"
 						}
