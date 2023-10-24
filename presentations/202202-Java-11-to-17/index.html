@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java 11 to Java 17+</title>
+    <meta charset="utf-8">
+    <style>
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('remark/droidserif.ttf');
+      }
+      @font-face{
+        font-family: 'Yanone Kaffeesatz';
+        src: url('remark/yanonekaffeesatz.ttf');
+      }
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('remark/ubuntumono.ttf');
+      }
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      li {
+        line-height: 175%;
+      }
+      .remark-slide-content {
+        font-size: 32px;
+      }
+      code.remark-code {
+        font-size: 28px;
+        line-height: 110%;
+      }
+      a, a:visited {
+        color: #589;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .left {
+        float: left;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+class: center, middle
+
+# Java 11 to Java 17+
+
+Marc R. Hoffmann, [@marcandsweep](https://twitter.com/marcandsweep)
+
+##Flux Academy, SBB
+
+Remote, 04.02.2022
+
+
+
+---
+# About me
+
+.left[
+  ![scale 50px](diagrams/marc.jpg)
+]
+
+* Java hacker since release of [Java 1.0.2](https://javaalmanac.io/jdk/1.0/api/)
+* FOSS developer
+* Java champion
+* [javaalmanac.io](https://javaalmanac.io/) maintainer
+* [@marcandsweep](https://twitter.com/marcandsweep)
+* CTO [@mtrail_gmbh](https://twitter.com/mtrail_gmbh)
+
+
+---
+# What I do at Night
+
+![:scale 500px](diagrams/coverage.png)
+
+* New &amp; Shiny Open Source Projects? Well...
+--
+
+  * First JaCoCo Release: 10 Years Ago
+  * First EclEmma Release: 15 Years Ago
+
+---
+# Build Matrix for JaCoCo
+
+![:scale 560px](diagrams/jacocomatrix.png)
+
+---
+# Hands-on Resources for this Presentation
+
+* javaalmanac.io<br>
+  [https://javaalmanac.io/](https://javaalmanac.io/)
+
+* Example Repo in Gitpod<br>
+  [https://github.com/marchof/io.javaalmanac.snippets](https://github.com/marchof/io.javaalmanac.snippets)
+  [https://gitpod.io/#https://github.com/marchof/io.javaalmanac.snippets](https://gitpod.io/#https://github.com/marchof/io.javaalmanac.snippets)
+
+
+---
+# Why Using New Java Releases?
+
+--
+* Useful language features and APIs
+
+--
+* Bug/Security Fixes
+
+--
+* Up-to-date Libraries
+
+--
+* New Platforms like ARM
+
+![:scale 251px](diagrams/arm-apple.jpg)
+![:scale 251px](diagrams/arm-windows.jpg)
+![:scale 360px](diagrams/arm-aws.png)
+
+---
+# In the Old Days of Java
+
+![Release Timeline](diagrams/javatimeline1.svg)
+
+---
+# The New Release Schedule of Java
+
+![Release Timeline](diagrams/javatimeline2.svg)
+
+---
+# New Java Releases Bring You...
+
+--
+* Language Features
+
+--
+* APIs
+
+--
+* JVM Capabilities and Optimizations
+
+--
+* Tools
+
+--
+
+New features are specified in [JEPs](http://openjdk.java.net/jeps/0)
+
+---
+# New Language Features
+
+* [Text Blocks](https://javaalmanac.io/features/textblocks/) (Java 15)
+* [Records](https://javaalmanac.io/features/records/) (Java 16)
+* [Sealed Types](https://javaalmanac.io/features/sealedtypes/) (Java 17)
+* [Switch Expressions](https://javaalmanac.io/features/switch/) (Java 14)
+* [`instanceof` Pattern Matching](https://javaalmanac.io/features/instanceof-patterns/) (Java 16)
+
+---
+# New APIs
+
+* [Unix Domain Sockets](https://javaalmanac.io/snippets/net/unixdomainsockets/) (Java 16)
+* [Hidden Classes](https://openjdk.java.net/jeps/371) (Java 15)
+* [`java.util.InstanceSource`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/InstantSource.html) (Java 17)
+* [`java.util.random`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html) (Java 17)
+* [`Stream.toList()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html) and [`Stream.mapMulti()`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html) (Java 16)
+* [`HexFormat`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HexFormat.html) (Java 17)
+
+---
+# Outlook Java 17+
+
+* [Switch Pattern Matching](https://openjdk.java.net/jeps/420) (Java 18)
+* [Code Snippets in JavaDoc](https://openjdk.java.net/jeps/413) (Java 18)
+
+--
+
+Bigger Projects with no time line yet:
+
+* [Project Loom](https://openjdk.java.net/projects/loom/)
+* [Project Valhalla](https://openjdk.java.net/projects/valhalla/)
+* [Project Panama](https://openjdk.java.net/projects/panama/)
+
+
+
+---
+# What about preview features?
+
+* With `--enable-preview` you get access experimental
+  * language features
+  * JVM feature or
+  * new APIs
+
+--
+* These features are not yet finalized and may/will change!
+
+
+---
+# Thank you!
+
+# Questions?
+
+
+## Contact
+
+marc.hoffmann@sbb.ch
+
+marc.hoffmann@mtrail.ch
+
+Twitter @marcandsweep
+
+
+    </textarea>
+    <script src="remark/remark.min.js">
+    </script>
+    <script>
+        remark.macros.scale = function (percentage) {
+          var url = this;
+          return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    	};
+      remark.create({
+        ratio: '16:9'
+      });
+    </script>
+  </body>
+</html>
