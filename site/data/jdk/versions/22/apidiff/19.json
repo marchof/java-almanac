@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+20-1570"
+		"version": "22-ea+21-1679"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -574,6 +574,12 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "arrayElementVarHandle(MemoryLayout.PathElement...)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#arrayElementVarHandle(java.lang.foreign.MemoryLayout.PathElement...)"
+								},
+								{
+									"type": "method",
 									"name": "bitAlignment()",
 									"status": "removed",
 									"csr": "JDK-8308279"
@@ -601,6 +607,24 @@
 									"name": "byteAlignment()",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#byteAlignment()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "byteOffset(MemoryLayout.PathElement...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#byteOffset(java.lang.foreign.MemoryLayout.PathElement...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "byteOffsetHandle(MemoryLayout.PathElement...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#byteOffsetHandle(java.lang.foreign.MemoryLayout.PathElement...)",
 									"addedTags": [
 										"abstract"
 									]
@@ -640,6 +664,24 @@
 								},
 								{
 									"type": "method",
+									"name": "select(MemoryLayout.PathElement...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#select(java.lang.foreign.MemoryLayout.PathElement...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "sliceHandle(MemoryLayout.PathElement...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#sliceHandle(java.lang.foreign.MemoryLayout.PathElement...)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
 									"name": "structLayout(MemoryLayout...)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#structLayout(java.lang.foreign.MemoryLayout...)",
@@ -669,6 +711,15 @@
 									"name": "valueLayout(Class, ByteOrder)",
 									"status": "removed",
 									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "varHandle(MemoryLayout.PathElement...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemoryLayout.html#varHandle(java.lang.foreign.MemoryLayout.PathElement...)",
+									"addedTags": [
+										"abstract"
+									]
 								},
 								{
 									"type": "method",
@@ -772,6 +823,15 @@
 								},
 								{
 									"type": "method",
+									"name": "copyFrom(MemorySegment)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#copyFrom(java.lang.foreign.MemorySegment)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
 									"name": "get(AddressLayout, long)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.AddressLayout,long)",
@@ -782,6 +842,78 @@
 									"name": "get(ValueLayout.OfAddress, long)",
 									"status": "removed",
 									"csr": "JDK-8295045"
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfBoolean, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfBoolean,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfByte, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfByte,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfChar, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfChar,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfDouble, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfDouble,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfFloat, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfFloat,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfInt, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfInt,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfLong, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfLong,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "get(ValueLayout.OfShort, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfShort,long)",
+									"addedTags": [
+										"abstract"
+									]
 								},
 								{
 									"type": "method",
@@ -809,6 +941,60 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfByte,long)",
 									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfChar, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfChar,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfDouble, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfDouble,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfFloat, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfFloat,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfInt, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfInt,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfLong, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfLong,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getAtIndex(ValueLayout.OfShort, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfShort,long)",
+									"addedTags": [
+										"abstract"
+									]
 								},
 								{
 									"type": "method",
@@ -843,15 +1029,6 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#isAccessibleBy(java.lang.Thread)",
 									"csr": "JDK-8303240"
-								},
-								{
-									"type": "method",
-									"name": "mismatch(MemorySegment)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#mismatch(java.lang.foreign.MemorySegment)",
-									"removedTags": [
-										"abstract"
-									]
 								},
 								{
 									"type": "method",
@@ -928,6 +1105,78 @@
 								},
 								{
 									"type": "method",
+									"name": "set(ValueLayout.OfBoolean, long, boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfBoolean,long,boolean)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfByte, long, byte)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfByte,long,byte)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfChar, long, char)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfChar,long,char)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfDouble, long, double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfDouble,long,double)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfFloat, long, float)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfFloat,long,float)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfInt, long, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfInt,long,int)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfLong, long, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfLong,long,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "set(ValueLayout.OfShort, long, short)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfShort,long,short)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
 									"name": "setAtIndex(AddressLayout, long, MemorySegment)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.AddressLayout,long,java.lang.foreign.MemorySegment)",
@@ -952,6 +1201,60 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfByte,long,byte)",
 									"csr": "JDK-8303240"
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfChar, long, char)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfChar,long,char)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfDouble, long, double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfDouble,long,double)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfFloat, long, float)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfFloat,long,float)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfInt, long, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfInt,long,int)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfLong, long, long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfLong,long,long)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setAtIndex(ValueLayout.OfShort, long, short)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfShort,long,short)",
+									"addedTags": [
+										"abstract"
+									]
 								},
 								{
 									"type": "method",
