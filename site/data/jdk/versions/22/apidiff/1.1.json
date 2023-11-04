@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+21-1679"
+		"version": "22-ea+22-1754"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -17951,6 +17951,12 @@
 							"name": "isSiteLocalAddress()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()"
+						},
+						{
+							"type": "method",
+							"name": "ofLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html#ofLiteral(java.lang.String)"
 						}
 					]
 				},
@@ -20221,7 +20227,8 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAParams.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"implements AlgorithmParameterSpec"
 					]
 				},
 				{
@@ -20238,6 +20245,12 @@
 							"name": "serialVersionUID",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#serialVersionUID"
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#getParams()"
 						}
 					]
 				},
@@ -20255,6 +20268,12 @@
 							"name": "serialVersionUID",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#serialVersionUID"
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#getParams()"
 						}
 					]
 				},
@@ -21546,6 +21565,12 @@
 				},
 				{
 					"type": "interface",
+					"name": "AsymmetricKey",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/AsymmetricKey.html"
+				},
+				{
+					"type": "interface",
 					"name": "Certificate",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/Certificate.html",
@@ -21638,7 +21663,11 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/PrivateKey.html",
 					"addedTags": [
 						"abstract",
+						"implements AsymmetricKey",
 						"implements Destroyable"
+					],
+					"removedTags": [
+						"implements Key"
 					],
 					"deltas": [
 						{
@@ -21667,7 +21696,11 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/PublicKey.html",
 					"addedTags": [
-						"abstract"
+						"abstract",
+						"implements AsymmetricKey"
+					],
+					"removedTags": [
+						"implements Key"
 					],
 					"deltas": [
 						{

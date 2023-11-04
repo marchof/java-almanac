@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+21-1679"
+		"version": "22-ea+22-1754"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -11128,6 +11128,34 @@
 				},
 				{
 					"type": "class",
+					"name": "Inet4Address",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet4Address.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ofLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet4Address.html#ofLiteral(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Inet6Address",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet6Address.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ofLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet6Address.html#ofLiteral(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "InetAddress",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html",
@@ -11140,6 +11168,12 @@
 							"name": "getLoopbackAddress()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html#getLoopbackAddress()"
+						},
+						{
+							"type": "method",
+							"name": "ofLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html#ofLiteral(java.lang.String)"
 						}
 					]
 				},
@@ -13689,6 +13723,15 @@
 				},
 				{
 					"type": "interface",
+					"name": "DSAParams",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAParams.html",
+					"addedTags": [
+						"implements AlgorithmParameterSpec"
+					]
+				},
+				{
+					"type": "interface",
 					"name": "DSAPrivateKey",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html",
@@ -13701,6 +13744,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#getParams()"
 						}
 					]
 				},
@@ -13718,6 +13767,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#getParams()"
 						}
 					]
 				},
@@ -13735,6 +13790,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#getParams()"
 						}
 					]
 				},
@@ -13752,6 +13813,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/ECPublicKey.html#getParams()"
 						}
 					]
 				},
@@ -13839,6 +13906,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html#getParams()"
 						}
 					]
 				},
@@ -13856,6 +13929,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#getParams()"
 						}
 					]
 				},
@@ -14946,6 +15025,12 @@
 				},
 				{
 					"type": "interface",
+					"name": "AsymmetricKey",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/AsymmetricKey.html"
+				},
+				{
+					"type": "interface",
 					"name": "Certificate",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/Certificate.html",
@@ -15026,7 +15111,11 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/PrivateKey.html",
 					"addedTags": [
+						"implements AsymmetricKey",
 						"implements Destroyable"
+					],
+					"removedTags": [
+						"implements Key"
 					],
 					"deltas": [
 						{
@@ -15043,8 +15132,14 @@
 				{
 					"type": "interface",
 					"name": "PublicKey",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/PublicKey.html",
+					"addedTags": [
+						"implements AsymmetricKey"
+					],
+					"removedTags": [
+						"implements Key"
+					],
 					"deltas": [
 						{
 							"type": "field",
@@ -25104,6 +25199,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#getParams()"
 						}
 					]
 				},
@@ -25121,6 +25222,12 @@
 							"addedTags": [
 								"deprecated"
 							]
+						},
+						{
+							"type": "method",
+							"name": "getParams()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#getParams()"
 						}
 					]
 				},

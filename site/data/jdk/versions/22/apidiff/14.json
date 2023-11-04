@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+21-1679"
+		"version": "22-ea+22-1754"
 	},
 	"order": 14.0,
 	"deltas": [
@@ -2993,11 +2993,47 @@
 						},
 						{
 							"type": "class",
+							"name": "Inet4Address",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet4Address.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet4Address.html#ofLiteral(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Inet6Address",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet6Address.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/Inet6Address.html#ofLiteral(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "InetAddress",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html",
 							"addedTags": [
 								"sealed"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/net/InetAddress.html#ofLiteral(java.lang.String)"
+								}
 							]
 						},
 						{
@@ -3706,6 +3742,71 @@
 						},
 						{
 							"type": "interface",
+							"name": "DSAParams",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAParams.html",
+							"addedTags": [
+								"implements AlgorithmParameterSpec"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DSAPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DSAPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPublicKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ECPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/ECPrivateKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ECPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/ECPublicKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/ECPublicKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "EdECKey",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/EdECKey.html",
@@ -3724,6 +3825,62 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/EdECPublicKey.html",
 							"csr": "JDK-8190219"
+						},
+						{
+							"type": "interface",
+							"name": "RSAPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RSAPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/RSAPublicKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "XECPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/XECPrivateKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/XECPrivateKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "XECPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/XECPublicKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/interfaces/XECPublicKey.html#getParams()"
+								}
+							]
 						}
 					]
 				},
@@ -3963,6 +4120,12 @@
 						},
 						{
 							"type": "interface",
+							"name": "AsymmetricKey",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/AsymmetricKey.html"
+						},
+						{
+							"type": "interface",
 							"name": "DomainCombiner",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/DomainCombiner.html",
@@ -3979,6 +4142,30 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PrivateKey",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/PrivateKey.html",
+							"addedTags": [
+								"implements AsymmetricKey"
+							],
+							"removedTags": [
+								"implements Key"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PublicKey",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/security/PublicKey.html",
+							"addedTags": [
+								"implements AsymmetricKey"
+							],
+							"removedTags": [
+								"implements Key"
 							]
 						}
 					]
@@ -4473,9 +4660,24 @@
 								},
 								{
 									"type": "method",
+									"name": "invokeAll(Collection)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection)",
+									"addedTags": [
+										"throws InterruptedException"
+									]
+								},
+								{
+									"type": "method",
 									"name": "invokeAll(Collection, long, TimeUnit)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(java.util.Collection,long,java.util.concurrent.TimeUnit)"
+								},
+								{
+									"type": "method",
+									"name": "invokeAllUninterruptibly(Collection)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAllUninterruptibly(java.util.Collection)"
 								},
 								{
 									"type": "method",
@@ -4517,6 +4719,18 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.util.concurrent.Callable)",
 									"csr": "JDK-8285450"
+								},
+								{
+									"type": "method",
+									"name": "adaptInterruptible(Runnable)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.lang.Runnable)"
+								},
+								{
+									"type": "method",
+									"name": "adaptInterruptible(Runnable, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adaptInterruptible(java.lang.Runnable,java.lang.Object)"
 								},
 								{
 									"type": "method",
@@ -5994,6 +6208,42 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.crypto.interfaces",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "DHPrivateKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#getParams()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DHPublicKey",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getParams()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#getParams()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.crypto.spec",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/javax/crypto/spec/package-summary.html",
@@ -6584,7 +6834,6 @@
 									"type": "method",
 									"name": "isUnnamed()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#isUnnamed()",
 									"csr": "JDK-8304246"
 								}
@@ -10685,6 +10934,39 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.catalog",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml/javax/xml/catalog/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CatalogManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml/javax/xml/catalog/CatalogManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "catalogResolver(Catalog, CatalogResolver.NotFoundAction)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.Catalog,javax.xml.catalog.CatalogResolver.NotFoundAction)"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "CatalogResolver.NotFoundAction",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.xml/javax/xml/catalog/CatalogResolver.NotFoundAction.html"
+						},
+						{
+							"type": "enum",
+							"name": "GroupEntry.ResolveType",
+							"status": "removed"
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "javax.xml.xpath",
