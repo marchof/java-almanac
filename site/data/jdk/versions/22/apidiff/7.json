@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+22-1754"
+		"version": "22-ea+23-1832"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -26346,6 +26346,20 @@
 							"name": "getUI()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/JComponent.html#getUI()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JFileChooser",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/JFileChooser.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "setEnabled(boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.desktop/javax/swing/JFileChooser.html#setEnabled(boolean)"
 						}
 					]
 				},
