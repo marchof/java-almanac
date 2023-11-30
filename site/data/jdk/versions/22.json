@@ -17,6 +17,16 @@
 	],
 	"features": [
 		{
+			"title": "Region Pinning for G1",
+			"category": "jvm",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "423"
+				}
+			]
+		},
+		{
 			"title": "Statements before super(...)",
 			"category": "lang",
 			"preview": true,
@@ -55,12 +65,52 @@
 			]
 		},
 		{
+			"title": "Implicitly Declared Classes and Instance Main Methods",
+			"category": "lang",
+			"preview": true,
+			"revision": 2,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "463"
+				},
+				{
+					"type": "AlmanacFeature",
+					"identifier": "jep445"
+				}
+			]
+		},
+		{
 			"title": "Foreign Function & Memory API",
 			"category": "api",
 			"refs": [
 				{
 					"type": "JEP",
 					"identifier": "454"
+				}
+			]
+		},
+		{
+			"title": "Class-File API",
+			"category": "api",
+			"preview": true,
+			"revision": 1,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "457"
+				}
+			]
+		},
+		{
+			"title": "Stream Gatherers",
+			"category": "api",
+			"preview": true,
+			"revision": 1,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "461"
 				}
 			]
 		}
