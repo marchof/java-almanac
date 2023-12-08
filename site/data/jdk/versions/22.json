@@ -12,7 +12,7 @@
 	"scm": [
 		{
 			"type": "git",
-			"url": "https://github.com/openjdk/jdk"
+			"url": "https://github.com/openjdk/jdk22"
 		}
 	],
 	"features": [
@@ -111,6 +111,28 @@
 				{
 					"type": "JEP",
 					"identifier": "461"
+				}
+			]
+		},
+		{
+			"title": "Structured Concurrency",
+			"category": "api",
+			"preview": true,
+			"revision": 2,
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "462"
+				}
+			]
+		},
+		{
+			"title": "Launch Multi-File Source-Code Programs",
+			"category": "tools",
+			"refs": [
+				{
+					"type": "JEP",
+					"identifier": "458"
 				}
 			]
 		}
