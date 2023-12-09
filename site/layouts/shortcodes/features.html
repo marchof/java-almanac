@@ -6,7 +6,7 @@
     </tr>
   </thead>
 <tbody>
-{{- range $.Page.Pages }}
+{{- range sort $.Page.Pages "Params.jdkversion"  "desc"}}
 <tr>
   <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
   <td><a href="../jdk/{{ .Params.jdkversion }}/">Java {{ .Params.jdkversion }}</a></td>

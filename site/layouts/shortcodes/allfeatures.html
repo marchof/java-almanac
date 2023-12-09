@@ -7,7 +7,7 @@
     </tr>
   </thead>
 <tbody>
-{{- range $jdk := sort $.Site.Data.jdk.versions "ga" "asc" }}
+{{- range $jdk := sort $.Site.Data.jdk.versions "ga" "desc" }}
 {{- range $jdk.features }}
 {{- if and (not .incubator) (not .preview) }}
 <tr>
