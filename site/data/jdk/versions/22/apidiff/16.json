@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22-ea+26-2112"
+		"version": "22-ea+27-2262"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -327,6 +327,36 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.attribute",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/classfile/attribute/package-summary.html"
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.components",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/classfile/components/package-summary.html"
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.constantpool",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html"
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.instruction",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/classfile/instruction/package-summary.html"
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/classfile/package-summary.html"
 				},
 				{
 					"type": "package",
@@ -1170,14 +1200,6 @@
 									"removedTags": [
 										"preview"
 									]
-								},
-								{
-									"type": "method",
-									"name": "isUnnamedClass()",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/lang/Class.html#isUnnamedClass()",
-									"csr": "JDK-8308916"
 								}
 							]
 						},
@@ -3986,6 +4008,64 @@
 				},
 				{
 					"type": "package",
+					"name": "java.util.stream",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Gatherers",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Gatherers.html"
+						},
+						{
+							"type": "interface",
+							"name": "Gatherer.Downstream",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Gatherer.Downstream.html"
+						},
+						{
+							"type": "interface",
+							"name": "Gatherer.Integrator.Greedy",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Gatherer.Integrator.Greedy.html"
+						},
+						{
+							"type": "interface",
+							"name": "Gatherer.Integrator",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Gatherer.Integrator.html"
+						},
+						{
+							"type": "interface",
+							"name": "Gatherer",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Gatherer.html"
+						},
+						{
+							"type": "interface",
+							"name": "Stream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Stream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "gather(Gatherer)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/stream/Stream.html#gather(java.util.stream.Gatherer)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util.zip",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.base/java/util/zip/package-summary.html",
@@ -5423,14 +5503,6 @@
 									"removedTags": [
 										"preview"
 									]
-								},
-								{
-									"type": "method",
-									"name": "isUnnamed()",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk22/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#isUnnamed()",
-									"csr": "JDK-8306113"
 								}
 							]
 						},
