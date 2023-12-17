@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+1-1"
+		"version": "23-ea+2-68"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -2396,6 +2396,21 @@
 									"name": "allowThreadSuspension(boolean)",
 									"status": "removed",
 									"csr": "JDK-8297331"
+								},
+								{
+									"type": "method",
+									"name": "resume()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "stop()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "suspend()",
+									"status": "removed"
 								}
 							]
 						},
@@ -2440,12 +2455,22 @@
 								},
 								{
 									"type": "method",
+									"name": "resume()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
 									"name": "startVirtualThread(Runnable)",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/Thread.html#startVirtualThread(java.lang.Runnable)",
 									"removedTags": [
 										"preview"
 									]
+								},
+								{
+									"type": "method",
+									"name": "suspend()",
+									"status": "removed"
 								}
 							]
 						},
