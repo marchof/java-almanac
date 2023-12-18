@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup HUGO
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.115.4'
+        hugo-version: '0.121.1 '
     - name: Render
       working-directory: 'site'
       run: hugo
@@ -35,13 +35,13 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Set up Java
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         distribution: temurin
         java-version: 17
     - name: Build and Run with Maven
       run: |
         cd dataapi
-        mvn -B clean compile exec:java -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+        mvn -B clean compile exec:java --no-transfer-progress
