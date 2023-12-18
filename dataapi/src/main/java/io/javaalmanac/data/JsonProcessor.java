@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.jayway.jsonpath.PathNotFoundException;
 
 import io.javaalmanac.data.JsonProcessor.ProcessingContext;
 
@@ -46,7 +45,8 @@ public interface JsonProcessor extends BiFunction<JsonNode, ProcessingContext, J
 	public default JsonProcessor select(String path) {
 		return (data, ctx) -> {
 			var expr = compileWithParameters(path, ctx);
-			return expr.read(apply(data, ctx), CONFIG);
+			var result = expr.<JsonNode>read(apply(data, ctx), CONFIG);
+			return result == null ? JsonNodeFactory.instance.arrayNode() : result;
 		};
 	}
 
@@ -62,16 +62,6 @@ public interface JsonProcessor extends BiFunction<JsonNode, ProcessingContext, J
 		};
 	}
 
-	public default JsonProcessor ignorePathNotFound() {
-		return (data, ctx) -> {
-			try {
-				return apply(data, ctx);
-			} catch (PathNotFoundException e) {
-				return JsonNodeFactory.instance.arrayNode();
-			}
-		};
-	}
-
 	public default JsonProcessor delete(String selector) {
 		return (data, ctx) -> {
 			var expr = compileWithParameters(selector, ctx);
@@ -84,8 +74,11 @@ public interface JsonProcessor extends BiFunction<JsonNode, ProcessingContext, J
 	public default JsonProcessor map(String selector, JsonProcessor mapper) {
 		return (data, ctx) -> {
 			var expr = compileWithParameters(selector, ctx);
-			var copy = apply(data, ctx).deepCopy();
-			return expr.map(copy, (n, conf) -> mapper.apply((JsonNode) n, ctx), CONFIG);
+			var input = apply(data, ctx);
+			var result = expr.<JsonNode>map(input.deepCopy(), (n, conf) -> mapper.apply((JsonNode) n, ctx), CONFIG);
+			// In case of no match JsonPath returns an empty result.
+			// But we wand the unmodified value instead:
+			return result.isEmpty() ? input : result;
 		};
 	}
 

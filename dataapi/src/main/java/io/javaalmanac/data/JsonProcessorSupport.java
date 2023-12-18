@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
+import com.jayway.jsonpath.Option;
 import com.jayway.jsonpath.spi.json.JacksonJsonNodeJsonProvider;
 import com.jayway.jsonpath.spi.mapper.JacksonMappingProvider;
 
@@ -17,7 +18,8 @@ class JsonProcessorSupport {
 	static final Configuration CONFIG = Configuration.builder() //
 			.jsonProvider(new JacksonJsonNodeJsonProvider()) //
 			.mappingProvider(new JacksonMappingProvider()) //
-			.build();
+			.build() //
+			.addOptions(Option.SUPPRESS_EXCEPTIONS);
 
 	private static final Pattern PLACEHOLDER_PATTERN = Pattern.compile("`([^`]+)`");
 

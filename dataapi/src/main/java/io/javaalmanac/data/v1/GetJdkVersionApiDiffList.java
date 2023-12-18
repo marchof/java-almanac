@@ -11,7 +11,6 @@ public class GetJdkVersionApiDiffList extends GetOperationDefinition {
 
 	public static final JsonProcessor BASE_VERSIONS = root() //
 			.select("$.jdk.versions.[`version`].apidiff.keys()") //
-			.ignorePathNotFound() //
 			.sort(n -> Float.valueOf(n.asText()));
 
 	public GetJdkVersionApiDiffList() {
