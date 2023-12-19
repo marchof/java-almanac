@@ -49,7 +49,7 @@ public class OpenApi3Support {
 
 	private static class LocalContext implements OAIContext {
 
-		private ReferenceRegistry referenceRegistry;
+		private final ReferenceRegistry referenceRegistry;
 
 		public LocalContext() {
 			referenceRegistry = new ReferenceRegistry(LOCAL_BASE_URL);

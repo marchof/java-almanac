@@ -4,13 +4,12 @@ import org.openapi4j.parser.model.v3.Schema;
 
 public abstract class GetOperationDefinition {
 
-	private String operationId;
-	private String description;
+	private final String operationId;
+	private final String description;
 
 	public GetOperationDefinition(String description) {
 		var name = this.getClass().getSimpleName();
-		name = Character.toLowerCase(name.charAt(0)) + name.substring(1);
-		this.operationId = name;
+		this.operationId = Character.toLowerCase(name.charAt(0)) + name.substring(1);
 		this.description = description;
 	}
 

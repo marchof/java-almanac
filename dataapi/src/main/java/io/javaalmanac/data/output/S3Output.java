@@ -32,8 +32,8 @@ public class S3Output implements ApiOutput {
 	private final S3Client s3;
 	private final String bucket;
 
-	private CloudFrontClient cf;
-	private String distributionid;
+	private final CloudFrontClient cf;
+	private final String distributionid;
 
 	private final Map<String, String> existingContent;
 	private final OutputStats stats;

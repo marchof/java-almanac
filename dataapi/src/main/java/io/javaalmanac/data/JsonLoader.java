@@ -20,7 +20,7 @@ public class JsonLoader {
 
 	private static final String JSON_EXT = ".json";
 
-	private ObjectMapper mapper;
+	private final ObjectMapper mapper;
 
 	public JsonLoader() {
 		mapper = new ObjectMapper();

@@ -104,12 +104,13 @@ public enum SchemaV1 implements NamedSchema {
 			.addRequiredField("version") //
 			.addRequiredField("vendor"));
 
-	private Schema schema;
+	private final Schema schema;
 
 	private SchemaV1(Schema schema) {
 		this.schema = schema;
 	}
 
+	@Override
 	public Schema schema() {
 		return schema;
 	}
