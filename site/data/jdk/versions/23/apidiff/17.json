@@ -210,6 +210,7 @@
 					"type": "package",
 					"name": "java.lang.classfile.attribute",
 					"status": "added",
+					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -217,6 +218,7 @@
 					"type": "package",
 					"name": "java.lang.classfile.components",
 					"status": "added",
+					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/components/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -224,6 +226,7 @@
 					"type": "package",
 					"name": "java.lang.classfile.constantpool",
 					"status": "added",
+					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -231,6 +234,7 @@
 					"type": "package",
 					"name": "java.lang.classfile.instruction",
 					"status": "added",
+					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/instruction/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -238,6 +242,7 @@
 					"type": "package",
 					"name": "java.lang.classfile",
 					"status": "added",
+					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -1651,17 +1656,20 @@
 								{
 									"type": "method",
 									"name": "resume()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8320598"
 								},
 								{
 									"type": "method",
 									"name": "stop()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8320891"
 								},
 								{
 									"type": "method",
 									"name": "suspend()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8320598"
 								}
 							]
 						},
@@ -1717,7 +1725,8 @@
 								{
 									"type": "method",
 									"name": "resume()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8320598"
 								},
 								{
 									"type": "method",
@@ -1745,7 +1754,8 @@
 								{
 									"type": "method",
 									"name": "suspend()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8320598"
 								},
 								{
 									"type": "method",
@@ -4921,7 +4931,8 @@
 									"type": "field",
 									"name": "RELEASE_23",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_23"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_23",
+									"csr": "JDK-8319428"
 								},
 								{
 									"type": "method",
