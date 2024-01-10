@@ -137,6 +137,7 @@
 									"type": "method",
 									"name": "appendArgumentLayouts(MemoryLayout...)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#appendArgumentLayouts(java.lang.foreign.MemoryLayout...)",
 									"addedTags": [
 										"abstract"
@@ -146,6 +147,7 @@
 									"type": "method",
 									"name": "argumentLayouts()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#argumentLayouts()",
 									"addedTags": [
 										"abstract"
@@ -155,12 +157,14 @@
 									"type": "method",
 									"name": "asVariadic(MemoryLayout...)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "changeReturnLayout(MemoryLayout)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#changeReturnLayout(java.lang.foreign.MemoryLayout)",
 									"addedTags": [
 										"abstract"
@@ -170,6 +174,7 @@
 									"type": "method",
 									"name": "dropReturnLayout()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#dropReturnLayout()",
 									"addedTags": [
 										"abstract"
@@ -179,24 +184,28 @@
 									"type": "method",
 									"name": "equals(Object)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "firstVariadicArgumentIndex()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "hashCode()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "insertArgumentLayouts(int, MemoryLayout...)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#insertArgumentLayouts(int,java.lang.foreign.MemoryLayout...)",
 									"addedTags": [
 										"abstract"
@@ -206,6 +215,7 @@
 									"type": "method",
 									"name": "returnLayout()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#returnLayout()",
 									"addedTags": [
 										"abstract"
@@ -215,6 +225,7 @@
 									"type": "method",
 									"name": "toMethodType()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/FunctionDescriptor.html#toMethodType()",
 									"csr": "JDK-8295045"
 								},
@@ -222,6 +233,7 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								}
 							]
@@ -246,30 +258,35 @@
 									"type": "method",
 									"name": "equals(Object)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "hashCode()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "isStruct()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "isUnion()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "memberLayouts()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/GroupLayout.html#memberLayouts()",
 									"addedTags": [
 										"abstract"
@@ -279,12 +296,14 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/GroupLayout.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -294,6 +313,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/GroupLayout.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -328,18 +348,21 @@
 									"type": "method",
 									"name": "downcallHandle(Addressable, FunctionDescriptor)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "downcallHandle(FunctionDescriptor)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "downcallHandle(FunctionDescriptor, Linker.Option...)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/Linker.html#downcallHandle(java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker.Option...)",
 									"csr": "JDK-8295045"
 								},
@@ -347,6 +370,7 @@
 									"type": "method",
 									"name": "downcallHandle(MemorySegment, FunctionDescriptor, Linker.Option...)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/Linker.html#downcallHandle(java.lang.foreign.MemorySegment,java.lang.foreign.FunctionDescriptor,java.lang.foreign.Linker.Option...)",
 									"csr": "JDK-8295045"
 								},
@@ -354,18 +378,21 @@
 									"type": "method",
 									"name": "downcallType(FunctionDescriptor)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "upcallStub(MethodHandle, FunctionDescriptor, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "upcallStub(MethodHandle, FunctionDescriptor, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/Linker.html#upcallStub(java.lang.invoke.MethodHandle,java.lang.foreign.FunctionDescriptor,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -373,6 +400,7 @@
 									"type": "method",
 									"name": "upcallType(FunctionDescriptor)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								}
 							]
@@ -395,12 +423,14 @@
 									"type": "method",
 									"name": "isPadding()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "paddingLayout(long)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#paddingLayout(long)",
 									"csr": "JDK-8295045"
 								},
@@ -408,12 +438,14 @@
 									"type": "method",
 									"name": "paddingLayout(long)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "sequenceLayout(MemoryLayout)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#sequenceLayout(java.lang.foreign.MemoryLayout)",
 									"csr": "JDK-8295045"
 								},
@@ -421,6 +453,7 @@
 									"type": "method",
 									"name": "structLayout(MemoryLayout...)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#structLayout(java.lang.foreign.MemoryLayout...)",
 									"csr": "JDK-8295045"
 								},
@@ -428,12 +461,14 @@
 									"type": "method",
 									"name": "structLayout(MemoryLayout...)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "unionLayout(MemoryLayout...)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemoryLayout.html#unionLayout(java.lang.foreign.MemoryLayout...)",
 									"csr": "JDK-8295045"
 								},
@@ -441,6 +476,7 @@
 									"type": "method",
 									"name": "unionLayout(MemoryLayout...)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								}
 							]
@@ -459,6 +495,7 @@
 									"type": "field",
 									"name": "NULL",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#NULL",
 									"csr": "JDK-8295045"
 								},
@@ -466,6 +503,7 @@
 									"type": "method",
 									"name": "address()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#address()",
 									"csr": "JDK-8295045"
 								},
@@ -473,18 +511,21 @@
 									"type": "method",
 									"name": "address()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "allocateNative(MemoryLayout, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "allocateNative(MemoryLayout, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(java.lang.foreign.MemoryLayout,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -492,12 +533,14 @@
 									"type": "method",
 									"name": "allocateNative(long, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "allocateNative(long, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(long,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -505,12 +548,14 @@
 									"type": "method",
 									"name": "allocateNative(long, long, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "allocateNative(long, long, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#allocateNative(long,long,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -518,6 +563,7 @@
 									"type": "method",
 									"name": "array()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#array()",
 									"csr": "JDK-8295045"
 								},
@@ -525,6 +571,7 @@
 									"type": "method",
 									"name": "get(ValueLayout.OfAddress, long)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#get(java.lang.foreign.ValueLayout.OfAddress,long)",
 									"csr": "JDK-8295045"
 								},
@@ -532,12 +579,14 @@
 									"type": "method",
 									"name": "get(ValueLayout.OfAddress, long)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "getAtIndex(ValueLayout.OfAddress, long)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#getAtIndex(java.lang.foreign.ValueLayout.OfAddress,long)",
 									"csr": "JDK-8295045"
 								},
@@ -545,12 +594,14 @@
 									"type": "method",
 									"name": "getAtIndex(ValueLayout.OfAddress, long)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "mismatch(MemorySegment)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#mismatch(java.lang.foreign.MemorySegment)",
 									"removedTags": [
 										"abstract"
@@ -560,6 +611,7 @@
 									"type": "method",
 									"name": "mismatch(MemorySegment, long, long, MemorySegment, long, long)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#mismatch(java.lang.foreign.MemorySegment,long,long,java.lang.foreign.MemorySegment,long,long)",
 									"csr": "JDK-8295045"
 								},
@@ -567,12 +619,14 @@
 									"type": "method",
 									"name": "ofAddress(MemoryAddress, long, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "ofAddress(long)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long)",
 									"csr": "JDK-8295045"
 								},
@@ -580,6 +634,7 @@
 									"type": "method",
 									"name": "ofAddress(long, long)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long)",
 									"csr": "JDK-8295045"
 								},
@@ -587,6 +642,7 @@
 									"type": "method",
 									"name": "ofAddress(long, long, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -594,6 +650,7 @@
 									"type": "method",
 									"name": "ofAddress(long, long, SegmentScope, Runnable)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#ofAddress(long,long,java.lang.foreign.SegmentScope,java.lang.Runnable)",
 									"csr": "JDK-8295045"
 								},
@@ -601,6 +658,7 @@
 									"type": "method",
 									"name": "scope()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#scope()",
 									"csr": "JDK-8295045"
 								},
@@ -608,18 +666,21 @@
 									"type": "method",
 									"name": "session()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "set(ValueLayout.OfAddress, long, Addressable)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "set(ValueLayout.OfAddress, long, MemorySegment)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#set(java.lang.foreign.ValueLayout.OfAddress,long,java.lang.foreign.MemorySegment)",
 									"csr": "JDK-8295045"
 								},
@@ -627,12 +688,14 @@
 									"type": "method",
 									"name": "setAtIndex(ValueLayout.OfAddress, long, Addressable)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "setAtIndex(ValueLayout.OfAddress, long, MemorySegment)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/MemorySegment.html#setAtIndex(java.lang.foreign.ValueLayout.OfAddress,long,java.lang.foreign.MemorySegment)",
 									"csr": "JDK-8295045"
 								}
@@ -664,12 +727,14 @@
 									"type": "method",
 									"name": "allocate(ValueLayout.OfAddress, Addressable)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "allocate(ValueLayout.OfAddress, MemorySegment)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocate(java.lang.foreign.ValueLayout.OfAddress,java.lang.foreign.MemorySegment)",
 									"csr": "JDK-8295045"
 								},
@@ -677,12 +742,14 @@
 									"type": "method",
 									"name": "implicitAllocator()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "nativeAllocator(SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#nativeAllocator(java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -690,24 +757,28 @@
 									"type": "method",
 									"name": "newNativeArena(MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "newNativeArena(long, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "newNativeArena(long, long, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "slicingAllocator(MemorySegment)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#slicingAllocator(java.lang.foreign.MemorySegment)",
 									"csr": "JDK-8295045"
 								}
@@ -741,6 +812,7 @@
 									"type": "method",
 									"name": "elementCount()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#elementCount()",
 									"addedTags": [
 										"abstract"
@@ -750,6 +822,7 @@
 									"type": "method",
 									"name": "elementLayout()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#elementLayout()",
 									"addedTags": [
 										"abstract"
@@ -759,12 +832,14 @@
 									"type": "method",
 									"name": "equals(Object)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "flatten()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#flatten()",
 									"addedTags": [
 										"abstract"
@@ -774,12 +849,14 @@
 									"type": "method",
 									"name": "hashCode()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "reshape(long...)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#reshape(long...)",
 									"addedTags": [
 										"abstract"
@@ -789,12 +866,14 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -804,6 +883,7 @@
 									"type": "method",
 									"name": "withElementCount(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withElementCount(long)",
 									"addedTags": [
 										"abstract"
@@ -813,6 +893,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SequenceLayout.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -839,6 +920,7 @@
 									"type": "method",
 									"name": "find(String)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SymbolLookup.html#find(java.lang.String)",
 									"csr": "JDK-8295045"
 								},
@@ -846,12 +928,14 @@
 									"type": "method",
 									"name": "libraryLookup(Path, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "libraryLookup(Path, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.nio.file.Path,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -859,12 +943,14 @@
 									"type": "method",
 									"name": "libraryLookup(String, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "libraryLookup(String, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/SymbolLookup.html#libraryLookup(java.lang.String,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -872,6 +958,7 @@
 									"type": "method",
 									"name": "lookup(String)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								}
 							]
@@ -895,12 +982,14 @@
 									"type": "method",
 									"name": "addVarg(ValueLayout.OfAddress, Addressable)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "addVarg(ValueLayout.OfAddress, MemorySegment)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/VaList.Builder.html#addVarg(java.lang.foreign.ValueLayout.OfAddress,java.lang.foreign.MemorySegment)",
 									"csr": "JDK-8295045"
 								}
@@ -920,18 +1009,21 @@
 									"type": "method",
 									"name": "address()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "make(Consumer, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "make(Consumer, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/VaList.html#make(java.util.function.Consumer,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -939,6 +1031,7 @@
 									"type": "method",
 									"name": "nextVarg(ValueLayout.OfAddress)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/VaList.html#nextVarg(java.lang.foreign.ValueLayout.OfAddress)",
 									"csr": "JDK-8295045"
 								},
@@ -946,18 +1039,21 @@
 									"type": "method",
 									"name": "nextVarg(ValueLayout.OfAddress)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "ofAddress(MemoryAddress, MemorySession)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "ofAddress(long, SegmentScope)",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/VaList.html#ofAddress(long,java.lang.foreign.SegmentScope)",
 									"csr": "JDK-8295045"
 								},
@@ -965,6 +1061,7 @@
 									"type": "method",
 									"name": "segment()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/VaList.html#segment()",
 									"csr": "JDK-8295045"
 								},
@@ -972,6 +1069,7 @@
 									"type": "method",
 									"name": "session()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								}
 							]
@@ -997,6 +1095,7 @@
 									"type": "method",
 									"name": "asUnbounded()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#asUnbounded()",
 									"csr": "JDK-8295045"
 								},
@@ -1004,6 +1103,7 @@
 									"type": "method",
 									"name": "isUnbounded()",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#isUnbounded()",
 									"csr": "JDK-8295045"
 								},
@@ -1011,6 +1111,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1020,6 +1121,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1029,6 +1131,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfAddress.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1057,6 +1160,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1066,6 +1170,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1075,6 +1180,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfBoolean.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1103,6 +1209,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1112,6 +1219,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1121,6 +1229,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfByte.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1149,6 +1258,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1158,6 +1268,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1167,6 +1278,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfChar.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1195,6 +1307,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1204,6 +1317,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1213,6 +1327,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfDouble.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1241,6 +1356,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1250,6 +1366,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1259,6 +1376,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfFloat.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1287,6 +1405,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1296,6 +1415,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1305,6 +1425,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfInt.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1333,6 +1454,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1342,6 +1464,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1351,6 +1474,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfLong.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1379,6 +1503,7 @@
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1388,6 +1513,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1397,6 +1523,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.OfShort.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"
@@ -1422,6 +1549,7 @@
 									"type": "field",
 									"name": "ADDRESS_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#ADDRESS_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1429,6 +1557,7 @@
 									"type": "field",
 									"name": "JAVA_CHAR_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_CHAR_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1436,6 +1565,7 @@
 									"type": "field",
 									"name": "JAVA_DOUBLE_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_DOUBLE_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1443,6 +1573,7 @@
 									"type": "field",
 									"name": "JAVA_FLOAT_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_FLOAT_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1450,6 +1581,7 @@
 									"type": "field",
 									"name": "JAVA_INT_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_INT_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1457,6 +1589,7 @@
 									"type": "field",
 									"name": "JAVA_LONG_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_LONG_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1464,6 +1597,7 @@
 									"type": "field",
 									"name": "JAVA_SHORT_UNALIGNED",
 									"status": "added",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#JAVA_SHORT_UNALIGNED",
 									"csr": "JDK-8295045"
 								},
@@ -1471,6 +1605,7 @@
 									"type": "method",
 									"name": "arrayElementVarHandle(int...)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#arrayElementVarHandle(int...)",
 									"addedTags": [
 										"abstract"
@@ -1480,6 +1615,7 @@
 									"type": "method",
 									"name": "carrier()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#carrier()",
 									"addedTags": [
 										"abstract"
@@ -1489,18 +1625,21 @@
 									"type": "method",
 									"name": "equals(Object)",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "hashCode()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "order()",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#order()",
 									"addedTags": [
 										"abstract"
@@ -1510,12 +1649,14 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "removed",
+									"preview": true,
 									"csr": "JDK-8295045"
 								},
 								{
 									"type": "method",
 									"name": "withBitAlignment(long)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#withBitAlignment(long)",
 									"addedTags": [
 										"abstract"
@@ -1525,6 +1666,7 @@
 									"type": "method",
 									"name": "withName(String)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#withName(java.lang.String)",
 									"addedTags": [
 										"abstract"
@@ -1534,6 +1676,7 @@
 									"type": "method",
 									"name": "withOrder(ByteOrder)",
 									"status": "modified",
+									"preview": true,
 									"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/foreign/ValueLayout.html#withOrder(java.nio.ByteOrder)",
 									"addedTags": [
 										"abstract"

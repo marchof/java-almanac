@@ -27,7 +27,11 @@
           <li class="tag newelement">{{ template "csrlink" dict "delta" .delta "label" "added" }}</li>
         {{- end -}}
       {{- else if eq "removed" .delta.status -}}
-        <li class="tag removedelement">{{ template "csrlink" dict "delta" .delta "label" "removed" }}</li>
+        {{- if .delta.preview -}}
+          <li class="tag removedelement">{{ template "csrlink" dict "delta" .delta "label" "removed preview" }}</li>
+        {{- else -}}
+          <li class="tag removedelement">{{ template "csrlink" dict "delta" .delta "label" "removed" }}</li>
+        {{- end -}}
       {{- end -}}
       {{- range .delta.removedTags -}}
         <li class="tag removedtag"><b>-</b> {{ . }}</li>
