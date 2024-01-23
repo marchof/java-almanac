@@ -1,6 +1,8 @@
 package io.javaalmanac.data;
 
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 
 import org.openapi4j.core.exception.EncodeException;
@@ -20,8 +22,8 @@ public class OpenApi3Support {
 
 	static {
 		try {
-			LOCAL_BASE_URL = new URL("http://local/");
-		} catch (MalformedURLException e) {
+			LOCAL_BASE_URL = new URI("http://local/").toURL();
+		} catch (URISyntaxException | MalformedURLException e) {
 			throw new RuntimeException(e);
 		}
 	}
