@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+5-295"
+		"version": "23-ea+6-400"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -7976,7 +7976,8 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/ZipFile.html#toString()"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/ZipFile.html#toString()",
+									"csr": "JDK-8319982"
 								}
 							]
 						},
@@ -12905,6 +12906,20 @@
 									"csr": "JDK-6852577"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "SynthTreeUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getCollapsedIcon()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html#getCollapsedIcon()"
+								}
+							]
 						}
 					]
 				},
@@ -14544,42 +14559,22 @@
 						{
 							"type": "class",
 							"name": "MLetContent",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/loading/MLetContent.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "class",
 							"name": "MLet",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/loading/MLet.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "class",
 							"name": "PrivateMLet",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/loading/PrivateMLet.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "interface",
 							"name": "MLetMBean",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/loading/MLetMBean.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						}
 					]
 				},

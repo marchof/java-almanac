@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+5-295"
+		"version": "23-ea+6-400"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -1863,7 +1863,8 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/ZipFile.html#toString()"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/ZipFile.html#toString()",
+									"csr": "JDK-8319982"
 								}
 							]
 						}
@@ -2071,6 +2072,28 @@
 				},
 				{
 					"type": "package",
+					"name": "javax.swing.plaf.synth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthTreeUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getCollapsedIcon()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html#getCollapsedIcon()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.swing",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/package-summary.html",
@@ -2089,6 +2112,42 @@
 									"csr": "JDK-4365952"
 								}
 							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.loading",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/loading/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MLetContent",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "MLet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "PrivateMLet",
+							"status": "removed"
+						},
+						{
+							"type": "interface",
+							"name": "MLetMBean",
+							"status": "removed"
 						}
 					]
 				}
