@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+6-400"
+		"version": "23-ea+7-481"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -24058,6 +24058,20 @@
 				},
 				{
 					"type": "class",
+					"name": "ChoiceFormat",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#toString()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "CollationKey",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CollationKey.html",
@@ -24305,6 +24319,12 @@
 							"name": "setRoundingMode(RoundingMode)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setRoundingMode(java.math.RoundingMode)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#toString()"
 						}
 					]
 				},
@@ -24414,6 +24434,12 @@
 							"name": "setFormatsByArgumentIndex(Format[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format%5B%5D)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#toString()"
 						}
 					]
 				},
@@ -24519,6 +24545,12 @@
 							"name": "formatToCharacterIterator(Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/SimpleDateFormat.html#formatToCharacterIterator(java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/SimpleDateFormat.html#toString()"
 						}
 					]
 				},

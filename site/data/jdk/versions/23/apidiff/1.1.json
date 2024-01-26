@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+6-400"
+		"version": "23-ea+7-481"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -25353,6 +25353,20 @@
 				},
 				{
 					"type": "class",
+					"name": "ChoiceFormat",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#toString()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "CollationElementIterator",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CollationElementIterator.html",
@@ -25729,6 +25743,12 @@
 							"name": "setRoundingMode(RoundingMode)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setRoundingMode(java.math.RoundingMode)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#toString()"
 						}
 					]
 				},
@@ -25868,6 +25888,12 @@
 							"name": "setFormatsByArgumentIndex(Format[])",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format%5B%5D)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#toString()"
 						}
 					]
 				},
@@ -26040,6 +26066,12 @@
 							"name": "set2DigitYearStart(Date)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/SimpleDateFormat.html#set2DigitYearStart(java.util.Date)"
+						},
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/SimpleDateFormat.html#toString()"
 						}
 					]
 				},
