@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+7-481"
+		"version": "23-ea+8-555"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -2735,6 +2735,12 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "ExactConversionsSupport",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/runtime/ExactConversionsSupport.html"
+						},
+						{
+							"type": "class",
 							"name": "SwitchBootstraps",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html",
@@ -5327,6 +5333,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.html#isCompactConstructor(javax.lang.model.element.ExecutableElement)",
 									"csr": "JDK-8291594"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Types",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Types.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "stripAnnotations(TypeMirror)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Types.html#stripAnnotations(javax.lang.model.type.TypeMirror)"
 								}
 							]
 						}
