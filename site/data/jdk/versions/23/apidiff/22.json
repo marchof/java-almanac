@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "22",
 		"vendor": "open",
-		"version": "22+35-2369"
+		"version": "22+36-2370"
 	},
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+8-555"
+		"version": "23-ea+10-725"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -38,6 +38,54 @@
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_23_VERSION",
 									"csr": "JDK-8319428"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassSignature",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(List, Signature.ClassTypeSig, Signature.ClassTypeSig...)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html#of(java.util.List,java.lang.classfile.Signature.ClassTypeSig,java.lang.classfile.Signature.ClassTypeSig...)"
+								},
+								{
+									"type": "method",
+									"name": "of(List, Signature.RefTypeSig, Signature.RefTypeSig...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "of(Signature.ClassTypeSig, Signature.ClassTypeSig...)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html#of(java.lang.classfile.Signature.ClassTypeSig,java.lang.classfile.Signature.ClassTypeSig...)"
+								},
+								{
+									"type": "method",
+									"name": "of(Signature.RefTypeSig, Signature.RefTypeSig...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "superclassSignature()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html#superclassSignature()"
+								},
+								{
+									"type": "method",
+									"name": "superclassSignature()",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						}
