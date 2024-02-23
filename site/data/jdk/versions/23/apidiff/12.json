@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+10-725"
+		"version": "23-ea+11-814"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -11429,6 +11429,26 @@
 									"name": "setText(String)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JPasswordField.html#setText(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JScrollBar",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JScrollBar.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setMaximumSize(Dimension)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JScrollBar.html#setMaximumSize(java.awt.Dimension)"
+								},
+								{
+									"type": "method",
+									"name": "setMinimumSize(Dimension)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JScrollBar.html#setMinimumSize(java.awt.Dimension)"
 								}
 							]
 						},
