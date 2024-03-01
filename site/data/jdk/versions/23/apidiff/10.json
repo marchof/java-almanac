@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+11-814"
+		"version": "23-ea+12-893"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -134,6 +134,23 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#isTerminal()",
 									"csr": "JDK-8309141"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "DataInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/DataInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "readUTF(DataInput)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/DataInputStream.html#readUTF(java.io.DataInput)",
+									"removedTags": [
+										"final"
+									]
 								}
 							]
 						},
