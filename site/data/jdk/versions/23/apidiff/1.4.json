@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+13-981"
+		"version": "23-ea+14-1075"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -21688,6 +21688,24 @@
 						},
 						{
 							"type": "method",
+							"name": "getTotalIn()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Deflater.html#getTotalIn()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getTotalOut()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Deflater.html#getTotalOut()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setDictionary(ByteBuffer)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(java.nio.ByteBuffer)",
@@ -21777,6 +21795,24 @@
 							"name": "getBytesWritten()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Inflater.html#getBytesWritten()"
+						},
+						{
+							"type": "method",
+							"name": "getTotalIn()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Inflater.html#getTotalIn()",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getTotalOut()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Inflater.html#getTotalOut()",
+							"addedTags": [
+								"deprecated"
+							]
 						},
 						{
 							"type": "method",
