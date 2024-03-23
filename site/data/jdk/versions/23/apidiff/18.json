@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+14-1075"
+		"version": "23-ea+15-1181"
 	},
 	"order": 18.0,
 	"deltas": [
@@ -4475,6 +4475,28 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_23",
 									"csr": "JDK-8319428"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.tools",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SimpleJavaFileObject",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "forSource(URI, String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#forSource(java.net.URI,java.lang.String)"
 								}
 							]
 						}

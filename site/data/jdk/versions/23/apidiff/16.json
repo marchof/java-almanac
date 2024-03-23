@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+14-1075"
+		"version": "23-ea+15-1181"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -5910,6 +5910,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html#getJavaFileForOutputForOriginatingFiles(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject...)",
 									"csr": "JDK-8275508"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SimpleJavaFileObject",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "forSource(URI, String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#forSource(java.net.URI,java.lang.String)"
 								}
 							]
 						},
