@@ -9,7 +9,7 @@ Pattern matching for switch expressions and statements appeared as a preview fea
 
 ## Type Checks with Switch
 
-If you have many branches that check the same value, it can be clearer to refactor the code as a `switch:`
+If you have many branches that check the same value, it can be clearer to refactor the code as a `switch`:
 
 ```
 if (code == 200) message = "Ok";

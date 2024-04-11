@@ -171,13 +171,19 @@ div.content table tr:nth-child(even) {
 div.content pre {
 	font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", "monospace";
 	background-color: #eee;
-	padding-left: 4px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding: 8px 8px 8px 12px;
+	overflow-x: auto;
 }
 
 div.content code {
 	font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", "monospace";
+	white-space: nowrap;
+}
+
+div.content p code {
+	background-color: #eee;
+	padding: 0px 3px 0px 3px;
+	border-radius: 3px;
 }
 
 ul.tag {
