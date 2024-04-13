@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+17-1368"
+		"version": "23-ea+18-1469"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -26488,6 +26488,11 @@
 							"name": "getAddress()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getAddress()"
+						},
+						{
+							"type": "method",
+							"name": "getMBeanServerConnection(Subject)",
+							"status": "removed"
 						}
 					]
 				},
@@ -26555,6 +26560,9 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							],
+							"removedTags": [
+								"abstract"
 							]
 						}
 					]

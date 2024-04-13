@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+17-1368"
+		"version": "23-ea+18-1469"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -10341,6 +10341,13 @@
 						},
 						{
 							"type": "class",
+							"name": "AbstractAnnotationValueVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitorPreview.html"
+						},
+						{
+							"type": "class",
 							"name": "AbstractElementVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor14.html",
@@ -10380,6 +10387,13 @@
 						},
 						{
 							"type": "class",
+							"name": "AbstractElementVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitorPreview.html"
+						},
+						{
+							"type": "class",
 							"name": "AbstractTypeVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor14.html",
@@ -10401,6 +10415,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "AbstractTypeVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitorPreview.html"
 						},
 						{
 							"type": "class",
@@ -10481,6 +10502,13 @@
 						},
 						{
 							"type": "class",
+							"name": "ElementKindVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitorPreview.html"
+						},
+						{
+							"type": "class",
 							"name": "ElementScanner14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementScanner14.html",
@@ -10529,6 +10557,13 @@
 						},
 						{
 							"type": "class",
+							"name": "ElementScannerPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementScannerPreview.html"
+						},
+						{
+							"type": "class",
 							"name": "SimpleAnnotationValueVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor14.html",
@@ -10559,6 +10594,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "SimpleAnnotationValueVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitorPreview.html"
 						},
 						{
 							"type": "class",
@@ -10595,6 +10637,13 @@
 						},
 						{
 							"type": "class",
+							"name": "SimpleElementVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitorPreview.html"
+						},
+						{
+							"type": "class",
 							"name": "SimpleTypeVisitor14",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor14.html",
@@ -10625,6 +10674,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "SimpleTypeVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitorPreview.html"
 						},
 						{
 							"type": "class",
@@ -10688,6 +10744,13 @@
 									"csr": "JDK-8191642"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "TypeKindVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitorPreview.html"
 						},
 						{
 							"type": "interface",
@@ -14623,6 +14686,19 @@
 						},
 						{
 							"type": "class",
+							"name": "RMIConnector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getMBeanServerConnection(Subject)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "RMIIIOPServerImpl",
 							"status": "removed",
 							"csr": "JDK-8307329"
@@ -14777,6 +14853,9 @@
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
+									],
+									"removedTags": [
+										"abstract"
 									]
 								}
 							]

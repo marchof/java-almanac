@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+17-1368"
+		"version": "23-ea+18-1469"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -2121,6 +2121,34 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "AbstractAnnotationValueVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitorPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "AbstractElementVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitorPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "AbstractTypeVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitorPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "ElementKindVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitorPreview.html"
+						},
+						{
+							"type": "class",
 							"name": "ElementScanner6",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html",
@@ -2133,6 +2161,41 @@
 									"csr": "JDK-8310172"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "ElementScannerPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementScannerPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "SimpleAnnotationValueVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitorPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "SimpleElementVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitorPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "SimpleTypeVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitorPreview.html"
+						},
+						{
+							"type": "class",
+							"name": "TypeKindVisitorPreview",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitorPreview.html"
 						},
 						{
 							"type": "interface",
@@ -2322,6 +2385,35 @@
 		},
 		{
 			"type": "module",
+			"name": "java.management.rmi",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.remote.rmi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/javax/management/remote/rmi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "RMIConnector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getMBeanServerConnection(Subject)",
+									"status": "removed"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
 			"name": "java.management",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/module-summary.html",
@@ -2355,6 +2447,31 @@
 							"name": "MLetMBean",
 							"status": "removed",
 							"csr": "JDK-8318710"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management.remote",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/remote/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "JMXConnector",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/remote/JMXConnector.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getMBeanServerConnection(Subject)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)",
+									"removedTags": [
+										"abstract"
+									]
+								}
+							]
 						}
 					]
 				}
