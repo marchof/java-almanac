@@ -1,0 +1,107 @@
+<input id="searchfield" onKeyUp="textupdate();" type="text" style="width: 66%; border: 1px solid #a0a0a0; padding: 6px; border-radius: 6px; font-weight: bold; color: #666666">
+
+<p id="resultinfo" style="color: #999">
+</p>
+
+<div id="results">
+Enter keywords to search JavaDoc, JEPs, language and VM specifications
+</div>
+
+
+
+<script>
+"use strict";
+
+let searchfield = document.getElementById("searchfield");
+let resultinfodiv = document.getElementById("resultinfo");
+let resultsdiv = document.getElementById("results");
+
+let debounceTimerId;
+let lastQuery;
+
+function textupdate() {
+    clearTimeout(debounceTimerId);
+    const query = searchfield.value;
+    debounceTimerId = setTimeout(() => executeQuery(query), 200);
+}
+
+function executeQuery(query) {
+	if (lastQuery == query) {
+		return;
+	}
+	lastQuery = query;
+	const encoded = encodeURIComponent(query)
+	window.document.location.hash = encoded;
+	resultinfodiv.innerHTML = "Finding..."
+	fetch('https://sandbox.javaalmanac.io/find?q=' + encoded)
+	    .then(response => response.json())
+	    .then(result => {
+	    	if (result.query == lastQuery) renderResult(result);
+	    });
+}
+
+function tag(name, ...children) {
+    const tag = document.createElement(name)
+    for (const c of children) tag.append(c)
+    return tag;
+}
+
+function renderResult(r) {
+	resultinfodiv.innerHTML = "";
+	resultinfodiv.append(r.totalhits.toLocaleString() + " total hits")
+	
+	resultsdiv.innerHTML = "";
+	for (const h of r.hits) {
+		const p = tag("p");
+		
+		const a = tag("a", h.title);
+		a.setAttribute("href", h.url);
+		p.append(a);
+		
+		for (const key in h.tags) {
+		    const s = tag("span");
+		    s.className = "tag";
+		    s.setAttribute("title", key);
+		    s.append(h.tags[key]);
+		    p.append(" ", s);
+		}
+		
+		p.append(tag("br"));
+		
+		if (h.more.length) {
+			const s = tag("span", "→ Also in version ");
+			s.className = "more";
+			let separator = false;
+			for (const m of h.more) {
+				if (separator) {
+					s.append(", ")
+				}
+				const a = tag("a", m.version);
+				a.setAttribute("href", m.url);
+				s.append(a);
+				separator = true;
+			}
+			p.append(s, tag("br"));
+		}
+		
+		const preview = tag('span');
+		preview.innerHTML = h.preview;
+		p.append(preview);
+		
+		resultsdiv.append(p);
+	}
+}
+
+function initalQuery() {
+	const query = window.document.location.hash.substring(1);
+	if (query) {
+		searchfield.value = query;
+		executeQuery(query);
+	}
+}
+
+window.addEventListener("load", (event) => initalQuery());
+
+initalQuery();
+
+</script>

@@ -371,6 +371,23 @@ ul.tag li a.csr {
 	background-image:url("img/csr.png");
 }
 
+div#results b {
+	background-color:#ff6;
+	border-radius: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	font-weight: normal;
+}
+
+div#results span.tag {
+	color: #fff;
+	background-color: #bbb;
+}
+
+div#results span.more {
+	font-size: 85%;
+}
+
 [v-cloak] > * { display:none }
 [v-cloak]::before { content: "loading…" }
 div.tabs {
