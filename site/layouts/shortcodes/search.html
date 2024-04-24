@@ -20,9 +20,9 @@ let debounceTimerId;
 let lastQuery;
 
 function textupdate() {
-    clearTimeout(debounceTimerId);
-    const query = searchfield.value;
-    debounceTimerId = setTimeout(() => executeQuery(query, true), 200);
+	clearTimeout(debounceTimerId);
+	const query = searchfield.value;
+	debounceTimerId = setTimeout(() => executeQuery(query, true), 200);
 }
 
 function executeQuery(query, updatehistory) {
@@ -32,17 +32,17 @@ function executeQuery(query, updatehistory) {
 	lastQuery = query;
 	const search = pushParamsToURL(query, updatehistory);
 	resultinfodiv.innerHTML = "Finding..."
-	fetch('https://sandbox.javaalmanac.io/find' + search)
-	    .then(response => response.json())
-	    .then(result => {
-	    	if (result.query == lastQuery) renderResult(result);
-	    });
+	fetch('{{ $.Site.Params.Api.Find }}' + search)
+		.then(response => response.json())
+		.then(result => {
+			if (result.query == lastQuery) renderResult(result);
+		});
 }
 
 function tag(name, ...children) {
-    const tag = document.createElement(name)
-    for (const c of children) tag.append(c)
-    return tag;
+	const tag = document.createElement(name)
+	for (const c of children) tag.append(c)
+	return tag;
 }
 
 function renderResult(r) {
@@ -58,11 +58,11 @@ function renderResult(r) {
 		p.append(a);
 		
 		for (const key in h.tags) {
-		    const s = tag("span");
-		    s.className = "tag";
-		    s.setAttribute("title", key);
-		    s.append(h.tags[key]);
-		    p.append(" ", s);
+			const s = tag("span");
+			s.className = "tag";
+			s.setAttribute("title", key);
+			s.append(h.tags[key]);
+			p.append(" ", s);
 		}
 		
 		p.append(tag("br"));
@@ -101,12 +101,12 @@ function pushParamsToURL(q, updatehistory) {
 }
 
 function getParamsFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('q')) {
-    	const q = urlParams.get('q');
+	const urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.has('q')) {
+		const q = urlParams.get('q');
 		searchfield.value = q;
 		executeQuery(q, false);
-    }
+	}
 }
 
 window.addEventListener("load", (event) => getParamsFromURL());

@@ -3,7 +3,7 @@ Vue.component('sandbox', {
         <tabs v-bind:infotext="versioninfo" v-bind:infotooltip="versioninfoext">
             <slot></slot>
             <tab v-bind:onTabClicked="compileandrun" name="▶︎ Run">
-                <div class="sandbox-console">{{ output }}</div>
+                <div class="sandbox-console">{{ "{{" }} output }}</div>
             </tab>
         </tabs>
     `,
@@ -28,7 +28,7 @@ Vue.component('sandbox', {
     },
     methods: {
         serviceurl(action) {
-            return "https://sandbox.javaalmanac.io/jdk/" + this.version.replace("java", "") + "/" + action;
+            return `{{ $.Site.Params.Api.Sandbox }}jdk/${this.version.replace("java", "")}/${action}`;
         },
         compileandrun() {
             this.output = "Compile and run with " + this.versioninfo + " ...";
