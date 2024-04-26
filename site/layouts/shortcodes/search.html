@@ -1,6 +1,9 @@
 <input id="searchfield" onKeyUp="textupdate();" type="text" autofocus style="width: 66%; border: 1px solid #a0a0a0; padding: 6px; border-radius: 6px; font-weight: bold; color: #666666">
 
-<p id="resultinfo" style="color: #999">
+<p id="resultinfo">
+</p>
+
+<p id="resultfilters">
 </p>
 
 <div id="results">
@@ -14,29 +17,44 @@ Enter keywords to search JavaDoc, JEPs, language and VM specifications
 
 let searchfield = document.getElementById("searchfield");
 let resultinfodiv = document.getElementById("resultinfo");
+let resultfiltersdiv = document.getElementById("resultfilters");
 let resultsdiv = document.getElementById("results");
 
 let debounceTimerId;
-let lastQuery;
+let lastSearch;
+let currentQuery = ""; 
+let currentFilters = new Map();; 
 
 function textupdate() {
 	clearTimeout(debounceTimerId);
 	const query = searchfield.value;
-	debounceTimerId = setTimeout(() => executeQuery(query, true), 200);
+	debounceTimerId = setTimeout(() => executeQuery(query, new Map(), true), 200);
 }
 
-function executeQuery(query, updatehistory) {
-	if (lastQuery == query) {
+function executeQuery(q, filter, updatehistory) {
+	const search = pushParamsToURL(q, filter, updatehistory);
+	if (lastSearch == search) {
 		return;
 	}
-	lastQuery = query;
-	const search = pushParamsToURL(query, updatehistory);
+	lastSearch = search;
+	currentQuery = q;
+	currentFilters = filter;
 	resultinfodiv.innerHTML = "Finding..."
 	fetch('{{ $.Site.Params.Api.Find }}' + search)
 		.then(response => response.json())
 		.then(result => {
-			if (result.query == lastQuery) renderResult(result);
+			renderResult(result);
 		});
+}
+
+function addFilter(group, value) {
+	currentFilters.set(group, value);
+	executeQuery(currentQuery, currentFilters, true)
+}
+
+function removeFilter(group) {
+	currentFilters.delete(group);
+	executeQuery(currentQuery, currentFilters, true)
 }
 
 function tag(name, ...children) {
@@ -47,7 +65,22 @@ function tag(name, ...children) {
 
 function renderResult(r) {
 	resultinfodiv.innerHTML = "";
-	resultinfodiv.append(r.totalhits.toLocaleString() + " total hits")
+	resultinfodiv.append(r.totalhits.toLocaleString() + " total hits");
+	resultfiltersdiv.innerHTML = "";
+	for (const t of r.taginfos) {
+		const c = tag("span", t.count.toLocaleString() + "x");
+		c.className = "count";
+		const s = tag("span", c, t.value);
+		s.className = "tag";
+		if (t.filtered) {
+			s.classList.add("filtered");
+			s.onclick = () => removeFilter(t.group);
+		} else {
+			s.onclick = () => addFilter(t.group, t.value);
+		}
+		s.setAttribute("title", t.group);
+		resultfiltersdiv.append(s, " ");
+	}
 	
 	resultsdiv.innerHTML = "";
 	for (const h of r.hits) {
@@ -58,10 +91,10 @@ function renderResult(r) {
 		p.append(a);
 		
 		for (const key in h.tags) {
-			const s = tag("span");
+			const s = tag("span", h.tags[key]);
 			s.className = "tag";
 			s.setAttribute("title", key);
-			s.append(h.tags[key]);
+			s.onclick = () => addFilter(key, h.tags[key]);
 			p.append(" ", s);
 		}
 		
@@ -91,9 +124,15 @@ function renderResult(r) {
 	}
 }
 
-function pushParamsToURL(q, updatehistory) {
+function pushParamsToURL(q, filter, updatehistory) {
 	const url = new URL(window.location);
 	url.searchParams.set('q', q);
+	url.searchParams.delete('doctype');
+	url.searchParams.delete('javakind');
+	url.searchParams.delete('version');
+	for (const [group, value] of filter.entries()) {
+		url.searchParams.set(group, value);
+	}
 	if (updatehistory) {
 		window.history.pushState({}, '', url);
 	}
@@ -104,8 +143,12 @@ function getParamsFromURL() {
 	const urlParams = new URLSearchParams(window.location.search);
 	if (urlParams.has('q')) {
 		const q = urlParams.get('q');
+		const filter = new Map();
+		if (urlParams.has('doctype')) filter.set('doctype', urlParams.get('doctype'));
+		if (urlParams.has('javakind')) filter.set('javakind', urlParams.get('javakind'));
+		if (urlParams.has('version')) filter.set('version', urlParams.get('version'));
 		searchfield.value = q;
-		executeQuery(q, false);
+		executeQuery(q, filter, false);
 	}
 }
 

@@ -371,6 +371,50 @@ ul.tag li a.csr {
 	background-image:url("img/csr.png");
 }
 
+p#resultinfo {
+	color: #999";
+	line-height: 170%;
+	text-align: left;
+	margin-bottom: 4px;
+}
+
+p#resultfilters {
+	line-height: 170%;
+	text-align: left;
+	margin-top: 4px;
+}
+
+p#resultfilters span.tag {
+	color: #fff;
+	background-color: #bbb;
+	cursor: pointer;
+}
+
+p#resultfilters span.tag:hover {
+	background-color: #69a;
+}
+
+p#resultfilters span.filtered {
+	background-color: #69a;
+}
+
+p#resultfilters span.filtered:hover {
+	background-color: #bbb;
+}
+
+p#resultfilters span.tag span.count {
+	color: #777;
+	margin-right: 4px;
+}
+
+p#resultfilters span.filtered span.count {
+	color: #364a53;
+}
+
+div#results p {
+	text-align: left;
+}
+
 div#results b {
 	background-color:#ff6;
 	border-radius: 3px;
@@ -382,6 +426,11 @@ div#results b {
 div#results span.tag {
 	color: #fff;
 	background-color: #bbb;
+	cursor: pointer;
+}
+
+div#results span.tag:hover {
+	background-color: #69a;
 }
 
 div#results span.more {
