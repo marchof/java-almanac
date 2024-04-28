@@ -1,3 +1,5 @@
+"use strict";
+
 Vue.component('sandbox', {
     template: `
         <tabs v-bind:infotext="versioninfo" v-bind:infotooltip="versioninfoext">
@@ -32,7 +34,7 @@ Vue.component('sandbox', {
         },
         compileandrun() {
             this.output = "Compile and run with " + this.versioninfo + " ...";
-            sourcefiles= [];
+            const sourcefiles = [];
             this.$children[0].$children.forEach(tab => {
                 if (tab.source) {
                     sourcefiles.push({name: tab.name, content: tab.source});

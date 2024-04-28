@@ -1,3 +1,5 @@
+"use strict";
+
 Vue.component('tabs', {
     template: `
         <div>
