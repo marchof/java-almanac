@@ -23,10 +23,12 @@ Vue.component('sandbox', {
         };
     },
     mounted() {
-        axios.get(this.serviceurl("version")).then(response => { 
-            this.versioninfo = response.data['java.runtime.version'];
-            this.versioninfoext = response.data['java.vendor'] + '\n' + response.data['java.vm.name'];
-        })
+        fetch(this.serviceurl("version"))
+            .then(r => r.json())
+            .then(response => { 
+                this.versioninfo = response['java.runtime.version'];
+                this.versioninfoext = response['java.vendor'] + '\n' + response['java.vm.name'];
+            });
     },
     methods: {
         serviceurl(action) {
@@ -45,9 +47,9 @@ Vue.component('sandbox', {
                 preview: this.preview,
                 sourcefiles: sourcefiles
             };
-            axios.post(this.serviceurl("compileandrun"), request).then(response => { 
-                this.output = response.data.output;
-            })
+            fetch(this.serviceurl("compileandrun"), { method: "POST", body: JSON.stringify(request) })
+                .then(r => r.json())
+                .then(response => this.output = response.output );
         }
     }
 });

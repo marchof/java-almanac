@@ -154,7 +154,7 @@ Vue.component('downloadlist', {
         loadDistributions(query) {
             this.productset = [ { id: 'all', name: 'All', query: {} } ];
             this.discoRequest("distributions", response => {
-                for (const d of response.data.result) {
+                for (const d of response.result) {
                     this.productset.push({ id: d.api_parameter, name: d.name, query: { distro: d.api_parameter } })
                 }
                 this.readHash();
@@ -165,7 +165,7 @@ Vue.component('downloadlist', {
             this.message = "Loading...";
             const path = "packages" + query;
             this.discoRequest(path, response => {
-                this.packages = response.data.result;
+                this.packages = response.result;
                 if (this.packages.length) {
                     this.message = "";
                 } else {
@@ -174,9 +174,9 @@ Vue.component('downloadlist', {
             });
         },
         discoRequest(path, handler) {
-            axios.get("https://api.foojay.io/disco/v3.0/" + path)
-                .then(handler)
-                .catch(error => { this.message = "" + error });
+            fetch("https://api.foojay.io/disco/v3.0/" + path)
+                .then(response => response.json())
+                .then(handler);
         }
     }
 });

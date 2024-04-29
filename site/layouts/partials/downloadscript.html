@@ -1,6 +1,5 @@
 {{- $vue := resources.Get "app/vue.min.js" }}
-{{- $axios := resources.Get "app/axios.min.js" }}
 {{- $download := resources.Get "app/download.js" | resources.Minify }}
-{{- $js := slice $vue $axios $download | resources.Concat "app/download-bundle.js" | resources.Fingerprint }}
+{{- $js := slice $vue $download | resources.Concat "app/download-bundle.js" | resources.Fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 <script>new Vue({ el: '#content' })</script>
