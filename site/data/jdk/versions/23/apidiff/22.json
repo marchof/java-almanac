@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+18-1469"
+		"version": "23-ea+21-1723"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -17,6 +17,31 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "java.io",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ObjectOutputStream.PutField",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "write(ObjectOutput)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
+									"addedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "java.lang.classfile",
@@ -99,6 +124,82 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.foreign",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "MemorySegment",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "maxByteAlignment()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/MemorySegment.html#maxByteAlignment()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SymbolLookup",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "findOrThrow(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/SymbolLookup.html#findOrThrow(java.lang.String)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "StringConcatFactory",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "MAX_INDY_CONCAT_ARG_SLOTS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplate(List, List)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplateCluster(List, List, int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "makeConcatWithTemplateGetters(List, List, int)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/reflect/package-summary.html",
@@ -132,6 +233,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/runtime/ExactConversionsSupport.html",
 							"csr": "JDK-8304487"
+						},
+						{
+							"type": "class",
+							"name": "TemplateRuntime",
+							"status": "removed",
+							"preview": true
 						}
 					]
 				},
@@ -186,6 +293,24 @@
 									"csr": "JDK-8320598"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate.Processor.Linkage",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate.Processor",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "StringTemplate",
+							"status": "removed",
+							"preview": true
 						}
 					]
 				},
@@ -203,6 +328,18 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#setStrict(boolean)"
+								},
+								{
+									"type": "method",
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#toString()",
@@ -218,6 +355,18 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#setStrict(boolean)"
+								},
+								{
+									"type": "method",
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#toString()",
@@ -231,6 +380,18 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setStrict(boolean)"
+								},
 								{
 									"type": "method",
 									"name": "toString()",
@@ -252,6 +413,26 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#toString()",
 									"csr": "JDK-8323088"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "NumberFormat",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#setStrict(boolean)"
 								}
 							]
 						},
@@ -344,6 +525,20 @@
 									"csr": "JDK-8319982"
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FormatProcessor",
+							"status": "removed",
+							"preview": true
 						}
 					]
 				}

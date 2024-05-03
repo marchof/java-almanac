@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+18-1469"
+		"version": "23-ea+21-1723"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -200,6 +200,23 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)",
 									"addedTags": [
 										"throws ClassNotFoundException"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ObjectOutputStream.PutField",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "write(ObjectOutput)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
+									"addedTags": [
+										"forRemoval"
 									]
 								}
 							]
@@ -816,46 +833,6 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle...)",
 									"csr": "JDK-8267267"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "StringConcatFactory",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
-							"deltas": [
-								{
-									"type": "field",
-									"name": "MAX_INDY_CONCAT_ARG_SLOTS",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#MAX_INDY_CONCAT_ARG_SLOTS",
-									"csr": "JDK-8286021"
-								},
-								{
-									"type": "method",
-									"name": "makeConcatWithTemplate(List, List)",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplate(java.util.List,java.util.List)",
-									"csr": "JDK-8286021"
-								},
-								{
-									"type": "method",
-									"name": "makeConcatWithTemplateCluster(List, List, int)",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplateCluster(java.util.List,java.util.List,int)",
-									"csr": "JDK-8286021"
-								},
-								{
-									"type": "method",
-									"name": "makeConcatWithTemplateGetters(List, List, int)",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithTemplateGetters(java.util.List,java.util.List,int)",
-									"csr": "JDK-8286021"
 								}
 							]
 						},
@@ -3055,30 +3032,6 @@
 						},
 						{
 							"type": "interface",
-							"name": "StringTemplate.Processor.Linkage",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StringTemplate.Processor.Linkage.html",
-							"csr": "JDK-8286021"
-						},
-						{
-							"type": "interface",
-							"name": "StringTemplate.Processor",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StringTemplate.Processor.html",
-							"csr": "JDK-8286021"
-						},
-						{
-							"type": "interface",
-							"name": "StringTemplate",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StringTemplate.html",
-							"csr": "JDK-8286021"
-						},
-						{
-							"type": "interface",
 							"name": "Thread.Builder.OfPlatform",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/Thread.Builder.OfPlatform.html",
@@ -4766,6 +4719,18 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#setStrict(boolean)"
+								},
+								{
+									"type": "method",
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#toString()",
@@ -4785,6 +4750,18 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#%3Cinit%3E(java.lang.String,java.text.DecimalFormatSymbols,java.lang.String%5B%5D,java.lang.String)",
 									"csr": "JDK-8232633"
+								},
+								{
+									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#setStrict(boolean)"
 								},
 								{
 									"type": "method",
@@ -4832,6 +4809,18 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setStrict(boolean)"
+								},
+								{
+									"type": "method",
 									"name": "toString()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#toString()",
@@ -4858,6 +4847,26 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#toString()",
 									"csr": "JDK-8323088"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "NumberFormat",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isStrict()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#isStrict()"
+								},
+								{
+									"type": "method",
+									"name": "setStrict(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#setStrict(boolean)"
 								}
 							]
 						},
@@ -6254,14 +6263,6 @@
 							"addedTags": [
 								"sealed"
 							]
-						},
-						{
-							"type": "class",
-							"name": "FormatProcessor",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/FormatProcessor.html",
-							"csr": "JDK-8286021"
 						},
 						{
 							"type": "class",

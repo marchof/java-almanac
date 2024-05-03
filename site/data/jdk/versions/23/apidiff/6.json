@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+18-1469"
+		"version": "23-ea+21-1723"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -3323,6 +3323,23 @@
 							"name": "setObjectInputFilter(ObjectInputFilter)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectInputStream.html#setObjectInputFilter(java.io.ObjectInputFilter)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ObjectOutputStream.PutField",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "write(ObjectOutput)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
+							"addedTags": [
+								"forRemoval"
+							]
 						}
 					]
 				},
@@ -9245,30 +9262,6 @@
 				},
 				{
 					"type": "interface",
-					"name": "StringTemplate.Processor.Linkage",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StringTemplate.Processor.Linkage.html",
-					"csr": "JDK-8286021"
-				},
-				{
-					"type": "interface",
-					"name": "StringTemplate.Processor",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StringTemplate.Processor.html",
-					"csr": "JDK-8286021"
-				},
-				{
-					"type": "interface",
-					"name": "StringTemplate",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StringTemplate.html",
-					"csr": "JDK-8286021"
-				},
-				{
-					"type": "interface",
 					"name": "System.Logger",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/System.Logger.html"
@@ -14130,6 +14123,18 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "isStrict()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#isStrict()"
+						},
+						{
+							"type": "method",
+							"name": "setStrict(boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#setStrict(boolean)"
+						},
+						{
+							"type": "method",
 							"name": "toString()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#toString()",
@@ -14181,9 +14186,21 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "isStrict()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#isStrict()"
+						},
+						{
+							"type": "method",
 							"name": "setGroupingUsed(boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setGroupingUsed(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "setStrict(boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setStrict(boolean)"
 						},
 						{
 							"type": "method",
@@ -14257,6 +14274,18 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#getCompactNumberInstance(java.util.Locale,java.text.NumberFormat.Style)",
 							"csr": "JDK-8188147"
+						},
+						{
+							"type": "method",
+							"name": "isStrict()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#isStrict()"
+						},
+						{
+							"type": "method",
+							"name": "setStrict(boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#setStrict(boolean)"
 						}
 					]
 				},
@@ -18989,14 +19018,6 @@
 					"addedTags": [
 						"sealed"
 					]
-				},
-				{
-					"type": "class",
-					"name": "FormatProcessor",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/FormatProcessor.html",
-					"csr": "JDK-8286021"
 				},
 				{
 					"type": "class",
