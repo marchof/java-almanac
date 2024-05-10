@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+21-1723"
+		"version": "23-ea+22-1824"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -49,6 +49,19 @@
 					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"deltas": [
+						{
+							"type": "enum",
+							"name": "Signature.TypeArg.Bounded.WildcardIndicator",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.WildcardIndicator.html"
+						},
+						{
+							"type": "enum",
+							"name": "Signature.TypeArg.WildcardIndicator",
+							"status": "removed",
+							"preview": true
+						},
 						{
 							"type": "interface",
 							"name": "ClassFile",
@@ -117,6 +130,424 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8321415"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "arrayLoad(TypeKind)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#arrayLoad(java.lang.classfile.TypeKind)"
+								},
+								{
+									"type": "method",
+									"name": "arrayLoadInstruction(TypeKind)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "arrayStore(TypeKind)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#arrayStore(java.lang.classfile.TypeKind)"
+								},
+								{
+									"type": "method",
+									"name": "arrayStoreInstruction(TypeKind)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "branch(Opcode, Label)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#branch(java.lang.classfile.Opcode,java.lang.classfile.Label)"
+								},
+								{
+									"type": "method",
+									"name": "branchInstruction(Opcode, Label)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "constantInstruction(ConstantDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "constantInstruction(Opcode, ConstantDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "conversion(TypeKind, TypeKind)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#conversion(java.lang.classfile.TypeKind,java.lang.classfile.TypeKind)"
+								},
+								{
+									"type": "method",
+									"name": "convertInstruction(TypeKind, TypeKind)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "fieldAccess(Opcode, ClassDesc, String, ClassDesc)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#fieldAccess(java.lang.classfile.Opcode,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc)"
+								},
+								{
+									"type": "method",
+									"name": "fieldAccess(Opcode, FieldRefEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#fieldAccess(java.lang.classfile.Opcode,java.lang.classfile.constantpool.FieldRefEntry)"
+								},
+								{
+									"type": "method",
+									"name": "fieldInstruction(Opcode, ClassDesc, String, ClassDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "fieldInstruction(Opcode, FieldRefEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "incrementInstruction(int, int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "instanceOf(ClassDesc)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#instanceOf(java.lang.constant.ClassDesc)"
+								},
+								{
+									"type": "method",
+									"name": "instanceOf(ClassEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#instanceOf(java.lang.classfile.constantpool.ClassEntry)"
+								},
+								{
+									"type": "method",
+									"name": "instanceof_(ClassDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "instanceof_(ClassEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "invoke(Opcode, ClassDesc, String, MethodTypeDesc, boolean)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#invoke(java.lang.classfile.Opcode,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.MethodTypeDesc,boolean)"
+								},
+								{
+									"type": "method",
+									"name": "invoke(Opcode, MemberRefEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#invoke(java.lang.classfile.Opcode,java.lang.classfile.constantpool.MemberRefEntry)"
+								},
+								{
+									"type": "method",
+									"name": "invokeDynamicInstruction(DynamicCallSiteDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "invokeDynamicInstruction(InvokeDynamicEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "invokeInstruction(Opcode, ClassDesc, String, MethodTypeDesc, boolean)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "invokeInstruction(Opcode, MemberRefEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "loadConstant(ConstantDesc)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(java.lang.constant.ConstantDesc)"
+								},
+								{
+									"type": "method",
+									"name": "loadConstant(Opcode, ConstantDesc)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(java.lang.classfile.Opcode,java.lang.constant.ConstantDesc)"
+								},
+								{
+									"type": "method",
+									"name": "loadInstruction(TypeKind, int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "loadLocal(TypeKind, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadLocal(java.lang.classfile.TypeKind,int)"
+								},
+								{
+									"type": "method",
+									"name": "lookupSwitchInstruction(Label, List)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "monitorInstruction(Opcode)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newMultidimensionalArrayInstruction(int, ClassDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newMultidimensionalArrayInstruction(int, ClassEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newObjectInstruction(ClassDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newObjectInstruction(ClassEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newPrimitiveArrayInstruction(TypeKind)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newReferenceArrayInstruction(ClassDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "newReferenceArrayInstruction(ClassEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "nopInstruction()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "operatorInstruction(Opcode)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "returnInstruction(TypeKind)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "return_(TypeKind)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#return_(java.lang.classfile.TypeKind)"
+								},
+								{
+									"type": "method",
+									"name": "stackInstruction(Opcode)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "storeInstruction(TypeKind, int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "storeLocal(TypeKind, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#storeLocal(java.lang.classfile.TypeKind,int)"
+								},
+								{
+									"type": "method",
+									"name": "tableSwitchInstruction(int, int, Label, List)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "throwInstruction()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "typeCheckInstruction(Opcode, ClassDesc)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "typeCheckInstruction(Opcode, ClassEntry)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeArg.Bounded",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.html"
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeArg.Unbounded",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Unbounded.html"
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeArg",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "boundType()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "bounded(Signature.TypeArg.Bounded.WildcardIndicator, Signature.RefTypeSig)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#bounded(java.lang.classfile.Signature.TypeArg.Bounded.WildcardIndicator,java.lang.classfile.Signature.RefTypeSig)"
+								},
+								{
+									"type": "method",
+									"name": "extendsOf(Signature.RefTypeSig)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#extendsOf(java.lang.classfile.Signature.RefTypeSig)"
+								},
+								{
+									"type": "method",
+									"name": "extendsOf(Signature.RefTypeSig)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "of(Signature.RefTypeSig)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#of(java.lang.classfile.Signature.RefTypeSig)"
+								},
+								{
+									"type": "method",
+									"name": "of(Signature.RefTypeSig)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "of(Signature.TypeArg.WildcardIndicator, Optional)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "superOf(Signature.RefTypeSig)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#superOf(java.lang.classfile.Signature.RefTypeSig)"
+								},
+								{
+									"type": "method",
+									"name": "superOf(Signature.RefTypeSig)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "unbounded()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#unbounded()"
+								},
+								{
+									"type": "method",
+									"name": "unbounded()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "wildcardIndicator()",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						}
