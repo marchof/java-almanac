@@ -1,0 +1,6 @@
+{{ range $opcode, $value := $.Site.Data.bytecode.opcodes }}
+  {{ $.AddPage ( dict "path"   $opcode 
+                      "type"   "opcode"
+                      "params" ( dict "opcode" $opcode ) ) }}
+{{ end }}
+
