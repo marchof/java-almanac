@@ -42,17 +42,17 @@ function executeQuery(updatehistory) {
 
 function addFilter(group, value) {
 	searchParams.set(group, value);
-	executeQuery(true)
+	executeQuery(true);
 }
 
 function removeFilter(group) {
 	searchParams.delete(group);
-	executeQuery(true)
+	executeQuery(true);
 }
 
 function tag(name, ...children) {
-	const tag = document.createElement(name)
-	for (const c of children) tag.append(c)
+	const tag = document.createElement(name);
+	children.forEach(c => tag.append(c));
 	return tag;
 }
 
@@ -99,7 +99,7 @@ function renderResult(r) {
 			let separator = false;
 			for (const m of h.more) {
 				if (separator) {
-					s.append(", ")
+					s.append(", ");
 				}
 				const a = tag("a", m.version);
 				a.setAttribute("href", m.url);
