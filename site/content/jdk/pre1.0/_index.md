@@ -20,7 +20,10 @@ The following language specifications are available from that time:
 | 1993 | [Oak Specification](oakspec1993.pdf)          |
 | 1994 | [Oak Language Specification](oakspec1994.pdf) |
 
-## 1995 HotJava
+## 1995 Java Announcement and HotJava
+
+Java was officially announced on 1995/05/23 at the SunWorld '95 convention in San Fransico.
+This is often referred to as the birth date of Java.
 
 The first publicly available Java implementation was part of the *HotJava*
 browser. From the original documentation:
@@ -29,10 +32,10 @@ browser. From the original documentation:
 
 The HotJava distributions contained the respective Java class libraries in source code:
 
-| Version    | Documentation                    | Download                                     |
-| ---------- | -------------------------------- | -------------------------------------------- |
-| 1.0 Alpha2 | [Browse Online](hotjava-alpha2/) | [hotjava-alpha2.tar.z](hotjava-alpha2.tar.z) |
-| 1.0 Alpha3 | [Browse Online](hotjava-alpha3/) | [hotjava-alpha3.tar.z](hotjava-alpha3.tar.z) |
+| Version    | Date | Documentation        | Download |
+| ---------- | ---- | ---------------------| -------- |
+| 1.0 Alpha2 | 1995/03/34 | [All](hotjava-alpha2/) - [API](hotjava-alpha2/doc/api/packages.html) - [Lang](hotjava-alpha2/doc/javaspec/javaspec_1.html) | [hotjava-alpha2.tar.z](hotjava-alpha2.tar.z) |
+| 1.0 Alpha3 | 1995/05/19 | [All](hotjava-alpha3/)  - [API](hotjava-alpha3/doc/api/packages.html) - [Lang](hotjava-alpha3/doc/javaspec/javaspec_1.html) | [hotjava-alpha3.tar.z](hotjava-alpha3.tar.z) |
 
 If you want to install and run the above downloads please make sure that the system requirements are fulfilled:
 
