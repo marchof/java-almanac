@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+23-1895"
+		"version": "23-ea+24-1995"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -1971,6 +1971,194 @@
 		},
 		{
 			"type": "package",
+			"name": "java.beans.beancontext",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "BeanContextChildSupport",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BeanContextEvent",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BeanContextMembershipEvent",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BeanContextServiceAvailableEvent",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BeanContextServiceRevokedEvent",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BeanContextServicesSupport",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
+					"name": "BeanContextSupport",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextChildComponentProxy",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextChildComponentProxy.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextChild",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextContainerProxy",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextMembershipListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextProxy",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextServiceProviderBeanInfo",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextServiceProvider",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextServiceRevokedListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextServicesListener",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContextServices",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "BeanContext",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContext.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
 			"name": "java.beans",
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/package-summary.html",
@@ -1993,6 +2181,16 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/Beans.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "instantiate(ClassLoader, String, BeanContext)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
 						{
 							"type": "method",
 							"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
@@ -2151,10 +2349,34 @@
 						},
 						{
 							"type": "method",
+							"name": "format(Locale, String, Object...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#format(java.util.Locale,java.lang.String,java.lang.Object...)"
+						},
+						{
+							"type": "method",
 							"name": "isTerminal()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#isTerminal()",
 							"csr": "JDK-8309141"
+						},
+						{
+							"type": "method",
+							"name": "printf(Locale, String, Object...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)"
+						},
+						{
+							"type": "method",
+							"name": "readLine(Locale, String, Object...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readLine(java.util.Locale,java.lang.String,java.lang.Object...)"
+						},
+						{
+							"type": "method",
+							"name": "readPassword(Locale, String, Object...)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)"
 						}
 					]
 				},
@@ -7521,9 +7743,27 @@
 						},
 						{
 							"type": "method",
+							"name": "getTTL()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/DatagramSocketImpl.html#getTTL()",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setOption(SocketOption, Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/DatagramSocketImpl.html#setOption(java.net.SocketOption,java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "setTTL(byte)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/DatagramSocketImpl.html#setTTL(byte)",
+							"addedTags": [
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -7670,6 +7910,15 @@
 						},
 						{
 							"type": "method",
+							"name": "getTTL()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#getTTL()",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "joinGroup(InetAddress)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)",
@@ -7688,6 +7937,15 @@
 						},
 						{
 							"type": "method",
+							"name": "send(DatagramPacket, byte)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#send(java.net.DatagramPacket,byte)",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setInterface(InetAddress)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)",
@@ -7702,6 +7960,15 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)",
 							"addedTags": [
 								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setTTL(byte)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#setTTL(byte)",
+							"addedTags": [
+								"forRemoval"
 							]
 						}
 					]
@@ -11333,6 +11600,20 @@
 							"name": "truncatedTo(TemporalUnit)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/time/Duration.html#truncatedTo(java.time.temporal.TemporalUnit)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Instant",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/time/Instant.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "until(Instant)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/time/Instant.html#until(java.time.Instant)"
 						}
 					]
 				},
@@ -18245,6 +18526,12 @@
 				},
 				{
 					"type": "enum",
+					"name": "Elements.DocCommentKind",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.DocCommentKind.html"
+				},
+				{
+					"type": "enum",
 					"name": "Elements.Origin",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html"
@@ -18272,6 +18559,12 @@
 							"name": "getAllTypeElements(CharSequence)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"
+						},
+						{
+							"type": "method",
+							"name": "getDocCommentKind(Element)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocCommentKind(javax.lang.model.element.Element)"
 						},
 						{
 							"type": "method",
