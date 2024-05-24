@@ -25,6 +25,8 @@ The following language specifications are available from that time:
 Java was officially announced on 1995/05/23 at the SunWorld '95 convention in San Fransico.
 This is often referred to as the birth date of Java.
 
+![HotJava](hotjava.png)
+
 The first publicly available Java implementation was part of the *HotJava*
 browser. From the original documentation:
 
