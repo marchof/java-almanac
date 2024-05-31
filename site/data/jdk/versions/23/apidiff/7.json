@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+24-1995"
+		"version": "23-ea+25-2094"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -2488,9 +2488,23 @@
 						},
 						{
 							"type": "method",
+							"name": "print(Object)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#print(java.lang.Object)"
+						},
+						{
+							"type": "method",
 							"name": "printf(Locale, String, Object...)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)"
+						},
+						{
+							"type": "method",
+							"name": "println(Object)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#println(java.lang.Object)"
 						},
 						{
 							"type": "method",
@@ -2503,6 +2517,13 @@
 							"name": "readPassword(Locale, String, Object...)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)"
+						},
+						{
+							"type": "method",
+							"name": "readln(String)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readln(java.lang.String)"
 						}
 					]
 				},
@@ -2610,6 +2631,13 @@
 							"csr": "JDK-8198790"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "IO",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/IO.html"
 				},
 				{
 					"type": "class",
@@ -9026,6 +9054,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Inet4Address.html#ofLiteral(java.lang.String)",
 							"csr": "JDK-8312170"
+						},
+						{
+							"type": "method",
+							"name": "ofPosixLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Inet4Address.html#ofPosixLiteral(java.lang.String)"
 						}
 					]
 				},

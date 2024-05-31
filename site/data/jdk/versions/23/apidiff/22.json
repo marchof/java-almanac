@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+24-1995"
+		"version": "23-ea+25-2094"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -37,9 +37,23 @@
 								},
 								{
 									"type": "method",
+									"name": "print(Object)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#print(java.lang.Object)"
+								},
+								{
+									"type": "method",
 									"name": "printf(Locale, String, Object...)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)"
+								},
+								{
+									"type": "method",
+									"name": "println(Object)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#println(java.lang.Object)"
 								},
 								{
 									"type": "method",
@@ -52,8 +66,22 @@
 									"name": "readPassword(Locale, String, Object...)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)"
+								},
+								{
+									"type": "method",
+									"name": "readln(String)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readln(java.lang.String)"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "IO",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/IO.html"
 						},
 						{
 							"type": "class",
@@ -81,6 +109,498 @@
 					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Attributes",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html",
+							"addedTags": [
+								"final"
+							],
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ANNOTATION_DEFAULT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "BOOTSTRAP_METHODS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CHARACTER_RANGE_TABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CODE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "COMPILATION_ID",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CONSTANT_VALUE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DEPRECATED",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ENCLOSING_METHOD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "EXCEPTIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INNER_CLASSES",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LINE_NUMBER_TABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LOCAL_VARIABLE_TABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LOCAL_VARIABLE_TYPE_TABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "METHOD_PARAMETERS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MODULE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MODULE_HASHES",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MODULE_MAIN_CLASS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MODULE_PACKAGES",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MODULE_RESOLUTION",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MODULE_TARGET",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "NEST_HOST",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "NEST_MEMBERS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "PERMITTED_SUBCLASSES",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "PREDEFINED_ATTRIBUTES",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RECORD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RUNTIME_INVISIBLE_ANNOTATIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RUNTIME_INVISIBLE_PARAMETER_ANNOTATIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RUNTIME_INVISIBLE_TYPE_ANNOTATIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RUNTIME_VISIBLE_ANNOTATIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RUNTIME_VISIBLE_TYPE_ANNOTATIONS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SIGNATURE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SOURCE_DEBUG_EXTENSION",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SOURCE_FILE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SOURCE_ID",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "STACK_MAP_TABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SYNTHETIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "annotationDefault()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#annotationDefault()"
+								},
+								{
+									"type": "method",
+									"name": "bootstrapMethods()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#bootstrapMethods()"
+								},
+								{
+									"type": "method",
+									"name": "characterRangeTable()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#characterRangeTable()"
+								},
+								{
+									"type": "method",
+									"name": "code()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#code()"
+								},
+								{
+									"type": "method",
+									"name": "compilationId()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#compilationId()"
+								},
+								{
+									"type": "method",
+									"name": "constantValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#constantValue()"
+								},
+								{
+									"type": "method",
+									"name": "deprecated()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#deprecated()"
+								},
+								{
+									"type": "method",
+									"name": "enclosingMethod()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#enclosingMethod()"
+								},
+								{
+									"type": "method",
+									"name": "exceptions()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#exceptions()"
+								},
+								{
+									"type": "method",
+									"name": "innerClasses()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#innerClasses()"
+								},
+								{
+									"type": "method",
+									"name": "lineNumberTable()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#lineNumberTable()"
+								},
+								{
+									"type": "method",
+									"name": "localVariableTable()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#localVariableTable()"
+								},
+								{
+									"type": "method",
+									"name": "localVariableTypeTable()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#localVariableTypeTable()"
+								},
+								{
+									"type": "method",
+									"name": "methodParameters()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#methodParameters()"
+								},
+								{
+									"type": "method",
+									"name": "module()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#module()"
+								},
+								{
+									"type": "method",
+									"name": "moduleHashes()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleHashes()"
+								},
+								{
+									"type": "method",
+									"name": "moduleMainClass()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleMainClass()"
+								},
+								{
+									"type": "method",
+									"name": "modulePackages()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#modulePackages()"
+								},
+								{
+									"type": "method",
+									"name": "moduleResolution()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleResolution()"
+								},
+								{
+									"type": "method",
+									"name": "moduleTarget()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleTarget()"
+								},
+								{
+									"type": "method",
+									"name": "nestHost()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#nestHost()"
+								},
+								{
+									"type": "method",
+									"name": "nestMembers()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#nestMembers()"
+								},
+								{
+									"type": "method",
+									"name": "permittedSubclasses()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#permittedSubclasses()"
+								},
+								{
+									"type": "method",
+									"name": "record()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#record()"
+								},
+								{
+									"type": "method",
+									"name": "runtimeInvisibleAnnotations()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleAnnotations()"
+								},
+								{
+									"type": "method",
+									"name": "runtimeInvisibleParameterAnnotations()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleParameterAnnotations()"
+								},
+								{
+									"type": "method",
+									"name": "runtimeInvisibleTypeAnnotations()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleTypeAnnotations()"
+								},
+								{
+									"type": "method",
+									"name": "runtimeVisibleAnnotations()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleAnnotations()"
+								},
+								{
+									"type": "method",
+									"name": "runtimeVisibleParameterAnnotations()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleParameterAnnotations()"
+								},
+								{
+									"type": "method",
+									"name": "runtimeVisibleTypeAnnotations()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleTypeAnnotations()"
+								},
+								{
+									"type": "method",
+									"name": "signature()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#signature()"
+								},
+								{
+									"type": "method",
+									"name": "sourceDebugExtension()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceDebugExtension()"
+								},
+								{
+									"type": "method",
+									"name": "sourceFile()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceFile()"
+								},
+								{
+									"type": "method",
+									"name": "sourceId()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceId()"
+								},
+								{
+									"type": "method",
+									"name": "stackMapTable()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#stackMapTable()"
+								},
+								{
+									"type": "method",
+									"name": "standardAttribute(Utf8Entry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "synthetic()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#synthetic()"
+								}
+							]
+						},
 						{
 							"type": "enum",
 							"name": "Signature.TypeArg.Bounded.WildcardIndicator",
@@ -856,6 +1376,20 @@
 									"addedTags": [
 										"forRemoval"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Inet4Address",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Inet4Address.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofPosixLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Inet4Address.html#ofPosixLiteral(java.lang.String)"
 								}
 							]
 						},
