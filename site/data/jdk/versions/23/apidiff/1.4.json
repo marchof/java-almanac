@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+25-2094"
+		"version": "23-ea+26-2269"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -12907,6 +12907,13 @@
 				},
 				{
 					"type": "interface",
+					"name": "ScopedValue.CallableOp",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.CallableOp.html"
+				},
+				{
+					"type": "interface",
 					"name": "StackWalker.StackFrame",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/StackWalker.StackFrame.html"
@@ -14191,9 +14198,27 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "Socket(InetAddress, int, boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,boolean)",
+							"addedTags": [
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "Socket(Proxy)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.Proxy)"
+						},
+						{
+							"type": "method",
+							"name": "Socket(String, int, boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,boolean)",
+							"addedTags": [
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -28810,6 +28835,12 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#TABLOID"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "OutputBin",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/OutputBin.html"
 				},
 				{
 					"type": "class",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+25-2094"
+		"version": "23-ea+26-2269"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -105,6 +105,31 @@
 									"addedTags": [
 										"forRemoval"
 									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.constantpool",
+					"status": "notmodified",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ConstantPool",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "entryByIndex(int, Class)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html#entryByIndex(int,java.lang.Class)"
 								}
 							]
 						}
@@ -767,6 +792,40 @@
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_23_VERSION",
 									"csr": "JDK-8319428"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassReader",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "readEntryOrNull(int, Class)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassReader.html#readEntryOrNull(int,java.lang.Class)"
+								},
+								{
+									"type": "method",
+									"name": "skipAttributeHolder(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "thisClassPos()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "utf8EntryByIndex(int)",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						},
@@ -1442,6 +1501,62 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "ScopedValue.Carrier",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "call(Callable)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "call(ScopedValue.CallableOp)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.Carrier.html#call(java.lang.ScopedValue.CallableOp)"
+								},
+								{
+									"type": "method",
+									"name": "get(Supplier)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "callWhere(ScopedValue, Object, Callable)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "callWhere(ScopedValue, Object, ScopedValue.CallableOp)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.html#callWhere(java.lang.ScopedValue,java.lang.Object,java.lang.ScopedValue.CallableOp)"
+								},
+								{
+									"type": "method",
+									"name": "getWhere(ScopedValue, Object, Supplier)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "ThreadGroup",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ThreadGroup.html",
@@ -1485,6 +1600,13 @@
 									"csr": "JDK-8320598"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "ScopedValue.CallableOp",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.CallableOp.html"
 						},
 						{
 							"type": "interface",
@@ -1585,6 +1707,32 @@
 									"name": "setTTL(byte)",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#setTTL(byte)",
+									"addedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Socket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Socket(InetAddress, int, boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,boolean)",
+									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Socket(String, int, boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,boolean)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -2243,6 +2391,20 @@
 									]
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.print.attribute.standard",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "OutputBin",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/OutputBin.html"
 						}
 					]
 				},
