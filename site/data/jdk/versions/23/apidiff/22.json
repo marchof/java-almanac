@@ -129,7 +129,8 @@
 									"name": "entryByIndex(int, Class)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html#entryByIndex(int,java.lang.Class)"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html#entryByIndex(int,java.lang.Class)",
+									"csr": "JDK-8332616"
 								}
 							]
 						}
@@ -807,25 +808,29 @@
 									"name": "readEntryOrNull(int, Class)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassReader.html#readEntryOrNull(int,java.lang.Class)"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassReader.html#readEntryOrNull(int,java.lang.Class)",
+									"csr": "JDK-8332616"
 								},
 								{
 									"type": "method",
 									"name": "skipAttributeHolder(int)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8332598"
 								},
 								{
 									"type": "method",
 									"name": "thisClassPos()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8332598"
 								},
 								{
 									"type": "method",
 									"name": "utf8EntryByIndex(int)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8332616"
 								}
 							]
 						},
@@ -1510,20 +1515,23 @@
 									"type": "method",
 									"name": "call(Callable)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8331190"
 								},
 								{
 									"type": "method",
 									"name": "call(ScopedValue.CallableOp)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.Carrier.html#call(java.lang.ScopedValue.CallableOp)"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.Carrier.html#call(java.lang.ScopedValue.CallableOp)",
+									"csr": "JDK-8331190"
 								},
 								{
 									"type": "method",
 									"name": "get(Supplier)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8331190"
 								}
 							]
 						},
@@ -1538,20 +1546,23 @@
 									"type": "method",
 									"name": "callWhere(ScopedValue, Object, Callable)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8331190"
 								},
 								{
 									"type": "method",
 									"name": "callWhere(ScopedValue, Object, ScopedValue.CallableOp)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.html#callWhere(java.lang.ScopedValue,java.lang.Object,java.lang.ScopedValue.CallableOp)"
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.html#callWhere(java.lang.ScopedValue,java.lang.Object,java.lang.ScopedValue.CallableOp)",
+									"csr": "JDK-8331190"
 								},
 								{
 									"type": "method",
 									"name": "getWhere(ScopedValue, Object, Supplier)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8331190"
 								}
 							]
 						},
@@ -1606,7 +1617,8 @@
 							"name": "ScopedValue.CallableOp",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.CallableOp.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
+							"csr": "JDK-8331190"
 						},
 						{
 							"type": "interface",
@@ -2404,7 +2416,8 @@
 							"type": "class",
 							"name": "OutputBin",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/OutputBin.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/OutputBin.html",
+							"csr": "JDK-8331601"
 						}
 					]
 				},
