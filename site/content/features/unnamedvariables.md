@@ -1,12 +1,12 @@
 ---
-title: Unnamed Patterns and Variables (JEP 443)
+title: Unnamed Patterns and Variables (JEP 456)
 copyright: Cay S. Horstmann 2023. All rights reserved.
-jep: 443
-jdkversion: 21
+jep: 456
+jdkversion: 22
 ---
 
 
-Sometimes, Java syntax requires you to specify a variable name even when you never refer to it. JEP 443 allows you to use an underscore in many of these cases. This feature is probably most useful in record patterns, where an underscore can even replace a type + name. This article shows all situations where you can use the “unnamed” underscore.
+Sometimes, Java syntax requires you to specify a variable name even when you never refer to it. JEP 456 allows you to use an underscore in many of these cases. This feature is probably most useful in record patterns, where an underscore can even replace a type + name. This article shows all situations where you can use the “unnamed” underscore.
 
 Both in record patterns and variable declarations, you specify variables by providing a type (or `var`) and a name. It can happen that you don't need the name, or even the type. Under certain circumstances, you can then use an underscore `_` placeholder for the name, or for both type and name. 
 
