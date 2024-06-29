@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+28-2286"
+		"version": "23-ea+29-2309"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -7175,6 +7175,24 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "BasicSliderUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "BasicSliderUI()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
 							]
 						},
 						{
