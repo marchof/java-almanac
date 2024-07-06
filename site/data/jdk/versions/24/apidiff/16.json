@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+4-379"
+		"version": "24-ea+5-515"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -7204,6 +7204,20 @@
 						},
 						{
 							"type": "class",
+							"name": "BasicSplitPaneDivider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setEnabled(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setEnabled(boolean)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "BasicSplitPaneUI.BasicHorizontalLayoutManager",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html",
@@ -7542,6 +7556,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSlider.AccessibleJSlider.html#getAccessibleActionDescription(int)",
 									"csr": "JDK-8264592"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "JSplitPane",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setEnabled(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html#setEnabled(boolean)"
 								}
 							]
 						},

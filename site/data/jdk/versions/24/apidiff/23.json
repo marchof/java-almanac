@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+29-2309"
+		"version": "23-ea+30-2323"
 	},
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+4-379"
+		"version": "24-ea+5-515"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -17,6 +17,78 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "java.lang.classfile.attribute",
+					"status": "notmodified",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ModuleAttribute.ModuleAttributeBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleAttribute.ModuleAttributeBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "build()",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.components",
+					"status": "notmodified",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "CodeRelabeler",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeRelabeler.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "relabel(Label, CodeBuilder)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.constantpool",
+					"status": "notmodified",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ConstantPoolBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantPoolBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "writeBootstrapMethods(BufWriter)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "java.lang.classfile",
@@ -38,6 +110,131 @@
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_24_VERSION",
 									"csr": "JDK-8330188"
+								},
+								{
+									"type": "method",
+									"name": "transform(ClassModel, ClassDesc, ClassTransform)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "transform(ClassModel, ClassEntry, ClassTransform)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "transform(ClassModel, ClassTransform)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "transformClass(ClassModel, ClassDesc, ClassTransform)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#transformClass(java.lang.classfile.ClassModel,java.lang.constant.ClassDesc,java.lang.classfile.ClassTransform)"
+								},
+								{
+									"type": "method",
+									"name": "transformClass(ClassModel, ClassEntry, ClassTransform)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#transformClass(java.lang.classfile.ClassModel,java.lang.classfile.constantpool.ClassEntry,java.lang.classfile.ClassTransform)"
+								},
+								{
+									"type": "method",
+									"name": "transformClass(ClassModel, ClassTransform)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#transformClass(java.lang.classfile.ClassModel,java.lang.classfile.ClassTransform)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassReader",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassReader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "readClassEntry(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readMethodHandleEntry(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readModuleEntry(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readNameAndTypeEntry(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readPackageEntry(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readUtf8Entry(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readUtf8EntryOrNull(int)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "if_nonnull(Label)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "if_null(Label)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ifnonnull(Label)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnonnull(java.lang.classfile.Label)"
+								},
+								{
+									"type": "method",
+									"name": "ifnull(Label)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnull(java.lang.classfile.Label)"
 								}
 							]
 						}
@@ -92,6 +289,58 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_24",
 									"csr": "JDK-8330190"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.basic",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "BasicSplitPaneDivider",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setEnabled(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setEnabled(boolean)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "JSplitPane",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setEnabled(boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html#setEnabled(boolean)"
 								}
 							]
 						}
