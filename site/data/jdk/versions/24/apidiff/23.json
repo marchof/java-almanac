@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+31-2337"
+		"version": "23-ea+33-2358"
 	},
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+6-619"
+		"version": "24-ea+7-732"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -96,6 +96,55 @@
 					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassFileBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "canWriteDirect(ConstantPool)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "transform(CompoundElement, ClassFileTransform)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileBuilder.html#transform(java.lang.classfile.CompoundElement,java.lang.classfile.ClassFileTransform)"
+								},
+								{
+									"type": "method",
+									"name": "transform(CompoundElement, ClassFileTransform)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassFileTransform.ResolvedTransform",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "ClassFileTransform",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileTransform.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolve(ClassFileBuilder)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "ClassFile",
@@ -205,6 +254,21 @@
 						},
 						{
 							"type": "interface",
+							"name": "ClassTransform",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassTransform.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolve(ClassBuilder)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "CodeBuilder",
 							"status": "notmodified",
 							"preview": true,
@@ -235,6 +299,79 @@
 									"status": "added",
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnull(java.lang.classfile.Label)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeTransform",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeTransform.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolve(CodeBuilder)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CompoundElement",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CompoundElement.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "elements()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "forEach(Consumer)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CompoundElement.html#forEach(java.util.function.Consumer)"
+								},
+								{
+									"type": "method",
+									"name": "forEachElement(Consumer)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FieldTransform",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldTransform.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolve(FieldBuilder)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTransform",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodTransform.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "resolve(MethodBuilder)",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						}
