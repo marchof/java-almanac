@@ -47,6 +47,8 @@ public class GetJdkVersion extends GetOperationDefinition {
 						.addEnum("EOL")) //
 				.setProperty("bytecode", new Schema() //
 						.setType("string")) //
+				.setProperty("unicode", new Schema() //
+						.setType("string")) //
 				.setProperty("documentation", new Schema() //
 						.setType("object") //
 						.setProperty("notes", new Schema() //
@@ -120,6 +122,7 @@ public class GetJdkVersion extends GetOperationDefinition {
 				.addRequiredField("name") //
 				.addRequiredField("status") //
 				.addRequiredField("bytecode") //
+				.addRequiredField("unicode") //
 				.addRequiredField("documentation") //
 				.addRequiredField("scm") //
 				.addRequiredField("features") //
@@ -130,7 +133,7 @@ public class GetJdkVersion extends GetOperationDefinition {
 	@Override
 	public JsonProcessor getContentResolver() {
 		return root() //
-				.select("$.jdk.versions.[`version`].['version', 'name', 'ga', 'eol', 'latestversion', 'status', 'bytecode', 'documentation', 'scm', 'features']") //
+				.select("$.jdk.versions.[`version`].['version', 'name', 'ga', 'eol', 'latestversion', 'status', 'bytecode', 'unicode', 'documentation', 'scm', 'features']") //
 				.map("$.features.*.refs.*", this::addFeatureRefHref) //
 				.set("apidiffversions", GetJdkVersionApiDiffList.BASE_VERSIONS) //
 				.set("vendors", VENDOR_PROCESSOR);

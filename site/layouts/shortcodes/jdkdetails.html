@@ -32,6 +32,10 @@
       <th style="white-space: nowrap;">Class File Version</th>
       <td>{{ .bytecode }}</td>
     </tr>
+    <tr>
+      <th style="white-space: nowrap;">Unicode Version</th>
+      <td><a href="https://www.unicode.org/versions/Unicode{{ .unicode }}/">{{ .unicode }}</a></td>
+    </tr>
     {{- if .apidiff }}
     <tr>
       <th>API Changes</th>
