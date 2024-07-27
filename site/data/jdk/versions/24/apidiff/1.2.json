@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+7-732"
+		"version": "24-ea+8-851"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -15833,6 +15833,12 @@
 							"name": "toHandle()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Process.html#toHandle()"
+						},
+						{
+							"type": "method",
+							"name": "waitFor(Duration)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Process.html#waitFor(java.time.Duration)"
 						},
 						{
 							"type": "method",
@@ -45115,6 +45121,12 @@
 							"name": "getResizeWeight()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html#getResizeWeight()"
+						},
+						{
+							"type": "method",
+							"name": "setComponentOrientation(ComponentOrientation)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html#setComponentOrientation(java.awt.ComponentOrientation)"
 						},
 						{
 							"type": "method",

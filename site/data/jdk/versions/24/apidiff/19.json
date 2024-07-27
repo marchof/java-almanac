@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+7-732"
+		"version": "24-ea+8-851"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -3062,6 +3062,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Module.html#isNativeAccessEnabled()",
 									"csr": "JDK-8295045"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Process",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Process.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "waitFor(Duration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Process.html#waitFor(java.time.Duration)"
 								}
 							]
 						},
@@ -6244,6 +6258,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "setComponentOrientation(ComponentOrientation)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html#setComponentOrientation(java.awt.ComponentOrientation)"
+								},
 								{
 									"type": "method",
 									"name": "setEnabled(boolean)",

@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "23",
 		"vendor": "open",
-		"version": "23-ea+33-2358"
+		"version": "23-ea+34-2361"
 	},
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+7-732"
+		"version": "24-ea+8-851"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -75,13 +75,65 @@
 						{
 							"type": "interface",
 							"name": "ConstantPoolBuilder",
-							"status": "notmodified",
+							"status": "modified",
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantPoolBuilder.html",
+							"removedTags": [
+								"implements WritableElement"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "writeBootstrapMethods(BufWriter)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PoolEntry",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html",
+							"removedTags": [
+								"implements WritableElement"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.instruction",
+					"status": "notmodified",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "LocalVariableType",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LocalVariableType.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "writeTo(BufWriter)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LocalVariable",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LocalVariable.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "writeTo(BufWriter)",
 									"status": "removed",
 									"preview": true
 								}
@@ -96,6 +148,122 @@
 					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "CustomAttribute",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CustomAttribute.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "writeTo(BufWriter)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationElement",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationElement.html",
+							"removedTags": [
+								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html",
+							"removedTags": [
+								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Annotation",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Annotation.html",
+							"removedTags": [
+								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Attribute",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Attribute.html",
+							"addedTags": [
+								"implements ClassFileElement"
+							],
+							"removedTags": [
+								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "BootstrapMethodEntry",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/BootstrapMethodEntry.html",
+							"removedTags": [
+								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "BufWriter",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/BufWriter.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "copyTo(byte[], int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "writeBytes(BufWriter)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "writeList(List)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "writeListIndices(List)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "original()",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "ClassFileBuilder",
@@ -210,6 +378,12 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "compare(BufWriter, int, int, int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
 									"name": "readClassEntry(int)",
 									"status": "removed",
 									"preview": true
@@ -299,6 +473,12 @@
 									"status": "added",
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnull(java.lang.classfile.Label)"
+								},
+								{
+									"type": "method",
+									"name": "original()",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						},
@@ -347,6 +527,31 @@
 						},
 						{
 							"type": "interface",
+							"name": "FieldBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "original()",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FieldModel",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldModel.html",
+							"removedTags": [
+								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "FieldTransform",
 							"status": "notmodified",
 							"preview": true,
@@ -358,6 +563,31 @@
 									"status": "removed",
 									"preview": true
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodBuilder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodBuilder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "original()",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodModel",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodModel.html",
+							"removedTags": [
+								"implements WritableElement"
 							]
 						},
 						{
@@ -374,6 +604,12 @@
 									"preview": true
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "WritableElement",
+							"status": "removed",
+							"preview": true
 						}
 					]
 				},
@@ -395,6 +631,28 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_24",
 									"csr": "JDK-8330188"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Process",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Process.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "waitFor(Duration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Process.html#waitFor(java.time.Duration)"
 								}
 							]
 						}
@@ -473,6 +731,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "setComponentOrientation(ComponentOrientation)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JSplitPane.html#setComponentOrientation(java.awt.ComponentOrientation)"
+								},
 								{
 									"type": "method",
 									"name": "setEnabled(boolean)",
