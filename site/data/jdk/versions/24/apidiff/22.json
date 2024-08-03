@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+8-851"
+		"version": "24-ea+9-972"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -117,6 +117,29 @@
 					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
 					"deltas": [
+						{
+							"type": "interface",
+							"name": "CodeAttribute",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CodeAttribute.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "maxLocals()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CodeAttribute.html#maxLocals()"
+								},
+								{
+									"type": "method",
+									"name": "maxStack()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CodeAttribute.html#maxStack()"
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "ModuleAttribute.ModuleAttributeBuilder",
@@ -895,6 +918,51 @@
 						},
 						{
 							"type": "interface",
+							"name": "AccessFlags",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AccessFlags.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofClass(AccessFlag...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofClass(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofField(AccessFlag...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofField(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofMethod(AccessFlag...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofMethod(int)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "AnnotationElement",
 							"status": "modified",
 							"preview": true,
@@ -1665,6 +1733,27 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8323067"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeModel",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeModel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "maxLocals()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "maxStack()",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						},
