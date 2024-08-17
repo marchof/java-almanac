@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+10-1076"
+		"version": "24-ea+11-1194"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -202,6 +202,12 @@
 								"implements WritableElement"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "annotationConstantValueEntry(ConstantDesc)",
+									"status": "removed",
+									"preview": true
+								},
 								{
 									"type": "method",
 									"name": "writeBootstrapMethods(BufWriter)",
@@ -987,12 +993,457 @@
 						},
 						{
 							"type": "interface",
+							"name": "AnnotationValue.OfBoolean",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfByte",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfChar",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfChar.html"
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfCharacter",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfConstant",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfConstant.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constantValue()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfConstant.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfDouble",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfFloat",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfInt",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfInt.html"
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfInteger",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfLong",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfShort",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfString",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constant()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html#constant()"
+								},
+								{
+									"type": "method",
+									"name": "resolvedValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html#resolvedValue()"
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "AnnotationValue",
 							"status": "modified",
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html",
 							"removedTags": [
 								"implements WritableElement"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofBoolean(IntegerEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofBoolean(java.lang.classfile.constantpool.IntegerEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofBoolean(IntegerEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofBoolean(boolean)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofBoolean(boolean)"
+								},
+								{
+									"type": "method",
+									"name": "ofBoolean(boolean)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofByte(IntegerEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofByte(java.lang.classfile.constantpool.IntegerEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofByte(IntegerEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofByte(byte)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofByte(byte)"
+								},
+								{
+									"type": "method",
+									"name": "ofByte(byte)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofChar(IntegerEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofChar(java.lang.classfile.constantpool.IntegerEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofChar(IntegerEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofChar(char)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofChar(char)"
+								},
+								{
+									"type": "method",
+									"name": "ofChar(char)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofDouble(DoubleEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofDouble(java.lang.classfile.constantpool.DoubleEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofDouble(DoubleEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofDouble(double)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofDouble(double)"
+								},
+								{
+									"type": "method",
+									"name": "ofDouble(double)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofFloat(FloatEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofFloat(java.lang.classfile.constantpool.FloatEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofFloat(FloatEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofFloat(float)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofFloat(float)"
+								},
+								{
+									"type": "method",
+									"name": "ofFloat(float)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofInt(IntegerEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofInt(java.lang.classfile.constantpool.IntegerEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofInt(IntegerEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofInt(int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofInt(int)"
+								},
+								{
+									"type": "method",
+									"name": "ofInt(int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofLong(LongEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofLong(java.lang.classfile.constantpool.LongEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofLong(LongEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofLong(long)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofLong(long)"
+								},
+								{
+									"type": "method",
+									"name": "ofLong(long)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofShort(IntegerEntry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofShort(java.lang.classfile.constantpool.IntegerEntry)"
+								},
+								{
+									"type": "method",
+									"name": "ofShort(IntegerEntry)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofShort(short)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofShort(short)"
+								},
+								{
+									"type": "method",
+									"name": "ofShort(short)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofString(String)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofString(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "ofString(String)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "ofString(Utf8Entry)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofString(java.lang.classfile.constantpool.Utf8Entry)"
+								},
+								{
+									"type": "method",
+									"name": "ofString(Utf8Entry)",
+									"status": "removed",
+									"preview": true
+								}
 							]
 						},
 						{
