@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+11-1194"
+		"version": "24-ea+12-1307"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -1253,6 +1253,56 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8336027"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.html",
+							"removedTags": [
+								"implements Annotation"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "annotation()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.html#annotation()"
+								},
+								{
+									"type": "method",
+									"name": "of(TypeAnnotation.TargetInfo, List, Annotation)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.html#of(java.lang.classfile.TypeAnnotation.TargetInfo,java.util.List,java.lang.classfile.Annotation)"
+								},
+								{
+									"type": "method",
+									"name": "of(TypeAnnotation.TargetInfo, List, ClassDesc, AnnotationElement...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "of(TypeAnnotation.TargetInfo, List, ClassDesc, List)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "of(TypeAnnotation.TargetInfo, List, Utf8Entry, AnnotationElement...)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "of(TypeAnnotation.TargetInfo, List, Utf8Entry, List)",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						},
