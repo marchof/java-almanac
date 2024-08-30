@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+12-1307"
+		"version": "24-ea+13-1421"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -781,6 +781,41 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Annotation.html",
 							"removedTags": [
 								"implements WritableElement"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AttributeMapper",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "readAttribute(AttributedElement, ClassReader, int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.html#readAttribute(java.lang.classfile.AttributedElement,java.lang.classfile.ClassReader,int)"
+								},
+								{
+									"type": "method",
+									"name": "readAttribute(AttributedElement, ClassReader, int)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "writeAttribute(BufWriter, Attribute)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.html#writeAttribute(java.lang.classfile.BufWriter,java.lang.classfile.Attribute)"
+								},
+								{
+									"type": "method",
+									"name": "writeAttribute(BufWriter, Object)",
+									"status": "removed",
+									"preview": true
+								}
 							]
 						},
 						{
