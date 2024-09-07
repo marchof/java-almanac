@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+13-1421"
+		"version": "24-ea+14-1523"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -198,6 +198,203 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8336586"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "Opcode",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Opcode.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "constantValue()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "isUnconditionalBranch()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "primaryTypeKind()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "secondaryTypeKind()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "slot()",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "TypeKind",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "BOOLEAN",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#BOOLEAN"
+								},
+								{
+									"type": "field",
+									"name": "BYTE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#BYTE"
+								},
+								{
+									"type": "field",
+									"name": "BooleanType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ByteType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CHAR",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#CHAR"
+								},
+								{
+									"type": "field",
+									"name": "CharType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DOUBLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#DOUBLE"
+								},
+								{
+									"type": "field",
+									"name": "DoubleType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FLOAT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#FLOAT"
+								},
+								{
+									"type": "field",
+									"name": "FloatType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#INT"
+								},
+								{
+									"type": "field",
+									"name": "IntType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LONG",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#LONG"
+								},
+								{
+									"type": "field",
+									"name": "LongType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "REFERENCE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#REFERENCE"
+								},
+								{
+									"type": "field",
+									"name": "ReferenceType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SHORT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#SHORT"
+								},
+								{
+									"type": "field",
+									"name": "ShortType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VOID",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#VOID"
+								},
+								{
+									"type": "field",
+									"name": "VoidType",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "descriptor()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "typeName()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "upperBound()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#upperBound()"
 								}
 							]
 						},
@@ -1127,6 +1324,12 @@
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnull(java.lang.classfile.Label)",
 									"csr": "JDK-8335111"
+								},
+								{
+									"type": "method",
+									"name": "loadConstant(Opcode, ConstantDesc)",
+									"status": "removed",
+									"preview": true
 								},
 								{
 									"type": "method",
