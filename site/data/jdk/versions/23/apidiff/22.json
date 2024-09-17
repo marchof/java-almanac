@@ -15,25 +15,25 @@
 			"type": "module",
 			"name": "java.base",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.io",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Console",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "format(Locale, String, Object...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#format(java.util.Locale,java.lang.String,java.lang.Object...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#format(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
 								},
 								{
@@ -41,14 +41,14 @@
 									"name": "print(Object)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#print(java.lang.Object)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#print(java.lang.Object)",
 									"csr": "JDK-8331610"
 								},
 								{
 									"type": "method",
 									"name": "printf(Locale, String, Object...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
 								},
 								{
@@ -56,21 +56,21 @@
 									"name": "println(Object)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#println(java.lang.Object)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#println(java.lang.Object)",
 									"csr": "JDK-8331610"
 								},
 								{
 									"type": "method",
 									"name": "readLine(Locale, String, Object...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readLine(java.util.Locale,java.lang.String,java.lang.Object...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#readLine(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
 								},
 								{
 									"type": "method",
 									"name": "readPassword(Locale, String, Object...)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
 								},
 								{
@@ -78,7 +78,7 @@
 									"name": "readln(String)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/Console.html#readln(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/Console.html#readln(java.lang.String)",
 									"csr": "JDK-8331610"
 								}
 							]
@@ -88,20 +88,20 @@
 							"name": "IO",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/IO.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/IO.html",
 							"csr": "JDK-8331610"
 						},
 						{
 							"type": "class",
 							"name": "ObjectOutputStream.PutField",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "write(ObjectOutput)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -115,21 +115,21 @@
 					"name": "java.lang.classfile.constantpool",
 					"status": "notmodified",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "ConstantPool",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "entryByIndex(int, Class)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html#entryByIndex(int,java.lang.Class)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html#entryByIndex(int,java.lang.Class)",
 									"csr": "JDK-8332616"
 								}
 							]
@@ -141,14 +141,14 @@
 					"name": "java.lang.classfile",
 					"status": "notmodified",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Attributes",
 							"status": "modified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html",
 							"addedTags": [
 								"final"
 							],
@@ -417,7 +417,7 @@
 									"name": "annotationDefault()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#annotationDefault()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#annotationDefault()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -425,7 +425,7 @@
 									"name": "bootstrapMethods()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#bootstrapMethods()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#bootstrapMethods()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -433,7 +433,7 @@
 									"name": "characterRangeTable()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#characterRangeTable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#characterRangeTable()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -441,7 +441,7 @@
 									"name": "code()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#code()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#code()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -449,7 +449,7 @@
 									"name": "compilationId()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#compilationId()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#compilationId()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -457,7 +457,7 @@
 									"name": "constantValue()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#constantValue()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#constantValue()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -465,7 +465,7 @@
 									"name": "deprecated()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#deprecated()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#deprecated()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -473,7 +473,7 @@
 									"name": "enclosingMethod()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#enclosingMethod()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#enclosingMethod()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -481,7 +481,7 @@
 									"name": "exceptions()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#exceptions()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#exceptions()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -489,7 +489,7 @@
 									"name": "innerClasses()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#innerClasses()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#innerClasses()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -497,7 +497,7 @@
 									"name": "lineNumberTable()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#lineNumberTable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#lineNumberTable()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -505,7 +505,7 @@
 									"name": "localVariableTable()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#localVariableTable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#localVariableTable()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -513,7 +513,7 @@
 									"name": "localVariableTypeTable()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#localVariableTypeTable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#localVariableTypeTable()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -521,7 +521,7 @@
 									"name": "methodParameters()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#methodParameters()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#methodParameters()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -529,7 +529,7 @@
 									"name": "module()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#module()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#module()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -537,7 +537,7 @@
 									"name": "moduleHashes()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleHashes()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleHashes()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -545,7 +545,7 @@
 									"name": "moduleMainClass()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleMainClass()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleMainClass()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -553,7 +553,7 @@
 									"name": "modulePackages()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#modulePackages()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#modulePackages()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -561,7 +561,7 @@
 									"name": "moduleResolution()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleResolution()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleResolution()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -569,7 +569,7 @@
 									"name": "moduleTarget()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleTarget()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#moduleTarget()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -577,7 +577,7 @@
 									"name": "nestHost()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#nestHost()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#nestHost()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -585,7 +585,7 @@
 									"name": "nestMembers()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#nestMembers()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#nestMembers()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -593,7 +593,7 @@
 									"name": "permittedSubclasses()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#permittedSubclasses()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#permittedSubclasses()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -601,7 +601,7 @@
 									"name": "record()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#record()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#record()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -609,7 +609,7 @@
 									"name": "runtimeInvisibleAnnotations()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleAnnotations()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleAnnotations()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -617,7 +617,7 @@
 									"name": "runtimeInvisibleParameterAnnotations()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleParameterAnnotations()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleParameterAnnotations()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -625,7 +625,7 @@
 									"name": "runtimeInvisibleTypeAnnotations()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleTypeAnnotations()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeInvisibleTypeAnnotations()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -633,7 +633,7 @@
 									"name": "runtimeVisibleAnnotations()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleAnnotations()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleAnnotations()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -641,7 +641,7 @@
 									"name": "runtimeVisibleParameterAnnotations()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleParameterAnnotations()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleParameterAnnotations()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -649,7 +649,7 @@
 									"name": "runtimeVisibleTypeAnnotations()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleTypeAnnotations()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#runtimeVisibleTypeAnnotations()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -657,7 +657,7 @@
 									"name": "signature()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#signature()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#signature()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -665,7 +665,7 @@
 									"name": "sourceDebugExtension()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceDebugExtension()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceDebugExtension()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -673,7 +673,7 @@
 									"name": "sourceFile()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceFile()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceFile()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -681,7 +681,7 @@
 									"name": "sourceId()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceId()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#sourceId()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -689,7 +689,7 @@
 									"name": "stackMapTable()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#stackMapTable()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#stackMapTable()",
 									"csr": "JDK-8331414"
 								},
 								{
@@ -704,7 +704,7 @@
 									"name": "synthetic()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Attributes.html#synthetic()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Attributes.html#synthetic()",
 									"csr": "JDK-8331414"
 								}
 							]
@@ -714,7 +714,7 @@
 							"name": "Signature.TypeArg.Bounded.WildcardIndicator",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.WildcardIndicator.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.WildcardIndicator.html",
 							"csr": "JDK-8323708"
 						},
 						{
@@ -729,7 +729,7 @@
 							"name": "TypeKind",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/TypeKind.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/TypeKind.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -743,7 +743,7 @@
 									"name": "fromNewarrayCode(int)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/TypeKind.html#fromNewarrayCode(int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/TypeKind.html#fromNewarrayCode(int)",
 									"csr": "JDK-8331745"
 								},
 								{
@@ -751,7 +751,7 @@
 									"name": "newarrayCode()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/TypeKind.html#newarrayCode()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/TypeKind.html#newarrayCode()",
 									"csr": "JDK-8331745"
 								},
 								{
@@ -768,7 +768,7 @@
 							"name": "BufWriter",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/BufWriter.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/BufWriter.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -784,14 +784,14 @@
 							"name": "ClassFile",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassFile.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassFile.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "JAVA_23_VERSION",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_23_VERSION",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_23_VERSION",
 									"csr": "JDK-8319428"
 								}
 							]
@@ -801,14 +801,14 @@
 							"name": "ClassReader",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassReader.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassReader.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "readEntryOrNull(int, Class)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassReader.html#readEntryOrNull(int,java.lang.Class)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassReader.html#readEntryOrNull(int,java.lang.Class)",
 									"csr": "JDK-8332616"
 								},
 								{
@@ -839,14 +839,14 @@
 							"name": "ClassSignature",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassSignature.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "of(List, Signature.ClassTypeSig, Signature.ClassTypeSig...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html#of(java.util.List,java.lang.classfile.Signature.ClassTypeSig,java.lang.classfile.Signature.ClassTypeSig...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassSignature.html#of(java.util.List,java.lang.classfile.Signature.ClassTypeSig,java.lang.classfile.Signature.ClassTypeSig...)",
 									"csr": "JDK-8321415"
 								},
 								{
@@ -861,7 +861,7 @@
 									"name": "of(Signature.ClassTypeSig, Signature.ClassTypeSig...)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html#of(java.lang.classfile.Signature.ClassTypeSig,java.lang.classfile.Signature.ClassTypeSig...)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassSignature.html#of(java.lang.classfile.Signature.ClassTypeSig,java.lang.classfile.Signature.ClassTypeSig...)",
 									"csr": "JDK-8321415"
 								},
 								{
@@ -876,7 +876,7 @@
 									"name": "superclassSignature()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/ClassSignature.html#superclassSignature()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/ClassSignature.html#superclassSignature()",
 									"csr": "JDK-8321415"
 								},
 								{
@@ -893,14 +893,14 @@
 							"name": "CodeBuilder",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "arrayLoad(TypeKind)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#arrayLoad(java.lang.classfile.TypeKind)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#arrayLoad(java.lang.classfile.TypeKind)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -915,7 +915,7 @@
 									"name": "arrayStore(TypeKind)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#arrayStore(java.lang.classfile.TypeKind)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#arrayStore(java.lang.classfile.TypeKind)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -930,7 +930,7 @@
 									"name": "branch(Opcode, Label)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#branch(java.lang.classfile.Opcode,java.lang.classfile.Label)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#branch(java.lang.classfile.Opcode,java.lang.classfile.Label)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -959,7 +959,7 @@
 									"name": "conversion(TypeKind, TypeKind)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#conversion(java.lang.classfile.TypeKind,java.lang.classfile.TypeKind)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#conversion(java.lang.classfile.TypeKind,java.lang.classfile.TypeKind)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -974,7 +974,7 @@
 									"name": "fieldAccess(Opcode, ClassDesc, String, ClassDesc)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#fieldAccess(java.lang.classfile.Opcode,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#fieldAccess(java.lang.classfile.Opcode,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.ClassDesc)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -982,7 +982,7 @@
 									"name": "fieldAccess(Opcode, FieldRefEntry)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#fieldAccess(java.lang.classfile.Opcode,java.lang.classfile.constantpool.FieldRefEntry)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#fieldAccess(java.lang.classfile.Opcode,java.lang.classfile.constantpool.FieldRefEntry)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1011,7 +1011,7 @@
 									"name": "instanceOf(ClassDesc)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#instanceOf(java.lang.constant.ClassDesc)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#instanceOf(java.lang.constant.ClassDesc)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1019,7 +1019,7 @@
 									"name": "instanceOf(ClassEntry)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#instanceOf(java.lang.classfile.constantpool.ClassEntry)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#instanceOf(java.lang.classfile.constantpool.ClassEntry)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1041,7 +1041,7 @@
 									"name": "invoke(Opcode, ClassDesc, String, MethodTypeDesc, boolean)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#invoke(java.lang.classfile.Opcode,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.MethodTypeDesc,boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#invoke(java.lang.classfile.Opcode,java.lang.constant.ClassDesc,java.lang.String,java.lang.constant.MethodTypeDesc,boolean)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1049,7 +1049,7 @@
 									"name": "invoke(Opcode, MemberRefEntry)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#invoke(java.lang.classfile.Opcode,java.lang.classfile.constantpool.MemberRefEntry)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#invoke(java.lang.classfile.Opcode,java.lang.classfile.constantpool.MemberRefEntry)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1085,7 +1085,7 @@
 									"name": "loadConstant(ConstantDesc)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(java.lang.constant.ConstantDesc)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(java.lang.constant.ConstantDesc)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1093,7 +1093,7 @@
 									"name": "loadConstant(Opcode, ConstantDesc)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(java.lang.classfile.Opcode,java.lang.constant.ConstantDesc)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(java.lang.classfile.Opcode,java.lang.constant.ConstantDesc)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1108,7 +1108,7 @@
 									"name": "loadLocal(TypeKind, int)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadLocal(java.lang.classfile.TypeKind,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadLocal(java.lang.classfile.TypeKind,int)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1200,7 +1200,7 @@
 									"name": "return_(TypeKind)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#return_(java.lang.classfile.TypeKind)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#return_(java.lang.classfile.TypeKind)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1222,7 +1222,7 @@
 									"name": "storeLocal(TypeKind, int)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#storeLocal(java.lang.classfile.TypeKind,int)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/CodeBuilder.html#storeLocal(java.lang.classfile.TypeKind,int)",
 									"csr": "JDK-8323067"
 								},
 								{
@@ -1260,7 +1260,7 @@
 							"name": "Signature.TypeArg.Bounded",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.html",
 							"csr": "JDK-8323708"
 						},
 						{
@@ -1268,7 +1268,7 @@
 							"name": "Signature.TypeArg.Unbounded",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Unbounded.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Unbounded.html",
 							"csr": "JDK-8323708"
 						},
 						{
@@ -1276,7 +1276,7 @@
 							"name": "Signature.TypeArg",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1290,7 +1290,7 @@
 									"name": "bounded(Signature.TypeArg.Bounded.WildcardIndicator, Signature.RefTypeSig)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#bounded(java.lang.classfile.Signature.TypeArg.Bounded.WildcardIndicator,java.lang.classfile.Signature.RefTypeSig)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#bounded(java.lang.classfile.Signature.TypeArg.Bounded.WildcardIndicator,java.lang.classfile.Signature.RefTypeSig)",
 									"csr": "JDK-8323708"
 								},
 								{
@@ -1298,7 +1298,7 @@
 									"name": "extendsOf(Signature.RefTypeSig)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#extendsOf(java.lang.classfile.Signature.RefTypeSig)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#extendsOf(java.lang.classfile.Signature.RefTypeSig)",
 									"csr": "JDK-8323708"
 								},
 								{
@@ -1313,7 +1313,7 @@
 									"name": "of(Signature.RefTypeSig)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#of(java.lang.classfile.Signature.RefTypeSig)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#of(java.lang.classfile.Signature.RefTypeSig)",
 									"csr": "JDK-8323708"
 								},
 								{
@@ -1335,7 +1335,7 @@
 									"name": "superOf(Signature.RefTypeSig)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#superOf(java.lang.classfile.Signature.RefTypeSig)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#superOf(java.lang.classfile.Signature.RefTypeSig)",
 									"csr": "JDK-8323708"
 								},
 								{
@@ -1350,7 +1350,7 @@
 									"name": "unbounded()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#unbounded()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html#unbounded()",
 									"csr": "JDK-8323708"
 								},
 								{
@@ -1375,19 +1375,19 @@
 					"type": "package",
 					"name": "java.lang.foreign",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/foreign/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "MemorySegment",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/foreign/MemorySegment.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "maxByteAlignment()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/MemorySegment.html#maxByteAlignment()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/foreign/MemorySegment.html#maxByteAlignment()",
 									"csr": "JDK-8330338"
 								}
 							]
@@ -1396,13 +1396,13 @@
 							"type": "interface",
 							"name": "SymbolLookup",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/foreign/SymbolLookup.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "findOrThrow(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/foreign/SymbolLookup.html#findOrThrow(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/foreign/SymbolLookup.html#findOrThrow(java.lang.String)",
 									"csr": "JDK-8330340"
 								}
 							]
@@ -1413,13 +1413,13 @@
 					"type": "package",
 					"name": "java.lang.invoke",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/invoke/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "StringConcatFactory",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/invoke/StringConcatFactory.html",
 							"deltas": [
 								{
 									"type": "field",
@@ -1457,19 +1457,19 @@
 					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/reflect/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "ClassFileFormatVersion",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RELEASE_23",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_23",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_23",
 									"csr": "JDK-8319413"
 								}
 							]
@@ -1480,13 +1480,13 @@
 					"type": "package",
 					"name": "java.lang.runtime",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/runtime/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/runtime/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ExactConversionsSupport",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/runtime/ExactConversionsSupport.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/runtime/ExactConversionsSupport.html",
 							"csr": "JDK-8304487"
 						},
 						{
@@ -1502,14 +1502,14 @@
 					"type": "package",
 					"name": "java.lang",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ScopedValue.Carrier",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1523,7 +1523,7 @@
 									"name": "call(ScopedValue.CallableOp)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.Carrier.html#call(java.lang.ScopedValue.CallableOp)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/ScopedValue.Carrier.html#call(java.lang.ScopedValue.CallableOp)",
 									"csr": "JDK-8331190"
 								},
 								{
@@ -1540,7 +1540,7 @@
 							"name": "ScopedValue",
 							"status": "notmodified",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/ScopedValue.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1554,7 +1554,7 @@
 									"name": "callWhere(ScopedValue, Object, ScopedValue.CallableOp)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.html#callWhere(java.lang.ScopedValue,java.lang.Object,java.lang.ScopedValue.CallableOp)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/ScopedValue.html#callWhere(java.lang.ScopedValue,java.lang.Object,java.lang.ScopedValue.CallableOp)",
 									"csr": "JDK-8331190"
 								},
 								{
@@ -1570,7 +1570,7 @@
 							"type": "class",
 							"name": "ThreadGroup",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ThreadGroup.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/ThreadGroup.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1596,7 +1596,7 @@
 							"type": "class",
 							"name": "Thread",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/Thread.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/Thread.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -1617,7 +1617,7 @@
 							"name": "ScopedValue.CallableOp",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
 							"csr": "JDK-8331190"
 						},
 						{
@@ -1647,19 +1647,19 @@
 					"type": "package",
 					"name": "java.net",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "DatagramSocketImpl",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/DatagramSocketImpl.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/DatagramSocketImpl.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getTTL()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/DatagramSocketImpl.html#getTTL()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/DatagramSocketImpl.html#getTTL()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1668,7 +1668,7 @@
 									"type": "method",
 									"name": "setTTL(byte)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/DatagramSocketImpl.html#setTTL(byte)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/DatagramSocketImpl.html#setTTL(byte)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1679,13 +1679,13 @@
 							"type": "class",
 							"name": "Inet4Address",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Inet4Address.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/Inet4Address.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ofPosixLiteral(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Inet4Address.html#ofPosixLiteral(java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/Inet4Address.html#ofPosixLiteral(java.lang.String)",
 									"csr": "JDK-8329876"
 								}
 							]
@@ -1694,13 +1694,13 @@
 							"type": "class",
 							"name": "MulticastSocket",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/MulticastSocket.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getTTL()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#getTTL()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/MulticastSocket.html#getTTL()",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1709,7 +1709,7 @@
 									"type": "method",
 									"name": "send(DatagramPacket, byte)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#send(java.net.DatagramPacket,byte)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/MulticastSocket.html#send(java.net.DatagramPacket,byte)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1718,7 +1718,7 @@
 									"type": "method",
 									"name": "setTTL(byte)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/MulticastSocket.html#setTTL(byte)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/MulticastSocket.html#setTTL(byte)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1729,13 +1729,13 @@
 							"type": "class",
 							"name": "Socket",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/Socket.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "Socket(InetAddress, int, boolean)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,boolean)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1744,7 +1744,7 @@
 									"type": "method",
 									"name": "Socket(String, int, boolean)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,boolean)",
 									"addedTags": [
 										"forRemoval"
 									]
@@ -1757,33 +1757,33 @@
 					"type": "package",
 					"name": "java.text",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "ChoiceFormat",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/ChoiceFormat.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isStrict()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#isStrict()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/ChoiceFormat.html#isStrict()",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "setStrict(boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#setStrict(boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/ChoiceFormat.html#setStrict(boolean)",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/ChoiceFormat.html#toString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/ChoiceFormat.html#toString()",
 									"csr": "JDK-8323088"
 								}
 							]
@@ -1792,27 +1792,27 @@
 							"type": "class",
 							"name": "CompactNumberFormat",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/CompactNumberFormat.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isStrict()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#isStrict()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/CompactNumberFormat.html#isStrict()",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "setStrict(boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#setStrict(boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/CompactNumberFormat.html#setStrict(boolean)",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/CompactNumberFormat.html#toString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/CompactNumberFormat.html#toString()",
 									"csr": "JDK-8323088"
 								}
 							]
@@ -1821,27 +1821,27 @@
 							"type": "class",
 							"name": "DecimalFormat",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/DecimalFormat.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isStrict()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#isStrict()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/DecimalFormat.html#isStrict()",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "setStrict(boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#setStrict(boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/DecimalFormat.html#setStrict(boolean)",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/DecimalFormat.html#toString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/DecimalFormat.html#toString()",
 									"csr": "JDK-8323088"
 								}
 							]
@@ -1850,13 +1850,13 @@
 							"type": "class",
 							"name": "MessageFormat",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/MessageFormat.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/MessageFormat.html#toString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/MessageFormat.html#toString()",
 									"csr": "JDK-8323088"
 								}
 							]
@@ -1865,20 +1865,20 @@
 							"type": "class",
 							"name": "NumberFormat",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/NumberFormat.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "isStrict()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#isStrict()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/NumberFormat.html#isStrict()",
 									"csr": "JDK-8327703"
 								},
 								{
 									"type": "method",
 									"name": "setStrict(boolean)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/NumberFormat.html#setStrict(boolean)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/NumberFormat.html#setStrict(boolean)",
 									"csr": "JDK-8327703"
 								}
 							]
@@ -1887,13 +1887,13 @@
 							"type": "class",
 							"name": "SimpleDateFormat",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/SimpleDateFormat.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/SimpleDateFormat.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/text/SimpleDateFormat.html#toString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/text/SimpleDateFormat.html#toString()",
 									"csr": "JDK-8323088"
 								}
 							]
@@ -1904,19 +1904,19 @@
 					"type": "package",
 					"name": "java.time",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/time/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Instant",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/time/Instant.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/Instant.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "until(Instant)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/time/Instant.html#until(java.time.Instant)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/Instant.html#until(java.time.Instant)",
 									"csr": "JDK-8331215"
 								}
 							]
@@ -1927,19 +1927,19 @@
 					"type": "package",
 					"name": "java.util.zip",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Deflater",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Deflater.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/Deflater.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getTotalIn()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Deflater.html#getTotalIn()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/Deflater.html#getTotalIn()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1948,7 +1948,7 @@
 									"type": "method",
 									"name": "getTotalOut()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Deflater.html#getTotalOut()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/Deflater.html#getTotalOut()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1959,13 +1959,13 @@
 							"type": "class",
 							"name": "Inflater",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Inflater.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/Inflater.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getTotalIn()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Inflater.html#getTotalIn()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/Inflater.html#getTotalIn()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1974,7 +1974,7 @@
 									"type": "method",
 									"name": "getTotalOut()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/Inflater.html#getTotalOut()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/Inflater.html#getTotalOut()",
 									"addedTags": [
 										"deprecated"
 									]
@@ -1985,13 +1985,13 @@
 							"type": "class",
 							"name": "ZipFile",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/ZipFile.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/ZipFile.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/zip/ZipFile.html#toString()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/zip/ZipFile.html#toString()",
 									"csr": "JDK-8319982"
 								}
 							]
@@ -2002,7 +2002,7 @@
 					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.base/java/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
@@ -2019,20 +2019,20 @@
 			"type": "module",
 			"name": "java.compiler",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.lang.model.util",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "AbstractAnnotationValueVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2040,7 +2040,7 @@
 							"name": "AbstractElementVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2048,7 +2048,7 @@
 							"name": "AbstractTypeVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2056,7 +2056,7 @@
 							"name": "ElementKindVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2064,7 +2064,7 @@
 							"name": "ElementScannerPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/ElementScannerPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/ElementScannerPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2072,7 +2072,7 @@
 							"name": "SimpleAnnotationValueVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2080,7 +2080,7 @@
 							"name": "SimpleElementVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2088,7 +2088,7 @@
 							"name": "SimpleTypeVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
@@ -2096,27 +2096,27 @@
 							"name": "TypeKindVisitorPreview",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitorPreview.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitorPreview.html",
 							"csr": "JDK-8329634"
 						},
 						{
 							"type": "enum",
 							"name": "Elements.DocCommentKind",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.DocCommentKind.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/Elements.DocCommentKind.html",
 							"csr": "JDK-8298687"
 						},
 						{
 							"type": "interface",
 							"name": "Elements",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/Elements.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getDocCommentKind(Element)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocCommentKind(javax.lang.model.element.Element)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocCommentKind(javax.lang.model.element.Element)",
 									"csr": "JDK-8298687"
 								}
 							]
@@ -2125,13 +2125,13 @@
 							"type": "interface",
 							"name": "Types",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Types.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/Types.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "stripAnnotations(TypeMirror)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/util/Types.html#stripAnnotations(javax.lang.model.type.TypeMirror)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/util/Types.html#stripAnnotations(javax.lang.model.type.TypeMirror)",
 									"csr": "JDK-8323620"
 								}
 							]
@@ -2142,19 +2142,19 @@
 					"type": "package",
 					"name": "javax.lang.model",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/package-summary.html",
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "SourceVersion",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
 							"deltas": [
 								{
 									"type": "field",
 									"name": "RELEASE_23",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_23",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_23",
 									"csr": "JDK-8319428"
 								}
 							]
@@ -2165,19 +2165,19 @@
 					"type": "package",
 					"name": "javax.tools",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/tools/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "SimpleJavaFileObject",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "forSource(URI, String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#forSource(java.net.URI,java.lang.String)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#forSource(java.net.URI,java.lang.String)",
 									"csr": "JDK-8327536"
 								}
 							]
@@ -2190,19 +2190,19 @@
 			"type": "module",
 			"name": "java.desktop",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "java.beans.beancontext",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "BeanContextChildSupport",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2212,7 +2212,7 @@
 							"type": "class",
 							"name": "BeanContextEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2222,7 +2222,7 @@
 							"type": "class",
 							"name": "BeanContextMembershipEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2232,7 +2232,7 @@
 							"type": "class",
 							"name": "BeanContextServiceAvailableEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2242,7 +2242,7 @@
 							"type": "class",
 							"name": "BeanContextServiceRevokedEvent",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2252,7 +2252,7 @@
 							"type": "class",
 							"name": "BeanContextServicesSupport",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2262,7 +2262,7 @@
 							"type": "class",
 							"name": "BeanContextSupport",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2272,7 +2272,7 @@
 							"type": "interface",
 							"name": "BeanContextChildComponentProxy",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextChildComponentProxy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextChildComponentProxy.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2282,7 +2282,7 @@
 							"type": "interface",
 							"name": "BeanContextChild",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2292,7 +2292,7 @@
 							"type": "interface",
 							"name": "BeanContextContainerProxy",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2302,7 +2302,7 @@
 							"type": "interface",
 							"name": "BeanContextMembershipListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2312,7 +2312,7 @@
 							"type": "interface",
 							"name": "BeanContextProxy",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2322,7 +2322,7 @@
 							"type": "interface",
 							"name": "BeanContextServiceProviderBeanInfo",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2332,7 +2332,7 @@
 							"type": "interface",
 							"name": "BeanContextServiceProvider",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2342,7 +2342,7 @@
 							"type": "interface",
 							"name": "BeanContextServiceRevokedListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2352,7 +2352,7 @@
 							"type": "interface",
 							"name": "BeanContextServicesListener",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2362,7 +2362,7 @@
 							"type": "interface",
 							"name": "BeanContextServices",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2372,7 +2372,7 @@
 							"type": "interface",
 							"name": "BeanContext",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/beancontext/BeanContext.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/beancontext/BeanContext.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
@@ -2384,19 +2384,19 @@
 					"type": "package",
 					"name": "java.beans",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "Beans",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/Beans.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/Beans.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "instantiate(ClassLoader, String, BeanContext)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -2410,13 +2410,13 @@
 					"type": "package",
 					"name": "javax.print.attribute.standard",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/print/attribute/standard/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "OutputBin",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/print/attribute/standard/OutputBin.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/print/attribute/standard/OutputBin.html",
 							"csr": "JDK-8331601"
 						}
 					]
@@ -2425,19 +2425,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.basic",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "BasicSliderUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "BasicSliderUI()",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E()",
 									"addedTags": [
 										"deprecated",
 										"forRemoval"
@@ -2451,19 +2451,19 @@
 					"type": "package",
 					"name": "javax.swing.plaf.synth",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "SynthTreeUI",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getCollapsedIcon()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html#getCollapsedIcon()",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/synth/SynthTreeUI.html#getCollapsedIcon()",
 									"csr": "JDK-8258979"
 								}
 							]
@@ -2474,26 +2474,26 @@
 					"type": "package",
 					"name": "javax.swing",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "JScrollBar",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JScrollBar.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/JScrollBar.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "setMaximumSize(Dimension)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JScrollBar.html#setMaximumSize(java.awt.Dimension)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/JScrollBar.html#setMaximumSize(java.awt.Dimension)",
 									"csr": "JDK-8317857"
 								},
 								{
 									"type": "method",
 									"name": "setMinimumSize(Dimension)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.desktop/javax/swing/JScrollBar.html#setMinimumSize(java.awt.Dimension)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/JScrollBar.html#setMinimumSize(java.awt.Dimension)",
 									"csr": "JDK-8317857"
 								}
 							]
@@ -2506,19 +2506,19 @@
 			"type": "module",
 			"name": "java.management.rmi",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management.rmi/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.management.remote.rmi",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/javax/management/remote/rmi/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management.rmi/javax/management/remote/rmi/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
 							"name": "RMIConnector",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html",
 							"deltas": [
 								{
 									"type": "method",
@@ -2536,13 +2536,13 @@
 			"type": "module",
 			"name": "java.management",
 			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/module-summary.html",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management/module-summary.html",
 			"deltas": [
 				{
 					"type": "package",
 					"name": "javax.management.loading",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/loading/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management/javax/management/loading/package-summary.html",
 					"deltas": [
 						{
 							"type": "class",
@@ -2574,19 +2574,19 @@
 					"type": "package",
 					"name": "javax.management.remote",
 					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/remote/package-summary.html",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management/javax/management/remote/package-summary.html",
 					"deltas": [
 						{
 							"type": "interface",
 							"name": "JMXConnector",
 							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/remote/JMXConnector.html",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management/javax/management/remote/JMXConnector.html",
 							"deltas": [
 								{
 									"type": "method",
 									"name": "getMBeanServerConnection(Subject)",
 									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk23/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)",
 									"removedTags": [
 										"abstract"
 									]
