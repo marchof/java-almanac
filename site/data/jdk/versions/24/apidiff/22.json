@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+15-1658"
+		"version": "24-ea+16-1800"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -874,6 +874,28 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8336586"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.AttributesProcessingOption",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DROP_UNSTABLE_ATRIBUTES",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DROP_UNSTABLE_ATTRIBUTES",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html#DROP_UNSTABLE_ATTRIBUTES"
 								}
 							]
 						},
