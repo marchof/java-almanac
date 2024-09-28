@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+16-1800"
+		"version": "24-ea+17-1938"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -118,6 +118,106 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
 					"deltas": [
 						{
+							"type": "enum",
+							"name": "StackMapFrameInfo.SimpleVerificationTypeInfo",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DOUBLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#DOUBLE"
+								},
+								{
+									"type": "field",
+									"name": "FLOAT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#FLOAT"
+								},
+								{
+									"type": "field",
+									"name": "INTEGER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#INTEGER"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_DOUBLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ITEM_FLOAT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ITEM_INTEGER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ITEM_LONG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ITEM_NULL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ITEM_TOP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ITEM_UNINITIALIZED_THIS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LONG",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#LONG"
+								},
+								{
+									"type": "field",
+									"name": "NULL",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#NULL"
+								},
+								{
+									"type": "field",
+									"name": "TOP",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#TOP"
+								},
+								{
+									"type": "field",
+									"name": "UNINITIALIZED_THIS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#UNINITIALIZED_THIS"
+								}
+							]
+						},
+						{
 							"type": "interface",
 							"name": "CodeAttribute",
 							"status": "notmodified",
@@ -155,6 +255,78 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8334728"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StackMapFrameInfo.VerificationTypeInfo",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ITEM_DOUBLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_DOUBLE"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_FLOAT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_FLOAT"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_INTEGER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_INTEGER"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_LONG",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_LONG"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_NULL",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_NULL"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_OBJECT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_OBJECT"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_TOP",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_TOP"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_UNINITIALIZED",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_UNINITIALIZED"
+								},
+								{
+									"type": "field",
+									"name": "ITEM_UNINITIALIZED_THIS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_UNINITIALIZED_THIS"
 								}
 							]
 						}
@@ -243,6 +415,127 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html",
 							"removedTags": [
 								"implements WritableElement"
+							],
+							"deltas": [
+								{
+									"type": "field",
+									"name": "TAG_CLASS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_CLASS"
+								},
+								{
+									"type": "field",
+									"name": "TAG_DOUBLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_DOUBLE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_DYNAMIC",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_DYNAMIC"
+								},
+								{
+									"type": "field",
+									"name": "TAG_FIELDREF",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_FIELDREF"
+								},
+								{
+									"type": "field",
+									"name": "TAG_FLOAT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_FLOAT"
+								},
+								{
+									"type": "field",
+									"name": "TAG_INTEGER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_INTEGER"
+								},
+								{
+									"type": "field",
+									"name": "TAG_INTERFACE_METHODREF",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_INTERFACE_METHODREF"
+								},
+								{
+									"type": "field",
+									"name": "TAG_INVOKE_DYNAMIC",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_INVOKE_DYNAMIC"
+								},
+								{
+									"type": "field",
+									"name": "TAG_LONG",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_LONG"
+								},
+								{
+									"type": "field",
+									"name": "TAG_METHODREF",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_METHODREF"
+								},
+								{
+									"type": "field",
+									"name": "TAG_METHOD_HANDLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_METHOD_HANDLE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_METHOD_TYPE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_METHOD_TYPE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_MODULE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_MODULE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_NAME_AND_TYPE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_NAME_AND_TYPE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_PACKAGE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_PACKAGE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_STRING",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_STRING"
+								},
+								{
+									"type": "field",
+									"name": "TAG_UTF8",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_UTF8"
+								}
 							]
 						}
 					]
@@ -254,6 +547,78 @@
 					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/package-summary.html",
 					"deltas": [
+						{
+							"type": "interface",
+							"name": "CharacterRange",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "FLAG_ASSIGNMENT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_ASSIGNMENT"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_BLOCK",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_BLOCK"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_BRANCH_FALSE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_BRANCH_FALSE"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_BRANCH_TRUE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_BRANCH_TRUE"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_CREATE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_CREATE"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_FLOW_CONTROLLER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_FLOW_CONTROLLER"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_FLOW_TARGET",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_FLOW_TARGET"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_INVOKE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_INVOKE"
+								},
+								{
+									"type": "field",
+									"name": "FLAG_STATEMENT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_STATEMENT"
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "LocalVariableType",
@@ -1470,6 +1835,97 @@
 							],
 							"deltas": [
 								{
+									"type": "field",
+									"name": "TAG_ANNOTATION",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_ANNOTATION"
+								},
+								{
+									"type": "field",
+									"name": "TAG_ARRAY",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_ARRAY"
+								},
+								{
+									"type": "field",
+									"name": "TAG_BOOLEAN",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_BOOLEAN"
+								},
+								{
+									"type": "field",
+									"name": "TAG_BYTE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_BYTE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_CHAR",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_CHAR"
+								},
+								{
+									"type": "field",
+									"name": "TAG_CLASS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_CLASS"
+								},
+								{
+									"type": "field",
+									"name": "TAG_DOUBLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_DOUBLE"
+								},
+								{
+									"type": "field",
+									"name": "TAG_ENUM",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_ENUM"
+								},
+								{
+									"type": "field",
+									"name": "TAG_FLOAT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_FLOAT"
+								},
+								{
+									"type": "field",
+									"name": "TAG_INT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_INT"
+								},
+								{
+									"type": "field",
+									"name": "TAG_LONG",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_LONG"
+								},
+								{
+									"type": "field",
+									"name": "TAG_SHORT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_SHORT"
+								},
+								{
+									"type": "field",
+									"name": "TAG_STRING",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_STRING"
+								},
+								{
 									"type": "method",
 									"name": "ofBoolean(IntegerEntry)",
 									"status": "added",
@@ -1936,6 +2392,1026 @@
 							"deltas": [
 								{
 									"type": "field",
+									"name": "AALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ACONST_NULL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_ANNOTATION",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_ARRAY",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_BOOLEAN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_BYTE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_CHAR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_CLASS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_DOUBLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_ENUM",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_FLOAT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_INT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_LONG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_SHORT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "AEV_STRING",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ALOAD_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ALOAD_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ALOAD_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ALOAD_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ANEWARRAY",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ARETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ARRAYLENGTH",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ASTORE_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ASTORE_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ASTORE_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ASTORE_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ATHROW",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "BALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "BASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "BIPUSH",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CHECKCAST",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_ASSIGNMENT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_BLOCK",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_BRANCH_FALSE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_BRANCH_TRUE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_CREATE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_FLOW_CONTROLLER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_FLOW_TARGET",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_INVOKE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "CRT_STATEMENT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "D2F",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "D2I",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "D2L",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DADD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DCMPG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DCMPL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DCONST_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DCONST_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DDIV",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DEFAULT_CLASS_FLAGS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DLOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DLOAD_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DLOAD_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DLOAD_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DLOAD_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DMUL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DNEG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DREM",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DRETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DSTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DSTORE_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DSTORE_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DSTORE_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DSTORE_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DSUB",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DUP2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DUP2_X1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DUP2_X2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DUP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DUP_X1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "DUP_X2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "F2D",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "F2I",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "F2L",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FADD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FCMPG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FCMPL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FCONST_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FCONST_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FCONST_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FDIV",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FLOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FLOAD_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FLOAD_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FLOAD_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FLOAD_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FMUL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FNEG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FREM",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FRETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FSTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FSTORE_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FSTORE_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FSTORE_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FSTORE_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "FSUB",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "GETFIELD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "GETSTATIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "GOTO",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "GOTO_W",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "I2B",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "I2C",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "I2D",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "I2F",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "I2L",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "I2S",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IADD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IAND",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_4",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_5",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ICONST_M1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IDIV",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFEQ",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFGE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFGT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFLT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFNE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFNONNULL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IFNULL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ACMPEQ",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ACMPNE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ICMPEQ",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ICMPGE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ICMPGT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ICMPLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ICMPLT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IF_ICMPNE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IINC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ILOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ILOAD_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ILOAD_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ILOAD_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ILOAD_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IMUL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INEG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INSTANCEOF",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INVOKEDYNAMIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INVOKEINTERFACE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INVOKESPECIAL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INVOKESTATIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "INVOKEVIRTUAL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IOR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IREM",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IRETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISHL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISHR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISTORE_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISTORE_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISTORE_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISTORE_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "ISUB",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IUSHR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "IXOR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
 									"name": "JAVA_23_VERSION",
 									"status": "added",
 									"preview": true,
@@ -1949,6 +3425,630 @@
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_24_VERSION",
 									"csr": "JDK-8330188"
+								},
+								{
+									"type": "field",
+									"name": "JSR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "JSR_W",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "L2D",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "L2F",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "L2I",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LADD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LAND",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LCMP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LCONST_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LCONST_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LDC2_W",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LDC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LDC_W",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LDIV",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LLOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LLOAD_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LLOAD_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LLOAD_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LLOAD_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LMUL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LNEG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LOOKUPSWITCH",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LOR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LREM",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LRETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSHL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSHR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSTORE_0",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSTORE_1",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSTORE_2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSTORE_3",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LSUB",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LUSHR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "LXOR",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MONITORENTER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MONITOREXIT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "MULTIANEWARRAY",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "NEWARRAY",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "NEW",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "NOP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "POP2",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "POP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "PUTFIELD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "PUTSTATIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "RET",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SALOAD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SASTORE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SIPUSH",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "SWAP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TABLESWITCH",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_CLASS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_CONSTANTDYNAMIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_DOUBLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_FIELDREF",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_FLOAT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_INTEGER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_INTERFACEMETHODREF",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_INVOKEDYNAMIC",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_LONG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_METHODHANDLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_METHODREF",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_METHODTYPE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_MODULE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_NAMEANDTYPE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_PACKAGE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_STRING",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_UNICODE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAG_UTF8",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CAST",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CLASS_EXTENDS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CLASS_TYPE_PARAMETER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CLASS_TYPE_PARAMETER_BOUND",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CONSTRUCTOR_REFERENCE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_EXCEPTION_PARAMETER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_FIELD",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_INSTANCEOF",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_LOCAL_VARIABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_FORMAL_PARAMETER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_INVOCATION_TYPE_ARGUMENT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_RECEIVER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_REFERENCE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_REFERENCE_TYPE_ARGUMENT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_RETURN",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_TYPE_PARAMETER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_METHOD_TYPE_PARAMETER_BOUND",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_NEW",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_RESOURCE_VARIABLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "TAT_THROWS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_DOUBLE",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_FLOAT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_INTEGER",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_LONG",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_NULL",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_OBJECT",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_TOP",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_UNINITIALIZED",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "VT_UNINITIALIZED_THIS",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "field",
+									"name": "WIDE",
+									"status": "removed",
+									"preview": true
 								},
 								{
 									"type": "method",
@@ -2393,6 +4493,34 @@
 								},
 								{
 									"type": "method",
+									"name": "loadConstant(double)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(double)"
+								},
+								{
+									"type": "method",
+									"name": "loadConstant(float)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(float)"
+								},
+								{
+									"type": "method",
+									"name": "loadConstant(int)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(int)"
+								},
+								{
+									"type": "method",
+									"name": "loadConstant(long)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(long)"
+								},
+								{
+									"type": "method",
 									"name": "loadInstruction(TypeKind, int)",
 									"status": "removed",
 									"preview": true,
@@ -2822,6 +4950,169 @@
 									"status": "removed",
 									"preview": true,
 									"csr": "JDK-8323708"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.TargetInfo",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "TARGET_CAST",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CAST"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_CLASS_EXTENDS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CLASS_EXTENDS"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_CLASS_TYPE_PARAMETER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CLASS_TYPE_PARAMETER"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_CLASS_TYPE_PARAMETER_BOUND",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CLASS_TYPE_PARAMETER_BOUND"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_CONSTRUCTOR_REFERENCE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CONSTRUCTOR_REFERENCE"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_EXCEPTION_PARAMETER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_EXCEPTION_PARAMETER"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_FIELD",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_FIELD"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_INSTANCEOF",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_INSTANCEOF"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_LOCAL_VARIABLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_LOCAL_VARIABLE"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_FORMAL_PARAMETER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_FORMAL_PARAMETER"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_INVOCATION_TYPE_ARGUMENT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_INVOCATION_TYPE_ARGUMENT"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_RECEIVER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_RECEIVER"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_REFERENCE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_REFERENCE"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_REFERENCE_TYPE_ARGUMENT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_REFERENCE_TYPE_ARGUMENT"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_RETURN",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_RETURN"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_TYPE_PARAMETER",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_TYPE_PARAMETER"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_METHOD_TYPE_PARAMETER_BOUND",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_TYPE_PARAMETER_BOUND"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_NEW",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_NEW"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_RESOURCE_VARIABLE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_RESOURCE_VARIABLE"
+								},
+								{
+									"type": "field",
+									"name": "TARGET_THROWS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_THROWS"
 								}
 							]
 						},
