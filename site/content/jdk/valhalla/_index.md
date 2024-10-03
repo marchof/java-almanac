@@ -8,7 +8,7 @@ Online sandbox for the latest early access build of [Valhalla project](https://j
 {{< sandboxsource "Valhalla.java" >}}
 value class X {
 
-final int i;
+    final int i;
 
     X(int i) {
         this.i = i;
