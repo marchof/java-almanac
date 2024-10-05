@@ -15,7 +15,7 @@ Instantly compile and run Java 24 snippets without a local Java installation.
 {{< sandboxsource "Java24.java" >}}
 import java.lang.reflect.ClassFileFormatVersion;
 
-void main(String[] args) {
+void main() {
     var v = ClassFileFormatVersion.latest();
     System.out.printf("Hello Java bytecode version %s!", v.major());
 }
