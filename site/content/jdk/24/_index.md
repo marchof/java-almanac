@@ -11,17 +11,14 @@ description: Information about Java 24 including documentation links, new APIs, 
 
 Instantly compile and run Java 24 snippets without a local Java installation.
 
-{{< sandbox version="java24" mainclass="Java24" preview="true" >}}
+{{< sandbox version="java24" mainsource="Java24.java" preview="true" >}}
 {{< sandboxsource "Java24.java" >}}
 import java.lang.reflect.ClassFileFormatVersion;
 
-public class Java24 {
-
-    public static void main(String[] args) {
-    	var v = ClassFileFormatVersion.latest();
-        System.out.printf("Hello Java bytecode version %s!", v.major());
-    }
-
+void main(String[] args) {
+    var v = ClassFileFormatVersion.latest();
+    System.out.printf("Hello Java bytecode version %s!", v.major());
 }
+
 {{< /sandboxsource >}}
 {{< /sandbox >}}

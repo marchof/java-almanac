@@ -4,14 +4,15 @@ Vue.component('sandbox', {
     template: `
         <tabs v-bind:infotext="versioninfo" v-bind:infotooltip="versioninfoext">
             <slot></slot>
-            <tab v-bind:onTabClicked="compileandrun" name="▶︎ Run">
+            <tab v-bind:onTabClicked="run" name="▶︎ Run">
                 <div class="sandbox-console">{{ "{{" }} output }}</div>
             </tab>
         </tabs>
     `,
     props: {
         version: { type: String, required: true },
-        mainclass: { type: String, required: true },
+        mainclass: { type: String, required: false },
+        mainsource: { type: String, required: false },
         preview: { type: Boolean, required: false, default: false },
         showInvisibles: { type: Boolean, required: false, default: false }
     },
@@ -34,7 +35,7 @@ Vue.component('sandbox', {
         serviceurl(action) {
             return `{{ $.Site.Params.Api.Sandbox }}jdk/${this.version.replace("java", "")}/${action}`;
         },
-        compileandrun() {
+        run() {
             this.output = "Compile and run with " + this.versioninfo + " ...";
             const sourcefiles = [];
             this.$children[0].$children.forEach(tab => {
@@ -43,11 +44,11 @@ Vue.component('sandbox', {
                 }
             });
             request = {
-                mainclass: this.mainclass,
+                mainclass: this.mainclass || this.mainsource,
                 preview: this.preview,
                 sourcefiles: sourcefiles
             };
-            fetch(this.serviceurl("compileandrun"), { method: "POST", body: JSON.stringify(request) })
+            fetch(this.serviceurl(this.mainclass ? "compileandrun" : "runfromsource"), { method: "POST", body: JSON.stringify(request) })
                 .then(r => r.json())
                 .then(response => this.output = response.output );
         }

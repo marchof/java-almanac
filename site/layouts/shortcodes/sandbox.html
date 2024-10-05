@@ -1,4 +1,4 @@
-<sandbox version="{{ .Get "version"}}" mainclass="{{ .Get "mainclass"}}"{{ with .Get "preview"}} preview="{{.}}"{{ end }}{{ with .Get "show-invisibles"}} v-bind:show-invisibles="{{.}}"{{ end }} v-cloak>
+<sandbox version="{{ .Get "version"}}" {{ with .Get "mainclass"}} mainclass="{{.}}"{{ end }}{{ with .Get "mainsource"}} mainsource="{{.}}"{{ end }}{{ with .Get "preview"}} preview="{{.}}"{{ end }}{{ with .Get "show-invisibles"}} v-bind:show-invisibles="{{.}}"{{ end }} v-cloak>
 {{- .Inner -}}
 </sandbox>
 {{- .Page.Store.Set "hasSandbox" true -}}
