@@ -4,27 +4,7 @@ copyright: Cay S. Horstmann 2024. All rights reserved.
 jep: 485
 jdkversion: 23
 ---
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns='http://www.w3.org/1999/xhtml'><head><title>Cay Horstmann's Unblog</title>
-    <meta content='text/html; charset=UTF-8' http-equiv='content-type'/>
     <script src='https://javaalmanac.io/app/sandbox-bundle.js'></script> 
-    <link rel='stylesheet' href='https://javaalmanac.io/almanac.min.css'/> 
-    <link href='../../styles.css' rel='stylesheet' type='text/css'/>
-    <style>iframe {
-  border: none;
-}
-.noalmanac {
-  display: none
-}
-
-textarea {
-      font-family: Mono !important;
-}
-div.tabs {
-      font-family: Sans;
-      font-size: 0.8em;
-      }
-    </style>
     <script>//<![CDATA[
 window.addEventListener('load', () => {
   const version = 'java23'
@@ -53,9 +33,6 @@ window.addEventListener('load', () => {
   let sandboxes = document.getElementsByClassName('sandbox')
   for (let i = sandboxes.length - 1; i >= 0; i--) 
     sandboxes[i].remove()
-  let noalmanac = document.getElementsByClassName('noalmanac')
-  for (let i = noalmanac.length - 1; i >= 0; i--) 
-    noalmanac[i].remove()
 
   new Vue({ el: '#content' })
 
@@ -67,11 +44,7 @@ window.addEventListener('load', () => {
   }
 })
       //]]>
-    </script> 
-  </head>
-  <body><div id='content'><h1 class='noalmanac'>Stream Gatherers (JEP 485)</h1>
-      <p class='rightimage noalmanac'><img src='charles-wellington-furse-gathering-flowers.jpg' alt='.jpg' loading='lazy'/></p>
-      <blockquote class='noalmanac'>This article, also posted on <a href='http://javaalmanac.io'>http://javaalmanac.io</a>, describes gatherers, which provide a general extension point for intermediate operations in Java streams. Gatherers are particularly useful for operations that depend on neighboring elements, all preceding elements, or all elements of a stream. </blockquote>
+    </script>
       <h2>What's Missing from Streams?</h2>
       <p>Similar to an iterator, a Java stream yields a sequence of elements. But the stream elements are processed lazily. When you program a stream pipeline, you specify functions that inspect or transform elements:</p>
 <div class='sandbox'>    
@@ -419,18 +392,3 @@ void main() {
         <li><a href='https://openjdk.org/jeps/485'>JEP 473: Stream Gatherers (Second Preview)</a></li>
         <li><a href='https://openjdk.org/jeps/485'>JEP 461: Stream Gatherers (Preview)</a></li>
       </ul>
-
-      <div class='noalmanac'>
-      <script>talkyardServerUrl='https://site-d5d025d6f2.talkyard.net';</script>
-      <script async='async' defer='defer' src='https://cdn.talkyard.net/-/talkyard-comments.min.js'></script>
-      <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-      </div>
-      <div class='talkyard-comments noalmanac' data-discussion-id='2024-10-01' style='margin-top: 45px;'><p style='margin-top: 25px; opacity: 0.9; font-size: 96%'>Comments powered by <a href='https://www.talkyard.io'>Talkyard</a>.</p>
-      </div>
-      <div class='blogfooter noalmanac'><ul><li><a href='../index.html'>More Entries</a></li>
-          <li><a href='../rss.xml'>RSS Feed <img src='../rss-icon.png' alt='.png' loading='lazy'/></a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
