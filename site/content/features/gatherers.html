@@ -1,0 +1,436 @@
+---
+title: Stream Gatherers (JEP 485)
+copyright: Cay S. Horstmann 2024. All rights reserved.
+jep: 485
+jdkversion: 23
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'><head><title>Cay Horstmann's Unblog</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='content-type'/>
+    <script src='https://javaalmanac.io/app/sandbox-bundle.js'></script> 
+    <link rel='stylesheet' href='https://javaalmanac.io/almanac.min.css'/> 
+    <link href='../../styles.css' rel='stylesheet' type='text/css'/>
+    <style>iframe {
+  border: none;
+}
+.noalmanac {
+  display: none
+}
+
+textarea {
+      font-family: Mono !important;
+}
+div.tabs {
+      font-family: Sans;
+      font-size: 0.8em;
+      }
+    </style>
+    <script>//<![CDATA[
+window.addEventListener('load', () => {
+  const version = 'java23'
+  for (const e of document.getElementsByClassName('sandbox')) {
+    let n = document.createElement('sandbox')
+    let mainclass = 'Main'
+    for (const p of e.getElementsByTagName('pre')) {
+      let text = p.textContent
+      let match = text.match(/public\s+(sealed\s+)?(class|interface|enum|record)\s+([^<\s]+)/)
+      let clazz = match === null ? 'Main' : match[3]
+      match = text.match(/package\s+([^;\s]+)\s*;/)
+      if (match != null) clazz = match[1].replace(/\./g, '/') + '/' + clazz
+      let n2 = document.createElement('sandbox-source')
+      if (text.match(/void\s+main/) !== null) mainclass = clazz
+      n2.setAttribute('name', clazz + '.java')
+      n2.textContent = text.trimEnd()
+      n.appendChild(n2)
+    }
+    n.setAttribute('version', version)
+    n.setAttribute('mainsource', mainclass + '.java')
+    n.setAttribute('preview', 'true')
+    n.setAttribute('v-cloak', '')
+    e.parentNode.insertBefore(n, e)
+  }
+
+  let sandboxes = document.getElementsByClassName('sandbox')
+  for (let i = sandboxes.length - 1; i >= 0; i--) 
+    sandboxes[i].remove()
+  let noalmanac = document.getElementsByClassName('noalmanac')
+  for (let i = noalmanac.length - 1; i >= 0; i--) 
+    noalmanac[i].remove()
+
+  new Vue({ el: '#content' })
+
+  for (const d of document.getElementsByClassName('ace_editor')) {
+    const e = ace.edit(d)
+    e.setOptions({
+      fontSize: "1em"
+    })
+  }
+})
+      //]]>
+    </script> 
+  </head>
+  <body><div id='content'><h1 class='noalmanac'>Stream Gatherers (JEP 485)</h1>
+      <p class='rightimage noalmanac'><img src='charles-wellington-furse-gathering-flowers.jpg' alt='.jpg' loading='lazy'/></p>
+      <blockquote class='noalmanac'>This article, also posted on <a href='http://javaalmanac.io'>http://javaalmanac.io</a>, describes gatherers, which provide a general extension point for intermediate operations in Java streams. Gatherers are particularly useful for operations that depend on neighboring elements, all preceding elements, or all elements of a stream. </blockquote>
+      <h2>What's Missing from Streams?</h2>
+      <p>Similar to an iterator, a Java stream yields a sequence of elements. But the stream elements are processed lazily. When you program a stream pipeline, you specify functions that inspect or transform elements:</p>
+<div class='sandbox'>    
+      <pre>void main() {
+    var words = """
+Four score and seven years ago our fathers brought forth on this continent,
+a new nation, conceived in Liberty, and dedicated to the proposition
+that all men are created equal.
+""".split(",\\s+");
+    var longWords = Stream.of(words)
+        .filter(s -&gt; s.length() &gt; 6)
+        .map(String::toLowerCase)
+        .limit(5)
+        .toList();
+    println(longWords);
+}
+</pre></div>
+      <p>The lambda expression <code>s -&gt; s.length() &gt; 6</code> and the <code>toLowerCase</code> method are only called when needed; that is, until five results were collected.</p>
+      <p>The lambda expressions in the calls to <code>filter</code> and <code>map</code> see one element at a time. But sometimes you want to see more than one stream element in order to make a decision</p>
+      <p>Consider the task of eliminating adjacent duplicates. When processing the input <code>The the the quick brown fox jumps over the lazy dog dog</code>, we want to drop the duplicate adjacent <code>the</code> and <code>dog</code>.</p>
+      <p>The stream API has three methods for selectively dropping elements: <code>dropWhile</code>, <code>takeWhile</code>, and <code>filter</code>. The first two don't fit our situation. But we can call <code>filter</code> with a handcrafted function. That function receives the current element and compares it with the predecessor that it has stashed away. </p>
+      <p>Here is a potential implementation:</p>
+      <div class='sandbox'>      
+      <pre>void main() {
+    var sentence = "The the the quick brown fox jumps over the lazy dog dog";
+    Stream&lt;String&gt; words = new Scanner(sentence).tokens();
+    // Note that the lambda could not mutate a variable
+    // String previous;
+    class State { String previous; };
+    var state = new State();
+    List&lt;String&gt; result = words.filter(element -&gt; {
+            boolean keep = !element.equalsIgnoreCase(state.previous);
+            state.previous = element;
+            return keep;
+        }).toList();
+    println(result);
+}</pre>
+      </div>
+      <p>That doesn't look pretty. And that's not good. Why did we use streams in the first place? Because the stream code is easier to read than the equivalent loop.</p>
+      <p>Of course, the stream API could be augmented by a  <code>dropAdjacent</code> method, but where would that lead? There are any number of potentially useful stream operations. Instead, JEP 485 provides a general extension point for stateful stream transformations, and a small number of useful implementations.</p>
+      <p><b>Note:</b> In general, streams have another potential benefit. It may be possible to parallelize stream operations. Clearly, that is not the case in this particular implementation. Here we assume that the filter is invoked for each element in turn.</p>
+      <h2>A Reminder About Collectors</h2>
+      <p>The stream API already has a general extension point: the terminal <code>collect</code> method and the <code>Collector</code> interface. In fact, <code>collect()</code> with no arguments calls <code>collect(Collectors.toList())</code>, passing a collector that produces a list.  </p>
+      <p>In the collection process, arriving stream elements are accumulated in internal data structures called “result containers”. If the stream is parallel, result containers are merged. After accumulation and merging, the collector can optionally transform the final result container into another object that is the collection result.</p>
+      <p>Specifically, a <code>Collector</code> must implement four methods, each of which yields a function object:</p>
+      <pre>Supplier&lt;A&gt; supplier()
+    // Supplies a result container
+BiConsumer&lt;A,T&gt; accumulator()
+    // Accumulates an element into a result container
+BinaryOperator&lt;A&gt; combiner()
+    // Combines two result containers into one
+Function&lt;A, R&gt; finisher()
+    // Transforms the final result container into the result
+</pre>
+      <p>Let’s look at the function objects of the <code>Collectors.toList()</code> collector:</p>
+      <ul><li>The <code>supplier</code> yields a function yielding an empty <code>ArrayList&lt;T&gt;</code>, or <code>ArrayList&lt;T&gt;::new</code>.</li>
+        <li>The <code>accumulator</code> yields <code>(a, t) -&gt; a.add(t)</code> or <code>List::add</code>. (That method expression is why the result container is the first parameter.)</li>
+        <li>The <code>combiner</code> yields a function that concatenates two lists, specifically <code>(a, b) -&gt; { a.addAll(b); return a; } </code> </li>
+        <li>The <code>finisher</code> does nothing (which is the most common case)</li>
+      </ul>
+      <p>The static <code>Collectors.groupingBy</code> method yields a more interesting collector. It produces a map from keys to lists of elements with the same key. In its simplest form, you pass a “classifier” function that extracts the map keys from the elements.</p>
+      <p>I like to use the stream <code>Locale.availableLocales()</code> as an example of a useful data stream. A locale describes the language and other preferences of a place. The following call to <code>collect</code> yields a map from country code strings to sets of locales in that country. </p>
+<div class='sandbox'><pre>void main() {
+    Map&lt;String, List&lt;Locale&gt;&gt; countryToLocales = Locale.availableLocales().collect(
+        Collectors.groupingBy(Locale::getCountry));
+    List&lt;Locale&gt; swissLocales = countryToLocales.get("CH");
+        // Yields locales [de_CH, fr_CH, it_CH, rm_CH, ...]
+    println(swissLocales);
+}
+</pre></div>
+      <p>As you can see, the JDK supports a multitude of locales used in Switzerland, including German, French, Italian, and Romansh, all collected in a list.</p>
+      <p>Note the classifier function <code>Locale::getCountry</code> that extracts the map key, i.e. the country code string such as <code>"CH"</code> or <code>"US"</code>.</p>
+      <p>This use of collectors is straightforward. It gets more opaque when you use “downstream collectors” that apply another collection step to the collected map values. Consider:</p>
+<div class='sandbox'>    <pre>void main() {
+    Map&lt;String, Map&lt;String, List&lt;Locale&gt;&gt;&gt; countryAndLanguageToLocale =
+        Locale.availableLocales().collect(
+            groupingBy(Locale::getCountry,
+                groupingBy(Locale::getLanguage)));
+    println(countryAndLanguageToLocale.get("IN").get("hi"));
+}
+</pre></div>
+      <p>Now you have a map of maps. For example, <code>countryAndLanguageToLocale.get("IN").get("hi")</code> is a list of the Hindi locales in India. (There are several variants.)</p>
+      <h2>The Gatherer Interface</h2>
+      <p>JEP 485 introduces a <code>gather</code> method that is analogous to the <code>collect</code> method, but it is an intermediate operation, yielding a stream, not a final result. The method has an argument of type <code>Gatherer</code>, an interface that is similar to the <code>Collector</code> interface. A gatherer has a generic “intermediate state” object instead of the “result collection” of a collector.  It too has four methods yielding function objects. </p>
+      <pre>Supplier&lt;A&gt; initializer()
+    // Supplies an intermediate state instance
+Gatherer.Integrator&lt;A, T, R&gt; integrator()
+    // Integrates an element—see below for details
+BinaryOperator&lt;A&gt; combiner()
+    // Combines two intermediate states into one
+BiConsumer&lt;A, Gatherer.Downstream&lt;? super R&gt;&gt; finisher()
+    // Finalizes the processing after all stream elements have been integrated
+</pre>
+      <p>This is more complex than collectors since the gatherer sends values “downstream”; that is, to the stream that is the result of the <code>gather</code> method. </p>
+      <p>Let's first look at the <code>finish</code> method. It is called after all upstream elements have been passed to the <code>integrator</code> function, and all <code>combiner</code> functions have been invoked. We now have the final version of the “intermediate state”. From it, the <code>finisher</code> method can derive zero or more values and send them downstream, using the methods of the <code>Gatherer.Downstream</code> interface:</p>
+      <pre>boolean push(T element)
+    // Pushes the element downstream, returns true if more elements can be pushed
+boolean isRejecting()
+    // Returns true if pushing more elements has no effect downstream
+</pre>
+      <p>The <code>integrator</code> method returns a function object conforming to the functional interface <code>Gatherer.Integrator</code>, with a method</p>
+      <pre>boolean integrate(A state, T element, Gatherer.Downstream&lt;? super R&gt; downstream)
+</pre>
+      <p>When integrating a new element, you can mutate the intermediate state and/or push values downstream. Return <code>false</code> if further elements will be rejected.</p>
+      <p>That all sounds very abstract and technical, so let's apply it to the concrete problem of dropping adjacent duplicates. The <code>Gatherer</code> interface has a static helper method <code>ofSequential</code> that creates a gatherer with a given initializer and integrator. </p>
+      <p>Our state is, as before, a holder for the previous string. The initializer produces a state instance.</p>
+      <p>To create the integrator, we use the <code>Gatherer.Integrator.of</code> helper method. Here are the details: </p>
+      <div class='sandbox'><pre>Gatherer&lt;String, ?, String&gt; dropAdjacentDuplicates() {
+    class State { String previous; };
+    return Gatherer.&lt;String, State, String&gt;ofSequential(
+        State::new,
+        Gatherer.Integrator.of((state, element, downstream) -&gt; {
+                boolean keep = !element.equalsIgnoreCase(state.previous);
+                state.previous = element;
+                if (keep)
+                    return downstream.push(element);
+                else
+                    return !downstream.isRejecting();
+        }));
+}
+
+void main() {
+    var sentence = "The the the quick brown fox jumps over the lazy dog dog";
+    Stream&lt;String&gt; words = new Scanner(sentence).tokens();
+    List&lt;String&gt; result = words.gather(dropAdjacentDuplicates()).toList();
+    println(result);
+}</pre>
+</div>
+      <p>As you can see, the gather implementation is not pleasant, even in this simple case. But once implemented, it is easy to use.</p>
+      <h2>Built-in Gatherers</h2>
+      <p>Most programmers use the <code>collect</code> method with collectors from the <code>Collectors</code> class, which has over forty methods. The <code>Gatherers</code> class offers a much smaller number of gatherers for use with the <code>gather</code> method. </p>
+      <p>The <code>windowFixed</code> and <code>windowSliding</code> methods yield a stream of lists of adjacent elements. It's quicker to show them in action than to explain them in words:</p>
+      <div class='sandbox'><pre>void main() {
+    println(IntStream.range(0, 10).boxed().gather(Gatherers.windowFixed(4)).toList());
+        // [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9]]
+    println(IntStream.range(0, 10).boxed().gather(Gatherers.windowSliding(4)).toList());
+        // [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6], [4, 5, 6, 7], [5, 6, 7, 8], [6, 7, 8, 9]]
+}
+</pre></div>
+      <p>A fixed window is useful when you have input that comes in fixed-sized groups. For example, consider a file with lines such as:</p>
+      <pre>Zappa Microwave Oven
+3
+109.95
+Blackwell Toaster
+1
+29.95
+</pre>
+      <p>You can process it as follows:</p>
+      <pre>List&lt;LineItem&gt; lineItems = Files.lines(Path.of("lineitems.txt"))
+    .windowFixed(3)
+    .map(w -&gt; new LineItem(w.get(0), Integer.parseInt(w.get(1)), Double.parseDouble(w.get(2))))
+    .toList();
+</pre>
+      <p>A sliding window is useful when you need to compare adjacent elements. For example, we can almost solve our “drop adjacent duplicates” problem like this:</p>
+      <pre>words.gather(Gatherers.windowSliding(2))
+    .filter(w -&gt; !w.get(0).equals(w.get(1)))
+    .map(w -&gt; w.get(0))
+</pre>
+      <p>This doesn't quite work because we also want to keep the last element of <code>wordStream</code> if it differs from its predecessor. But it is easy to fix:</p>
+      <div class='sandbox'><pre>void main() {
+    var sentence = "The the the quick brown fox jumps over the lazy dog dog";
+    Stream&lt;String&gt; words = new Scanner(sentence).tokens();
+    var result = Stream.concat(words, Stream.of((String) null))
+        .gather(Gatherers.windowSliding(2))
+        .filter(w -&gt; !w.get(0).equalsIgnoreCase(w.get(1)))
+        .map(w -&gt; w.get(0))
+        .toList();
+    println(result);
+}
+</pre></div>
+      <p>The <code>fold</code> gatherer computes a “fold” or, more precisely, “left fold”. It starts with an initial value and applies an operation, where the left argument is the current value, and the right argument the next element:</p>
+
+      <pre>           .
+          .
+         .
+        op
+       /  \
+      op   elem2
+     /  \
+    op   elem1
+   /  \
+init   elem0
+</pre>
+      <p>Folds are useful when a value is computed incrementally from the stream elements. Functional programmers <a href='https://horstmann.com/unblog/2008-10-05/when-to-fold.html'>prefer folds over loops</a>. Here is a simple example, computing a number from its digits:</p>
+<div class='sandbox'><pre>void main() {
+    Integer[] digits = { 1, 7, 2, 9 };
+    int number = Stream.of(digits)
+        .gather(Gatherers.fold(() -&gt; 0, (x, y) -&gt; x * 10 + y))
+        .findFirst()
+        .orElse(0);
+    println(number);
+}
+</pre></div>
+      <p>I had to use a <code>Stream&lt;Integer&gt;</code> because the primitive streams <code>IntStream</code>, <code>LongStream</code>, <code>DoubleStream</code> do not have <code>gather</code> methods.</p>
+      <p>The fold computes</p>
+      <pre>  0 * 10 + 1 // 1
+  1 * 10 + 7 // 17
+ 17 * 10 + 2 // 172
+172 * 10 + 9 // 1729
+</pre>
+      <p>The result is a stream with a single value, which is obtained by calling <code>findFirst()</code> followed by <code>.orElse(0)</code>.</p>
+      <p>Probably <code>fold</code> should have been a terminal operation, but gatherers allow fulfillment of this <a href='https://bugs.openjdk.org/browse/JDK-8292845'>desperate need</a>.</p>
+      <p>Note that <code>fold</code> is different from the <code>reduce</code> terminal operation. Reduction is optimized for parallel evaluation. It uses either an associative operator, or a pair of operations: one to produce intermediate results and another to combine them. In contrast, <code>fold</code> is strictly sequential.</p>
+      <p>The <code>scan</code> operation is similar to <code>fold</code>, but you get a stream of all the intermediate results. For example, if you have a stream of deposit or withdrawal amounts, then a scan with the addition operator yields the cumulative balances:</p>
+      <div class='sandbox'><pre>void main() {
+    double initial = 1000.0;
+    Double[] transactions = { 100.0, -50.0, 200.0, -150.0 };
+    var result = Stream.of(transactions)
+        .gather(Gatherers.scan(() -&gt; initial, Double::sum))
+        .toList(); // [1100.0, 1050.0, 1250.0, 1100.0]
+    println(result);
+}
+</pre></div>
+      <p>This scan computes <code>init + elem0</code>, <code>init + elem0 + elem1</code>, <code>init + elem0 + elem1 + elem2</code>, and so on. </p>
+      <p><b>Note:</b> The <code>Arrays.parallelPrefix</code> method does almost the same operation, but in parallel and only with an associative operator.</p>
+      <p>I am not sure how popular <code>fold</code> and <code>scan</code> will turn out to be. The fifth predefined gatherer, <code>Gatherers.mapConcurrent</code>, is very useful—see the next section.</p>
+      <p>The <code>Gatherer.andThen</code> method combines two gatherers into a single one.  The result is the same as calling <code>gather</code> twice.</p>
+      <div class='sandbox'><pre>void main() {
+    var result1 = IntStream.range(0, 10)
+        .boxed()
+        .gather(Gatherers.windowFixed(2).andThen(Gatherers.windowFixed(2)))
+        .toList(); // [[[0, 1], [2, 3]], [[4, 5], [6, 7]], [[8, 9]]]
+
+    var result2 = IntStream.range(0, 10)
+        .boxed()
+        .gather(Gatherers.windowFixed(2))
+        .gather(Gatherers.windowFixed(2))
+        .toList(); // [[[0, 1], [2, 3]], [[4, 5], [6, 7]], [[8, 9]]]
+
+    println(result1);
+    println(result2);
+}
+</pre></div>
+      <h2>Concurrent Execution</h2>
+      <p>For processor-intensive workloads, you can use parallel streams:</p>
+      <pre>var results = collection
+    .parallelStream()
+    .map(e -&gt; hardWork(e))
+    .toList();
+</pre>
+      <p>The stream splits into subranges (normally, one per core), which are processed concurrently, using the global fork-join pool.</p>
+      <p>However, if the workload is mostly blocking, then parallel streams do not give the best throughput. Many more threads could block concurrently. In this situation, <code>Gatherers.mapConcurrent</code> shines. It executes each task in a virtual thread. </p>
+      <pre>int MAX_CONCURRENT = 1000;
+var results = collection
+    .stream() // Not parallelStream!
+    .gather(Gatherers.mapConcurrent(MAX_CONCURRENT, e -&gt; blockingWork(e)))
+    .toList();
+</pre>
+      <p>You want to use this gatherer with blocking calls. The first argument gives you a convenient way of throttling the number of concurrent tasks. After all, the tasks are likely to connect to some external service that may fail with huge numbers of concurrent requests. (Note that the stream is <em>not</em> parallel.)</p>
+      <p>As an aside, the stream API purposefully does not allow you to set the executor for parallel stream tasks. There is a <a href='https://www.baeldung.com/java-8-parallel-streams-custom-threadpool'>well-known workaround</a> to use a different pool than the global fork-join pool. But that does <em>not</em> work with virtual threads:</p>
+      <pre>ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
+var results = executor.submit( // Won't use executor for subtasks
+        () -&gt; collection
+            .parallelStream() 
+            .map(e -&gt; blockingWork(e)).toList()) // Splits into one task per processor
+    .get();
+</pre>
+      <p>You get one task per processor, not a task per call to <code>map</code>. And, to add insult to injury, the executor of the submission is not used for the split tasks since it is not an instance of <code>ForkJoinPool</code>. Use <code>Gatherers.mapConcurrent</code> if you want virtual threads.</p>
+      <h2>Fine-Tuning Gatherers</h2>
+      <p>When designing your own gatherer, you can signal two opportunities for optimization.</p>
+      <p>A small optimization is the “greediness” of a gatherer. A <em>greedy</em> gatherer processes all incoming elements. A non-greedy or <em>short-circuiting</em> gatherer may start rejecting elements. Elements can be pushed in bulk to a greedy gatherer, which may be more performant. The gain is not likely to be substantial, but it's easy enough to opt in. If you use a <code>Gatherer.Integrator</code> factory method to define your integrator, then use <code>ofGreedy</code> if the gatherer is greedy, or <code>of</code> if it is not. Alternatively, implement the <code>Gatherers.Integrator.Greedy</code> subinterface for greedy gatherers.</p>
+      <p>Next, you need to decide whether to make your gatherer sequential or parallelizable. </p>
+      <p>A sequential gatherer calls the <code>initializer</code> method once, then the <code>integrator</code> for each stream element in order, and then the <code>finisher</code>.</p>
+      <p>With a parallelizable gatherer on a parallel stream, the <code>initializer</code> method is called for each subrange. The <code>integrator</code> method is called as elements are encountered in the subranges. Elements that are pushed downstream will be assembled in the correct order.</p>
+      <p>Whenever neighboring subranges are complete, the <code>combiner</code> method is called. It can combine state, but it cannot push elements downstream.</p>
+      <p>Finally, the <code>finisher</code> method is called once, with the combined state. It can push elements downstream. They are appended after any elements that are pushed in an integrator. </p>
+      <p>It seems unlikely that a parallel gatherer will push elements both in the <code>integrator</code> and the <code>finalizer</code>. If the decision whether and what to push is independent of the neighbors, that can happen in the <code>integrator</code>. Otherwise, all pushing will have to wait to the <code>finalizer</code>.</p>
+      <p>The three <code>Gatherer.of</code> methods yield parallelizable gatherers, and the four <code>Gatherer.ofSequential</code>  methods yield gatherers that are not parallelizable.</p>
+      <p>If you implement the <code>Gatherer</code> interface yourself, then your <code>combiner</code> method determines whether or not the gatherer is sequential or parallelizable. A sequential gatherer must return <code>defaultCombiner()</code> (which yields a fixed function object that will never be invoked). If <code>combiner()</code> returns any other function object, the gatherer is parallelizable.</p>
+      <p>Can the gatherer that drops adjacent duplicates be parallelizable? The <code>integrator</code> could buffer non-duplicate elements. The <code>combiner</code> could eliminate elements that appear at the end of the first buffer and and the beginning of the second. The <code>finalizer</code> would push  buffered elements. But it may not be worth the trouble. The savings from parallelizing the comparisons may be eaten up by the cost of buffering.</p>
+      <p>Here is an example of a parallelizable gatherer. We want to replicate each stream element <var>n</var> times. </p>
+      <div class='sandbox'><pre>&lt;T&gt; Gatherer&lt;T, ?, T&gt; nCopies(int n) {
+    return Gatherer.&lt;T, T&gt;of(
+        Gatherer.Integrator.ofGreedy((_, element, downstream) -&gt; {
+            for (int i = 0; i &lt; n; i++)
+                if (!downstream.push(element)) return false;
+            return !downstream.isRejecting();
+        }));
+}
+
+void main() {
+    var sentence = "The quick brown fox jumps over the lazy dog";
+    Stream&lt;String&gt; words = new Scanner(sentence).tokens();
+    List&lt;String&gt; result = words.gather(nCopies(3)).toList();
+    println(result);
+    int sum = IntStream.range(1, 101)
+        .parallel()
+        .boxed()
+        .gather(nCopies(1000))
+        .mapToInt(n -&gt; n)
+        .sum();
+    println(sum);
+}</pre>
+</div>
+      <p><b>Note:</b> In this example, you don't actually need a gatherer, since there is no state. You can use the <code>mapMulti</code> method that has a slightly simpler parameter:</p>
+      <div class='sandbox'><pre>&lt;T&gt; BiConsumer&lt;T, Consumer&lt;T&gt;&gt; nCopies(int n) {
+    return (element, sink) -&gt; {
+        for (int i = 0; i &lt; n; i++) sink.accept(element);
+    };
+}
+
+void main() {
+    var sentence = "The quick brown fox jumps over the lazy dog";
+    Stream&lt;String&gt; words = new Scanner(sentence).tokens();
+    List&lt;String&gt; result = words.mapMulti(nCopies(3)).toList();
+    println(result);
+}</pre></div>
+      <p>But the gatherer isn't that much more complicated. Since it is a more useful abstraction, I expect that programmers will soon find it familiar, whereas <code>mapMulti</code> is pretty obscure.</p>
+      <p><b>Note:</b> The processing of a stream pipeline is highly optimized—see <a href='https://developer.ibm.com/articles/j-java-streams-3-brian-goetz'>this article</a> by Brian Goetz for a very clear description. Each stage of the pipeline reports whether it supports characteristics  such as <code>ORDERED</code>, <code>DISTINCT</code>, <code>SORTED</code>, <code>SIZED</code>, and <code>SUBSIZED</code>. This information is used to optimize execution and elide unnecessary operations. Similarly, collectors have a (more limited) set of characteristics. However, when authoring a gatherer, there is no mechanism for reporting characteristics. </p>
+      <h2>When to Gather</h2>
+      <p>When stream operations depend on neighboring elements, or all preceding elements, then you need a gatherer. You may be able to use <code>windowSliding</code> or <code>fold</code>, or you can roll your own. These gatherers are likely sequential.</p>
+      <p>When stream operations depend on global characteristics, such as frequency of occurrence, then a gatherer can also work. You would write your own, track candidate elements in a state object, and push them in the finisher.</p>
+      <p>A gatherer can even be useful without looking at other elements. It can push any number of results, or it can use some kind of policy for processing each element. For example, the <code>mapConcurrent</code> gatherer computes each result in a virtual thread.</p>
+      <p>Here is another such gatherer for your amusement. It works like <code>map</code>, but the mapping method can throw checked exceptions.</p>
+      <div class='sandbox'><pre>interface CheckedFunction&lt;T, R&gt; {
+    R apply(T arg) throws Exception;
+}
+
+&lt;T, R&gt; Gatherer&lt;T, ?, R&gt; mapChecked(CheckedFunction&lt;? super T,? extends R&gt; mapper) {
+    return Gatherer.&lt;T, R&gt;of(
+        Gatherer.Integrator.ofGreedy((_, element, downstream) -&gt; {
+            try {
+                return downstream.push(mapper.apply(element));
+            } catch (Exception ex) {
+                throw new RuntimeException("mapChecked", ex);
+            }
+        }));
+}
+
+void main() {
+    String[] paths = { "/etc/passwd", "/etc/environment" };
+    List&lt;String&gt; contents = Stream.of(paths)
+        .map(Path::of)
+        .gather(mapChecked(Files::readString))
+        .toList();
+    println(contents);
+}
+</pre></div>
+      <p>Gunnar Morling shows how to <a href='https://www.morling.dev/blog/zipping-gatherer/'>zip two streams with a gatherer</a>.</p>
+      <p>It is also easy to implement “zip with index”—see <a href='https://stackoverflow.com/a/77755077/375317'>this StackOverflow answer</a>. </p>
+      <p>You can find additional potentially useful gatherers in <a href='https://github.com/jhspetersson/packrat'>this project</a>.</p>
+      <p>I'd like to conclude with a tip. When you use a gatherer, don't inline it. Write a method with a friendly name that yields it. That way, the intent is clear to those who read your code. After all, streams are all about “what, not how”.</p>
+      <h2>References</h2>
+      <ul><li><a href='https://openjdk.org/jeps/485'>JEP 485: Stream Gatherers</a></li>
+        <li><a href='https://openjdk.org/jeps/485'>JEP 473: Stream Gatherers (Second Preview)</a></li>
+        <li><a href='https://openjdk.org/jeps/485'>JEP 461: Stream Gatherers (Preview)</a></li>
+      </ul>
+
+      <div class='noalmanac'>
+      <script>talkyardServerUrl='https://site-d5d025d6f2.talkyard.net';</script>
+      <script async='async' defer='defer' src='https://cdn.talkyard.net/-/talkyard-comments.min.js'></script>
+      <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
+      </div>
+      <div class='talkyard-comments noalmanac' data-discussion-id='2024-10-01' style='margin-top: 45px;'><p style='margin-top: 25px; opacity: 0.9; font-size: 96%'>Comments powered by <a href='https://www.talkyard.io'>Talkyard</a>.</p>
+      </div>
+      <div class='blogfooter noalmanac'><ul><li><a href='../index.html'>More Entries</a></li>
+          <li><a href='../rss.xml'>RSS Feed <img src='../rss-icon.png' alt='.png' loading='lazy'/></a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
