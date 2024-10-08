@@ -1,16 +1,16 @@
 ---
 title: Unnamed Patterns and Variables (JEP 456)
-copyright: Cay S. Horstmann 2023. All rights reserved.
+copyright: Cay S. Horstmann 2023, 2024. All rights reserved.
 jep: 456
 jdkversion: 22
 ---
 
 
-Sometimes, Java syntax requires you to specify a variable name even when you never refer to it. JEP 456 allows you to use an underscore in many of these cases. This feature is probably most useful in record patterns, where an underscore can even replace a type + name. This article shows all situations where you can use the “unnamed” underscore.
+Sometimes, Java syntax requires you to specify a variable name even when you never refer to it. [JEP 456](https://openjdk.java.net/jeps/456) allows you to use an underscore in many of these cases. This feature is probably most useful in record patterns, where an underscore can even replace a type + name. This article shows all situations where you can use the “unnamed” underscore.
 
 Both in record patterns and variable declarations, you specify variables by providing a type (or `var`) and a name. It can happen that you don't need the name, or even the type. Under certain circumstances, you can then use an underscore `_` placeholder for the name, or for both type and name. 
 
-The variable name `_` was deprecated for removal in Java 8 and, as part of JEP 213, removed in Java 9. This pertains only to a single underscore. Identifiers containing underscores, such as `UTF_8`, continue to be fine.
+The variable name `_` was deprecated for removal in Java 8 and, as part of [JEP 213](https://openjdk.java.net/jeps/213), removed in Java 9. This pertains only to a single underscore. Identifiers containing underscores, such as `UTF_8`, continue to be fine.
 
 If you have ancient source code where `_` is used as a variable name, chances are good that you used `_` for exactly the use case that unnamed variables are meant to address. Then you need to do nothing. If you need to update your code, you can always use two underscores `__` or, if you like, any [Connecting Punctuation Character](https://www.fileformat.info/info/unicode/category/Pc/list.htm). My favorite choice is ﹏, U+FE4F WAVY LOW LINE.
 
@@ -165,7 +165,7 @@ public class Unnamed2 {
 
 ## Exceptions
 
-The use of `_` as a “don't care” pattern is easy and compelling, but there are other situations where we truly don't care about a variable name. Sometimes, when catching an expression, you never look at the exception. With JEP 443, you don't have to come up with a variable name for the unused object. This sandbox shows a typical example.
+The use of `_` as a “don't care” pattern is easy and compelling, but there are other situations where we truly don't care about a variable name. Sometimes, when catching an expression, you never look at the exception. With [JEP 443](https://openjdk.java.net/jeps/443), you don't have to come up with a variable name for the unused object. This sandbox shows a typical example.
 
 {{< sandbox version=java21 preview="true" mainclass="Unnamed3" >}}{{< sandboxsource "Unnamed3.java" >}}
 public class Unnamed3 {
@@ -366,6 +366,7 @@ public class Unnamed6 {
 
 ## References
 
+* [JEP 456: String Unnamed Patterns and Variables, OpenJDK](https://openjdk.java.net/jeps/456)
 * [JEP 443: String Unnamed Patterns and Variables (Preview), OpenJDK](https://openjdk.java.net/jeps/443)
 * [JEP 213: Milling Project Coin, OpenJDK](https://openjdk.java.net/jeps/213)
 
