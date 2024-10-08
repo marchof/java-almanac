@@ -1,0 +1,30 @@
+{{- with .Page.Params.convertSandboxDivToSandbox }}
+<script>//<![CDATA[
+  const version = '{{ . }}'
+  for (const e of document.getElementsByClassName('sandbox')) {
+    let n = document.createElement('sandbox')
+    let mainclass = 'Main'
+    for (const p of e.getElementsByTagName('pre')) {
+      let text = p.textContent
+      let match = text.match(/public\s+(sealed\s+)?(class|interface|enum|record)\s+([^<\s]+)/)
+      let clazz = match === null ? 'Main' : match[3]
+      match = text.match(/package\s+([^;\s]+)\s*;/)
+      if (match != null) clazz = match[1].replace(/\./g, '/') + '/' + clazz
+      let n2 = document.createElement('sandbox-source')
+      if (text.match(/void\s+main/) !== null) mainclass = clazz
+      n2.setAttribute('name', clazz + '.java')
+      n2.textContent = text.trimEnd()
+      n.appendChild(n2)
+    }
+    n.setAttribute('version', version)
+    n.setAttribute('mainsource', mainclass + '.java')
+    n.setAttribute('preview', 'true')
+    n.setAttribute('v-cloak', '')
+    e.parentNode.insertBefore(n, e)
+  }
+  let sandboxes = document.getElementsByClassName('sandbox')
+  for (let i = sandboxes.length - 1; i >= 0; i--) 
+    sandboxes[i].remove()
+//]]>
+</script>
+{{- end }}

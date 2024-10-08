@@ -5,47 +5,8 @@ jep: 485
 jdkversion: 23
 params:
   sandbox: true
+  convertSandboxDivToSandbox: java23
 ---
-    <script>//<![CDATA[
-window.addEventListener('load', () => {
-  const version = 'java23'
-  for (const e of document.getElementsByClassName('sandbox')) {
-    let n = document.createElement('sandbox')
-    let mainclass = 'Main'
-    for (const p of e.getElementsByTagName('pre')) {
-      let text = p.textContent
-      let match = text.match(/public\s+(sealed\s+)?(class|interface|enum|record)\s+([^<\s]+)/)
-      let clazz = match === null ? 'Main' : match[3]
-      match = text.match(/package\s+([^;\s]+)\s*;/)
-      if (match != null) clazz = match[1].replace(/\./g, '/') + '/' + clazz
-      let n2 = document.createElement('sandbox-source')
-      if (text.match(/void\s+main/) !== null) mainclass = clazz
-      n2.setAttribute('name', clazz + '.java')
-      n2.textContent = text.trimEnd()
-      n.appendChild(n2)
-    }
-    n.setAttribute('version', version)
-    n.setAttribute('mainsource', mainclass + '.java')
-    n.setAttribute('preview', 'true')
-    n.setAttribute('v-cloak', '')
-    e.parentNode.insertBefore(n, e)
-  }
-
-  let sandboxes = document.getElementsByClassName('sandbox')
-  for (let i = sandboxes.length - 1; i >= 0; i--) 
-    sandboxes[i].remove()
-
-  new Vue({ el: '#content' })
-
-  for (const d of document.getElementsByClassName('ace_editor')) {
-    const e = ace.edit(d)
-    e.setOptions({
-      fontSize: "1em"
-    })
-  }
-})
-      //]]>
-    </script>
       <h2>What's Missing from Streams?</h2>
       <p>Similar to an iterator, a Java stream yields a sequence of elements. But the stream elements are processed lazily. When you program a stream pipeline, you specify functions that inspect or transform elements:</p>
 <div class='sandbox'>    
