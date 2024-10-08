@@ -53,7 +53,7 @@ window.addEventListener('load', () => {
     var words = """
         Four score and seven years ago our fathers brought forth on this continent,
         a new nation, conceived in Liberty, and dedicated to the proposition
-        that all men are created equal.""".split(",\\s+");
+        that all men are created equal.""".split(",?\\s+");
     var longWords = Stream.of(words)
         .filter(s -&gt; s.length() &gt; 6)
         .map(String::toLowerCase)
@@ -140,11 +140,11 @@ window.addEventListener('load', () => {
       </dl>
       <p>This is more complex than collectors since the gatherer sends values “downstream”; that is, to the stream that is the result of the <code>gather</code> method. </p>
       <p>Let's first look at the <code>finish</code> method. It is called after all upstream elements have been passed to the <code>integrator</code> function, and all <code>combiner</code> functions have been invoked. We now have the final version of the “intermediate state”. From it, the <code>finisher</code> method can derive zero or more values and send them downstream, using the methods of the <code>Gatherer.Downstream</code> interface:</p>
-      <pre>boolean push(T element)
-    // Pushes the element downstream, returns true if more elements can be pushed
-boolean isRejecting()
-    // Returns true if pushing more elements has no effect downstream
-</pre>
+      <dl><dt><code>boolean push(T element)</code>
+        <dd>Pushes the element downstream, returns true if more elements can be pushed</dd></dt>
+        <dt><code>boolean isRejecting()</code>
+        <dd>Returns true if pushing more elements has no effect downstream</dd></dt>
+      </dl>
       <p>The <code>integrator</code> method returns a function object conforming to the functional interface <code>Gatherer.Integrator</code>, with a method</p>
       <pre>boolean integrate(A state, T element, Gatherer.Downstream&lt;? super R&gt; downstream)
 </pre>
