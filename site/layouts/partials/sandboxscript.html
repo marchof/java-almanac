@@ -1,4 +1,4 @@
-{{- if .Page.Store.Get "hasSandbox" }}
+{{- if or ( .Page.Store.Get "hasSandbox" ) ( .Page.Params.sandbox ) }}
 {{- $vue := resources.Get "app/vue.min.js" }}
 {{- $tabs := resources.Get "app/tabs.js" | resources.Minify }}
 {{- $sandbox := resources.Get "app/sandbox.js" | resources.ExecuteAsTemplate "sandbox.js" . | resources.Minify }}
