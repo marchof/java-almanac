@@ -51,10 +51,9 @@ window.addEventListener('load', () => {
 <div class='sandbox'>    
       <pre>void main() {
     var words = """
-Four score and seven years ago our fathers brought forth on this continent,
-a new nation, conceived in Liberty, and dedicated to the proposition
-that all men are created equal.
-""".split(",\\s+");
+        Four score and seven years ago our fathers brought forth on this continent,
+        a new nation, conceived in Liberty, and dedicated to the proposition
+        that all men are created equal.""".split(",\\s+");
     var longWords = Stream.of(words)
         .filter(s -&gt; s.length() &gt; 6)
         .map(String::toLowerCase)
