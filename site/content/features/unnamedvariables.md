@@ -1,6 +1,6 @@
 ---
 title: Unnamed Patterns and Variables (JEP 456)
-copyright: Cay S. Horstmann 2023. All rights reserved.
+copyright: Cay S. Horstmann 2023, 2024. All rights reserved.
 jep: 456
 jdkversion: 22
 ---
@@ -366,6 +366,7 @@ public class Unnamed6 {
 
 ## References
 
+* [JEP 456: String Unnamed Patterns and Variables, OpenJDK](https://openjdk.java.net/jeps/456)
 * [JEP 443: String Unnamed Patterns and Variables (Preview), OpenJDK](https://openjdk.java.net/jeps/443)
 * [JEP 213: Milling Project Coin, OpenJDK](https://openjdk.java.net/jeps/213)
 
