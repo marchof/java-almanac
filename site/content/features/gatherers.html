@@ -90,15 +90,15 @@ window.addEventListener('load', () => {
       <p>The stream API already has a general extension point: the terminal <code>collect</code> method and the <code>Collector</code> interface. In fact, <code>collect()</code> with no arguments calls <code>collect(Collectors.toList())</code>, passing a collector that produces a list.  </p>
       <p>In the collection process, arriving stream elements are accumulated in internal data structures called “result containers”. If the stream is parallel, result containers are merged. After accumulation and merging, the collector can optionally transform the final result container into another object that is the collection result.</p>
       <p>Specifically, a <code>Collector</code> must implement four methods, each of which yields a function object:</p>
-      <pre>Supplier&lt;A&gt; supplier()
-    // Supplies a result container
-BiConsumer&lt;A,T&gt; accumulator()
-    // Accumulates an element into a result container
-BinaryOperator&lt;A&gt; combiner()
-    // Combines two result containers into one
-Function&lt;A, R&gt; finisher()
-    // Transforms the final result container into the result
-</pre>
+      <dl><dt><code>Supplier&lt;A&gt; supplier()</code></dt>
+        <dd>Supplies a result container</dd>
+        <dt><code>BiConsumer&lt;A,T&gt; accumulator()</code></dt>
+        <dd>Accumulates an element into a result container</dd>
+        <dt><code>BinaryOperator&lt;A&gt; combiner()</code></dt>
+        <dd>Combines two result containers into one</dd>
+        <dt><code>Function&lt;A, R&gt; finisher()</code></dt>
+        <dd>Transforms the final result container into the result</dd>
+      </dl>
       <p>Let’s look at the function objects of the <code>Collectors.toList()</code> collector:</p>
       <ul><li>The <code>supplier</code> yields a function yielding an empty <code>ArrayList&lt;T&gt;</code>, or <code>ArrayList&lt;T&gt;::new</code>.</li>
         <li>The <code>accumulator</code> yields <code>(a, t) -&gt; a.add(t)</code> or <code>List::add</code>. (That method expression is why the result container is the first parameter.)</li>
@@ -121,23 +121,23 @@ Function&lt;A, R&gt; finisher()
 <div class='sandbox'>    <pre>void main() {
     Map&lt;String, Map&lt;String, List&lt;Locale&gt;&gt;&gt; countryAndLanguageToLocale =
         Locale.availableLocales().collect(
-            groupingBy(Locale::getCountry,
-                groupingBy(Locale::getLanguage)));
+            Collectors.groupingBy(Locale::getCountry,
+                Collectors.groupingBy(Locale::getLanguage)));
     println(countryAndLanguageToLocale.get("IN").get("hi"));
 }
 </pre></div>
       <p>Now you have a map of maps. For example, <code>countryAndLanguageToLocale.get("IN").get("hi")</code> is a list of the Hindi locales in India. (There are several variants.)</p>
       <h2>The Gatherer Interface</h2>
       <p>JEP 485 introduces a <code>gather</code> method that is analogous to the <code>collect</code> method, but it is an intermediate operation, yielding a stream, not a final result. The method has an argument of type <code>Gatherer</code>, an interface that is similar to the <code>Collector</code> interface. A gatherer has a generic “intermediate state” object instead of the “result collection” of a collector.  It too has four methods yielding function objects. </p>
-      <pre>Supplier&lt;A&gt; initializer()
-    // Supplies an intermediate state instance
-Gatherer.Integrator&lt;A, T, R&gt; integrator()
-    // Integrates an element—see below for details
-BinaryOperator&lt;A&gt; combiner()
-    // Combines two intermediate states into one
-BiConsumer&lt;A, Gatherer.Downstream&lt;? super R&gt;&gt; finisher()
-    // Finalizes the processing after all stream elements have been integrated
-</pre>
+      <dl><dt><code>Supplier&lt;A&gt; initializer()</code></dt>
+        <dd>Supplies an intermediate state instance</dd>
+        <dt><code>Gatherer.Integrator&lt;A, T, R&gt; integrator()</code></dt>
+        <dd>Integrates an element—see below for details</dd>
+        <dt><code>BinaryOperator&lt;A&gt; combiner()</code></dt>
+        <dd>Combines two intermediate states into one</dd>
+        <dt><code>BiConsumer&lt;A, Gatherer.Downstream&lt;? super R&gt;&gt; finisher()</code></dt>
+        <dd>Finalizes the processing after all stream elements have been integrated</dd>
+      </dl>
       <p>This is more complex than collectors since the gatherer sends values “downstream”; that is, to the stream that is the result of the <code>gather</code> method. </p>
       <p>Let's first look at the <code>finish</code> method. It is called after all upstream elements have been passed to the <code>integrator</code> function, and all <code>combiner</code> functions have been invoked. We now have the final version of the “intermediate state”. From it, the <code>finisher</code> method can derive zero or more values and send them downstream, using the methods of the <code>Gatherer.Downstream</code> interface:</p>
       <pre>boolean push(T element)
