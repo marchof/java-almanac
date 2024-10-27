@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "17",
 		"vendor": "tem",
-		"version": "17.0.12+7"
+		"version": "17.0.13+11"
 	},
 	"target": {
 		"feature": "20",
@@ -2717,6 +2717,54 @@
 									]
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/20/docs/api/java.base/javax/crypto/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DecapsulateException",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Decapsulator",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Encapsulated",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "KEM.Encapsulator",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "KEM",
+							"status": "removed"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi.DecapsulatorSpi",
+							"status": "removed"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi.EncapsulatorSpi",
+							"status": "removed"
+						},
+						{
+							"type": "interface",
+							"name": "KEMSpi",
+							"status": "removed"
 						}
 					]
 				},
