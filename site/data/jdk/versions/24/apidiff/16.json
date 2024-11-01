@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+21-2447"
+		"version": "24-ea+22-2649"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -337,6 +337,20 @@
 						},
 						{
 							"type": "class",
+							"name": "Reader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Reader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(CharSequence)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Reader.html#of(java.lang.CharSequence)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SequenceInputStream",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/SequenceInputStream.html",
@@ -503,6 +517,33 @@
 								"sealed"
 							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "arrayType()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html#arrayType()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "arrayType(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html#arrayType(int)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "displayName()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html#displayName()",
+									"addedTags": [
+										"abstract"
+									]
+								},
 								{
 									"type": "method",
 									"name": "ofInternalName(String)",

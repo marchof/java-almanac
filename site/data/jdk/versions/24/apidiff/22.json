@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+21-2447"
+		"version": "24-ea+22-2649"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -105,6 +105,20 @@
 									"addedTags": [
 										"forRemoval"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Reader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Reader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(CharSequence)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Reader.html#of(java.lang.CharSequence)"
 								}
 							]
 						}
@@ -5542,6 +5556,49 @@
 							"status": "removed",
 							"preview": true,
 							"csr": "JDK-8336586"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.constant",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassDesc",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "arrayType()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html#arrayType()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "arrayType(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html#arrayType(int)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "displayName()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/constant/ClassDesc.html#displayName()",
+									"addedTags": [
+										"abstract"
+									]
+								}
+							]
 						}
 					]
 				},
