@@ -399,7 +399,7 @@ search.findbox button {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background-color: #ccc;
-	background-image: url("img/find.svg");
+	background-image: url("data:image/svg+xml,{{ (resources.Get "img/find.svg").Content | urlquery }}");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -415,7 +415,7 @@ input#searchfield {
 }
 
 p#resultinfo {
-	color: #999";
+	color: #999;
 	line-height: 170%;
 	text-align: left;
 	margin-bottom: 4px;

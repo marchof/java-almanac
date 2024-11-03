@@ -1,4 +1,4 @@
-{{- $style := resources.Get "almanac.css" | resources.Minify -}}
+{{- $style := resources.Get "almanac.css" | resources.ExecuteAsTemplate "almanac.css" . | resources.Minify -}}
 {{- $stylefp := $style | resources.Fingerprint -}}
 {{- $triggerOutputForThirdPartySites := $style.RelPermalink -}}
 <!DOCTYPE html>
