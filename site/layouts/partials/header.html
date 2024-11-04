@@ -19,11 +19,11 @@
 <body>
 <div class="header-bar">
 <div class="header">
-  <span style="width:52px;height:56px;float:left;margin-right:8px" class="almanaclogo"></span>
-  <a href="https://github.com/marchof/java-almanac"><img src="{{ "img/github.svg" | relURL }}" title="Java Almanac on GitHub.com" height="14" style="float:right;margin-top:4px;margin-bottom:10px;"></a>
+  <span class="almanaclogo"></span>
+  <a href="https://github.com/marchof/java-almanac" class="githublink">GitHub</a>
   {{- partial "findbox.html" . }}
-  <span style="font-size:11pt;color:#888;font-weight:bold">The Java Version Almanac</span><br>
-  <span><a style="font-size:19pt;text-decoration:none;color:#000;font-weight:bold" href="{{ $.Site.BaseURL }}">{{ $.Site.Title }}</a></span>
+  <span class="siteheader1">The Java Version Almanac</span><br>
+  <a class="siteheader2" href="{{ $.Site.BaseURL }}">{{ $.Site.Title }}</a>
 </div>
 </div>
 <div class="content" id="content">

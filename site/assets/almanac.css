@@ -42,9 +42,35 @@ div.header {
 }
 
 div.header span.almanaclogo {
+	width:52px;
+	height:56px;
+	float:left;
+	margin-right:8px;
 	background-image: url("data:image/svg+xml,{{ (resources.Get "img/duke.svg").Content | urlquery }}");
 	Background-size: contain;
 	background-repeat: no-repeat;
+}
+
+div.header a.githublink {
+	font-size:11pt;
+	color:#888;
+	font-weight:bold;
+	text-decoration: none;
+	float:right;
+	margin-bottom:8px;
+}
+
+div.header span.siteheader1 {
+	font-size:11pt;
+	color:#888;
+	font-weight:bold;
+}
+
+div.header a.siteheader2 {
+	font-size:19pt;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold
 }
 
 div.content div.feedback {
