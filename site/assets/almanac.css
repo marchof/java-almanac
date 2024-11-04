@@ -41,6 +41,12 @@ div.header {
 	padding: 8px;
 }
 
+div.header span.almanaclogo {
+	background-image: url("data:image/svg+xml,{{ (resources.Get "img/duke.svg").Content | urlquery }}");
+	Background-size: contain;
+	background-repeat: no-repeat;
+}
+
 div.content div.feedback {
 	float: right;
 	font-size: 9pt;
