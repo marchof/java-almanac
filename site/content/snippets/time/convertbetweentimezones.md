@@ -20,7 +20,7 @@ import java.util.List;
 public class ConvertBetweenTimeZones {
 
 	public static void main(String... args) {
-		ZonedDateTime lunarEclipse = ZonedDateTime.of(LocalDate.of(2022, 11, 8), LocalTime.of(10, 59), ZoneOffset.UTC);
+		ZonedDateTime lunarEclipse = ZonedDateTime.of(LocalDate.of(2025, 03, 14), LocalTime.of(6, 59), ZoneOffset.UTC);
 		List<String> places = List.of( //
 				"Asia/Tokyo", "Asia/Kolkata", "Europe/Paris", "America/Fortaleza", "Pacific/Honolulu");
 

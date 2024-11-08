@@ -2,12 +2,11 @@
 title: Message Authentication Code
 ---
 
-A message authentication code is calculated based with a private key. Only
- owners of the corresponding private key can calculate and verify the
- authentication code. Because the private key cannot be derived from the
- generated hash this is a secure method to e.g. sign API calls which are
- transmitted over unsafe transport channels. For example verification links
- send via email.
+A message authentication code (MAC) is calculated based with a secret key.
+ Only owners of this secret key can calculate and verify the authentication
+ code. Because the secret key cannot be derived from the generated hash this
+ is a secure method to e.g. sign API calls which are transmitted over unsafe
+ transport channels, like verification links sent via email.
 
 Since [Java 1.4](/jdk/1.4/)
 

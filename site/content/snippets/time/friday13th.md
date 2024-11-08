@@ -20,7 +20,7 @@ public class Friday13th {
 	public static void main(String[] args) {
 
 		YearMonth start = YearMonth.of(2000, 1);
-		YearMonth end = YearMonth.of(2024, 12);
+		YearMonth end = YearMonth.of(2030, 12);
 
 		Stream.iterate(start, m -> m.isBefore(end), m -> m.plusMonths(1)) //
 				.map(m -> m.atDay(13)) //
