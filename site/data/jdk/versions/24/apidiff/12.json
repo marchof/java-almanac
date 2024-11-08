@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+22-2649"
+		"version": "24-ea+23-2793"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -7360,6 +7360,34 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "HKDFParameterSpec.Builder",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Builder.html"
+						},
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.Expand",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Expand.html"
+						},
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.ExtractThenExpand",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.ExtractThenExpand.html"
+						},
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.Extract",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Extract.html"
+						},
+						{
+							"type": "class",
 							"name": "OAEPParameterSpec",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html",
@@ -7374,6 +7402,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "HKDFParameterSpec",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.html"
 						}
 					]
 				},
@@ -7389,6 +7424,20 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/DecapsulateException.html",
 							"csr": "JDK-8305384"
+						},
+						{
+							"type": "class",
+							"name": "KDFSpi",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/KDFSpi.html"
+						},
+						{
+							"type": "class",
+							"name": "KDF",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/KDF.html"
 						},
 						{
 							"type": "class",
@@ -7417,6 +7466,13 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/KEM.html",
 							"csr": "JDK-8305384"
+						},
+						{
+							"type": "interface",
+							"name": "KDFParameters",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/javax/crypto/KDFParameters.html"
 						},
 						{
 							"type": "interface",
