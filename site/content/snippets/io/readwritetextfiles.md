@@ -2,7 +2,7 @@
 title: Read and Write Text Files
 ---
 
-The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
+The [`Files`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
  to read and write text content from/to files. When converting between Unicode
  strings and binary files content an encoding is applied. Do not rely on system
  defaults, always supply an encoding for portable behavior.

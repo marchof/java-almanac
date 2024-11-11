@@ -2,10 +2,10 @@
 title: Collection Constants
 ---
 
-The collection interfaces [`Set`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html), [`List`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html) and [`Map`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html) have several static `of(...)`
+The collection interfaces [`Set`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html), [`List`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html) and [`Map`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html) have several static `of(...)`
  methods to create constant instances of the respective collection types.
  Collections created this way do not allow `null` elements and any
- mutation method throws an [`UnsupportedOperationException`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html).
+ mutation method throws an [`UnsupportedOperationException`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/UnsupportedOperationException.html).
  Also as these methods are designed to declare constants duplicate set entries
  or map keys are considered as an error.
 

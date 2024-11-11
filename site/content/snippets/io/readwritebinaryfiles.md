@@ -2,7 +2,7 @@
 title: Read and Write Binary Files
 ---
 
-The [`Files`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
+The [`Files`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
  to read and write binary content from/to files.
 
 Since [Java 11](/jdk/11/)
