@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+23-2793"
+		"version": "24-ea+24-2960"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -2134,55 +2134,55 @@
 						},
 						{
 							"type": "method",
-							"name": "clearGlobalFocusOwner()",
+							"name": "getGlobalActiveWindow()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#clearGlobalFocusOwner()",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getGlobalActiveWindow()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "setGlobalActiveWindow(Window)",
+							"name": "getGlobalCurrentFocusCycleRoot()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalActiveWindow(java.awt.Window)",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getGlobalCurrentFocusCycleRoot()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "setGlobalCurrentFocusCycleRoot(Container)",
+							"name": "getGlobalFocusOwner()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalCurrentFocusCycleRoot(java.awt.Container)",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getGlobalFocusOwner()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "setGlobalFocusOwner(Component)",
+							"name": "getGlobalFocusedWindow()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalFocusOwner(java.awt.Component)",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getGlobalFocusedWindow()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "setGlobalFocusedWindow(Window)",
+							"name": "getGlobalPermanentFocusOwner()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalFocusedWindow(java.awt.Window)",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getGlobalPermanentFocusOwner()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "setGlobalPermanentFocusOwner(Component)",
+							"name": "setCurrentKeyboardFocusManager(KeyboardFocusManager)",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalPermanentFocusOwner(java.awt.Component)",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setCurrentKeyboardFocusManager(java.awt.KeyboardFocusManager)",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						}
@@ -2562,6 +2562,15 @@
 							"name": "isValidateRoot()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/Window.html#isValidateRoot()"
+						},
+						{
+							"type": "method",
+							"name": "setAlwaysOnTop(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						},
 						{
 							"type": "method",
@@ -2997,6 +3006,24 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setDesignTime(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/beans/Beans.html#setDesignTime(boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setGuiAvailable(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/beans/Beans.html#setGuiAvailable(boolean)",
+							"removedTags": [
+								"throws SecurityException"
 							]
 						}
 					]
@@ -3572,6 +3599,24 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "ObjectInputStream()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectInputStream.html#%3Cinit%3E()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "enableResolveObject(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectInputStream.html#enableResolveObject(boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getObjectInputFilter()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectInputStream.html#getObjectInputFilter()"
@@ -3597,6 +3642,32 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)",
 							"addedTags": [
 								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ObjectOutputStream",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectOutputStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ObjectOutputStream()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectOutputStream.html#%3Cinit%3E()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "enableReplaceObject(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectOutputStream.html#enableReplaceObject(boolean)",
+							"removedTags": [
+								"throws SecurityException"
 							]
 						}
 					]
@@ -6752,6 +6823,24 @@
 						},
 						{
 							"type": "method",
+							"name": "getConstructor(Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getConstructors()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getConstructors()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getDeclaredAnnotation(Class)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"
@@ -6764,37 +6853,100 @@
 						},
 						{
 							"type": "method",
-							"name": "getDeclaringClass()",
+							"name": "getDeclaredClasses()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaringClass()",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredClasses()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "getEnclosingClass()",
+							"name": "getDeclaredConstructor(Class...)",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getEnclosingClass()",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class...)",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "getEnclosingConstructor()",
+							"name": "getDeclaredConstructors()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getEnclosingConstructor()",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredConstructors()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
 						{
 							"type": "method",
-							"name": "getEnclosingMethod()",
+							"name": "getDeclaredField(String)",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getEnclosingMethod()",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredFields()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredFields()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredMethod(String, Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredMethods()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredMethods()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getField(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getField(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getFields()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getFields()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMethod(String, Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMethods()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getMethods()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
@@ -8368,8 +8520,8 @@
 							"name": "checkMulticast(InetAddress, byte)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
-							"addedTags": [
-								"forRemoval"
+							"removedTags": [
+								"deprecated"
 							]
 						},
 						{
@@ -12045,6 +12197,23 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.rmi/java/rmi/server/package-summary.html",
 			"deltas": [
+				{
+					"type": "class",
+					"name": "RMIClassLoader",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getClassLoader(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassLoader(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						}
+					]
+				},
 				{
 					"type": "class",
 					"name": "RemoteStub",
@@ -17107,9 +17276,116 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "FileHandler()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "FileHandler(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "FileHandler(String, boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "FileHandler(String, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "FileHandler(String, int, int, boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int,boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "FileHandler(String, long, int, boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,long,int,boolean)"
+						},
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/FileHandler.html#close()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "Handler",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Handler.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Handler.html#close()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setEncoding(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setFilter(Filter)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setFormatter(Formatter)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setLevel(Level)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						}
 					]
 				},
@@ -17138,6 +17414,9 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							],
+							"removedTags": [
+								"throws SecurityException"
 							]
 						},
 						{
@@ -17151,6 +17430,24 @@
 						},
 						{
 							"type": "method",
+							"name": "readConfiguration()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "readConfiguration(InputStream)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "removeConfigurationListener(Runnable)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/LogManager.html#removeConfigurationListener(java.lang.Runnable)"
@@ -17159,6 +17456,15 @@
 							"type": "method",
 							"name": "removePropertyChangeListener(PropertyChangeListener)",
 							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "reset()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/LogManager.html#reset()",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						},
 						{
 							"type": "method",
@@ -17241,6 +17547,15 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "addHandler(Handler)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html#addHandler(java.util.logging.Handler)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
 						{
 							"type": "method",
 							"name": "config(Supplier)",
@@ -17363,6 +17678,33 @@
 						},
 						{
 							"type": "method",
+							"name": "removeHandler(Handler)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html#removeHandler(java.util.logging.Handler)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setFilter(Filter)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html#setFilter(java.util.logging.Filter)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setLevel(Level)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html#setLevel(java.util.logging.Level)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setResourceBundle(ResourceBundle)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html#setResourceBundle(java.util.ResourceBundle)"
@@ -17378,6 +17720,84 @@
 							"name": "warning(Supplier)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/Logger.html#warning(java.util.function.Supplier)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "MemoryHandler",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/MemoryHandler.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/MemoryHandler.html#close()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setPushLevel(Level)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/MemoryHandler.html#setPushLevel(java.util.logging.Level)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketHandler",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/SocketHandler.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/SocketHandler.html#close()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "StreamHandler",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/StreamHandler.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/StreamHandler.html#close()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setEncoding(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/StreamHandler.html#setEncoding(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setOutputStream(OutputStream)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.logging/java/util/logging/StreamHandler.html#setOutputStream(java.io.OutputStream)",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						}
 					]
 				},
@@ -29770,6 +30190,15 @@
 							"removedTags": [
 								"public"
 							]
+						},
+						{
+							"type": "method",
+							"name": "setCurrentManager(FocusManager)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/FocusManager.html#setCurrentManager(javax.swing.FocusManager)",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						}
 					]
 				},
@@ -30505,6 +30934,15 @@
 							"name": "createLookAndFeel(String)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/UIManager.html#createLookAndFeel(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "setInstalledLookAndFeels(UIManager.LookAndFeelInfo[])",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/UIManager.html#setInstalledLookAndFeels(javax.swing.UIManager.LookAndFeelInfo%5B%5D)",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						}
 					]
 				},

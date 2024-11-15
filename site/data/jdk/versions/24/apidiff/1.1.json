@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+23-2793"
+		"version": "24-ea+24-2960"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -8900,6 +8900,24 @@
 							"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)"
+						},
+						{
+							"type": "method",
+							"name": "setDesignTime(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/beans/Beans.html#setDesignTime(boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setGuiAvailable(boolean)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/beans/Beans.html#setGuiAvailable(boolean)",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						}
 					]
 				},
@@ -10121,7 +10139,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectInputStream.html#enableResolveObject(boolean)",
 							"removedTags": [
-								"final"
+								"final",
+								"throws SecurityException"
 							]
 						},
 						{
@@ -10225,7 +10244,8 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/ObjectOutputStream.html#enableReplaceObject(boolean)",
 							"removedTags": [
-								"final"
+								"final",
+								"throws SecurityException"
 							]
 						},
 						{
@@ -13081,6 +13101,24 @@
 						},
 						{
 							"type": "method",
+							"name": "getConstructor(Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getConstructors()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getConstructors()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getDeclaredAnnotation(Class)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotation(java.lang.Class)"
@@ -13099,10 +13137,64 @@
 						},
 						{
 							"type": "method",
-							"name": "getDeclaringClass()",
+							"name": "getDeclaredClasses()",
 							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaringClass()",
-							"addedTags": [
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredClasses()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredConstructor(Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredConstructors()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredConstructors()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredField(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredFields()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredFields()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredMethod(String, Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getDeclaredMethods()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getDeclaredMethods()",
+							"removedTags": [
 								"throws SecurityException"
 							]
 						},
@@ -13132,6 +13224,24 @@
 						},
 						{
 							"type": "method",
+							"name": "getField(String)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getField(java.lang.String)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getFields()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getFields()",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
 							"name": "getGenericInterfaces()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getGenericInterfaces()"
@@ -13141,6 +13251,24 @@
 							"name": "getGenericSuperclass()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getGenericSuperclass()"
+						},
+						{
+							"type": "method",
+							"name": "getMethod(String, Class...)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class...)",
+							"removedTags": [
+								"throws SecurityException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMethods()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Class.html#getMethods()",
+							"removedTags": [
+								"throws SecurityException"
+							]
 						},
 						{
 							"type": "method",
@@ -15226,16 +15354,6 @@
 							"name": "checkMemberAccess(Class, int)",
 							"status": "removed",
 							"csr": "JDK-8200185"
-						},
-						{
-							"type": "method",
-							"name": "checkMulticast(InetAddress, byte)",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
 						},
 						{
 							"type": "method",
