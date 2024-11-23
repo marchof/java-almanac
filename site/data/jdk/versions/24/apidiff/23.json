@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+24-2960"
+		"version": "24-ea+25-3155"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -23,6 +23,51 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Console",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Console.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "println()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Console.html#println()"
+								},
+								{
+									"type": "method",
+									"name": "readln()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Console.html#readln()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "IO",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/IO.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "println()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/IO.html#println()"
+								},
+								{
+									"type": "method",
+									"name": "readln()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/IO.html#readln()"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "ObjectInputStream",
@@ -95,22 +140,25 @@
 				{
 					"type": "package",
 					"name": "java.lang.classfile.attribute",
-					"status": "notmodified",
-					"preview": true,
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
+					"removedTags": [
+						"preview"
+					],
 					"deltas": [
 						{
 							"type": "enum",
 							"name": "StackMapFrameInfo.SimpleVerificationTypeInfo",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "DOUBLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#DOUBLE",
 									"csr": "JDK-8339266"
 								},
@@ -118,7 +166,6 @@
 									"type": "field",
 									"name": "FLOAT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#FLOAT",
 									"csr": "JDK-8339266"
 								},
@@ -126,7 +173,6 @@
 									"type": "field",
 									"name": "INTEGER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#INTEGER",
 									"csr": "JDK-8339266"
 								},
@@ -134,56 +180,48 @@
 									"type": "field",
 									"name": "ITEM_DOUBLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ITEM_FLOAT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ITEM_INTEGER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ITEM_LONG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ITEM_NULL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ITEM_TOP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ITEM_UNINITIALIZED_THIS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LONG",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#LONG",
 									"csr": "JDK-8339266"
 								},
@@ -191,7 +229,6 @@
 									"type": "field",
 									"name": "NULL",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#NULL",
 									"csr": "JDK-8339266"
 								},
@@ -199,7 +236,6 @@
 									"type": "field",
 									"name": "TOP",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#TOP",
 									"csr": "JDK-8339266"
 								},
@@ -207,7 +243,6 @@
 									"type": "field",
 									"name": "UNINITIALIZED_THIS",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.SimpleVerificationTypeInfo.html#UNINITIALIZED_THIS",
 									"csr": "JDK-8339266"
 								}
@@ -215,16 +250,53 @@
 						},
 						{
 							"type": "interface",
+							"name": "AnnotationDefaultAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/AnnotationDefaultAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "BootstrapMethodsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/BootstrapMethodsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CharacterRangeInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CharacterRangeInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CharacterRangeTableAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CharacterRangeTableAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "CodeAttribute",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CodeAttribute.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "maxLocals()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CodeAttribute.html#maxLocals()",
 									"csr": "JDK-8337238"
 								},
@@ -232,7 +304,6 @@
 									"type": "method",
 									"name": "maxStack()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CodeAttribute.html#maxStack()",
 									"csr": "JDK-8337238"
 								}
@@ -240,32 +311,421 @@
 						},
 						{
 							"type": "interface",
+							"name": "CompilationIDAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/CompilationIDAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantValueAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ConstantValueAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DeprecatedAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/DeprecatedAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "EnclosingMethodAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/EnclosingMethodAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ExceptionsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ExceptionsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InnerClassInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/InnerClassInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InnerClassesAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/InnerClassesAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LineNumberInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/LineNumberInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LineNumberTableAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/LineNumberTableAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LocalVariableInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/LocalVariableInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LocalVariableTableAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/LocalVariableTableAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LocalVariableTypeInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/LocalVariableTypeInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LocalVariableTypeTableAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/LocalVariableTypeTableAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodParameterInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/MethodParameterInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodParametersAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/MethodParametersAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "ModuleAttribute.ModuleAttributeBuilder",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleAttribute.ModuleAttributeBuilder.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "build()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334728"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "ModuleAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleExportInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleExportInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleHashInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleHashInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleHashesAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleHashesAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleMainClassAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleMainClassAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleOpenInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleOpenInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModulePackagesAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModulePackagesAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleProvideInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleProvideInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleRequireInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleRequireInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleResolutionAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleResolutionAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleTargetAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/ModuleTargetAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NestHostAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/NestHostAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NestMembersAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/NestMembersAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PermittedSubclassesAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/PermittedSubclassesAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RecordAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RecordAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RecordComponentInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RecordComponentInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RuntimeInvisibleAnnotationsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RuntimeInvisibleAnnotationsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RuntimeInvisibleParameterAnnotationsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RuntimeInvisibleParameterAnnotationsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RuntimeInvisibleTypeAnnotationsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RuntimeInvisibleTypeAnnotationsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RuntimeVisibleAnnotationsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RuntimeVisibleAnnotationsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RuntimeVisibleParameterAnnotationsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RuntimeVisibleParameterAnnotationsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "RuntimeVisibleTypeAnnotationsAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/RuntimeVisibleTypeAnnotationsAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SignatureAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/SignatureAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SourceDebugExtensionAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/SourceDebugExtensionAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SourceFileAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/SourceFileAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SourceIDAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/SourceIDAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StackMapFrameInfo.ObjectVerificationTypeInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.ObjectVerificationTypeInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StackMapFrameInfo.UninitializedVerificationTypeInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.UninitializedVerificationTypeInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "StackMapFrameInfo.VerificationTypeInfo",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "ITEM_DOUBLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_DOUBLE",
 									"csr": "JDK-8339266"
 								},
@@ -273,7 +733,6 @@
 									"type": "field",
 									"name": "ITEM_FLOAT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_FLOAT",
 									"csr": "JDK-8339266"
 								},
@@ -281,7 +740,6 @@
 									"type": "field",
 									"name": "ITEM_INTEGER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_INTEGER",
 									"csr": "JDK-8339266"
 								},
@@ -289,7 +747,6 @@
 									"type": "field",
 									"name": "ITEM_LONG",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_LONG",
 									"csr": "JDK-8339266"
 								},
@@ -297,7 +754,6 @@
 									"type": "field",
 									"name": "ITEM_NULL",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_NULL",
 									"csr": "JDK-8339266"
 								},
@@ -305,7 +761,6 @@
 									"type": "field",
 									"name": "ITEM_OBJECT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_OBJECT",
 									"csr": "JDK-8339266"
 								},
@@ -313,7 +768,6 @@
 									"type": "field",
 									"name": "ITEM_TOP",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_TOP",
 									"csr": "JDK-8339266"
 								},
@@ -321,7 +775,6 @@
 									"type": "field",
 									"name": "ITEM_UNINITIALIZED",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_UNINITIALIZED",
 									"csr": "JDK-8339266"
 								},
@@ -329,10 +782,45 @@
 									"type": "field",
 									"name": "ITEM_UNINITIALIZED_THIS",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.VerificationTypeInfo.html#ITEM_UNINITIALIZED_THIS",
 									"csr": "JDK-8339266"
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StackMapFrameInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StackMapTableAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/StackMapTableAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SyntheticAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/SyntheticAttribute.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "UnknownAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/UnknownAttribute.html",
+							"removedTags": [
+								"preview"
 							]
 						}
 					]
@@ -340,24 +828,108 @@
 				{
 					"type": "package",
 					"name": "java.lang.classfile.components",
-					"status": "notmodified",
-					"preview": true,
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/package-summary.html",
+					"removedTags": [
+						"preview"
+					],
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ClassPrinter",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassPrinter.Verbosity",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.Verbosity.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassPrinter.LeafNode",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.LeafNode.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassPrinter.ListNode",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.ListNode.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassPrinter.MapNode",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.MapNode.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassPrinter.Node",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.Node.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassRemapper",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassRemapper.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeLocalsShifter",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeLocalsShifter.html",
+							"removedTags": [
+								"preview"
+							]
+						},
 						{
 							"type": "interface",
 							"name": "CodeRelabeler",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeRelabeler.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "relabel(Label, CodeBuilder)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334728"
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeStackTracker",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeStackTracker.html",
+							"removedTags": [
+								"preview"
 							]
 						}
 					]
@@ -365,51 +937,248 @@
 				{
 					"type": "package",
 					"name": "java.lang.classfile.constantpool",
-					"status": "notmodified",
-					"preview": true,
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
+					"removedTags": [
+						"preview"
+					],
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ConstantPoolException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantPoolException.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationConstantValueEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/AnnotationConstantValueEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantDynamicEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantDynamicEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
 						{
 							"type": "interface",
 							"name": "ConstantPoolBuilder",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantPoolBuilder.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
 							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "annotationConstantValueEntry(ConstantDesc)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "writeBootstrapMethods(BufWriter)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334728"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "ConstantPool",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantPool.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantValueEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ConstantValueEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DoubleEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/DoubleEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DynamicConstantPoolEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/DynamicConstantPoolEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FieldRefEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/FieldRefEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FloatEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/FloatEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "IntegerEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/IntegerEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InterfaceMethodRefEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/InterfaceMethodRefEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InvokeDynamicEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/InvokeDynamicEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LoadableConstantEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/LoadableConstantEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LongEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/LongEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemberRefEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/MemberRefEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodHandleEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/MethodHandleEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodRefEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/MethodRefEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTypeEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NameAndTypeEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/NameAndTypeEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PackageEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "PoolEntry",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
 							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "TAG_CLASS",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_CLASS",
 									"csr": "JDK-8339266"
 								},
@@ -417,7 +1186,6 @@
 									"type": "field",
 									"name": "TAG_DOUBLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_DOUBLE",
 									"csr": "JDK-8339266"
 								},
@@ -425,7 +1193,6 @@
 									"type": "field",
 									"name": "TAG_DYNAMIC",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_DYNAMIC",
 									"csr": "JDK-8339266"
 								},
@@ -433,7 +1200,6 @@
 									"type": "field",
 									"name": "TAG_FIELDREF",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_FIELDREF",
 									"csr": "JDK-8339266"
 								},
@@ -441,7 +1207,6 @@
 									"type": "field",
 									"name": "TAG_FLOAT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_FLOAT",
 									"csr": "JDK-8339266"
 								},
@@ -449,7 +1214,6 @@
 									"type": "field",
 									"name": "TAG_INTEGER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_INTEGER",
 									"csr": "JDK-8339266"
 								},
@@ -457,7 +1221,6 @@
 									"type": "field",
 									"name": "TAG_INTERFACE_METHODREF",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_INTERFACE_METHODREF",
 									"csr": "JDK-8339266"
 								},
@@ -465,7 +1228,6 @@
 									"type": "field",
 									"name": "TAG_INVOKE_DYNAMIC",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_INVOKE_DYNAMIC",
 									"csr": "JDK-8339266"
 								},
@@ -473,7 +1235,6 @@
 									"type": "field",
 									"name": "TAG_LONG",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_LONG",
 									"csr": "JDK-8339266"
 								},
@@ -481,7 +1242,6 @@
 									"type": "field",
 									"name": "TAG_METHODREF",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_METHODREF",
 									"csr": "JDK-8339266"
 								},
@@ -489,7 +1249,6 @@
 									"type": "field",
 									"name": "TAG_METHOD_HANDLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_METHOD_HANDLE",
 									"csr": "JDK-8339266"
 								},
@@ -497,7 +1256,6 @@
 									"type": "field",
 									"name": "TAG_METHOD_TYPE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_METHOD_TYPE",
 									"csr": "JDK-8339266"
 								},
@@ -505,7 +1263,6 @@
 									"type": "field",
 									"name": "TAG_MODULE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_MODULE",
 									"csr": "JDK-8339266"
 								},
@@ -513,7 +1270,6 @@
 									"type": "field",
 									"name": "TAG_NAME_AND_TYPE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_NAME_AND_TYPE",
 									"csr": "JDK-8339266"
 								},
@@ -521,7 +1277,6 @@
 									"type": "field",
 									"name": "TAG_PACKAGE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_PACKAGE",
 									"csr": "JDK-8339266"
 								},
@@ -529,7 +1284,6 @@
 									"type": "field",
 									"name": "TAG_STRING",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_STRING",
 									"csr": "JDK-8339266"
 								},
@@ -537,10 +1291,27 @@
 									"type": "field",
 									"name": "TAG_UTF8",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_UTF8",
 									"csr": "JDK-8339266"
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StringEntry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Utf8Entry",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html",
+							"removedTags": [
+								"preview"
 							]
 						}
 					]
@@ -548,22 +1319,52 @@
 				{
 					"type": "package",
 					"name": "java.lang.classfile.instruction",
-					"status": "notmodified",
-					"preview": true,
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/package-summary.html",
+					"removedTags": [
+						"preview"
+					],
 					"deltas": [
 						{
 							"type": "interface",
+							"name": "ArrayLoadInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ArrayLoadInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ArrayStoreInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ArrayStoreInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "BranchInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/BranchInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "CharacterRange",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "FLAG_ASSIGNMENT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_ASSIGNMENT",
 									"csr": "JDK-8339266"
 								},
@@ -571,7 +1372,6 @@
 									"type": "field",
 									"name": "FLAG_BLOCK",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_BLOCK",
 									"csr": "JDK-8339266"
 								},
@@ -579,7 +1379,6 @@
 									"type": "field",
 									"name": "FLAG_BRANCH_FALSE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_BRANCH_FALSE",
 									"csr": "JDK-8339266"
 								},
@@ -587,7 +1386,6 @@
 									"type": "field",
 									"name": "FLAG_BRANCH_TRUE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_BRANCH_TRUE",
 									"csr": "JDK-8339266"
 								},
@@ -595,7 +1393,6 @@
 									"type": "field",
 									"name": "FLAG_CREATE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_CREATE",
 									"csr": "JDK-8339266"
 								},
@@ -603,7 +1400,6 @@
 									"type": "field",
 									"name": "FLAG_FLOW_CONTROLLER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_FLOW_CONTROLLER",
 									"csr": "JDK-8339266"
 								},
@@ -611,7 +1407,6 @@
 									"type": "field",
 									"name": "FLAG_FLOW_TARGET",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_FLOW_TARGET",
 									"csr": "JDK-8339266"
 								},
@@ -619,7 +1414,6 @@
 									"type": "field",
 									"name": "FLAG_INVOKE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_INVOKE",
 									"csr": "JDK-8339266"
 								},
@@ -627,7 +1421,6 @@
 									"type": "field",
 									"name": "FLAG_STATEMENT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/CharacterRange.html#FLAG_STATEMENT",
 									"csr": "JDK-8339266"
 								}
@@ -635,16 +1428,161 @@
 						},
 						{
 							"type": "interface",
+							"name": "ConstantInstruction.ArgumentConstantInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.ArgumentConstantInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantInstruction.IntrinsicConstantInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.IntrinsicConstantInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantInstruction.LoadConstantInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.LoadConstantInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ConstantInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConvertInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ConvertInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DiscontinuedInstruction.JsrInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/DiscontinuedInstruction.JsrInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DiscontinuedInstruction.RetInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/DiscontinuedInstruction.RetInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DiscontinuedInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/DiscontinuedInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ExceptionCatch",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ExceptionCatch.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FieldInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/FieldInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "IncrementInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/IncrementInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InvokeDynamicInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/InvokeDynamicInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "InvokeInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/InvokeInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LabelTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LabelTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LineNumber",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LineNumber.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LoadInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LoadInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "LocalVariableType",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LocalVariableType.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "writeTo(BufWriter)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								}
 							]
@@ -652,17 +1590,153 @@
 						{
 							"type": "interface",
 							"name": "LocalVariable",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LocalVariable.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "writeTo(BufWriter)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LookupSwitchInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/LookupSwitchInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MonitorInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/MonitorInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NewMultiArrayInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/NewMultiArrayInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NewObjectInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/NewObjectInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NewPrimitiveArrayInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/NewPrimitiveArrayInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NewReferenceArrayInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/NewReferenceArrayInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "NopInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/NopInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "OperatorInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/OperatorInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ReturnInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ReturnInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StackInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/StackInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StoreInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/StoreInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SwitchCase",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/SwitchCase.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TableSwitchInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/TableSwitchInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ThrowInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/ThrowInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeCheckInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/TypeCheckInstruction.html",
+							"removedTags": [
+								"preview"
 							]
 						}
 					]
@@ -670,45 +1744,77 @@
 				{
 					"type": "package",
 					"name": "java.lang.classfile",
-					"status": "notmodified",
-					"preview": true,
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/package-summary.html",
+					"removedTags": [
+						"preview"
+					],
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Attributes",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Attributes.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
 							"name": "CustomAttribute",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CustomAttribute.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "attributeName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CustomAttribute.html#attributeName()"
+								},
+								{
+									"type": "method",
+									"name": "attributeName()",
+									"status": "removed"
+								},
 								{
 									"type": "method",
 									"name": "writeTo(BufWriter)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								}
 							]
 						},
 						{
 							"type": "enum",
+							"name": "AttributeMapper.AttributeStability",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.AttributeStability.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
 							"name": "ClassFile.AttributesProcessingOption",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "DROP_UNSTABLE_ATRIBUTES",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8340201"
 								},
 								{
 									"type": "field",
 									"name": "DROP_UNSTABLE_ATTRIBUTES",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html#DROP_UNSTABLE_ATTRIBUTES",
 									"csr": "JDK-8340201"
 								}
@@ -716,60 +1822,157 @@
 						},
 						{
 							"type": "enum",
+							"name": "ClassFile.ConstantPoolSharingOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.ConstantPoolSharingOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.DeadCodeOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.DeadCodeOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.DeadLabelsOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.DeadLabelsOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.DebugElementsOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.DebugElementsOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.LineNumbersOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.LineNumbersOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.ShortJumpsOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.ShortJumpsOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFile.StackMapsOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.StackMapsOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "Opcode.Kind",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Opcode.Kind.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
 							"name": "Opcode",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Opcode.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constantValue()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339287"
 								},
 								{
 									"type": "method",
 									"name": "isUnconditionalBranch()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339287"
 								},
 								{
 									"type": "method",
 									"name": "primaryTypeKind()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339287"
 								},
 								{
 									"type": "method",
 									"name": "secondaryTypeKind()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339287"
 								},
 								{
 									"type": "method",
 									"name": "slot()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339287"
 								}
 							]
 						},
 						{
 							"type": "enum",
+							"name": "Signature.TypeArg.Bounded.WildcardIndicator",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.WildcardIndicator.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "TypeAnnotation.TargetType",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetType.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "TypeAnnotation.TypePathComponent.Kind",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TypePathComponent.Kind.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "enum",
 							"name": "TypeKind",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "BOOLEAN",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#BOOLEAN",
 									"csr": "JDK-8339116"
 								},
@@ -777,7 +1980,6 @@
 									"type": "field",
 									"name": "BYTE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#BYTE",
 									"csr": "JDK-8339116"
 								},
@@ -785,21 +1987,18 @@
 									"type": "field",
 									"name": "BooleanType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "ByteType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "CHAR",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#CHAR",
 									"csr": "JDK-8339116"
 								},
@@ -807,14 +2006,12 @@
 									"type": "field",
 									"name": "CharType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "DOUBLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#DOUBLE",
 									"csr": "JDK-8339116"
 								},
@@ -822,14 +2019,12 @@
 									"type": "field",
 									"name": "DoubleType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "FLOAT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#FLOAT",
 									"csr": "JDK-8339116"
 								},
@@ -837,14 +2032,12 @@
 									"type": "field",
 									"name": "FloatType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "INT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#INT",
 									"csr": "JDK-8339116"
 								},
@@ -852,14 +2045,12 @@
 									"type": "field",
 									"name": "IntType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "LONG",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#LONG",
 									"csr": "JDK-8339116"
 								},
@@ -867,14 +2058,12 @@
 									"type": "field",
 									"name": "LongType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "REFERENCE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#REFERENCE",
 									"csr": "JDK-8339116"
 								},
@@ -882,14 +2071,12 @@
 									"type": "field",
 									"name": "ReferenceType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "SHORT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#SHORT",
 									"csr": "JDK-8339116"
 								},
@@ -897,14 +2084,12 @@
 									"type": "field",
 									"name": "ShortType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "field",
 									"name": "VOID",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#VOID",
 									"csr": "JDK-8339116"
 								},
@@ -912,28 +2097,24 @@
 									"type": "field",
 									"name": "VoidType",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "method",
 									"name": "descriptor()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "method",
 									"name": "typeName()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339116"
 								},
 								{
 									"type": "method",
 									"name": "upperBound()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeKind.html#upperBound()",
 									"csr": "JDK-8339116"
 								}
@@ -942,50 +2123,46 @@
 						{
 							"type": "interface",
 							"name": "AccessFlags",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AccessFlags.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "ofClass(AccessFlag...)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337240"
 								},
 								{
 									"type": "method",
 									"name": "ofClass(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337240"
 								},
 								{
 									"type": "method",
 									"name": "ofField(AccessFlag...)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337240"
 								},
 								{
 									"type": "method",
 									"name": "ofField(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337240"
 								},
 								{
 									"type": "method",
 									"name": "ofMethod(AccessFlag...)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337240"
 								},
 								{
 									"type": "method",
 									"name": "ofMethod(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337240"
 								}
 							]
@@ -994,24 +2171,43 @@
 							"type": "interface",
 							"name": "AnnotationElement",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationElement.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfAnnotation",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfAnnotation.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AnnotationValue.OfArray",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfArray.html",
+							"removedTags": [
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "AnnotationValue.OfBoolean",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1019,7 +2215,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfBoolean.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1028,15 +2223,16 @@
 						{
 							"type": "interface",
 							"name": "AnnotationValue.OfByte",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1044,7 +2240,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfByte.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1054,7 +2249,6 @@
 							"type": "interface",
 							"name": "AnnotationValue.OfChar",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfChar.html",
 							"csr": "JDK-8336353"
 						},
@@ -1067,23 +2261,32 @@
 						},
 						{
 							"type": "interface",
+							"name": "AnnotationValue.OfClass",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfClass.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "AnnotationValue.OfConstant",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfConstant.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constantValue()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfConstant.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1092,15 +2295,16 @@
 						{
 							"type": "interface",
 							"name": "AnnotationValue.OfDouble",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1108,7 +2312,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfDouble.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1116,16 +2319,26 @@
 						},
 						{
 							"type": "interface",
+							"name": "AnnotationValue.OfEnum",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfEnum.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "AnnotationValue.OfFloat",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1133,7 +2346,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfFloat.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1143,7 +2355,6 @@
 							"type": "interface",
 							"name": "AnnotationValue.OfInt",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfInt.html",
 							"csr": "JDK-8336353"
 						},
@@ -1157,15 +2368,16 @@
 						{
 							"type": "interface",
 							"name": "AnnotationValue.OfLong",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1173,7 +2385,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfLong.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1182,15 +2393,16 @@
 						{
 							"type": "interface",
 							"name": "AnnotationValue.OfShort",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1198,7 +2410,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfShort.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1207,15 +2418,16 @@
 						{
 							"type": "interface",
 							"name": "AnnotationValue.OfString",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "constant()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html#constant()",
 									"csr": "JDK-8336353"
 								},
@@ -1223,7 +2435,6 @@
 									"type": "method",
 									"name": "resolvedValue()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.OfString.html#resolvedValue()",
 									"csr": "JDK-8336353"
 								}
@@ -1233,17 +2444,16 @@
 							"type": "interface",
 							"name": "AnnotationValue",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
 							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "TAG_ANNOTATION",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_ANNOTATION",
 									"csr": "JDK-8339266"
 								},
@@ -1251,7 +2461,6 @@
 									"type": "field",
 									"name": "TAG_ARRAY",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_ARRAY",
 									"csr": "JDK-8339266"
 								},
@@ -1259,7 +2468,6 @@
 									"type": "field",
 									"name": "TAG_BOOLEAN",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_BOOLEAN",
 									"csr": "JDK-8339266"
 								},
@@ -1267,7 +2475,6 @@
 									"type": "field",
 									"name": "TAG_BYTE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_BYTE",
 									"csr": "JDK-8339266"
 								},
@@ -1275,7 +2482,6 @@
 									"type": "field",
 									"name": "TAG_CHAR",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_CHAR",
 									"csr": "JDK-8339266"
 								},
@@ -1283,7 +2489,6 @@
 									"type": "field",
 									"name": "TAG_CLASS",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_CLASS",
 									"csr": "JDK-8339266"
 								},
@@ -1291,7 +2496,6 @@
 									"type": "field",
 									"name": "TAG_DOUBLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_DOUBLE",
 									"csr": "JDK-8339266"
 								},
@@ -1299,7 +2503,6 @@
 									"type": "field",
 									"name": "TAG_ENUM",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_ENUM",
 									"csr": "JDK-8339266"
 								},
@@ -1307,7 +2510,6 @@
 									"type": "field",
 									"name": "TAG_FLOAT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_FLOAT",
 									"csr": "JDK-8339266"
 								},
@@ -1315,7 +2517,6 @@
 									"type": "field",
 									"name": "TAG_INT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_INT",
 									"csr": "JDK-8339266"
 								},
@@ -1323,7 +2524,6 @@
 									"type": "field",
 									"name": "TAG_LONG",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_LONG",
 									"csr": "JDK-8339266"
 								},
@@ -1331,7 +2531,6 @@
 									"type": "field",
 									"name": "TAG_SHORT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_SHORT",
 									"csr": "JDK-8339266"
 								},
@@ -1339,7 +2538,6 @@
 									"type": "field",
 									"name": "TAG_STRING",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#TAG_STRING",
 									"csr": "JDK-8339266"
 								},
@@ -1347,7 +2545,6 @@
 									"type": "method",
 									"name": "ofBoolean(IntegerEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofBoolean(java.lang.classfile.constantpool.IntegerEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1355,14 +2552,12 @@
 									"type": "method",
 									"name": "ofBoolean(IntegerEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofBoolean(boolean)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofBoolean(boolean)",
 									"csr": "JDK-8336353"
 								},
@@ -1370,14 +2565,12 @@
 									"type": "method",
 									"name": "ofBoolean(boolean)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofByte(IntegerEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofByte(java.lang.classfile.constantpool.IntegerEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1385,14 +2578,12 @@
 									"type": "method",
 									"name": "ofByte(IntegerEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofByte(byte)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofByte(byte)",
 									"csr": "JDK-8336353"
 								},
@@ -1400,14 +2591,12 @@
 									"type": "method",
 									"name": "ofByte(byte)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofChar(IntegerEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofChar(java.lang.classfile.constantpool.IntegerEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1415,14 +2604,12 @@
 									"type": "method",
 									"name": "ofChar(IntegerEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofChar(char)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofChar(char)",
 									"csr": "JDK-8336353"
 								},
@@ -1430,14 +2617,12 @@
 									"type": "method",
 									"name": "ofChar(char)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofDouble(DoubleEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofDouble(java.lang.classfile.constantpool.DoubleEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1445,14 +2630,12 @@
 									"type": "method",
 									"name": "ofDouble(DoubleEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofDouble(double)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofDouble(double)",
 									"csr": "JDK-8336353"
 								},
@@ -1460,14 +2643,12 @@
 									"type": "method",
 									"name": "ofDouble(double)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofFloat(FloatEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofFloat(java.lang.classfile.constantpool.FloatEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1475,14 +2656,12 @@
 									"type": "method",
 									"name": "ofFloat(FloatEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofFloat(float)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofFloat(float)",
 									"csr": "JDK-8336353"
 								},
@@ -1490,14 +2669,12 @@
 									"type": "method",
 									"name": "ofFloat(float)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofInt(IntegerEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofInt(java.lang.classfile.constantpool.IntegerEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1505,14 +2682,12 @@
 									"type": "method",
 									"name": "ofInt(IntegerEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofInt(int)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofInt(int)",
 									"csr": "JDK-8336353"
 								},
@@ -1520,14 +2695,12 @@
 									"type": "method",
 									"name": "ofInt(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofLong(LongEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofLong(java.lang.classfile.constantpool.LongEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1535,14 +2708,12 @@
 									"type": "method",
 									"name": "ofLong(LongEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofLong(long)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofLong(long)",
 									"csr": "JDK-8336353"
 								},
@@ -1550,14 +2721,12 @@
 									"type": "method",
 									"name": "ofLong(long)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofShort(IntegerEntry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofShort(java.lang.classfile.constantpool.IntegerEntry)",
 									"csr": "JDK-8336353"
 								},
@@ -1565,14 +2734,12 @@
 									"type": "method",
 									"name": "ofShort(IntegerEntry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofShort(short)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofShort(short)",
 									"csr": "JDK-8336353"
 								},
@@ -1580,14 +2747,12 @@
 									"type": "method",
 									"name": "ofShort(short)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofString(String)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofString(java.lang.String)",
 									"csr": "JDK-8336353"
 								},
@@ -1595,14 +2760,12 @@
 									"type": "method",
 									"name": "ofString(String)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								},
 								{
 									"type": "method",
 									"name": "ofString(Utf8Entry)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#ofString(java.lang.classfile.constantpool.Utf8Entry)",
 									"csr": "JDK-8336353"
 								},
@@ -1610,7 +2773,6 @@
 									"type": "method",
 									"name": "ofString(Utf8Entry)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336353"
 								}
 							]
@@ -1619,24 +2781,25 @@
 							"type": "interface",
 							"name": "Annotation",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Annotation.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "AttributeMapper",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "readAttribute(AttributedElement, ClassReader, int)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.html#readAttribute(java.lang.classfile.AttributedElement,java.lang.classfile.ClassReader,int)",
 									"csr": "JDK-8338774"
 								},
@@ -1644,14 +2807,12 @@
 									"type": "method",
 									"name": "readAttribute(AttributedElement, ClassReader, int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8338774"
 								},
 								{
 									"type": "method",
 									"name": "writeAttribute(BufWriter, Attribute)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributeMapper.html#writeAttribute(java.lang.classfile.BufWriter,java.lang.classfile.Attribute)",
 									"csr": "JDK-8338774"
 								},
@@ -1659,7 +2820,6 @@
 									"type": "method",
 									"name": "writeAttribute(BufWriter, Object)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8338774"
 								}
 							]
@@ -1668,58 +2828,78 @@
 							"type": "interface",
 							"name": "Attribute",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Attribute.html",
 							"addedTags": [
 								"implements ClassFileElement"
 							],
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "attributeName()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Attribute.html#attributeName()"
+								},
+								{
+									"type": "method",
+									"name": "attributeName()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AttributedElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AttributedElement.html",
+							"removedTags": [
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "BootstrapMethodEntry",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/BootstrapMethodEntry.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "BufWriter",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/BufWriter.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "copyTo(byte[], int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								},
 								{
 									"type": "method",
 									"name": "writeBytes(BufWriter)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								},
 								{
 									"type": "method",
 									"name": "writeList(List)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								},
 								{
 									"type": "method",
 									"name": "writeListIndices(List)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								}
 							]
@@ -1727,38 +2907,75 @@
 						{
 							"type": "interface",
 							"name": "ClassBuilder",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassBuilder.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "original()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336354"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "ClassElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassElement.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassFile.AttributeMapperOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.AttributeMapperOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassFile.ClassHierarchyResolverOption",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.ClassHierarchyResolverOption.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassFile.Option",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.Option.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "ClassFileBuilder",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileBuilder.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "canWriteDirect(ConstantPool)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								},
 								{
 									"type": "method",
 									"name": "transform(CompoundElement, ClassFileTransform)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileBuilder.html#transform(java.lang.classfile.CompoundElement,java.lang.classfile.ClassFileTransform)",
 									"csr": "JDK-8336027"
 								},
@@ -1766,9 +2983,17 @@
 									"type": "method",
 									"name": "transform(CompoundElement, ClassFileTransform)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassFileElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileElement.html",
+							"removedTags": [
+								"preview"
 							]
 						},
 						{
@@ -1781,1221 +3006,1062 @@
 						{
 							"type": "interface",
 							"name": "ClassFileTransform",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileTransform.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "resolve(ClassFileBuilder)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "ClassFileVersion",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFileVersion.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "ClassFile",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "AALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ACONST_NULL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_ANNOTATION",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_ARRAY",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_BOOLEAN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_BYTE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_CHAR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_CLASS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_DOUBLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_ENUM",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_FLOAT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_INT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_LONG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_SHORT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "AEV_STRING",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ALOAD_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ALOAD_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ALOAD_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ALOAD_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ANEWARRAY",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ARETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ARRAYLENGTH",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ASTORE_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ASTORE_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ASTORE_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ASTORE_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ATHROW",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "BALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "BASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "BIPUSH",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CHECKCAST",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_ASSIGNMENT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_BLOCK",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_BRANCH_FALSE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_BRANCH_TRUE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_CREATE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_FLOW_CONTROLLER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_FLOW_TARGET",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_INVOKE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "CRT_STATEMENT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "D2F",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "D2I",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "D2L",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DADD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DCMPG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DCMPL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DCONST_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DCONST_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DDIV",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DEFAULT_CLASS_FLAGS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DLOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DLOAD_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DLOAD_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DLOAD_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DLOAD_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DMUL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DNEG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DREM",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DRETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DSTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DSTORE_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DSTORE_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DSTORE_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DSTORE_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DSUB",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DUP2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DUP2_X1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DUP2_X2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DUP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DUP_X1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "DUP_X2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "F2D",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "F2I",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "F2L",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FADD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FCMPG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FCMPL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FCONST_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FCONST_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FCONST_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FDIV",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FLOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FLOAD_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FLOAD_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FLOAD_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FLOAD_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FMUL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FNEG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FREM",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FRETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FSTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FSTORE_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FSTORE_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FSTORE_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FSTORE_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "FSUB",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "GETFIELD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "GETSTATIC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "GOTO",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "GOTO_W",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "I2B",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "I2C",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "I2D",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "I2F",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "I2L",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "I2S",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IADD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IAND",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_4",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_5",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ICONST_M1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IDIV",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFEQ",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFGE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFGT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFLT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFNE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFNONNULL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IFNULL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ACMPEQ",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ACMPNE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ICMPEQ",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ICMPGE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ICMPGT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ICMPLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ICMPLT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IF_ICMPNE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IINC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ILOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ILOAD_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ILOAD_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ILOAD_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ILOAD_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IMUL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INEG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INSTANCEOF",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INVOKEDYNAMIC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INVOKEINTERFACE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INVOKESPECIAL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INVOKESTATIC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "INVOKEVIRTUAL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IOR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IREM",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IRETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISHL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISHR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISTORE_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISTORE_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISTORE_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISTORE_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "ISUB",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IUSHR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "IXOR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "JAVA_24_VERSION",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_24_VERSION",
 									"csr": "JDK-8330188"
 								},
@@ -3003,756 +4069,648 @@
 									"type": "field",
 									"name": "JSR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "JSR_W",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "L2D",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "L2F",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "L2I",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LADD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LAND",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LCMP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LCONST_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LCONST_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LDC2_W",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LDC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LDC_W",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LDIV",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LLOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LLOAD_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LLOAD_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LLOAD_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LLOAD_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LMUL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LNEG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LOOKUPSWITCH",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LOR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LREM",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LRETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSHL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSHR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSTORE_0",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSTORE_1",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSTORE_2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSTORE_3",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LSUB",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LUSHR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "LXOR",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "MONITORENTER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "MONITOREXIT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "MULTIANEWARRAY",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "NEWARRAY",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "NEW",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "NOP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "POP2",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "POP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "PUTFIELD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "PUTSTATIC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "RETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "RET",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "SALOAD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "SASTORE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "SIPUSH",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "SWAP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TABLESWITCH",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_CLASS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_CONSTANTDYNAMIC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_DOUBLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_FIELDREF",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_FLOAT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_INTEGER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_INTERFACEMETHODREF",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_INVOKEDYNAMIC",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_LONG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_METHODHANDLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_METHODREF",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_METHODTYPE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_MODULE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_NAMEANDTYPE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_PACKAGE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_STRING",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_UNICODE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAG_UTF8",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CAST",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CLASS_EXTENDS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CLASS_TYPE_PARAMETER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CLASS_TYPE_PARAMETER_BOUND",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CONSTRUCTOR_REFERENCE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_EXCEPTION_PARAMETER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_FIELD",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_INSTANCEOF",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_LOCAL_VARIABLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_FORMAL_PARAMETER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_INVOCATION_TYPE_ARGUMENT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_RECEIVER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_REFERENCE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_REFERENCE_TYPE_ARGUMENT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_RETURN",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_TYPE_PARAMETER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_METHOD_TYPE_PARAMETER_BOUND",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_NEW",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_RESOURCE_VARIABLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "TAT_THROWS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_DOUBLE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_FLOAT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_INTEGER",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_LONG",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_NULL",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_OBJECT",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_TOP",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_UNINITIALIZED",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "VT_UNINITIALIZED_THIS",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "field",
 									"name": "WIDE",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339266"
 								},
 								{
 									"type": "method",
 									"name": "transform(ClassModel, ClassDesc, ClassTransform)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8335359"
 								},
 								{
 									"type": "method",
 									"name": "transform(ClassModel, ClassEntry, ClassTransform)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8335359"
 								},
 								{
 									"type": "method",
 									"name": "transform(ClassModel, ClassTransform)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8335359"
 								},
 								{
 									"type": "method",
 									"name": "transformClass(ClassModel, ClassDesc, ClassTransform)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#transformClass(java.lang.classfile.ClassModel,java.lang.constant.ClassDesc,java.lang.classfile.ClassTransform)",
 									"csr": "JDK-8335359"
 								},
@@ -3760,7 +4718,6 @@
 									"type": "method",
 									"name": "transformClass(ClassModel, ClassEntry, ClassTransform)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#transformClass(java.lang.classfile.ClassModel,java.lang.classfile.constantpool.ClassEntry,java.lang.classfile.ClassTransform)",
 									"csr": "JDK-8335359"
 								},
@@ -3768,7 +4725,6 @@
 									"type": "method",
 									"name": "transformClass(ClassModel, ClassTransform)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassFile.html#transformClass(java.lang.classfile.ClassModel,java.lang.classfile.ClassTransform)",
 									"csr": "JDK-8335359"
 								}
@@ -3776,111 +4732,159 @@
 						},
 						{
 							"type": "interface",
+							"name": "ClassHierarchyResolver.ClassHierarchyInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassHierarchyResolver.ClassHierarchyInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassHierarchyResolver",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassHierarchyResolver.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ClassModel",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassModel.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "ClassReader",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassReader.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "compare(BufWriter, int, int, int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336586"
 								},
 								{
 									"type": "method",
 									"name": "readClassEntry(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								},
 								{
 									"type": "method",
 									"name": "readMethodHandleEntry(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								},
 								{
 									"type": "method",
 									"name": "readModuleEntry(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								},
 								{
 									"type": "method",
 									"name": "readNameAndTypeEntry(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								},
 								{
 									"type": "method",
 									"name": "readPackageEntry(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								},
 								{
 									"type": "method",
 									"name": "readUtf8Entry(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								},
 								{
 									"type": "method",
 									"name": "readUtf8EntryOrNull(int)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8334735"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "ClassSignature",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassSignature.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "ClassTransform",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/ClassTransform.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "resolve(ClassBuilder)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "CodeBuilder.BlockCodeBuilder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.BlockCodeBuilder.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CodeBuilder.CatchBuilder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.CatchBuilder.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "CodeBuilder",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "if_nonnull(Label)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8335111"
 								},
 								{
 									"type": "method",
 									"name": "if_null(Label)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8335111"
 								},
 								{
 									"type": "method",
 									"name": "ifnonnull(Label)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnonnull(java.lang.classfile.Label)",
 									"csr": "JDK-8335111"
 								},
@@ -3888,7 +4892,6 @@
 									"type": "method",
 									"name": "ifnull(Label)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#ifnull(java.lang.classfile.Label)",
 									"csr": "JDK-8335111"
 								},
@@ -3896,14 +4899,12 @@
 									"type": "method",
 									"name": "loadConstant(Opcode, ConstantDesc)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8339283"
 								},
 								{
 									"type": "method",
 									"name": "loadConstant(double)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(double)",
 									"csr": "JDK-8339256"
 								},
@@ -3911,7 +4912,6 @@
 									"type": "method",
 									"name": "loadConstant(float)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(float)",
 									"csr": "JDK-8339256"
 								},
@@ -3919,7 +4919,6 @@
 									"type": "method",
 									"name": "loadConstant(int)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(int)",
 									"csr": "JDK-8339256"
 								},
@@ -3927,7 +4926,6 @@
 									"type": "method",
 									"name": "loadConstant(long)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeBuilder.html#loadConstant(long)",
 									"csr": "JDK-8339256"
 								},
@@ -3935,30 +4933,38 @@
 									"type": "method",
 									"name": "original()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336354"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "CodeElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeElement.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "CodeModel",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeModel.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "maxLocals()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337238"
 								},
 								{
 									"type": "method",
 									"name": "maxStack()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8337238"
 								}
 							]
@@ -3966,15 +4972,16 @@
 						{
 							"type": "interface",
 							"name": "CodeTransform",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CodeTransform.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "resolve(CodeBuilder)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								}
 							]
@@ -3982,22 +4989,22 @@
 						{
 							"type": "interface",
 							"name": "CompoundElement",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CompoundElement.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "elements()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336034"
 								},
 								{
 									"type": "method",
 									"name": "forEach(Consumer)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/CompoundElement.html#forEach(java.util.function.Consumer)",
 									"csr": "JDK-8336034"
 								},
@@ -4005,7 +5012,6 @@
 									"type": "method",
 									"name": "forEachElement(Consumer)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336034"
 								}
 							]
@@ -4013,99 +5019,338 @@
 						{
 							"type": "interface",
 							"name": "FieldBuilder",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldBuilder.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "original()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336354"
 								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "FieldElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldElement.html",
+							"removedTags": [
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "FieldModel",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldModel.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "FieldTransform",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/FieldTransform.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "resolve(FieldBuilder)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "Instruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Instruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Interfaces",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Interfaces.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Label",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Label.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "MethodBuilder",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodBuilder.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "original()",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336354"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "MethodElement",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodElement.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "MethodModel",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodModel.html",
 							"removedTags": [
-								"implements WritableElement"
+								"implements WritableElement",
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodSignature",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodSignature.html",
+							"removedTags": [
+								"preview"
 							]
 						},
 						{
 							"type": "interface",
 							"name": "MethodTransform",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/MethodTransform.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "resolve(MethodBuilder)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336027"
 								}
 							]
 						},
 						{
 							"type": "interface",
+							"name": "PseudoInstruction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/PseudoInstruction.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.ArrayTypeSig",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.ArrayTypeSig.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.BaseTypeSig",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.BaseTypeSig.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.ClassTypeSig",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.ClassTypeSig.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.RefTypeSig",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.RefTypeSig.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.ThrowableSig",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.ThrowableSig.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeArg.Bounded",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Bounded.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeArg.Unbounded",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.TypeArg.Unbounded.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeArg",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.TypeArg.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeParam",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.TypeParam.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.TypeVarSig",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.TypeVarSig.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Signature.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Superclass",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/Superclass.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.CatchTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.CatchTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.EmptyTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.EmptyTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.FormalParameterTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.FormalParameterTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.LocalVarTargetInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.LocalVarTargetInfo.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.LocalVarTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.LocalVarTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.OffsetTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.OffsetTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.SupertypeTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.SupertypeTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "TypeAnnotation.TargetInfo",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "field",
 									"name": "TARGET_CAST",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CAST",
 									"csr": "JDK-8339266"
 								},
@@ -4113,7 +5358,6 @@
 									"type": "field",
 									"name": "TARGET_CLASS_EXTENDS",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CLASS_EXTENDS",
 									"csr": "JDK-8339266"
 								},
@@ -4121,7 +5365,6 @@
 									"type": "field",
 									"name": "TARGET_CLASS_TYPE_PARAMETER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CLASS_TYPE_PARAMETER",
 									"csr": "JDK-8339266"
 								},
@@ -4129,7 +5372,6 @@
 									"type": "field",
 									"name": "TARGET_CLASS_TYPE_PARAMETER_BOUND",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CLASS_TYPE_PARAMETER_BOUND",
 									"csr": "JDK-8339266"
 								},
@@ -4137,7 +5379,6 @@
 									"type": "field",
 									"name": "TARGET_CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT",
 									"csr": "JDK-8339266"
 								},
@@ -4145,7 +5386,6 @@
 									"type": "field",
 									"name": "TARGET_CONSTRUCTOR_REFERENCE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CONSTRUCTOR_REFERENCE",
 									"csr": "JDK-8339266"
 								},
@@ -4153,7 +5393,6 @@
 									"type": "field",
 									"name": "TARGET_CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT",
 									"csr": "JDK-8339266"
 								},
@@ -4161,7 +5400,6 @@
 									"type": "field",
 									"name": "TARGET_EXCEPTION_PARAMETER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_EXCEPTION_PARAMETER",
 									"csr": "JDK-8339266"
 								},
@@ -4169,7 +5407,6 @@
 									"type": "field",
 									"name": "TARGET_FIELD",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_FIELD",
 									"csr": "JDK-8339266"
 								},
@@ -4177,7 +5414,6 @@
 									"type": "field",
 									"name": "TARGET_INSTANCEOF",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_INSTANCEOF",
 									"csr": "JDK-8339266"
 								},
@@ -4185,7 +5421,6 @@
 									"type": "field",
 									"name": "TARGET_LOCAL_VARIABLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_LOCAL_VARIABLE",
 									"csr": "JDK-8339266"
 								},
@@ -4193,7 +5428,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_FORMAL_PARAMETER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_FORMAL_PARAMETER",
 									"csr": "JDK-8339266"
 								},
@@ -4201,7 +5435,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_INVOCATION_TYPE_ARGUMENT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_INVOCATION_TYPE_ARGUMENT",
 									"csr": "JDK-8339266"
 								},
@@ -4209,7 +5442,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_RECEIVER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_RECEIVER",
 									"csr": "JDK-8339266"
 								},
@@ -4217,7 +5449,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_REFERENCE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_REFERENCE",
 									"csr": "JDK-8339266"
 								},
@@ -4225,7 +5456,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_REFERENCE_TYPE_ARGUMENT",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_REFERENCE_TYPE_ARGUMENT",
 									"csr": "JDK-8339266"
 								},
@@ -4233,7 +5463,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_RETURN",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_RETURN",
 									"csr": "JDK-8339266"
 								},
@@ -4241,7 +5470,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_TYPE_PARAMETER",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_TYPE_PARAMETER",
 									"csr": "JDK-8339266"
 								},
@@ -4249,7 +5477,6 @@
 									"type": "field",
 									"name": "TARGET_METHOD_TYPE_PARAMETER_BOUND",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_METHOD_TYPE_PARAMETER_BOUND",
 									"csr": "JDK-8339266"
 								},
@@ -4257,7 +5484,6 @@
 									"type": "field",
 									"name": "TARGET_NEW",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_NEW",
 									"csr": "JDK-8339266"
 								},
@@ -4265,7 +5491,6 @@
 									"type": "field",
 									"name": "TARGET_RESOURCE_VARIABLE",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_RESOURCE_VARIABLE",
 									"csr": "JDK-8339266"
 								},
@@ -4273,7 +5498,6 @@
 									"type": "field",
 									"name": "TARGET_THROWS",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html#TARGET_THROWS",
 									"csr": "JDK-8339266"
 								}
@@ -4281,19 +5505,63 @@
 						},
 						{
 							"type": "interface",
+							"name": "TypeAnnotation.ThrowsTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.ThrowsTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.TypeArgumentTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TypeArgumentTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.TypeParameterBoundTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TypeParameterBoundTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.TypeParameterTarget",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TypeParameterTarget.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "TypeAnnotation.TypePathComponent",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.TypePathComponent.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "TypeAnnotation",
 							"status": "modified",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.html",
 							"removedTags": [
-								"implements Annotation"
+								"implements Annotation",
+								"preview"
 							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "annotation()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.html#annotation()",
 									"csr": "JDK-8336794"
 								},
@@ -4301,7 +5569,6 @@
 									"type": "method",
 									"name": "of(TypeAnnotation.TargetInfo, List, Annotation)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/TypeAnnotation.html#of(java.lang.classfile.TypeAnnotation.TargetInfo,java.util.List,java.lang.classfile.Annotation)",
 									"csr": "JDK-8336794"
 								},
@@ -4309,28 +5576,24 @@
 									"type": "method",
 									"name": "of(TypeAnnotation.TargetInfo, List, ClassDesc, AnnotationElement...)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336794"
 								},
 								{
 									"type": "method",
 									"name": "of(TypeAnnotation.TargetInfo, List, ClassDesc, List)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336794"
 								},
 								{
 									"type": "method",
 									"name": "of(TypeAnnotation.TargetInfo, List, Utf8Entry, AnnotationElement...)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336794"
 								},
 								{
 									"type": "method",
 									"name": "of(TypeAnnotation.TargetInfo, List, Utf8Entry, List)",
 									"status": "removed",
-									"preview": true,
 									"csr": "JDK-8336794"
 								}
 							]

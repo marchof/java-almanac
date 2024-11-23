@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+24-2960"
+		"version": "24-ea+25-3155"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -81,6 +81,13 @@
 								},
 								{
 									"type": "method",
+									"name": "println()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Console.html#println()"
+								},
+								{
+									"type": "method",
 									"name": "println(Object)",
 									"status": "added",
 									"preview": true,
@@ -100,6 +107,13 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
+								},
+								{
+									"type": "method",
+									"name": "readln()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/io/Console.html#readln()"
 								},
 								{
 									"type": "method",
@@ -354,7 +368,6 @@
 					"type": "package",
 					"name": "java.lang.classfile.attribute",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -362,7 +375,6 @@
 					"type": "package",
 					"name": "java.lang.classfile.components",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -370,7 +382,6 @@
 					"type": "package",
 					"name": "java.lang.classfile.constantpool",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -378,7 +389,6 @@
 					"type": "package",
 					"name": "java.lang.classfile.instruction",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/instruction/package-summary.html",
 					"csr": "JDK-8308754"
 				},
@@ -386,7 +396,6 @@
 					"type": "package",
 					"name": "java.lang.classfile",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"csr": "JDK-8308754"
 				},
