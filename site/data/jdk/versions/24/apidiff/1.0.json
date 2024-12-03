@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+25-3155"
+		"version": "24-ea+26-3339"
 	},
 	"order": 1.0,
 	"deltas": [
@@ -1948,12 +1948,6 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/peer/WindowPeer.html#getAppropriateGraphicsConfiguration(java.awt.GraphicsConfiguration)",
 							"csr": "JDK-8006421"
-						},
-						{
-							"type": "method",
-							"name": "repositionSecurityWarning()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/peer/WindowPeer.html#repositionSecurityWarning()"
 						},
 						{
 							"type": "method",
@@ -9242,6 +9236,16 @@
 							"name": "getType()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/Window.html#getType()"
+						},
+						{
+							"type": "method",
+							"name": "getWarningString()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/Window.html#getWarningString()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",

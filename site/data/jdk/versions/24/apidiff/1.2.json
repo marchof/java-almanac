@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+25-3155"
+		"version": "24-ea+26-3339"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -3792,12 +3792,6 @@
 						},
 						{
 							"type": "method",
-							"name": "repositionSecurityWarning()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/peer/WindowPeer.html#repositionSecurityWarning()"
-						},
-						{
-							"type": "method",
 							"name": "setModalBlocked(Dialog, boolean)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/peer/WindowPeer.html#setModalBlocked(java.awt.Dialog,boolean)"
@@ -4148,6 +4142,16 @@
 					"name": "AWTKeyStroke",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/AWTKeyStroke.html"
+				},
+				{
+					"type": "class",
+					"name": "AWTPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/AWTPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
 				},
 				{
 					"type": "class",
@@ -7875,6 +7879,16 @@
 							"name": "getType()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/Window.html#getType()"
+						},
+						{
+							"type": "method",
+							"name": "getWarningString()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/java/awt/Window.html#getWarningString()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
@@ -11812,6 +11826,12 @@
 						},
 						{
 							"type": "field",
+							"name": "EGYPTIAN_HIEROGLYPHS_EXTENDED_A",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPHS_EXTENDED_A"
+						},
+						{
+							"type": "field",
 							"name": "EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#EGYPTIAN_HIEROGLYPH_FORMAT_CONTROLS",
@@ -11881,6 +11901,12 @@
 						},
 						{
 							"type": "field",
+							"name": "GARAY",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GARAY"
+						},
+						{
+							"type": "field",
 							"name": "GEOMETRIC_SHAPES_EXTENDED",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GEOMETRIC_SHAPES_EXTENDED"
@@ -11929,6 +11955,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GUNJALA_GONDI",
 							"csr": "JDK-8212120"
+						},
+						{
+							"type": "field",
+							"name": "GURUNG_KHEMA",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#GURUNG_KHEMA"
 						},
 						{
 							"type": "field",
@@ -12111,6 +12143,12 @@
 							"name": "KHUDAWADI",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KHUDAWADI"
+						},
+						{
+							"type": "field",
+							"name": "KIRAT_RAI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#KIRAT_RAI"
 						},
 						{
 							"type": "field",
@@ -12393,6 +12431,12 @@
 						},
 						{
 							"type": "field",
+							"name": "MYANMAR_EXTENDED_C",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MYANMAR_EXTENDED_C"
+						},
+						{
+							"type": "field",
 							"name": "NABATAEAN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#NABATAEAN"
@@ -12511,6 +12555,12 @@
 							"name": "OL_CHIKI",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OL_CHIKI"
+						},
+						{
+							"type": "field",
+							"name": "OL_ONAL",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#OL_ONAL"
 						},
 						{
 							"type": "field",
@@ -12705,6 +12755,12 @@
 						},
 						{
 							"type": "field",
+							"name": "SUNUWAR",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUNUWAR"
+						},
+						{
+							"type": "field",
 							"name": "SUPPLEMENTAL_ARROWS_A",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SUPPLEMENTAL_ARROWS_A"
@@ -12785,6 +12841,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_FOR_LEGACY_COMPUTING",
 							"csr": "JDK-8239504"
+						},
+						{
+							"type": "field",
+							"name": "SYMBOLS_FOR_LEGACY_COMPUTING_SUPPLEMENT",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SYMBOLS_FOR_LEGACY_COMPUTING_SUPPLEMENT"
 						},
 						{
 							"type": "field",
@@ -12902,6 +12964,12 @@
 						},
 						{
 							"type": "field",
+							"name": "TODHRI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TODHRI"
+						},
+						{
+							"type": "field",
 							"name": "TOTO",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TOTO",
@@ -12912,6 +12980,12 @@
 							"name": "TRANSPORT_AND_MAP_SYMBOLS",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TRANSPORT_AND_MAP_SYMBOLS"
+						},
+						{
+							"type": "field",
+							"name": "TULU_TIGALARI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TULU_TIGALARI"
 						},
 						{
 							"type": "field",
@@ -44004,6 +44078,16 @@
 							"name": "getNormalBounds()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JInternalFrame.html#getNormalBounds()"
+						},
+						{
+							"type": "method",
+							"name": "getWarningString()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.desktop/javax/swing/JInternalFrame.html#getWarningString()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
