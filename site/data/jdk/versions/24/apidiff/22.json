@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+26-3339"
+		"version": "24-ea+27-3551"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -882,111 +882,8 @@
 				{
 					"type": "package",
 					"name": "java.lang.classfile.components",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/package-summary.html",
-					"removedTags": [
-						"preview"
-					],
-					"deltas": [
-						{
-							"type": "class",
-							"name": "ClassPrinter",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "enum",
-							"name": "ClassPrinter.Verbosity",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.Verbosity.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "ClassPrinter.LeafNode",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.LeafNode.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "ClassPrinter.ListNode",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.ListNode.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "ClassPrinter.MapNode",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.MapNode.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "ClassPrinter.Node",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassPrinter.Node.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "ClassRemapper",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/ClassRemapper.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "CodeLocalsShifter",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeLocalsShifter.html",
-							"removedTags": [
-								"preview"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "CodeRelabeler",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeRelabeler.html",
-							"removedTags": [
-								"preview"
-							],
-							"deltas": [
-								{
-									"type": "method",
-									"name": "relabel(Label, CodeBuilder)",
-									"status": "removed",
-									"csr": "JDK-8334728"
-								}
-							]
-						},
-						{
-							"type": "interface",
-							"name": "CodeStackTracker",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/CodeStackTracker.html",
-							"removedTags": [
-								"preview"
-							]
-						}
-					]
+					"status": "removed",
+					"preview": true
 				},
 				{
 					"type": "package",
@@ -1356,6 +1253,17 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#TAG_UTF8",
 									"csr": "JDK-8339266"
+								},
+								{
+									"type": "method",
+									"name": "tag()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/constantpool/PoolEntry.html#tag()"
+								},
+								{
+									"type": "method",
+									"name": "tag()",
+									"status": "removed"
 								}
 							]
 						},
@@ -3353,6 +3261,17 @@
 									"name": "ofString(Utf8Entry)",
 									"status": "removed",
 									"csr": "JDK-8336353"
+								},
+								{
+									"type": "method",
+									"name": "tag()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/AnnotationValue.html#tag()"
+								},
+								{
+									"type": "method",
+									"name": "tag()",
+									"status": "removed"
 								}
 							]
 						},
@@ -9039,6 +8958,35 @@
 									"removedTags": [
 										"abstract"
 									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.naming",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.naming/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.naming",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.naming/javax/naming/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Context",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.naming/javax/naming/Context.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "APPLET",
+									"status": "removed"
 								}
 							]
 						}

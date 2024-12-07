@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+26-3339"
+		"version": "24-ea+27-3551"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -203,13 +203,6 @@
 					"name": "java.lang.classfile.attribute",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
-					"csr": "JDK-8308754"
-				},
-				{
-					"type": "package",
-					"name": "java.lang.classfile.components",
-					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.base/java/lang/classfile/components/package-summary.html",
 					"csr": "JDK-8308754"
 				},
 				{
@@ -4324,6 +4317,35 @@
 									"removedTags": [
 										"abstract"
 									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.naming",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.naming/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.naming",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.naming/javax/naming/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "Context",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk24/docs/api/java.naming/javax/naming/Context.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "APPLET",
+									"status": "removed"
 								}
 							]
 						}
