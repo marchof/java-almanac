@@ -1,0 +1,100 @@
+{
+	"base": {
+		"feature": "24",
+		"vendor": "open",
+		"version": "24-ea+27-3551"
+	},
+	"target": {
+		"feature": "25",
+		"vendor": "open",
+		"version": "25-ea+1-3"
+	},
+	"order": 24.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.lang.classfile",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassFile",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/ClassFile.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "JAVA_25_VERSION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_25_VERSION",
+									"csr": "JDK-8343029"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.reflect",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "ClassFileFormatVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_25",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_25",
+									"csr": "JDK-8343029"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_25",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_25",
+									"csr": "JDK-8343000"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
