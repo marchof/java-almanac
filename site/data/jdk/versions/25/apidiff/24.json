@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "24",
 		"vendor": "open",
-		"version": "24-ea+28-3562"
+		"version": "24-ea+29-3578"
 	},
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+2-135"
+		"version": "25-ea+3-283"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -35,20 +35,6 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_25_VERSION",
 									"csr": "JDK-8343029"
-								}
-							]
-						},
-						{
-							"type": "interface",
-							"name": "CompoundElement",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/CompoundElement.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "toDebugString()",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/CompoundElement.html#toDebugString()"
 								}
 							]
 						}
@@ -132,6 +118,54 @@
 									"type": "method",
 									"name": "BasicSliderUI()",
 									"status": "removed"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.xml.crypto",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.crypto.dsig",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "SignatureMethod",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_224",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_224"
+								},
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_256",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_256"
+								},
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_384",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_384"
+								},
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_512",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_512"
 								}
 							]
 						}
