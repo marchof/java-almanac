@@ -34,6 +34,12 @@
 					"type": "AlmanacFeature",
 					"identifier": "recordpatterns"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "405"
+				}
 			]
 		},
 		{
@@ -50,6 +56,16 @@
 					"type": "AlmanacFeature",
 					"identifier": "typepatterns"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "432"
+				},
+				{
+					"type": "JEP",
+					"identifier": "427"
+				}
 			]
 		},
 		{
@@ -62,7 +78,8 @@
 					"type": "JEP",
 					"identifier": "429"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Foreign Function \u0026 Memory API",
@@ -73,6 +90,12 @@
 				{
 					"type": "JEP",
 					"identifier": "434"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "424"
 				}
 			]
 		},
@@ -90,6 +113,12 @@
 					"type": "AlmanacFeature",
 					"identifier": "virtual-threads"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "425"
+				}
 			]
 		},
 		{
@@ -102,7 +131,8 @@
 					"type": "JEP",
 					"identifier": "437"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Vector API",
@@ -113,6 +143,12 @@
 				{
 					"type": "JEP",
 					"identifier": "438"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "426"
 				}
 			]
 		}
