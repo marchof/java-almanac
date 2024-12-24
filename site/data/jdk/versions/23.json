@@ -29,7 +29,8 @@
 					"type": "JEP",
 					"identifier": "455"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Module Import Declarations",
@@ -41,7 +42,8 @@
 					"type": "JEP",
 					"identifier": "476"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Implicitly Declared Classes and Instance Main Methods",
@@ -52,6 +54,16 @@
 				{
 					"type": "JEP",
 					"identifier": "477"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "476"
+				},
+				{
+					"type": "JEP",
+					"identifier": "463"
 				}
 			]
 		},
@@ -65,6 +77,12 @@
 					"type": "JEP",
 					"identifier": "482"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "447"
+				}
 			]
 		},
 		{
@@ -77,6 +95,12 @@
 					"type": "JEP",
 					"identifier": "466"
 				}
+			] 
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "457"
+				}
 			]
 		},
 		{
@@ -87,7 +111,8 @@
 					"type": "JEP",
 					"identifier": "471"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Stream Gatherers",
@@ -103,6 +128,12 @@
 					"type": "AlmanacFeature",
 					"identifier": "gatherers"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "461"
+				}
 			]
 		},
 		{
@@ -114,6 +145,12 @@
 				{
 					"type": "JEP",
 					"identifier": "480"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "462"
 				}
 			]
 		},
@@ -127,6 +164,12 @@
 					"type": "JEP",
 					"identifier": "481"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "464"
+				}
 			]
 		},
 		{
@@ -136,6 +179,12 @@
 				{
 					"type": "JEP",
 					"identifier": "474"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "439"
 				}
 			]
 		},
@@ -147,7 +196,8 @@
 					"type": "JEP",
 					"identifier": "467"
 				}
-			]
+			],
+			"predecessors": []
 		}
 	],
 	"latestversion": "23.0.1"
