@@ -28,7 +28,8 @@
 					"type": "JEP",
 					"identifier": "261"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Private Methods in Interfaces",
@@ -38,7 +39,8 @@
 					"type": "JEP",
 					"identifier": "213"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "HTTP/2 Client",
@@ -50,7 +52,8 @@
 					"type": "JEP",
 					"identifier": "110"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Var Handles",
@@ -60,7 +63,8 @@
 					"type": "JEP",
 					"identifier": "193"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "UTF-8 Property Resource Bundles",
@@ -70,7 +74,8 @@
 					"type": "JEP",
 					"identifier": "226"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Compact Strings",
@@ -79,6 +84,16 @@
 				{
 					"type": "JEP",
 					"identifier": "254"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "192"
+				},
+				{
+					"type": "JEP",
+					"identifier": "250"
 				}
 			]
 		},
@@ -90,6 +105,12 @@
 					"type": "JEP",
 					"identifier": "266"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "193"
+				}
 			]
 		},
 		{
@@ -100,7 +121,8 @@
 					"type": "JEP",
 					"identifier": "277"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Object.finalize() deprecated",
@@ -110,7 +132,8 @@
 					"type": "JDKIssue",
 					"identifier": "8165641"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "jshell",
@@ -120,7 +143,8 @@
 					"type": "JEP",
 					"identifier": "222"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Multi-Release JAR Files",
@@ -130,7 +154,8 @@
 					"type": "JEP",
 					"identifier": "238"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Compile for Older Platform Versions",
@@ -140,7 +165,8 @@
 					"type": "JEP",
 					"identifier": "247"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "jlink",
@@ -149,6 +175,16 @@
 				{
 					"type": "JEP",
 					"identifier": "282"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "275"
+				},
+				{
+					"type": "JEP",
+					"identifier": "220"
 				}
 			]
 		},
@@ -159,6 +195,12 @@
 				{
 					"type": "JEP",
 					"identifier": "280"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "254"
 				}
 			]
 		}
