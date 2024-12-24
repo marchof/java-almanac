@@ -28,7 +28,8 @@
 					"type": "JEP",
 					"identifier": "345"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "JFR Event Streaming",
@@ -38,7 +39,8 @@
 					"type": "JEP",
 					"identifier": "349"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Helpful NullPointerExceptions",
@@ -48,7 +50,8 @@
 					"type": "JEP",
 					"identifier": "358"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Deprecate the Solaris and SPARC Ports",
@@ -58,7 +61,8 @@
 					"type": "JEP",
 					"identifier": "362"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Remove the Concurrent Mark Sweep (CMS) Garbage Collector",
@@ -67,6 +71,12 @@
 				{
 					"type": "JEP",
 					"identifier": "363"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "291"
 				}
 			]
 		},
@@ -78,7 +88,8 @@
 					"type": "JEP",
 					"identifier": "364"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "ZGC on Windows",
@@ -88,7 +99,8 @@
 					"type": "JEP",
 					"identifier": "365"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Deprecate the ParallelScavenge + SerialOld GC Combination",
@@ -98,7 +110,8 @@
 					"type": "JEP",
 					"identifier": "366"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Switch Expressions",
@@ -111,6 +124,12 @@
 				{
 					"type": "AlmanacFeature",
 					"identifier": "switch"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "354"
 				}
 			]
 		},
@@ -128,7 +147,8 @@
 					"type": "AlmanacFeature",
 					"identifier": "records"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Text Blocks",
@@ -144,6 +164,12 @@
 					"type": "AlmanacFeature",
 					"identifier": "textblocks"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "355"
+				}
 			]
 		},
 		{
@@ -156,7 +182,8 @@
 					"type": "JEP",
 					"identifier": "305"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Non-Volatile Mapped Byte Buffers",
@@ -166,7 +193,8 @@
 					"type": "JEP",
 					"identifier": "352"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Remove the Pack200 APIs",
@@ -175,6 +203,12 @@
 				{
 					"type": "JEP",
 					"identifier": "367"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "336"
 				}
 			]
 		},
@@ -188,7 +222,8 @@
 					"type": "JEP",
 					"identifier": "370"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Remove the Pack200 Tools",
@@ -197,6 +232,12 @@
 				{
 					"type": "JEP",
 					"identifier": "367"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "336"
 				}
 			]
 		},
@@ -209,6 +250,12 @@
 				{
 					"type": "JEP",
 					"identifier": "343"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "311"
 				}
 			]
 		}
