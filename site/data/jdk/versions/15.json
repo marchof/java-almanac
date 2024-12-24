@@ -28,7 +28,8 @@
 					"type": "JEP",
 					"identifier": "374"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "ZGC",
@@ -37,6 +38,24 @@
 				{
 					"type": "JEP",
 					"identifier": "377"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "365"
+				},
+				{
+					"type": "JEP",
+					"identifier": "364"
+				},
+				{
+					"type": "JEP",
+					"identifier": "351"
+				},
+				{
+					"type": "JEP",
+					"identifier": "333"
 				}
 			]
 		},
@@ -48,7 +67,8 @@
 					"type": "JEP",
 					"identifier": "379"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Remove the Solaris and SPARC Ports",
@@ -57,6 +77,12 @@
 				{
 					"type": "JEP",
 					"identifier": "381"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "362"
 				}
 			]
 		},
@@ -74,7 +100,8 @@
 					"type": "AlmanacFeature",
 					"identifier": "sealedtypes"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Pattern Matching for instanceof",
@@ -85,6 +112,12 @@
 				{
 					"type": "JEP",
 					"identifier": "375"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "305"
 				}
 			]
 		},
@@ -99,6 +132,12 @@
 				{
 					"type": "AlmanacFeature",
 					"identifier": "textblocks"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "368"
 				}
 			]
 		},
@@ -116,6 +155,12 @@
 					"type": "AlmanacFeature",
 					"identifier": "records"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "359"
+				}
 			]
 		},
 		{
@@ -128,7 +173,8 @@
 					"type": "JEP",
 					"identifier": "384"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Edwards-Curve Digital Signature Algorithm (EdDSA)",
@@ -138,7 +184,8 @@
 					"type": "JEP",
 					"identifier": "339"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Hidden Classes",
@@ -148,7 +195,8 @@
 					"type": "JEP",
 					"identifier": "371"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Remove the Nashorn JavaScript Engine",
@@ -157,6 +205,12 @@
 				{
 					"type": "JEP",
 					"identifier": "372"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "335"
 				}
 			]
 		},
@@ -170,6 +224,12 @@
 					"type": "JEP",
 					"identifier": "383"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "370"
+				}
 			]
 		},
 		{
@@ -180,7 +240,8 @@
 					"type": "JEP",
 					"identifier": "385"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Reimplement the Legacy DatagramSocket API",
@@ -190,7 +251,8 @@
 					"type": "JEP",
 					"identifier": "373"
 				}
-			]
+			],
+			"predecessors": []
 		}
 	]
 }
