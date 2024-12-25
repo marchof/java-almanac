@@ -14,7 +14,7 @@ jobs:
     - name: Setup HUGO
       uses: peaceiris/actions-hugo@v3
       with:
-        hugo-version: '0.128.1'
+        hugo-version: '0.136.5'
     - name: Render
       working-directory: 'site'
       run: hugo
