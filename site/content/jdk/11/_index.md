@@ -7,6 +7,8 @@ description: Information about Java 11 including documentation links, new APIs, 
 
 Java 11 was the first *Long Term Support* (LTS) release with the new release schedule.
 
+JavaFX (which was added in [Java 8](../8/)) is not bundled any more in Oracle's JDK distribution.
+
 {{< /jdkdetails >}}
 
 

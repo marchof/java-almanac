@@ -15,6 +15,9 @@ integrated into the JDK as a new package `java.time`. Instead of the mostly depr
 `java.util.Date` and `java.util.Calendar` classes we now have a modern and powerful API
 for calculations with dates and times.
 
+Also Oracle started to bundle JavaFX in its JDK distribution (which was removed
+again in [Java 11](../11/)).
+
 {{< /jdkdetails >}}
 
 
