@@ -14,13 +14,15 @@ jobs:
     - name: Setup HUGO
       uses: peaceiris/actions-hugo@v3
       with:
-        hugo-version: '0.136.5'
+        hugo-version: '0.140.1'
     - name: Render
       working-directory: 'site'
       run: hugo
-    - name: Deploy
-      working-directory: 'site'
-      run: hugo deploy --invalidateCDN
+    - name: Upload Content
+      run: |
+        aws s3 sync site/public s3://javaalmanac.io/ --delete --no-progress
+        aws cloudfront create-invalidation --distribution-id ECI1PGYSTNAWG --paths "/*"
+      
       env:
         AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
         AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'

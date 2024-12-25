@@ -9,13 +9,3 @@ params:
     api:
         find: https://sandbox.javaalmanac.io/find
         sandbox: https://sandbox.javaalmanac.io/
-
-
-deployment:
-    targets:
-        name: 'javaalmanac.io'
-        URL: 's3://javaalmanac.io?region=us-east-1'
-        cloudFrontDistributionID: ECI1PGYSTNAWG
-    matchers:
-      - pattern: '^.+\.(js|css|png|svg|woff|woff2)$'
-        cacheControl: 'public, max-age=604800'
