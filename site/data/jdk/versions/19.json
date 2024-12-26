@@ -28,7 +28,8 @@
 					"type": "JEP",
 					"identifier": "422"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Record Patterns",
@@ -44,7 +45,8 @@
 					"type": "AlmanacFeature",
 					"identifier": "recordpatterns"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Pattern Matching for switch",
@@ -60,6 +62,13 @@
 					"type": "AlmanacFeature",
 					"identifier": "typepatterns"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "420",
+					"version": "18"
+				}
 			]
 		},
 		{
@@ -71,6 +80,13 @@
 				{
 					"type": "JEP",
 					"identifier": "424"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "419",
+					"version": "18"
 				}
 			]
 		},
@@ -88,7 +104,8 @@
 					"type": "AlmanacFeature",
 					"identifier": "virtual-threads"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Vector API",
@@ -99,6 +116,13 @@
 				{
 					"type": "JEP",
 					"identifier": "426"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "417",
+					"version": "18"
 				}
 			]
 		},
@@ -112,7 +136,8 @@
 					"type": "JEP",
 					"identifier": "428"
 				}
-			]
+			],
+			"predecessors": []
 		}
 	]
 }

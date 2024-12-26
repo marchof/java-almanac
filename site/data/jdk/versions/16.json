@@ -28,7 +28,8 @@
 					"type": "JEP",
 					"identifier": "376"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Alpine Linux Port",
@@ -38,7 +39,8 @@
 					"type": "JEP",
 					"identifier": "386"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Windows/AArch64 Port",
@@ -48,7 +50,8 @@
 					"type": "JEP",
 					"identifier": "388"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Strongly Encapsulate JDK Internals by Default",
@@ -57,6 +60,18 @@
 				{
 					"type": "JEP",
 					"identifier": "396"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "260",
+					"version": "9"
+				},
+				{
+					"type": "JEP",
+					"identifier": "261",
+					"version": "9"
 				}
 			]
 		},
@@ -70,7 +85,8 @@
 					"type": "JEP",
 					"identifier": "338"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Unix-Domain Socket Channels",
@@ -80,7 +96,8 @@
 					"type": "JEP",
 					"identifier": "380"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Foreign Linker API",
@@ -92,7 +109,8 @@
 					"type": "JEP",
 					"identifier": "389"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Foreign-Memory Access API",
@@ -104,6 +122,13 @@
 					"type": "JEP",
 					"identifier": "393"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "383",
+					"version": "15"
+				}
 			]
 		},
 		{
@@ -114,7 +139,8 @@
 					"type": "JEP",
 					"identifier": "390"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Pattern Matching for instanceof",
@@ -127,6 +153,13 @@
 				{
 					"type": "AlmanacFeature",
 					"identifier": "instanceof-patterns"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "375",
+					"version": "15"
 				}
 			]
 		},
@@ -142,6 +175,13 @@
 					"type": "AlmanacFeature",
 					"identifier": "records"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "384",
+					"version": "15"
+				}
 			]
 		},
 		{
@@ -152,7 +192,8 @@
 					"type": "JEP",
 					"identifier": "395"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Sealed Classes",
@@ -168,6 +209,13 @@
 					"type": "AlmanacFeature",
 					"identifier": "sealedtypes"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "360",
+					"version": "15"
+				}
 			]
 		},
 		{
@@ -177,6 +225,13 @@
 				{
 					"type": "JEP",
 					"identifier": "392"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "343",
+					"version": "14"
 				}
 			]
 		},
@@ -188,7 +243,8 @@
 					"type": "JEP",
 					"identifier": "347"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Migrate to Git/GitHub",
@@ -202,7 +258,8 @@
 					"type": "JEP",
 					"identifier": "369"
 				}
-			]
+			],
+			"predecessors": []
 		}
 	]
 }
