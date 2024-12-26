@@ -575,3 +575,27 @@ div.sandbox-console {
 	overflow-y: scroll;
 	height:150px;
 }
+
+td:has(> .jep-release) {
+	background-color: lightgreen;
+}
+
+.sticky-table {
+	width: 800px;
+	height: 800px;
+	overflow: scroll;
+	margin-bottom: 10px;
+}
+
+.sticky-table table td:first-child {
+	position: sticky;
+	left: 0;
+	background-color: #ddd;
+}
+
+.sticky-table thead tr:nth-child(1) th {
+	background-color: #eee;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}

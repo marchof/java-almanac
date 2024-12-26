@@ -6,6 +6,10 @@ For the following JDK features we have in-depth descriptions here at the Java Ve
 
 {{< features >}}
 
+## Features Grid
+
+{{< featuresgrid >}}
+
 ## All Features
 
 Overview of all new features (excluding previews) of all Java releases:
