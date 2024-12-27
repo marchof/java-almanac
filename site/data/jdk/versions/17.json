@@ -28,7 +28,8 @@
 					"type": "JEP",
 					"identifier": "306"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "New macOS Rendering Pipeline",
@@ -38,7 +39,8 @@
 					"type": "JEP",
 					"identifier": "382"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "macOS/AArch64 Port",
@@ -48,7 +50,8 @@
 					"type": "JEP",
 					"identifier": "391"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Enhanced Pseudo-Random Number Generators",
@@ -58,7 +61,8 @@
 					"type": "JEP",
 					"identifier": "356"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Deprecate the Applet API for Removal",
@@ -67,6 +71,13 @@
 				{
 					"type": "JEP",
 					"identifier": "398"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "289",
+					"version": "9"
 				}
 			]
 		},
@@ -77,6 +88,13 @@
 				{
 					"type": "JEP",
 					"identifier": "403"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "396",
+					"version": "16"
 				}
 			]
 		},
@@ -94,7 +112,8 @@
 					"type": "AlmanacFeature",
 					"identifier": "typepatterns"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Remove RMI Activation",
@@ -103,6 +122,13 @@
 				{
 					"type": "JEP",
 					"identifier": "407"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "385",
+					"version": "15"
 				}
 			]
 		},
@@ -118,6 +144,13 @@
 					"type": "AlmanacFeature",
 					"identifier": "sealedtypes"
 				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "397",
+					"version": "16"
+				}
 			]
 		},
 		{
@@ -128,7 +161,8 @@
 					"type": "JEP",
 					"identifier": "410"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Deprecate the Security Manager for Removal",
@@ -138,7 +172,8 @@
 					"type": "JEP",
 					"identifier": "411"
 				}
-			]
+			],
+			"predecessors": []
 		},
 		{
 			"title": "Foreign Function \u0026 Memory API",
@@ -149,6 +184,13 @@
 				{
 					"type": "JEP",
 					"identifier": "412"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "393",
+					"version": "16"
 				}
 			]
 		},
@@ -161,6 +203,13 @@
 				{
 					"type": "JEP",
 					"identifier": "414"
+				}
+			],
+			"predecessors": [
+				{
+					"type": "JEP",
+					"identifier": "338",
+					"version": "16"
 				}
 			]
 		}

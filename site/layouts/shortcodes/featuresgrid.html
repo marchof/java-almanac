@@ -1,0 +1,40 @@
+<div class="sticky-table">
+    <table>
+        <thead>
+        <tr>
+            <th>Feature</th>
+            {{- range $jdk := sort $.Site.Data.jdk.versions "ga" "asc" }}
+            <th>{{ $jdk.version }}</th>
+            {{- end }}
+        </tr>
+        </thead>
+        <tbody>
+        {{- range $jdk := sort $.Site.Data.jdk.versions "ga" "desc" }}
+        {{- range $feature := $jdk.features }}
+        {{- if and (not $feature.incubator) (not $feature.preview) }}
+        <tr>
+            <td>{{ $feature.title }}</td>
+            {{ $highlight := false }}
+            {{- range $jdkHeader := sort $.Site.Data.jdk.versions "ga" "asc" }}
+            <td>
+                {{- range $predecessor := $feature.predecessors }}
+                {{ if eq $jdkHeader.version $predecessor.version }}
+                {{ partial "featureref" $predecessor }}
+                {{ end -}}{{ end -}}
+                {{ with $feature.refs }}{{ range $idx, $item := . -}}
+                {{ if and (eq $jdk.version $jdkHeader.version) (eq $item.type "JEP") }}
+                {{ $highlight = true }}
+                {{ partial "featureref" $item }}
+                {{ end -}}
+                {{ if $highlight }}
+                <div class="jep-release"></div>
+                {{- end }}{{- end }}{{- end }}
+            </td>
+            {{- end }}
+        </tr>
+        {{- end }}
+        {{- end }}
+        {{- end }}
+        </tbody>
+    </table>
+</div>
