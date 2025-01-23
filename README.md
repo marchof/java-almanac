@@ -14,11 +14,11 @@ These are the tools which have been open-sourced so far:
 
 ## Tools Used for Java Almanac
 
-Java Almanac wouldn't be possible without the these great tools and services:
+Java Almanac wouldn't be possible without these great tools and services:
 
 * [Hugo](https://gohugo.io/): Static site rendering
 * [jsoup](https://jsoup.org/): HTML parsing
-* [Apache Lucene](https://lucene.apache.org/core/): Full-test search
+* [Apache Lucene](https://lucene.apache.org/core/): Full-text search
 * [GitHub](https://github.com/): Code hosting, issue tracking and automation
 * [AWS](https://aws.amazon.com/): Frontend and backend hosting 
 
