@@ -1,12 +1,14 @@
 ---
-title: String Templates (JEP 430)
+title: String Templates (JEP 430, 459, 465, withdrawn)
 copyright: Cay S. Horstmann 2023. All rights reserved.
-jep: 430
+jep: 430, 459, 465
 jdkversion: 21
 ---
 
 
-String templates, previewed in Java 21, are a mechanism for producing objects from templates that contain string fragments and embedded expressions. The syntax is different from that of other languages, but the differences are minor and make sense for Java. The JDK provides processors for plain interpolation and formatted output. It is easy to implement your own processors.
+String templates, previewed in Java 21 and 22, are a mechanism for producing objects from templates that contain string fragments and embedded expressions. The syntax is different from that of other languages, but the differences are minor and make sense for Java. The JDK provides processors for plain interpolation and formatted output. It is easy to implement your own processors.
+
+**Note:** This feature has been [withdrawn](https://mail.openjdk.org/pipermail/amber-spec-observers/2024-April/004358.html) in Java 23.
       
 
 ## String Interpolation
