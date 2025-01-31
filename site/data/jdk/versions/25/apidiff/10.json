@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+7-710"
+		"version": "25-ea+8-843"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -539,6 +539,15 @@
 						},
 						{
 							"type": "class",
+							"name": "OptionalDataException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/OptionalDataException.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "OutputStream",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/OutputStream.html",
@@ -804,6 +813,15 @@
 						},
 						{
 							"type": "class",
+							"name": "MethodHandleProxies",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "MethodHandle",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/invoke/MethodHandle.html",
@@ -892,8 +910,11 @@
 						{
 							"type": "class",
 							"name": "MethodHandles",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1167,8 +1188,11 @@
 						{
 							"type": "class",
 							"name": "ModuleDescriptor",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/module/ModuleDescriptor.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -1326,8 +1350,11 @@
 						{
 							"type": "class",
 							"name": "Modifier",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/Modifier.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -2993,6 +3020,15 @@
 						},
 						{
 							"type": "class",
+							"name": "Package",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Package.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "Process",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Process.html",
@@ -3058,8 +3094,11 @@
 						{
 							"type": "class",
 							"name": "Runtime",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Runtime.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -4396,6 +4435,15 @@
 						},
 						{
 							"type": "class",
+							"name": "InterfaceAddress",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/InterfaceAddress.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "MulticastSocket",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/MulticastSocket.html",
@@ -4587,8 +4635,11 @@
 						{
 							"type": "class",
 							"name": "URLDecoder",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLDecoder.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -4596,6 +4647,15 @@
 									"status": "removed",
 									"csr": "JDK-8258522"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLEncoder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLEncoder.html",
+							"addedTags": [
+								"final"
 							]
 						},
 						{
@@ -4844,6 +4904,24 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String,java.nio.charset.Charset)",
 									"csr": "JDK-8275348"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "CoderResult",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/charset/CoderResult.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "CodingErrorAction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/charset/CodingErrorAction.html",
+							"addedTags": [
+								"final"
 							]
 						},
 						{
@@ -6226,6 +6304,15 @@
 						},
 						{
 							"type": "class",
+							"name": "DrbgParameters",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/DrbgParameters.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "InvalidParameterException",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/InvalidParameterException.html",
@@ -6899,8 +6986,11 @@
 						{
 							"type": "class",
 							"name": "LockSupport",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/locks/LockSupport.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -7111,8 +7201,11 @@
 						{
 							"type": "class",
 							"name": "Executors",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/Executors.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -8241,9 +8334,21 @@
 						},
 						{
 							"type": "class",
+							"name": "Base64",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Base64.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
 							"name": "Collections",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Collections.html",
+							"addedTags": [
+								"final"
+							],
 							"deltas": [
 								{
 									"type": "method",
@@ -8289,6 +8394,15 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/EnumSet.html",
 							"addedTags": [
 								"sealed"
+							]
+						},
+						{
+							"type": "class",
+							"name": "FormattableFlags",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/FormattableFlags.html",
+							"addedTags": [
+								"final"
 							]
 						},
 						{
@@ -8851,6 +8965,26 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/SplittableRandom.html#splits(long,java.util.random.RandomGenerator.SplittableGenerator)",
 									"csr": "JDK-8255395"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "TimeZone",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/TimeZone.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "availableIDs()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/TimeZone.html#availableIDs()"
+								},
+								{
+									"type": "method",
+									"name": "availableIDs(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/TimeZone.html#availableIDs(int)"
 								}
 							]
 						},
@@ -15243,6 +15377,16 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/java/lang/management/package-summary.html",
 					"deltas": [
 						{
+							"type": "class",
+							"name": "ManagementPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/java/lang/management/ManagementPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
 							"type": "interface",
 							"name": "MemoryMXBean",
 							"status": "notmodified",
@@ -15326,6 +15470,16 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/remote/package-summary.html",
 					"deltas": [
 						{
+							"type": "class",
+							"name": "SubjectDelegationPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/remote/SubjectDelegationPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
 							"type": "interface",
 							"name": "JMXConnector",
 							"status": "notmodified",
@@ -15344,6 +15498,44 @@
 										"abstract"
 									]
 								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MBeanPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/MBeanPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MBeanServerPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/MBeanServerPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MBeanTrustPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/MBeanTrustPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
