@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+8-843"
+		"version": "25-ea+9-963"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -23137,6 +23137,12 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Currency.html",
 					"deltas": [
+						{
+							"type": "method",
+							"name": "availableCurrencies()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Currency.html#availableCurrencies()"
+						},
 						{
 							"type": "method",
 							"name": "getAvailableCurrencies()",
