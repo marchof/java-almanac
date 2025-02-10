@@ -1,3 +1,13 @@
+{{- $featureVersions := dict }}
+{{- range $.Site.Data.jdk.versions }}
+  {{ $version := .version }}
+  {{- range .features }}
+    {{- range .refs }}
+      {{- $featureVersions = merge $featureVersions (dict (slice .type .identifier) $version ) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
 <div class="sticky-table">
     <table>
         <thead>
@@ -18,7 +28,7 @@
             {{- range $jdkHeader := sort $.Site.Data.jdk.versions "ga" "asc" }}
             <td>
                 {{- range $predecessor := $feature.predecessors }}
-                {{ if eq $jdkHeader.version $predecessor.version }}
+                {{ if eq $jdkHeader.version (index $featureVersions (slice $predecessor.type $predecessor.identifier )) }}
                 {{ partial "featureref" $predecessor }}
                 {{ end -}}{{ end -}}
                 {{ with $feature.refs }}{{ range $idx, $item := . -}}
