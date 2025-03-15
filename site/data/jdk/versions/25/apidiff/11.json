@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+13-1441"
+		"version": "25-ea+14-1556"
 	},
 	"order": 11.0,
 	"deltas": [
@@ -14292,6 +14292,52 @@
 							"name": "MLetMBean",
 							"status": "removed",
 							"csr": "JDK-8318710"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management.modelmbean",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/modelmbean/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DescriptorSupport",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DescriptorSupport(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toXMLString()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "XMLParseException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.management/javax/management/modelmbean/XMLParseException.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						}
 					]
 				},
