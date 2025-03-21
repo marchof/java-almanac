@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+14-1556"
+		"version": "25-ea+15-1670"
 	},
 	"order": 23.0,
 	"deltas": [
@@ -7232,6 +7232,27 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#setEnabled(boolean)",
 									"csr": "JDK-5021949"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.synth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthLookAndFeel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "load(URL)",
+									"status": "removed"
 								}
 							]
 						}
