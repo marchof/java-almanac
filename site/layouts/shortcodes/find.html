@@ -9,5 +9,8 @@
 <div id="results">
 </div>
 
+<div id="findmore">
+</div>
+
 {{- $find := resources.Get "app/find.js" | resources.ExecuteAsTemplate "find.js" . | resources.Minify | resources.Fingerprint }}
 <script src="{{ $find.RelPermalink }}" integrity="{{ $find.Data.Integrity }}"></script>

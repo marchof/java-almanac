@@ -512,6 +512,25 @@ div#results span.more {
 	font-size: 85%;
 }
 
+div#findmore {
+	text-align: center;
+	margin-top: 24px;
+	margin-bottom: 20px;
+}
+
+div#findmore span {
+	color: #fff;
+	cursor: pointer;
+	background-color: #bbb;
+	border-radius: 3px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+div#findmore span:hover {
+	background-color: #69a;
+}
+
 [v-cloak] > * { display:none }
 [v-cloak]::before { content: "loading…" }
 div.tabs {

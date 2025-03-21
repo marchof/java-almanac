@@ -4,6 +4,7 @@ let searchfield = document.getElementById("searchfield");
 let resultinfodiv = document.getElementById("resultinfo");
 let resultfiltersdiv = document.getElementById("resultfilters");
 let resultsdiv = document.getElementById("results");
+let findmorediv = document.getElementById("findmore");
 
 let debounceTimerId;
 let lastSearch;
@@ -13,11 +14,12 @@ function setQueryWithDelay(q) {
 	clearTimeout(debounceTimerId);
 	debounceTimerId = setTimeout(() => {
 		searchParams.set("q", q);	
-		executeQuery(true)
+	    searchParams.delete("s");
+		executeQuery(true, false)
 	}, 200);
 }
 
-function executeQuery(updatehistory) {
+function executeQuery(updatehistory, append) {
 	const searchstr = searchParams.toString();
 	if (lastSearch == searchstr) {
 		return;
@@ -35,19 +37,26 @@ function executeQuery(updatehistory) {
 		.then(response => response.json())
 		.then(result => {
 			if (lastSearch == searchstr) {
-				renderResult(result);
+				renderResult(result, append);
 			}
 		});
 }
 
 function addFilter(group, value) {
 	searchParams.set(group, value);
-	executeQuery(true);
+	searchParams.delete("s");
+	executeQuery(true, false);
 }
 
 function removeFilter(group) {
 	searchParams.delete(group);
-	executeQuery(true);
+	searchParams.delete("s");
+	executeQuery(true, false);
+}
+
+function page(start) {
+	searchParams.set("s", start);
+	executeQuery(false, true);
 }
 
 function tag(name, ...children) {
@@ -56,7 +65,7 @@ function tag(name, ...children) {
 	return tag;
 }
 
-function renderResult(r) {
+function renderResult(r, append) {
 	resultinfodiv.innerHTML = "";
 	resultinfodiv.append(r.totalhits.toLocaleString() + " total hits");
 	resultfiltersdiv.innerHTML = "";
@@ -75,7 +84,9 @@ function renderResult(r) {
 		resultfiltersdiv.append(s, " ");
 	}
 	
-	resultsdiv.innerHTML = "";
+	if (!append) {
+	    resultsdiv.innerHTML = "";
+	}
 	for (const h of r.hits) {
 		const p = tag("p");
 		
@@ -115,12 +126,20 @@ function renderResult(r) {
 		
 		resultsdiv.append(p);
 	}
+	
+	findmorediv.innerHTML = "";
+	if (r.nextPageStart) {
+	    const span = tag("span", "more... ");
+	    span.onclick = e => page(r.nextPageStart);
+	    findmorediv.append(span);
+	}
+	
 }
 
 function getParamsFromURL() {
 	searchParams = new URLSearchParams(window.location.search);
 	searchfield.value = searchParams.get('q');
-	executeQuery(false);
+	executeQuery(false, false);
 }
 
 window.addEventListener("load", (event) => getParamsFromURL());
