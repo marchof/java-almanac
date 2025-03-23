@@ -67,7 +67,10 @@ function tag(name, ...children) {
 
 function renderResult(r, append) {
 	resultinfodiv.innerHTML = "";
-	resultinfodiv.append(r.totalhits.toLocaleString() + " total hits");
+	if (r.more) {
+		resultinfodiv.append("more than ");
+	}
+	resultinfodiv.append(r.hitCount.toLocaleString() + " hits");
 	resultfiltersdiv.innerHTML = "";
 	for (const t of r.taginfos) {
 		const c = tag("span", t.count.toLocaleString() + "x");
@@ -128,10 +131,10 @@ function renderResult(r, append) {
 	}
 	
 	findmorediv.innerHTML = "";
-	if (r.nextPageStart) {
-	    const span = tag("span", "more... ");
-	    span.onclick = e => page(r.nextPageStart);
-	    findmorediv.append(span);
+	if (r.more) {
+		const span = tag("span", `load more than ${r.hitCount} hits`);
+		span.onclick = e => page(r.hitCount);
+		findmorediv.append(span);
 	}
 	
 }
