@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+16-1816"
+		"version": "25-ea+17-1966"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -4143,9 +4143,24 @@
 						{
 							"type": "class",
 							"name": "ForkJoinPool",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
+							"addedTags": [
+								"implements ScheduledExecutorService"
+							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "cancelDelayedTasksOnShutdown()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#cancelDelayedTasksOnShutdown()"
+								},
+								{
+									"type": "method",
+									"name": "getDelayedTaskCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getDelayedTaskCount()"
+								},
 								{
 									"type": "method",
 									"name": "invokeAll(Collection)",
@@ -4161,6 +4176,36 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invokeAllUninterruptibly(java.util.Collection)",
 									"csr": "JDK-8309407"
+								},
+								{
+									"type": "method",
+									"name": "schedule(Callable, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"
+								},
+								{
+									"type": "method",
+									"name": "schedule(Runnable, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)"
+								},
+								{
+									"type": "method",
+									"name": "scheduleAtFixedRate(Runnable, long, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"
+								},
+								{
+									"type": "method",
+									"name": "scheduleWithFixedDelay(Runnable, long, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"
+								},
+								{
+									"type": "method",
+									"name": "submitWithTimeout(Callable, long, TimeUnit, Consumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submitWithTimeout(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit,java.util.function.Consumer)"
 								}
 							]
 						},
