@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+17-1966"
+		"version": "25-ea+18-2118"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -18874,6 +18874,16 @@
 				},
 				{
 					"type": "class",
+					"name": "SecurityPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/SecurityPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "SignatureException",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/SignatureException.html",
@@ -18963,8 +18973,12 @@
 				{
 					"type": "class",
 					"name": "UnresolvedPermission",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/UnresolvedPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -29223,6 +29237,16 @@
 				},
 				{
 					"type": "class",
+					"name": "SSLPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/SSLPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "SSLProtocolException",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/SSLProtocolException.html",
@@ -29659,6 +29683,16 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "DelegationPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.security.jgss/javax/security/auth/kerberos/DelegationPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "EncryptionKey",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html"
@@ -29732,6 +29766,16 @@
 					"name": "KeyTab",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html"
+				},
+				{
+					"type": "class",
+					"name": "ServicePermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.security.jgss/javax/security/auth/kerberos/ServicePermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
 				}
 			]
 		},
@@ -29912,9 +29956,29 @@
 			"deltas": [
 				{
 					"type": "class",
+					"name": "AuthPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/security/auth/AuthPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "Policy",
 					"status": "removed",
 					"csr": "JDK-8193916"
+				},
+				{
+					"type": "class",
+					"name": "PrivateCredentialPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
 				},
 				{
 					"type": "class",

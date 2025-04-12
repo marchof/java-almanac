@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+17-1966"
+		"version": "25-ea+18-2118"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -21614,6 +21614,16 @@
 				},
 				{
 					"type": "class",
+					"name": "SecurityPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/SecurityPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "Security",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/Security.html",
@@ -21747,8 +21757,12 @@
 				{
 					"type": "class",
 					"name": "UnresolvedPermission",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/UnresolvedPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					],
 					"deltas": [
 						{
 							"type": "method",
