@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+18-2118"
+		"version": "25-ea+19-2255"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -173,6 +173,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FileInputStream.html#transferTo(java.io.OutputStream)",
 									"csr": "JDK-8272297"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FilePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FilePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -440,6 +450,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)",
 									"csr": "JDK-8297298"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SerializablePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/SerializablePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -1199,6 +1219,16 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/RecordComponent.html",
 							"removedTags": [
 								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ReflectPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ReflectPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -2326,6 +2356,16 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Record.html",
 							"removedTags": [
 								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "RuntimePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/RuntimePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -3602,6 +3642,16 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/file/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "LinkPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/file/LinkPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
 						{
 							"type": "interface",
 							"name": "Path",
@@ -6358,6 +6408,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Objects.html#toIdentityString(java.lang.Object)",
 									"csr": "JDK-8280184"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PropertyPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/PropertyPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -11949,6 +12009,16 @@
 						},
 						{
 							"type": "class",
+							"name": "LoggingPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.logging/java/util/logging/LoggingPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
 							"name": "MemoryHandler",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.logging/java/util/logging/MemoryHandler.html",
@@ -12464,6 +12534,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#HEAD()",
 									"csr": "JDK-8276996"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.net.http/java/net/http/HttpResponse.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "connectionLabel()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.net.http/java/net/http/HttpResponse.html#connectionLabel()"
 								}
 							]
 						}

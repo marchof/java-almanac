@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+18-2118"
+		"version": "25-ea+19-2255"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -25,11 +25,48 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "FilePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FilePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
 							"name": "OptionalDataException",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/OptionalDataException.html",
 							"addedTags": [
 								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "SerializablePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/SerializablePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.attribute",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "UnknownAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/attribute/UnknownAttribute.html",
+							"addedTags": [
+								"implements CodeElement"
 							]
 						}
 					]
@@ -133,6 +170,16 @@
 							]
 						},
 						{
+							"type": "class",
+							"name": "ReflectPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ReflectPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
 							"type": "enum",
 							"name": "ClassFileFormatVersion",
 							"status": "notmodified",
@@ -188,6 +235,16 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Package.html",
 							"addedTags": [
 								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "RuntimePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/RuntimePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -258,6 +315,24 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/charset/CodingErrorAction.html",
 							"addedTags": [
 								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.file",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/file/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "LinkPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/file/LinkPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -487,6 +562,16 @@
 						},
 						{
 							"type": "class",
+							"name": "PropertyPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/PropertyPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
 							"name": "TimeZone",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/TimeZone.html",
@@ -634,6 +719,32 @@
 									"status": "removed",
 									"csr": "JDK-8351238"
 								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.logging",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.logging/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.util.logging",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.logging/java/util/logging/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "LoggingPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.logging/java/util/logging/LoggingPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -807,6 +918,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#limiting(java.net.http.HttpResponse.BodySubscriber,long)",
 									"csr": "JDK-8347904"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.net.http/java/net/http/HttpResponse.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "connectionLabel()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.net.http/java/net/http/HttpResponse.html#connectionLabel()"
 								}
 							]
 						}

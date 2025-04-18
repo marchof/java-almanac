@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+18-2118"
+		"version": "25-ea+19-2255"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -8035,6 +8035,16 @@
 				},
 				{
 					"type": "class",
+					"name": "FilePermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FilePermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "FileReader",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FileReader.html",
@@ -9105,6 +9115,16 @@
 				},
 				{
 					"type": "class",
+					"name": "SerializablePermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/SerializablePermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "StringBufferInputStream",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/StringBufferInputStream.html",
@@ -9976,6 +9996,16 @@
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/RecordComponent.html",
 					"csr": "JDK-8233436"
+				},
+				{
+					"type": "class",
+					"name": "ReflectPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ReflectPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
 				},
 				{
 					"type": "class",
@@ -15135,6 +15165,16 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/RuntimeException.html#%3Cinit%3E(java.lang.Throwable)"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "RuntimePermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/RuntimePermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -28769,6 +28809,16 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Properties.html#values()"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "PropertyPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/PropertyPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{

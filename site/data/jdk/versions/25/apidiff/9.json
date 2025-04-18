@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+18-2118"
+		"version": "25-ea+19-2255"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -257,6 +257,16 @@
 									"status": "removed",
 									"csr": "JDK-8212050"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FilePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FilePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -704,6 +714,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/SequenceInputStream.html#transferTo(java.io.OutputStream)",
 									"csr": "JDK-8297298"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SerializablePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/SerializablePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -1459,6 +1479,16 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/RecordComponent.html",
 							"csr": "JDK-8233436"
+						},
+						{
+							"type": "class",
+							"name": "ReflectPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ReflectPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "class",
@@ -3226,6 +3256,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Runtime.Version.html#update()",
 									"csr": "JDK-8192855"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "RuntimePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/RuntimePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -5333,6 +5373,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption...)",
 									"csr": "JDK-8202055"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LinkPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/file/LinkPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -9547,6 +9597,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)",
 									"csr": "JDK-8190577"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PropertyPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/PropertyPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
@@ -16154,6 +16214,16 @@
 										"throws SecurityException"
 									]
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "LoggingPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.logging/java/util/logging/LoggingPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
