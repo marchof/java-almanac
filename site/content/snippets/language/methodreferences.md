@@ -35,6 +35,11 @@ public class MethodReferences {
 			System.out.println("classMethod");
 		}
 
+		static int classMethodWithReturn(String parameter) {
+			System.out.println("classMethodWithReturn " + parameter);
+			return 42;
+		}
+
 	}
 
 	public static void main(String[] args) {
@@ -58,6 +63,11 @@ public class MethodReferences {
 		// Class method as reference
 		Runnable runnable2 = Foo::classMethod;
 		runnable2.run();
+
+		// Method return values are ignored if the functional interface method
+		// has return type void
+		Consumer<String> consumer2 = Foo::classMethodWithReturn;
+		consumer2.accept("hello");
 
 		// Array constructor as reference
 		IntFunction<Foo[]> function = Foo[]::new;
