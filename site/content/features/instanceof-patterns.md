@@ -75,23 +75,21 @@ public class InstanceofDemo {
     public static void main(String[] args) {
         Object what = Math.random() < 0.5 ? Math.random() < 0.5 ? 42 : -42 : "1729";
         if (!(what instanceof Integer i) || i.intValue() <= 0) {
-            System.out.println("No good: " + what + " is not an integer or not positive");
+            throw new IllegalArgumentException(what + " is not an integer or not positive");
         }
-        else {
-            System.out.println("Hooray: a positive integer with value " + i.intValue());
-        }
+        System.out.println("Hooray: a positive integer with value " + i.intValue());
     }
 }
 {{< /sandboxsource >}}
 {{< /sandbox >}}
 
-This is perhaps a little mind-bending. If the `instanceof` test fails, the negation is `true` and the right hand side of the `||` is never executed. In this case, `i` is not bound, and the program prints "No good".
+This is perhaps a little mind-bending. If the `instanceof` test fails, the negation is `true` and the right hand side of the `||` is never executed. In this case, `i` is not bound. The program throws an `IllegalArgumentException`.
 
 If the `instanceof` test passes, the negation is `false`, and the right hand side of the `||` *is* executed. And `i` is defined because the test passed. 
 
-You can only reach the `else` clause when the `instanceof` test passes, and therefore, `i` is also in scope in the `else` clause.
+You can only reach the code following the `if` clause when the `instanceof` test passes, because otherwise an exception would be thrown. Therefore `i` is in scope and can be used in the print statement. Note that the scope of `i` is *not* restricted to the `if` statement. 
 
-Note that these scope rules do not apply to the `&` and `|` operators. They don't short-circuit. That is, both sides are always evaluated, and any variables used in the right operand must be defined unconditionally.
+The scope inference is different for the `&` and `|` operators. They don't short-circuit. That is, both sides are always evaluated, and any variables used in the right operand must be defined unconditionally.
 
 However, the conditional operator is fair game:
 
