@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+20-2390"
+		"version": "25-ea+21-2530"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -67,6 +67,104 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/attribute/UnknownAttribute.html",
 							"addedTags": [
 								"implements CodeElement"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.constantpool",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html#matches(java.lang.constant.ClassDesc)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTypeEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(MethodTypeDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html#matches(java.lang.constant.MethodTypeDesc)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(ModuleDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html#matches(java.lang.constant.ModuleDesc)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PackageEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(PackageDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html#matches(java.lang.constant.PackageDesc)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StringEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "equalsString(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html#equalsString(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Utf8Entry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isFieldType(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isFieldType(java.lang.constant.ClassDesc)"
+								},
+								{
+									"type": "method",
+									"name": "isMethodType(MethodTypeDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isMethodType(java.lang.constant.MethodTypeDesc)"
+								}
 							]
 						}
 					]
@@ -181,6 +279,38 @@
 						},
 						{
 							"type": "enum",
+							"name": "AccessFlag.Location",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "flags()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags()"
+								},
+								{
+									"type": "method",
+									"name": "flags(ClassFileFormatVersion)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags(java.lang.reflect.ClassFileFormatVersion)"
+								},
+								{
+									"type": "method",
+									"name": "flagsMask()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask()"
+								},
+								{
+									"type": "method",
+									"name": "flagsMask(ClassFileFormatVersion)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask(java.lang.reflect.ClassFileFormatVersion)"
+								}
+							]
+						},
+						{
+							"type": "enum",
 							"name": "ClassFileFormatVersion",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
@@ -230,6 +360,188 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Boolean",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Boolean.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Boolean(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Boolean(boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Byte",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Byte.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Byte(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Byte(byte)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Character",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Character.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Character(char)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Double",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Double.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Double(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Double(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Float",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Float(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(float)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Integer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Integer(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Integer(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Long",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Long.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Long(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Long(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Package",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Package.html",
@@ -255,6 +567,39 @@
 							"addedTags": [
 								"final"
 							]
+						},
+						{
+							"type": "class",
+							"name": "Short",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Short.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Short(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Short(short)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StableValue",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StableValue.html"
 						}
 					]
 				},

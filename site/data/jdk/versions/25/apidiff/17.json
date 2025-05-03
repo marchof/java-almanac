@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+20-2390"
+		"version": "25-ea+21-2530"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -1021,6 +1021,58 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Boolean",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Boolean.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Boolean(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Boolean(boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Byte",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Byte.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Byte(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Byte(byte)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Character.UnicodeBlock",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Character.UnicodeBlock.html",
@@ -1243,6 +1295,15 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Character.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "Character(char)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "isEmoji(int)",
@@ -1480,6 +1541,24 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Double.html#PRECISION",
 									"csr": "JDK-8285241"
+								},
+								{
+									"type": "method",
+									"name": "Double(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Double(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
+									"removedTags": [
+										"forRemoval"
+									]
 								}
 							]
 						},
@@ -1534,6 +1613,33 @@
 								},
 								{
 									"type": "method",
+									"name": "Float(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(float)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
 									"name": "float16ToFloat(short)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Float.html#float16ToFloat(short)",
@@ -1556,6 +1662,24 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "Integer(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Integer(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
 									"name": "compress(int, int)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html#compress(int,int)",
@@ -1576,6 +1700,24 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Long.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "Long(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Long(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
 								{
 									"type": "method",
 									"name": "compress(long, long)",
@@ -1891,6 +2033,32 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress,byte)",
 									"removedTags": [
 										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Short",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Short.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Short(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Short(short)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
+									"removedTags": [
 										"forRemoval"
 									]
 								}
@@ -2397,6 +2565,13 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
 							"csr": "JDK-8331190"
+						},
+						{
+							"type": "interface",
+							"name": "StableValue",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StableValue.html"
 						},
 						{
 							"type": "interface",
