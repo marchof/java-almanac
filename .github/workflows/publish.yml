@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   publish-web:
     runs-on: ubuntu-latest
@@ -18,26 +22,27 @@ jobs:
     - name: Render
       working-directory: 'site'
       run: hugo
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4.1.0
+      with:
+        role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
+        aws-region: eu-central-1
     - name: Upload Content
       run: |
         aws s3 sync site/public s3://javaalmanac.io/ --delete --no-progress
         aws cloudfront create-invalidation --distribution-id ECI1PGYSTNAWG --paths "/*"
-      
-      env:
-        AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
-        AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
 
 
   publish-data:
     runs-on: ubuntu-latest
-    env:
-      BUCKET: ${{ secrets.DATA_API_BUCKET }}
-      DISTRIBUTION: ${{ secrets.DATA_API_DISTRIBUTION }}
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4.1.0
+      with:
+        role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
+        aws-region: eu-central-1
     - name: Set up Java
       uses: actions/setup-java@v4
       with:
@@ -47,3 +52,6 @@ jobs:
       run: |
         cd dataapi
         mvn -B clean compile exec:java --no-transfer-progress
+      env:
+        BUCKET: data.javaalmanac.io
+        DISTRIBUTION: E3T9OALYN4XMEX
