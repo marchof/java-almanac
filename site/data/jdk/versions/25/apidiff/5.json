@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+21-2530"
+		"version": "25-ea+22-2667"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -4467,14 +4467,6 @@
 				},
 				{
 					"type": "class",
-					"name": "IO",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/IO.html",
-					"csr": "JDK-8331610"
-				},
-				{
-					"type": "class",
 					"name": "InputStreamReader",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/InputStreamReader.html",
@@ -8657,6 +8649,12 @@
 				},
 				{
 					"type": "class",
+					"name": "IO",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IO.html"
+				},
+				{
+					"type": "class",
 					"name": "IllegalAccessException",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IllegalAccessException.html",
@@ -11150,6 +11148,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getChars(int, int, char[], int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#getChars(int,int,char%5B%5D,int)"
+						},
+						{
+							"type": "method",
 							"name": "isEmpty()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#isEmpty()",
@@ -13192,6 +13196,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#get(int,char%5B%5D,int,int)",
 							"csr": "JDK-8212619"
+						},
+						{
+							"type": "method",
+							"name": "getChars(int, int, char[], int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#getChars(int,int,char%5B%5D,int)"
 						},
 						{
 							"type": "method",

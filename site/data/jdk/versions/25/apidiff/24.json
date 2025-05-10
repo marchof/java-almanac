@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+21-2530"
+		"version": "25-ea+22-2667"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -25,6 +25,44 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Console",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "print(Object)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "println()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "println(Object)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readln()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "readln(String)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "FilePermission",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/FilePermission.html",
@@ -32,6 +70,12 @@
 								"deprecated",
 								"forRemoval"
 							]
+						},
+						{
+							"type": "class",
+							"name": "IO",
+							"status": "removed",
+							"preview": true
 						},
 						{
 							"type": "class",
@@ -311,6 +355,20 @@
 						},
 						{
 							"type": "enum",
+							"name": "AccessFlag",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "maskToAccessFlags(int, AccessFlag.Location, ClassFileFormatVersion)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.html#maskToAccessFlags(int,java.lang.reflect.AccessFlag.Location,java.lang.reflect.ClassFileFormatVersion)"
+								}
+							]
+						},
+						{
+							"type": "enum",
 							"name": "ClassFileFormatVersion",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
@@ -490,6 +548,12 @@
 						},
 						{
 							"type": "class",
+							"name": "IO",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IO.html"
+						},
+						{
+							"type": "class",
 							"name": "Integer",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Integer.html",
@@ -596,6 +660,20 @@
 						},
 						{
 							"type": "interface",
+							"name": "CharSequence",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getChars(int, int, char[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#getChars(int,int,char%5B%5D,int)"
+								}
+							]
+						},
+						{
+							"type": "interface",
 							"name": "StableValue",
 							"status": "added",
 							"preview": true,
@@ -678,6 +756,28 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CharBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getChars(int, int, char[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#getChars(int,int,char%5B%5D,int)"
+								}
 							]
 						}
 					]

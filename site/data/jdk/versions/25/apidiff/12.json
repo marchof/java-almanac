@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+21-2530"
+		"version": "25-ea+22-2667"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -94,34 +94,10 @@
 								},
 								{
 									"type": "method",
-									"name": "print(Object)",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#print(java.lang.Object)",
-									"csr": "JDK-8331610"
-								},
-								{
-									"type": "method",
 									"name": "printf(Locale, String, Object...)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
-								},
-								{
-									"type": "method",
-									"name": "println()",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#println()",
-									"csr": "JDK-8342937"
-								},
-								{
-									"type": "method",
-									"name": "println(Object)",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#println(java.lang.Object)",
-									"csr": "JDK-8331610"
 								},
 								{
 									"type": "method",
@@ -136,22 +112,6 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#readPassword(java.util.Locale,java.lang.String,java.lang.Object...)",
 									"csr": "JDK-8330536"
-								},
-								{
-									"type": "method",
-									"name": "readln()",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#readln()",
-									"csr": "JDK-8342937"
-								},
-								{
-									"type": "method",
-									"name": "readln(String)",
-									"status": "added",
-									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Console.html#readln(java.lang.String)",
-									"csr": "JDK-8331610"
 								}
 							]
 						},
@@ -191,14 +151,6 @@
 								"deprecated",
 								"forRemoval"
 							]
-						},
-						{
-							"type": "class",
-							"name": "IO",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/IO.html",
-							"csr": "JDK-8331610"
 						},
 						{
 							"type": "class",
@@ -2199,6 +2151,12 @@
 						},
 						{
 							"type": "class",
+							"name": "IO",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IO.html"
+						},
+						{
+							"type": "class",
 							"name": "IndexOutOfBoundsException",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IndexOutOfBoundsException.html",
@@ -3404,6 +3362,12 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "getChars(int, int, char[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#getChars(int,int,char%5B%5D,int)"
+								},
+								{
+									"type": "method",
 									"name": "isEmpty()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#isEmpty()",
@@ -4288,6 +4252,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#get(int,char%5B%5D,int,int)",
 									"csr": "JDK-8212619"
+								},
+								{
+									"type": "method",
+									"name": "getChars(int, int, char[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#getChars(int,int,char%5B%5D,int)"
 								},
 								{
 									"type": "method",
