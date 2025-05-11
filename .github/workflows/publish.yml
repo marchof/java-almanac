@@ -2,8 +2,7 @@ name: Publish
 
 on:
   push:
-    branches:
-      - master
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -23,11 +22,13 @@ jobs:
       working-directory: 'site'
       run: hugo
     - name: Configure AWS Credentials
+      if: ${{ github.ref == 'refs/heads/master' }}
       uses: aws-actions/configure-aws-credentials@v4.1.0
       with:
         role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
         aws-region: eu-central-1
     - name: Upload Content
+      if: ${{ github.ref == 'refs/heads/master' }}
       run: |
         aws s3 sync site/public s3://javaalmanac.io/ --delete --no-progress
         aws cloudfront create-invalidation --distribution-id ECI1PGYSTNAWG --paths "/*"
@@ -39,6 +40,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Configure AWS Credentials
+      if: ${{ github.ref == 'refs/heads/master' }}
       uses: aws-actions/configure-aws-credentials@v4.1.0
       with:
         role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
@@ -53,5 +55,5 @@ jobs:
         cd dataapi
         mvn -B clean compile exec:java --no-transfer-progress
       env:
-        BUCKET: data.javaalmanac.io
+        BUCKET: ${{ github.ref == 'refs/heads/master' && 'data.javaalmanac.io' || '' }} 
         DISTRIBUTION: E3T9OALYN4XMEX
