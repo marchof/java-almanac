@@ -4,6 +4,8 @@ import static java.lang.System.getenv;
 import static java.util.stream.Collectors.toMap;
 
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openapi4j.parser.model.v3.Components;
 import org.openapi4j.parser.model.v3.OpenApi3;
@@ -26,13 +28,20 @@ public class ApiGenerator {
 		JsonLoader r = new JsonLoader();
 		ObjectNode data = r.parseTree(Paths.get("../site/data"));
 
-		generateApi(new ApiV1(), data, //
-				new ContentValidator(), //
-				new S3Output(getenv("BUCKET"), getenv("DISTRIBUTION")));
+		var output = new ArrayList<ApiOutput>();
+		output.add(new ContentValidator());
+		{
+			var bucket = getenv("BUCKET");
+			if (bucket != null && !bucket.isBlank()) {
+				output.add(new S3Output(bucket, getenv("DISTRIBUTION")));
+			}
+		}
+
+		generateApi(new ApiV1(), data, output);
 
 	}
 
-	private static void generateApi(ApiDefinition apiDefinition, ObjectNode data, ApiOutput... outputs)
+	private static void generateApi(ApiDefinition apiDefinition, ObjectNode data, List<ApiOutput> outputs)
 			throws Exception {
 
 		PathElementDefinition definition = apiDefinition.getPathDefinition();
