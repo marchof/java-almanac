@@ -21,6 +21,9 @@ jobs:
     - name: Render
       working-directory: 'site'
       run: hugo
+    - name: Check Links
+      working-directory: 'site'
+      run: python linkchecker.py public /
     - name: Configure AWS Credentials
       if: ${{ github.ref == 'refs/heads/master' }}
       uses: aws-actions/configure-aws-credentials@v4.1.0
