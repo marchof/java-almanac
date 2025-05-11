@@ -15,10 +15,10 @@ In particular I would be interested in the original Oak implementation.
 The initial working title for project which resulted in today's Java was *Oak*.
 The following language specifications are available from that time:
 
-| Year | Document                                      |
-| ---- | --------------------------------------------- |
-| 1993 | [Oak Specification](oakspec1993.pdf)          |
-| 1994 | [Oak Language Specification](oakspec1994.pdf) |
+| Year | Document                                                                        |
+| ---- | ------------------------------------------------------------------------------- |
+| 1993 | [Oak Specification](https://javaalmanac.io/jdk/pre1.0/oakspec1993.pdf)          |
+| 1994 | [Oak Language Specification](https://javaalmanac.io/jdk/pre1.0/oakspec1994.pdf) |
 
 ## 1995 Java Announcement and HotJava
 
@@ -36,8 +36,8 @@ The HotJava distributions contained the respective Java class libraries in sourc
 
 | Version    | Date | Documentation        | Download |
 | ---------- | ---- | ---------------------| -------- |
-| 1.0 Alpha2 | 1995/03/34 | [All](hotjava-alpha2/) - [API](hotjava-alpha2/doc/api/packages.html) - [Lang](hotjava-alpha2/doc/javaspec/javaspec_1.html) | [hotjava-alpha2.tar.z](hotjava-alpha2.tar.z) |
-| 1.0 Alpha3 | 1995/05/19 | [All](hotjava-alpha3/)  - [API](hotjava-alpha3/doc/api/packages.html) - [Lang](hotjava-alpha3/doc/javaspec/javaspec_1.html) | [hotjava-alpha3.tar.z](hotjava-alpha3.tar.z) |
+| 1.0 Alpha2 | 1995/03/34 | [All](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/) - [API](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/doc/api/packages.html) - [Lang](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/doc/javaspec/javaspec_1.html) | [https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2.tar.z](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2.tar.z) |
+| 1.0 Alpha3 | 1995/05/19 | [All](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3/)  - [API](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3/doc/api/packages.html) - [Lang](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3/doc/javaspec/javaspec_1.html) | [https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3.tar.z](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3.tar.z) |
 
 If you want to install and run the above downloads please make sure that the system requirements are fulfilled:
 
