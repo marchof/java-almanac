@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+22-2667"
+		"version": "25-ea+23-2842"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -7824,6 +7824,56 @@
 						},
 						{
 							"type": "class",
+							"name": "Math",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "powExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "powExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(long,int)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Package",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Package.html",
@@ -7967,6 +8017,56 @@
 									"removedTags": [
 										"forRemoval"
 									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StrictMath",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "powExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "powExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,long)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(long,int)"
 								}
 							]
 						},
@@ -8159,6 +8259,24 @@
 						},
 						{
 							"type": "class",
+							"name": "HttpURLConnection",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/HttpURLConnection.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermission()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/HttpURLConnection.html#getPermission()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Inet4Address",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/Inet4Address.html",
@@ -8218,6 +8336,16 @@
 						},
 						{
 							"type": "class",
+							"name": "NetPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/NetPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
 							"name": "Socket",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/Socket.html",
@@ -8244,6 +8372,24 @@
 						},
 						{
 							"type": "class",
+							"name": "URLConnection",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLConnection.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermission()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLConnection.html#getPermission()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "URLDecoder",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLDecoder.html",
@@ -8258,6 +8404,16 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLEncoder.html",
 							"addedTags": [
 								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]
@@ -8682,6 +8838,190 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submitWithTimeout(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit,java.util.function.Consumer)",
 									"csr": "JDK-8350493"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.FailedException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.FailedException.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnFailure",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnSuccess",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.TimeoutException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Configuration",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Configuration.html"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Joiner",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Subtask",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "task()",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+							"addedTags": [
+								"abstract",
+								"sealed"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "StructuredTaskScope()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "StructuredTaskScope(String, ThreadFactory)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#close()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ensureOwnerAndJoined()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "fork(Callable)",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#fork(java.util.concurrent.Callable)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "fork(Runnable)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#fork(java.lang.Runnable)"
+								},
+								{
+									"type": "method",
+									"name": "handleComplete(StructuredTaskScope.Subtask)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "isCancelled()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#isCancelled()"
+								},
+								{
+									"type": "method",
+									"name": "isShutdown()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "join()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#join()"
+								},
+								{
+									"type": "method",
+									"name": "join()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "joinUntil(Instant)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "open()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open()"
+								},
+								{
+									"type": "method",
+									"name": "open(StructuredTaskScope.Joiner)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner)"
+								},
+								{
+									"type": "method",
+									"name": "open(StructuredTaskScope.Joiner, Function)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner,java.util.function.Function)"
+								},
+								{
+									"type": "method",
+									"name": "shutdown()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						}

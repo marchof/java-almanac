@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+22-2667"
+		"version": "25-ea+23-2842"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -11082,6 +11082,18 @@
 						},
 						{
 							"type": "method",
+							"name": "powExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "powExact(long, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(long,int)"
+						},
+						{
+							"type": "method",
 							"name": "scalb(double, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#scalb(double,int)"
@@ -11148,10 +11160,40 @@
 						},
 						{
 							"type": "method",
+							"name": "unsignedMultiplyExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "unsignedMultiplyExact(long, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,int)"
+						},
+						{
+							"type": "method",
+							"name": "unsignedMultiplyExact(long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,long)"
+						},
+						{
+							"type": "method",
 							"name": "unsignedMultiplyHigh(long, long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyHigh(long,long)",
 							"csr": "JDK-8269705"
+						},
+						{
+							"type": "method",
+							"name": "unsignedPowExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "unsignedPowExact(long, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(long,int)"
 						}
 					]
 				},
@@ -12195,6 +12237,18 @@
 						},
 						{
 							"type": "method",
+							"name": "powExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "powExact(long, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(long,int)"
+						},
+						{
+							"type": "method",
 							"name": "scalb(double, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#scalb(double,int)"
@@ -12261,10 +12315,40 @@
 						},
 						{
 							"type": "method",
+							"name": "unsignedMultiplyExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "unsignedMultiplyExact(long, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,int)"
+						},
+						{
+							"type": "method",
+							"name": "unsignedMultiplyExact(long, long)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,long)"
+						},
+						{
+							"type": "method",
 							"name": "unsignedMultiplyHigh(long, long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyHigh(long,long)",
 							"csr": "JDK-8269705"
+						},
+						{
+							"type": "method",
+							"name": "unsignedPowExact(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "unsignedPowExact(long, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(long,int)"
 						}
 					]
 				},
@@ -14026,6 +14110,16 @@
 						},
 						{
 							"type": "method",
+							"name": "getPermission()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/HttpURLConnection.html#getPermission()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setAuthenticator(Authenticator)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/HttpURLConnection.html#setAuthenticator(java.net.Authenticator)"
@@ -14266,6 +14360,16 @@
 								"forRemoval"
 							]
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NetPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/NetPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{
@@ -14661,6 +14765,16 @@
 							"name": "getHeaderFieldLong(String, long)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"
+						},
+						{
+							"type": "method",
+							"name": "getPermission()",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/net/URLConnection.html#getPermission()",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",
