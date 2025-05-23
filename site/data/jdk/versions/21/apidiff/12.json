@@ -8419,69 +8419,6 @@
 				},
 				{
 					"type": "package",
-					"name": "java.awt.peer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/peer/package-summary.html",
-					"deltas": [
-						{
-							"type": "interface",
-							"name": "ComponentPeer",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/peer/ComponentPeer.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "checkImage(Image, int, int, ImageObserver)",
-									"status": "removed"
-								},
-								{
-									"type": "method",
-									"name": "createImage(ImageProducer)",
-									"status": "removed"
-								},
-								{
-									"type": "method",
-									"name": "prepareImage(Image, int, int, ImageObserver)",
-									"status": "removed"
-								}
-							]
-						},
-						{
-							"type": "interface",
-							"name": "MenuPeer",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/peer/MenuPeer.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "addSeparator()",
-									"status": "removed"
-								}
-							]
-						},
-						{
-							"type": "interface",
-							"name": "RobotPeer",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "dispose()",
-									"status": "removed"
-								},
-								{
-									"type": "method",
-									"name": "useAbsoluteCoordinates()",
-									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "package",
 					"name": "java.awt",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/package-summary.html",

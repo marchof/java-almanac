@@ -3620,27 +3620,6 @@
 			"deltas": [
 				{
 					"type": "package",
-					"name": "java.awt.peer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/peer/package-summary.html",
-					"deltas": [
-						{
-							"type": "interface",
-							"name": "RobotPeer",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "dispose()",
-									"status": "removed"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "package",
 					"name": "java.awt",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/package-summary.html",
@@ -3909,6 +3888,11 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "module",
+			"name": "java.se.ee",
+			"status": "removed"
 		},
 		{
 			"type": "module",

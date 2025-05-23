@@ -1578,33 +1578,6 @@
 			"deltas": [
 				{
 					"type": "package",
-					"name": "java.awt.peer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/package-summary.html",
-					"deltas": [
-						{
-							"type": "interface",
-							"name": "RobotPeer",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "dispose()",
-									"status": "removed"
-								},
-								{
-									"type": "method",
-									"name": "useAbsoluteCoordinates()",
-									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/peer/RobotPeer.html#useAbsoluteCoordinates()"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "package",
 					"name": "java.awt",
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/package-summary.html",
@@ -1775,6 +1748,11 @@
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/module-summary.html",
 			"csr": "JDK-8197565"
+		},
+		{
+			"type": "module",
+			"name": "java.se.ee",
+			"status": "removed"
 		},
 		{
 			"type": "module",
