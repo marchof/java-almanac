@@ -122,11 +122,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.dnd.peer",
-			"status": "removed"
-		},
-		{
-			"type": "package",
 			"name": "java.awt.dnd",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.desktop/java/awt/dnd/package-summary.html",
@@ -571,11 +566,6 @@
 					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html"
 				}
 			]
-		},
-		{
-			"type": "package",
-			"name": "java.awt.peer",
-			"status": "removed"
 		},
 		{
 			"type": "package",
@@ -15331,11 +15321,6 @@
 		},
 		{
 			"type": "package",
-			"name": "javax.jnlp",
-			"status": "removed"
-		},
-		{
-			"type": "package",
 			"name": "javax.jws.soap",
 			"status": "removed"
 		},
@@ -19684,6 +19669,346 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/javax/xml/XMLConstants.html#USE_CATALOG"
 						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.ietf.jgss",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "GSSContext",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "acceptSecContext(InputStream, OutputStream)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#acceptSecContext(java.io.InputStream,java.io.OutputStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMIC(InputStream, OutputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMIC(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "initSecContext(InputStream, OutputStream)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#initSecContext(java.io.InputStream,java.io.OutputStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "unwrap(InputStream, OutputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#unwrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "verifyMIC(InputStream, InputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#verifyMIC(java.io.InputStream,java.io.InputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "wrap(InputStream, OutputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#wrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.DynAnyPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.ORBPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.TypeCodePackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.portable",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3.portable",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextExtPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyFactoryPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Dynamic",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecFactoryPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Messaging",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor.ORBInitInfoPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.CurrentPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAManagerPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.ServantLocatorPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.portable",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.SendingContext",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.java.rmi",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.javax.management.remote.rmi",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.ranges",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/w3c/dom/ranges/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.traversal",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/w3c/dom/traversal/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.views",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/w3c/dom/views/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/w3c/dom/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "ElementTraversal",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/w3c/dom/ElementTraversal.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.helpers",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/helpers/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "AttributeListImpl",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/helpers/AttributeListImpl.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ParserFactory",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/helpers/ParserFactory.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "XMLReaderFactory",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/helpers/XMLReaderFactory.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "HandlerBase",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/HandlerBase.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "InputSource",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/InputSource.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "isEmpty()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/InputSource.html#isEmpty()"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AttributeList",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/AttributeList.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DocumentHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/DocumentHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Parser",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/12/docs/api/java.xml/org/xml/sax/Parser.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]

@@ -262,11 +262,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.dnd.peer",
-			"status": "removed"
-		},
-		{
-			"type": "package",
 			"name": "java.awt.dnd",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/awt/dnd/package-summary.html",
@@ -1894,11 +1889,6 @@
 					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html"
 				}
 			]
-		},
-		{
-			"type": "package",
-			"name": "java.awt.peer",
-			"status": "removed"
 		},
 		{
 			"type": "package",
@@ -28900,12 +28890,6 @@
 		},
 		{
 			"type": "package",
-			"name": "javax.smartcardio",
-			"status": "added",
-			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.smartcardio/javax/smartcardio/package-summary.html"
-		},
-		{
-			"type": "package",
 			"name": "javax.sound.midi.spi",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/sound/midi/spi/package-summary.html",
@@ -37588,6 +37572,981 @@
 			"name": "javax.xml",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/javax/xml/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.ietf.jgss",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "GSSContext",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "acceptSecContext(InputStream, OutputStream)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#acceptSecContext(java.io.InputStream,java.io.OutputStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getMIC(InputStream, OutputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMIC(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "initSecContext(InputStream, OutputStream)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#initSecContext(java.io.InputStream,java.io.OutputStream)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "unwrap(InputStream, OutputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#unwrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "verifyMIC(InputStream, InputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#verifyMIC(java.io.InputStream,java.io.InputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "wrap(InputStream, OutputStream, MessageProp)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#wrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.DynAnyPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.ORBPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.TypeCodePackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.portable",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3.portable",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextExtPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyFactoryPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Dynamic",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecFactoryPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Messaging",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor.ORBInitInfoPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.CurrentPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAManagerPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.ServantLocatorPackage",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.portable",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.SendingContext",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.java.rmi",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.bootstrap",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/bootstrap/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.events",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/events/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.ls",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/ls/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.ranges",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/ranges/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.traversal",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/traversal/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.views",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/views/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "DOMException",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMException.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "TYPE_MISMATCH_ERR",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMException.html#TYPE_MISMATCH_ERR"
+						},
+						{
+							"type": "field",
+							"name": "VALIDATION_ERR",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMException.html#VALIDATION_ERR"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Attr",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Attr.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getSchemaTypeInfo()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo()"
+						},
+						{
+							"type": "method",
+							"name": "isId()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DOMConfiguration",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html"
+				},
+				{
+					"type": "interface",
+					"name": "DOMErrorHandler",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMErrorHandler.html"
+				},
+				{
+					"type": "interface",
+					"name": "DOMError",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMError.html"
+				},
+				{
+					"type": "interface",
+					"name": "DOMImplementationList",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html"
+				},
+				{
+					"type": "interface",
+					"name": "DOMImplementationSource",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html"
+				},
+				{
+					"type": "interface",
+					"name": "DOMImplementation",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMImplementation.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getFeature(String, String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DOMLocator",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMLocator.html"
+				},
+				{
+					"type": "interface",
+					"name": "DOMStringList",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/DOMStringList.html"
+				},
+				{
+					"type": "interface",
+					"name": "Document",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "adoptNode(Node)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)"
+						},
+						{
+							"type": "method",
+							"name": "getDocumentURI()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getDocumentURI()"
+						},
+						{
+							"type": "method",
+							"name": "getDomConfig()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getDomConfig()"
+						},
+						{
+							"type": "method",
+							"name": "getInputEncoding()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getInputEncoding()"
+						},
+						{
+							"type": "method",
+							"name": "getStrictErrorChecking()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getStrictErrorChecking()"
+						},
+						{
+							"type": "method",
+							"name": "getXmlEncoding()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getXmlEncoding()"
+						},
+						{
+							"type": "method",
+							"name": "getXmlStandalone()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getXmlStandalone()"
+						},
+						{
+							"type": "method",
+							"name": "getXmlVersion()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#getXmlVersion()"
+						},
+						{
+							"type": "method",
+							"name": "normalizeDocument()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#normalizeDocument()"
+						},
+						{
+							"type": "method",
+							"name": "renameNode(Node, String, String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "setDocumentURI(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "setStrictErrorChecking(boolean)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "setXmlStandalone(boolean)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#setXmlStandalone(boolean)"
+						},
+						{
+							"type": "method",
+							"name": "setXmlVersion(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ElementTraversal",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/ElementTraversal.html"
+				},
+				{
+					"type": "interface",
+					"name": "Element",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getAttributeNS(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#getAttributeNS(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"throws DOMException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getAttributeNodeNS(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#getAttributeNodeNS(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"throws DOMException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getElementsByTagNameNS(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#getElementsByTagNameNS(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"throws DOMException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "getSchemaTypeInfo()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#getSchemaTypeInfo()"
+						},
+						{
+							"type": "method",
+							"name": "hasAttributeNS(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#hasAttributeNS(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"throws DOMException"
+							]
+						},
+						{
+							"type": "method",
+							"name": "setIdAttribute(String, boolean)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttribute(java.lang.String,boolean)"
+						},
+						{
+							"type": "method",
+							"name": "setIdAttributeNS(String, String, boolean)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttributeNS(java.lang.String,java.lang.String,boolean)"
+						},
+						{
+							"type": "method",
+							"name": "setIdAttributeNode(Attr, boolean)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttributeNode(org.w3c.dom.Attr,boolean)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Entity",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Entity.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getInputEncoding()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Entity.html#getInputEncoding()"
+						},
+						{
+							"type": "method",
+							"name": "getXmlEncoding()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"
+						},
+						{
+							"type": "method",
+							"name": "getXmlVersion()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "NameList",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/NameList.html"
+				},
+				{
+					"type": "interface",
+					"name": "NamedNodeMap",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getNamedItemNS(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItemNS(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"throws DOMException"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Node",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "DOCUMENT_POSITION_CONTAINED_BY",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINED_BY"
+						},
+						{
+							"type": "field",
+							"name": "DOCUMENT_POSITION_CONTAINS",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINS"
+						},
+						{
+							"type": "field",
+							"name": "DOCUMENT_POSITION_DISCONNECTED",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_DISCONNECTED"
+						},
+						{
+							"type": "field",
+							"name": "DOCUMENT_POSITION_FOLLOWING",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_FOLLOWING"
+						},
+						{
+							"type": "field",
+							"name": "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"
+						},
+						{
+							"type": "field",
+							"name": "DOCUMENT_POSITION_PRECEDING",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_PRECEDING"
+						},
+						{
+							"type": "method",
+							"name": "compareDocumentPosition(Node)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#compareDocumentPosition(org.w3c.dom.Node)"
+						},
+						{
+							"type": "method",
+							"name": "getBaseURI()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#getBaseURI()"
+						},
+						{
+							"type": "method",
+							"name": "getFeature(String, String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#getFeature(java.lang.String,java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "getTextContent()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#getTextContent()"
+						},
+						{
+							"type": "method",
+							"name": "getUserData(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#getUserData(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "isDefaultNamespace(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "isEqualNode(Node)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#isEqualNode(org.w3c.dom.Node)"
+						},
+						{
+							"type": "method",
+							"name": "isSameNode(Node)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#isSameNode(org.w3c.dom.Node)"
+						},
+						{
+							"type": "method",
+							"name": "lookupNamespaceURI(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#lookupNamespaceURI(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "lookupPrefix(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#lookupPrefix(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "setTextContent(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#setTextContent(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "setUserData(String, Object, UserDataHandler)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Node.html#setUserData(java.lang.String,java.lang.Object,org.w3c.dom.UserDataHandler)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Text",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Text.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getWholeText()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Text.html#getWholeText()"
+						},
+						{
+							"type": "method",
+							"name": "isElementContentWhitespace()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"
+						},
+						{
+							"type": "method",
+							"name": "replaceWholeText(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "TypeInfo",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/TypeInfo.html"
+				},
+				{
+					"type": "interface",
+					"name": "UserDataHandler",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/w3c/dom/UserDataHandler.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.ext",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Attributes2Impl",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html"
+				},
+				{
+					"type": "class",
+					"name": "DefaultHandler2",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html"
+				},
+				{
+					"type": "class",
+					"name": "Locator2Impl",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/Locator2Impl.html"
+				},
+				{
+					"type": "interface",
+					"name": "Attributes2",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/Attributes2.html"
+				},
+				{
+					"type": "interface",
+					"name": "EntityResolver2",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html"
+				},
+				{
+					"type": "interface",
+					"name": "Locator2",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ext/Locator2.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.helpers",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "AttributeListImpl",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/AttributeListImpl.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "DefaultHandler",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "resolveEntity(String, String)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html#resolveEntity(java.lang.String,java.lang.String)",
+							"addedTags": [
+								"throws IOException"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NamespaceSupport",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "NSDECL",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#NSDECL"
+						},
+						{
+							"type": "method",
+							"name": "isNamespaceDeclUris()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"
+						},
+						{
+							"type": "method",
+							"name": "setNamespaceDeclUris(boolean)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#setNamespaceDeclUris(boolean)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ParserFactory",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/ParserFactory.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "XMLReaderFactory",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/helpers/XMLReaderFactory.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "HandlerBase",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/HandlerBase.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "InputSource",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/InputSource.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "isEmpty()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/InputSource.html#isEmpty()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SAXException",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "SAXException()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXException.html#%3Cinit%3E()"
+						},
+						{
+							"type": "method",
+							"name": "getCause()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXException.html#getCause()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SAXNotRecognizedException",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXNotRecognizedException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "SAXNotRecognizedException()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXNotRecognizedException.html#%3Cinit%3E()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SAXNotSupportedException",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXNotSupportedException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "SAXNotSupportedException()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXNotSupportedException.html#%3Cinit%3E()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SAXParseException",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXParseException.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "toString()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/SAXParseException.html#toString()"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AttributeList",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/AttributeList.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ContentHandler",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ContentHandler.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "declaration(String, String, String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DocumentHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/DocumentHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Parser",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.xml/org/xml/sax/Parser.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
 		}
 	]
 }

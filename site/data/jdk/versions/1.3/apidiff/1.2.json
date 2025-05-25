@@ -603,80 +603,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.peer",
-			"status": "notmodified",
-			"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/package-summary.html",
-			"deltas": [
-				{
-					"type": "interface",
-					"name": "ChoicePeer",
-					"status": "notmodified",
-					"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/ChoicePeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "removeAll()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/ChoicePeer.html#removeAll()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ComponentPeer",
-					"status": "notmodified",
-					"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/ComponentPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "coalescePaintEvent(PaintEvent)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/ComponentPeer.html#coalescePaintEvent(java.awt.event.PaintEvent)"
-						},
-						{
-							"type": "method",
-							"name": "getGraphicsConfiguration()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/ComponentPeer.html#getGraphicsConfiguration()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "RobotPeer",
-					"status": "added",
-					"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/RobotPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "TextComponentPeer",
-					"status": "notmodified",
-					"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/TextComponentPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "filterEvents(long)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/TextComponentPeer.html#filterEvents(long)"
-						},
-						{
-							"type": "method",
-							"name": "getCharacterBounds(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/TextComponentPeer.html#getCharacterBounds(int)"
-						},
-						{
-							"type": "method",
-							"name": "getIndexAtPoint(int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/peer/TextComponentPeer.html#getIndexAtPoint(int, int)"
-						}
-					]
-				}
-			]
-		},
-		{
-			"type": "package",
 			"name": "java.awt",
 			"status": "notmodified",
 			"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/awt/package-summary.html",
@@ -2522,58 +2448,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"type": "package",
-			"name": "java.text.resources",
-			"status": "notmodified",
-			"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/text/resources/package-summary.html",
-			"deltas": [
-				{
-					"type": "class",
-					"name": "DateFormatZoneData",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/text/resources/DateFormatZoneData.html",
-					"addedTags": [
-						"extends ResourceBundle"
-					],
-					"removedTags": [
-						"extends ListResourceBundle",
-						"final"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getKeys()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/text/resources/DateFormatZoneData.html#getKeys()"
-						},
-						{
-							"type": "method",
-							"name": "handleGetObject(String)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/text/resources/DateFormatZoneData.html#handleGetObject(java.lang.String)"
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "DateFormatZoneData_en",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.3/api/java/text/resources/DateFormatZoneData_en.html",
-					"addedTags": [
-						"extends DateFormatZoneData"
-					],
-					"removedTags": [
-						"extends ListResourceBundle"
-					]
-				},
-				{
-					"type": "class",
-					"name": "DateFormatZoneData_en_US",
-					"status": "removed"
 				}
 			]
 		},
@@ -9327,6 +9201,712 @@
 			"name": "javax.transaction",
 			"status": "added",
 			"javadoc": "https://javaalmanac.io/jdk/1.3/api/javax/transaction/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.portable",
+			"status": "notmodified",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "IndirectionException",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/IndirectionException.html"
+				},
+				{
+					"type": "class",
+					"name": "UnknownException",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/UnknownException.html"
+				},
+				{
+					"type": "interface",
+					"name": "BoxedValueHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/BoxedValueHelper.html"
+				},
+				{
+					"type": "interface",
+					"name": "CustomValue",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/CustomValue.html"
+				},
+				{
+					"type": "interface",
+					"name": "StreamableValue",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/StreamableValue.html"
+				},
+				{
+					"type": "interface",
+					"name": "ValueBase",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/ValueBase.html"
+				},
+				{
+					"type": "interface",
+					"name": "ValueFactory",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/portable/ValueFactory.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA",
+			"status": "notmodified",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "AnySeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/AnySeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "AnySeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/AnySeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "BooleanSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/BooleanSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "BooleanSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/BooleanSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "CharSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CharSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "CharSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CharSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "CompletionStatusHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CompletionStatusHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "CurrentHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CurrentHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "CurrentHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CurrentHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "DefinitionKindHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DefinitionKindHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "DoubleSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DoubleSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "DoubleSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DoubleSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "FieldNameHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/FieldNameHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "FloatSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/FloatSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "FloatSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/FloatSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "IDLTypeHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/IDLTypeHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "IdentifierHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/IdentifierHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "LongLongSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/LongLongSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "LongLongSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/LongLongSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "LongSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/LongSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "LongSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/LongSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "NameValuePairHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/NameValuePairHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ORB",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ORB.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "added",
+							"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ORB.html#destroy()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ObjectHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ObjectHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "OctetSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/OctetSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "OctetSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/OctetSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/PolicyHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/PolicyHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyListHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/PolicyListHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyListHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/PolicyListHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyTypeHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/PolicyTypeHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "RepositoryIdHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/RepositoryIdHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "SetOverrideTypeHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/SetOverrideTypeHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ShortSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ShortSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ShortSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ShortSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "StringValueHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/StringValueHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "StructMemberHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/StructMemberHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "TCKind",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/TCKind.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "TCKind(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/TCKind.html#TCKind(int)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "TypeCode",
+					"status": "notmodified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/TypeCode.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "member_visibility(int)",
+							"status": "modified",
+							"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/TypeCode.html#member_visibility(int)",
+							"addedTags": [
+								"throws Bounds"
+							],
+							"removedTags": [
+								"throws Bounds"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ULongLongSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ULongLongSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ULongLongSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ULongLongSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "ULongSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ULongSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ULongSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ULongSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "UShortSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/UShortSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "UShortSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/UShortSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "UnionMemberHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/UnionMemberHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ValueBaseHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ValueBaseHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ValueBaseHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ValueBaseHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "ValueMemberHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/ValueMemberHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "VersionSpecHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/VersionSpecHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "VisibilityHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/VisibilityHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "WCharSeqHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/WCharSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "WCharSeqHolder",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/WCharSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "WStringValueHelper",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/WStringValueHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "_IDLTypeStub",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/_IDLTypeStub.html"
+				},
+				{
+					"type": "class",
+					"name": "_PolicyStub",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/_PolicyStub.html"
+				},
+				{
+					"type": "interface",
+					"name": "CurrentOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CurrentOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "Current",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/Current.html",
+					"addedTags": [
+						"implements CurrentOperations",
+						"implements IDLEntity"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "CustomMarshal",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/CustomMarshal.html"
+				},
+				{
+					"type": "interface",
+					"name": "DataInputStream",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DataInputStream.html"
+				},
+				{
+					"type": "interface",
+					"name": "DataOutputStream",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DataOutputStream.html"
+				},
+				{
+					"type": "interface",
+					"name": "DomainManagerOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DomainManagerOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "DomainManager",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/DomainManager.html",
+					"addedTags": [
+						"implements DomainManagerOperations",
+						"implements IDLEntity"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "get_domain_policy(int)",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "IDLTypeOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/IDLTypeOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "IDLType",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/IDLType.html",
+					"addedTags": [
+						"implements IDLTypeOperations"
+					],
+					"removedTags": [
+						"implements Object"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "type()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "IRObjectOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/IRObjectOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "IRObject",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/IRObject.html",
+					"addedTags": [
+						"implements IRObjectOperations"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "def_kind()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "OMGVMCID",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/OMGVMCID.html"
+				},
+				{
+					"type": "interface",
+					"name": "PolicyOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/PolicyOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "Policy",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA/Policy.html",
+					"addedTags": [
+						"implements IDLEntity",
+						"implements PolicyOperations"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "copy()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "policy_type()",
+							"status": "removed"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3.portable",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA_2_3/portable/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CORBA_2_3/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming",
+			"status": "notmodified",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CosNaming/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "BindingIteratorOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CosNaming/BindingIteratorOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "BindingIterator",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CosNaming/BindingIterator.html",
+					"addedTags": [
+						"implements BindingIteratorOperations"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "next_n(int, BindingListHolder)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "next_one(BindingHolder)",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "NamingContextOperations",
+					"status": "added",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CosNaming/NamingContextOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "NamingContext",
+					"status": "modified",
+					"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/CosNaming/NamingContext.html",
+					"addedTags": [
+						"implements NamingContextOperations"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "bind(NameComponent[], Object)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "bind_context(NameComponent[], NamingContext)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "bind_new_context(NameComponent[])",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "list(int, BindingListHolder, BindingIteratorHolder)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "new_context()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "rebind(NameComponent[], Object)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "rebind_context(NameComponent[], NamingContext)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "resolve(NameComponent[])",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "unbind(NameComponent[])",
+							"status": "removed"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.SendingContext",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/SendingContext/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.java.rmi",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.3/api/org/omg/stub/java/rmi/package-summary.html"
 		}
 	]
 }

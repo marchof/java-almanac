@@ -10698,6 +10698,28 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "package",
+					"name": "org.xml.sax",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.xml/org/xml/sax/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ContentHandler",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.xml/org/xml/sax/ContentHandler.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "declaration(String, String, String)",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)"
+								}
+							]
+						}
+					]
 				}
 			]
 		}

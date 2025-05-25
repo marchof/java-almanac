@@ -10070,6 +10070,76 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "package",
+					"name": "org.ietf.jgss",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "GSSContext",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "acceptSecContext(InputStream, OutputStream)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#acceptSecContext(java.io.InputStream,java.io.OutputStream)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getMIC(InputStream, OutputStream, MessageProp)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMIC(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "initSecContext(InputStream, OutputStream)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#initSecContext(java.io.InputStream,java.io.OutputStream)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "unwrap(InputStream, OutputStream, MessageProp)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#unwrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "verifyMIC(InputStream, InputStream, MessageProp)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#verifyMIC(java.io.InputStream,java.io.InputStream,org.ietf.jgss.MessageProp)",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "wrap(InputStream, OutputStream, MessageProp)",
+									"status": "modified",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#wrap(java.io.InputStream,java.io.OutputStream,org.ietf.jgss.MessageProp)",
+									"addedTags": [
+										"deprecated"
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -10489,6 +10559,28 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setProperty(java.lang.String,java.lang.String)",
 									"csr": "JDK-8276143"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "org.xml.sax",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/org/xml/sax/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ContentHandler",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/org/xml/sax/ContentHandler.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "declaration(String, String, String)",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)"
 								}
 							]
 						}

@@ -121,12 +121,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.dnd.peer",
-			"status": "added",
-			"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/dnd/peer/package-summary.html"
-		},
-		{
-			"type": "package",
 			"name": "java.awt.dnd",
 			"status": "added",
 			"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/dnd/package-summary.html"
@@ -1004,583 +998,7 @@
 		{
 			"type": "package",
 			"name": "java.awt.peer",
-			"status": "notmodified",
-			"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/package-summary.html",
-			"deltas": [
-				{
-					"type": "interface",
-					"name": "ButtonPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ButtonPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "CanvasPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/CanvasPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "CheckboxMenuItemPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/CheckboxMenuItemPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "CheckboxPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/CheckboxPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ChoicePeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ChoicePeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "add(String, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ChoicePeer.html#add(java.lang.String, int)"
-						},
-						{
-							"type": "method",
-							"name": "remove(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ChoicePeer.html#remove(int)"
-						},
-						{
-							"type": "method",
-							"name": "removeAll()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ChoicePeer.html#removeAll()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ComponentPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "canDetermineObscurity()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#canDetermineObscurity()"
-						},
-						{
-							"type": "method",
-							"name": "coalescePaintEvent(PaintEvent)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#coalescePaintEvent(java.awt.event.PaintEvent)"
-						},
-						{
-							"type": "method",
-							"name": "createBuffers(int, BufferCapabilities)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#createBuffers(int, java.awt.BufferCapabilities)"
-						},
-						{
-							"type": "method",
-							"name": "createVolatileImage(int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#createVolatileImage(int, int)"
-						},
-						{
-							"type": "method",
-							"name": "destroyBuffers()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#destroyBuffers()"
-						},
-						{
-							"type": "method",
-							"name": "flip(BufferCapabilities.FlipContents)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#flip(java.awt.BufferCapabilities.FlipContents)"
-						},
-						{
-							"type": "method",
-							"name": "getBackBuffer()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#getBackBuffer()"
-						},
-						{
-							"type": "method",
-							"name": "getGraphicsConfiguration()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#getGraphicsConfiguration()"
-						},
-						{
-							"type": "method",
-							"name": "getLocationOnScreen()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#getLocationOnScreen()"
-						},
-						{
-							"type": "method",
-							"name": "getMinimumSize()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#getMinimumSize()"
-						},
-						{
-							"type": "method",
-							"name": "getPreferredSize()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#getPreferredSize()"
-						},
-						{
-							"type": "method",
-							"name": "handleEvent(AWTEvent)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#handleEvent(java.awt.AWTEvent)"
-						},
-						{
-							"type": "method",
-							"name": "handleEvent(Event)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "handlesWheelScrolling()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#handlesWheelScrolling()"
-						},
-						{
-							"type": "method",
-							"name": "isFocusable()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#isFocusable()"
-						},
-						{
-							"type": "method",
-							"name": "isObscured()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#isObscured()"
-						},
-						{
-							"type": "method",
-							"name": "nextFocus()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "requestFocus()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "requestFocus(Component, boolean, boolean, long)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#requestFocus(java.awt.Component, boolean, boolean, long)"
-						},
-						{
-							"type": "method",
-							"name": "setBounds(int, int, int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#setBounds(int, int, int, int)"
-						},
-						{
-							"type": "method",
-							"name": "setEnabled(boolean)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#setEnabled(boolean)"
-						},
-						{
-							"type": "method",
-							"name": "setVisible(boolean)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#setVisible(boolean)"
-						},
-						{
-							"type": "method",
-							"name": "updateCursorImmediately()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ComponentPeer.html#updateCursorImmediately()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ContainerPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "beginLayout()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html#beginLayout()"
-						},
-						{
-							"type": "method",
-							"name": "beginValidate()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html#beginValidate()"
-						},
-						{
-							"type": "method",
-							"name": "endLayout()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html#endLayout()"
-						},
-						{
-							"type": "method",
-							"name": "endValidate()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html#endValidate()"
-						},
-						{
-							"type": "method",
-							"name": "getInsets()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html#getInsets()"
-						},
-						{
-							"type": "method",
-							"name": "isPaintPending()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ContainerPeer.html#isPaintPending()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "DialogPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/DialogPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "FileDialogPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/FileDialogPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "FontPeer",
-					"status": "added",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/FontPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "FramePeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/FramePeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getState()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/FramePeer.html#getState()"
-						},
-						{
-							"type": "method",
-							"name": "setCursor(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setMaximizedBounds(Rectangle)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/FramePeer.html#setMaximizedBounds(java.awt.Rectangle)"
-						},
-						{
-							"type": "method",
-							"name": "setState(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/FramePeer.html#setState(int)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "LabelPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/LabelPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "LightweightPeer",
-					"status": "added",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/LightweightPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "ListPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ListPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "add(String, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ListPeer.html#add(java.lang.String, int)"
-						},
-						{
-							"type": "method",
-							"name": "getMinimumSize(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ListPeer.html#getMinimumSize(int)"
-						},
-						{
-							"type": "method",
-							"name": "getPreferredSize(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ListPeer.html#getPreferredSize(int)"
-						},
-						{
-							"type": "method",
-							"name": "removeAll()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ListPeer.html#removeAll()"
-						},
-						{
-							"type": "method",
-							"name": "setMultipleMode(boolean)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ListPeer.html#setMultipleMode(boolean)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MenuBarPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/MenuBarPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MenuComponentPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/MenuComponentPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MenuItemPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/MenuItemPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "setEnabled(boolean)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/MenuItemPeer.html#setEnabled(boolean)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MenuPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/MenuPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "PanelPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/PanelPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "PopupMenuPeer",
-					"status": "added",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/PopupMenuPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "RobotPeer",
-					"status": "added",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/RobotPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "ScrollPanePeer",
-					"status": "added",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ScrollPanePeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "ScrollbarPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/ScrollbarPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "setValue(int)",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "TextAreaPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextAreaPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getMinimumSize(int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextAreaPeer.html#getMinimumSize(int, int)"
-						},
-						{
-							"type": "method",
-							"name": "getPreferredSize(int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextAreaPeer.html#getPreferredSize(int, int)"
-						},
-						{
-							"type": "method",
-							"name": "insert(String, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextAreaPeer.html#insert(java.lang.String, int)"
-						},
-						{
-							"type": "method",
-							"name": "replaceRange(String, int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextAreaPeer.html#replaceRange(java.lang.String, int, int)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "TextComponentPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextComponentPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "filterEvents(long)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextComponentPeer.html#filterEvents(long)"
-						},
-						{
-							"type": "method",
-							"name": "getCaretPosition()",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextComponentPeer.html#getCaretPosition()"
-						},
-						{
-							"type": "method",
-							"name": "getCharacterBounds(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextComponentPeer.html#getCharacterBounds(int)"
-						},
-						{
-							"type": "method",
-							"name": "getIndexAtPoint(int, int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextComponentPeer.html#getIndexAtPoint(int, int)"
-						},
-						{
-							"type": "method",
-							"name": "setCaretPosition(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextComponentPeer.html#setCaretPosition(int)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "TextFieldPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextFieldPeer.html",
-					"addedTags": [
-						"abstract"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getMinimumSize(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextFieldPeer.html#getMinimumSize(int)"
-						},
-						{
-							"type": "method",
-							"name": "getPreferredSize(int)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextFieldPeer.html#getPreferredSize(int)"
-						},
-						{
-							"type": "method",
-							"name": "setEchoChar(char)",
-							"status": "added",
-							"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/TextFieldPeer.html#setEchoChar(char)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "WindowPeer",
-					"status": "modified",
-					"javadoc": "https://javaalmanac.io/jdk/1.4/api/java/awt/peer/WindowPeer.html",
-					"addedTags": [
-						"abstract"
-					]
-				}
-			]
+			"status": "removed"
 		},
 		{
 			"type": "package",
@@ -14169,6 +13587,209 @@
 			"name": "javax.xml.transform",
 			"status": "added",
 			"javadoc": "https://javaalmanac.io/jdk/1.4/api/javax/xml/transform/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.ietf.jgss",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/ietf/jgss/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.DynAnyPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA/DynAnyPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.ORBPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA/ORBPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.TypeCodePackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA/TypeCodePackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.portable",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA/portable/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3.portable",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA_2_3/portable/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA_2_3",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CORBA_2_3/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextExtPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CosNaming/NamingContextExtPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CosNaming/NamingContextPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/CosNaming/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyFactoryPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/DynamicAny/DynAnyFactoryPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/DynamicAny/DynAnyPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/DynamicAny/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Dynamic",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/Dynamic/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecFactoryPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/IOP/CodecFactoryPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/IOP/CodecPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/IOP/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Messaging",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/Messaging/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor.ORBInitInfoPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableInterceptor/ORBInitInfoPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableInterceptor/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.CurrentPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableServer/CurrentPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAManagerPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableServer/POAManagerPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableServer/POAPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.ServantLocatorPackage",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableServer/ServantLocatorPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.portable",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableServer/portable/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/PortableServer/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.SendingContext",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/SendingContext/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.java.rmi",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/omg/stub/java/rmi/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/w3c/dom/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.ext",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/xml/sax/ext/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.helpers",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/xml/sax/helpers/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax",
+			"status": "added",
+			"javadoc": "https://javaalmanac.io/jdk/1.4/api/org/xml/sax/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "sun.tools.debug",
+			"status": "removed"
 		}
 	]
 }

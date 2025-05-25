@@ -69,41 +69,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.peer",
-			"status": "notmodified",
-			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/peer/package-summary.html",
-			"deltas": [
-				{
-					"type": "interface",
-					"name": "ComponentPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/peer/ComponentPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getToolkit()",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "FramePeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/peer/FramePeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "emulateActivation(boolean)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/peer/FramePeer.html#emulateActivation-boolean-"
-						}
-					]
-				}
-			]
-		},
-		{
-			"type": "package",
 			"name": "java.awt",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/8/docs/api/java/awt/package-summary.html",
@@ -6406,11 +6371,6 @@
 		},
 		{
 			"type": "package",
-			"name": "javax.jnlp",
-			"status": "removed"
-		},
-		{
-			"type": "package",
 			"name": "javax.lang.model.element",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/package-summary.html",
@@ -7369,6 +7329,12 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.views",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/views/package-summary.html"
 		}
 	]
 }

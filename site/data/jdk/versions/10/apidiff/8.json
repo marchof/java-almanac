@@ -88,11 +88,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.dnd.peer",
-			"status": "removed"
-		},
-		{
-			"type": "package",
 			"name": "java.awt.dnd",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/awt/dnd/package-summary.html",
@@ -523,11 +518,6 @@
 					"javadoc": "https://docs.oracle.com/javase/10/docs/api/java/awt/image/MultiResolutionImage.html"
 				}
 			]
-		},
-		{
-			"type": "package",
-			"name": "java.awt.peer",
-			"status": "removed"
 		},
 		{
 			"type": "package",
@@ -12184,6 +12174,178 @@
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/javase/10/docs/api/javax/xml/XMLConstants.html#USE_CATALOG"
 						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.ORBPackage",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/ORBPackage/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "InvalidNameHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/ORBPackage/InvalidNameHelper.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.TypeCodePackage",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/TypeCodePackage/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "BadKindHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/TypeCodePackage/BadKindHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "BoundsHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/TypeCodePackage/BoundsHelper.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "BoundsHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/omg/CORBA/BoundsHelper.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.javax.management.remote.rmi",
+			"status": "removed"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.ranges",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/w3c/dom/ranges/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.traversal",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/w3c/dom/traversal/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/w3c/dom/package-summary.html",
+			"deltas": [
+				{
+					"type": "interface",
+					"name": "ElementTraversal",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/w3c/dom/ElementTraversal.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.helpers",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/helpers/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "AttributeListImpl",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/helpers/AttributeListImpl.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ParserFactory",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/helpers/ParserFactory.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "XMLReaderFactory",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/helpers/XMLReaderFactory.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "HandlerBase",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/HandlerBase.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "InputSource",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/InputSource.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "isEmpty()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/InputSource.html#isEmpty()"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "AttributeList",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/AttributeList.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DocumentHandler",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/DocumentHandler.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "Parser",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/10/docs/api/org/xml/sax/Parser.html",
+					"addedTags": [
+						"deprecated"
 					]
 				}
 			]

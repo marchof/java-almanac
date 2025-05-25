@@ -2267,611 +2267,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.awt.peer",
-			"status": "notmodified",
-			"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/package-summary.html",
-			"deltas": [
-				{
-					"type": "interface",
-					"name": "CanvasPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/CanvasPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getAppropriateGraphicsConfiguration(GraphicsConfiguration)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/CanvasPeer.html#getAppropriateGraphicsConfiguration(java.awt.GraphicsConfiguration)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ChoicePeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ChoicePeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "addItem(String, int)",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ComponentPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html",
-					"deltas": [
-						{
-							"type": "field",
-							"name": "DEFAULT_OPERATION",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#DEFAULT_OPERATION"
-						},
-						{
-							"type": "field",
-							"name": "NO_EMBEDDED_CHECK",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#NO_EMBEDDED_CHECK"
-						},
-						{
-							"type": "field",
-							"name": "RESET_OPERATION",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#RESET_OPERATION"
-						},
-						{
-							"type": "field",
-							"name": "SET_BOUNDS",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#SET_BOUNDS"
-						},
-						{
-							"type": "field",
-							"name": "SET_CLIENT_SIZE",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#SET_CLIENT_SIZE"
-						},
-						{
-							"type": "field",
-							"name": "SET_LOCATION",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#SET_LOCATION"
-						},
-						{
-							"type": "field",
-							"name": "SET_SIZE",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#SET_SIZE"
-						},
-						{
-							"type": "method",
-							"name": "applyShape(Region)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#applyShape(sun.java2d.pipe.Region)"
-						},
-						{
-							"type": "method",
-							"name": "canDetermineObscurity()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#canDetermineObscurity()"
-						},
-						{
-							"type": "method",
-							"name": "createBuffers(int, BufferCapabilities)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#createBuffers(int, java.awt.BufferCapabilities)"
-						},
-						{
-							"type": "method",
-							"name": "createVolatileImage(int, int)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#createVolatileImage(int, int)"
-						},
-						{
-							"type": "method",
-							"name": "destroyBuffers()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#destroyBuffers()"
-						},
-						{
-							"type": "method",
-							"name": "disable()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "enable()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "flip(int, int, int, int, BufferCapabilities.FlipContents)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#flip(int, int, int, int, java.awt.BufferCapabilities.FlipContents)"
-						},
-						{
-							"type": "method",
-							"name": "getBackBuffer()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#getBackBuffer()"
-						},
-						{
-							"type": "method",
-							"name": "handlesWheelScrolling()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#handlesWheelScrolling()"
-						},
-						{
-							"type": "method",
-							"name": "hide()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "isFocusTraversable()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "isFocusable()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#isFocusable()"
-						},
-						{
-							"type": "method",
-							"name": "isObscured()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#isObscured()"
-						},
-						{
-							"type": "method",
-							"name": "isReparentSupported()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#isReparentSupported()"
-						},
-						{
-							"type": "method",
-							"name": "layout()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#layout()"
-						},
-						{
-							"type": "method",
-							"name": "minimumSize()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "preferredSize()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "repaint(long, int, int, int, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "reparent(ContainerPeer)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#reparent(java.awt.peer.ContainerPeer)"
-						},
-						{
-							"type": "method",
-							"name": "requestFocus()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "requestFocus(Component, boolean, boolean, long, CausedFocusEvent.Cause)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#requestFocus(java.awt.Component, boolean, boolean, long, sun.awt.CausedFocusEvent.Cause)"
-						},
-						{
-							"type": "method",
-							"name": "reshape(int, int, int, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setBounds(int, int, int, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setBounds(int, int, int, int, int)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#setBounds(int, int, int, int, int)"
-						},
-						{
-							"type": "method",
-							"name": "setCursor(Cursor)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setZOrder(ComponentPeer)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#setZOrder(java.awt.peer.ComponentPeer)"
-						},
-						{
-							"type": "method",
-							"name": "show()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "updateCursorImmediately()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#updateCursorImmediately()"
-						},
-						{
-							"type": "method",
-							"name": "updateGraphicsData(GraphicsConfiguration)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ComponentPeer.html#updateGraphicsData(java.awt.GraphicsConfiguration)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "ContainerPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ContainerPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "beginLayout()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ContainerPeer.html#beginLayout()"
-						},
-						{
-							"type": "method",
-							"name": "endLayout()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ContainerPeer.html#endLayout()"
-						},
-						{
-							"type": "method",
-							"name": "insets()",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "DesktopPeer",
-					"status": "added",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/DesktopPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "DialogPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/DialogPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "blockWindows(List)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/DialogPeer.html#blockWindows(java.util.List)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "FramePeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/FramePeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getBoundsPrivate()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/FramePeer.html#getBoundsPrivate()"
-						},
-						{
-							"type": "method",
-							"name": "setBoundsPrivate(int, int, int, int)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/FramePeer.html#setBoundsPrivate(int, int, int, int)"
-						},
-						{
-							"type": "method",
-							"name": "setIconImage(Image)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setMaximizedBounds(Rectangle)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/FramePeer.html#setMaximizedBounds(java.awt.Rectangle)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "KeyboardFocusManagerPeer",
-					"status": "added",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/KeyboardFocusManagerPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "ListPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/ListPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "addItem(String, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "clear()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "minimumSize(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "preferredSize(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setMultipleSelections(boolean)",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MenuComponentPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/MenuComponentPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "setFont(Font)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/MenuComponentPeer.html#setFont(java.awt.Font)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MenuItemPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/MenuItemPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "disable()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "enable()",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "MouseInfoPeer",
-					"status": "added",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/MouseInfoPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "RobotPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/RobotPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "dispose()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/RobotPeer.html#dispose()"
-						},
-						{
-							"type": "method",
-							"name": "mouseWheel(int)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/RobotPeer.html#mouseWheel(int)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "SystemTrayPeer",
-					"status": "added",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/SystemTrayPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "TextAreaPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/TextAreaPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "insertText(String, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "minimumSize(int, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "preferredSize(int, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "replaceText(String, int, int)",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "TextComponentPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/TextComponentPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "filterEvents(long)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getCharacterBounds(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getIndexAtPoint(int, int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getInputMethodRequests()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/TextComponentPeer.html#getInputMethodRequests()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "TextFieldPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/TextFieldPeer.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "minimumSize(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "preferredSize(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setEchoCharacter(char)",
-							"status": "removed"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "TrayIconPeer",
-					"status": "added",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/TrayIconPeer.html"
-				},
-				{
-					"type": "interface",
-					"name": "WindowPeer",
-					"status": "notmodified",
-					"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html",
-					"deltas": [
-						{
-							"type": "field",
-							"name": "CONSUME_EVENT",
-							"status": "removed"
-						},
-						{
-							"type": "field",
-							"name": "FOCUS_NEXT",
-							"status": "removed"
-						},
-						{
-							"type": "field",
-							"name": "FOCUS_PREVIOUS",
-							"status": "removed"
-						},
-						{
-							"type": "field",
-							"name": "IGNORE_EVENT",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "handleFocusTraversalEvent(KeyEvent)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "repositionSecurityWarning()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#repositionSecurityWarning()"
-						},
-						{
-							"type": "method",
-							"name": "setModalBlocked(Dialog, boolean)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#setModalBlocked(java.awt.Dialog, boolean)"
-						},
-						{
-							"type": "method",
-							"name": "setOpacity(float)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#setOpacity(float)"
-						},
-						{
-							"type": "method",
-							"name": "setOpaque(boolean)",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#setOpaque(boolean)"
-						},
-						{
-							"type": "method",
-							"name": "updateAlwaysOnTopState()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#updateAlwaysOnTopState()"
-						},
-						{
-							"type": "method",
-							"name": "updateFocusableWindowState()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#updateFocusableWindowState()"
-						},
-						{
-							"type": "method",
-							"name": "updateIconImages()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#updateIconImages()"
-						},
-						{
-							"type": "method",
-							"name": "updateMinimumSize()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#updateMinimumSize()"
-						},
-						{
-							"type": "method",
-							"name": "updateWindow()",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/peer/WindowPeer.html#updateWindow()"
-						}
-					]
-				}
-			]
-		},
-		{
-			"type": "package",
 			"name": "java.awt.print",
 			"status": "notmodified",
 			"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/awt/print/package-summary.html",
@@ -16999,11 +16394,6 @@
 		},
 		{
 			"type": "package",
-			"name": "java.text.resources",
-			"status": "removed"
-		},
-		{
-			"type": "package",
 			"name": "java.text.spi",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/javase/7/docs/api/java/text/spi/package-summary.html"
@@ -20116,12 +19506,6 @@
 		},
 		{
 			"type": "package",
-			"name": "javax.jnlp",
-			"status": "added",
-			"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/jnlp/package-summary.html"
-		},
-		{
-			"type": "package",
 			"name": "javax.jws.soap",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/jws/soap/package-summary.html"
@@ -20564,12 +19948,6 @@
 			"name": "javax.security.sasl",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/security/sasl/package-summary.html"
-		},
-		{
-			"type": "package",
-			"name": "javax.smartcardio",
-			"status": "added",
-			"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/smartcardio/package-summary.html"
 		},
 		{
 			"type": "package",
@@ -29792,6 +29170,1691 @@
 			"name": "javax.xml",
 			"status": "added",
 			"javadoc": "https://docs.oracle.com/javase/7/docs/api/javax/xml/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.ietf.jgss",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/ietf/jgss/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.ORBPackage",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORBPackage/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "InvalidName",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORBPackage/InvalidName.html",
+					"addedTags": [
+						"final"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA.portable",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "Delegate",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/Delegate.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "get_interface_def(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/Delegate.html#get_interface_def(org.omg.CORBA.Object)",
+							"addedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "InputStream",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/InputStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "read_Principal()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/InputStream.html#read_Principal()",
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "OutputStream",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/OutputStream.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "write_Principal(Principal)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/OutputStream.html#write_Principal(org.omg.CORBA.Principal)",
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "ValueInputStream",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/ValueInputStream.html"
+				},
+				{
+					"type": "interface",
+					"name": "ValueOutputStream",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/portable/ValueOutputStream.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CORBA",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "ACTIVITY_COMPLETED",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ACTIVITY_COMPLETED.html"
+				},
+				{
+					"type": "class",
+					"name": "ACTIVITY_REQUIRED",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ACTIVITY_REQUIRED.html"
+				},
+				{
+					"type": "class",
+					"name": "AnySeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/AnySeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Any",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "extract_Principal()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#extract_Principal()",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "extract_Streamable()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#extract_Streamable()"
+						},
+						{
+							"type": "method",
+							"name": "extract_Value()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#extract_Value()",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insert_Object(Object, TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#insert_Object(org.omg.CORBA.Object, org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"throws BAD_PARAM"
+							],
+							"removedTags": [
+								"throws BAD_OPERATION"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insert_Principal(Principal)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#insert_Principal(org.omg.CORBA.Principal)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insert_Streamable(Streamable)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#insert_Streamable(org.omg.CORBA.portable.Streamable)",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insert_Value(Serializable)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#insert_Value(java.io.Serializable)",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insert_Value(Serializable, TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#insert_Value(java.io.Serializable, org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "insert_fixed(BigDecimal, TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Any.html#insert_fixed(java.math.BigDecimal, org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"throws BAD_INV_ORDER"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BAD_QOS",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/BAD_QOS.html"
+				},
+				{
+					"type": "class",
+					"name": "BooleanSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/BooleanSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "CODESET_INCOMPATIBLE",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/CODESET_INCOMPATIBLE.html"
+				},
+				{
+					"type": "class",
+					"name": "CharSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/CharSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "CompletionStatus",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/CompletionStatus.html",
+					"addedTags": [
+						"final"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "CompletionStatus(int)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "from_int(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/CompletionStatus.html#from_int(int)",
+							"removedTags": [
+								"throws BAD_PARAM"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "DefinitionKind",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DefinitionKind.html",
+					"deltas": [
+						{
+							"type": "field",
+							"name": "_dk_AbstractInterface",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DefinitionKind.html#_dk_AbstractInterface"
+						},
+						{
+							"type": "field",
+							"name": "dk_AbstractInterface",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DefinitionKind.html#dk_AbstractInterface"
+						},
+						{
+							"type": "method",
+							"name": "from_int(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DefinitionKind.html#from_int(int)",
+							"removedTags": [
+								"throws BAD_PARAM"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "DoubleSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DoubleSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "DynamicImplementation",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynamicImplementation.html",
+					"addedTags": [
+						"deprecated"
+					],
+					"removedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "_ids()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynamicImplementation.html#_ids()"
+						},
+						{
+							"type": "method",
+							"name": "invoke(ServerRequest)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynamicImplementation.html#invoke(org.omg.CORBA.ServerRequest)",
+							"addedTags": [
+								"deprecated"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "FloatSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/FloatSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "INVALID_ACTIVITY",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/INVALID_ACTIVITY.html"
+				},
+				{
+					"type": "class",
+					"name": "INV_POLICY",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/INV_POLICY.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "LocalObject",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/LocalObject.html"
+				},
+				{
+					"type": "class",
+					"name": "LongLongSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/LongLongSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "LongSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/LongSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ORB",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "create_basic_dyn_any(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_basic_dyn_any(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "create_dyn_any(Any)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_dyn_any(org.omg.CORBA.Any)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "create_dyn_array(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_dyn_array(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "create_dyn_enum(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_dyn_enum(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "create_dyn_sequence(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_dyn_sequence(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "create_dyn_struct(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_dyn_struct(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"deprecated"
+							]
+						},
+						{
+							"type": "method",
+							"name": "create_dyn_union(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ORB.html#create_dyn_union(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"deprecated"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "OctetSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/OctetSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ParameterModeHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ParameterModeHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "ParameterModeHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ParameterModeHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "ParameterMode",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ParameterMode.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyErrorCodeHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/PolicyErrorCodeHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyErrorHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/PolicyErrorHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "PolicyErrorHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/PolicyErrorHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "PrincipalHolder",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/PrincipalHolder.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "class",
+					"name": "Principal",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Principal.html",
+					"addedTags": [
+						"deprecated"
+					],
+					"removedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "name()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Principal.html#name()",
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "name(byte[])",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/Principal.html#name(byte%5B%5D)",
+							"removedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "REBIND",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/REBIND.html"
+				},
+				{
+					"type": "class",
+					"name": "ServiceDetailHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ServiceDetailHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ServiceDetailHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ServiceDetailHelper.html#ServiceDetailHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ServiceInformationHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ServiceInformationHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "ServiceInformationHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ServiceInformationHelper.html#ServiceInformationHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SetOverrideType",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/SetOverrideType.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "from_int(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/SetOverrideType.html#from_int(int)",
+							"removedTags": [
+								"throws BAD_PARAM"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ShortSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ShortSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "StringSeqHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/StringSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "StringSeqHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/StringSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "StringValueHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/StringValueHelper.html",
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "TCKind",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TCKind.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "from_int(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TCKind.html#from_int(int)",
+							"removedTags": [
+								"throws BAD_PARAM"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "TIMEOUT",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TIMEOUT.html"
+				},
+				{
+					"type": "class",
+					"name": "TRANSACTION_MODE",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TRANSACTION_MODE.html"
+				},
+				{
+					"type": "class",
+					"name": "TRANSACTION_UNAVAILABLE",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TRANSACTION_UNAVAILABLE.html"
+				},
+				{
+					"type": "class",
+					"name": "TypeCode",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "concrete_base_type()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#concrete_base_type()",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "equivalent(TypeCode)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#equivalent(org.omg.CORBA.TypeCode)",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "fixed_digits()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#fixed_digits()",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "fixed_scale()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#fixed_scale()",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "get_compact_typecode()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#get_compact_typecode()",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "member_visibility(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#member_visibility(int)",
+							"addedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "method",
+							"name": "type_modifier()",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/TypeCode.html#type_modifier()",
+							"addedTags": [
+								"abstract"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "ULongLongSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ULongLongSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "ULongSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/ULongSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "UShortSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/UShortSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "UnknownUserExceptionHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/UnknownUserExceptionHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "UnknownUserExceptionHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/UnknownUserExceptionHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "WCharSeqHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WCharSeqHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "WStringSeqHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WStringSeqHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "WStringSeqHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WStringSeqHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "WStringValueHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WStringValueHelper.html",
+					"removedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "class",
+					"name": "WrongTransactionHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WrongTransactionHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "WrongTransactionHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WrongTransactionHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "WrongTransaction",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/WrongTransaction.html",
+					"addedTags": [
+						"final"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DomainManagerOperations",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DomainManagerOperations.html",
+					"removedTags": [
+						"implements Object"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynAny",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynAny.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynArray",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynArray.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynEnum",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynEnum.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynFixed",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynFixed.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynSequence",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynSequence.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynStruct",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynStruct.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynUnion",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynUnion.html",
+					"addedTags": [
+						"deprecated"
+					]
+				},
+				{
+					"type": "interface",
+					"name": "DynValue",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CORBA/DynValue.html",
+					"addedTags": [
+						"deprecated"
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextExtPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextExtPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming.NamingContextPackage",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "AlreadyBoundHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/AlreadyBoundHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AlreadyBoundHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/AlreadyBoundHelper.html#AlreadyBoundHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "AlreadyBound",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/AlreadyBound.html",
+					"removedTags": [
+						"implements IDLEntity"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "AlreadyBound(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/AlreadyBound.html#AlreadyBound(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "CannotProceedHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/CannotProceedHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "CannotProceedHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/CannotProceedHelper.html#CannotProceedHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "CannotProceed",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/CannotProceed.html",
+					"removedTags": [
+						"implements IDLEntity"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "CannotProceed(String, NamingContext, NameComponent[])",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/CannotProceed.html#CannotProceed(java.lang.String, org.omg.CosNaming.NamingContext, org.omg.CosNaming.NameComponent%5B%5D)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "InvalidNameHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/InvalidNameHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "InvalidNameHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/InvalidNameHelper.html#InvalidNameHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "InvalidName",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/InvalidName.html",
+					"removedTags": [
+						"implements IDLEntity"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "InvalidName(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/InvalidName.html#InvalidName(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotEmptyHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotEmptyHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NotEmptyHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotEmptyHelper.html#NotEmptyHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotEmpty",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotEmpty.html",
+					"removedTags": [
+						"implements IDLEntity"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NotEmpty(String)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotEmpty.html#NotEmpty(java.lang.String)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotFoundHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NotFoundHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundHelper.html#NotFoundHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotFoundReasonHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundReasonHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NotFoundReasonHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundReasonHelper.html#NotFoundReasonHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotFoundReason",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundReason.html",
+					"removedTags": [
+						"final"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NotFoundReason(int)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundReason.html#NotFoundReason(int)"
+						},
+						{
+							"type": "method",
+							"name": "from_int(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFoundReason.html#from_int(int)",
+							"removedTags": [
+								"final",
+								"throws BAD_PARAM"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NotFound",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFound.html",
+					"removedTags": [
+						"implements IDLEntity"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NotFound(String, NotFoundReason, NameComponent[])",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPackage/NotFound.html#NotFound(java.lang.String, org.omg.CosNaming.NamingContextPackage.NotFoundReason, org.omg.CosNaming.NameComponent%5B%5D)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.CosNaming",
+			"status": "notmodified",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/package-summary.html",
+			"deltas": [
+				{
+					"type": "class",
+					"name": "BindingHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "BindingHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingHelper.html#BindingHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BindingIteratorHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingIteratorHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "BindingIteratorHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingIteratorHelper.html#BindingIteratorHelper()"
+						},
+						{
+							"type": "method",
+							"name": "narrow(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingIteratorHelper.html#narrow(org.omg.CORBA.Object)",
+							"removedTags": [
+								"throws BAD_PARAM"
+							]
+						},
+						{
+							"type": "method",
+							"name": "unchecked_narrow(Object)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingIteratorHelper.html#unchecked_narrow(org.omg.CORBA.Object)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BindingIteratorPOA",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingIteratorPOA.html"
+				},
+				{
+					"type": "class",
+					"name": "BindingListHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingListHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "BindingListHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingListHelper.html#BindingListHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BindingTypeHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingTypeHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "BindingTypeHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingTypeHelper.html#BindingTypeHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "BindingType",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingType.html",
+					"removedTags": [
+						"final"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "BindingType(int)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingType.html#BindingType(int)"
+						},
+						{
+							"type": "method",
+							"name": "from_int(int)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/BindingType.html#from_int(int)",
+							"removedTags": [
+								"final",
+								"throws BAD_PARAM"
+							]
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "IstringHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/IstringHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "IstringHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/IstringHelper.html#IstringHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NameComponentHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NameComponentHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NameComponentHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NameComponentHelper.html#NameComponentHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NameHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NameHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NameHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NameHelper.html#NameHelper()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NamingContextExtHelper",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextExtHelper.html"
+				},
+				{
+					"type": "class",
+					"name": "NamingContextExtHolder",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextExtHolder.html"
+				},
+				{
+					"type": "class",
+					"name": "NamingContextExtPOA",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextExtPOA.html"
+				},
+				{
+					"type": "class",
+					"name": "NamingContextHelper",
+					"status": "modified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextHelper.html",
+					"addedTags": [
+						"abstract"
+					],
+					"deltas": [
+						{
+							"type": "method",
+							"name": "NamingContextHelper()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextHelper.html#NamingContextHelper()"
+						},
+						{
+							"type": "method",
+							"name": "narrow(Object)",
+							"status": "modified",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextHelper.html#narrow(org.omg.CORBA.Object)",
+							"removedTags": [
+								"throws BAD_PARAM"
+							]
+						},
+						{
+							"type": "method",
+							"name": "unchecked_narrow(Object)",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextHelper.html#unchecked_narrow(org.omg.CORBA.Object)"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "NamingContextPOA",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextPOA.html"
+				},
+				{
+					"type": "class",
+					"name": "_BindingIteratorImplBase",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_BindingIteratorImplBase.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "next_n(int, BindingListHolder)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "next_one(BindingHolder)",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "_BindingIteratorStub",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_BindingIteratorStub.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "_BindingIteratorStub()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_BindingIteratorStub.html#_BindingIteratorStub()"
+						},
+						{
+							"type": "method",
+							"name": "_BindingIteratorStub(Delegate)",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "_NamingContextExtStub",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_NamingContextExtStub.html"
+				},
+				{
+					"type": "class",
+					"name": "_NamingContextImplBase",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_NamingContextImplBase.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "bind(NameComponent[], Object)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "bind_context(NameComponent[], NamingContext)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "bind_new_context(NameComponent[])",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "destroy()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "list(int, BindingListHolder, BindingIteratorHolder)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "new_context()",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "rebind(NameComponent[], Object)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "rebind_context(NameComponent[], NamingContext)",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "resolve(NameComponent[])",
+							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "unbind(NameComponent[])",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "_NamingContextStub",
+					"status": "notmodified",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_NamingContextStub.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "_NamingContextStub()",
+							"status": "added",
+							"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/_NamingContextStub.html#_NamingContextStub()"
+						},
+						{
+							"type": "method",
+							"name": "_NamingContextStub(Delegate)",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "interface",
+					"name": "NamingContextExtOperations",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextExtOperations.html"
+				},
+				{
+					"type": "interface",
+					"name": "NamingContextExt",
+					"status": "added",
+					"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/CosNaming/NamingContextExt.html"
+				}
+			]
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyFactoryPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/DynamicAny/DynAnyFactoryPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny.DynAnyPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/DynamicAny/DynAnyPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.DynamicAny",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/DynamicAny/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Dynamic",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/Dynamic/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecFactoryPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/IOP/CodecFactoryPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP.CodecPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/IOP/CodecPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.IOP",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/IOP/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.Messaging",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/Messaging/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor.ORBInitInfoPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableInterceptor/ORBInitInfoPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableInterceptor",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableInterceptor/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.CurrentPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableServer/CurrentPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAManagerPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableServer/POAManagerPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.POAPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableServer/POAPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.ServantLocatorPackage",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableServer/ServantLocatorPackage/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer.portable",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableServer/portable/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.PortableServer",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/PortableServer/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.omg.stub.javax.management.remote.rmi",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/omg/stub/javax/management/remote/rmi/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.bootstrap",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/bootstrap/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.events",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/events/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom.ls",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/ls/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.w3c.dom",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.ext",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/xml/sax/ext/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax.helpers",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/xml/sax/helpers/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "org.xml.sax",
+			"status": "added",
+			"javadoc": "https://docs.oracle.com/javase/7/docs/api/org/xml/sax/package-summary.html"
 		}
 	]
 }
