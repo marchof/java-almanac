@@ -584,18 +584,6 @@
 						},
 						{
 							"type": "class",
-							"name": "ClassSpecializer.Factory",
-							"status": "removed",
-							"csr": "JDK-8308239"
-						},
-						{
-							"type": "class",
-							"name": "ClassSpecializer.SpeciesData",
-							"status": "removed",
-							"csr": "JDK-8308239"
-						},
-						{
-							"type": "class",
 							"name": "ConstantBootstraps",
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html",
@@ -1689,24 +1677,6 @@
 						},
 						{
 							"type": "class",
-							"name": "FdLibm.Cbrt",
-							"status": "removed",
-							"csr": "JDK-8308049"
-						},
-						{
-							"type": "class",
-							"name": "FdLibm.Hypot",
-							"status": "removed",
-							"csr": "JDK-8308049"
-						},
-						{
-							"type": "class",
-							"name": "FdLibm.Pow",
-							"status": "removed",
-							"csr": "JDK-8308049"
-						},
-						{
-							"type": "class",
 							"name": "Float",
 							"status": "notmodified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Float.html",
@@ -1813,19 +1783,6 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html#expand(int,int)",
 									"csr": "JDK-8283893"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "LiveStackFrame.PrimitiveSlot",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/LiveStackFrame.PrimitiveSlot.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "PrimitiveSlot()",
-									"status": "removed"
 								}
 							]
 						},
@@ -9598,21 +9555,6 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
 					"deltas": [
-						{
-							"type": "class",
-							"name": "AccessibleHTML.HTMLAccessibleContext",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/text/html/AccessibleHTML.HTMLAccessibleContext.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "setElementInfo(AccessibleHTML.ElementInfo)",
-									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/text/html/AccessibleHTML.HTMLAccessibleContext.html#setElementInfo(javax.swing.text.html.AccessibleHTML.ElementInfo)",
-									"csr": "JDK-8273986"
-								}
-							]
-						},
 						{
 							"type": "class",
 							"name": "FormSubmitEvent",

@@ -527,18 +527,6 @@
 					"deltas": [
 						{
 							"type": "class",
-							"name": "ClassSpecializer.Factory",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/invoke/ClassSpecializer.Factory.html"
-						},
-						{
-							"type": "class",
-							"name": "ClassSpecializer.SpeciesData",
-							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/invoke/ClassSpecializer.SpeciesData.html"
-						},
-						{
-							"type": "class",
 							"name": "ConstantBootstraps",
 							"status": "added",
 							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html",
@@ -1642,45 +1630,6 @@
 						},
 						{
 							"type": "class",
-							"name": "FdLibm.Cbrt",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/FdLibm.Cbrt.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "Cbrt()",
-									"status": "removed"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "FdLibm.Hypot",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/FdLibm.Hypot.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "Hypot()",
-									"status": "removed"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "FdLibm.Pow",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/FdLibm.Pow.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "Pow()",
-									"status": "removed"
-								}
-							]
-						},
-						{
-							"type": "class",
 							"name": "Float",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Float.html",
@@ -1788,19 +1737,6 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Integer.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)",
 									"csr": "JDK-8202031"
-								}
-							]
-						},
-						{
-							"type": "class",
-							"name": "LiveStackFrame.PrimitiveSlot",
-							"status": "notmodified",
-							"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/LiveStackFrame.PrimitiveSlot.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "PrimitiveSlot()",
-									"status": "removed"
 								}
 							]
 						},
