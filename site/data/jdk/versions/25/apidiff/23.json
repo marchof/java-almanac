@@ -33,19 +33,22 @@
 									"type": "method",
 									"name": "print(Object)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8353437"
 								},
 								{
 									"type": "method",
 									"name": "println(Object)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8353437"
 								},
 								{
 									"type": "method",
 									"name": "readln(String)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8353437"
 								}
 							]
 						},
@@ -63,7 +66,8 @@
 							"type": "class",
 							"name": "IO",
 							"status": "removed",
-							"preview": true
+							"preview": true,
+							"csr": "JDK-8353437"
 						},
 						{
 							"type": "class",
@@ -899,7 +903,8 @@
 									"type": "method",
 									"name": "matches(ClassDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html#matches(java.lang.constant.ClassDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html#matches(java.lang.constant.ClassDesc)",
+									"csr": "JDK-8342210"
 								}
 							]
 						},
@@ -1077,7 +1082,8 @@
 									"type": "method",
 									"name": "matches(MethodTypeDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html#matches(java.lang.constant.MethodTypeDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html#matches(java.lang.constant.MethodTypeDesc)",
+									"csr": "JDK-8342210"
 								}
 							]
 						},
@@ -1094,7 +1100,8 @@
 									"type": "method",
 									"name": "matches(ModuleDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html#matches(java.lang.constant.ModuleDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html#matches(java.lang.constant.ModuleDesc)",
+									"csr": "JDK-8342210"
 								}
 							]
 						},
@@ -1120,7 +1127,8 @@
 									"type": "method",
 									"name": "matches(PackageDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html#matches(java.lang.constant.PackageDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html#matches(java.lang.constant.PackageDesc)",
+									"csr": "JDK-8342210"
 								}
 							]
 						},
@@ -1282,7 +1290,8 @@
 									"type": "method",
 									"name": "equalsString(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html#equalsString(java.lang.String)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html#equalsString(java.lang.String)",
+									"csr": "JDK-8342210"
 								}
 							]
 						},
@@ -1299,13 +1308,15 @@
 									"type": "method",
 									"name": "isFieldType(ClassDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isFieldType(java.lang.constant.ClassDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isFieldType(java.lang.constant.ClassDesc)",
+									"csr": "JDK-8342210"
 								},
 								{
 									"type": "method",
 									"name": "isMethodType(MethodTypeDesc)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isMethodType(java.lang.constant.MethodTypeDesc)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isMethodType(java.lang.constant.MethodTypeDesc)",
+									"csr": "JDK-8342210"
 								}
 							]
 						}
@@ -6125,25 +6136,29 @@
 									"type": "method",
 									"name": "flags()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags()",
+									"csr": "JDK-8347626"
 								},
 								{
 									"type": "method",
 									"name": "flags(ClassFileFormatVersion)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags(java.lang.reflect.ClassFileFormatVersion)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags(java.lang.reflect.ClassFileFormatVersion)",
+									"csr": "JDK-8347626"
 								},
 								{
 									"type": "method",
 									"name": "flagsMask()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask()",
+									"csr": "JDK-8347626"
 								},
 								{
 									"type": "method",
 									"name": "flagsMask(ClassFileFormatVersion)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask(java.lang.reflect.ClassFileFormatVersion)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask(java.lang.reflect.ClassFileFormatVersion)",
+									"csr": "JDK-8347626"
 								}
 							]
 						},
@@ -6157,7 +6172,8 @@
 									"type": "method",
 									"name": "maskToAccessFlags(int, AccessFlag.Location, ClassFileFormatVersion)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.html#maskToAccessFlags(int,java.lang.reflect.AccessFlag.Location,java.lang.reflect.ClassFileFormatVersion)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/reflect/AccessFlag.html#maskToAccessFlags(int,java.lang.reflect.AccessFlag.Location,java.lang.reflect.ClassFileFormatVersion)",
+									"csr": "JDK-8297741"
 								}
 							]
 						},
@@ -6590,7 +6606,8 @@
 							"type": "class",
 							"name": "IO",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IO.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/IO.html",
+							"csr": "JDK-8353437"
 						},
 						{
 							"type": "class",
@@ -6654,43 +6671,50 @@
 									"type": "method",
 									"name": "powExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(int,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(int,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "powExact(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(long,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#powExact(long,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(int,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(int,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyExact(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,long)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedPowExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(int,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(int,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedPowExact(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(long,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/Math.html#unsignedPowExact(long,int)",
+									"csr": "JDK-8356077"
 								}
 							]
 						},
@@ -6814,43 +6838,50 @@
 									"type": "method",
 									"name": "powExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(int,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(int,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "powExact(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(long,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#powExact(long,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(int,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(int,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyExact(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedMultiplyExact(long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,long)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedPowExact(int, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(int,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(int,int)",
+									"csr": "JDK-8356077"
 								},
 								{
 									"type": "method",
 									"name": "unsignedPowExact(long, int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(long,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(long,int)",
+									"csr": "JDK-8356077"
 								}
 							]
 						},
@@ -6921,7 +6952,8 @@
 									"type": "method",
 									"name": "getChars(int, int, char[], int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#getChars(int,int,char%5B%5D,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/CharSequence.html#getChars(int,int,char%5B%5D,int)",
+									"csr": "JDK-8343111"
 								}
 							]
 						},
@@ -6930,7 +6962,8 @@
 							"name": "StableValue",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StableValue.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/StableValue.html",
+							"csr": "JDK-8342068"
 						}
 					]
 				},
@@ -7085,7 +7118,8 @@
 									"type": "method",
 									"name": "getChars(int, int, char[], int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#getChars(int,int,char%5B%5D,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/nio/CharBuffer.html#getChars(int,int,char%5B%5D,int)",
+									"csr": "JDK-8343111"
 								}
 							]
 						}
@@ -7283,40 +7317,46 @@
 							"name": "StructuredTaskScope.FailedException",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.FailedException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.FailedException.html",
+							"csr": "JDK-8342487"
 						},
 						{
 							"type": "class",
 							"name": "StructuredTaskScope.ShutdownOnFailure",
 							"status": "removed",
-							"preview": true
+							"preview": true,
+							"csr": "JDK-8342487"
 						},
 						{
 							"type": "class",
 							"name": "StructuredTaskScope.ShutdownOnSuccess",
 							"status": "removed",
-							"preview": true
+							"preview": true,
+							"csr": "JDK-8342487"
 						},
 						{
 							"type": "class",
 							"name": "StructuredTaskScope.TimeoutException",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html",
+							"csr": "JDK-8342487"
 						},
 						{
 							"type": "interface",
 							"name": "StructuredTaskScope.Configuration",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Configuration.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Configuration.html",
+							"csr": "JDK-8342487"
 						},
 						{
 							"type": "interface",
 							"name": "StructuredTaskScope.Joiner",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html",
+							"csr": "JDK-8342487"
 						},
 						{
 							"type": "interface",
@@ -7329,7 +7369,8 @@
 									"type": "method",
 									"name": "task()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								}
 							]
 						},
@@ -7348,13 +7389,15 @@
 									"type": "method",
 									"name": "StructuredTaskScope()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8353437"
 								},
 								{
 									"type": "method",
 									"name": "StructuredTaskScope(String, ThreadFactory)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8353437"
 								},
 								{
 									"type": "method",
@@ -7370,7 +7413,8 @@
 									"type": "method",
 									"name": "ensureOwnerAndJoined()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
@@ -7387,78 +7431,90 @@
 									"name": "fork(Runnable)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#fork(java.lang.Runnable)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#fork(java.lang.Runnable)",
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "handleComplete(StructuredTaskScope.Subtask)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "isCancelled()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#isCancelled()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#isCancelled()",
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "isShutdown()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "join()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#join()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#join()",
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "join()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "joinUntil(Instant)",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "open()",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open()",
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "open(StructuredTaskScope.Joiner)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner)",
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "open(StructuredTaskScope.Joiner, Function)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner,java.util.function.Function)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner,java.util.function.Function)",
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "shutdown()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								},
 								{
 									"type": "method",
 									"name": "toString()",
 									"status": "removed",
-									"preview": true
+									"preview": true,
+									"csr": "JDK-8342487"
 								}
 							]
 						}
