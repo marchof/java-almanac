@@ -16,11 +16,11 @@ Instantly compile and run Java 25 snippets without a local Java installation.
 
 {{< sandbox version="java25" mainsource="Java25.java" preview="true" >}}
 {{< sandboxsource "Java25.java" >}}
-import java.lang.reflect.ClassFileFormatVersion;
+import module java.base;
 
 void main() {
     var v = ClassFileFormatVersion.latest();
-    System.out.printf("Hello Java bytecode version %s!", v.major());
+    IO.println("Hello Java bytecode version %s!".formatted(v.major()));
 }
 
 {{< /sandboxsource >}}
