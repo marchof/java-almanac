@@ -275,13 +275,15 @@
 									"type": "method",
 									"name": "readAllAsString()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllAsString()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllAsString()",
+									"csr": "JDK-8356909"
 								},
 								{
 									"type": "method",
 									"name": "readAllLines()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllLines()"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllLines()",
+									"csr": "JDK-8356909"
 								}
 							]
 						},
@@ -3269,21 +3271,24 @@
 							"name": "PEMDecoder",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMDecoder.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMDecoder.html",
+							"csr": "JDK-8329419"
 						},
 						{
 							"type": "class",
 							"name": "PEMEncoder",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMEncoder.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMEncoder.html",
+							"csr": "JDK-8329419"
 						},
 						{
 							"type": "class",
 							"name": "PEMRecord",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMRecord.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMRecord.html",
+							"csr": "JDK-8329419"
 						},
 						{
 							"type": "class",
@@ -5527,35 +5532,40 @@
 									"name": "encryptKey(PrivateKey, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)",
+									"csr": "JDK-8329419"
 								},
 								{
 									"type": "method",
 									"name": "encryptKey(PrivateKey, char[])",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,char%5B%5D)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,char%5B%5D)",
+									"csr": "JDK-8329419"
 								},
 								{
 									"type": "method",
 									"name": "encryptKey(PrivateKey, char[], String, AlgorithmParameterSpec, Provider)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)",
+									"csr": "JDK-8329419"
 								},
 								{
 									"type": "method",
 									"name": "getKey(Key, Provider)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key,java.security.Provider)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key,java.security.Provider)",
+									"csr": "JDK-8329419"
 								},
 								{
 									"type": "method",
 									"name": "getKey(char[])",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(char%5B%5D)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(char%5B%5D)",
+									"csr": "JDK-8329419"
 								}
 							]
 						},
@@ -5647,13 +5657,15 @@
 									"type": "method",
 									"name": "exportKeyingMaterialData(String, byte[], int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialData(java.lang.String,byte%5B%5D,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialData(java.lang.String,byte%5B%5D,int)",
+									"csr": "JDK-8348370"
 								},
 								{
 									"type": "method",
 									"name": "exportKeyingMaterialKey(String, String, byte[], int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialKey(java.lang.String,java.lang.String,byte%5B%5D,int)"
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialKey(java.lang.String,java.lang.String,byte%5B%5D,int)",
+									"csr": "JDK-8348370"
 								}
 							]
 						},
@@ -6840,7 +6852,8 @@
 					"type": "package",
 					"name": "javax.sound",
 					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/sound/package-summary.html"
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/sound/package-summary.html",
+					"csr": "JDK-8356200"
 				},
 				{
 					"type": "package",
