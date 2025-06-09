@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+25-3096"
+		"version": "25-ea+26-3358"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -9483,6 +9483,18 @@
 						},
 						{
 							"type": "method",
+							"name": "readAllAsString()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllAsString()"
+						},
+						{
+							"type": "method",
+							"name": "readAllLines()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllLines()"
+						},
+						{
+							"type": "method",
 							"name": "transferTo(Writer)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)",
@@ -15686,7 +15698,6 @@
 					"type": "class",
 					"name": "ScopedValue.Carrier",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
 					"csr": "JDK-8306573"
 				},
@@ -15694,7 +15705,6 @@
 					"type": "class",
 					"name": "ScopedValue",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.html",
 					"csr": "JDK-8306573"
 				},
@@ -16944,7 +16954,6 @@
 					"type": "interface",
 					"name": "ScopedValue.CallableOp",
 					"status": "added",
-					"preview": true,
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
 					"csr": "JDK-8331190"
 				},
@@ -20078,8 +20087,11 @@
 				{
 					"type": "class",
 					"name": "X509CRL",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/cert/X509CRL.html",
+					"addedTags": [
+						"implements DEREncodable"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -20139,8 +20151,11 @@
 				{
 					"type": "class",
 					"name": "X509Certificate",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/cert/X509Certificate.html",
+					"addedTags": [
+						"implements DEREncodable"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -20683,8 +20698,11 @@
 				{
 					"type": "class",
 					"name": "PKCS8EncodedKeySpec",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
+					"addedTags": [
+						"implements DEREncodable"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -20780,8 +20798,11 @@
 				{
 					"type": "class",
 					"name": "X509EncodedKeySpec",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
+					"addedTags": [
+						"implements DEREncodable"
+					],
 					"deltas": [
 						{
 							"type": "method",
@@ -21189,6 +21210,15 @@
 				},
 				{
 					"type": "class",
+					"name": "KeyPair",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/KeyPair.html",
+					"addedTags": [
+						"implements DEREncodable"
+					]
+				},
+				{
+					"type": "class",
 					"name": "KeyRep",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/KeyRep.html"
@@ -21416,6 +21446,27 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/NoSuchAlgorithmException.html#%3Cinit%3E(java.lang.Throwable)"
 						}
 					]
+				},
+				{
+					"type": "class",
+					"name": "PEMDecoder",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMDecoder.html"
+				},
+				{
+					"type": "class",
+					"name": "PEMEncoder",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMEncoder.html"
+				},
+				{
+					"type": "class",
+					"name": "PEMRecord",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMRecord.html"
 				},
 				{
 					"type": "class",
@@ -22146,6 +22197,13 @@
 						"deprecated",
 						"forRemoval"
 					]
+				},
+				{
+					"type": "interface",
+					"name": "DEREncodable",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/DEREncodable.html"
 				},
 				{
 					"type": "interface",
@@ -31613,6 +31671,12 @@
 			"name": "javax.sound.sampled",
 			"status": "added",
 			"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/sound/sampled/package-summary.html"
+		},
+		{
+			"type": "package",
+			"name": "javax.sound",
+			"status": "added",
+			"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/sound/package-summary.html"
 		},
 		{
 			"type": "package",

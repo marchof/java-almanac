@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+25-3096"
+		"version": "25-ea+26-3358"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -169,6 +169,18 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#of(java.lang.CharSequence)",
 									"csr": "JDK-8341596"
+								},
+								{
+									"type": "method",
+									"name": "readAllAsString()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllAsString()"
+								},
+								{
+									"type": "method",
+									"name": "readAllLines()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/io/Reader.html#readAllLines()"
 								}
 							]
 						},
@@ -3062,7 +3074,6 @@
 							"type": "class",
 							"name": "ScopedValue.Carrier",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
 							"csr": "JDK-8306573"
 						},
@@ -3070,7 +3081,6 @@
 							"type": "class",
 							"name": "ScopedValue",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.html",
 							"csr": "JDK-8306573"
 						},
@@ -3467,7 +3477,6 @@
 							"type": "interface",
 							"name": "ScopedValue.CallableOp",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
 							"csr": "JDK-8331190"
 						},
@@ -3935,6 +3944,24 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "X509CRL",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/cert/X509CRL.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509Certificate",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/cert/X509Certificate.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
 						}
 					]
 				},
@@ -4160,6 +4187,24 @@
 									"csr": "JDK-8342630"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "PKCS8EncodedKeySpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509EncodedKeySpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
 						}
 					]
 				},
@@ -4177,6 +4222,36 @@
 							"addedTags": [
 								"final"
 							]
+						},
+						{
+							"type": "class",
+							"name": "KeyPair",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/KeyPair.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PEMDecoder",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMDecoder.html"
+						},
+						{
+							"type": "class",
+							"name": "PEMEncoder",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMEncoder.html"
+						},
+						{
+							"type": "class",
+							"name": "PEMRecord",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/PEMRecord.html"
 						},
 						{
 							"type": "class",
@@ -4204,6 +4279,13 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/AsymmetricKey.html",
 							"csr": "JDK-8318108"
+						},
+						{
+							"type": "interface",
+							"name": "DEREncodable",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/java/security/DEREncodable.html"
 						},
 						{
 							"type": "interface",
@@ -5677,6 +5759,52 @@
 						},
 						{
 							"type": "class",
+							"name": "EncryptedPrivateKeyInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html",
+							"addedTags": [
+								"implements DEREncodable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "encryptKey(PrivateKey, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)"
+								},
+								{
+									"type": "method",
+									"name": "encryptKey(PrivateKey, char[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,char%5B%5D)"
+								},
+								{
+									"type": "method",
+									"name": "encryptKey(PrivateKey, char[], String, AlgorithmParameterSpec, Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encryptKey(java.security.PrivateKey,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)"
+								},
+								{
+									"type": "method",
+									"name": "getKey(Key, Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key,java.security.Provider)"
+								},
+								{
+									"type": "method",
+									"name": "getKey(char[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(char%5B%5D)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "KDFSpi",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/crypto/KDFSpi.html",
@@ -5753,6 +5881,26 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "ExtendedSSLSession",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "exportKeyingMaterialData(String, byte[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialData(java.lang.String,byte%5B%5D,int)"
+								},
+								{
+									"type": "method",
+									"name": "exportKeyingMaterialKey(String, String, byte[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialKey(java.lang.String,java.lang.String,byte%5B%5D,int)"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "KeyManagerFactory",
@@ -6519,6 +6667,12 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "package",
+					"name": "javax.sound",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk25/docs/api/java.desktop/javax/sound/package-summary.html"
 				},
 				{
 					"type": "package",
