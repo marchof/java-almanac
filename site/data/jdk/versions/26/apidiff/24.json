@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+2-95"
+		"version": "26-ea+3-223"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -887,6 +887,24 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "DatagramSocketImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/DatagramSocketImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTTL()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "setTTL(byte)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "HttpURLConnection",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/HttpURLConnection.html",
@@ -910,6 +928,29 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/InterfaceAddress.html",
 							"addedTags": [
 								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MulticastSocket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/MulticastSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTTL()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "send(DatagramPacket, byte)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "setTTL(byte)",
+									"status": "removed"
+								}
 							]
 						},
 						{
@@ -1912,6 +1953,19 @@
 									"name": "load(URL)",
 									"status": "removed",
 									"csr": "JDK-8351238"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SynthPasswordFieldUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "installKeyboardActions()",
+									"status": "removed"
 								}
 							]
 						}

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+2-95"
+		"version": "26-ea+3-223"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -9192,11 +9192,7 @@
 						{
 							"type": "method",
 							"name": "getTTL()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/DatagramSocketImpl.html#getTTL()",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -9207,11 +9203,7 @@
 						{
 							"type": "method",
 							"name": "setTTL(byte)",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/DatagramSocketImpl.html#setTTL(byte)",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -9385,11 +9377,7 @@
 						{
 							"type": "method",
 							"name": "getTTL()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/MulticastSocket.html#getTTL()",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -9412,11 +9400,7 @@
 						{
 							"type": "method",
 							"name": "send(DatagramPacket, byte)",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/MulticastSocket.html#send(java.net.DatagramPacket,byte)",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -9439,11 +9423,7 @@
 						{
 							"type": "method",
 							"name": "setTTL(byte)",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/MulticastSocket.html#setTTL(byte)",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						}
 					]
 				},
@@ -26253,6 +26233,11 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html#installDefaults()",
 							"csr": "JDK-6852577"
+						},
+						{
+							"type": "method",
+							"name": "installKeyboardActions()",
+							"status": "removed"
 						}
 					]
 				},

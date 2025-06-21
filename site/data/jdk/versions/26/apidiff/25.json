@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+27-3363"
+		"version": "25-ea+28-3381"
 	},
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+2-95"
+		"version": "26-ea+3-223"
 	},
 	"order": 25.0,
 	"deltas": [
@@ -58,6 +58,55 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_26",
 									"csr": "JDK-8355793"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.net",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DatagramSocketImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/DatagramSocketImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTTL()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "setTTL(byte)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MulticastSocket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/MulticastSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTTL()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "send(DatagramPacket, byte)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "setTTL(byte)",
+									"status": "removed"
 								}
 							]
 						}
@@ -145,6 +194,35 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_26",
 									"csr": "JDK-8355794"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.synth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthPasswordFieldUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "installKeyboardActions()",
+									"status": "removed"
 								}
 							]
 						}
