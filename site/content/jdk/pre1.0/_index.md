@@ -36,7 +36,7 @@ The HotJava distributions contained the respective Java class libraries in sourc
 
 | Version    | Date | Documentation        | Download |
 | ---------- | ---- | ---------------------| -------- |
-| 1.0 Alpha2 | 1995/03/34 | [All](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/) - [API](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/doc/api/packages.html) - [Lang](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/doc/javaspec/javaspec_1.html) | [https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2.tar.z](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2.tar.z) |
+| 1.0 Alpha2 | 1995/03/25 | [All](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/) - [API](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/doc/api/packages.html) - [Lang](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2/doc/javaspec/javaspec_1.html) | [https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2.tar.z](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha2.tar.z) |
 | 1.0 Alpha3 | 1995/05/19 | [All](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3/)  - [API](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3/doc/api/packages.html) - [Lang](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3/doc/javaspec/javaspec_1.html) | [https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3.tar.z](https://javaalmanac.io/jdk/pre1.0/hotjava-alpha3.tar.z) |
 
 If you want to install and run the above downloads please make sure that the system requirements are fulfilled:
