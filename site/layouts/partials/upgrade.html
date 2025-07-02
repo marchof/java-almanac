@@ -1,0 +1,88 @@
+{{- $version := . }}
+{{- $jdk := index site.Data.jdk.versions $version }}
+{{- $newerlts := slice }}
+{{- $newerltshtml := slice }}
+{{- $newerrel := slice }}
+{{- $newerrelhtml := slice }}
+{{- $newerdev := slice }}
+{{- $newerdevhtml := slice }}
+
+{{- range sort site.Data.jdk.versions "ga" "asc" }}
+  {{- if gt .ga $jdk.ga }}
+    {{- if eq .status "LTS" }}
+      {{- $newerlts = $newerlts | append . }}
+      {{- $newerltshtml = $newerltshtml | append ( printf "<a href=\"../%s/\">%s</a>" .version .name ) }}
+    {{- else if eq .status "REL" }}
+      {{- $newerrel = $newerrel | append . }}
+      {{- $newerrelhtml = $newerrelhtml | append ( printf "<a href=\"../%s/\">%s</a>" .version .name ) }}
+    {{- else if eq .status "DEV" }}
+      {{- $newerdev = $newerdev | append . }}
+      {{- $newerdevhtml = $newerdevhtml | append ( printf "<a href=\"../%s/\">%s</a>" .version .name ) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $newerltshtml = delimit $newerltshtml ", " " or " | safeHTML }}
+{{- $newerrelhtml = delimit $newerrelhtml ", " " or " | safeHTML }}
+{{- $newerdevhtml = delimit $newerdevhtml ", " " or " | safeHTML }}
+
+{{ if eq $jdk.status "EOL" -}}
+  <p>
+  {{ $jdk.name }} is end-of-life since {{ $jdk.eol }}. Unless you have a commercial
+  support contract for this version and a compelling reason to stay on the old
+  version you should definitely upgrade to a newer version with active support.
+  <p>
+  {{- if $newerlts }}
+  <p>
+  Please consider upgrading to a current <i>long term support</i> LTS version
+  {{ $newerltshtml }} to rely on a maintained platform and get advantage of the
+  latest features and improvements.
+  </p>
+  {{- else }}
+  <p>
+  There is no newer <i>long term support</i> LTS version than the version you're
+  currently using. But you can upgrade to the latest regular release {{ $newerrelhtml }}
+  which is currently maintained.
+  </p>
+  {{- end }}
+{{ else if eq $jdk.status "LTS" -}}
+  <p>
+  With {{ $jdk.name }} you're running on a actively maintained <i>long term support</i> (LTS)
+  version - which is good. The currently planned end-of-life date for this version within
+  the OpenJDK project is {{ $jdk.eol }}.
+  </p>
+  {{- if $newerlts }}
+  <p>
+  However, you might consider upgrading to a newer LTS version {{ $newerltshtml }}
+  to get advantage of the latest features and improvements
+  </p>
+  {{- end }}
+  {{- if $newerrel }}
+  <p>
+  Also you may upgrade to the latest release non-LTS release {{ $newerrelhtml }}
+  if you want to stay ahead and are prepared to upgrade regularly.
+  </p>
+  {{- end }}
+{{ else if eq $jdk.status "REL" -}}
+  <p>
+  Congratulations, with {{ $jdk.name }} you're running the latest Java release.
+  This is not a <i>long term support</i> (LTS) release and only supported until
+  {{ $jdk.eol }}. Please prepare to upgrade to the next release afterwards.
+  </p>
+  {{- if $newerdev }}
+  <p>
+  If you want to experiment with the latest features which are currently under
+  active development you may try {{ $newerdevhtml }}.
+  </p>
+  {{- end }}
+{{ else if eq $jdk.status "DEV" -}}
+  <p>
+  {{ $jdk.name }} is not yet released and still under active development. There
+  are weekly <i>early access</i> builds you can use for testing.
+  </p>
+  {{- if $newerdev }}
+  <p>
+  There is even a newer version {{ $newerdevhtml }} under active development which
+  you might consider testing.
+  </p>
+  {{- end }}
+{{ end -}}
