@@ -30,12 +30,16 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
         aws-region: eu-central-1
-    - name: Upload Content
+    - name: Upload Rendered Content
       if: ${{ github.ref == 'refs/heads/master' }}
       run: |
         aws s3 sync site/public s3://javaalmanac.io/ --delete --no-progress
         aws cloudfront create-invalidation --distribution-id ECI1PGYSTNAWG --paths "/*"
-
+    - name: Upload Content for Indexing
+      if: ${{ github.ref == 'refs/heads/master' }}
+      run: |
+        (cd site/content && zip -r ../../content.zip .)
+        aws s3 cp content.zip s3://archive.javaalmanac.io/javaalmanac/ --no-progress
 
   publish-data:
     runs-on: ubuntu-latest
