@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+5-453"
+		"version": "26-ea+6-582"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -5362,6 +5362,20 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "SecureRandom",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/SecureRandom.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "nextLong()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/SecureRandom.html#nextLong()"
+								}
 							]
 						},
 						{
