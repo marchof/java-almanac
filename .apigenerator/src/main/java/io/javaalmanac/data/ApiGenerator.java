@@ -26,7 +26,7 @@ public class ApiGenerator {
 	public static void main(String[] args) throws Exception {
 
 		JsonLoader r = new JsonLoader();
-		ObjectNode data = r.parseTree(Paths.get("../site/data"));
+		ObjectNode data = r.parseTree(Paths.get("../data"));
 
 		var output = new ArrayList<ApiOutput>();
 		output.add(new ContentValidator());
