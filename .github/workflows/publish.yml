@@ -19,10 +19,10 @@ jobs:
       with:
         hugo-version: '0.148.1'
     - name: Render
-      working-directory: 'site'
+      working-directory: '.hugo'
       run: hugo
     - name: Check Links
-      working-directory: 'site'
+      working-directory: '.hugo'
       run: python linkchecker.py public /
     - name: Configure AWS Credentials
       if: ${{ github.ref == 'refs/heads/master' }}
@@ -33,12 +33,12 @@ jobs:
     - name: Upload Rendered Content
       if: ${{ github.ref == 'refs/heads/master' }}
       run: |
-        aws s3 sync site/public s3://javaalmanac.io/ --delete --no-progress
+        aws s3 sync .hugo/public s3://javaalmanac.io/ --delete --no-progress
         aws cloudfront create-invalidation --distribution-id ECI1PGYSTNAWG --paths "/*"
     - name: Upload Content for Indexing
       if: ${{ github.ref == 'refs/heads/master' }}
       run: |
-        (cd site/content && zip -r ../../content.zip .)
+        (cd content && zip -r ../content.zip .)
         aws s3 cp content.zip s3://archive.javaalmanac.io/javaalmanac/ --no-progress
 
   publish-data:
@@ -58,8 +58,8 @@ jobs:
         distribution: temurin
         java-version: 21
     - name: Build and Run with Maven
+      working-directory: '.apigenerator'
       run: |
-        cd dataapi
         mvn -B clean compile exec:java --no-transfer-progress
       env:
         BUCKET: ${{ github.ref == 'refs/heads/master' && 'data.javaalmanac.io' || '' }} 
