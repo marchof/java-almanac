@@ -7,106 +7,14 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+6-582"
+		"version": "26-ea+7-697"
 	},
 	"order": 1.2,
 	"deltas": [
 		{
 			"type": "package",
 			"name": "java.applet",
-			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/package-summary.html",
-			"deltas": [
-				{
-					"type": "class",
-					"name": "Applet.AccessibleApplet",
-					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.AccessibleApplet.html"
-				},
-				{
-					"type": "class",
-					"name": "Applet",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "Applet()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#%3Cinit%3E()",
-							"addedTags": [
-								"throws HeadlessException"
-							]
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleContext()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#getAccessibleContext()"
-						},
-						{
-							"type": "method",
-							"name": "isValidateRoot()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#isValidateRoot()"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "AppletContext",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getStream(String)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html#getStream(java.lang.String)"
-						},
-						{
-							"type": "method",
-							"name": "getStreamKeys()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html#getStreamKeys()"
-						},
-						{
-							"type": "method",
-							"name": "setStream(String, InputStream)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html#setStream(java.lang.String,java.io.InputStream)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "AppletStub",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletStub.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "AudioClip",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AudioClip.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
-				}
-			]
+			"status": "removed"
 		},
 		{
 			"type": "package",
@@ -7854,12 +7762,7 @@
 						{
 							"type": "method",
 							"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -8166,12 +8069,7 @@
 				{
 					"type": "interface",
 					"name": "AppletInitializer",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/AppletInitializer.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					]
+					"status": "removed"
 				},
 				{
 					"type": "interface",
@@ -41573,244 +41471,12 @@
 				{
 					"type": "class",
 					"name": "JApplet.AccessibleJApplet",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.AccessibleJApplet.html",
-					"addedTags": [
-						"extends Applet$AccessibleApplet"
-					],
-					"removedTags": [
-						"extends AccessibleContext",
-						"implements AccessibleComponent",
-						"implements Serializable"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "addFocusListener(FocusListener)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "contains(Point)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleAt(Point)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleChild(int)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleChildrenCount()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleComponent()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleIndexInParent()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleParent()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleRole()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleStateSet()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getBackground()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getBounds()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getCursor()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getFont()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getFontMetrics(Font)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getForeground()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getLocale()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getLocation()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getLocationOnScreen()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "getSize()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "isEnabled()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "isFocusTraversable()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "isShowing()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "isVisible()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "removeFocusListener(FocusListener)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "requestFocus()",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setBackground(Color)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setBounds(Rectangle)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setCursor(Cursor)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setEnabled(boolean)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setFont(Font)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setForeground(Color)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setLocation(Point)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setSize(Dimension)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "setVisible(boolean)",
-							"status": "removed"
-						}
-					]
+					"status": "removed"
 				},
 				{
 					"type": "class",
 					"name": "JApplet",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval",
-						"implements TransferHandler.HasGetTransferHandler"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "JApplet()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html#%3Cinit%3E()",
-							"addedTags": [
-								"throws HeadlessException"
-							]
-						},
-						{
-							"type": "method",
-							"name": "getGraphics()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html#getGraphics()"
-						},
-						{
-							"type": "method",
-							"name": "getTransferHandler()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html#getTransferHandler()"
-						},
-						{
-							"type": "method",
-							"name": "processKeyEvent(KeyEvent)",
-							"status": "removed"
-						},
-						{
-							"type": "method",
-							"name": "repaint(long, int, int, int, int)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html#repaint(long,int,int,int,int)"
-						},
-						{
-							"type": "method",
-							"name": "setTransferHandler(TransferHandler)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html#setTransferHandler(javax.swing.TransferHandler)"
-						}
-					]
+					"status": "removed"
 				},
 				{
 					"type": "class",
@@ -46361,12 +46027,6 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/RepaintManager.html",
 					"deltas": [
-						{
-							"type": "method",
-							"name": "addDirtyRegion(Applet, int, int, int, int)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.applet.Applet,int,int,int,int)"
-						},
 						{
 							"type": "method",
 							"name": "addDirtyRegion(Window, int, int, int, int)",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+6-582"
+		"version": "26-ea+7-697"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -1930,6 +1930,37 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "java.applet",
+					"status": "removed"
+				},
+				{
+					"type": "package",
+					"name": "java.beans",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Beans",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/Beans.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletInitializer",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.sound",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/sound/package-summary.html",
@@ -1988,6 +2019,37 @@
 									"name": "installKeyboardActions()",
 									"status": "removed",
 									"csr": "JDK-8354646"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "JApplet.AccessibleJApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "JApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "RepaintManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/RepaintManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addDirtyRegion(Applet, int, int, int, int)",
+									"status": "removed"
 								}
 							]
 						}
@@ -2060,34 +2122,19 @@
 								{
 									"type": "method",
 									"name": "DescriptorSupport(String)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								},
 								{
 									"type": "method",
 									"name": "toXMLString()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								}
 							]
 						},
 						{
 							"type": "class",
 							"name": "XMLParseException",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/XMLParseException.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						}
 					]
 				},

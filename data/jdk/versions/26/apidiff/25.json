@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+31-3434"
+		"version": "25-ea+32-3464"
 	},
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+6-582"
+		"version": "26-ea+7-697"
 	},
 	"order": 25.0,
 	"deltas": [
@@ -201,6 +201,37 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "java.applet",
+					"status": "removed"
+				},
+				{
+					"type": "package",
+					"name": "java.beans",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Beans",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/Beans.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletInitializer",
+							"status": "removed"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "javax.swing.plaf.synth",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
@@ -218,6 +249,76 @@
 									"csr": "JDK-8354646"
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "JApplet.AccessibleJApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "JApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "RepaintManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/RepaintManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addDirtyRegion(Applet, int, int, int, int)",
+									"status": "removed"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.modelmbean",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DescriptorSupport",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DescriptorSupport(String)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "toXMLString()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "XMLParseException",
+							"status": "removed"
 						}
 					]
 				}

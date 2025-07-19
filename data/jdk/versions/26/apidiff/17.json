@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "17",
 		"vendor": "tem",
-		"version": "17.0.15+6"
+		"version": "17.0.16+8"
 	},
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+6-582"
+		"version": "26-ea+7-697"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -6809,6 +6809,11 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "java.applet",
+					"status": "removed"
+				},
+				{
+					"type": "package",
 					"name": "java.awt.color",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/color/package-summary.html",
@@ -7501,6 +7506,11 @@
 								},
 								{
 									"type": "method",
+									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
+									"status": "removed"
+								},
+								{
+									"type": "method",
 									"name": "setDesignTime(boolean)",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/Beans.html#setDesignTime(boolean)",
@@ -7518,6 +7528,11 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletInitializer",
+							"status": "removed"
 						}
 					]
 				},
@@ -7847,21 +7862,6 @@
 					"deltas": [
 						{
 							"type": "class",
-							"name": "SynthComboBoxUI",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "getMinimumSize(JComponent)",
-									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/SynthComboBoxUI.html#getMinimumSize(javax.swing.JComponent)",
-									"csr": "JDK-8218474"
-								}
-							]
-						},
-						{
-							"type": "class",
 							"name": "SynthLookAndFeel",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html",
@@ -8074,6 +8074,16 @@
 						},
 						{
 							"type": "class",
+							"name": "JApplet.AccessibleJApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
+							"name": "JApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
 							"name": "JFileChooser",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JFileChooser.html",
@@ -8146,6 +8156,19 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JSplitPane.html#setEnabled(boolean)",
 									"csr": "JDK-5021949"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "RepaintManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/RepaintManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addDirtyRegion(Applet, int, int, int, int)",
+									"status": "removed"
 								}
 							]
 						},
@@ -8610,34 +8633,19 @@
 								{
 									"type": "method",
 									"name": "DescriptorSupport(String)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								},
 								{
 									"type": "method",
 									"name": "toXMLString()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								}
 							]
 						},
 						{
 							"type": "class",
 							"name": "XMLParseException",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/XMLParseException.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						}
 					]
 				},

@@ -7,121 +7,14 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+6-582"
+		"version": "26-ea+7-697"
 	},
 	"order": 1.0,
 	"deltas": [
 		{
 			"type": "package",
 			"name": "java.applet",
-			"status": "notmodified",
-			"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/package-summary.html",
-			"deltas": [
-				{
-					"type": "class",
-					"name": "Applet.AccessibleApplet",
-					"status": "added",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.AccessibleApplet.html"
-				},
-				{
-					"type": "class",
-					"name": "Applet",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html",
-					"addedTags": [
-						"deprecated",
-						"forRemoval"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "Applet()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#%3Cinit%3E()",
-							"addedTags": [
-								"throws HeadlessException"
-							]
-						},
-						{
-							"type": "method",
-							"name": "getAccessibleContext()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#getAccessibleContext()"
-						},
-						{
-							"type": "method",
-							"name": "getLocale()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#getLocale()"
-						},
-						{
-							"type": "method",
-							"name": "isValidateRoot()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#isValidateRoot()"
-						},
-						{
-							"type": "method",
-							"name": "newAudioClip(URL)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html#newAudioClip(java.net.URL)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "AppletContext",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html",
-					"addedTags": [
-						"abstract",
-						"deprecated",
-						"forRemoval"
-					],
-					"deltas": [
-						{
-							"type": "method",
-							"name": "getStream(String)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html#getStream(java.lang.String)"
-						},
-						{
-							"type": "method",
-							"name": "getStreamKeys()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html#getStreamKeys()"
-						},
-						{
-							"type": "method",
-							"name": "setStream(String, InputStream)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html#setStream(java.lang.String,java.io.InputStream)"
-						}
-					]
-				},
-				{
-					"type": "interface",
-					"name": "AppletStub",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletStub.html",
-					"addedTags": [
-						"abstract",
-						"deprecated",
-						"forRemoval"
-					]
-				},
-				{
-					"type": "interface",
-					"name": "AudioClip",
-					"status": "modified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AudioClip.html",
-					"addedTags": [
-						"abstract",
-						"deprecated",
-						"forRemoval"
-					]
-				}
-			]
+			"status": "removed"
 		},
 		{
 			"type": "package",

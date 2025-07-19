@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+6-582"
+		"version": "26-ea+7-697"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -7643,46 +7643,7 @@
 				{
 					"type": "package",
 					"name": "java.applet",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/package-summary.html",
-					"deltas": [
-						{
-							"type": "class",
-							"name": "Applet",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/Applet.html",
-							"addedTags": [
-								"forRemoval"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "AppletContext",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletContext.html",
-							"addedTags": [
-								"forRemoval"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "AppletStub",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AppletStub.html",
-							"addedTags": [
-								"forRemoval"
-							]
-						},
-						{
-							"type": "interface",
-							"name": "AudioClip",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/applet/AudioClip.html",
-							"addedTags": [
-								"forRemoval"
-							]
-						}
-					]
+					"status": "removed"
 				},
 				{
 					"type": "package",
@@ -8379,11 +8340,7 @@
 								{
 									"type": "method",
 									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext,java.beans.AppletInitializer)",
-									"addedTags": [
-										"forRemoval"
-									]
+									"status": "removed"
 								},
 								{
 									"type": "method",
@@ -8408,11 +8365,7 @@
 						{
 							"type": "interface",
 							"name": "AppletInitializer",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/beans/AppletInitializer.html",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						}
 					]
 				},
@@ -9001,12 +8954,13 @@
 						},
 						{
 							"type": "class",
+							"name": "JApplet.AccessibleJApplet",
+							"status": "removed"
+						},
+						{
+							"type": "class",
 							"name": "JApplet",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/JApplet.html",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "class",
@@ -9133,11 +9087,7 @@
 								{
 									"type": "method",
 									"name": "addDirtyRegion(Applet, int, int, int, int)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.applet.Applet,int,int,int,int)",
-									"addedTags": [
-										"forRemoval"
-									]
+									"status": "removed"
 								}
 							]
 						},
@@ -9606,34 +9556,19 @@
 								{
 									"type": "method",
 									"name": "DescriptorSupport(String)",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								},
 								{
 									"type": "method",
 									"name": "toXMLString()",
-									"status": "modified",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()",
-									"addedTags": [
-										"deprecated",
-										"forRemoval"
-									]
+									"status": "removed"
 								}
 							]
 						},
 						{
 							"type": "class",
 							"name": "XMLParseException",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.management/javax/management/modelmbean/XMLParseException.html",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
+							"status": "removed"
 						}
 					]
 				},
