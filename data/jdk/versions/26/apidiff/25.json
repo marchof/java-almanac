@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25-ea+32-3464"
+		"version": "25-ea+33-3475"
 	},
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+7-697"
+		"version": "26-ea+8-804"
 	},
 	"order": 25.0,
 	"deltas": [
@@ -113,6 +113,16 @@
 									"status": "removed",
 									"csr": "JDK-8359594"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						}
 					]

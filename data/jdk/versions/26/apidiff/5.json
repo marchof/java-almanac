@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+7-697"
+		"version": "26-ea+8-804"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -11624,6 +11624,16 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html#supportedOptions()"
 						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "SocketPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
 					]
 				},
 				{

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+7-697"
+		"version": "26-ea+8-804"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -3210,6 +3210,16 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketException.html#%3Cinit%3E(java.lang.Throwable)",
 									"csr": "JDK-8282688"
 								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
 							]
 						},
 						{
