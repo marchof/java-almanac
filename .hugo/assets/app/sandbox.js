@@ -1,4 +1,10 @@
-"use strict";
+import ace from 'ace-builds';
+import 'ace-builds/src-min-noconflict/mode-java.js';
+import * as theme from './ace-theme.js';
+
+import Vue from 'vue/dist/vue.min.js';
+
+import './tabs.js';
 
 Vue.component('sandbox', {
     template: `
@@ -71,9 +77,9 @@ Vue.component('sandbox-source', {
         };
     },
     mounted() {
-        this.editor = window.ace.edit(this.$el, {
+        this.editor = ace.edit(this.$el, {
             mode: "ace/mode/java",
-            theme: 'ace/theme/almanac',
+            theme: theme,
             highlightActiveLine: false,
             showPrintMargin: false,
             showFoldWidgets: false,
@@ -98,3 +104,6 @@ Vue.component('sandbox-source', {
         }
     },
 });
+
+// For compatibility expose Vue as a global object to the browser:
+window.Vue = Vue;
