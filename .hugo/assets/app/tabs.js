@@ -1,4 +1,4 @@
-"use strict";
+import Vue from 'vue/dist/vue.min.js';
 
 Vue.component('tabs', {
     template: `
