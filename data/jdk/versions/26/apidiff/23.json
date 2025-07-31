@@ -8198,7 +8198,8 @@
 				{
 					"type": "package",
 					"name": "java.applet",
-					"status": "removed"
+					"status": "removed",
+					"csr": "JDK-8359058"
 				},
 				{
 					"type": "package",
@@ -8376,7 +8377,8 @@
 								{
 									"type": "method",
 									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8359058"
 								},
 								{
 									"type": "method",
@@ -8401,7 +8403,8 @@
 						{
 							"type": "interface",
 							"name": "AppletInitializer",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8359058"
 						}
 					]
 				},
@@ -8529,12 +8532,14 @@
 						{
 							"type": "class",
 							"name": "JApplet.AccessibleJApplet",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8359058"
 						},
 						{
 							"type": "class",
 							"name": "JApplet",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8359058"
 						},
 						{
 							"type": "class",
@@ -8585,7 +8590,8 @@
 								{
 									"type": "method",
 									"name": "addDirtyRegion(Applet, int, int, int, int)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8359058"
 								}
 							]
 						},
@@ -8956,19 +8962,22 @@
 								{
 									"type": "method",
 									"name": "DescriptorSupport(String)",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8359663"
 								},
 								{
 									"type": "method",
 									"name": "toXMLString()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8359663"
 								}
 							]
 						},
 						{
 							"type": "class",
 							"name": "XMLParseException",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-8359663"
 						}
 					]
 				},
