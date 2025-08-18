@@ -1,4 +1,4 @@
-"use strict";
+import Vue from 'vue/dist/vue.min.js';
 
 Vue.component('downloadlist', {
     template: `
@@ -183,3 +183,5 @@ Vue.component('downloadlist', {
         }
     }
 });
+
+new Vue({ el: '#content' });

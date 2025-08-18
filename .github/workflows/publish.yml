@@ -18,7 +18,10 @@ jobs:
       uses: peaceiris/actions-hugo@v3
       with:
         hugo-version: '0.148.1'
-    - name: Render
+    - name: Install JavaScript Dependencies
+      working-directory: '.hugo'
+      run: npm install
+    - name: Render Site
       working-directory: '.hugo'
       run: hugo
     - name: Check Links

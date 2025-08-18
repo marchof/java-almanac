@@ -1,6 +1,6 @@
 # [javaalmanac.io](https://javaalmanac.io)
 
-Collection of information about the history of Java primarily from a technical point of view.
+Systematic collection of information about the history and the future of Java.
 
 ## Tools Developed for Java Almanac
 
@@ -20,7 +20,13 @@ Java Almanac wouldn't be possible without these great tools and services:
 * [jsoup](https://jsoup.org/): HTML parsing
 * [Apache Lucene](https://lucene.apache.org/core/): Full-text search
 * [GitHub](https://github.com/): Code hosting, issue tracking and automation
-* [AWS](https://aws.amazon.com/): Frontend and backend hosting 
+* [AWS](https://aws.amazon.com/): Frontend and backend hosting
+
+## Local Development
+
+If you want to work in Java Almanac locally please install `npm` and `hugo`. A
+local live preview can be rendered by executing the script `localdev.sh` in
+folder `.hugo` of this repository.
 
 ## Author and License
 
