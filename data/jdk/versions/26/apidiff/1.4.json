@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+11-1160"
+		"version": "26-ea+12-1260"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -28234,48 +28234,6 @@
 			"deltas": [
 				{
 					"type": "class",
-					"name": "FileCacheImageInputStream",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "finalize()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#finalize()"
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "FileImageInputStream",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "finalize()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html#finalize()"
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "FileImageOutputStream",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "finalize()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#finalize()"
-						}
-					]
-				},
-				{
-					"type": "class",
 					"name": "ImageInputStreamImpl",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html",
@@ -28283,26 +28241,7 @@
 						{
 							"type": "method",
 							"name": "finalize()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#finalize()",
-							"addedTags": [
-								"deprecated",
-								"forRemoval"
-							]
-						}
-					]
-				},
-				{
-					"type": "class",
-					"name": "MemoryCacheImageInputStream",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html",
-					"deltas": [
-						{
-							"type": "method",
-							"name": "finalize()",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html#finalize()"
+							"status": "removed"
 						}
 					]
 				},
