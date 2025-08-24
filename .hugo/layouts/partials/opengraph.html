@@ -1,0 +1,12 @@
+{{- $font := resources.Get "fonts/noto-sans-700.ttf" -}}
+{{- $image := resources.Get "img/opengraph.png" -}}
+{{- $image := $image | images.Filter (images.Text .Title (dict "font" $font "color" "#589" "x" 40 "y" 320 "size" 56)) -}}
+{{- $image := $image | resources.Copy ( path.Join .Path "opengraph.png" ) -}}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Java Version Almanac">
+<meta property="og:title" content="{{ .Title }}">
+{{ with .Params.description -}}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+<meta property="og:image" content="{{ $image.Permalink }}">

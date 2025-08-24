@@ -15,6 +15,7 @@
   {{ with .Params.description -}}
   <meta name="description" content="{{ . }}">
   {{- end }}
+  {{- partial "opengraph.html" . }}
 </head>
 <body>
 <div class="header-bar">
