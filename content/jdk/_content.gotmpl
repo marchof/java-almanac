@@ -4,6 +4,7 @@
                         "title"  ( printf "New APIs in Java %s" $diff.target.feature )
                         "type"   "apidiff"
                         "params" ( dict "targetversion" $diff.target.feature
-                                        "baseversion"   $diff.base.feature ) ) }}
+                                        "baseversion"   $diff.base.feature 
+                                        "description"   ( printf "All API changes in Java %s compared to Java %s." $diff.target.feature $diff.base.feature ) ) ) }}
   {{ end }}
 {{ end }}

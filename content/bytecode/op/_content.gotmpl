@@ -1,6 +1,8 @@
 {{ range $opcode, $value := $.Site.Data.bytecode.opcodes }}
-  {{ $.AddPage ( dict "path"   $opcode 
+  {{ $.AddPage ( dict "path"   $opcode
+                      "title"  ( printf "Opcode %s" $value.mnemonic )
                       "type"   "opcode"
-                      "params" ( dict "opcode" $opcode ) ) }}
+                      "params" ( dict "opcode" $opcode 
+                                      "description"   ( printf "Details about JVM opcode %s." $opcode ) ) ) }}
 {{ end }}
 
