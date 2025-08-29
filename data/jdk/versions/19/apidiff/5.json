@@ -4997,7 +4997,6 @@
 							"name": "invoke(Object, Object...)",
 							"status": "modified",
 							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object...)",
-							"csr": "JDK-8272387",
 							"removedTags": [
 								"throws IllegalArgumentException"
 							]
@@ -5114,7 +5113,8 @@
 						{
 							"type": "method",
 							"name": "getCause()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-4385429"
 						}
 					]
 				},
@@ -6921,7 +6921,8 @@
 						{
 							"type": "method",
 							"name": "getCause()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-4385429"
 						}
 					]
 				},
@@ -7303,7 +7304,8 @@
 						{
 							"type": "method",
 							"name": "getCause()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-4385429"
 						}
 					]
 				},
@@ -8231,13 +8233,15 @@
 							"type": "method",
 							"name": "fillInStackTrace()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()",
+							"csr": "JDK-8248476"
 						},
 						{
 							"type": "method",
 							"name": "getMessage()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html#getMessage()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html#getMessage()",
+							"csr": "JDK-8227717"
 						}
 					]
 				},
@@ -13085,7 +13089,8 @@
 							"type": "method",
 							"name": "toString()",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()"
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()",
+							"csr": "JDK-8256363"
 						}
 					]
 				},
@@ -13676,7 +13681,8 @@
 						{
 							"type": "method",
 							"name": "getCause()",
-							"status": "removed"
+							"status": "removed",
+							"csr": "JDK-4385429"
 						}
 					]
 				},
@@ -35193,7 +35199,8 @@
 							"type": "method",
 							"name": "declaration(String, String, String)",
 							"status": "added",
-							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)"
+							"javadoc": "https://docs.oracle.com/en/java/javase/19/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)",
+							"csr": "JDK-8230824"
 						}
 					]
 				},

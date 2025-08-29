@@ -710,7 +710,8 @@
 								{
 									"type": "method",
 									"name": "getCause()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-4385429"
 								}
 							]
 						},
@@ -724,19 +725,22 @@
 									"type": "method",
 									"name": "getAnnotation(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotation(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotation(java.lang.Class)",
+									"csr": "JDK-8225540"
 								},
 								{
 									"type": "method",
 									"name": "getAnnotations()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotations()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotations()",
+									"csr": "JDK-8225540"
 								},
 								{
 									"type": "method",
 									"name": "getDeclaredAnnotations()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getDeclaredAnnotations()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getDeclaredAnnotations()",
+									"csr": "JDK-8225540"
 								}
 							]
 						},
@@ -1215,7 +1219,8 @@
 								{
 									"type": "method",
 									"name": "getCause()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-4385429"
 								}
 							]
 						},
@@ -1395,7 +1400,8 @@
 								{
 									"type": "method",
 									"name": "getCause()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-4385429"
 								}
 							]
 						},
@@ -1587,13 +1593,15 @@
 									"type": "method",
 									"name": "fillInStackTrace()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()",
+									"csr": "JDK-8248476"
 								},
 								{
 									"type": "method",
 									"name": "getMessage()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/NullPointerException.html#getMessage()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/NullPointerException.html#getMessage()",
+									"csr": "JDK-8227717"
 								}
 							]
 						},
@@ -2458,7 +2466,8 @@
 								{
 									"type": "method",
 									"name": "supportedOptions()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8241988"
 								}
 							]
 						},
@@ -3684,7 +3693,8 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()",
+									"csr": "JDK-8256363"
 								}
 							]
 						},
@@ -3862,7 +3872,8 @@
 								{
 									"type": "method",
 									"name": "getCause()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-4385429"
 								}
 							]
 						},
@@ -5638,7 +5649,8 @@
 									"type": "method",
 									"name": "getAnnotationsByType(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotationsByType(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotationsByType(java.lang.Class)",
+									"csr": "JDK-8225495"
 								}
 							]
 						},
@@ -5772,19 +5784,22 @@
 									"type": "method",
 									"name": "getAnnotation(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotation(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotation(java.lang.Class)",
+									"csr": "JDK-8225495"
 								},
 								{
 									"type": "method",
 									"name": "getAnnotationMirrors()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationMirrors()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationMirrors()",
+									"csr": "JDK-8225495"
 								},
 								{
 									"type": "method",
 									"name": "getAnnotationsByType(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationsByType(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationsByType(java.lang.Class)",
+									"csr": "JDK-8225495"
 								}
 							]
 						}
@@ -7564,7 +7579,8 @@
 									"type": "method",
 									"name": "uninstallComponents()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html#uninstallComponents()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html#uninstallComponents()",
+									"csr": "JDK-8240709"
 								}
 							]
 						},
@@ -8898,7 +8914,8 @@
 								{
 									"type": "field",
 									"name": "CREDENTIAL_TYPES",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8236954"
 								},
 								{
 									"type": "field",
@@ -9815,7 +9832,8 @@
 									"type": "method",
 									"name": "declaration(String, String, String)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/16/docs/api/java.xml/org/xml/sax/ContentHandler.html#declaration(java.lang.String,java.lang.String,java.lang.String)",
+									"csr": "JDK-8230824"
 								}
 							]
 						}

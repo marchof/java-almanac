@@ -576,7 +576,6 @@
 									"name": "invoke(Object, Object...)",
 									"status": "modified",
 									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object...)",
-									"csr": "JDK-8272387",
 									"removedTags": [
 										"throws IllegalArgumentException"
 									]
@@ -616,19 +615,22 @@
 									"type": "method",
 									"name": "getAnnotation(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotation(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotation(java.lang.Class)",
+									"csr": "JDK-8225540"
 								},
 								{
 									"type": "method",
 									"name": "getAnnotations()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotations()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getAnnotations()",
+									"csr": "JDK-8225540"
 								},
 								{
 									"type": "method",
 									"name": "getDeclaredAnnotations()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getDeclaredAnnotations()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/reflect/AnnotatedType.html#getDeclaredAnnotations()",
+									"csr": "JDK-8225540"
 								}
 							]
 						},
@@ -1159,7 +1161,8 @@
 									"type": "method",
 									"name": "fillInStackTrace()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/NullPointerException.html#fillInStackTrace()",
+									"csr": "JDK-8248476"
 								}
 							]
 						},
@@ -1756,7 +1759,8 @@
 								{
 									"type": "method",
 									"name": "supportedOptions()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8241988"
 								}
 							]
 						},
@@ -2292,7 +2296,8 @@
 									"type": "method",
 									"name": "toString()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#toString()",
+									"csr": "JDK-8256363"
 								}
 							]
 						},
@@ -3266,7 +3271,8 @@
 									"type": "method",
 									"name": "getAnnotationsByType(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotationsByType(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotationsByType(java.lang.Class)",
+									"csr": "JDK-8225495"
 								}
 							]
 						},
@@ -3336,19 +3342,22 @@
 									"type": "method",
 									"name": "getAnnotation(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotation(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotation(java.lang.Class)",
+									"csr": "JDK-8225495"
 								},
 								{
 									"type": "method",
 									"name": "getAnnotationMirrors()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationMirrors()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationMirrors()",
+									"csr": "JDK-8225495"
 								},
 								{
 									"type": "method",
 									"name": "getAnnotationsByType(Class)",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationsByType(java.lang.Class)"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getAnnotationsByType(java.lang.Class)",
+									"csr": "JDK-8225495"
 								}
 							]
 						}
@@ -5120,7 +5129,8 @@
 									"type": "method",
 									"name": "uninstallComponents()",
 									"status": "added",
-									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html#uninstallComponents()"
+									"javadoc": "https://docs.oracle.com/en/java/javase/18/docs/api/java.desktop/javax/swing/plaf/synth/SynthDesktopIconUI.html#uninstallComponents()",
+									"csr": "JDK-8240709"
 								}
 							]
 						},
@@ -6439,7 +6449,8 @@
 								{
 									"type": "field",
 									"name": "CREDENTIAL_TYPES",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8236954"
 								}
 							]
 						}
