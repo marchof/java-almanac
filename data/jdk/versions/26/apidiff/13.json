@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+13-1333"
+		"version": "26-ea+14-1437"
 	},
 	"order": 13.0,
 	"deltas": [
@@ -10285,7 +10285,8 @@
 								{
 									"type": "method",
 									"name": "finalize()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8365409"
 								}
 							]
 						}
@@ -13323,6 +13324,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#concat(java.net.http.HttpRequest.BodyPublisher...)",
 									"csr": "JDK-8252382"
+								},
+								{
+									"type": "method",
+									"name": "ofFileChannel(FileChannel, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFileChannel(java.nio.channels.FileChannel,long,long)"
 								}
 							]
 						},
