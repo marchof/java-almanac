@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+14-1437"
+		"version": "26-ea+15-1548"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -2954,6 +2954,18 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "nthRoot(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#nthRoot(int)"
+								},
+								{
+									"type": "method",
+									"name": "nthRootAndRemainder(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#nthRootAndRemainder(int)"
+								},
 								{
 									"type": "method",
 									"name": "parallelMultiply(BigInteger)",
@@ -9756,7 +9768,8 @@
 									"type": "method",
 									"name": "ofFileChannel(FileChannel, long, long)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFileChannel(java.nio.channels.FileChannel,long,long)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFileChannel(java.nio.channels.FileChannel,long,long)",
+									"csr": "JDK-8365804"
 								}
 							]
 						},
