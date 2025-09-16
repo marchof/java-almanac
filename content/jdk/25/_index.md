@@ -5,7 +5,7 @@ description: Information about Java 25 including documentation links, new APIs, 
 
 {{< jdkdetails "25" >}}
 
-Java 25 will be the next long term support (LTS) release after [Java 21](../21).
+Java 25 is the latest long term support (LTS) release after [Java 21](../21).
 
 {{< /jdkdetails >}}
 
