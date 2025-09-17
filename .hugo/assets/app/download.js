@@ -61,7 +61,7 @@ Vue.component('downloadlist', {
                 { id: '22', name: '22',  query: { jdk_version: '22' } },
                 { id: '23', name: '23',  query: { jdk_version: '23' } },
                 { id: '24', name: '24',  query: { jdk_version: '24' } },
-                { id: '25', name: '25',  query: { jdk_version: '25', release_status: 'ea' } },
+                { id: '25', name: '25',  query: { jdk_version: '25' } },
                 { id: '26', name: '26',  query: { jdk_version: '26', release_status: 'ea' } }
             ],
             typeset: [
