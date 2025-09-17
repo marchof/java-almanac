@@ -5,7 +5,7 @@ description: Information about Java 21 including documentation links, new APIs, 
 
 {{< jdkdetails "21" >}}
 
-Java 21 is the latest long term support (LTS) release after [Java 17](../17).
+Java 21 is a current long term support (LTS) release.
 
 {{< /jdkdetails >}}
 
