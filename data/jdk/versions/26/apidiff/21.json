@@ -2411,7 +2411,8 @@
 								{
 									"type": "method",
 									"name": "stop()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8368237"
 								},
 								{
 									"type": "method",
@@ -4161,13 +4162,15 @@
 									"type": "method",
 									"name": "max(Object, Object)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#max(java.lang.Object,java.lang.Object)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#max(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8357219"
 								},
 								{
 									"type": "method",
 									"name": "min(Object, Object)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#min(java.lang.Object,java.lang.Object)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#min(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8357219"
 								}
 							]
 						}
@@ -6041,7 +6044,8 @@
 									"type": "method",
 									"name": "getOption(HttpOption)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.html#getOption(java.net.http.HttpOption)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.html#getOption(java.net.http.HttpOption)",
+									"csr": "JDK-8350588"
 								}
 							]
 						},
@@ -6079,19 +6083,22 @@
 							"type": "class",
 							"name": "HttpResponse.PushPromiseHandler.PushId.Http3PushId",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.PushId.Http3PushId.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.PushId.Http3PushId.html",
+							"csr": "JDK-8350588"
 						},
 						{
 							"type": "class",
 							"name": "StreamLimitException",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/StreamLimitException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/StreamLimitException.html",
+							"csr": "JDK-8350588"
 						},
 						{
 							"type": "class",
 							"name": "UnsupportedProtocolVersionException",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/UnsupportedProtocolVersionException.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/UnsupportedProtocolVersionException.html",
+							"csr": "JDK-8350588"
 						},
 						{
 							"type": "enum",
@@ -6103,7 +6110,8 @@
 									"type": "field",
 									"name": "HTTP_3",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_3"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_3",
+									"csr": "JDK-8350588"
 								}
 							]
 						},
@@ -6111,13 +6119,15 @@
 							"type": "enum",
 							"name": "HttpOption.Http3DiscoveryMode",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpOption.Http3DiscoveryMode.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpOption.Http3DiscoveryMode.html",
+							"csr": "JDK-8350588"
 						},
 						{
 							"type": "interface",
 							"name": "HttpOption",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpOption.html"
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpOption.html",
+							"csr": "JDK-8350588"
 						},
 						{
 							"type": "interface",
@@ -6129,7 +6139,8 @@
 									"type": "method",
 									"name": "setOption(HttpOption, Object)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setOption(java.net.http.HttpOption,java.lang.Object)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setOption(java.net.http.HttpOption,java.lang.Object)",
+									"csr": "JDK-8350588"
 								}
 							]
 						},
@@ -6149,13 +6160,15 @@
 									"type": "method",
 									"name": "applyPushPromise(HttpRequest, HttpRequest, HttpResponse.PushPromiseHandler.PushId, Function)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId,java.util.function.Function)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId,java.util.function.Function)",
+									"csr": "JDK-8350588"
 								},
 								{
 									"type": "method",
 									"name": "notifyAdditionalPromise(HttpRequest, HttpResponse.PushPromiseHandler.PushId)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#notifyAdditionalPromise(java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId)"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#notifyAdditionalPromise(java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId)",
+									"csr": "JDK-8350588"
 								}
 							]
 						},
