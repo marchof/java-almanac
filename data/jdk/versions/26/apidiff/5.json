@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+16-1649"
+		"version": "26-ea+17-1764"
 	},
 	"order": 5.0,
 	"deltas": [
@@ -10568,11 +10568,7 @@
 						{
 							"type": "method",
 							"name": "stop()",
-							"status": "modified",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Thread.html#stop()",
-							"addedTags": [
-								"forRemoval"
-							]
+							"status": "removed"
 						},
 						{
 							"type": "method",
@@ -25073,6 +25069,18 @@
 							"name": "comparingLong(ToLongFunction)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#comparingLong(java.util.function.ToLongFunction)"
+						},
+						{
+							"type": "method",
+							"name": "max(Object, Object)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#max(java.lang.Object,java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "min(Object, Object)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#min(java.lang.Object,java.lang.Object)"
 						},
 						{
 							"type": "method",

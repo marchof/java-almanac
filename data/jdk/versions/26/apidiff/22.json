@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+16-1649"
+		"version": "26-ea+17-1764"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -6605,6 +6605,18 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/classfile/Signature.ClassTypeSig.html",
 							"removedTags": [
 								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(Signature.ClassTypeSig, ClassDesc, Signature.TypeArg...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/classfile/Signature.ClassTypeSig.html#of(java.lang.classfile.Signature.ClassTypeSig,java.lang.constant.ClassDesc,java.lang.classfile.Signature.TypeArg...)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
 							]
 						},
 						{
@@ -8168,6 +8180,11 @@
 								},
 								{
 									"type": "method",
+									"name": "stop()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
 									"name": "suspend()",
 									"status": "removed",
 									"csr": "JDK-8320598"
@@ -9515,6 +9532,26 @@
 							],
 							"removedTags": [
 								"abstract"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Comparator",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "max(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#max(java.lang.Object,java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "min(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Comparator.html#min(java.lang.Object,java.lang.Object)"
+								}
 							]
 						}
 					]
@@ -11242,6 +11279,20 @@
 						},
 						{
 							"type": "class",
+							"name": "HttpRequest",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getOption(HttpOption)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.html#getOption(java.net.http.HttpOption)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "HttpResponse.BodyHandlers",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
@@ -11267,6 +11318,90 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#limiting(java.net.http.HttpResponse.BodySubscriber,long)",
 									"csr": "JDK-8347904"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HttpResponse.PushPromiseHandler.PushId.Http3PushId",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.PushId.Http3PushId.html"
+						},
+						{
+							"type": "class",
+							"name": "StreamLimitException",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/StreamLimitException.html"
+						},
+						{
+							"type": "class",
+							"name": "UnsupportedProtocolVersionException",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/UnsupportedProtocolVersionException.html"
+						},
+						{
+							"type": "enum",
+							"name": "HttpClient.Version",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpClient.Version.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "HTTP_3",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_3"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "HttpOption.Http3DiscoveryMode",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpOption.Http3DiscoveryMode.html"
+						},
+						{
+							"type": "interface",
+							"name": "HttpOption",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpOption.html"
+						},
+						{
+							"type": "interface",
+							"name": "HttpRequest.Builder",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setOption(HttpOption, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setOption(java.net.http.HttpOption,java.lang.Object)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse.PushPromiseHandler.PushId",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.PushId.html"
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse.PushPromiseHandler",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "applyPushPromise(HttpRequest, HttpRequest, HttpResponse.PushPromiseHandler.PushId, Function)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId,java.util.function.Function)"
+								},
+								{
+									"type": "method",
+									"name": "notifyAdditionalPromise(HttpRequest, HttpResponse.PushPromiseHandler.PushId)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#notifyAdditionalPromise(java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId)"
 								}
 							]
 						},
