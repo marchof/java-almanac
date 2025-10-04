@@ -12,6 +12,6 @@ The release primarily added new APIs, for example a full web services stack
 including several XML processing APIs. A step that was reverted 12 years
 later, when these APIs were [removed](../11/apidiff/6/) again.
 
-The contents of Java 6 is specified in the umbrella [JSR 270](https://jcp.org/en/jsr/detail?id=270).
+The content of Java 6 is specified in the umbrella [JSR 270](https://jcp.org/en/jsr/detail?id=270).
 
 {{< /jdkdetails >}}

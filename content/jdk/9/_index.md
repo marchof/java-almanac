@@ -9,7 +9,7 @@ In quite an opinionated move Java got its own module system. While the original 
 was to modularize the enormous JDK API itself the *Java Platform Module System
 (JPMS)* is now considered as the standard way to bundle any library.
 
-The contents of Java 9 is specified in the umbrella [JSR 379](https://jcp.org/en/jsr/detail?id=379).
+The content of Java 9 is specified in the umbrella [JSR 379](https://jcp.org/en/jsr/detail?id=379).
 
 {{< /jdkdetails >}}
 
