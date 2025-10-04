@@ -8,7 +8,8 @@ compatible. But class files compiled for newer JDK releases cannot be executed
 and will result in an `UnsupportedClassVersionError`.
 
 A class file version consists of a _major_ and a _minor_ version:
-`<major>.<minor>`\
+`<major>.<minor>`
+
 For recent JDK releases, the major version is incremented for every release
 and the minor version is 0. The only exception are class files which use
 _preview features_ of that JDK release. In that case the minor version is
