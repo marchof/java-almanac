@@ -3,11 +3,11 @@ title: Calendar Systems
 ---
 
 There are different calendar systems in the world. Let's write the Java 17
- release date in the systems known to Java.
+release date in the systems known to Java.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="CalendarSystems" >}}
+{{< sandbox version="java25" mainclass="CalendarSystems" >}}
 {{< sandboxsource "CalendarSystems.java" >}}
 
 import java.time.LocalDate;

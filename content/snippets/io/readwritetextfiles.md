@@ -2,14 +2,14 @@
 title: Read and Write Text Files
 ---
 
-The [`Files`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
- to read and write text content from/to files. When converting between Unicode
- strings and binary files content an encoding is applied. Do not rely on system
- defaults, always supply an encoding for portable behavior.
+The [`Files`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
+to read and write text content from/to files. When converting between Unicode
+strings and binary files content an encoding is applied. Do not rely on system
+defaults, always supply an encoding for portable behavior.
 
 Since [Java 11](/jdk/11/)
 
-{{< sandbox version="java21" mainclass="ReadWriteTextFiles" >}}
+{{< sandbox version="java25" mainclass="ReadWriteTextFiles" >}}
 {{< sandboxsource "ReadWriteTextFiles.java" >}}
 
 import java.io.IOException;

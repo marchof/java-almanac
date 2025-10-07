@@ -3,11 +3,11 @@ title: Records
 ---
 
 Records are Java classes which allows simple definition of immutable data
- structures.
+structures.
 
 Since [Java 16](/jdk/16/)
 
-{{< sandbox version="java21" mainclass="Records" >}}
+{{< sandbox version="java25" mainclass="Records" >}}
 {{< sandboxsource "Records.java" >}}
 
 public class Records {

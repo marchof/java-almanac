@@ -3,11 +3,11 @@ title: Convert Between Time Zones
 ---
 
 With time zones a given timestamp can be represented in different local dates
- and times.
+and times.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="ConvertBetweenTimeZones" >}}
+{{< sandbox version="java25" mainclass="ConvertBetweenTimeZones" >}}
 {{< sandboxsource "ConvertBetweenTimeZones.java" >}}
 
 import java.time.LocalDate;

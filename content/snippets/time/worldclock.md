@@ -3,12 +3,12 @@ title: World Clock
 ---
 
 Print the current time in all time zones known to the JDK (from the [tz
- database](https://en.wikipedia.org/wiki/Tz_database)) together with their
- current UTC offset and the DST status.
+database](https://en.wikipedia.org/wiki/Tz_database)) together with their
+current UTC offset and the DST status.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="WorldClock" >}}
+{{< sandbox version="java25" mainclass="WorldClock" >}}
 {{< sandboxsource "WorldClock.java" >}}
 
 import java.time.Instant;

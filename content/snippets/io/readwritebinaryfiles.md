@@ -2,12 +2,12 @@
 title: Read and Write Binary Files
 ---
 
-The [`Files`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
- to read and write binary content from/to files.
+The [`Files`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
+to read and write binary content from/to files.
 
 Since [Java 11](/jdk/11/)
 
-{{< sandbox version="java21" mainclass="ReadWriteBinaryFiles" >}}
+{{< sandbox version="java25" mainclass="ReadWriteBinaryFiles" >}}
 {{< sandboxsource "ReadWriteBinaryFiles.java" >}}
 
 import java.io.IOException;

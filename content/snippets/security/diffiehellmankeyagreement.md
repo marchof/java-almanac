@@ -3,11 +3,11 @@ title: Diffie-Hellman Key Agreement
 ---
 
 With key agreement algorithms two parties can agree on a shared secret by
- exchanging information over public channels only.
+exchanging information over public channels only.
 
 Since [Java 1.4](/jdk/1.4/)
 
-{{< sandbox version="java21" mainclass="DiffieHellmanKeyAgreement" >}}
+{{< sandbox version="java25" mainclass="DiffieHellmanKeyAgreement" >}}
 {{< sandboxsource "DiffieHellmanKeyAgreement.java" >}}
 
 import java.security.KeyPair;

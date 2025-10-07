@@ -6,7 +6,7 @@ Text blocks allow multiline strings literals.
 
 Since [Java 15](/jdk/15/)
 
-{{< sandbox version="java21" mainclass="TextBlocks" >}}
+{{< sandbox version="java25" mainclass="TextBlocks" >}}
 {{< sandboxsource "TextBlocks.java" >}}
 
 public class TextBlocks {

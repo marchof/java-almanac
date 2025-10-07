@@ -3,12 +3,12 @@ title: Time Period
 ---
 
 A date-based amount of time can be represented with the
- [`Period`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Period.html) type. With this data type a time span is expressed
- as a number of years, months and days.
+[`Period`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Period.html) type. With this data type a time span is expressed
+as a number of years, months and days.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="HowOldIsJava" >}}
+{{< sandbox version="java25" mainclass="HowOldIsJava" >}}
 {{< sandboxsource "HowOldIsJava.java" >}}
 
 import java.time.LocalDate;

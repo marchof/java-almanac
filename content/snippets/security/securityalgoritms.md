@@ -3,12 +3,12 @@ title: JDK Security Algorithms
 ---
 
 The JDK comes with a long list of cryptographic algorithms for different
- [`Service`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/Provider.Service.html) types. This snippet lists all service
- types together with the algorithms implemented in the current JDK.
+[`Service`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/security/Provider.Service.html) types. This snippet lists all service
+types together with the algorithms implemented in the current JDK.
 
 Since [Java 1.1](/jdk/1.1/)
 
-{{< sandbox version="java21" mainclass="SecurityAlgoritms" >}}
+{{< sandbox version="java25" mainclass="SecurityAlgoritms" >}}
 {{< sandboxsource "SecurityAlgoritms.java" >}}
 
 import static java.util.stream.Collectors.groupingBy;

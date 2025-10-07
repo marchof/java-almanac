@@ -3,15 +3,15 @@ title: Numeric Literals
 ---
 
 Integer literals can be written in binary, octal, decimal or hexadecimal
- representation. The `L` suffix denotes a long type, otherwise
- `int` is assumed Floating point literals can be written in decimal
- or as hexadecimal representation. The suffix `d` denotes type
- `double` (default), the suffix `f` denotes
- `float`.
+representation. The `L` suffix denotes a long type, otherwise
+`int` is assumed Floating point literals can be written in decimal
+or as hexadecimal representation. The suffix `d` denotes type
+`double` (default), the suffix `f` denotes
+`float`.
 
 Since [Java 7](/jdk/7/)
 
-{{< sandbox version="java21" mainclass="NumericLiterals" >}}
+{{< sandbox version="java25" mainclass="NumericLiterals" >}}
 {{< sandboxsource "NumericLiterals.java" >}}
 
 public class NumericLiterals {

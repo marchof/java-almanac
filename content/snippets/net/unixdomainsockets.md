@@ -3,11 +3,11 @@ title: Unix Domain Sockets
 ---
 
 Since Java 16 finally Unix domain local interprocess communication is
- supported.
+supported.
 
 Since [Java 16](/jdk/16/)
 
-{{< sandbox version="java21" mainclass="UnixDomainSockets" >}}
+{{< sandbox version="java25" mainclass="UnixDomainSockets" >}}
 {{< sandboxsource "UnixDomainSockets.java" >}}
 
 import static java.net.StandardProtocolFamily.UNIX;

@@ -3,11 +3,11 @@ title: Friday 13th
 ---
 
 To find all Friday 13th we iterate over a range of YearMonth and check
- whether the LocalDate with day 13 is a Friday.
+whether the LocalDate with day 13 is a Friday.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="Friday13th" >}}
+{{< sandbox version="java25" mainclass="Friday13th" >}}
 {{< sandboxsource "Friday13th.java" >}}
 
 import java.time.DayOfWeek;

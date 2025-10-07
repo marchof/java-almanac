@@ -3,14 +3,14 @@ title: Daylight Saving Time
 ---
 
 The Java time API uses the [tz
- database](https://en.wikipedia.org/wiki/Tz_database) to handle DST rules for
- each time zone. While the typical use case is to convert instants to local
- times the API also allows to query the database and e.g. list all DST
- transitions for a specific time zone.
+database](https://en.wikipedia.org/wiki/Tz_database) to handle DST rules for
+each time zone. While the typical use case is to convert instants to local
+times the API also allows to query the database and e.g. list all DST
+transitions for a specific time zone.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="DaylightSavingTime" >}}
+{{< sandbox version="java25" mainclass="DaylightSavingTime" >}}
 {{< sandboxsource "DaylightSavingTime.java" >}}
 
 import java.time.Instant;

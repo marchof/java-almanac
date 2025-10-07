@@ -3,11 +3,11 @@ title: Calculate With Local Dates
 ---
 
 Local dates can be used for various calendar calculations of based on
- granularity days.
+granularity days.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="CalculateWithLocalDates" >}}
+{{< sandbox version="java25" mainclass="CalculateWithLocalDates" >}}
 {{< sandboxsource "CalculateWithLocalDates.java" >}}
 
 import java.time.DayOfWeek;

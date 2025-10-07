@@ -3,11 +3,11 @@ title: Method References
 ---
 
 Functional interface instances can be directly created from methods and
- constructors.
+constructors.
 
 Since [Java 8](/jdk/8/)
 
-{{< sandbox version="java21" mainclass="MethodReferences" >}}
+{{< sandbox version="java25" mainclass="MethodReferences" >}}
 {{< sandboxsource "MethodReferences.java" >}}
 
 import java.util.function.BiConsumer;

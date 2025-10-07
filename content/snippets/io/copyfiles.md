@@ -2,16 +2,16 @@
 title: Copy Files and IO Streams
 ---
 
-The [`Files`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
- to copy data between files, [`InputStream`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html)s and
- [`OutputStream`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/OutputStream.html)s. Also streams can be directly transferred with
- [`InputStream.transferTo()`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html#transferTo(java.io.OutputStream)). Many Java
- idioms with temporary buffers shuffling data chunks in `while` loops are
- obsolete nowadays.
+The [`Files`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html) class offers a couple of convenience methods
+to copy data between files, [`InputStream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/InputStream.html)s and
+[`OutputStream`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/OutputStream.html)s. Also streams can be directly transferred with
+[`InputStream.transferTo()`](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/InputStream.html#transferTo(java.io.OutputStream)). Many Java
+idioms with temporary buffers shuffling data chunks in `while` loops are
+obsolete nowadays.
 
 Since [Java 9](/jdk/9/)
 
-{{< sandbox version="java21" mainclass="CopyFiles" >}}
+{{< sandbox version="java25" mainclass="CopyFiles" >}}
 {{< sandboxsource "CopyFiles.java" >}}
 
 import java.io.ByteArrayInputStream;

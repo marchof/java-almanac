@@ -3,16 +3,16 @@ title: Message Signature
 ---
 
 Cryptographic signatures are based on public/private key pairs. In contrast
- to [MACs](../messageauthenticationcode/) they allow anyone to verify the
- integrity of a message with the public key. Signatures are the core building
- blocks in cryptography to create chains of trust. For example SSL
- certificates are signed by certification authorities. By knowing the public
- keys of the trusted certification authorities a web browser can verify the
- certificates offered by a web site.
+to [MACs](../messageauthenticationcode/) they allow anyone to verify the
+integrity of a message with the public key. Signatures are the core building
+blocks in cryptography to create chains of trust. For example SSL
+certificates are signed by certification authorities. By knowing the public
+keys of the trusted certification authorities a web browser can verify the
+certificates offered by a web site.
 
 Since [Java 1.1](/jdk/1.1/)
 
-{{< sandbox version="java21" mainclass="MessageSignature" >}}
+{{< sandbox version="java25" mainclass="MessageSignature" >}}
 {{< sandboxsource "MessageSignature.java" >}}
 
 import java.security.KeyPair;
