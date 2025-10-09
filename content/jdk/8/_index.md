@@ -18,8 +18,6 @@ for calculations with dates and times.
 Also Oracle started to bundle JavaFX in its JDK distribution (which was removed
 again in [Java 11](../11/)).
 
-The content of Java 8 is specified in the umbrella [JSR 337](https://jcp.org/en/jsr/detail?id=337).
-
 {{< /jdkdetails >}}
 
 

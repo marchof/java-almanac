@@ -14,6 +14,4 @@ time for a *lambda* syntax for the Java language. While this feature was finally
 dropped from Java 7 the required mechanics under the hood like [`INVOKEDYNAMIC`](../../bytecode/op/invokedynamic/)
 and method handles have been added to the Java runtime with this release.
 
-The content of Java 7 is specified in the umbrella [JSR 336](https://jcp.org/en/jsr/detail?id=336).
-
 {{< /jdkdetails >}}

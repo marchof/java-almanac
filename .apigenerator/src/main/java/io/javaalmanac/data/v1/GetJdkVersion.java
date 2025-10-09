@@ -37,6 +37,9 @@ public class GetJdkVersion extends GetOperationDefinition {
 				.setProperty("eol", new Schema() //
 						.setType("string") //
 						.setExample("yyyy-mm-dd")) //
+				.setProperty("umbrellajsr", new Schema() //
+						.setType("string") //
+						.setExample("123")) //
 				.setProperty("latestversion", new Schema() //
 						.setType("string")) //
 				.setProperty("status", new Schema() //
