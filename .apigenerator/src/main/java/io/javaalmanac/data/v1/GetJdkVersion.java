@@ -37,6 +37,9 @@ public class GetJdkVersion extends GetOperationDefinition {
 				.setProperty("eol", new Schema() //
 						.setType("string") //
 						.setExample("yyyy-mm-dd")) //
+				.setProperty("umbrellajsr", new Schema() //
+						.setType("string") //
+						.setExample("123")) //
 				.setProperty("latestversion", new Schema() //
 						.setType("string")) //
 				.setProperty("status", new Schema() //
@@ -133,7 +136,7 @@ public class GetJdkVersion extends GetOperationDefinition {
 	@Override
 	public JsonProcessor getContentResolver() {
 		return root() //
-				.select("$.jdk.versions.[`version`].['version', 'name', 'ga', 'eol', 'latestversion', 'status', 'bytecode', 'unicode', 'documentation', 'scm', 'features']") //
+				.select("$.jdk.versions.[`version`].['version', 'name', 'ga', 'eol', 'umbrellajsr', 'latestversion', 'status', 'bytecode', 'unicode', 'documentation', 'scm', 'features']") //
 				.map("$.features.*.refs.*", this::addFeatureRefHref) //
 				.set("apidiffversions", GetJdkVersionApiDiffList.BASE_VERSIONS) //
 				.set("vendors", VENDOR_PROCESSOR);

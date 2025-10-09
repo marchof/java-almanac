@@ -28,7 +28,12 @@
       <td>{{ . }}</td>
     </tr>
     {{- end }}
+    {{- with .umbrellajsr }}
     <tr>
+      <th>Umbrella JSR</th>
+      <td><a href="https://jcp.org/en/jsr/detail?id={{ . }}">JSR {{ . }}</a></td>
+    </tr>
+    {{- end }}    <tr>
       <th style="white-space: nowrap;">Class File Version</th>
       <td>{{ .bytecode }}</td>
     </tr>
