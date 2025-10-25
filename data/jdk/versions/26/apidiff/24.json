@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+20-2057"
+		"version": "26-ea+21-2168"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -1152,6 +1152,37 @@
 									"csr": "JDK-8343111"
 								}
 							]
+						},
+						{
+							"type": "enum",
+							"name": "ByteOrder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/nio/ByteOrder.html",
+							"addedTags": [
+								"extends Enum"
+							],
+							"removedTags": [
+								"extends Object"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed"
+								},
+								{
+									"type": "method",
+									"name": "valueOf(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/nio/ByteOrder.html#valueOf(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "values()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/nio/ByteOrder.html#values()"
+								}
+							]
 						}
 					]
 				},
@@ -1306,6 +1337,34 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/DEREncodable.html",
 							"csr": "JDK-8329419"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.time",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Duration",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/Duration.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "MAX",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/Duration.html#MAX"
+								},
+								{
+									"type": "field",
+									"name": "MIN",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/Duration.html#MIN"
+								}
+							]
 						}
 					]
 				},
