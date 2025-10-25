@@ -23,7 +23,7 @@ public class ReadWriteBinaryFiles {
 
 	static final byte[] TEST_CONTENT = HEX.parseHex("cafebabe");
 
-	public static void main(String... args) throws IOException {
+	void main() throws IOException {
 
 		var file = Files.createTempFile("ReadWriteBinaryFiles", ".txt");
 

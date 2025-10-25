@@ -15,13 +15,13 @@ import java.time.chrono.Chronology;
 
 public class CalendarSystems {
 
-	public static void main(String[] args) {
+	void main() {
 
-		LocalDate java17release = LocalDate.of(2021, 9, 14);
+		LocalDate java25release = LocalDate.of(2025, 9, 16);
 
 		Chronology.getAvailableChronologies().stream() //
 				.sorted() //
-				.map(c -> c.date(java17release)) //
+				.map(c -> c.date(java25release)) //
 				.forEach(System.out::println);
 
 	}

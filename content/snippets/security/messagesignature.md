@@ -21,7 +21,7 @@ import java.security.Signature;
 
 public class MessageSignature {
 
-	public static void main(String[] args) throws Exception {
+	void main() throws Exception {
 
 		KeyPair keypair = KeyPairGenerator.getInstance("RSA").genKeyPair();
 

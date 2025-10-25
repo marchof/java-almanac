@@ -23,21 +23,21 @@ import java.util.Optional;
 
 public class OptionalValues {
 
-	static void work(Optional<String> task) {
+	void work(Optional<String> task) {
 
 		// Obtain a fixed default
 		var myTask1 = task.orElse("Clean the kitchen.");
 		System.out.println(myTask1);
 
 		// Calculate the default value if required
-		var myTask2 = task.orElseGet(OptionalValues::createTask);
+		var myTask2 = task.orElseGet(this::createTask);
 		System.out.println(myTask2);
 
 		// Perform an operation if a value exist:
 		task.ifPresent(System.out::println);
 
 		// Perform an operation if a value exist or do something else:
-		task.ifPresentOrElse(System.out::println, OptionalValues::idle);
+		task.ifPresentOrElse(System.out::println, this::idle);
 
 		// The optional value can be mapped (if it exists):
 		task.map(String::toUpperCase).ifPresent(System.out::println);
@@ -47,15 +47,15 @@ public class OptionalValues {
 
 	}
 
-	static String createTask() {
+	String createTask() {
 		return "Find random Task.";
 	}
 
-	static void idle() {
+	void idle() {
 		System.out.println("Just lazy today.");
 	}
 
-	public static void main(String[] args) {
+	void main() {
 		System.out.println("Our task today:");
 		work(Optional.of("Do some coding."));
 

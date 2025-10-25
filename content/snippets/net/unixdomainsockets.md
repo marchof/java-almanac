@@ -23,7 +23,7 @@ import java.nio.file.Files;
 
 public class UnixDomainSockets {
 
-	public static void main(String... args) throws IOException {
+	void main() throws IOException {
 
 		// Create a server socket on a temporary file name
 		var server = ServerSocketChannel.open(UNIX);

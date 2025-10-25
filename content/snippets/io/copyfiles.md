@@ -27,7 +27,7 @@ public class CopyFiles {
 
 	static final byte[] TEST_CONTENT = HEX.parseHex("cafebabe");
 
-	public static void main(String... args) throws IOException {
+	void main() throws IOException {
 
 		var srcfile = Files.createTempFile("CopyFiles", ".txt");
 		var dstfile = Files.createTempFile("CopyFiles", ".txt");

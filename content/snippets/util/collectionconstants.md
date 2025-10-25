@@ -31,7 +31,7 @@ public class CollectionConstants {
 			"Matterhorn", 4478, //
 			"Makalu", 8485);
 
-	public static void main(String... args) {
+	void main() {
 
 		System.out.println("The elevation of Matterhorn is " + PEAK_ELEVATIONS.get("Matterhorn"));
 

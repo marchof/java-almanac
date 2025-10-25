@@ -21,7 +21,7 @@ public class HowOldIsJava {
 
 	static final ZoneId TIMEZONE_OF_BIRTH = ZoneId.of("America/Los_Angeles");
 
-	public static void main(String[] args) {
+	void main() {
 
 		var today = LocalDate.now(TIMEZONE_OF_BIRTH);
 		var age = Period.between(BIRTHDAY_OF_JAVA, today);
@@ -33,7 +33,7 @@ public class HowOldIsJava {
 
 	}
 
-	static String fmt(Period p) {
+	String fmt(Period p) {
 		// Unfortunately there is no built-in formatter for Period objects
 		return "%d years, %d months and %d days".formatted(p.getYears(), p.getMonths(), p.getDays());
 	}

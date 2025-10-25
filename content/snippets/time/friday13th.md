@@ -17,19 +17,19 @@ import java.util.stream.Stream;
 
 public class Friday13th {
 
-	public static void main(String[] args) {
+	void main() {
 
 		YearMonth start = YearMonth.of(2000, 1);
 		YearMonth end = YearMonth.of(2030, 12);
 
 		Stream.iterate(start, m -> m.isBefore(end), m -> m.plusMonths(1)) //
 				.map(m -> m.atDay(13)) //
-				.filter(Friday13th::isFriday) //
+				.filter(this::isFriday) //
 				.map("%ta %<s"::formatted) //
 				.forEach(System.out::println);
 	}
 
-	static boolean isFriday(LocalDate date) {
+	boolean isFriday(LocalDate date) {
 		return DayOfWeek.FRIDAY.equals(date.getDayOfWeek());
 	}
 

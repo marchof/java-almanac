@@ -21,7 +21,7 @@ import java.time.zone.ZoneRules;
 
 public class DaylightSavingTime {
 
-	public static void main(String... args) {
+	void main() {
 		ZoneId zone = ZoneId.of("Europe/Zurich");
 		Instant from = LocalDate.of(2020, 1, 1).atStartOfDay().atZone(zone).toInstant();
 		Instant to = LocalDate.of(2030, 1, 1).atStartOfDay().atZone(zone).toInstant();

@@ -23,13 +23,13 @@ import javax.crypto.SecretKey;
 
 public class MessageAuthenticationCode {
 
-	static void addSignature(Mac mac, String msg) {
+	void addSignature(Mac mac, String msg) {
 		mac.reset();
 		byte[] signature = mac.doFinal(msg.getBytes(StandardCharsets.UTF_8));
 		System.out.printf("%s&hmac=%s%n", msg, HexFormat.of().formatHex(signature));
 	}
 
-	public static void main(String[] args) throws Exception {
+	void main() throws Exception {
 		SecretKey key = KeyGenerator.getInstance("HmacSHA3-256").generateKey();
 		Mac mac = Mac.getInstance("HmacSHA3-256");
 		mac.init(key);

@@ -18,7 +18,7 @@ import java.util.List;
 
 public class NotPredicate {
 
-	public static void main(String... args) {
+	void main() {
 
 		List.of("", "venus", "   ", "mars", " ", "earth") //
 				.stream() //

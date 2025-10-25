@@ -24,11 +24,11 @@ import java.util.stream.Stream;
 
 public class SecurityAlgoritms {
 
-	static Stream<Service> getAllSecurityServices() {
+	Stream<Service> getAllSecurityServices() {
 		return Arrays.stream(Security.getProviders()).flatMap(p -> p.getServices().stream());
 	}
 
-	public static void main(String[] args) {
+	void main() {
 
 		var grouped = getAllSecurityServices().collect(
 				// Group algorithms by type

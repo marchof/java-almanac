@@ -45,7 +45,7 @@ public class DiffieHellmanKeyAgreement {
 
 	}
 
-	public static void main(String[] args) throws Exception {
+	void main() throws Exception {
 		var alice = new Party();
 		var bob = new Party();
 

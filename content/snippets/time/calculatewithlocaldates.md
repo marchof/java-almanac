@@ -17,7 +17,7 @@ import java.time.temporal.TemporalAdjusters;
 
 public class CalculateWithLocalDates {
 
-	public static void main(String... args) {
+	void main() {
 		LocalDate arrival = LocalDate.of(2021, 12, 28);
 		LocalDate departure = LocalDate.of(2022, 1, 2);
 

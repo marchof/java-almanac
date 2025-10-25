@@ -14,7 +14,7 @@ public class TextBlocks {
 	static final String LINK_TEMPLATE = """
 			<a href="%s">Click here!</a>""";
 
-	public static void main(String... args) {
+	void main() {
 
 		// Text blocks always start with three double quotes and a new line:
 		String greeting = """
