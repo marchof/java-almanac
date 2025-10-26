@@ -38,9 +38,9 @@ public class DiffieHellmanKeyAgreement {
 			agreement.doPhase(key, true);
 		}
 
-		void printSecret() {
+		String generateSecret() {
 			byte[] secret = agreement.generateSecret();
-			System.out.println(HexFormat.of().formatHex(secret));
+			return HexFormat.of().formatHex(secret);
 		}
 
 	}
@@ -54,8 +54,8 @@ public class DiffieHellmanKeyAgreement {
 		bob.retrieveOtherPublicKey(alice.getPublicKey());
 
 		// Now both parties can calculate a shared secret:
-		alice.printSecret();
-		bob.printSecret();
+		IO.println("Alice: " + alice.generateSecret());
+		IO.println("Bob:   " + bob.generateSecret());
 	}
 
 }

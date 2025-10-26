@@ -37,8 +37,8 @@ public class SecurityAlgoritms {
 						TreeMap::new, mapping(Service::getAlgorithm, toCollection(TreeSet::new))));
 
 		grouped.forEach((type, algorithms) -> {
-			System.out.println(type);
-			algorithms.forEach(a -> System.out.println("* " + a));
+			IO.println(type);
+			algorithms.forEach(a -> IO.println("* " + a));
 		});
 
 	}

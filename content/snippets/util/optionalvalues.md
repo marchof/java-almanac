@@ -27,23 +27,23 @@ public class OptionalValues {
 
 		// Obtain a fixed default
 		var myTask1 = task.orElse("Clean the kitchen.");
-		System.out.println(myTask1);
+		IO.println(myTask1);
 
 		// Calculate the default value if required
 		var myTask2 = task.orElseGet(this::createTask);
-		System.out.println(myTask2);
+		IO.println(myTask2);
 
 		// Perform an operation if a value exist:
-		task.ifPresent(System.out::println);
+		task.ifPresent(IO::println);
 
 		// Perform an operation if a value exist or do something else:
-		task.ifPresentOrElse(System.out::println, this::idle);
+		task.ifPresentOrElse(IO::println, this::idle);
 
 		// The optional value can be mapped (if it exists):
-		task.map(String::toUpperCase).ifPresent(System.out::println);
+		task.map(String::toUpperCase).ifPresent(IO::println);
 
 		// The optional value can be filtered (if it exists):
-		task.filter(t -> t.contains("coding")).ifPresent(System.out::println);
+		task.filter(t -> t.contains("coding")).ifPresent(IO::println);
 
 	}
 
@@ -52,14 +52,14 @@ public class OptionalValues {
 	}
 
 	void idle() {
-		System.out.println("Just lazy today.");
+		IO.println("Just lazy today.");
 	}
 
 	void main() {
-		System.out.println("Our task today:");
+		IO.println("Our task today:");
 		work(Optional.of("Do some coding."));
 
-		System.out.println("No Task today:");
+		IO.println("No Task today:");
 		work(Optional.empty());
 	}
 

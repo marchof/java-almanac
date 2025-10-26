@@ -41,17 +41,17 @@ public class Comparators {
 		var input = List.of("apple", "Cherry", "Fig", "Pear", "Mango");
 
 		// Sort the list with the different criteria:
-		System.out.println(input.stream().sorted(c1).toList());
-		System.out.println(input.stream().sorted(c2).toList());
-		System.out.println(input.stream().sorted(c3).toList());
-		System.out.println(input.stream().sorted(c4).toList());
+		IO.println(input.stream().sorted(c1).toList());
+		IO.println(input.stream().sorted(c2).toList());
+		IO.println(input.stream().sorted(c3).toList());
+		IO.println(input.stream().sorted(c4).toList());
 
 		// Sort a list with nulls:
 		var inputWithNulls = Arrays.asList("c", null, null, "a", "B");
-		System.out.println(inputWithNulls.stream().sorted(c5).toList());
+		IO.println(inputWithNulls.stream().sorted(c5).toList());
 
 		// Find the minimal element in respect to a Comparator:
-		System.out.println(Collections.min(input, c4));
+		IO.println(Collections.min(input, c4));
 	}
 
 }

@@ -25,7 +25,7 @@ public class ConvertBetweenTimeZones {
 				"Asia/Tokyo", "Asia/Kolkata", "Europe/Paris", "America/Fortaleza", "Pacific/Honolulu");
 
 		for (String place : places) {
-			System.out.println("Lunar Eclipse at " + lunarEclipse.withZoneSameInstant(ZoneId.of(place)));
+			IO.println("Lunar Eclipse at " + lunarEclipse.withZoneSameInstant(ZoneId.of(place)));
 		}
 	}
 

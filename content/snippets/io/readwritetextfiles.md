@@ -29,20 +29,20 @@ public class ReadWriteTextFiles {
 		Files.writeString(file, TEST_CONTENT, StandardCharsets.UTF_8);
 
 		// Read the entire content as one string:
-		System.out.print(Files.readString(file, StandardCharsets.UTF_8));
+		IO.print(Files.readString(file, StandardCharsets.UTF_8));
 
 		// Read the entire content as a stream of lines:
-		Files.lines(file, StandardCharsets.UTF_8).map("> "::concat).forEach(System.out::println);
+		Files.lines(file, StandardCharsets.UTF_8).map("> "::concat).forEach(IO::println);
 
 		// Read the entire content into a list of lines:
 		var lines = Files.readAllLines(file, StandardCharsets.UTF_8);
-		System.out.println(String.join("/", lines));
+		IO.println(String.join("/", lines));
 
 		// If we need a Reader instance we can directly open a file as a BufferedReader
 		try (var reader = new LineNumberReader(Files.newBufferedReader(file, StandardCharsets.UTF_8))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
-				System.out.printf("%d: %s%n", reader.getLineNumber(), line);
+				IO.println("%d: %s".formatted(reader.getLineNumber(), line));
 			}
 		}
 

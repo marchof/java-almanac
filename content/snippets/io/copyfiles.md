@@ -36,26 +36,26 @@ public class CopyFiles {
 		// Directly copy files
 		Files.copy(srcfile, dstfile, StandardCopyOption.REPLACE_EXISTING);
 
-		System.out.println(HEX.formatHex(Files.readAllBytes(dstfile)));
+		IO.println(HEX.formatHex(Files.readAllBytes(dstfile)));
 
 		// Copy data from InputStream to a file:
 		var in = new ByteArrayInputStream(TEST_CONTENT);
 		Files.copy(in, dstfile, StandardCopyOption.REPLACE_EXISTING);
 
-		System.out.println(HEX.formatHex(Files.readAllBytes(dstfile)));
+		IO.println(HEX.formatHex(Files.readAllBytes(dstfile)));
 
 		// Copy the file content to an OutputStream:
 		var out = new ByteArrayOutputStream();
 		Files.copy(srcfile, out);
 
-		System.out.println(HEX.formatHex(out.toByteArray()));
+		IO.println(HEX.formatHex(out.toByteArray()));
 
 		// Copy content from an InputStream to an OutputStream:
 		in = new ByteArrayInputStream(TEST_CONTENT);
 		out = new ByteArrayOutputStream();
 		in.transferTo(out);
 
-		System.out.println(HEX.formatHex(out.toByteArray()));
+		IO.println(HEX.formatHex(out.toByteArray()));
 
 	}
 

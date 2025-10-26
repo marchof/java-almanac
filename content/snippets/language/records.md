@@ -47,18 +47,18 @@ public class Records {
 		var p = new Point(3, 5);
 
 		// We have
-		System.out.println(p.x());
+		IO.println(p.x());
 
 		// The compiler creates a toString() method for us
-		System.out.println(p);
+		IO.println(p);
 
 		// As well as equals() and hashcode() methods
-		System.out.println(p.equals(new Point(3, 5)));
-		System.out.println(p.hashCode());
+		IO.println(p.equals(new Point(3, 5)));
+		IO.println(p.hashCode());
 
 		var c = new Circle(p, new Point(6, 8));
 
-		System.out.println(c.area());
+		IO.println(c.area());
 
 	}
 

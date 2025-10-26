@@ -25,11 +25,11 @@ public class HowOldIsJava {
 
 		var today = LocalDate.now(TIMEZONE_OF_BIRTH);
 		var age = Period.between(BIRTHDAY_OF_JAVA, today);
-		System.out.println("As of today Java is %s old".formatted(fmt(age)));
+		IO.println("As of today Java is %s old".formatted(fmt(age)));
 
 		var nextAnivesary = BIRTHDAY_OF_JAVA.plus(Period.ofYears(age.getYears() + 1));
 		var tillAnivesary = Period.between(today, nextAnivesary);
-		System.out.println("Java's next birthday is in %s".formatted(fmt(tillAnivesary)));
+		IO.println("Java's next birthday is in %s".formatted(fmt(tillAnivesary)));
 
 	}
 

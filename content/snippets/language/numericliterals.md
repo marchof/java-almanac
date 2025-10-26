@@ -43,17 +43,17 @@ public class NumericLiterals {
 	float fhex = 0xcafe.babeP3f;
 
 	void main() {
-		System.out.println(bin);
-		System.out.println(oct);
-		System.out.println(dec);
-		System.out.println(dec2);
-		System.out.println(hex);
-		System.out.println(lhex);
-		System.out.println(d1);
-		System.out.println(d2);
-		System.out.println(dhex);
-		System.out.println(f);
-		System.out.println(fhex);
+		IO.println(bin);
+		IO.println(oct);
+		IO.println(dec);
+		IO.println(dec2);
+		IO.println(hex);
+		IO.println(lhex);
+		IO.println(d1);
+		IO.println(d2);
+		IO.println(dhex);
+		IO.println(f);
+		IO.println(fhex);
 	}
 
 }

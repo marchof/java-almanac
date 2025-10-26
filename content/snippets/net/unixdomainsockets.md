@@ -29,7 +29,7 @@ public class UnixDomainSockets {
 		var server = ServerSocketChannel.open(UNIX);
 		server.bind(null);
 		var address = (UnixDomainSocketAddress) server.getLocalAddress();
-		System.out.println("Listening on " + address);
+		IO.println("Listening on " + address);
 
 		// Connect client and send a message
 		try (var client = SocketChannel.open(UNIX)) {

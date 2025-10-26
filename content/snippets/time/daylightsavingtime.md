@@ -26,12 +26,12 @@ public class DaylightSavingTime {
 		Instant from = LocalDate.of(2020, 1, 1).atStartOfDay().atZone(zone).toInstant();
 		Instant to = LocalDate.of(2030, 1, 1).atStartOfDay().atZone(zone).toInstant();
 
-		System.out.printf("DST transitions in %s between %s and %s:\n", zone, from, to);
+		IO.println("DST transitions in %s between %s and %s:".formatted(zone, from, to));
 
 		ZoneRules rules = zone.getRules();
 		ZoneOffsetTransition t = rules.nextTransition(from);
 		while (t.getInstant().isBefore(to)) {
-			System.out.println(t);
+			IO.println(t);
 			t = rules.nextTransition(t.getInstant());
 		}
 	}

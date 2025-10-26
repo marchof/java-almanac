@@ -26,7 +26,7 @@ public class Friday13th {
 				.map(m -> m.atDay(13)) //
 				.filter(this::isFriday) //
 				.map("%ta %<s"::formatted) //
-				.forEach(System.out::println);
+				.forEach(IO::println);
 	}
 
 	boolean isFriday(LocalDate date) {

@@ -35,12 +35,12 @@ public class MessageSignature {
 		// Verify the message with the public key:
 		signature.initVerify(keypair.getPublic());
 		signature.update("The price is 39.99€".getBytes());
-		System.out.println(signature.verify(signed));
+		IO.println(signature.verify(signed));
 
 		// When the message is altered the signature cannot be verified:
 		signature.initVerify(keypair.getPublic());
 		signature.update("The price is 29.99€".getBytes());
-		System.out.println(signature.verify(signed));
+		IO.println(signature.verify(signed));
 
 	}
 

@@ -23,7 +23,7 @@ public class NotPredicate {
 		List.of("", "venus", "   ", "mars", " ", "earth") //
 				.stream() //
 				.filter(not(String::isBlank)) //
-				.forEach(System.out::println);
+				.forEach(IO::println);
 
 	}
 

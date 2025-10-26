@@ -21,14 +21,14 @@ public class CalculateWithLocalDates {
 		LocalDate arrival = LocalDate.of(2021, 12, 28);
 		LocalDate departure = LocalDate.of(2022, 1, 2);
 
-		System.out.println("Nights: " + arrival.until(departure, ChronoUnit.DAYS));
-		arrival.datesUntil(departure).map("Dinner: %ta %<s"::formatted).forEach(System.out::println);
+		IO.println("Nights: " + arrival.until(departure, ChronoUnit.DAYS));
+		arrival.datesUntil(departure).map("Dinner: %ta %<s"::formatted).forEach(IO::println);
 
 		departure = departure.plus(3, ChronoUnit.DAYS);
-		System.out.printf("Stay 3 more days: %ta %<s%n", departure);
+		IO.println("Stay 3 more days: %ta %<s".formatted(departure));
 
 		departure = departure.with(TemporalAdjusters.next(DayOfWeek.SUNDAY));
-		System.out.printf("Stay to next sunday: %ta %<s%n", departure);
+		IO.println("Stay to next sunday: %ta %<s".formatted(departure));
 	}
 
 }

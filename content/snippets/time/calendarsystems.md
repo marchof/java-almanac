@@ -22,7 +22,7 @@ public class CalendarSystems {
 		Chronology.getAvailableChronologies().stream() //
 				.sorted() //
 				.map(c -> c.date(java25release)) //
-				.forEach(System.out::println);
+				.forEach(IO::println);
 
 	}
 

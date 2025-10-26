@@ -32,7 +32,7 @@ public class ReadWriteBinaryFiles {
 
 		// Read the entire content as one byte array:
 		var content = Files.readAllBytes(file);
-		System.out.println(HEX.formatHex(content));
+		IO.println(HEX.formatHex(content));
 
 		// Append binary content with an OutputStream:
 		try (OutputStream out = Files.newOutputStream(file, StandardOpenOption.APPEND)) {
@@ -42,7 +42,7 @@ public class ReadWriteBinaryFiles {
 		// Read binary content from an InputStream:
 		try (InputStream in = Files.newInputStream(file)) {
 			content = in.readAllBytes();
-			System.out.println(HEX.formatHex(content));
+			IO.println(HEX.formatHex(content));
 		}
 
 		Files.delete(file);

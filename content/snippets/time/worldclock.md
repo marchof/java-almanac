@@ -33,7 +33,7 @@ public class WorldClock {
 				.map(ZoneId::of) //
 				.map((ZoneId z) -> ZonedDateTime.ofInstant(now, z)) //
 				.sorted() //
-				.map(this::format).forEach(System.out::println);
+				.map(this::format).forEach(IO::println);
 	}
 
 }

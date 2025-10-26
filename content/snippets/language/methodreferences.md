@@ -20,23 +20,23 @@ public class MethodReferences {
 	static class Foo {
 
 		Foo() {
-			System.out.println("constructor");
+			IO.println("constructor");
 		}
 
 		void instanceMethod() {
-			System.out.println("instanceMethod");
+			IO.println("instanceMethod");
 		}
 
 		void instanceMethod(String parameter) {
-			System.out.println("instanceMethod " + parameter);
+			IO.println("instanceMethod " + parameter);
 		}
 
 		static void classMethod() {
-			System.out.println("classMethod");
+			IO.println("classMethod");
 		}
 
 		static int classMethodWithReturn(String parameter) {
-			System.out.println("classMethodWithReturn " + parameter);
+			IO.println("classMethodWithReturn " + parameter);
 			return 42;
 		}
 
@@ -72,7 +72,7 @@ public class MethodReferences {
 		// Array constructor as reference
 		IntFunction<Foo[]> function = Foo[]::new;
 		Foo[] array = function.apply(42);
-		System.out.println(array.length);
+		IO.println(array.length);
 
 	}
 

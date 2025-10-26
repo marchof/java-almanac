@@ -26,7 +26,7 @@ public class MessageAuthenticationCode {
 	void addSignature(Mac mac, String msg) {
 		mac.reset();
 		byte[] signature = mac.doFinal(msg.getBytes(StandardCharsets.UTF_8));
-		System.out.printf("%s&hmac=%s%n", msg, HexFormat.of().formatHex(signature));
+		IO.println("%s&hmac=%s".formatted(msg, HexFormat.of().formatHex(signature)));
 	}
 
 	void main() throws Exception {

@@ -33,32 +33,32 @@ public class CollectionConstants {
 
 	void main() {
 
-		System.out.println("The elevation of Matterhorn is " + PEAK_ELEVATIONS.get("Matterhorn"));
+		IO.println("The elevation of Matterhorn is " + PEAK_ELEVATIONS.get("Matterhorn"));
 
 		// Invalid usages:
 
 		try {
 			BAVARIAN_COLORS.add(Color.BLACK);
 		} catch (UnsupportedOperationException e) {
-			System.out.println("Constant collections cannot be modified");
+			IO.println("Constant collections cannot be modified");
 		}
 
 		try {
 			List.of("null", null);
 		} catch (NullPointerException e) {
-			System.out.println("null is not allowed in constant collections");
+			IO.println("null is not allowed in constant collections");
 		}
 
 		try {
 			Set.of("same", "same");
 		} catch (IllegalArgumentException e) {
-			System.out.println("Duplicate entries are not allowed for constant sets");
+			IO.println("Duplicate entries are not allowed for constant sets");
 		}
 
 		try {
 			Map.of("key", 1, "key", 2);
 		} catch (IllegalArgumentException e) {
-			System.out.println("Duplicate keys are not allowed for constant maps");
+			IO.println("Duplicate keys are not allowed for constant maps");
 		}
 
 	}
