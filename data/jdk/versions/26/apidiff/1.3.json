@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+21-2168"
+		"version": "26-ea+22-2263"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -16844,20 +16844,6 @@
 						},
 						{
 							"type": "method",
-							"name": "nthRoot(int)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#nthRoot(int)",
-							"csr": "JDK-8364012"
-						},
-						{
-							"type": "method",
-							"name": "nthRootAndRemainder(int)",
-							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#nthRootAndRemainder(int)",
-							"csr": "JDK-8364012"
-						},
-						{
-							"type": "method",
 							"name": "parallelMultiply(BigInteger)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#parallelMultiply(java.math.BigInteger)",
@@ -16868,6 +16854,18 @@
 							"name": "probablePrime(int, Random)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#probablePrime(int,java.util.Random)"
+						},
+						{
+							"type": "method",
+							"name": "rootn(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#rootn(int)"
+						},
+						{
+							"type": "method",
+							"name": "rootnAndRemainder(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#rootnAndRemainder(int)"
 						},
 						{
 							"type": "method",

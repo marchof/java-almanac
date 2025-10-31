@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+21-2168"
+		"version": "26-ea+22-2263"
 	},
 	"order": 21.0,
 	"deltas": [
@@ -2561,17 +2561,15 @@
 							"deltas": [
 								{
 									"type": "method",
-									"name": "nthRoot(int)",
+									"name": "rootn(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#nthRoot(int)",
-									"csr": "JDK-8364012"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#rootn(int)"
 								},
 								{
 									"type": "method",
-									"name": "nthRootAndRemainder(int)",
+									"name": "rootnAndRemainder(int)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#nthRootAndRemainder(int)",
-									"csr": "JDK-8364012"
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/math/BigInteger.html#rootnAndRemainder(int)"
 								}
 							]
 						}
@@ -3574,6 +3572,12 @@
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/Instant.html",
 							"deltas": [
+								{
+									"type": "method",
+									"name": "plusSaturating(Duration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/Instant.html#plusSaturating(java.time.Duration)"
+								},
 								{
 									"type": "method",
 									"name": "until(Instant)",
