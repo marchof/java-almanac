@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+22-2263"
+		"version": "26-ea+23-2372"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -14311,14 +14311,23 @@
 				{
 					"type": "class",
 					"name": "Process",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Process.html",
+					"addedTags": [
+						"implements Closeable"
+					],
 					"deltas": [
 						{
 							"type": "method",
 							"name": "children()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Process.html#children()"
+						},
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Process.html#close()"
 						},
 						{
 							"type": "method",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+22-2263"
+		"version": "26-ea+23-2372"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -7944,9 +7944,18 @@
 						{
 							"type": "class",
 							"name": "Process",
-							"status": "notmodified",
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Process.html",
+							"addedTags": [
+								"implements Closeable"
+							],
 							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Process.html#close()"
+								},
 								{
 									"type": "method",
 									"name": "waitFor(Duration)",
@@ -9583,6 +9592,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/TimeZone.html#availableIDs(int)",
 									"csr": "JDK-8348325"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "UUID",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/UUID.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofEpochMillis(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/UUID.html#ofEpochMillis(long)"
 								}
 							]
 						},
