@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+23-2372"
+		"version": "26-ea+24-2457"
 	},
 	"order": 25.0,
 	"deltas": [
@@ -205,12 +205,66 @@
 						},
 						{
 							"type": "class",
+							"name": "ServerSocket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/ServerSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SocketPermission",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketPermission.html",
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Socket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/Socket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
 							]
 						}
 					]
@@ -320,6 +374,65 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/time/Instant.html#plusSaturating(java.time.Duration)",
 									"csr": "JDK-8369908"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Joiner",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "anySuccessfulOrThrow()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#anySuccessfulOrThrow()"
+								},
+								{
+									"type": "method",
+									"name": "anySuccessfulResultOrThrow()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "onTimeout()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#onTimeout()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "open(StructuredTaskScope.Joiner, Function)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "open(StructuredTaskScope.Joiner, UnaryOperator)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner,java.util.function.UnaryOperator)"
 								}
 							]
 						}

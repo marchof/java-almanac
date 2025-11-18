@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+23-2372"
+		"version": "26-ea+24-2457"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -9503,6 +9503,16 @@
 						},
 						{
 							"type": "method",
+							"name": "setPerformancePreferences(int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "setSocketFactory(SocketImplFactory)",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)",
@@ -9560,6 +9570,16 @@
 						},
 						{
 							"type": "method",
+							"name": "setPerformancePreferences(int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html#setPerformancePreferences(int,int,int)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "method",
 							"name": "supportedOptions()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html#supportedOptions()"
@@ -9611,6 +9631,16 @@
 							"name": "setOption(SocketOption, Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/Socket.html#setOption(java.net.SocketOption,java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "setPerformancePreferences(int, int, int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
 						},
 						{
 							"type": "method",

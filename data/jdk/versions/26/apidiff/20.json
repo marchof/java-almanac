@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+23-2372"
+		"version": "26-ea+24-2457"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -3742,6 +3742,42 @@
 						},
 						{
 							"type": "class",
+							"name": "ServerSocket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/ServerSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketImpl.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "SocketPermission",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/SocketPermission.html",
@@ -3771,6 +3807,16 @@
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,boolean)",
 									"addedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
 										"forRemoval"
 									]
 								}
