@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+24-2457"
+		"version": "26-ea+25-2529"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -5386,6 +5386,30 @@
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html",
 					"deltas": [
 						{
+							"type": "field",
+							"name": "DEFAULT_DELAY",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#DEFAULT_DELAY"
+						},
+						{
+							"type": "field",
+							"name": "DEFAULT_STEP_LENGTH",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#DEFAULT_STEP_LENGTH"
+						},
+						{
+							"type": "method",
+							"name": "click()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#click()"
+						},
+						{
+							"type": "method",
+							"name": "click(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#click(int)"
+						},
+						{
 							"type": "method",
 							"name": "createMultiResolutionScreenCapture(Rectangle)",
 							"status": "added",
@@ -5393,9 +5417,45 @@
 						},
 						{
 							"type": "method",
+							"name": "glide(int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#glide(int,int)"
+						},
+						{
+							"type": "method",
+							"name": "glide(int, int, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#glide(int,int,int,int)"
+						},
+						{
+							"type": "method",
+							"name": "glide(int, int, int, int, int, int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#glide(int,int,int,int,int,int)"
+						},
+						{
+							"type": "method",
 							"name": "mouseWheel(int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#mouseWheel(int)"
+						},
+						{
+							"type": "method",
+							"name": "type(char)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#type(char)"
+						},
+						{
+							"type": "method",
+							"name": "type(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#type(int)"
+						},
+						{
+							"type": "method",
+							"name": "waitForIdle(int)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.desktop/java/awt/Robot.html#waitForIdle(int)"
 						}
 					]
 				},
@@ -9786,6 +9846,12 @@
 						},
 						{
 							"type": "field",
+							"name": "BERIA_ERFE",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BERIA_ERFE"
+						},
+						{
+							"type": "field",
 							"name": "BHAIKSUKI",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BHAIKSUKI",
@@ -9952,6 +10018,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I",
 							"csr": "JDK-8316217"
+						},
+						{
+							"type": "field",
+							"name": "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_J",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_J"
 						},
 						{
 							"type": "field",
@@ -10653,6 +10725,12 @@
 						},
 						{
 							"type": "field",
+							"name": "MISCELLANEOUS_SYMBOLS_SUPPLEMENT",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_SYMBOLS_SUPPLEMENT"
+						},
+						{
+							"type": "field",
 							"name": "MODIFIER_TONE_LETTERS",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MODIFIER_TONE_LETTERS"
@@ -10971,6 +11049,12 @@
 						},
 						{
 							"type": "field",
+							"name": "SHARADA_SUPPLEMENT",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SHARADA_SUPPLEMENT"
+						},
+						{
+							"type": "field",
 							"name": "SHAVIAN",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SHAVIAN"
@@ -10986,6 +11070,12 @@
 							"name": "SIDDHAM",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SIDDHAM"
+						},
+						{
+							"type": "field",
+							"name": "SIDETIC",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SIDETIC"
 						},
 						{
 							"type": "field",
@@ -11192,6 +11282,12 @@
 						},
 						{
 							"type": "field",
+							"name": "TAI_YO",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAI_YO"
+						},
+						{
+							"type": "field",
 							"name": "TAKRI",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAKRI"
@@ -11226,6 +11322,12 @@
 						},
 						{
 							"type": "field",
+							"name": "TANGUT_COMPONENTS_SUPPLEMENT",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_COMPONENTS_SUPPLEMENT"
+						},
+						{
+							"type": "field",
 							"name": "TANGUT_SUPPLEMENT",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_SUPPLEMENT",
@@ -11255,6 +11357,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TODHRI",
 							"csr": "JDK-8339568"
+						},
+						{
+							"type": "field",
+							"name": "TOLONG_SIKI",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TOLONG_SIKI"
 						},
 						{
 							"type": "field",
@@ -16302,6 +16410,13 @@
 				},
 				{
 					"type": "interface",
+					"name": "LazyConstant",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/LazyConstant.html"
+				},
+				{
+					"type": "interface",
 					"name": "ProcessHandle.Info",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/ProcessHandle.Info.html"
@@ -16324,14 +16439,6 @@
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
 					"csr": "JDK-8331190"
-				},
-				{
-					"type": "interface",
-					"name": "StableValue",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/StableValue.html",
-					"csr": "JDK-8342068"
 				},
 				{
 					"type": "interface",
@@ -20592,11 +20699,10 @@
 				},
 				{
 					"type": "class",
-					"name": "PEMRecord",
+					"name": "PEM",
 					"status": "added",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/PEMRecord.html",
-					"csr": "JDK-8329419"
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/PEM.html"
 				},
 				{
 					"type": "class",
@@ -29469,6 +29575,13 @@
 						},
 						{
 							"type": "method",
+							"name": "ofLazy(int, IntFunction)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/List.html#ofLazy(int,java.util.function.IntFunction)"
+						},
+						{
+							"type": "method",
 							"name": "removeFirst()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/List.html#removeFirst()",
@@ -29673,6 +29786,13 @@
 							"name": "ofEntries(Map.Entry...)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"
+						},
+						{
+							"type": "method",
+							"name": "ofLazy(Set, Function)",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Map.html#ofLazy(java.util.Set,java.util.function.Function)"
 						},
 						{
 							"type": "method",

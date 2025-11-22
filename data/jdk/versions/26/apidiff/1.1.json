@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+24-2457"
+		"version": "26-ea+25-2529"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -15768,6 +15768,13 @@
 				},
 				{
 					"type": "interface",
+					"name": "LazyConstant",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/LazyConstant.html"
+				},
+				{
+					"type": "interface",
 					"name": "ProcessHandle.Info",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/ProcessHandle.Info.html"
@@ -15799,14 +15806,6 @@
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
 					"csr": "JDK-8331190"
-				},
-				{
-					"type": "interface",
-					"name": "StableValue",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/StableValue.html",
-					"csr": "JDK-8342068"
 				},
 				{
 					"type": "interface",
@@ -20215,11 +20214,10 @@
 				},
 				{
 					"type": "class",
-					"name": "PEMRecord",
+					"name": "PEM",
 					"status": "added",
 					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/PEMRecord.html",
-					"csr": "JDK-8329419"
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/security/PEM.html"
 				},
 				{
 					"type": "class",
