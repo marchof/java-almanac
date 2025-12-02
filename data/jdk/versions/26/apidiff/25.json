@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+25-2529"
+		"version": "26-ea+26-2633"
 	},
 	"order": 25.0,
 	"deltas": [
@@ -636,6 +636,20 @@
 									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/Map.html#ofLazy(java.util.Set,java.util.function.Function)"
 								}
 							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/javax/crypto/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HPKEParameterSpec",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/javax/crypto/spec/HPKEParameterSpec.html"
 						}
 					]
 				},
