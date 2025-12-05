@@ -455,7 +455,7 @@
 			"id": "oracle_open_jdk",
 			"name": "Oracle OpenJDK 26",
 			"license": "GPLv2+CE",
-			"url": "http://jdk.java.net/25/",
+			"url": "http://jdk.java.net/26/",
 			"platforms": [
 				"linux-arm64",
 				"linux-x64",
@@ -467,6 +467,23 @@
 				"26"
 			],
 			"foojaydownload": true
+		},
+		{
+			"id": "oracle_open_jdk",
+			"name": "Oracle OpenJDK 27",
+			"license": "GPLv2+CE",
+			"url": "http://jdk.java.net/27/",
+			"platforms": [
+				"linux-arm64",
+				"linux-x64",
+				"macos-arm64",
+				"macos-x64",
+				"windows-x64"
+			],
+			"versions": [
+				"27"
+			],
+			"foojaydownload": false
 		}
 	]
 }

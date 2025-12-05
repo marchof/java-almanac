@@ -1,0 +1,97 @@
+{
+	"base": {
+		"feature": "26",
+		"vendor": "open",
+		"version": "26-ea+27-2778"
+	},
+	"target": {
+		"feature": "27",
+		"vendor": "open",
+		"version": "27-ea+1"
+	},
+	"order": 26.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.lang.classfile",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassFile",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/ClassFile.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "JAVA_27_VERSION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_27_VERSION"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.reflect",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "ClassFileFormatVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_27",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_27"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_27",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_27"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

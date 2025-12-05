@@ -1,0 +1,3288 @@
+{
+	"base": {
+		"feature": "24",
+		"vendor": "open",
+		"version": "24.0.2+12-54"
+	},
+	"target": {
+		"feature": "27",
+		"vendor": "open",
+		"version": "27-ea+1"
+	},
+	"order": 24.0,
+	"deltas": [
+		{
+			"type": "module",
+			"name": "java.base",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.io",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Console",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/Console.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "print(Object)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								},
+								{
+									"type": "method",
+									"name": "println()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								},
+								{
+									"type": "method",
+									"name": "println(Object)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								},
+								{
+									"type": "method",
+									"name": "readln()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								},
+								{
+									"type": "method",
+									"name": "readln(String)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FilePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/FilePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "IO",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8353437"
+						},
+						{
+							"type": "class",
+							"name": "OptionalDataException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/OptionalDataException.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Reader",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/Reader.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "readAllAsString()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/Reader.html#readAllAsString()",
+									"csr": "JDK-8356909"
+								},
+								{
+									"type": "method",
+									"name": "readAllLines()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/Reader.html#readAllLines()",
+									"csr": "JDK-8356909"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SerializablePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/io/SerializablePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.attribute",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "UnknownAttribute",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/attribute/UnknownAttribute.html",
+							"addedTags": [
+								"implements CodeElement"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile.constantpool",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/ClassEntry.html#matches(java.lang.constant.ClassDesc)",
+									"csr": "JDK-8342210"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MethodTypeEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(MethodTypeDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/MethodTypeEntry.html#matches(java.lang.constant.MethodTypeDesc)",
+									"csr": "JDK-8342210"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ModuleEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(ModuleDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/ModuleEntry.html#matches(java.lang.constant.ModuleDesc)",
+									"csr": "JDK-8342210"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "PackageEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "matches(PackageDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/PackageEntry.html#matches(java.lang.constant.PackageDesc)",
+									"csr": "JDK-8342210"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StringEntry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "equalsString(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/StringEntry.html#equalsString(java.lang.String)",
+									"csr": "JDK-8342210"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Utf8Entry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isFieldType(ClassDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isFieldType(java.lang.constant.ClassDesc)",
+									"csr": "JDK-8342210"
+								},
+								{
+									"type": "method",
+									"name": "isMethodType(MethodTypeDesc)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/constantpool/Utf8Entry.html#isMethodType(java.lang.constant.MethodTypeDesc)",
+									"csr": "JDK-8342210"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.classfile",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "ClassFile",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/ClassFile.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "JAVA_25_VERSION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_25_VERSION",
+									"csr": "JDK-8343029"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_26_VERSION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_26_VERSION",
+									"csr": "JDK-8355793"
+								},
+								{
+									"type": "field",
+									"name": "JAVA_27_VERSION",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/ClassFile.html#JAVA_27_VERSION"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Signature.ClassTypeSig",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/Signature.ClassTypeSig.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(Signature.ClassTypeSig, ClassDesc, Signature.TypeArg...)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/Signature.ClassTypeSig.html#of(java.lang.classfile.Signature.ClassTypeSig,java.lang.constant.ClassDesc,java.lang.classfile.Signature.TypeArg...)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.constant",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/constant/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DynamicCallSiteDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MethodHandleProxies",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MethodHandles",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.module",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/module/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ModuleDescriptor",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/module/ModuleDescriptor.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.reflect",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Modifier",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ReflectPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ReflectPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "enum",
+							"name": "AccessFlag.Location",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "flags()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags()",
+									"csr": "JDK-8347626"
+								},
+								{
+									"type": "method",
+									"name": "flags(ClassFileFormatVersion)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flags(java.lang.reflect.ClassFileFormatVersion)",
+									"csr": "JDK-8347626"
+								},
+								{
+									"type": "method",
+									"name": "flagsMask()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask()",
+									"csr": "JDK-8347626"
+								},
+								{
+									"type": "method",
+									"name": "flagsMask(ClassFileFormatVersion)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.Location.html#flagsMask(java.lang.reflect.ClassFileFormatVersion)",
+									"csr": "JDK-8347626"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "AccessFlag",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "maskToAccessFlags(int, AccessFlag.Location, ClassFileFormatVersion)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/AccessFlag.html#maskToAccessFlags(int,java.lang.reflect.AccessFlag.Location,java.lang.reflect.ClassFileFormatVersion)",
+									"csr": "JDK-8297741"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ClassFileFormatVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_25",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_25",
+									"csr": "JDK-8343029"
+								},
+								{
+									"type": "field",
+									"name": "RELEASE_26",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_26",
+									"csr": "JDK-8355793"
+								},
+								{
+									"type": "field",
+									"name": "RELEASE_27",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_27"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.runtime",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/runtime/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ObjectMethods",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/runtime/ObjectMethods.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "SwitchBootstraps",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/runtime/SwitchBootstraps.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Boolean",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Boolean.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Boolean(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Boolean(boolean)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Byte",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Byte.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Byte(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Byte(byte)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Byte.html#%3Cinit%3E(byte)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Character.UnicodeBlock",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "BERIA_ERFE",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BERIA_ERFE"
+								},
+								{
+									"type": "field",
+									"name": "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_J",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_J"
+								},
+								{
+									"type": "field",
+									"name": "MISCELLANEOUS_SYMBOLS_SUPPLEMENT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_SYMBOLS_SUPPLEMENT"
+								},
+								{
+									"type": "field",
+									"name": "SHARADA_SUPPLEMENT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SHARADA_SUPPLEMENT"
+								},
+								{
+									"type": "field",
+									"name": "SIDETIC",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SIDETIC"
+								},
+								{
+									"type": "field",
+									"name": "TAI_YO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TAI_YO"
+								},
+								{
+									"type": "field",
+									"name": "TANGUT_COMPONENTS_SUPPLEMENT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TANGUT_COMPONENTS_SUPPLEMENT"
+								},
+								{
+									"type": "field",
+									"name": "TOLONG_SIKI",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeBlock.html#TOLONG_SIKI"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Character",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Character(char)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.html#%3Cinit%3E(char)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Double",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Double.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Double(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Double(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Double.html#%3Cinit%3E(double)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Float",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Float.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Float(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(double)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(double)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Float(float)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Float.html#%3Cinit%3E(float)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "IO",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/IO.html",
+							"csr": "JDK-8353437"
+						},
+						{
+							"type": "class",
+							"name": "Integer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Integer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Integer(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Integer(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Integer.html#%3Cinit%3E(int)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Long",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Long.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Long(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Long(long)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Long.html#%3Cinit%3E(long)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Math",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "powExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#powExact(int,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "powExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#powExact(long,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(int,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#unsignedMultiplyExact(long,long)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#unsignedPowExact(int,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#unsignedPowExact(long,int)",
+									"csr": "JDK-8356077"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Package",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Package.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Process",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Process.html",
+							"addedTags": [
+								"implements Closeable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Process.html#close()",
+									"csr": "JDK-8364362"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "RuntimePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/RuntimePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Runtime",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Runtime.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue.Carrier",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/ScopedValue.Carrier.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ScopedValue",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/ScopedValue.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Short",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Short.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "Short(String)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(java.lang.String)",
+									"removedTags": [
+										"forRemoval"
+									]
+								},
+								{
+									"type": "method",
+									"name": "Short(short)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Short.html#%3Cinit%3E(short)",
+									"removedTags": [
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StrictMath",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "powExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#powExact(int,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "powExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#powExact(long,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(int,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedMultiplyExact(long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#unsignedMultiplyExact(long,long)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(int,int)",
+									"csr": "JDK-8356077"
+								},
+								{
+									"type": "method",
+									"name": "unsignedPowExact(long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#unsignedPowExact(long,int)",
+									"csr": "JDK-8356077"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "String",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/String.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "UNICODE_CASEFOLD_ORDER",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/String.html#UNICODE_CASEFOLD_ORDER"
+								},
+								{
+									"type": "method",
+									"name": "compareToFoldCase(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/String.html#compareToFoldCase(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "equalsFoldCase(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/String.html#equalsFoldCase(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Thread",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Thread.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "stop()",
+									"status": "removed",
+									"csr": "JDK-8368237"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "Character.UnicodeScript",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeScript.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "BERIA_ERFE",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeScript.html#BERIA_ERFE"
+								},
+								{
+									"type": "field",
+									"name": "SIDETIC",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIDETIC"
+								},
+								{
+									"type": "field",
+									"name": "TAI_YO",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_YO"
+								},
+								{
+									"type": "field",
+									"name": "TOLONG_SIKI",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.UnicodeScript.html#TOLONG_SIKI"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "CharSequence",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/CharSequence.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getChars(int, int, char[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/CharSequence.html#getChars(int,int,char%5B%5D,int)",
+									"csr": "JDK-8343111"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "LazyConstant",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/LazyConstant.html"
+						},
+						{
+							"type": "interface",
+							"name": "ScopedValue.CallableOp",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/ScopedValue.CallableOp.html",
+							"removedTags": [
+								"preview"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.math",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "BigInteger",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigInteger.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "rootn(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigInteger.html#rootn(int)",
+									"csr": "JDK-8370629"
+								},
+								{
+									"type": "method",
+									"name": "rootnAndRemainder(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigInteger.html#rootnAndRemainder(int)",
+									"csr": "JDK-8370629"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.net",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DatagramSocketImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/DatagramSocketImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTTL()",
+									"status": "removed",
+									"csr": "JDK-8359594"
+								},
+								{
+									"type": "method",
+									"name": "setTTL(byte)",
+									"status": "removed",
+									"csr": "JDK-8359594"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HttpURLConnection",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/HttpURLConnection.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermission()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/HttpURLConnection.html#getPermission()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "InterfaceAddress",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/InterfaceAddress.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MulticastSocket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/MulticastSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTTL()",
+									"status": "removed",
+									"csr": "JDK-8359594"
+								},
+								{
+									"type": "method",
+									"name": "send(DatagramPacket, byte)",
+									"status": "removed",
+									"csr": "JDK-8359594"
+								},
+								{
+									"type": "method",
+									"name": "setTTL(byte)",
+									"status": "removed",
+									"csr": "JDK-8359594"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "NetPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/NetPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ServerSocket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/ServerSocket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/SocketImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/SocketImpl.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SocketPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/SocketPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Socket",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/Socket.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setPerformancePreferences(int, int, int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLConnection",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/URLConnection.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getPermission()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/URLConnection.html#getPermission()",
+									"addedTags": [
+										"deprecated",
+										"forRemoval"
+									]
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLDecoder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/URLDecoder.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLEncoder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/URLEncoder.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "URLPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/net/URLPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.charset",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/charset/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CoderResult",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/charset/CoderResult.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "CodingErrorAction",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/charset/CodingErrorAction.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio.file",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/file/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "LinkPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/file/LinkPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.nio",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CharBuffer",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/CharBuffer.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getChars(int, int, char[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/CharBuffer.html#getChars(int,int,char%5B%5D,int)",
+									"csr": "JDK-8343111"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "ByteOrder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/ByteOrder.html",
+							"addedTags": [
+								"extends Enum"
+							],
+							"removedTags": [
+								"extends Object"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed",
+									"csr": "JDK-8369130"
+								},
+								{
+									"type": "method",
+									"name": "valueOf(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/ByteOrder.html#valueOf(java.lang.String)",
+									"csr": "JDK-8369130"
+								},
+								{
+									"type": "method",
+									"name": "values()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/nio/ByteOrder.html#values()",
+									"csr": "JDK-8369130"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security.cert",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "X509CRL",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509CRL.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509Certificate",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509Certificate.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "PKCS8EncodedKeySpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509EncodedKeySpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DrbgParameters",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/DrbgParameters.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "KeyPair",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyPair.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PEMDecoder",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html",
+							"csr": "JDK-8329419"
+						},
+						{
+							"type": "class",
+							"name": "PEMEncoder",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMEncoder.html",
+							"csr": "JDK-8329419"
+						},
+						{
+							"type": "class",
+							"name": "PEM",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html"
+						},
+						{
+							"type": "class",
+							"name": "SecureRandom",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/SecureRandom.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "nextLong()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/SecureRandom.html#nextLong()",
+									"csr": "JDK-8361100"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SecurityPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/SecurityPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "UnresolvedPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/UnresolvedPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AsymmetricKey",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/AsymmetricKey.html",
+							"addedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "DEREncodable",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/DEREncodable.html",
+							"csr": "JDK-8329419"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.time",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Duration",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/Duration.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "MAX",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/Duration.html#MAX",
+									"csr": "JDK-8369241"
+								},
+								{
+									"type": "field",
+									"name": "MIN",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/Duration.html#MIN",
+									"csr": "JDK-8369241"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Instant",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/Instant.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "plusSaturating(Duration)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/Instant.html#plusSaturating(java.time.Duration)",
+									"csr": "JDK-8369908"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent.locks",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/locks/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "LockSupport",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/locks/LockSupport.html",
+							"addedTags": [
+								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Executors",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/Executors.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ForkJoinPool",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html",
+							"addedTags": [
+								"implements ScheduledExecutorService"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "cancelDelayedTasksOnShutdown()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#cancelDelayedTasksOnShutdown()",
+									"csr": "JDK-8350493"
+								},
+								{
+									"type": "method",
+									"name": "getDelayedTaskCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#getDelayedTaskCount()",
+									"csr": "JDK-8350493"
+								},
+								{
+									"type": "method",
+									"name": "schedule(Callable, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)",
+									"csr": "JDK-8350493"
+								},
+								{
+									"type": "method",
+									"name": "schedule(Runnable, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)",
+									"csr": "JDK-8350493"
+								},
+								{
+									"type": "method",
+									"name": "scheduleAtFixedRate(Runnable, long, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)",
+									"csr": "JDK-8350493"
+								},
+								{
+									"type": "method",
+									"name": "scheduleWithFixedDelay(Runnable, long, long, TimeUnit)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)",
+									"csr": "JDK-8350493"
+								},
+								{
+									"type": "method",
+									"name": "submitWithTimeout(Callable, long, TimeUnit, Consumer)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submitWithTimeout(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit,java.util.function.Consumer)",
+									"csr": "JDK-8350493"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.FailedException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.FailedException.html",
+							"csr": "JDK-8342487"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnFailure",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8342487"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.ShutdownOnSuccess",
+							"status": "removed",
+							"preview": true,
+							"csr": "JDK-8342487"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.TimeoutException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html",
+							"csr": "JDK-8342487"
+						},
+						{
+							"type": "class",
+							"name": "ThreadLocalRandom",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "nextGaussian()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextGaussian()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Configuration",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Configuration.html",
+							"csr": "JDK-8342487"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Joiner",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html",
+							"csr": "JDK-8342487"
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Subtask",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "task()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+							"addedTags": [
+								"abstract",
+								"sealed"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "StructuredTaskScope()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								},
+								{
+									"type": "method",
+									"name": "StructuredTaskScope(String, ThreadFactory)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8353437"
+								},
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#close()",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "ensureOwnerAndJoined()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "fork(Callable)",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#fork(java.util.concurrent.Callable)",
+									"addedTags": [
+										"abstract"
+									]
+								},
+								{
+									"type": "method",
+									"name": "fork(Runnable)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#fork(java.lang.Runnable)",
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "handleComplete(StructuredTaskScope.Subtask)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "isCancelled()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#isCancelled()",
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "isShutdown()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "join()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#join()",
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "join()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "joinUntil(Instant)",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "open()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open()",
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "open(StructuredTaskScope.Joiner)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner)",
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "open(StructuredTaskScope.Joiner, UnaryOperator)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.concurrent.StructuredTaskScope.Joiner,java.util.function.UnaryOperator)"
+								},
+								{
+									"type": "method",
+									"name": "shutdown()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "removed",
+									"preview": true,
+									"csr": "JDK-8342487"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.zip",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/zip/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Deflater",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/zip/Deflater.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/zip/Deflater.html#close()",
+									"csr": "JDK-8343768"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "Inflater",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/zip/Inflater.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/zip/Inflater.html#close()",
+									"csr": "JDK-8343768"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Base64",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Base64.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Collections",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Collections.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Currency",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Currency.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "availableCurrencies()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Currency.html#availableCurrencies()",
+									"csr": "JDK-8347950"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FormattableFlags",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/FormattableFlags.html",
+							"addedTags": [
+								"final"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PropertyPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/PropertyPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "TimeZone",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/TimeZone.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "availableIDs()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/TimeZone.html#availableIDs()",
+									"csr": "JDK-8348325"
+								},
+								{
+									"type": "method",
+									"name": "availableIDs(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/TimeZone.html#availableIDs(int)",
+									"csr": "JDK-8348325"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "UUID",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/UUID.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofEpochMillis(long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/UUID.html#ofEpochMillis(long)",
+									"csr": "JDK-8357251"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "Locale.IsoCountryCode",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Locale.IsoCountryCode.html",
+							"addedTags": [
+								"final"
+							],
+							"removedTags": [
+								"abstract"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Comparator",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Comparator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "max(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Comparator.html#max(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8357219"
+								},
+								{
+									"type": "method",
+									"name": "min(Object, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Comparator.html#min(java.lang.Object,java.lang.Object)",
+									"csr": "JDK-8357219"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "List",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/List.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofLazy(int, IntFunction)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/List.html#ofLazy(int,java.util.function.IntFunction)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Map",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Map.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofLazy(Set, Function)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Map.html#ofLazy(java.util.Set,java.util.function.Function)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.Builder",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Builder.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.Expand",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Expand.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.ExtractThenExpand",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.ExtractThenExpand.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "HKDFParameterSpec.Extract",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.Extract.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "HPKEParameterSpec",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/HPKEParameterSpec.html"
+						},
+						{
+							"type": "interface",
+							"name": "HKDFParameterSpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/spec/HKDFParameterSpec.html",
+							"removedTags": [
+								"preview"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "EncryptedPrivateKeyInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html",
+							"addedTags": [
+								"implements DEREncodable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "encrypt(DEREncodable, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.DEREncodable,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)"
+								},
+								{
+									"type": "method",
+									"name": "encrypt(DEREncodable, char[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.DEREncodable,char%5B%5D)"
+								},
+								{
+									"type": "method",
+									"name": "encrypt(DEREncodable, char[], String, AlgorithmParameterSpec, Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.DEREncodable,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)"
+								},
+								{
+									"type": "method",
+									"name": "getKey(Key, Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key,java.security.Provider)",
+									"csr": "JDK-8329419"
+								},
+								{
+									"type": "method",
+									"name": "getKey(char[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(char%5B%5D)",
+									"csr": "JDK-8329419"
+								},
+								{
+									"type": "method",
+									"name": "getKeyPair(Key, Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeyPair(java.security.Key,java.security.Provider)"
+								},
+								{
+									"type": "method",
+									"name": "getKeyPair(char[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeyPair(char%5B%5D)"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "KDFSpi",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/KDFSpi.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
+							"name": "KDF",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/KDF.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "KDFParameters",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/KDFParameters.html",
+							"removedTags": [
+								"preview"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.net.ssl",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/net/ssl/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ExtendedSSLSession",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "exportKeyingMaterialData(String, byte[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialData(java.lang.String,byte%5B%5D,int)",
+									"csr": "JDK-8348370"
+								},
+								{
+									"type": "method",
+									"name": "exportKeyingMaterialKey(String, String, byte[], int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#exportKeyingMaterialKey(java.lang.String,java.lang.String,byte%5B%5D,int)",
+									"csr": "JDK-8348370"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SSLPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/net/ssl/SSLPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.security.auth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/security/auth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "AuthPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/security/auth/AuthPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "PrivateCredentialPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.compiler",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "SourceVersion",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/SourceVersion.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "RELEASE_25",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_25",
+									"csr": "JDK-8343000"
+								},
+								{
+									"type": "field",
+									"name": "RELEASE_26",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_26",
+									"csr": "JDK-8355794"
+								},
+								{
+									"type": "field",
+									"name": "RELEASE_27",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_27"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.desktop",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.applet",
+					"status": "removed",
+					"csr": "JDK-8359058"
+				},
+				{
+					"type": "package",
+					"name": "java.awt",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Robot",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DEFAULT_DELAY",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#DEFAULT_DELAY"
+								},
+								{
+									"type": "field",
+									"name": "DEFAULT_STEP_LENGTH",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#DEFAULT_STEP_LENGTH"
+								},
+								{
+									"type": "method",
+									"name": "click()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#click()"
+								},
+								{
+									"type": "method",
+									"name": "click(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#click(int)"
+								},
+								{
+									"type": "method",
+									"name": "glide(int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#glide(int,int)"
+								},
+								{
+									"type": "method",
+									"name": "glide(int, int, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#glide(int,int,int,int)"
+								},
+								{
+									"type": "method",
+									"name": "glide(int, int, int, int, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#glide(int,int,int,int,int,int)"
+								},
+								{
+									"type": "method",
+									"name": "type(char)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#type(char)"
+								},
+								{
+									"type": "method",
+									"name": "type(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#type(int)"
+								},
+								{
+									"type": "method",
+									"name": "waitForIdle(int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/Robot.html#waitForIdle(int)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.beans",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/beans/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Beans",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/beans/Beans.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "instantiate(ClassLoader, String, BeanContext, AppletInitializer)",
+									"status": "removed",
+									"csr": "JDK-8359058"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AppletInitializer",
+							"status": "removed",
+							"csr": "JDK-8359058"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.imageio.spi",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/spi/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ServiceRegistry",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed",
+									"csr": "JDK-8365409"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.imageio.stream",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/stream/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "FileCacheImageInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed",
+									"csr": "JDK-8364778"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FileImageInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed",
+									"csr": "JDK-8364778"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "FileImageOutputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed",
+									"csr": "JDK-8364778"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "ImageInputStreamImpl",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed",
+									"csr": "JDK-8364778"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "MemoryCacheImageInputStream",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageInputStream.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed",
+									"csr": "JDK-8364778"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.sound",
+					"status": "added",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/sound/package-summary.html",
+					"csr": "JDK-8356200"
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.basic",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "BasicSliderUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "BasicSliderUI()",
+									"status": "removed",
+									"csr": "JDK-8345648"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing.plaf.synth",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthLookAndFeel",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "load(URL)",
+									"status": "removed",
+									"csr": "JDK-8351238"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "SynthPasswordFieldUI",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "installKeyboardActions()",
+									"status": "removed",
+									"csr": "JDK-8354646"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.swing",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "JApplet.AccessibleJApplet",
+							"status": "removed",
+							"csr": "JDK-8359058"
+						},
+						{
+							"type": "class",
+							"name": "JApplet",
+							"status": "removed",
+							"csr": "JDK-8359058"
+						},
+						{
+							"type": "class",
+							"name": "RepaintManager",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/RepaintManager.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "addDirtyRegion(Applet, int, int, int, int)",
+									"status": "removed",
+									"csr": "JDK-8359058"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.logging",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.logging/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.util.logging",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.logging/java/util/logging/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "LoggingPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.logging/java/util/logging/LoggingPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.lang.management",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/java/lang/management/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ManagementPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/java/lang/management/ManagementPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "MemoryMXBean",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/java/lang/management/MemoryMXBean.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getTotalGcCpuTime()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/java/lang/management/MemoryMXBean.html#getTotalGcCpuTime()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management.modelmbean",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/modelmbean/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DescriptorSupport",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "DescriptorSupport(String)",
+									"status": "removed",
+									"csr": "JDK-8359663"
+								},
+								{
+									"type": "method",
+									"name": "toXMLString()",
+									"status": "removed",
+									"csr": "JDK-8359663"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "XMLParseException",
+							"status": "removed",
+							"csr": "JDK-8359663"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management.remote",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/remote/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SubjectDelegationPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/remote/SubjectDelegationPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.management",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MBeanPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/MBeanPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MBeanServerPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/MBeanServerPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "MBeanTrustPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.management/javax/management/MBeanTrustPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.net.http",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.net.http",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "HttpRequest.BodyPublishers",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofFileChannel(FileChannel, long, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFileChannel(java.nio.channels.FileChannel,long,long)",
+									"csr": "JDK-8365804"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HttpRequest",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpRequest.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getOption(HttpOption)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpRequest.html#getOption(java.net.http.HttpOption)",
+									"csr": "JDK-8350588"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HttpResponse.BodyHandlers",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "limiting(HttpResponse.BodyHandler, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#limiting(java.net.http.HttpResponse.BodyHandler,long)",
+									"csr": "JDK-8347904"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HttpResponse.BodySubscribers",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "limiting(HttpResponse.BodySubscriber, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#limiting(java.net.http.HttpResponse.BodySubscriber,long)",
+									"csr": "JDK-8347904"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "HttpResponse.PushPromiseHandler.PushId.Http3PushId",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.PushId.Http3PushId.html",
+							"csr": "JDK-8350588"
+						},
+						{
+							"type": "class",
+							"name": "StreamLimitException",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/StreamLimitException.html",
+							"csr": "JDK-8350588"
+						},
+						{
+							"type": "class",
+							"name": "UnsupportedProtocolVersionException",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/UnsupportedProtocolVersionException.html",
+							"csr": "JDK-8350588"
+						},
+						{
+							"type": "enum",
+							"name": "HttpClient.Version",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpClient.Version.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "HTTP_3",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_3",
+									"csr": "JDK-8350588"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "HttpOption.Http3DiscoveryMode",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpOption.Http3DiscoveryMode.html",
+							"csr": "JDK-8350588"
+						},
+						{
+							"type": "interface",
+							"name": "HttpOption",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpOption.html",
+							"csr": "JDK-8350588"
+						},
+						{
+							"type": "interface",
+							"name": "HttpRequest.Builder",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "setOption(HttpOption, Object)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setOption(java.net.http.HttpOption,java.lang.Object)",
+									"csr": "JDK-8350588"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse.PushPromiseHandler.PushId",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.PushId.html",
+							"csr": "JDK-8350588"
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse.PushPromiseHandler",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "applyPushPromise(HttpRequest, HttpRequest, HttpResponse.PushPromiseHandler.PushId, Function)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId,java.util.function.Function)",
+									"csr": "JDK-8350588"
+								},
+								{
+									"type": "method",
+									"name": "notifyAdditionalPromise(HttpRequest, HttpResponse.PushPromiseHandler.PushId)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#notifyAdditionalPromise(java.net.http.HttpRequest,java.net.http.HttpResponse.PushPromiseHandler.PushId)",
+									"csr": "JDK-8350588"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "HttpResponse",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "connectionLabel()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.net.http/java/net/http/HttpResponse.html#connectionLabel()",
+									"csr": "JDK-8352751"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.security.jgss",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.security.jgss/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.security.auth.kerberos",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.security.jgss/javax/security/auth/kerberos/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DelegationPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.security.jgss/javax/security/auth/kerberos/DelegationPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "ServicePermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.security.jgss/javax/security/auth/kerberos/ServicePermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.sql",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.sql",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SQLPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/SQLPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Types",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Types.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DECFLOAT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Types.html#DECFLOAT"
+								},
+								{
+									"type": "field",
+									"name": "JSON",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Types.html#JSON"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "JDBCType",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/JDBCType.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DECFLOAT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/JDBCType.html#DECFLOAT"
+								},
+								{
+									"type": "field",
+									"name": "JSON",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/JDBCType.html#JSON"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Array",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Array.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Array.html#close()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Blob",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Blob.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Blob.html#close()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Clob",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Clob.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Clob.html#close()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Connection",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Connection.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "enquoteIdentifier(String, boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Connection.html#enquoteIdentifier(java.lang.String,boolean)"
+								},
+								{
+									"type": "method",
+									"name": "enquoteLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Connection.html#enquoteLiteral(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "enquoteNCharLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Connection.html#enquoteNCharLiteral(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "isSimpleIdentifier(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/Connection.html#isSimpleIdentifier(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SQLXML",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/SQLXML.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.sql/java/sql/SQLXML.html#close()"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.xml.crypto",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.xml.crypto.dsig",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "SignatureMethod",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_224",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_224",
+									"csr": "JDK-8345411"
+								},
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_256",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_256",
+									"csr": "JDK-8345411"
+								},
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_384",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_384",
+									"csr": "JDK-8345411"
+								},
+								{
+									"type": "field",
+									"name": "ECDSA_SHA3_512",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA3_512",
+									"csr": "JDK-8345411"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
