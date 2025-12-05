@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+26-2633"
+		"version": "26-ea+27-2778"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -4009,6 +4009,24 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html",
 							"deltas": [
 								{
+									"type": "field",
+									"name": "UNICODE_CASEFOLD_ORDER",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#UNICODE_CASEFOLD_ORDER"
+								},
+								{
+									"type": "method",
+									"name": "compareToFoldCase(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#compareToFoldCase(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "equalsFoldCase(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#equalsFoldCase(java.lang.String)"
+								},
+								{
 									"type": "method",
 									"name": "indexOf(String, int, int)",
 									"status": "added",
@@ -5889,6 +5907,20 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html",
 							"csr": "JDK-8342487"
+						},
+						{
+							"type": "class",
+							"name": "ThreadLocalRandom",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "nextGaussian()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextGaussian()"
+								}
+							]
 						},
 						{
 							"type": "enum",
@@ -9383,6 +9415,172 @@
 							"addedTags": [
 								"deprecated",
 								"forRemoval"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.sql",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "java.sql",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "SQLPermission",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/SQLPermission.html",
+							"addedTags": [
+								"deprecated",
+								"forRemoval"
+							]
+						},
+						{
+							"type": "class",
+							"name": "Types",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DECFLOAT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#DECFLOAT"
+								},
+								{
+									"type": "field",
+									"name": "JSON",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#JSON"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "JDBCType",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/JDBCType.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "DECFLOAT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/JDBCType.html#DECFLOAT"
+								},
+								{
+									"type": "field",
+									"name": "JSON",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/JDBCType.html#JSON"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Array",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Array.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Array.html#close()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Blob",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Blob.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Blob.html#close()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Clob",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Clob.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Clob.html#close()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "Connection",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "enquoteIdentifier(String, boolean)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteIdentifier(java.lang.String,boolean)"
+								},
+								{
+									"type": "method",
+									"name": "enquoteLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteLiteral(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "enquoteNCharLiteral(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteNCharLiteral(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "isSimpleIdentifier(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#isSimpleIdentifier(java.lang.String)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SQLXML",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/SQLXML.html",
+							"addedTags": [
+								"implements AutoCloseable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "close()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/SQLXML.html#close()"
+								}
 							]
 						}
 					]

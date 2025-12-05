@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+26-2633"
+		"version": "26-ea+27-2778"
 	},
 	"order": 1.1,
 	"deltas": [
@@ -14895,6 +14895,12 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#CASE_INSENSITIVE_ORDER"
 						},
 						{
+							"type": "field",
+							"name": "UNICODE_CASEFOLD_ORDER",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#UNICODE_CASEFOLD_ORDER"
+						},
+						{
 							"type": "method",
 							"name": "String(StringBuilder)",
 							"status": "added",
@@ -14950,6 +14956,12 @@
 						},
 						{
 							"type": "method",
+							"name": "compareToFoldCase(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#compareToFoldCase(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "compareToIgnoreCase(String)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#compareToIgnoreCase(java.lang.String)"
@@ -14978,6 +14990,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#describeConstable()",
 							"csr": "JDK-8202031"
+						},
+						{
+							"type": "method",
+							"name": "equalsFoldCase(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#equalsFoldCase(java.lang.String)"
 						},
 						{
 							"type": "method",
@@ -21588,6 +21606,12 @@
 						},
 						{
 							"type": "field",
+							"name": "DECFLOAT",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#DECFLOAT"
+						},
+						{
+							"type": "field",
 							"name": "DISTINCT",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#DISTINCT"
@@ -21597,6 +21621,12 @@
 							"name": "JAVA_OBJECT",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#JAVA_OBJECT"
+						},
+						{
+							"type": "field",
+							"name": "JSON",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#JSON"
 						},
 						{
 							"type": "field",
@@ -22437,6 +22467,24 @@
 						},
 						{
 							"type": "method",
+							"name": "enquoteIdentifier(String, boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteIdentifier(java.lang.String,boolean)"
+						},
+						{
+							"type": "method",
+							"name": "enquoteLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteLiteral(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "enquoteNCharLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteNCharLiteral(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "getClientInfo()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#getClientInfo()"
@@ -22470,6 +22518,12 @@
 							"name": "getTypeMap()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#getTypeMap()"
+						},
+						{
+							"type": "method",
+							"name": "isSimpleIdentifier(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#isSimpleIdentifier(java.lang.String)"
 						},
 						{
 							"type": "method",

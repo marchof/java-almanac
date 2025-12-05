@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+26-2633"
+		"version": "26-ea+27-2778"
 	},
 	"order": 1.4,
 	"deltas": [
@@ -12007,6 +12007,12 @@
 					],
 					"deltas": [
 						{
+							"type": "field",
+							"name": "UNICODE_CASEFOLD_ORDER",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#UNICODE_CASEFOLD_ORDER"
+						},
+						{
 							"type": "method",
 							"name": "String(StringBuilder)",
 							"status": "added",
@@ -12067,6 +12073,12 @@
 						},
 						{
 							"type": "method",
+							"name": "compareToFoldCase(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#compareToFoldCase(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "contains(CharSequence)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#contains(java.lang.CharSequence)"
@@ -12083,6 +12095,12 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#describeConstable()",
 							"csr": "JDK-8202031"
+						},
+						{
+							"type": "method",
+							"name": "equalsFoldCase(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/String.html#equalsFoldCase(java.lang.String)"
 						},
 						{
 							"type": "method",
@@ -19153,6 +19171,16 @@
 				},
 				{
 					"type": "class",
+					"name": "SQLPermission",
+					"status": "modified",
+					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/SQLPermission.html",
+					"addedTags": [
+						"deprecated",
+						"forRemoval"
+					]
+				},
+				{
+					"type": "class",
 					"name": "SQLRecoverableException",
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/SQLRecoverableException.html"
@@ -19302,6 +19330,18 @@
 					"deltas": [
 						{
 							"type": "field",
+							"name": "DECFLOAT",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#DECFLOAT"
+						},
+						{
+							"type": "field",
+							"name": "JSON",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#JSON"
+						},
+						{
+							"type": "field",
 							"name": "LONGNVARCHAR",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Types.html#LONGNVARCHAR"
@@ -19383,9 +19423,18 @@
 				{
 					"type": "interface",
 					"name": "Array",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Array.html",
+					"addedTags": [
+						"implements AutoCloseable"
+					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Array.html#close()"
+						},
 						{
 							"type": "method",
 							"name": "free()",
@@ -19397,9 +19446,18 @@
 				{
 					"type": "interface",
 					"name": "Blob",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Blob.html",
+					"addedTags": [
+						"implements AutoCloseable"
+					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Blob.html#close()"
+						},
 						{
 							"type": "method",
 							"name": "free()",
@@ -19677,9 +19735,18 @@
 				{
 					"type": "interface",
 					"name": "Clob",
-					"status": "notmodified",
+					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Clob.html",
+					"addedTags": [
+						"implements AutoCloseable"
+					],
 					"deltas": [
+						{
+							"type": "method",
+							"name": "close()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Clob.html#close()"
+						},
 						{
 							"type": "method",
 							"name": "free()",
@@ -19766,6 +19833,24 @@
 						},
 						{
 							"type": "method",
+							"name": "enquoteIdentifier(String, boolean)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteIdentifier(java.lang.String,boolean)"
+						},
+						{
+							"type": "method",
+							"name": "enquoteLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteLiteral(java.lang.String)"
+						},
+						{
+							"type": "method",
+							"name": "enquoteNCharLiteral(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#enquoteNCharLiteral(java.lang.String)"
+						},
+						{
+							"type": "method",
 							"name": "getClientInfo()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#getClientInfo()"
@@ -19787,6 +19872,12 @@
 							"name": "getSchema()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#getSchema()"
+						},
+						{
+							"type": "method",
+							"name": "isSimpleIdentifier(String)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk26/docs/api/java.sql/java/sql/Connection.html#isSimpleIdentifier(java.lang.String)"
 						},
 						{
 							"type": "method",
