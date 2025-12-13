@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+1-3"
+		"version": "27-ea+2-79"
 	},
 	"order": 18.0,
 	"deltas": [
@@ -4427,6 +4427,19 @@
 							]
 						},
 						{
+							"type": "class",
+							"name": "ThreadPoolExecutor",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed"
+								}
+							]
+						},
+						{
 							"type": "enum",
 							"name": "Future.State",
 							"status": "added",
@@ -5017,6 +5030,14 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/EnumSet.html",
 							"addedTags": [
 								"sealed"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "spliterator()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/EnumSet.html#spliterator()"
+								}
 							]
 						},
 						{

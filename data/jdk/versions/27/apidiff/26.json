@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "26",
 		"vendor": "open",
-		"version": "26-ea+27-2778"
+		"version": "26-ea+28-2790"
 	},
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+1-3"
+		"version": "27-ea+2-79"
 	},
 	"order": 26.0,
 	"deltas": [
@@ -58,6 +58,49 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/ClassFileFormatVersion.html#RELEASE_27",
 									"csr": "JDK-8371068"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util.concurrent",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "ThreadPoolExecutor",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "finalize()",
+									"status": "removed"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.util",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "EnumSet",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/EnumSet.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "spliterator()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/EnumSet.html#spliterator()"
 								}
 							]
 						}
