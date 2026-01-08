@@ -18,14 +18,14 @@
         {{- with .documentation.api }}
           <a href="{{ . }}">API</a>
         {{- end }}
-        {{- with .documentation.lang -}}
+        {{- with .documentation.lang }}
           | <a href="{{ . }}">Lang</a>
         {{- end }}
-        {{- with .documentation.vm -}}
+        {{- with .documentation.vm }}
           | <a href="{{ . }}">VM</a>
         {{- end }}
-        {{- with .documentation.notes -}}
-          | <a href="{{ . }}">Notes</a>
+        {{- with .documentation.tools }}
+          | <a href="{{ . }}">Tools</a>
         {{- end }}
       </td>
       <td>
@@ -40,7 +40,7 @@
           {{- end }}
         {{- end }}
         {{- if $scratch.Get "download" }}
-          <a href="jdk/download/#version={{ .version }}&amp;type=jdk">JDK</a>|
+          <a href="jdk/download/#version={{ .version }}&amp;type=jdk">JDK</a> |
           <a href="jdk/download/#version={{ .version }}&amp;type=jre">JRE</a>
         {{- end }}
       </td>

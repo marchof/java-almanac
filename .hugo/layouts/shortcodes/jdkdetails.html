@@ -56,17 +56,20 @@
     <tr>
       <th>Documentation</th>
       <td>
-        {{- with .documentation.notes }}
-          <a href="{{ . }}">Release Notes</a>,
-        {{- end }}
-        {{- with .documentation.lang }}
-          <a href="{{ . }}">Language Spec</a>,
-        {{- end }}
-        {{- with .documentation.vm }}
-          <a href="{{ . }}">VM Spec</a>,
-        {{- end }}
-        {{- with .documentation.api }}
+        {{- with .documentation.api -}}
           <a href="{{ . }}">JavaDoc</a>
+        {{- end }}
+        {{- with .documentation.lang -}}
+          , <a href="{{ . }}">Language Spec</a>
+        {{- end }}
+        {{- with .documentation.vm -}}
+          , <a href="{{ . }}">VM Spec</a>
+        {{- end }}
+        {{- with .documentation.tools -}}
+          , <a href="{{ . }}">Tools</a>
+        {{- end }}
+        {{- with .documentation.notes -}}
+          , <a href="{{ . }}">Release Notes</a>
         {{- end }}
       </td>
     </tr>

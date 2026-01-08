@@ -61,6 +61,8 @@ public class GetJdkVersion extends GetOperationDefinition {
 						.setProperty("lang", new Schema() //
 								.setType("string")) //
 						.setProperty("api", new Schema() //
+								.setType("string")) //
+						.setProperty("tools", new Schema() //
 								.setType("string"))) //
 				.setProperty("scm", new Schema() //
 						.setType("array") //
