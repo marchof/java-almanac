@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+3-190"
+		"version": "27-ea+4-306"
 	},
 	"order": 17.0,
 	"deltas": [
@@ -4872,7 +4872,8 @@
 								{
 									"type": "method",
 									"name": "finalize()",
-									"status": "removed"
+									"status": "removed",
+									"csr": "JDK-8371856"
 								}
 							]
 						},
@@ -5473,7 +5474,8 @@
 									"type": "method",
 									"name": "spliterator()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/EnumSet.html#spliterator()"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/EnumSet.html#spliterator()",
+									"csr": "JDK-8179918"
 								}
 							]
 						},
