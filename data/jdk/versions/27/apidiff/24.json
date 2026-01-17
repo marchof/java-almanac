@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+4-306"
+		"version": "27-ea+5-416"
 	},
 	"order": 24.0,
 	"deltas": [
@@ -250,6 +250,28 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.classfile.instruction",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/instruction/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "IncrementInstruction",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/instruction/IncrementInstruction.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(Opcode, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/instruction/IncrementInstruction.html#of(java.lang.classfile.Opcode,int,int)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.classfile",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/package-summary.html",
@@ -316,6 +338,48 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html",
 							"addedTags": [
 								"final"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.foreign",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "MemorySegment",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "copy(String, Charset, int, MemorySegment, long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#copy(java.lang.String,java.nio.charset.Charset,int,java.lang.foreign.MemorySegment,long,int)"
+								},
+								{
+									"type": "method",
+									"name": "getString(long, Charset, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset,long)"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SegmentAllocator",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocateFrom(String, Charset, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset,int,int)"
+								}
 							]
 						}
 					]

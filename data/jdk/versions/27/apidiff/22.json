@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+4-306"
+		"version": "27-ea+5-416"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -1569,6 +1569,14 @@
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/instruction/IncrementInstruction.html",
 							"removedTags": [
 								"preview"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(Opcode, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/classfile/instruction/IncrementInstruction.html#of(java.lang.classfile.Opcode,int,int)"
+								}
 							]
 						},
 						{
@@ -7191,10 +7199,36 @@
 							"deltas": [
 								{
 									"type": "method",
+									"name": "copy(String, Charset, int, MemorySegment, long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#copy(java.lang.String,java.nio.charset.Charset,int,java.lang.foreign.MemorySegment,long,int)"
+								},
+								{
+									"type": "method",
+									"name": "getString(long, Charset, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset,long)"
+								},
+								{
+									"type": "method",
 									"name": "maxByteAlignment()",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#maxByteAlignment()",
 									"csr": "JDK-8330338"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "SegmentAllocator",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/SegmentAllocator.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allocateFrom(String, Charset, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset,int,int)"
 								}
 							]
 						},

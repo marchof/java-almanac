@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+4-306"
+		"version": "27-ea+5-416"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -862,6 +862,12 @@
 								},
 								{
 									"type": "method",
+									"name": "copy(String, Charset, int, MemorySegment, long, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#copy(java.lang.String,java.nio.charset.Charset,int,java.lang.foreign.MemorySegment,long,int)"
+								},
+								{
+									"type": "method",
 									"name": "copyFrom(MemorySegment)",
 									"status": "modified",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#copyFrom(java.lang.foreign.MemorySegment)",
@@ -1050,6 +1056,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset)",
 									"csr": "JDK-8312523"
+								},
+								{
+									"type": "method",
+									"name": "getString(long, Charset, long)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/MemorySegment.html#getString(long,java.nio.charset.Charset,long)"
 								},
 								{
 									"type": "method",
@@ -1522,6 +1534,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset)",
 									"csr": "JDK-8312523"
+								},
+								{
+									"type": "method",
+									"name": "allocateFrom(String, Charset, int, int)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/foreign/SegmentAllocator.html#allocateFrom(java.lang.String,java.nio.charset.Charset,int,int)"
 								},
 								{
 									"type": "method",
