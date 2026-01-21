@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25.0.1+8-27"
+		"version": "25.0.2+10-69"
 	},
 	"order": 15.0,
 	"deltas": [
@@ -10358,6 +10358,12 @@
 									"status": "added",
 									"javadoc": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html#installDefaults()",
 									"csr": "JDK-6852577"
+								},
+								{
+									"type": "method",
+									"name": "installKeyboardActions()",
+									"status": "removed",
+									"csr": "JDK-8354646"
 								}
 							]
 						},

@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "25",
 		"vendor": "open",
-		"version": "25.0.1+8-27"
+		"version": "25.0.2+10-69"
 	},
 	"target": {
 		"feature": "27",
@@ -1194,28 +1194,6 @@
 									"name": "finalize()",
 									"status": "removed",
 									"csr": "JDK-8364778"
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "package",
-					"name": "javax.swing.plaf.synth",
-					"status": "notmodified",
-					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
-					"deltas": [
-						{
-							"type": "class",
-							"name": "SynthPasswordFieldUI",
-							"status": "notmodified",
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html",
-							"deltas": [
-								{
-									"type": "method",
-									"name": "installKeyboardActions()",
-									"status": "removed",
-									"csr": "JDK-8354646"
 								}
 							]
 						}
