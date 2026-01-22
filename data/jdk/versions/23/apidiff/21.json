@@ -2,7 +2,7 @@
 	"base": {
 		"feature": "21",
 		"vendor": "tem",
-		"version": "21.0.9+10-LTS"
+		"version": "21.0.10+7-LTS"
 	},
 	"target": {
 		"feature": "23",
@@ -3020,6 +3020,20 @@
 					"status": "notmodified",
 					"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "SynthPasswordFieldUI",
+							"status": "notmodified",
+							"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "installKeyboardActions()",
+									"status": "added",
+									"javadoc": "https://docs.oracle.com/en/java/javase/23/docs/api/java.desktop/javax/swing/plaf/synth/SynthPasswordFieldUI.html#installKeyboardActions()"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "SynthTreeUI",
