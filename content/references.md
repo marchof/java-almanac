@@ -17,3 +17,4 @@ title: References
 * [Inside the Java Platform Group, Java Platform Group](https://inside.java/)
 * [foojay.io - Friends of OpenJDK, Azul Systems](https://foojay.io/)
 * [Java Modules in Maven Central, Christian Stein](https://github.com/sormuras/modules)
+* [Java Version Quiz, Johannes Bechberger](https://mostlynerdless.de/java-game/)
