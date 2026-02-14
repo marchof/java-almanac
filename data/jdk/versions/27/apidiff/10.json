@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+8-671"
+		"version": "27-ea+9-785"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -2731,6 +2731,12 @@
 								},
 								{
 									"type": "method",
+									"name": "asinh(double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#asinh(double)"
+								},
+								{
+									"type": "method",
 									"name": "ceilDiv(int, int)",
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#ceilDiv(int,int)",
@@ -3230,6 +3236,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#absExact(long)",
 									"csr": "JDK-8241805"
+								},
+								{
+									"type": "method",
+									"name": "asinh(double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#asinh(double)"
 								},
 								{
 									"type": "method",
@@ -6593,6 +6605,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetAttributes(java.lang.String)",
 									"csr": "JDK-8275748"
+								},
+								{
+									"type": "method",
+									"name": "engineGetCreationInstant(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationInstant(java.lang.String)"
 								}
 							]
 						},
@@ -6608,6 +6626,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStore.html#getAttributes(java.lang.String)",
 									"csr": "JDK-8275748"
+								},
+								{
+									"type": "method",
+									"name": "getCreationInstant(String)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStore.html#getCreationInstant(java.lang.String)"
 								}
 							]
 						},
