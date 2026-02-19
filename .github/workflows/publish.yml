@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
     - name: Setup HUGO
-      uses: peaceiris/actions-hugo@v3
+      uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
       with:
         hugo-version: '0.156.0'
     - name: Render
@@ -26,7 +26,7 @@ jobs:
       run: python linkchecker.py public /
     - name: Configure AWS Credentials
       if: ${{ github.ref == 'refs/heads/master' }}
-      uses: aws-actions/configure-aws-credentials@v4.1.0
+      uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7 # v6.0.0
       with:
         role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
         aws-region: eu-central-1
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
     - name: Configure AWS Credentials
       if: ${{ github.ref == 'refs/heads/master' }}
       uses: aws-actions/configure-aws-credentials@v4.1.0
@@ -53,7 +53,7 @@ jobs:
         role-to-assume: arn:aws:iam::830482727482:role/github-workflow-java-almanac
         aws-region: eu-central-1
     - name: Set up Java
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
       with:
         distribution: temurin
         java-version: 21
