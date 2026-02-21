@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+9-785"
+		"version": "27-ea+10-857"
 	},
 	"order": 10.0,
 	"deltas": [
@@ -2731,9 +2731,16 @@
 								},
 								{
 									"type": "method",
+									"name": "acosh(double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#acosh(double)"
+								},
+								{
+									"type": "method",
 									"name": "asinh(double)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#asinh(double)"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#asinh(double)",
+									"csr": "JDK-8376469"
 								},
 								{
 									"type": "method",
@@ -3239,9 +3246,16 @@
 								},
 								{
 									"type": "method",
+									"name": "acosh(double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#acosh(double)"
+								},
+								{
+									"type": "method",
 									"name": "asinh(double)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#asinh(double)"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#asinh(double)",
+									"csr": "JDK-8376469"
 								},
 								{
 									"type": "method",
@@ -6610,7 +6624,8 @@
 									"type": "method",
 									"name": "engineGetCreationInstant(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationInstant(java.lang.String)"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationInstant(java.lang.String)",
+									"csr": "JDK-8375012"
 								}
 							]
 						},
@@ -6631,7 +6646,8 @@
 									"type": "method",
 									"name": "getCreationInstant(String)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStore.html#getCreationInstant(java.lang.String)"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStore.html#getCreationInstant(java.lang.String)",
+									"csr": "JDK-8375012"
 								}
 							]
 						},
@@ -12220,6 +12236,20 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Arc2D",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/Arc2D.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "getBounds()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/Arc2D.html#getBounds()"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "CubicCurve2D.Double",

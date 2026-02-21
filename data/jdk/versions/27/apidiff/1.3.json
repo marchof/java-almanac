@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+9-785"
+		"version": "27-ea+10-857"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -1964,6 +1964,12 @@
 							"name": "equals(Object)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/Arc2D.html#equals(java.lang.Object)"
+						},
+						{
+							"type": "method",
+							"name": "getBounds()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/Arc2D.html#getBounds()"
 						},
 						{
 							"type": "method",
@@ -13817,6 +13823,12 @@
 						},
 						{
 							"type": "method",
+							"name": "acosh(double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#acosh(double)"
+						},
+						{
+							"type": "method",
 							"name": "addExact(int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#addExact(int,int)"
@@ -13831,7 +13843,8 @@
 							"type": "method",
 							"name": "asinh(double)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#asinh(double)"
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#asinh(double)",
+							"csr": "JDK-8376469"
 						},
 						{
 							"type": "method",
@@ -14972,6 +14985,12 @@
 						},
 						{
 							"type": "method",
+							"name": "acosh(double)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#acosh(double)"
+						},
+						{
+							"type": "method",
 							"name": "addExact(int, int)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#addExact(int,int)"
@@ -14986,7 +15005,8 @@
 							"type": "method",
 							"name": "asinh(double)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#asinh(double)"
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#asinh(double)",
+							"csr": "JDK-8376469"
 						},
 						{
 							"type": "method",
@@ -20588,7 +20608,8 @@
 							"type": "method",
 							"name": "engineGetCreationInstant(String)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationInstant(java.lang.String)"
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationInstant(java.lang.String)",
+							"csr": "JDK-8375012"
 						},
 						{
 							"type": "method",
@@ -20645,7 +20666,8 @@
 							"type": "method",
 							"name": "getCreationInstant(String)",
 							"status": "added",
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStore.html#getCreationInstant(java.lang.String)"
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyStore.html#getCreationInstant(java.lang.String)",
+							"csr": "JDK-8375012"
 						},
 						{
 							"type": "method",
