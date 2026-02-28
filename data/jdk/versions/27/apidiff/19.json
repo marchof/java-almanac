@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+10-857"
+		"version": "27-ea+11-968"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -3680,7 +3680,8 @@
 									"type": "method",
 									"name": "acosh(double)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#acosh(double)"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#acosh(double)",
+									"csr": "JDK-8376782"
 								},
 								{
 									"type": "method",
@@ -3688,6 +3689,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#asinh(double)",
 									"csr": "JDK-8376469"
+								},
+								{
+									"type": "method",
+									"name": "atanh(double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Math.html#atanh(double)"
 								},
 								{
 									"type": "method",
@@ -3919,7 +3926,8 @@
 									"type": "method",
 									"name": "acosh(double)",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#acosh(double)"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#acosh(double)",
+									"csr": "JDK-8376782"
 								},
 								{
 									"type": "method",
@@ -3927,6 +3935,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#asinh(double)",
 									"csr": "JDK-8376469"
+								},
+								{
+									"type": "method",
+									"name": "atanh(double)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/StrictMath.html#atanh(double)"
 								},
 								{
 									"type": "method",
@@ -7820,7 +7834,8 @@
 									"type": "method",
 									"name": "getBounds()",
 									"status": "added",
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/Arc2D.html#getBounds()"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/java/awt/geom/Arc2D.html#getBounds()",
+									"csr": "JDK-8374859"
 								}
 							]
 						}
