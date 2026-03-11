@@ -10,9 +10,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>25</maven.compiler.release>
 
-		<jackson.version>2.18.3</jackson.version>
-		<jsonpath.version>2.9.0</jsonpath.version>
-		<awssdk.version>2.31.12</awssdk.version>
+		<jackson.version>2.21.1</jackson.version>
+		<jsonpath.version>3.0.0</jsonpath.version>
+		<awssdk.version>2.42.10</awssdk.version>
 		<slf4j.version>2.0.17</slf4j.version>
 		<openapi4j.version>1.0.7</openapi4j.version>
 		
@@ -61,12 +61,12 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
+				<version>3.15.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>3.6.3</version>
 				<configuration>
 					<mainClass>io.javaalmanac.data.ApiGenerator</mainClass>
 				</configuration>
