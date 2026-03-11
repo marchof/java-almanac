@@ -75,7 +75,7 @@ public interface JsonProcessor extends BiFunction<JsonNode, ProcessingContext, J
 		return (data, ctx) -> {
 			var expr = compileWithParameters(selector, ctx);
 			var input = apply(data, ctx);
-			var result = expr.<JsonNode>map(input.deepCopy(), (n, conf) -> mapper.apply((JsonNode) n, ctx), CONFIG);
+			var result = expr.<JsonNode>map(input.deepCopy(), (n, _) -> mapper.apply((JsonNode) n, ctx), CONFIG);
 			// In case of no match JsonPath returns an empty result.
 			// But we wand the unmodified value instead:
 			return result.isEmpty() ? input : result;
@@ -93,7 +93,7 @@ public interface JsonProcessor extends BiFunction<JsonNode, ProcessingContext, J
 	// Factories Methods
 
 	public static JsonProcessor root() {
-		return (data, ctx) -> {
+		return (_, ctx) -> {
 			return ctx.getRootData();
 		};
 	}
