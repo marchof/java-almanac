@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+16-1489"
+		"version": "27-ea+17-1556"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -9728,6 +9728,42 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Locale.html#caseFoldLanguageTag(java.lang.String)",
 									"csr": "JDK-8305623"
+								},
+								{
+									"type": "method",
+									"name": "getDisplayCountry()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Locale.html#getDisplayCountry()",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getDisplayLanguage()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Locale.html#getDisplayLanguage()",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getDisplayName()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Locale.html#getDisplayName()",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
+									"name": "getDisplayVariant()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Locale.html#getDisplayVariant()",
+									"removedTags": [
+										"final"
+									]
 								},
 								{
 									"type": "method",
