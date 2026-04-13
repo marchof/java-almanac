@@ -1,12 +1,12 @@
 {{- $version := index .Params 0 }}
 {{- $inner := .Inner }}
-{{- with (index $.Site.Data.jdk.versions $version) }}
+{{- with (index hugo.Data.jdk.versions $version) }}
 <div style="overflow-x:auto;">
 <table>
   <tbody>
     <tr>
       <th>Status</th>
-      <td>{{ index $.Site.Data.jdk.status .status }}</td>
+      <td>{{ index hugo.Data.jdk.status .status }}</td>
     </tr>
     <tr>
       <th>Release Date</th>
@@ -101,8 +101,8 @@ Here are all new features in {{ .name }} by category. There is also of list of <
 
 {{- end }}
 
-{{- $allfeatures := index (index $.Site.Data.jdk.versions $version) "features" }}
-{{- range sort $.Site.Data.jdk.featurecategories "order" }}
+{{- $allfeatures := index (index hugo.Data.jdk.versions $version) "features" }}
+{{- range sort hugo.Data.jdk.featurecategories "order" }}
   {{- $currenttitle := .title }}
   {{- with where $allfeatures "category" .id }}
     <h3>{{ $currenttitle }}</h3>
@@ -139,7 +139,7 @@ Here are all new features in {{ .name }} by category. There is also of list of <
     </tr>
   </thead>
   <tbody>
-  {{- range $.Page.Site.Data.jdk.vendors }}
+  {{- range hugo.Data.jdk.vendors }}
     {{- $vendor := . }}
     {{- range .products }}
     {{- $product := . }}

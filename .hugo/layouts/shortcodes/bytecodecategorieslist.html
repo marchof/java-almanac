@@ -1,4 +1,4 @@
-{{- range sort $.Site.Data.bytecode.categories "order" }}
+{{- range sort hugo.Data.bytecode.categories "order" }}
 {{- $currentcategory := .id }} 
   <h2>{{ .title }}</h2>
   <p>{{ .description }}</p>
@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      {{- range sort $.Site.Data.bytecode.opcodes "mnemonic" }}
+      {{- range sort hugo.Data.bytecode.opcodes "mnemonic" }}
       {{- if eq .category $currentcategory }}
       <tr>
         <td><a href="op/{{ .mnemonic }}/"><code>{{ .mnemonic }}</code></a></td>

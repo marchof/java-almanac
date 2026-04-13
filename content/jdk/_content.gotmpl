@@ -1,4 +1,4 @@
-{{ range $.Site.Data.jdk.versions }}
+{{ range hugo.Data.jdk.versions }}
   {{ range $_, $diff := .apidiff }}
     {{ $.AddPage ( dict "path"   ( printf "%s/apidiff/%s" $diff.target.feature $diff.base.feature ) 
                         "title"  ( printf "New APIs in Java %s" $diff.target.feature )

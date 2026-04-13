@@ -1,18 +1,18 @@
-{{ $jdkversions := $.Site.Data.jdk.versions }}
+{{ $jdkversions := hugo.Data.jdk.versions }}
 
 <ul>
 
 <li>All JDK versions have valid status.</li>
 <ul>
 {{ range $jdkversions }}
-  {{ if not (index $.Site.Data.jdk.status .status) }}{{ errorf "Unknown Status %s" .status }}{{ end }}
+  {{ if not (index hugo.Data.jdk.status .status) }}{{ errorf "Unknown Status %s" .status }}{{ end }}
   <li>{{ .version }} / {{ .status }} &check;</li>
 {{ end }}
 </ul>
 
 <li>All products of all vendors have valid JDK version references.</li>
 <ul>
-{{ range $.Page.Site.Data.jdk.vendors }}
+{{ range hugo.Data.jdk.vendors }}
   {{ $vendorname := .name }}
   {{ range .products }}
     {{ range .versions }}
@@ -27,7 +27,7 @@
 <ul>
 {{ range $jdkversions }}
   {{ range .features }}
-    {{ if not (index $.Page.Site.Data.jdk.featurecategories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
+    {{ if not (index hugo.Data.jdk.featurecategories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
     <li>{{ .title }} &check;</li>
   {{ end }}
 {{ end }}
@@ -73,8 +73,8 @@
 
 <li>All bytecode opcodes have valid categories.</li>
 <ul>
-{{ range $.Page.Site.Data.bytecode.opcodes }}
-  {{ if not (index $.Page.Site.Data.bytecode.categories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
+{{ range hugo.Data.bytecode.opcodes }}
+  {{ if not (index hugo.Data.bytecode.categories .category) }}{{ errorf "Unknown category %s" .category }}{{ end }}
   <li>{{ .mnemonic }} is {{ .category }} &check;</li>
 {{ end }}
 </ul>

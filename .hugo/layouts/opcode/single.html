@@ -1,6 +1,6 @@
 {{- partial "header.html" . }}
 {{- $opcode := .Params.Opcode }}
-{{- with (index $.Site.Data.bytecode.opcodes $opcode) }}
+{{- with (index hugo.Data.bytecode.opcodes $opcode) }}
 
 <h1>Opcode <code>{{ .mnemonic }}</code></h1>
 
@@ -12,7 +12,7 @@
   <tbody>
     <tr>
       <th>Category</th>
-      <td>{{ (index $.Site.Data.bytecode.categories .category).title }}</td>
+      <td>{{ (index hugo.Data.bytecode.categories .category).title }}</td>
     </tr>
     <tr>
       <th>Opcode dec</th>

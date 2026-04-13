@@ -52,7 +52,7 @@
 {{- $targetversion := .Params.Targetversion }}
 {{- $baseversion := .Params.Baseversion }}
 
-{{- with (index (index (index $.Site.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
+{{- with (index (index (index hugo.Data.jdk.versions $targetversion) "apidiff") $baseversion) }}
 
 <p>
   Comparing <a href="../../../{{ .target.feature }}/">Java {{ .target.feature }}</a> ({{ .target.version }}-{{ .target.vendor }})

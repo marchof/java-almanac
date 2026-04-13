@@ -10,10 +10,10 @@
     </tr>
   </thead>
   <tbody>
-    {{- range sort $.Site.Data.jdk.versions "ga" "desc" }}
+    {{- range sort hugo.Data.jdk.versions "ga" "desc" }}
     <tr>
       <td><a href="jdk/{{ .version }}/">{{ .name }}</a></td>
-      <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index $.Site.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
+      <td>{{ with .status }}<span class="tag status-{{ . }}" title="{{ index hugo.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
       <td>
         {{- with .documentation.api }}
           <a href="{{ . }}">API</a>
@@ -32,7 +32,7 @@
         {{- $version := .version }}
         {{- $scratch := newScratch }}
         {{- $scratch.Set "download" false }}
-        {{- range $.Page.Site.Data.jdk.vendors }}
+        {{- range hugo.Data.jdk.vendors }}
           {{- range .products }}
             {{- if and .foojaydownload (in .versions $version) }}
               {{- $scratch.Set "download" true }}

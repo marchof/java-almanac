@@ -1,5 +1,5 @@
 {{- $version := . }}
-{{- $jdk := index site.Data.jdk.versions $version }}
+{{- $jdk := index hugo.Data.jdk.versions $version }}
 {{- $newerlts := slice }}
 {{- $newerltshtml := slice }}
 {{- $newerrel := slice }}
@@ -7,7 +7,7 @@
 {{- $newerdev := slice }}
 {{- $newerdevhtml := slice }}
 
-{{- range sort site.Data.jdk.versions "ga" "asc" }}
+{{- range sort hugo.Data.jdk.versions "ga" "asc" }}
   {{- if gt .ga $jdk.ga }}
     {{- if eq .status "LTS" }}
       {{- $newerlts = $newerlts | append . }}

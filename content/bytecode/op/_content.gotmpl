@@ -1,4 +1,4 @@
-{{ range $opcode, $value := $.Site.Data.bytecode.opcodes }}
+{{ range $opcode, $value := hugo.Data.bytecode.opcodes }}
   {{ $.AddPage ( dict "path"   $opcode
                       "title"  ( printf "Opcode %s" $value.mnemonic )
                       "type"   "opcode"
