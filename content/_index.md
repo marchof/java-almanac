@@ -12,6 +12,7 @@ Systematic collection of information about the history and the future of Java.
 ## Java Resources
 
 * [JDK Releases](jdk/)
+* [JDK Updates](updates/)
 * [Java Bytecode](bytecode/)
 * [Features](features/)
 * [Snippets of Modern Java](snippets/)

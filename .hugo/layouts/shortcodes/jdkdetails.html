@@ -81,6 +81,15 @@
         {{- end }}
       </td>
     </tr>
+    {{- if .updates }}
+    {{- $giturl := (index .scm 0).url }}
+    <tr>
+      <th>OpenJDK Updates</th>
+      <td>
+      {{- range .updates }}<div>{{ .date }}: <a href="{{ $giturl }}/releases/tag/{{ .tag }}" title="Tag {{ .tag }}">{{ .version }}</a></div>{{ end -}}
+      </td>
+    </tr>
+    {{- end }}
   </tbody>
 </table>
 
