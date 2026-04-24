@@ -76,6 +76,18 @@ public class GetJdkVersion extends GetOperationDefinition {
 										.setType("string")) //
 								.addRequiredField("type") //
 								.addRequiredField("url"))) //
+				.setProperty("updates", new Schema() //
+						.setType("array") //
+						.setItemsSchema(new Schema() //
+								.setType("object") //
+								.setProperty("version", new Schema() //
+										.setType("string")) //
+								.setProperty("date", new Schema() //
+										.setType("string")) //
+								.setProperty("tag", new Schema() //
+										.setType("string")) //
+								.addRequiredField("version") //
+								.addRequiredField("date"))) //
 				.setProperty("features", new Schema() //
 						.setType("array") //
 						.setItemsSchema(new Schema() //
@@ -138,7 +150,7 @@ public class GetJdkVersion extends GetOperationDefinition {
 	@Override
 	public JsonProcessor getContentResolver() {
 		return root() //
-				.select("$.jdk.versions.[`version`].['version', 'name', 'ga', 'eol', 'umbrellajsr', 'latestversion', 'status', 'bytecode', 'unicode', 'documentation', 'scm', 'features']") //
+				.select("$.jdk.versions.[`version`].['version', 'name', 'ga', 'eol', 'umbrellajsr', 'latestversion', 'status', 'bytecode', 'unicode', 'documentation', 'scm', 'updates', 'features']") //
 				.map("$.features.*.refs.*", this::addFeatureRefHref) //
 				.set("apidiffversions", GetJdkVersionApiDiffList.BASE_VERSIONS) //
 				.set("vendors", VENDOR_PROCESSOR);
