@@ -1,0 +1,6 @@
+<ul>
+  {{- range partial "latestupdates" }}
+  <li>{{ .date }} &rarr; <a href="jdk/{{ .release.version }}/">{{ .version }}</a></li>
+  {{- end }}
+  <li><a href="updates/">all updates ...</a></li>
+</ul>

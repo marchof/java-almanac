@@ -1,14 +1,3 @@
-{{- $allupdates := slice }}
-{{- range hugo.Data.jdk.versions }}
-  {{- $release := . }}
-  {{- if .updates }}
-    {{- $giturl := (index .scm 0).url }}
-    {{- range .updates }}
-      {{- $allupdates = $allupdates | append ( dict "release" $release "date" .date "version" .version "tag" .tag "giturl" $giturl "sortkey" ( printf "%s-%s" .date $release.ga ) ) }}
-    {{- end }}
-  {{- end }}
-{{- end }}
-
 <div style="overflow-x:auto;">
 <table>
   <thead>
@@ -21,10 +10,10 @@
     </tr>
   </thead>
   <tbody>
-  {{- range sort $allupdates "sortkey" "desc" }}
+  {{- range ( partial "allupdates" ) }}
   <tr>
     <td>{{ .date }}</td>
-    <td><a href="../jdk/{{ .release.version }}">{{ .release.name }}</a></td>
+    <td><a href="../jdk/{{ .release.version }}/">{{ .release.name }}</a></td>
     <td>{{ with .release.status }}<span class="tag status-{{ . }}" title="{{ index hugo.Data.jdk.status . }}" style="cursor: help">{{ . }}</span>{{ end }}</td>
     <td>{{ .version }}</td>
     <td><a href="{{ .giturl }}/releases/tag/{{ .tag }}">{{ .tag }}</a></td>

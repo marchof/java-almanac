@@ -9,10 +9,15 @@ Systematic collection of information about the history and the future of Java.
 
 {{< jdkoverview >}}
 
+## Latest Updates
+
+Stay secure and up-to-date with the latest, actively maintained Java updates:
+
+{{<latestupdates>}}
+
 ## Java Resources
 
 * [JDK Releases](jdk/)
-* [JDK Updates](updates/)
 * [Java Bytecode](bytecode/)
 * [Features](features/)
 * [Snippets of Modern Java](snippets/)

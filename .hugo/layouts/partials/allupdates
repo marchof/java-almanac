@@ -1,0 +1,19 @@
+{{/*
+
+Creates a sorted list of all updates across all Java releases.
+
+*/}}
+
+{{ $allupdates := slice }}
+{{ range hugo.Data.jdk.versions }}
+  {{ $release := . }}
+  {{ if .updates }}
+    {{ $giturl := (index .scm 0).url }}
+    {{ range .updates }}
+      {{ $allupdates = $allupdates | append ( dict "release" $release "date" .date "version" .version "tag" .tag "giturl" $giturl "sortkey" ( printf "%s-%s" .date $release.ga ) ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return sort $allupdates "sortkey" "desc" }}
+ 
