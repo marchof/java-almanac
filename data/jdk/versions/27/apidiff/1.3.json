@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+19-1759"
+		"version": "27-ea+20-1850"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -9297,6 +9297,15 @@
 							"name": "parameterModifiers()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()"
+						},
+						{
+							"type": "method",
+							"name": "toString(int)",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#toString(int)",
+							"addedTags": [
+								"deprecated"
+							]
 						}
 					]
 				},

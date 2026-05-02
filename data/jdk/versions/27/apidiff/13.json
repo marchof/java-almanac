@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+19-1759"
+		"version": "27-ea+20-1850"
 	},
 	"order": 13.0,
 	"deltas": [
@@ -1249,6 +1249,15 @@
 									"addedTags": [
 										"abstract"
 									]
+								},
+								{
+									"type": "method",
+									"name": "toGenericString()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()",
+									"removedTags": [
+										"abstract"
+									]
 								}
 							]
 						},
@@ -1298,6 +1307,69 @@
 									"name": "Modifier()",
 									"status": "removed",
 									"csr": "JDK-8235548"
+								},
+								{
+									"type": "method",
+									"name": "classModifiers()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#classModifiers()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "constructorModifiers()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#constructorModifiers()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "fieldModifiers()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#fieldModifiers()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "interfaceModifiers()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#interfaceModifiers()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "methodModifiers()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#methodModifiers()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "parameterModifiers()",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#parameterModifiers()",
+									"addedTags": [
+										"deprecated"
+									]
+								},
+								{
+									"type": "method",
+									"name": "toString(int)",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/reflect/Modifier.html#toString(int)",
+									"addedTags": [
+										"deprecated"
+									]
 								}
 							]
 						},
