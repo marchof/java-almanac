@@ -1,5 +1,57 @@
 {{ $jdkversions := hugo.Data.jdk.versions }}
 
+<h2>Update Versions</h2>
+
+<div style="overflow-x:auto;">
+<table id="versiontable">
+  <thead>
+    <tr>
+      <th>Release</th>
+      <th>Latest Version</th>
+      <th>Last Update</th>
+      <th>API Diff</th>
+      <th>Sandbox</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range sort hugo.Data.jdk.versions "ga" "desc" }}
+    <tr data-javaversion="{{ .version }}">
+      <td><a href="../jdk/{{ .version }}/">{{ .name }}</a></td>
+      <td>{{ .latestversion }}</td>
+      <td>{{ with .updates }}{{ range collections.Last 1 . }}{{ .version }}{{ end }}{{ end }}</td>
+      <td>{{ with index hugo.Data.jdk.apidiffversions .version }}{{ index (split (index (split . "+") 0) "-") 0 }}{{ end }}</td>
+      <td></td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+</div>
+
+<script>
+  function cmp(reftext, element) {
+	if (reftext != element.textContent) {
+		element.style.backgroundColor = '#fcc'
+	}
+  }
+	
+  const rows = document.querySelectorAll('#versiontable tbody tr')
+  for (const row of rows) {
+    const version = row.dataset.javaversion
+    fetch(`https://sandbox.javaalmanac.io/jdk/${version}/version`)
+      .then(response => response.json())
+      .then(data => {
+        row.children[4].textContent = data['java.version'];
+		const ref = row.children[1].textContent
+		cmp(ref, row.children[2])
+        cmp(ref, row.children[3])
+        cmp(ref, row.children[4])
+      })
+      .catch(err => row.children[4].textContent = '❌' )
+  }
+</script>
+
+<h2>Checks</h2>
+
 <ul>
 
 <li>All JDK versions have valid status.</li>
