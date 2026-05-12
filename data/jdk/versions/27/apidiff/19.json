@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+20-1850"
+		"version": "27-ea+21-1925"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -5737,6 +5737,20 @@
 				},
 				{
 					"type": "package",
+					"name": "java.time.format",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/format/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DateTimeFormatterPatternProvider",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/format/DateTimeFormatterPatternProvider.html"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.time",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/package-summary.html",
@@ -6085,19 +6099,10 @@
 						},
 						{
 							"type": "class",
-							"name": "StructuredTaskScope.FailedException",
+							"name": "StructuredTaskScope.CancelledByTimeoutException",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.FailedException.html",
-							"csr": "JDK-8342487"
-						},
-						{
-							"type": "class",
-							"name": "StructuredTaskScope.TimeoutException",
-							"status": "added",
-							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html",
-							"csr": "JDK-8342487"
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.CancelledByTimeoutException.html"
 						},
 						{
 							"type": "class",

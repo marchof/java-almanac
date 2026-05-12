@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+20-1850"
+		"version": "27-ea+21-1925"
 	},
 	"order": 26.0,
 	"deltas": [
@@ -340,10 +340,43 @@
 				},
 				{
 					"type": "package",
+					"name": "java.time.format",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/format/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DateTimeFormatterPatternProvider",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/time/format/DateTimeFormatterPatternProvider.html"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util.concurrent",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.CancelledByTimeoutException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.CancelledByTimeoutException.html"
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.FailedException",
+							"status": "removed",
+							"preview": true
+						},
+						{
+							"type": "class",
+							"name": "StructuredTaskScope.TimeoutException",
+							"status": "removed",
+							"preview": true
+						},
 						{
 							"type": "class",
 							"name": "ThreadPoolExecutor",
@@ -355,6 +388,81 @@
 									"name": "finalize()",
 									"status": "removed",
 									"csr": "JDK-8371856"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Joiner",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "allSuccessfulOrThrow(Function)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#allSuccessfulOrThrow(java.util.function.Function)"
+								},
+								{
+									"type": "method",
+									"name": "anySuccessfulOrThrow(Function)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#anySuccessfulOrThrow(java.util.function.Function)"
+								},
+								{
+									"type": "method",
+									"name": "awaitAll()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "awaitAllSuccessfulOrThrow(Function)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#awaitAllSuccessfulOrThrow(java.util.function.Function)"
+								},
+								{
+									"type": "method",
+									"name": "onTimeout()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "timeout()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#timeout()"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "join()",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#join()",
+									"addedTags": [
+										"throws Throwable"
+									]
+								},
+								{
+									"type": "method",
+									"name": "open(UnaryOperator)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.function.UnaryOperator)"
 								}
 							]
 						}
