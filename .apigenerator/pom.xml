@@ -54,6 +54,14 @@
 			<artifactId>cloudfront</artifactId>
 			<version>${awssdk.version}</version>
 		</dependency>
+		
+		<!-- test scope -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>6.0.3</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>

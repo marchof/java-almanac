@@ -4,8 +4,11 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
+import java.util.HexFormat;
 
 class MD5 {
+
+	private static final HexFormat HEX_FORMAT = HexFormat.of();
 
 	private byte[] digest;
 
@@ -24,12 +27,7 @@ class MD5 {
 	}
 
 	String hex() {
-		StringBuilder str = new StringBuilder();
-		for (byte b : digest) {
-			str.append(Character.forDigit((b >> 4) & 0x0F, 16));
-			str.append(Character.forDigit((b & 0x0F), 16));
-		}
-		return str.toString();
+		return HEX_FORMAT.formatHex(digest);
 	}
 
 	String base64() {
