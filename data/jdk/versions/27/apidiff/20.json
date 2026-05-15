@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+21-1925"
+		"version": "27-ea+22-2010"
 	},
 	"order": 20.0,
 	"deltas": [
@@ -3841,6 +3841,20 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "BigDecimal",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigDecimal.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "rootn(int, MathContext)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigDecimal.html#rootn(int,java.math.MathContext)"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "BigInteger",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigInteger.html",
@@ -6197,6 +6211,21 @@
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/SequencedSet.html",
 							"csr": "JDK-8266572"
+						},
+						{
+							"type": "interface",
+							"name": "Set",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Set.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "ofLazy(Set, Predicate)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Set.html#ofLazy(java.util.Set,java.util.function.Predicate)"
+								}
+							]
 						},
 						{
 							"type": "interface",

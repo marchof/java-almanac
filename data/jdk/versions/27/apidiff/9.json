@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+21-1925"
+		"version": "27-ea+22-2010"
 	},
 	"order": 9.0,
 	"deltas": [
@@ -4670,6 +4670,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigDecimal.html#TWO",
 									"csr": "JDK-8286841"
+								},
+								{
+									"type": "method",
+									"name": "rootn(int, MathContext)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/math/BigDecimal.html#rootn(int,java.math.MathContext)"
 								}
 							]
 						},
@@ -10635,6 +10641,13 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection)",
 									"csr": "JDK-8191517"
+								},
+								{
+									"type": "method",
+									"name": "ofLazy(Set, Predicate)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Set.html#ofLazy(java.util.Set,java.util.function.Predicate)"
 								}
 							]
 						},
