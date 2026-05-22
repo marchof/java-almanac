@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+22-2010"
+		"version": "27-ea+23-2078"
 	},
 	"order": 22.0,
 	"deltas": [
@@ -11380,6 +11380,32 @@
 							"name": "JApplet",
 							"status": "removed",
 							"csr": "JDK-8359058"
+						},
+						{
+							"type": "class",
+							"name": "JEditorPane.JEditorPaneAccessibleHypertextSupport",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "changedUpdate(DocumentEvent)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#changedUpdate(javax.swing.event.DocumentEvent)"
+								},
+								{
+									"type": "method",
+									"name": "insertUpdate(DocumentEvent)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#insertUpdate(javax.swing.event.DocumentEvent)"
+								},
+								{
+									"type": "method",
+									"name": "removeUpdate(DocumentEvent)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#removeUpdate(javax.swing.event.DocumentEvent)"
+								}
+							]
 						},
 						{
 							"type": "class",

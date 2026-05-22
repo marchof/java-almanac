@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+22-2010"
+		"version": "27-ea+23-2078"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -39681,6 +39681,32 @@
 							"name": "getAccessibleChildrenCount()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.AccessibleJEditorPaneHTML.html#getAccessibleChildrenCount()"
+						}
+					]
+				},
+				{
+					"type": "class",
+					"name": "JEditorPane.JEditorPaneAccessibleHypertextSupport",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "changedUpdate(DocumentEvent)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#changedUpdate(javax.swing.event.DocumentEvent)"
+						},
+						{
+							"type": "method",
+							"name": "insertUpdate(DocumentEvent)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#insertUpdate(javax.swing.event.DocumentEvent)"
+						},
+						{
+							"type": "method",
+							"name": "removeUpdate(DocumentEvent)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#removeUpdate(javax.swing.event.DocumentEvent)"
 						}
 					]
 				},
