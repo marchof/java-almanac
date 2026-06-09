@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+24-2138"
+		"version": "27-ea+25-2247"
 	},
 	"order": 12.0,
 	"deltas": [
@@ -5100,7 +5100,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509CRL.html",
 							"addedTags": [
-								"implements DEREncodable"
+								"implements BinaryEncodable"
 							],
 							"deltas": [
 								{
@@ -5164,7 +5164,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509Certificate.html",
 							"addedTags": [
-								"implements DEREncodable"
+								"implements BinaryEncodable"
 							],
 							"deltas": [
 								{
@@ -5520,7 +5520,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
 							"addedTags": [
-								"implements DEREncodable"
+								"implements BinaryEncodable"
 							]
 						},
 						{
@@ -5555,7 +5555,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
 							"addedTags": [
-								"implements DEREncodable"
+								"implements BinaryEncodable"
 							]
 						}
 					]
@@ -5633,7 +5633,7 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyPair.html",
 							"addedTags": [
-								"implements DEREncodable"
+								"implements BinaryEncodable"
 							]
 						},
 						{
@@ -5768,11 +5768,10 @@
 						},
 						{
 							"type": "interface",
-							"name": "DEREncodable",
+							"name": "BinaryEncodable",
 							"status": "added",
 							"preview": true,
-							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/DEREncodable.html",
-							"csr": "JDK-8329419"
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/BinaryEncodable.html"
 						},
 						{
 							"type": "interface",
@@ -8651,6 +8650,13 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "CryptoException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/CryptoException.html"
+						},
+						{
+							"type": "class",
 							"name": "DecapsulateException",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/DecapsulateException.html",
@@ -8662,40 +8668,36 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html",
 							"addedTags": [
-								"implements DEREncodable"
+								"implements BinaryEncodable"
 							],
 							"deltas": [
 								{
 									"type": "method",
-									"name": "encrypt(DEREncodable, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
+									"name": "encrypt(BinaryEncodable, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.DEREncodable,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)",
-									"csr": "JDK-8367431"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.BinaryEncodable,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)"
 								},
 								{
 									"type": "method",
-									"name": "encrypt(DEREncodable, char[])",
+									"name": "encrypt(BinaryEncodable, char[])",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.DEREncodable,char%5B%5D)",
-									"csr": "JDK-8367431"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.BinaryEncodable,char%5B%5D)"
 								},
 								{
 									"type": "method",
-									"name": "encrypt(DEREncodable, char[], String, AlgorithmParameterSpec, Provider)",
+									"name": "encrypt(BinaryEncodable, char[], String, AlgorithmParameterSpec, Provider)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.DEREncodable,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)",
-									"csr": "JDK-8367431"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.BinaryEncodable,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)"
 								},
 								{
 									"type": "method",
-									"name": "getKey(Key, Provider)",
+									"name": "getKey(Key)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key,java.security.Provider)",
-									"csr": "JDK-8329419"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key)"
 								},
 								{
 									"type": "method",
@@ -8707,11 +8709,10 @@
 								},
 								{
 									"type": "method",
-									"name": "getKeyPair(Key, Provider)",
+									"name": "getKeyPair(Key)",
 									"status": "added",
 									"preview": true,
-									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeyPair(java.security.Key,java.security.Provider)",
-									"csr": "JDK-8367431"
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeyPair(java.security.Key)"
 								},
 								{
 									"type": "method",

@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+24-2138"
+		"version": "27-ea+25-2247"
 	},
 	"order": 26.0,
 	"deltas": [
@@ -348,10 +348,86 @@
 				},
 				{
 					"type": "package",
+					"name": "java.security.cert",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "X509CRL",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509CRL.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509Certificate",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509Certificate.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.security.spec",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "PKCS8EncodedKeySpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "class",
+							"name": "X509EncodedKeySpec",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.security",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "KeyPair",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyPair.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							]
+						},
 						{
 							"type": "class",
 							"name": "KeyStoreSpi",
@@ -381,6 +457,216 @@
 									"csr": "JDK-8375012"
 								}
 							]
+						},
+						{
+							"type": "class",
+							"name": "PEMDecoder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "decode(InputStream)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html#decode(java.io.InputStream)"
+								},
+								{
+									"type": "method",
+									"name": "decode(InputStream)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "decode(InputStream, Class)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html#decode(java.io.InputStream,java.lang.Class)"
+								},
+								{
+									"type": "method",
+									"name": "decode(InputStream, Class)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "decode(String)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html#decode(java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "decode(String)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "decode(String, Class)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html#decode(java.lang.String,java.lang.Class)"
+								},
+								{
+									"type": "method",
+									"name": "decode(String, Class)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "withFactoriesOf(Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMDecoder.html#withFactoriesOf(java.security.Provider)"
+								},
+								{
+									"type": "method",
+									"name": "withFactory(Provider)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PEMEncoder",
+							"status": "notmodified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMEncoder.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "encode(BinaryEncodable)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMEncoder.html#encode(java.security.BinaryEncodable)"
+								},
+								{
+									"type": "method",
+									"name": "encode(DEREncodable)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "encodeToString(BinaryEncodable)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEMEncoder.html#encodeToString(java.security.BinaryEncodable)"
+								},
+								{
+									"type": "method",
+									"name": "encodeToString(DEREncodable)",
+									"status": "removed",
+									"preview": true
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PEM",
+							"status": "modified",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html",
+							"addedTags": [
+								"extends Object",
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"extends Record",
+								"implements DEREncodable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "PEM(String, byte[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html#%3Cinit%3E(java.lang.String,byte%5B%5D)"
+								},
+								{
+									"type": "method",
+									"name": "PEM(String, byte[], byte[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html#%3Cinit%3E(java.lang.String,byte%5B%5D,byte%5B%5D)"
+								},
+								{
+									"type": "method",
+									"name": "content()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html#content()"
+								},
+								{
+									"type": "method",
+									"name": "content()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "decode()",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html#decode()",
+									"removedTags": [
+										"final"
+									]
+								},
+								{
+									"type": "method",
+									"name": "equals(Object)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "hashCode()",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "toString()",
+									"status": "modified",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/PEM.html#toString()",
+									"removedTags": [
+										"final"
+									]
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "AsymmetricKey",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/AsymmetricKey.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "BinaryEncodable",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/BinaryEncodable.html"
+						},
+						{
+							"type": "interface",
+							"name": "DEREncodable",
+							"status": "removed",
+							"preview": true
 						}
 					]
 				},
@@ -603,6 +889,100 @@
 									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/util/Set.html#ofLazy(java.util.Set,java.util.function.Predicate)",
 									"csr": "JDK-8376812"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "javax.crypto",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "CryptoException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/CryptoException.html"
+						},
+						{
+							"type": "class",
+							"name": "EncryptedPrivateKeyInfo",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html",
+							"addedTags": [
+								"implements BinaryEncodable"
+							],
+							"removedTags": [
+								"implements DEREncodable"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "encrypt(BinaryEncodable, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.BinaryEncodable,java.security.Key,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider,java.security.SecureRandom)"
+								},
+								{
+									"type": "method",
+									"name": "encrypt(BinaryEncodable, char[])",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.BinaryEncodable,char%5B%5D)"
+								},
+								{
+									"type": "method",
+									"name": "encrypt(BinaryEncodable, char[], String, AlgorithmParameterSpec, Provider)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#encrypt(java.security.BinaryEncodable,char%5B%5D,java.lang.String,java.security.spec.AlgorithmParameterSpec,java.security.Provider)"
+								},
+								{
+									"type": "method",
+									"name": "encrypt(DEREncodable, Key, String, AlgorithmParameterSpec, Provider, SecureRandom)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "encrypt(DEREncodable, char[])",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "encrypt(DEREncodable, char[], String, AlgorithmParameterSpec, Provider)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "getKey(Key)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKey(java.security.Key)"
+								},
+								{
+									"type": "method",
+									"name": "getKey(Key, Provider)",
+									"status": "removed",
+									"preview": true
+								},
+								{
+									"type": "method",
+									"name": "getKeyPair(Key)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeyPair(java.security.Key)"
+								},
+								{
+									"type": "method",
+									"name": "getKeyPair(Key, Provider)",
+									"status": "removed",
+									"preview": true
 								}
 							]
 						}

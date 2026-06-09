@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+24-2138"
+		"version": "27-ea+25-2247"
 	},
 	"order": 1.3,
 	"deltas": [
@@ -19447,7 +19447,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509CRL.html",
 					"addedTags": [
-						"implements DEREncodable"
+						"implements BinaryEncodable"
 					],
 					"deltas": [
 						{
@@ -19511,7 +19511,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/cert/X509Certificate.html",
 					"addedTags": [
-						"implements DEREncodable"
+						"implements BinaryEncodable"
 					],
 					"deltas": [
 						{
@@ -20051,7 +20051,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html",
 					"addedTags": [
-						"implements DEREncodable"
+						"implements BinaryEncodable"
 					],
 					"deltas": [
 						{
@@ -20167,7 +20167,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html",
 					"addedTags": [
-						"implements DEREncodable"
+						"implements BinaryEncodable"
 					],
 					"deltas": [
 						{
@@ -20560,7 +20560,7 @@
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/KeyPair.html",
 					"addedTags": [
-						"implements DEREncodable"
+						"implements BinaryEncodable"
 					]
 				},
 				{
@@ -21536,6 +21536,13 @@
 				},
 				{
 					"type": "interface",
+					"name": "BinaryEncodable",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/BinaryEncodable.html"
+				},
+				{
+					"type": "interface",
 					"name": "Certificate",
 					"status": "modified",
 					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/Certificate.html",
@@ -21543,14 +21550,6 @@
 						"deprecated",
 						"forRemoval"
 					]
-				},
-				{
-					"type": "interface",
-					"name": "DEREncodable",
-					"status": "added",
-					"preview": true,
-					"javadoc": "https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/security/DEREncodable.html",
-					"csr": "JDK-8329419"
 				},
 				{
 					"type": "interface",
