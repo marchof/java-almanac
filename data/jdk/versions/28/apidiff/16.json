@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+4-185"
+		"version": "28-ea+5-259"
 	},
 	"order": 16.0,
 	"deltas": [
@@ -6458,6 +6458,20 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/Objects.html#toIdentityString(java.lang.Object)",
 									"csr": "JDK-8280184"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "PriorityQueue",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/PriorityQueue.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "PriorityQueue(Collection, Comparator)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection,java.util.Comparator)"
 								}
 							]
 						},
