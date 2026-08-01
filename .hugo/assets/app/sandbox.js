@@ -43,7 +43,7 @@ Vue.component('sandbox', {
                     sourcefiles.push({name: tab.name, content: tab.source});
                 }
             });
-            request = {
+            const request = {
                 mainclass: this.mainclass || this.mainsource,
                 preview: this.preview,
                 sourcefiles: sourcefiles
