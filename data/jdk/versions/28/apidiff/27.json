@@ -2,12 +2,12 @@
 	"base": {
 		"feature": "27",
 		"vendor": "open",
-		"version": "27-ea+33-2320"
+		"version": "27-ea+34-2321"
 	},
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+9-483"
+		"version": "28-ea+10-569"
 	},
 	"order": 27.0,
 	"deltas": [
@@ -19,16 +19,89 @@
 			"deltas": [
 				{
 					"type": "package",
+					"name": "java.lang.classfile.attribute",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/attribute/package-summary.html",
+					"deltas": [
+						{
+							"type": "interface",
+							"name": "LoadableDescriptorsAttribute",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/attribute/LoadableDescriptorsAttribute.html"
+						},
+						{
+							"type": "interface",
+							"name": "StackMapFrameInfo",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "of(Label, List, List, List)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.html#of(java.lang.classfile.Label,java.util.List,java.util.List,java.util.List)"
+								},
+								{
+									"type": "method",
+									"name": "unsetFields()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/attribute/StackMapFrameInfo.html#unsetFields()"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.classfile",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Attributes",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/Attributes.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "NAME_LOADABLE_DESCRIPTORS",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/Attributes.html#NAME_LOADABLE_DESCRIPTORS"
+								},
+								{
+									"type": "method",
+									"name": "loadableDescriptors()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/Attributes.html#loadableDescriptors()"
+								}
+							]
+						},
 						{
 							"type": "interface",
 							"name": "ClassFile",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/ClassFile.html",
 							"deltas": [
+								{
+									"type": "field",
+									"name": "ACC_IDENTITY",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/ClassFile.html#ACC_IDENTITY"
+								},
+								{
+									"type": "field",
+									"name": "ACC_STRICT_INIT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/classfile/ClassFile.html#ACC_STRICT_INIT"
+								},
 								{
 									"type": "field",
 									"name": "JAVA_28_VERSION",
@@ -46,6 +119,43 @@
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Field",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/Field.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isStrictInit()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/Field.html#isStrictInit()"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "AccessFlag",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/AccessFlag.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "IDENTITY",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/AccessFlag.html#IDENTITY"
+								},
+								{
+									"type": "field",
+									"name": "STRICT_INIT",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/AccessFlag.html#STRICT_INIT"
+								}
+							]
+						},
 						{
 							"type": "enum",
 							"name": "ClassFileFormatVersion",
@@ -65,10 +175,76 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "Class",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Class.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "isValue()",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Class.html#isValue()"
+								}
+							]
+						},
+						{
+							"type": "class",
+							"name": "IdentityException",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/IdentityException.html"
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.util",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/package-summary.html",
 					"deltas": [
+						{
+							"type": "class",
+							"name": "Objects",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/Objects.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "hasIdentity(Object)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/Objects.html#hasIdentity(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "requireIdentity(Object)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/Objects.html#requireIdentity(java.lang.Object)"
+								},
+								{
+									"type": "method",
+									"name": "requireIdentity(Object, String)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/Objects.html#requireIdentity(java.lang.Object,java.lang.String)"
+								},
+								{
+									"type": "method",
+									"name": "requireIdentity(Object, Supplier)",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/Objects.html#requireIdentity(java.lang.Object,java.util.function.Supplier)"
+								}
+							]
+						},
 						{
 							"type": "class",
 							"name": "PriorityQueue",
@@ -94,6 +270,29 @@
 			"status": "notmodified",
 			"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.compiler/module-summary.html",
 			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.lang.model.element",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+					"deltas": [
+						{
+							"type": "enum",
+							"name": "Modifier",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.compiler/javax/lang/model/element/Modifier.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "VALUE",
+									"status": "added",
+									"preview": true,
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.compiler/javax/lang/model/element/Modifier.html#VALUE"
+								}
+							]
+						}
+					]
+				},
 				{
 					"type": "package",
 					"name": "javax.lang.model",

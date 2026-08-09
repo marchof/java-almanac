@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+9-483"
+		"version": "28-ea+10-569"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -10037,6 +10037,13 @@
 						},
 						{
 							"type": "method",
+							"name": "isStrictInit()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/Field.html#isStrictInit()"
+						},
+						{
+							"type": "method",
 							"name": "isSynthetic()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()"
@@ -13720,6 +13727,13 @@
 						},
 						{
 							"type": "method",
+							"name": "isValue()",
+							"status": "added",
+							"preview": true,
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Class.html#isValue()"
+						},
+						{
+							"type": "method",
 							"name": "newInstance()",
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Class.html#newInstance()",
@@ -14144,6 +14158,13 @@
 					"status": "added",
 					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/IO.html",
 					"csr": "JDK-8353437"
+				},
+				{
+					"type": "class",
+					"name": "IdentityException",
+					"status": "added",
+					"preview": true,
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/IdentityException.html"
 				},
 				{
 					"type": "class",
