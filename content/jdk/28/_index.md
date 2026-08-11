@@ -12,12 +12,19 @@ Instantly compile and run Java 28 snippets without a local Java installation.
 
 {{< sandbox version="java28" mainsource="Java28.java" preview="true" >}}
 {{< sandboxsource "Java28.java" >}}
-import module java.base;
-
-void main() {
-    var v = ClassFileFormatVersion.latest();
-    IO.println("Hello Java bytecode version %s!".formatted(v.major()));
+value class X {
+    final int i;
+    X(int i) { this.i = i; }
 }
 
+void main() {
+    var x1 = new X(5);
+    var x2 = new X(5);
+    var x3 = new X(7);
+    
+    System.out.println(X.class.isValue());
+    System.out.println(x1 == x2);
+    System.out.println(x1 == x3);
+}
 {{< /sandboxsource >}}
 {{< /sandbox >}}
