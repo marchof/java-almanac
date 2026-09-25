@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+16-1181"
+		"version": "28-ea+17-1282"
 	},
 	"order": 19.0,
 	"deltas": [
@@ -329,7 +329,21 @@
 							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html",
 							"addedTags": [
-								"final"
+								"final",
+								"implements ConstantDescs.CallSiteBootstrapMethodHook"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "bootstrapMethod()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html#bootstrapMethod()"
+								},
+								{
+									"type": "method",
+									"name": "bootstrapMethod()",
+									"status": "removed"
+								}
 							]
 						},
 						{
@@ -380,6 +394,12 @@
 									"csr": "JDK-8304012"
 								}
 							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantDescs.CallSiteBootstrapMethodHook",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/ConstantDescs.CallSiteBootstrapMethodHook.html"
 						},
 						{
 							"type": "interface",
@@ -2793,6 +2813,12 @@
 									"removedTags": [
 										"preview"
 									]
+								},
+								{
+									"type": "method",
+									"name": "synchronize(MethodHandle)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/invoke/MethodHandles.html#synchronize(java.lang.invoke.MethodHandle)"
 								}
 							]
 						},
@@ -4183,6 +4209,12 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html#UNICODE_CASEFOLD_ORDER",
 									"csr": "JDK-8369017"
+								},
+								{
+									"type": "method",
+									"name": "codePointCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html#codePointCount()"
 								},
 								{
 									"type": "method",

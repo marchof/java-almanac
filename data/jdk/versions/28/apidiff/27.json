@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+16-1181"
+		"version": "28-ea+17-1282"
 	},
 	"order": 27.0,
 	"deltas": [
@@ -122,6 +122,64 @@
 				},
 				{
 					"type": "package",
+					"name": "java.lang.constant",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "DynamicCallSiteDesc",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html",
+							"addedTags": [
+								"implements ConstantDescs.CallSiteBootstrapMethodHook"
+							],
+							"deltas": [
+								{
+									"type": "method",
+									"name": "bootstrapMethod()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/DynamicCallSiteDesc.html#bootstrapMethod()"
+								},
+								{
+									"type": "method",
+									"name": "bootstrapMethod()",
+									"status": "removed"
+								}
+							]
+						},
+						{
+							"type": "interface",
+							"name": "ConstantDescs.CallSiteBootstrapMethodHook",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/constant/ConstantDescs.CallSiteBootstrapMethodHook.html"
+						}
+					]
+				},
+				{
+					"type": "package",
+					"name": "java.lang.invoke",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/invoke/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "MethodHandles",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/invoke/MethodHandles.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "synchronize(MethodHandle)",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/invoke/MethodHandles.html#synchronize(java.lang.invoke.MethodHandle)"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "package",
 					"name": "java.lang.reflect",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/reflect/package-summary.html",
@@ -212,6 +270,20 @@
 							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/IdentityException.html",
 							"csr": "JDK-8339199"
+						},
+						{
+							"type": "class",
+							"name": "String",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html",
+							"deltas": [
+								{
+									"type": "method",
+									"name": "codePointCount()",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html#codePointCount()"
+								}
+							]
 						}
 					]
 				},

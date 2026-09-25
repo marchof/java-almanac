@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+16-1181"
+		"version": "28-ea+17-1282"
 	},
 	"order": 8.0,
 	"deltas": [
@@ -3501,6 +3501,12 @@
 							"name": "privateLookupIn(Class, MethodHandles.Lookup)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/invoke/MethodHandles.html#privateLookupIn(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"
+						},
+						{
+							"type": "method",
+							"name": "synchronize(MethodHandle)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/invoke/MethodHandles.html#synchronize(java.lang.invoke.MethodHandle)"
 						},
 						{
 							"type": "method",
@@ -7286,6 +7292,12 @@
 							"name": "chars()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html#chars()"
+						},
+						{
+							"type": "method",
+							"name": "codePointCount()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html#codePointCount()"
 						},
 						{
 							"type": "method",
