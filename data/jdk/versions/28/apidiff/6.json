@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+19-1485"
+		"version": "28-ea+20-1588"
 	},
 	"order": 6.0,
 	"deltas": [
@@ -25909,6 +25909,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getSupportedNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSupportedNamedGroups()"
+						},
+						{
+							"type": "method",
 							"name": "setHandshakeApplicationProtocolSelector(BiFunction)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLEngine.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"
@@ -26131,6 +26137,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getSupportedNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSupportedNamedGroups()"
+						},
+						{
+							"type": "method",
 							"name": "setSSLParameters(SSLParameters)",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)"
@@ -26180,6 +26192,12 @@
 							"name": "getHandshakeSession()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeSession()"
+						},
+						{
+							"type": "method",
+							"name": "getSupportedNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLSocket.html#getSupportedNamedGroups()"
 						},
 						{
 							"type": "method",

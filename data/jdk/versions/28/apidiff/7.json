@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+19-1485"
+		"version": "28-ea+20-1588"
 	},
 	"order": 7.0,
 	"deltas": [
@@ -24739,6 +24739,12 @@
 						},
 						{
 							"type": "method",
+							"name": "getNamedGroup()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getNamedGroup()"
+						},
+						{
+							"type": "method",
 							"name": "getRequestedServerNames()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"
@@ -24845,6 +24851,12 @@
 							"name": "getHandshakeApplicationProtocolSelector()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocolSelector()"
+						},
+						{
+							"type": "method",
+							"name": "getSupportedNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLEngine.html#getSupportedNamedGroups()"
 						},
 						{
 							"type": "method",
@@ -25034,6 +25046,20 @@
 				},
 				{
 					"type": "class",
+					"name": "SSLServerSocket",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLServerSocket.html",
+					"deltas": [
+						{
+							"type": "method",
+							"name": "getSupportedNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSupportedNamedGroups()"
+						}
+					]
+				},
+				{
+					"type": "class",
 					"name": "SSLSocketFactory",
 					"status": "notmodified",
 					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html",
@@ -25069,6 +25095,12 @@
 							"name": "getHandshakeApplicationProtocolSelector()",
 							"status": "added",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()"
+						},
+						{
+							"type": "method",
+							"name": "getSupportedNamedGroups()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/javax/net/ssl/SSLSocket.html#getSupportedNamedGroups()"
 						},
 						{
 							"type": "method",
