@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+20-1588"
+		"version": "28-ea+21-1707"
 	},
 	"order": 26.0,
 	"deltas": [
@@ -933,9 +933,17 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "StructureViolationException",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructureViolationException.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "class",
 							"name": "StructuredTaskScope.CancelledByTimeoutException",
 							"status": "added",
-							"preview": true,
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.CancelledByTimeoutException.html",
 							"csr": "JDK-8380114"
 						},
@@ -968,17 +976,36 @@
 							]
 						},
 						{
+							"type": "enum",
+							"name": "StructuredTaskScope.Subtask.State",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.State.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
+							"name": "StructuredTaskScope.Configuration",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Configuration.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
 							"type": "interface",
 							"name": "StructuredTaskScope.Joiner",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "allSuccessfulOrThrow(Function)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#allSuccessfulOrThrow(java.util.function.Function)",
 									"csr": "JDK-8380114"
 								},
@@ -986,7 +1013,6 @@
 									"type": "method",
 									"name": "anySuccessfulOrThrow(Function)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#anySuccessfulOrThrow(java.util.function.Function)",
 									"csr": "JDK-8380114"
 								},
@@ -1001,7 +1027,6 @@
 									"type": "method",
 									"name": "awaitAllSuccessfulOrThrow(Function)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#awaitAllSuccessfulOrThrow(java.util.function.Function)",
 									"csr": "JDK-8380114"
 								},
@@ -1016,7 +1041,6 @@
 									"type": "method",
 									"name": "timeout()",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Joiner.html#timeout()",
 									"csr": "JDK-8380114"
 								}
@@ -1024,16 +1048,26 @@
 						},
 						{
 							"type": "interface",
+							"name": "StructuredTaskScope.Subtask",
+							"status": "modified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.Subtask.html",
+							"removedTags": [
+								"preview"
+							]
+						},
+						{
+							"type": "interface",
 							"name": "StructuredTaskScope",
-							"status": "notmodified",
-							"preview": true,
+							"status": "modified",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html",
+							"removedTags": [
+								"preview"
+							],
 							"deltas": [
 								{
 									"type": "method",
 									"name": "join()",
 									"status": "modified",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#join()",
 									"addedTags": [
 										"throws Throwable"
@@ -1043,7 +1077,6 @@
 									"type": "method",
 									"name": "open(UnaryOperator)",
 									"status": "added",
-									"preview": true,
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html#open(java.util.function.UnaryOperator)",
 									"csr": "JDK-8380114"
 								}
@@ -1499,6 +1532,39 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html#removeUpdate(javax.swing.event.DocumentEvent)",
 									"csr": "JDK-8380790"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "module",
+			"name": "java.management",
+			"status": "notmodified",
+			"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.management/module-summary.html",
+			"deltas": [
+				{
+					"type": "package",
+					"name": "javax.management.openmbean",
+					"status": "notmodified",
+					"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.management/javax/management/openmbean/package-summary.html",
+					"deltas": [
+						{
+							"type": "class",
+							"name": "OpenType",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.management/javax/management/openmbean/OpenType.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ALLOWED_CLASSNAMES",
+									"status": "modified",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES",
+									"addedTags": [
+										"forRemoval"
+									]
 								}
 							]
 						}
