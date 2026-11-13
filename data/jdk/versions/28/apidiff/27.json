@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+23-1886"
+		"version": "28-ea+24-1988"
 	},
 	"order": 27.0,
 	"deltas": [
@@ -253,6 +253,56 @@
 					"deltas": [
 						{
 							"type": "class",
+							"name": "Character.UnicodeBlock",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "ARCHAIC_CUNEIFORM_NUMERALS",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#ARCHAIC_CUNEIFORM_NUMERALS"
+								},
+								{
+									"type": "field",
+									"name": "BENGALI_SUPPLEMENT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#BENGALI_SUPPLEMENT"
+								},
+								{
+									"type": "field",
+									"name": "JURCHEN",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#JURCHEN"
+								},
+								{
+									"type": "field",
+									"name": "JURCHEN_RADICALS",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#JURCHEN_RADICALS"
+								},
+								{
+									"type": "field",
+									"name": "MISCELLANEOUS_SYMBOLS_AND_ARROWS_EXTENDED",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MISCELLANEOUS_SYMBOLS_AND_ARROWS_EXTENDED"
+								},
+								{
+									"type": "field",
+									"name": "MUSICAL_SYMBOLS_SUPPLEMENT",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#MUSICAL_SYMBOLS_SUPPLEMENT"
+								},
+								{
+									"type": "field",
+									"name": "SEAL",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeBlock.html#SEAL"
+								}
+							]
+						},
+						{
+							"type": "class",
 							"name": "Class",
 							"status": "notmodified",
 							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Class.html",
@@ -287,6 +337,32 @@
 									"status": "added",
 									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/String.html#codePointCount()",
 									"csr": "JDK-8367425"
+								}
+							]
+						},
+						{
+							"type": "enum",
+							"name": "Character.UnicodeScript",
+							"status": "notmodified",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeScript.html",
+							"deltas": [
+								{
+									"type": "field",
+									"name": "JURCHEN",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeScript.html#JURCHEN"
+								},
+								{
+									"type": "field",
+									"name": "PROTO_CUNEIFORM",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeScript.html#PROTO_CUNEIFORM"
+								},
+								{
+									"type": "field",
+									"name": "SEAL",
+									"status": "added",
+									"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/lang/Character.UnicodeScript.html#SEAL"
 								}
 							]
 						}
