@@ -7,7 +7,7 @@
 	"target": {
 		"feature": "28",
 		"vendor": "open",
-		"version": "28-ea+24-1988"
+		"version": "28-ea+25-2095"
 	},
 	"order": 1.2,
 	"deltas": [
@@ -20290,6 +20290,12 @@
 					"deltas": [
 						{
 							"type": "method",
+							"name": "checkValidity(Instant)",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/security/cert/X509Certificate.html#checkValidity(java.time.Instant)"
+						},
+						{
+							"type": "method",
 							"name": "getCriticalExtensionOIDs()",
 							"status": "removed"
 						},
@@ -20329,6 +20335,18 @@
 							"type": "method",
 							"name": "getNonCriticalExtensionOIDs()",
 							"status": "removed"
+						},
+						{
+							"type": "method",
+							"name": "getNotAfterInstant()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/security/cert/X509Certificate.html#getNotAfterInstant()"
+						},
+						{
+							"type": "method",
+							"name": "getNotBeforeInstant()",
+							"status": "added",
+							"javadoc": "https://download.java.net/java/early_access/jdk28/docs/api/java.base/java/security/cert/X509Certificate.html#getNotBeforeInstant()"
 						},
 						{
 							"type": "method",
